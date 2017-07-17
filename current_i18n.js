@@ -1,5 +1,5 @@
 webpackJsonp([28], {
-    448: function(E, _) {
+    449: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Качено !!{filename}!!",
             UNSUPPORTED_BROWSER: "Браузърът не се поддържа",
@@ -119,7 +119,7 @@ webpackJsonp([28], {
             MANAGE_CHANNEL: "Управление на канала",
             MANAGE_CHANNEL_DESCRIPTION: "Потребители с това правомощие могат да променят името на канала, както и да изтриват канала.",
             MANAGE_PERMISSIONS: "Управление на правата",
-            MANAGE_PERMISSIONS_DESCRIPTION: "Членовете с това разрешение могат да променят разрешенията ��а този канал.",
+            MANAGE_PERMISSIONS_DESCRIPTION: "Членовете с това разрешение могат да променят разрешенията за този канал.",
             TEXT_PERMISSIONS: "Текстови правомощия",
             READ_MESSAGES: "Четене на съобщения",
             SEND_MESSAGES: "Изпращане на съобщения",
@@ -1923,7 +1923,7 @@ webpackJsonp([28], {
             no: "Норвежки"
         }
     },
-    449: function(E, _) {
+    450: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Nahráno !!{filename}!!",
             UNSUPPORTED_BROWSER: "Nepodporovaný prohlížeč",
@@ -3847,7 +3847,7 @@ webpackJsonp([28], {
             no: ""
         }
     },
-    450: function(E, _) {
+    451: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Overført !!{filename}!!",
             UNSUPPORTED_BROWSER: "Ikke-understøttet Browser",
@@ -5771,7 +5771,7 @@ webpackJsonp([28], {
             no: ""
         }
     },
-    451: function(E, _) {
+    452: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "!!{filename}!! hochgeladen",
             UNSUPPORTED_BROWSER: "Nicht unterstützter Browser",
@@ -7695,7 +7695,7 @@ webpackJsonp([28], {
             no: "Norwegisch"
         }
     },
-    452: function(E, _) {
+    453: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Se ha subido el archivo !!{filename}!!",
             UNSUPPORTED_BROWSER: "Navegador no compatible",
@@ -9619,7 +9619,7 @@ webpackJsonp([28], {
             no: "Noruego"
         }
     },
-    453: function(E, _) {
+    454: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Lähetetty !!{filename}!!",
             UNSUPPORTED_BROWSER: "Selainta ei tuettu",
@@ -11543,7 +11543,7 @@ webpackJsonp([28], {
             no: "Norjalainen"
         }
     },
-    454: function(E, _) {
+    455: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "!!{filename}!! envoyé",
             UNSUPPORTED_BROWSER: "Navigateur non pris en charge",
@@ -13467,7 +13467,7 @@ webpackJsonp([28], {
             no: "Norvégien"
         }
     },
-    455: function(E, _) {
+    456: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Ha caricato !!{filename}!!",
             UNSUPPORTED_BROWSER: "Browser non supportato",
@@ -15391,7 +15391,7 @@ webpackJsonp([28], {
             no: "Norvegese"
         }
     },
-    456: function(E, _) {
+    457: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "!!{filename}!! がアップロードされました",
             UNSUPPORTED_BROWSER: "サポートされていないブラウザ",
@@ -17086,7 +17086,7 @@ webpackJsonp([28], {
             LINK_SETTINGS: "リンクの設定",
             GENERATE_A_NEW_LINK: "新しいリンクを生成",
             HOW_TO_INVITE_OTHERS: 'やあ。ピポパポ。このサーバーにフレンドを招待したい場合は左上のサーバー名をクリックして"!!{invitePeople}!!"をクリックしよう。ピッ。',
-            GRANT_TEMPORARY_MEMBERSHIP: "一時的なメンバー���して招待",
+            GRANT_TEMPORARY_MEMBERSHIP: "一時的なメンバーとして招待",
             TEMPORARY_MEMBERSHIP_EXPLANATION: "一時的なメンバーは役割が割り当てられない限り、切断時に自動的にキックされます",
             MAX_NUMBER_OF_USES: "最大使用数",
             EXPIRE_AFTER: "有効期限",
@@ -17315,7 +17315,7 @@ webpackJsonp([28], {
             no: "ノルウェー語"
         }
     },
-    457: function(E, _) {
+    458: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "!!{filename}!! 이 업로드 되었습니다",
             UNSUPPORTED_BROWSER: "지원되지 않는 브라우저",
@@ -17359,7 +17359,7 @@ webpackJsonp([28], {
             AVATAR_CONVERT_FAILURE_MOBILE: "아바타를 데이터 URL로 변환할 수 없습니다. {avatarUrl}",
             CHANGE_ICON: "아이콘\n변경",
             CHANGE_SPLASH: "시작 화면 변경",
-            MUTE: "마이크 ���기",
+            MUTE: "마이크 끄기",
             UNMUTE: "마이크 켜기",
             DEAFEN: "소리 끄기",
             UNDEAFEN: "소리 켜기",
@@ -19239,7 +19239,7 @@ webpackJsonp([28], {
             no: "노르웨이어"
         }
     },
-    458: function(E, _) {
+    459: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "",
             UNSUPPORTED_BROWSER: "Niet-ondersteunde browser",
@@ -21163,7 +21163,7 @@ webpackJsonp([28], {
             no: ""
         }
     },
-    459: function(E, _) {
+    460: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Lastet opp !!{filename}!!",
             UNSUPPORTED_BROWSER: "",
@@ -23087,7 +23087,7 @@ webpackJsonp([28], {
             no: ""
         }
     },
-    460: function(E, _) {
+    461: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Przesłano !!{filename}!!",
             UNSUPPORTED_BROWSER: "Nieobsługiwana przeglądarka",
@@ -25011,7 +25011,7 @@ webpackJsonp([28], {
             no: "Norweski"
         }
     },
-    461: function(E, _) {
+    462: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Enviado !!{filename}!!",
             UNSUPPORTED_BROWSER: "Navegador incompatível",
@@ -26935,7 +26935,7 @@ webpackJsonp([28], {
             no: "Norueguês"
         }
     },
-    462: function(E, _) {
+    463: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Загружен !!{filename}!!",
             UNSUPPORTED_BROWSER: "Неподдерживаемый браузер",
@@ -28859,7 +28859,7 @@ webpackJsonp([28], {
             no: "Норвежский"
         }
     },
-    463: function(E, _) {
+    464: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "",
             UNSUPPORTED_BROWSER: "Webbläsaren stöds ej",
@@ -30783,7 +30783,7 @@ webpackJsonp([28], {
             no: "Norska"
         }
     },
-    464: function(E, _) {
+    465: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "!!{filename}!! yüklendi",
             UNSUPPORTED_BROWSER: "Desteklenmeyen Tarayıcı",
@@ -32707,7 +32707,7 @@ webpackJsonp([28], {
             no: "Norveççe"
         }
     },
-    465: function(E, _) {
+    466: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "Завантажено !!{filename}!!",
             UNSUPPORTED_BROWSER: "Непідтримуваний браузер",
@@ -34631,7 +34631,7 @@ webpackJsonp([28], {
             no: ""
         }
     },
-    466: function(E, _) {
+    467: function(E, _) {
         E.exports = {
             NOTIFICATION_BODY_ATTACHMENT: "已上傳 !!{filename}!!",
             UNSUPPORTED_BROWSER: "尚未支援的瀏覽器",
@@ -36555,7 +36555,7 @@ webpackJsonp([28], {
             no: "挪威文"
         }
     },
-    467: function(E, _, e) {
+    468: function(E, _, e) {
         "use strict";
         _.__esModule = !0, _.default = {
             NOTIFICATION_BODY_ATTACHMENT: "Uploaded !!{filename}!!",
@@ -38744,7 +38744,7 @@ webpackJsonp([28], {
         }, E.exports = _.default
     },
     5521: function(E, _, e) {
-        e(448), e(449), e(450), e(451), e(452), e(453), e(454), e(455), e(456), e(457), e(458), e(459), e(460), e(461), e(462), e(463), e(464), e(465), e(466), E.exports = e(467)
+        e(449), e(450), e(451), e(452), e(453), e(454), e(455), e(456), e(457), e(458), e(459), e(460), e(461), e(462), e(463), e(464), e(465), e(466), e(467), E.exports = e(468)
     }
 }, [5521]);
-//# sourceMappingURL=70448619e0420c62dce0.js.map
+//# sourceMappingURL=965ab2983d633e9a3c3d.js.map
