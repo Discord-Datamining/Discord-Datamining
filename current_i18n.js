@@ -82,7 +82,7 @@ webpackJsonp([29], {
             VAD_PERMISSION_TITLE: "Изисква се Push-to-Talk опцията",
             VAD_PERMISSION_BODY: "Този канал изисква Push-to-Talk (говорене с бутон) опцията да бъде разрешена, за да говорите. Дотогава ще може само да слушате, докато превключите режима от настройките.",
             OPEN_ORIGINAL_IMAGE: "Отваряне на оригинала",
-            IMAGE_TOO_LARGE: "Това изображение е прекалено голямо, за да бъде в��радено.",
+            IMAGE_TOO_LARGE: "Това изображение е прекалено голямо, за да бъде вградено.",
             NSFW_TITLE: "",
             NSFW_DESCRIPTION: "",
             NSFW_ACCEPT: "",
@@ -282,7 +282,7 @@ webpackJsonp([29], {
             FORM_LABEL_DEFAULT_NOTIFICATION_SETTINGS: "Стандартни настройки на известяванията",
             FORM_HELP_DEFAULT_NOTIFICATION_SETTINGS: "",
             FORM_HELP_DEFAULT_NOTIFICATION_SETTINGS_MOBILE: "",
-            FORM_LABEL_SPLASH_BACKGROUND: "Анимация за покана на заден план",
+            FORM_LABEL_SPLASH_BACKGROUND: "Анимация за покана на за��ен план",
             DELETE_SERVER_TITLE: "Изтрии '!!{name}!!'",
             DELETE_SERVER_BODY: "Наистина ли желаете да изтриете **!!{name}!!**? Това действие не може да бъде върнато.",
             DELETE_SERVER: "Изтриване на сървъра",
@@ -16235,7 +16235,7 @@ webpackJsonp([29], {
             FORM_LABEL_VIDEO_PREVIEW: "",
             FORM_WARNING_VIDEO_PREVIEW: "",
             ECHO_CANCELLATION: "エコー除去",
-            NOISE_SUPPRESSION: "ノイズ抑���",
+            NOISE_SUPPRESSION: "ノイズ抑制",
             AUTOMATIC_GAIN_CONTROL: "音量調節の自動化",
             DISPLAY_SILENCE_WARNING: "Discordがマイクからの音声を検知できない場合に警告を表示する。",
             FORM_LABEL_ATTENUATION: "減衰",
@@ -16407,7 +16407,7 @@ webpackJsonp([29], {
             TIP_DIRECT_MESSAGES_TITLE: "プライベートチャットの開始",
             TIP_DIRECT_MESSAGES_BODY: "このリストからサーバにいるすべてのメンバーを見ることができます。\n\nあなたはフレンドを選び、1対1のプライベートチャットをすることが出来ます。\nダイレクトメッセージはAFKであっても通知されるので、何か伝えたい時に最適です。",
             TIP_CREATE_MORE_SERVERS_TITLE: "サーバーはどこにでもあります!",
-            TIP_CREATE_MORE_SERVERS_BODY: "+ボタンを押してサーバーを構築しましょう！\n\nサーバーの構築は無料なので、必要なだけ構築することが出来ます。各グループ毎にそれぞれのサーバーを割り当てる事ができます。もしサーバーが不要になればサーバーを削除することができます。",
+            TIP_CREATE_MORE_SERVERS_BODY: "+ボタンを押してサーバーを構築しましょう！\n\nサーバーの構築は無料なので、必要なだけ構築することが出来ます。各グループ毎にそれ���れのサーバーを割り当てる事ができます。もしサーバーが不要になればサーバーを削除することができます。",
             TIP_CREATE_FIRST_SERVER_TITLE: "あなたのサーバーを作りましょう",
             TIP_CREATE_FIRST_SERVER_BODY: "+ボタンを押すことであなたのサーバーを構築する事ができます。\n\nそれぞれのグループ毎にただ一つだけのサーバーを持つことができます。サーバーが不要になった場合はサーバーを消すこともできます。なにより、サーバーが無料なので欲しいだけサーバーを作ることができます。",
             TIP_FRIENDS_LIST_TITLE: "友人に会いましょう",
@@ -18399,7 +18399,7 @@ webpackJsonp([29], {
             SERVERS: "서버",
             SERVERS_MANAGEMENT_TITLE: "",
             SERVER_SORT: "",
-            JOIN_SERVER_DESCRIPTION_MOBILE: "초대 링크나 코드를 입력해주세요",
+            JOIN_SERVER_DESCRIPTION_MOBILE: "초대 링크나 코드를 입력���주세요",
             APP_OPENING_MOBILE_BODY: "앱이 열리지 않으면, 앱이 다운로드된 후 참가하실 수 있도록 초대 코드를 복사해두세요.",
             APP_DOWNLOAD_NOW: "앱이 없나요? **지금 받아보세요**",
             COPY_TEXT: "텍스트 복사",
@@ -27085,7 +27085,7 @@ webpackJsonp([29], {
             DEAFEN_MEMBERS: "Отключить звук участникам",
             MOVE_MEMBERS: "Переместить участников",
             MOVE_MEMBERS_DESCRIPTION: "Участники с этим правом могут перемещать других участников из этого канала. Перемещение возможно только между каналами, к которым у обоих участников есть доступ.",
-            USE_VAD: "Использовать режим актив��ции по голосу",
+            USE_VAD: "Использовать режим активации по голосу",
             USE_VAD_DESCRIPTION: "Участники этого канала должны использовать Push-to-talk, если у них нет этого права.",
             PERMISSION_HELPDESK: "Нужна помощь с разрешениями?",
             SELF_DENY_PERMISSION_TITLE: "Уверены, что вы не хотите этого делать",
@@ -28545,7 +28545,7 @@ webpackJsonp([29], {
             ONBOARDING_APP_DOWNLOADS_DESKTOP_VERSION_OSX: "OSX 10.10 (Yosemite) или выше",
             ONBOARDING_APP_DOWNLOADS_DESKTOP_VERSION_LINUX: "Linux 9000",
             ONBOARDING_APP_DOWNLOADS_DESKTOP_FEATURE_1: "Система широкого Push-to-Talk",
-            ONBOARDING_APP_DOWNLOADS_DESKTOP_FEATURE_2: "Автоматическое обнаружение ��гр",
+            ONBOARDING_APP_DOWNLOADS_DESKTOP_FEATURE_2: "Автоматическое обнаружение игр",
             ONBOARDING_APP_DOWNLOADS_DESKTOP_FEATURE_2_WINDOWS: "Игровой оверлей",
             ONBOARDING_APP_DOWNLOADS_DESKTOP_FEATURE_3: "Минимальное использование ЦПУ",
             ONBOARDING_APP_DOWNLOADS_DESKTOP_FEATURE_4: "Уведомления на рабочем столе",
@@ -28744,7 +28744,7 @@ webpackJsonp([29], {
             PREMIUM_FEATURE_TITLE_BADGE: "Покажите всем, что вы поддерживаете Discord",
             PREMIUM_FEATURE_DESCRIPTION_BADGE: "Покажите всем на протяжении какого времени вы поддерживаете Discord с помощью специального значка.",
             PREMIUM_PROMO_TITLE: "Хотите использовать Emoji везде?",
-            PREMIUM_PROMO_DESCRIPTION: "Приподнимись с Discord Nitro, чтобы использовать пользовательские Emoji на любом сервере.",
+            PREMIUM_PROMO_DESCRIPTION: "При��однимись с Discord Nitro, чтобы использовать пользовательские Emoji на любом сервере.",
             PREMIUM_PROMO_AUTOCOMPLETE: "Использовать пользовательские emoji везде",
             PREMIUM_PROMO_AUTOCOMPLETE_CTA: "Получить Discord Nitro",
             PREMIUM_TITLE: "Discord Nitro",
@@ -33494,7 +33494,7 @@ webpackJsonp([29], {
             DEFAULT_APP_DESCRIPTION: "- Ні -",
             NO_AUTHORIZED_APPS: "",
             CURRENTLY_CONTROLLING: "Керування вашим Discord",
-            DELETE_APP_CONFIRM_MSG: "Ця дія від'єднає ваш аккаунт Discord від цього додатку.",
+            DELETE_APP_CONFIRM_MSG: "Ця дія від'єднає ваш аккаунт Discord від цього ��одатку.",
             JOIN_SERVER: "Приєднатися",
             JOINING_SERVER: "Приєднання",
             JOINED_SERVER: "Приєднано",
@@ -37469,7 +37469,6 @@ webpackJsonp([29], {
             GAME_NOTIFICATION_SETTING_AUTO_FOLLOW_DESC: "\nDiscord will attempt to figure out who you play games with so you can receive notifications from the people you're likely to care about. You can disable notifications per person in the settings below.",
             GAME_NOTIFICATION_SETTING_HOURS: "Only receive activity notifications during gaming hours.",
             GAME_NOTIFICATION_SETTING_HOURS_DESC: "\nDiscord will only send notifications when you're likely to want them. For example, in the early\nevening or on the weekend.",
-            GAME_NOTIFICATION_SETTINGS_FOLLOWING_EMPTY: "We’re still figuring out who you play with. Go play some games with friends!",
             OVERLAY_EXPLANATION: "\nEnabling the overlay will probably trigger a false positive in your anti-virus.\nAlso, the overlay may not work for everyone. If you have trouble or questions check out\n[this fancy help article!]({supportURL})\n",
             ENABLE_INGAME_OVERLAY: "Enable in-game overlay.",
             OVERLAY_DOWNLOAD_PROGRESS: "Updating ({percent}%)",
@@ -38747,8 +38746,8 @@ webpackJsonp([29], {
             no: "Norwegian"
         }, E.exports = _.default
     },
-    5525: function(E, _, e) {
+    5524: function(E, _, e) {
         e(449), e(450), e(451), e(452), e(453), e(454), e(455), e(456), e(457), e(458), e(459), e(460), e(461), e(462), e(463), e(464), e(465), e(466), e(467), E.exports = e(468)
     }
-}, [5525]);
-//# sourceMappingURL=f94f638bb905a9c9d767.js.map
+}, [5524]);
+//# sourceMappingURL=11639496ef4c280f94dc.js.map
