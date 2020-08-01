@@ -1,6 +1,9 @@
+node_modules/
+.vscode/
 package.json
 package-lock.json
-node_modules/
+pnpm-lock.yaml
+.env
+COMMITS
 fetch.js
-.vscode/
-.npmrc
+hook.js
