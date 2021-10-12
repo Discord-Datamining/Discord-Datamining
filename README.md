@@ -30,3 +30,5 @@ Comments are currently limited to select contributors to prevent abuse.
 You can follow this repository to receive email notifications. Click the <kbd>[Watch](https://www.youtube.com/watch?v=dQw4w9WgXcQ)</kbd> button then select <kbd>[All Activity](https://www.youtube.com/watch?v=6n3pFFPSlW4)</kbd>.
 
 ![How to enable notifications](https://user-images.githubusercontent.com/18150845/114609160-c6dbee00-9c9e-11eb-8750-3ae18e041668.png "How to enable notifications")
+
+Alternatively, you could receive notifications with external tools, such as the [Datamine Updates](https://github.com/ItsRauf/dataminev2) Discord bot.
