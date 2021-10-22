@@ -13,7 +13,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          cache: pnpm
       - name: Comment on commit
         uses: Discord-Datamining/comments-action@main
         env:
