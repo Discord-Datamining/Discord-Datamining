@@ -171,8 +171,8 @@
         CHARACTER_COUNT_AT_LIMIT: "Message is at max length",
         CHARACTER_COUNT_CLOSE_TO_LIMIT: "{count} characters remaining",
         CHARACTER_COUNT_OVER_LIMIT: "Message is too long",
-        CHANNEL_SETTINGS_SUMMARIES_TOGGLE: "Summaries",
-        CHANNEL_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Summaries for this channel. The Summaries feature uses OpenAI technology to quickly surface topics in any text channel, get a conversation preview and the number of messages in a specific topic, and indicate who is in the discussion. [Learn More]({helpdeskArticle})",
+        CHANNEL_SETTINGS_SUMMARIES_TOGGLE: "Enable Channel Summaries",
+        CHANNEL_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "If turned off, nobody will see the Summaries in this channel. [Learn More]({helpdeskArticle})",
         CHANNEL_TOOLTIP_VOICE: "Voice",
         CHANNEL_TOOLTIP_VOICE_LIMITED: "Voice (Limited)",
         CHANNEL_TOOLTIP_VOICE_LOCKED: "Voice (Locked)",
@@ -2310,6 +2310,7 @@
         CLYDE_GENERATE_PERSONALITY: "Generate",
         CLYDE_GENERATE_PERSONALITY_HINT: "Generate a more detailed personality",
         CLYDE_GENERATE_PERSONALITY_UNDO: "Undo generated personality",
+        CLYDE_EDIT_NAME_LABEL: "Name",
         CLYDE_USER_RATING_THANKS_1: "Clyde's neurons are buzzing \uD83E\uDDE0",
         CLYDE_USER_RATING_THANKS_2: "Your feedback is the secret sauce \uD83C\uDF1F",
         CLYDE_USER_RATING_THANKS_3: "You're helping Clyde evolve one byte at a time \uD83D\uDE4C",
@@ -10059,6 +10060,7 @@
         APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
         INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
         APPLICATION_ADD_TO_SERVER: "Add to Server",
+        APPLICATION_ADD_BUTTON: "Add App",
         APPLICATION_ADD_TO_SERVER_ACTIONS: "Add to Server Actions",
         APPLICATION_ADD_TO_SERVER_ACTIONS_COPY: "Copy Add to Server URL",
         COMMANDS_SCOPE_MIGRATION_OVERVIEW_TOOLTIP: "Members can't use this bot until you turn on permissions.",
@@ -14203,8 +14205,8 @@
         GUILD_SETTINGS_UPDATE_PERMISSIONS: "Update Permissions",
         GUILD_SETTINGS_REVIEW_PERMISSIONS: "Review Permissions",
         GUILD_SETTINGS_CHANNEL_SETTINGS: "Channel Settings",
-        GUILD_SETTINGS_SUMMARIES_TOGGLE: "Summaries",
-        GUILD_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Summaries for this server. The Summaries feature uses OpenAI technology to quickly surface topics in any text channel, get a conversation preview and the number of messages in a specific topic, and indicate who is in the discussion. [Learn More]({helpdeskArticle})",
+        GUILD_SETTINGS_SUMMARIES_TOGGLE: "Enable Channel Summaries",
+        GUILD_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Channel Summaries for this server to help your members catch up and dive into discussions. In text channels, members will be able to see a list of topics being discussed and which members are involved. [Learn More]({helpdeskArticle})",
         UNLOCK: "Unlock",
         DEFAULT_CHANNELS_PREVIEW_HEADER: "Preview",
         DEFAULT_CHANNELS_PREVIEW_EMPTY_STATE: "Add 5-10 channels that all users will see!",
@@ -16515,6 +16517,7 @@
         POLLS: "Polls",
         POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
         POLL_SUBMIT_VOTE: "Submit Vote",
+        POLL_SUBMIT_VOTE_EDIT: "Update Vote",
         POLL_VOTES_COUNT: "{count, plural, one {1 vote} other {{count} votes}}",
         POLL_ALREADY_VOTED: "Voted",
         POLL_ANSWER_SELECTED_ARIA: "You selected this answer",
@@ -17773,7 +17776,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240644", ", Version Hash: ").concat("0b0f48f547261d46078650c8bb2ee129976f89bf")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240787", ", Version Hash: ").concat("3e82e9ee8b8a009840049fda57e38e484a5875c5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20134,8 +20137,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "240644", "240644"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240644")), _ = 0), _
+        let _ = parseInt((e = "240787", "240787"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240787")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29380,4 +29383,4 @@
     }
   }
 ]);
-//# sourceMappingURL=8c602c610c408ebe1205.js.map
+//# sourceMappingURL=b53eb96e1607491d4389.js.map
