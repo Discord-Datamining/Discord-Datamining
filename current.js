@@ -13200,7 +13200,6 @@
         MEMBER_SAFETY_INVITER_BOT_TOOLTIP: "Added by Bot",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
-        GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
         GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_IN_COMMUNITY: "Becoming a community will automatically enable this experience for you.",
         GUILD_ANTIRAID_SAFETY_SETUP_TITLE: "Raid Protection",
         GUILD_ANTIRAID_SAFETY_SETUP_DESCRIPTION: "Takes automated actions to safeguard your server from potential raids or other suspicious activity. Report a raid that we miss to improve raid protection.",
@@ -17776,7 +17775,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240872", ", Version Hash: ").concat("e3bc37afa58ee2f95aef9d4ed0ca5df961165ad2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240884", ", Version Hash: ").concat("d20955f9ac058b8e18f02a0d047bddf4565d11f8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20137,8 +20136,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "240872", "240872"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240872")), _ = 0), _
+        let _ = parseInt((e = "240884", "240884"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240884")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29383,4 +29382,4 @@
     }
   }
 ]);
-//# sourceMappingURL=ff0e23f2fb8f414da2e2.js.map
+//# sourceMappingURL=286ab1cfa0bb349183c5.js.map
