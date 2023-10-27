@@ -7321,7 +7321,7 @@
         BILLING_CHECKOUT_CONFIRMATION_CONFIRM: "Close Checkout",
         BILLING_CHECKOUT_CONFIRMATION_CANCEL: "Cancel",
         BILLING_PAY_FOR_IT_WITH: "Pay for it With",
-        BILLING_PAYMENT_AUTHORIZATION_CHARGE: "A $0.99 USD hold may be placed on your payment method. [Learn More]({helpDeskArticle})",
+        BILLING_PAYMENT_AUTHORIZATION_CHARGE: "A hold may be placed on your payment method. [Learn More]({helpDeskArticle})",
         BILLING_IS_GIFT_PURCHASE: "Is this a gift?",
         BILLING_GIFT_LINK: "Gift Link",
         BILLING_GIFT_COPIED: "Copied!",
@@ -17780,7 +17780,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241207", ", Version Hash: ").concat("c741f9bfb56058d096eda4d26372b9776a5085ca")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241215", ", Version Hash: ").concat("57f0045de1b9e0bbacbc1df78e93d99144f18a70")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20141,8 +20141,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241207", "241207"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241207")), _ = 0), _
+        let _ = parseInt((e = "241215", "241215"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241215")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29393,4 +29393,4 @@
     }
   }
 ]);
-//# sourceMappingURL=397ae1aa33f94ee801da.js.map
+//# sourceMappingURL=14aedc79dc6435d1fe4a.js.map
