@@ -16264,7 +16264,9 @@
         SKU_REPORT_CONFIRMATION_HEADER: "Report Submitted",
         SKU_REPORT_CONFIRMATION_BODY: "Your report has been submitted against [**!!{skuName}!!**]",
         SYSTEM_MESSAGE_GUILD_PRODUCT_PURCHASE: "$[!!{username}!!](usernameHook) has purchased [{productName}](handleProductListingClick)!",
+        SYSTEM_MESSAGE_GUILD_PRODUCT_PURCHASE_MOBILE: "[!!{username}!!](usernameHook) has purchased {productName}!",
         GUILD_PRODUCT_PURCHASE_THANK_YOU_CARD_TEXT: "Thank you,\n $[!!{username}!!](usernameHook)",
+        GUILD_PRODUCT_PURCHASE_THANK_YOU_CARD_TEXT_MOBILE: "Thank you,",
         THREAD_HAS_BEEN_DELETED: "Thread has been deleted.",
         FRIEND_INVITE_SHEET_TITLE: "Send Link to Add Friends",
         FRIEND_INVITE_EXPIRATION: "Links expire in {expirationDays} days, or {expirationUses} uses.",
@@ -17786,7 +17788,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241407", ", Version Hash: ").concat("0dd27ac255737aa3ab59abe323acb96d3aee1e48")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241412", ", Version Hash: ").concat("d1af9f0a44f6f61485b35d8c4a069640c4a98336")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20147,8 +20149,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241407", "241407"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241407")), _ = 0), _
+        let _ = parseInt((e = "241412", "241412"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241412")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29399,4 +29401,4 @@
     }
   }
 ]);
-//# sourceMappingURL=2d831970b1c05dbf014c.js.map
+//# sourceMappingURL=882b9ab6e0b790fe317f.js.map
