@@ -15888,6 +15888,7 @@
         STRANGER_DANGER_BANNER_CLOSE_A11Y: "Close",
         STRANGER_DANGER_BLOCK_CONFIRM: "User Blocked",
         STRANGER_DANGER_MUTE_CONFIRM: "User Muted",
+        STRANGER_DANGER_UNMUTE_CONFIRM: "User Unmuted",
         STRANGER_DANGER_TIPS_HEADER: "Safety Tips",
         STRANGER_DANGER_TIPS_DESCRIPTION: "Remember, you're always in control",
         STRANGER_DANGER_TIPS_1: "Trust your gut. If something feels off, you can always take a break.",
@@ -15895,6 +15896,7 @@
         STRANGER_DANGER_TIPS_3: "You're not alone. If you need help, talk to a trusted adult. You can also report messages to us anytime.",
         STRANGER_DANGER_MORE_HEADER: "More you can do",
         STRANGER_DANGER_MORE_MUTE: "Mute",
+        STRANGER_DANGER_MORE_UNMUTE: "Unmute",
         STRANGER_DANGER_MORE_MUTE_DESCRIPTION: "Turn off notifications for this chat.",
         STRANGER_DANGER_MORE_BLOCK: "Block",
         STRANGER_DANGER_MORE_BLOCK_DESCRIPTION: "Remove their ability to message, mention, or add you as a friend.",
@@ -17778,7 +17780,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241150", ", Version Hash: ").concat("6b68b62113878d5f7bb0fb8a369668d6f63aa7cc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241175", ", Version Hash: ").concat("9c536f8375eab4b42acdf37edd8d616fb6b96d31")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20139,8 +20141,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241150", "241150"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241150")), _ = 0), _
+        let _ = parseInt((e = "241175", "241175"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241175")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29391,4 +29393,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b7afae1f5083b9dc7cd0.js.map
+//# sourceMappingURL=d25aae283559fdbe412a.js.map
