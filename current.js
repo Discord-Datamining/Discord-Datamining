@@ -6589,7 +6589,7 @@
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION: "Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.",
         PREMIUM_TIER_CARD_DISCOUNT_APPLIED: "discount applied",
         PREMIUM_TUTORIAL_GOT_IT: "Got it!",
-        PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION: "Get {duration} **free** to try it out. Then !!{price}!!.",
+        PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW: "Try {planName} for {duration} on us. Then !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION: "Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_ACTIVATED: "free trial activated",
         INCLUDED: "Included",
@@ -13823,8 +13823,8 @@
         Q4_DROP_ANNOUNCEMENT_MODAL_EARLY_ACCESS_HEADER: "Early Access",
         Q4_DROP_ANNOUNCEMENT_MODAL_EARLY_ACCESS_DESCRIPTION: "Be the first to try some of our newest features. Now including early access to Clips!",
         Q4_DROP_ANNOUNCEMENT_MODAL_SPECIAL_PRICING_HEADER: "Member Pricing in the Shop",
-        Q4_DROP_ANNOUNCEMENT_MODAL_SPECIAL_PRICING_DESCRIPTION: "Snag sweet discounts on any - or every! - item at the Shop.",
-        Q4_DROP_ANNOUNCEMENT_MODAL_CUSTOM_APP_ICON_HEADER: "Custom App Icon",
+        Q4_DROP_ANNOUNCEMENT_MODAL_SPECIAL_PRICING_DESCRIPTION: "Snag sweet discounts on any (or every!) item at the Shop.",
+        Q4_DROP_ANNOUNCEMENT_MODAL_CUSTOM_APP_ICON_HEADER: "Custom App Icons",
         Q4_DROP_ANNOUNCEMENT_MODAL_CUSTOM_APP_ICON_DESCRIPTION: "Personalize your Discord experience with an app icon that matches your vibe.",
         Q4_DROP_ANNOUNCEMENT_MODAL_UNLIMITED_SUPER_REACTIONS_HEADER: "Unlimited Super Reactions",
         Q4_DROP_ANNOUNCEMENT_MODAL_UNLIMITED_SUPER_REACTIONS_DESCRIPTION: "We made Super Reactions unlimited so you can unleash the chaos in your chats.",
@@ -13833,7 +13833,7 @@
         Q4_DROP_WHATS_NEW_EARLY_ACCESS_CARD_DESCRIPTION_NON_SUB: "Get Nitro to get in on the inside scoop.",
         Q4_DROP_WHATS_NEW_EARLY_ACCESS_CARD_DESCRIPTION_SUB: "Nitro members, get ready to get your hands on the latest and greatest before everyone else.",
         Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_TITLE: "Special Member Pricing",
-        Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_SUBTITLE: "Snag sweet discounts on any - or every! - item at the Shop.",
+        Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_SUBTITLE: "Snag sweet discounts on any (or every!) item at the Shop.",
         Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_DESCRIPTION_NON_SUB: "Join Nitro to take advantage of these exclusive prices.",
         Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_DESCRIPTION_SUB: "Exclusive savings are reserved for Nitro members only.",
         Q4_DROP_WHATS_NEW_UNLIMITED_SUPER_REACTIONS_CARD_TITLE: "Unlimited Super Reactions",
@@ -17775,7 +17775,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240943", ", Version Hash: ").concat("c735578df69b05d891476a72ec378a7909e92ae6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240956", ", Version Hash: ").concat("b8356b539436b94d38aab9a28e2482b9506e78ef")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20136,8 +20136,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "240943", "240943"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240943")), _ = 0), _
+        let _ = parseInt((e = "240956", "240956"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240956")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29382,4 +29382,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6eaf5540c81a1da6e242.js.map
+//# sourceMappingURL=594913c0f391be497846.js.map
