@@ -2148,7 +2148,7 @@
         CLYDE_SECTION_DESCRIPTION: "Clyde is currently a free experiment and may generate content that could be considered biased, harmful, or inaccurate. Clyde follows server Automod rules. [Learn More]({helpdeskArticle})",
         ENABLE_CLYDE_SECTION: "Enable Clyde",
         EDIT_CLYDE: "Edit Clyde",
-        CANNOT_EDIT_CLYDE: "Clyde cannot be edited, he has been kicked from this server.",
+        CANNOT_EDIT_CLYDE: "Clyde cannot be edited, he has been banned from this server.",
         CANNOT_ADD_CLYDE: "Clyde cannot be added to the server, he has been banned.",
         SAD_CLYDE_ALT_TEXT: "sad face clyde",
         ENABLE_CLYDE_SECTION_SWITCH_DESCRIPTION: "This enables our AI chatbot to interact with members in this server.",
@@ -17783,7 +17783,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), r.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), r.default.PersistedStore.disableWrites = __OVERLAY__, r.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241278", ", Version Hash: ").concat("b541b5b6ffd4fba26831c1c6480b36fb3d865731")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241294", ", Version Hash: ").concat("d3f2e8dd9cf9a5e0cc6827975d97da24c03f848f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20144,8 +20144,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241278", "241278"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241278")), _ = 0), _
+        let _ = parseInt((e = "241294", "241294"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241294")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29396,4 +29396,4 @@
     }
   }
 ]);
-//# sourceMappingURL=3f03c5e8a1119169509a.js.map
+//# sourceMappingURL=68072f71b32fa878519f.js.map
