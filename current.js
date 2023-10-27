@@ -15122,7 +15122,7 @@
         GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_SETTINGS_DISPLAY_OPTIONS_PREMIUM_MEMBER_COUNT_DESCRIPTION: "Display how many subscribers you have",
         GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_SETTINGS_PRIMARY_TOGGLE_DISABLED_TOOLTIP: "You need at least one published tier to enable the Promo Page.",
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_SECTION_BASIC_INFO_NEEDS_APPLICATION: "Enable monetization first!",
-        FORM_HELP_SYSTEM_CHANNEL_ROLE_SUBSCRIPTION_PURCHASE_MESSAGES: "Send a message when someone purchases or renews a Server Subscription",
+        FORM_HELP_SYSTEM_CHANNEL_ROLE_SUBSCRIPTION_PURCHASE_MESSAGES: "Send a message when someone purchases a Server Product or Server Subscription",
         FORM_HELP_SYSTEM_CHANNEL_ROLE_SUBSCRIPTION_PURCHASE_MESSAGE_REPLIES: "Prompt members to reply to Server Subscription congratulation messages with a sticker",
         GUILD_ROLE_SUBSCRIPTION_CHECKLIST_HEADER: "Premium Setup",
         GUILD_ROLE_SUBSCRIPTION_CHECKLIST_PAYMENT_ENABLE: "Enable monetization",
@@ -16260,6 +16260,8 @@
         GUILD_SHOP_REPORT_MODAL_BODY: "Do you want to report [**!!{listingName}!!**] for violation of the [Server Monetization Terms]({monetizationTermsUrl}) or [Community Guidelines]({communityGuidelinesUrl})?",
         SKU_REPORT_CONFIRMATION_HEADER: "Report Submitted",
         SKU_REPORT_CONFIRMATION_BODY: "Your report has been submitted against [**!!{skuName}!!**]",
+        SYSTEM_MESSAGE_GUILD_PRODUCT_PURCHASE: "$[!!{username}!!](usernameHook) has purchased [{productName}](handleProductListingClick)!",
+        GUILD_PRODUCT_PURCHASE_THANK_YOU_CARD_TEXT: "Thank you,\n $[!!{username}!!](usernameHook)",
         THREAD_HAS_BEEN_DELETED: "Thread has been deleted.",
         FRIEND_INVITE_SHEET_TITLE: "Send Link to Add Friends",
         FRIEND_INVITE_EXPIRATION: "Links expire in {expirationDays} days, or {expirationUses} uses.",
@@ -17781,7 +17783,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), r.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), r.default.PersistedStore.disableWrites = __OVERLAY__, r.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241274", ", Version Hash: ").concat("7456049ecb4a0a48238b09bf541b06ce17d55efe")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241278", ", Version Hash: ").concat("b541b5b6ffd4fba26831c1c6480b36fb3d865731")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20142,8 +20144,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241274", "241274"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241274")), _ = 0), _
+        let _ = parseInt((e = "241278", "241278"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241278")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29394,4 +29396,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6d70c04276fa44d8e07f.js.map
+//# sourceMappingURL=3f03c5e8a1119169509a.js.map
