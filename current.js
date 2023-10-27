@@ -864,6 +864,7 @@
         EMBEDDED_ACTIVITIES_IAP_NON_REFUNDABLE_SUBSCRIPTION_YEARLY: "Hey! This purchase is for a recurring subscription, which which means that we'll charge you today and continue to charge you monthly until you cancel. You may cancel anytime under User Settings > Subscriptions, and previous charges won’t be refunded unless required by law. This purchase is being offered to you by the developer of this Activity and can be accessed and used only when you’re in this Activity.",
         EMBEDDED_ACTIVITIES_IAP_NON_REFUNDABLE_SUBSCRIPTION_RATE_AND_RENEWAL: "Hey! This purchase is for a recurring subscription, which will renew for **{rate}** on **{renewalDate, date, medium}**. You may cancel anytime under User Settings > Subscriptions, and previous charges won’t be refunded unless required by law. This purchase is being offered to you by the developer of this Activity and can be accessed and used only when you’re in this Activity.",
         EMBEDDED_ACTIVITIES_MINIMIZE_A11Y_LABEL: "Minimize activity",
+        EMBEDDED_ACTIVITIES_EXPAND_A11Y_LABEL: "Expand activity",
         ACTIVITY_REPORT_POST_ACTIVITY_HEADER: "How'd !!{applicationName}!! go?",
         ACTIVITY_REPORT_POST_ACTIVITY_PROBLEM_TITLE: "What could have gone better?",
         ACTIVITY_REPORTED_POSITIVE: "Thanks for sharing! Feedback like yours helps us improve Activities.",
@@ -17777,7 +17778,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241149", ", Version Hash: ").concat("a1ed869c3b03de00df6b89cb769dad3bd3e0dd9c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241150", ", Version Hash: ").concat("6b68b62113878d5f7bb0fb8a369668d6f63aa7cc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20138,8 +20139,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241149", "241149"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241149")), _ = 0), _
+        let _ = parseInt((e = "241150", "241150"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241150")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29390,4 +29391,4 @@
     }
   }
 ]);
-//# sourceMappingURL=2f12cff08a1b1de5feb4.js.map
+//# sourceMappingURL=b7afae1f5083b9dc7cd0.js.map
