@@ -17775,7 +17775,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241024", ", Version Hash: ").concat("e679da6284f50f15868cf42e8823cd89991bad76")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241045", ", Version Hash: ").concat("17be672a9de451540450869dc20311fb4342ad8d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20136,8 +20136,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241024", "241024"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241024")), _ = 0), _
+        let _ = parseInt((e = "241045", "241045"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241045")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21587,17 +21587,18 @@
         T = E("793441");
 
       function i(e) {
+        var _;
         let {
-          channelId: _,
-          message: E,
-          optimistic: t,
-          isPushNotification: i
+          channelId: E,
+          message: t,
+          optimistic: i,
+          isPushNotification: s
         } = e;
-        if (!(0, r.isEligibleForExplicitMediaRedaction)() || t || i || null == _ || E.author.id === o.default.getId()) return !1;
-        let s = I.default.getChannelId(),
-          S = n.default.getCurrentSidebarChannelId(s),
-          N = _ === s || _ === S;
-        return !!(N && (0, T.shouldRedactExplicitContent)(E)) && ((0, a.sendMessagesForScanning)(_, [E.id]), !0)
+        if (!(0, r.isEligibleForExplicitMediaRedaction)() || i || s || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === o.default.getId()) return !1;
+        let S = I.default.getChannelId(),
+          N = n.default.getCurrentSidebarChannelId(S),
+          O = E === S || E === N;
+        return !!(O && (0, T.shouldRedactExplicitContent)(t)) && ((0, a.sendMessagesForScanning)(E, [t.id]), !0)
       }
 
       function s(e) {
@@ -23533,18 +23534,19 @@
           s[t] = new Set(I)
         },
         MESSAGE_CREATE: function(e) {
+          var _;
           let {
-            channelId: _,
-            message: E,
-            optimistic: t,
-            isPushNotification: o
+            channelId: E,
+            message: t,
+            optimistic: o,
+            isPushNotification: n
           } = e;
-          if (t || o) return !1;
-          let n = a.default.getChannel(_);
-          if (null == n) return !1;
-          let I = n.guild_id;
-          if (null == I || null == s[I]) return !1;
-          R(I, _, E.id, E.author.id)
+          if (o || n) return !1;
+          let I = a.default.getChannel(E);
+          if (null == I) return !1;
+          let r = I.guild_id;
+          if (null == r || null == s[r]) return !1;
+          R(r, E, t.id, null === (_ = t.author) || void 0 === _ ? void 0 : _.id)
         },
         GUILD_DELETE: function(e) {
           let {
@@ -24304,14 +24306,15 @@
             } = await this._getOrLoadOnboardingMemberActions(_), n = null == t ? void 0 : t.find(e => e.channelId === E);
             (null == o ? void 0 : o[E]) !== !0 && null != n && n.actionType === O.NewMemberActionTypes.VIEW && (0, S.completeNewMemberAction)(_, E)
           }, this.handleMessageSend = e => {
+            var _;
             let {
-              guildId: _,
-              channelId: E,
-              message: t
+              guildId: E,
+              channelId: t,
+              message: o
             } = e;
-            if (null == _ || null == E || t.author.id !== a.default.getId()) return;
-            let o = r.default.getChannel(E);
-            (null == o ? void 0 : o.isForumPost()) && (null == o ? void 0 : o.parent_id) != null && this._completeChatAction(_, o.parent_id), this._completeChatAction(_, E)
+            if (null == E || null == t || (null === (_ = o.author) || void 0 === _ ? void 0 : _.id) !== a.default.getId()) return;
+            let n = r.default.getChannel(t);
+            (null == n ? void 0 : n.isForumPost()) && (null == n ? void 0 : n.parent_id) != null && this._completeChatAction(E, n.parent_id), this._completeChatAction(E, t)
           }, this.handleThreadCreate = e => {
             var _;
             let {
@@ -26301,15 +26304,15 @@
           }
         }
         handleMessageCreate(e) {
-          var _, E;
+          var _, E, t;
           let {
-            channelId: t,
-            message: o
-          } = e, n = r.default.getChannel(t);
-          if (o.author.id !== a.default.getId() || !(null == n ? void 0 : n.isActiveThread())) return;
-          let T = new Date(null !== (E = null === (_ = n.threadMetadata) || void 0 === _ ? void 0 : _.archiveTimestamp) && void 0 !== E ? E : 0).getTime(),
-            i = Date.now() - T;
-          i < 5e3 && I.default.resort(n.parent_id)
+            channelId: o,
+            message: n
+          } = e, T = r.default.getChannel(o);
+          if ((null === (_ = n.author) || void 0 === _ ? void 0 : _.id) !== a.default.getId() || !(null == T ? void 0 : T.isActiveThread())) return;
+          let i = new Date(null !== (t = null === (E = T.threadMetadata) || void 0 === E ? void 0 : E.archiveTimestamp) && void 0 !== t ? t : 0).getTime(),
+            s = Date.now() - i;
+          s < 5e3 && I.default.resort(T.parent_id)
         }
         constructor(...e) {
           super(...e), this.actions = {
@@ -29382,4 +29385,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b2660c923102fdadc767.js.map
+//# sourceMappingURL=c652c9705c81013b1539.js.map
