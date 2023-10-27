@@ -16102,6 +16102,8 @@
         CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_TITLE: "Verified payment account required",
         CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY: "You must setup and complete verification of your payment account before you can publish.\n\nHead over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](highlightHook) to get started.",
         CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY_WITH_LINK: "You must setup and complete verification of your payment account before you can publish.\n\n[Click here]({url}) to get started, or head over to the $[Payment](highlightHook) tab at any time and click $[Edit Payment Info](highlightHook).",
+        CREATOR_MONETIZATION_RESTRICTED_GUILD_CANNOT_EDIT_PRODUCT_TITLE: "Cannot edit the product",
+        CREATOR_MONETIZATION_RESTRICTED_GUILD_CANNOT_EDIT_PRODUCT_BODY: "Your server is currently restricted for monetization and you cannot edit products. Check your email for details",
         GUILD_PRODUCT_EDIT_MODAL_CARD_PREVIEW_HEADING: "Here's what members see",
         GUILD_PRODUCT_EDIT_MODAL_CARD_PREVIEW_DESCRIPTION: "This is a preview of what your server product will look like to people on Discord when you share in-chat.",
         GUILD_PRODUCT_EDIT_MODAL_SAVE_DRAFT_BUTTON: "Save as draft",
@@ -17775,7 +17777,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241115", ", Version Hash: ").concat("3f85def6ac08cc3dbac54173dd7aca983c579e71")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241119", ", Version Hash: ").concat("4280dc497b0573f45ddc9644c249fbb5ba3647c5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20136,8 +20138,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241115", "241115"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241115")), _ = 0), _
+        let _ = parseInt((e = "241119", "241119"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241119")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29385,4 +29387,4 @@
     }
   }
 ]);
-//# sourceMappingURL=9365da18e60aba54cbd7.js.map
+//# sourceMappingURL=1de33bef32260b6b7b75.js.map
