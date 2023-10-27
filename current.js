@@ -14869,7 +14869,7 @@
         CHANGE_DECORATION_MODAL_PREMIUM_STARTER_HEADER: "Exclusive to Nitro",
         CHANGE_DECORATION_MODAL_PREMIUM_STARTER_DESC: "Collect and use these bonus decorations anytime with an active Nitro subscription.",
         CHANGE_DECORATION_MODAL_PREVIEW_PURCHASE: "Want this decoration for yourself? Visit the shop to buy and add it to your collection. Only with Nitro.",
-        CHANGE_DECORATION_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus decoration anytime with an active Nitro subscription",
+        CHANGE_DECORATION_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus decoration anytime with an active Nitro subscription.",
         CHANGE_DECORATION_MODAL_PREVIEW_STARTER_CHURNED: "Use this bonus decoration with an active Nitro subscription.",
         CHANGE_DECORATION_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this decoration for yourself? Head to the shop to buy and collect it!",
         CHANGE_DECORATION_MODAL_PREVIEW_STARTER_PREMIUM: "Want this for yourself? Head to the shop to collect it!",
@@ -14877,7 +14877,9 @@
         CHANGE_DECORATION_MODAL_SHOP_PREVIEW_DESC: "Try on some of the decorations currently available for purchase in the shop.",
         CHANGE_DECORATION_MODAL_SHOP_PREVIEW_HEADER_STARTER_DESC: "Buy and collect decorations with a Nitro subscription.",
         CHANGE_DECORATION_MODAL_CHAT_PREVIEW: "Chat Preview",
-        CHANGE_PFX_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus profile effect anytime with an active Nitro subscription",
+        CHANGE_PFX_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus profile effect anytime with an active Nitro subscription.",
+        CHANGE_PFX_MODAL_PREVIEW_STARTER_CHURNED: "Use this bonus profile effect with an active Nitro subscription.",
+        CHANGE_PFX_MODAL_SHOP_PREVIEW_HEADER_STARTER_DESC: "Buy and collect profile effects with a Nitro subscription.",
         COLLECTIBLES_SOCIAL_UPSELL: "Like this avatar decoration? $[Get your own from the shop](openShop).",
         COLLECTIBLES_SOCIAL_UPSELL_PREMIUM: "Like this avatar decoration? $[Claim it with your Nitro subscription](openShop).",
         COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_TITLE: "New Avatar Decorations!",
@@ -17784,7 +17786,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241395", ", Version Hash: ").concat("047e62acd2046411616f519940501fdabd794197")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241405", ", Version Hash: ").concat("3c83f24ea249b3afa79c7d7ea58841b9fb3aaea0")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20145,8 +20147,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241395", "241395"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241395")), _ = 0), _
+        let _ = parseInt((e = "241405", "241405"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241405")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29397,4 +29399,4 @@
     }
   }
 ]);
-//# sourceMappingURL=0ff34686797ca8afed0c.js.map
+//# sourceMappingURL=3e953773488bcf434038.js.map
