@@ -17775,7 +17775,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241068", ", Version Hash: ").concat("aa8c011c1ac6ef5beba88f694e47f2aa994093a2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241079", ", Version Hash: ").concat("4488fbccc26e831b5ed0e6aad37907f6f94d4fe2")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19015,28 +19015,28 @@
         } = e, {
           analyticsLocations: n,
           AnalyticsLocationProvider: T
-        } = (0, O.default)(N.default.APP_ICON_EDITOR), {
-          isUpsellPreview: i,
-          isEditorOpen: A,
-          shouldEditorAnimate: R
+        } = (0, O.default)(N.default.APP_ICON_EDITOR), i = (0, a.useStateFromStores)([L.default], () => L.default.getCurrentUser()), {
+          isUpsellPreview: A,
+          isEditorOpen: R,
+          shouldEditorAnimate: l
         } = (0, a.useStateFromStoresObject)([c.default, S.default], () => ({
           isUpsellPreview: c.default.isUpsellPreview,
           isEditorOpen: c.default.isEditorOpen,
           shouldEditorAnimate: _ && !S.default.useReducedMotion
         }));
         o.useEffect(() => {
-          i && C.default.track(U.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
+          A && C.default.track(U.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
             type: P.PremiumUpsellTypes.APP_ICON_UPSELL,
             location_stack: n
           })
-        }, [i, n]);
-        let l = (0, s.default)(null, i ? G : U.NOOP);
-        return o.useEffect(() => {
-          if (i && !A) return G
-        }, [i, A]), (0, t.jsx)(T, {
+        }, [A, n]);
+        let u = (0, s.default)(null, A ? G : U.NOOP);
+        return (o.useEffect(() => {
+          if (A && !R) return G
+        }, [A, R]), null == i) ? null : (0, t.jsx)(T, {
           children: (0, t.jsx)("div", {
-            ref: l,
-            className: I(m.editor, R ? m.editorAnimate : null),
+            ref: u,
+            className: I(m.editor, l ? m.editorAnimate : null),
             children: (0, t.jsxs)(r.HeadingLevel, {
               children: [(0, t.jsx)(B, {
                 markAsDismissed: E
@@ -20136,8 +20136,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241068", "241068"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241068")), _ = 0), _
+        let _ = parseInt((e = "241079", "241079"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241079")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29385,4 +29385,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b49cea96e5bd6a48eecb.js.map
+//# sourceMappingURL=11666b8b3d4c78fd07d6.js.map
