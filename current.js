@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["83000"], {
+  ["57318"], {
     229353: function(e, _, E) {
       e.exports = Object.freeze({
         DISCORD: "Discord",
@@ -7076,11 +7076,12 @@
         PARTNER_PROMOTION_ERROR_TITLE: "Uh oh!",
         PARTNER_PROMOTION_ERROR_BODY: "Looks like something went wrong.",
         PARTNER_PROMOTION_MAX_CLAIMS_ERROR_BODY: "Looks like this promotion has reached its maximum number of claims.",
-        PARTNER_PROMOTION_NEW_SUBSCRIPTION_REQUIRED_ERROR_BODY: "Oh no! It looks like you have Nitro already.",
+        PARTNER_PROMOTION_NEW_SUBSCRIPTION_REQUIRED_ERROR_BODY: "It looks like you have Nitro already.",
         PARTNER_PROMOTION_PREVIOUS_PURCHASE_ERROR_BODY: "Sorry, looks like you’ve already had a Nitro sub!",
         PARTNER_PROMOTION_USER_CLAIMED_ERROR_BODY: "Looks like you already claimed a gift.",
         PARTNER_PROMOTION_GIFT_CLAIMED_ERROR_BODY: "Looks like this gift has already been claimed.",
         PARTNER_PROMOTION_USER_NOT_VERIFIED_ERROR_BODY: "Looks like your email isn’t verified. Make sure to verify your email before claiming this gift.",
+        PARTNER_PROMOTION_UNKNOWN_GIFT_ERROR_BODY: "Unknown gift.",
         REDEEM: "Redeem",
         UNLOCK_CODE: "Unlock Code",
         OUTBOUND_PROMOTION_REDEMPTION_MODAL_TITLE: "Awesome!",
@@ -16717,6 +16718,271 @@
         return Object.keys(t)
       }, o.id = "918327", e.exports = o
     },
+    690578: function(e, _, E) {
+      var t = {
+        "./af": "696777",
+        "./af.js": "696777",
+        "./ar": "712480",
+        "./ar-dz": "186466",
+        "./ar-dz.js": "186466",
+        "./ar-kw": "204387",
+        "./ar-kw.js": "204387",
+        "./ar-ly": "520943",
+        "./ar-ly.js": "520943",
+        "./ar-ma": "820069",
+        "./ar-ma.js": "820069",
+        "./ar-sa": "161758",
+        "./ar-sa.js": "161758",
+        "./ar-tn": "964382",
+        "./ar-tn.js": "964382",
+        "./ar.js": "712480",
+        "./az": "350544",
+        "./az.js": "350544",
+        "./be": "566972",
+        "./be.js": "566972",
+        "./bg": "646724",
+        "./bg.js": "646724",
+        "./bm": "312607",
+        "./bm.js": "312607",
+        "./bn": "888794",
+        "./bn.js": "888794",
+        "./bo": "631987",
+        "./bo.js": "631987",
+        "./br": "117040",
+        "./br.js": "117040",
+        "./bs": "373873",
+        "./bs.js": "373873",
+        "./ca": "725185",
+        "./ca.js": "725185",
+        "./cs": "634626",
+        "./cs.js": "634626",
+        "./cv": "696520",
+        "./cv.js": "696520",
+        "./cy": "557635",
+        "./cy.js": "557635",
+        "./da": "913057",
+        "./da.js": "913057",
+        "./de": "978252",
+        "./de-at": "837160",
+        "./de-at.js": "837160",
+        "./de-ch": "704010",
+        "./de-ch.js": "704010",
+        "./de.js": "978252",
+        "./dv": "425222",
+        "./dv.js": "425222",
+        "./el": "569324",
+        "./el.js": "569324",
+        "./en-au": "411994",
+        "./en-au.js": "411994",
+        "./en-ca": "32933",
+        "./en-ca.js": "32933",
+        "./en-gb": "473837",
+        "./en-gb.js": "473837",
+        "./en-ie": "792578",
+        "./en-ie.js": "792578",
+        "./en-il": "868740",
+        "./en-il.js": "868740",
+        "./en-nz": "186104",
+        "./en-nz.js": "186104",
+        "./eo": "254437",
+        "./eo.js": "254437",
+        "./es": "212050",
+        "./es-do": "471728",
+        "./es-do.js": "471728",
+        "./es-us": "889327",
+        "./es-us.js": "889327",
+        "./es.js": "212050",
+        "./et": "822666",
+        "./et.js": "822666",
+        "./eu": "865338",
+        "./eu.js": "865338",
+        "./fa": "988398",
+        "./fa.js": "988398",
+        "./fi": "506309",
+        "./fi.js": "506309",
+        "./fo": "514395",
+        "./fo.js": "514395",
+        "./fr": "781604",
+        "./fr-ca": "634510",
+        "./fr-ca.js": "634510",
+        "./fr-ch": "700827",
+        "./fr-ch.js": "700827",
+        "./fr.js": "781604",
+        "./fy": "763847",
+        "./fy.js": "763847",
+        "./gd": "159224",
+        "./gd.js": "159224",
+        "./gl": "96607",
+        "./gl.js": "96607",
+        "./gom-latn": "781538",
+        "./gom-latn.js": "781538",
+        "./gu": "517733",
+        "./gu.js": "517733",
+        "./he": "273935",
+        "./he.js": "273935",
+        "./hi": "269004",
+        "./hi.js": "269004",
+        "./hr": "617128",
+        "./hr.js": "617128",
+        "./hu": "710652",
+        "./hu.js": "710652",
+        "./hy-am": "709504",
+        "./hy-am.js": "709504",
+        "./id": "536943",
+        "./id.js": "536943",
+        "./is": "826975",
+        "./is.js": "826975",
+        "./it": "447366",
+        "./it.js": "447366",
+        "./ja": "656374",
+        "./ja.js": "656374",
+        "./jv": "515820",
+        "./jv.js": "515820",
+        "./ka": "709988",
+        "./ka.js": "709988",
+        "./kk": "715760",
+        "./kk.js": "715760",
+        "./km": "806908",
+        "./km.js": "806908",
+        "./kn": "846429",
+        "./kn.js": "846429",
+        "./ko": "954812",
+        "./ko.js": "954812",
+        "./ky": "447966",
+        "./ky.js": "447966",
+        "./lb": "328716",
+        "./lb.js": "328716",
+        "./lo": "518498",
+        "./lo.js": "518498",
+        "./lt": "719583",
+        "./lt.js": "719583",
+        "./lv": "349300",
+        "./lv.js": "349300",
+        "./me": "581689",
+        "./me.js": "581689",
+        "./mi": "101484",
+        "./mi.js": "101484",
+        "./mk": "959631",
+        "./mk.js": "959631",
+        "./ml": "617052",
+        "./ml.js": "617052",
+        "./mn": "697126",
+        "./mn.js": "697126",
+        "./mr": "885070",
+        "./mr.js": "885070",
+        "./ms": "318471",
+        "./ms-my": "383859",
+        "./ms-my.js": "383859",
+        "./ms.js": "318471",
+        "./mt": "670489",
+        "./mt.js": "670489",
+        "./my": "516631",
+        "./my.js": "516631",
+        "./nb": "412630",
+        "./nb.js": "412630",
+        "./ne": "111330",
+        "./ne.js": "111330",
+        "./nl": "530848",
+        "./nl-be": "97673",
+        "./nl-be.js": "97673",
+        "./nl.js": "530848",
+        "./nn": "396450",
+        "./nn.js": "396450",
+        "./pa-in": "378626",
+        "./pa-in.js": "378626",
+        "./pl": "917383",
+        "./pl.js": "917383",
+        "./pt": "344833",
+        "./pt-br": "965625",
+        "./pt-br.js": "965625",
+        "./pt.js": "344833",
+        "./ro": "914582",
+        "./ro.js": "914582",
+        "./ru": "287980",
+        "./ru.js": "287980",
+        "./sd": "437127",
+        "./sd.js": "437127",
+        "./se": "285023",
+        "./se.js": "285023",
+        "./si": "808535",
+        "./si.js": "808535",
+        "./sk": "205027",
+        "./sk.js": "205027",
+        "./sl": "865537",
+        "./sl.js": "865537",
+        "./sq": "660931",
+        "./sq.js": "660931",
+        "./sr": "618854",
+        "./sr-cyrl": "403841",
+        "./sr-cyrl.js": "403841",
+        "./sr.js": "618854",
+        "./ss": "776465",
+        "./ss.js": "776465",
+        "./sv": "926502",
+        "./sv.js": "926502",
+        "./sw": "582228",
+        "./sw.js": "582228",
+        "./ta": "762109",
+        "./ta.js": "762109",
+        "./te": "562294",
+        "./te.js": "562294",
+        "./tet": "876158",
+        "./tet.js": "876158",
+        "./tg": "385050",
+        "./tg.js": "385050",
+        "./th": "21774",
+        "./th.js": "21774",
+        "./tl-ph": "971882",
+        "./tl-ph.js": "971882",
+        "./tlh": "138641",
+        "./tlh.js": "138641",
+        "./tr": "437138",
+        "./tr.js": "437138",
+        "./tzl": "94836",
+        "./tzl.js": "94836",
+        "./tzm": "614402",
+        "./tzm-latn": "309056",
+        "./tzm-latn.js": "309056",
+        "./tzm.js": "614402",
+        "./ug-cn": "89454",
+        "./ug-cn.js": "89454",
+        "./uk": "986472",
+        "./uk.js": "986472",
+        "./ur": "688394",
+        "./ur.js": "688394",
+        "./uz": "994235",
+        "./uz-latn": "261578",
+        "./uz-latn.js": "261578",
+        "./uz.js": "994235",
+        "./vi": "360304",
+        "./vi.js": "360304",
+        "./x-pseudo": "859244",
+        "./x-pseudo.js": "859244",
+        "./yo": "858262",
+        "./yo.js": "858262",
+        "./zh-cn": "278573",
+        "./zh-cn.js": "278573",
+        "./zh-hk": "862769",
+        "./zh-hk.js": "862769",
+        "./zh-tw": "394225",
+        "./zh-tw.js": "394225"
+      };
+
+      function o(e) {
+        return E(n(e))
+      }
+
+      function n(e) {
+        if (!E.o(t, e)) {
+          var _ = Error("Cannot find module '" + e + "'");
+          throw _.code = "MODULE_NOT_FOUND", _
+        }
+        return t[e]
+      }
+      o.id = '"690578"', o.keys = function() {
+        return Object.keys(t)
+      }, o.resolve = n, e.exports = o
+    },
     915934: function(e, _, E) {
       "use strict";
       e.exports = E.p + "2a9096474ecb8192b3ce.webp"
@@ -17572,7 +17838,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241496", ", Version Hash: ").concat("3dc33fa0e0a468c1d50efccc6eae29b711fc31bb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241718", ", Version Hash: ").concat("db3fa6250faf01823a3d1d58bfbd5a4c479ec15d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19923,8 +20189,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241496", "241496"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241496")), _ = 0), _
+        let _ = parseInt((e = "241718", "241718"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241718")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20879,8 +21145,8 @@
         W = E("542489"),
         K = E("983782"),
         x = E("708169"),
-        X = E("668596"),
-        j = E("587974"),
+        j = E("668596"),
+        X = E("587974"),
         Q = E("773336"),
         J = E("719923"),
         q = E("269936"),
@@ -20957,7 +21223,7 @@
                 children: (0, t.jsx)($.default, {
                   children: (0, t.jsxs)(O.FocusRingScope, {
                     containerRef: eu,
-                    children: [(0, t.jsx)(j.MaskLibrary, {}), (0, t.jsx)(k.default, {}), (0, t.jsx)(a.FocusGuard, {}), null != N ? (0, t.jsx)(en, {
+                    children: [(0, t.jsx)(X.MaskLibrary, {}), (0, t.jsx)(k.default, {}), (0, t.jsx)(a.FocusGuard, {}), null != N ? (0, t.jsx)(en, {
                       type: N,
                       themeOverride: V
                     }) : null, (0, t.jsx)(C.AppWindowContextProvider, {
@@ -20979,13 +21245,13 @@
                             className: et.notAppAsidePanel,
                             "data-app-not-dev-tools": !0,
                             children: (0, t.jsx)(p.CommonConfettiCannonContextProvider, {
-                              children: (0, t.jsx)(X.VerificationLayerProvider, {
+                              children: (0, t.jsx)(j.VerificationLayerProvider, {
                                 children: (0, t.jsxs)(W.default.Provider, {
                                   value: d.default,
                                   children: [(0, t.jsx)("div", {
                                     className: r(L ? et.mobileApp : et.app),
                                     children: _
-                                  }), (0, t.jsx)(P.default, {}), (0, t.jsx)(l.default, {}), (0, t.jsx)(O.Modals, {}), (0, t.jsx)(u.default, {}), (0, t.jsx)(x.FullScreenLayers, {}), (0, t.jsx)(K.AppLayerContainer, {}), (0, t.jsx)(X.VerificationLayerContainer, {}), (0, t.jsx)(O.ToastContainer, {}), (0, t.jsx)(U.default, {}), (0, t.jsx)(B.default, {}), eL && (0, t.jsx)(eo, {})]
+                                  }), (0, t.jsx)(P.default, {}), (0, t.jsx)(l.default, {}), (0, t.jsx)(O.Modals, {}), (0, t.jsx)(u.default, {}), (0, t.jsx)(x.FullScreenLayers, {}), (0, t.jsx)(K.AppLayerContainer, {}), (0, t.jsx)(j.VerificationLayerContainer, {}), (0, t.jsx)(O.ToastContainer, {}), (0, t.jsx)(U.default, {}), (0, t.jsx)(B.default, {}), eL && (0, t.jsx)(eo, {})]
                                 })
                               })
                             })
@@ -30440,7 +30706,7 @@
       var t = E("44170"),
         o = E("860347"),
         n = E.n(o),
-        r = E("606606"),
+        r = E("866227"),
         a = E.n(r),
         i = E("907407");
       E.g.IntlMessageFormat = n, E("394069"), E("351752"), E("329547"), E("784943"), E("643072"), E("258947"), E("575137"), E("27213"), E("753950"), E("677642"), E("276542"), E("351643"), E("8575"), E("658724"), E("23647"), E("362209"), E("735062"), E("994548"), E("975990"), E("870043"), E("73319"), E("583263"), E("714405"), E("272318"), E("403290"), E("408237"), E("138432"), E("601337"), delete E.g.IntlMessageFormat, "undefined" == typeof Intl && E("246663");
@@ -32399,8 +32665,8 @@
           }])
         }
       }
-      let X = new x;
-      class j extends M.MessageType {
+      let j = new x;
+      class X extends M.MessageType {
         create(e) {
           let _ = {
             videoBackgroundFilterDesktop: {
@@ -32421,7 +32687,7 @@
               case 1:
                 o.videoBackgroundFilterDesktop = {
                   oneofKind: "blur",
-                  blur: X.internalBinaryRead(e, e.uint32(), E, o.videoBackgroundFilterDesktop.blur)
+                  blur: j.internalBinaryRead(e, e.uint32(), E, o.videoBackgroundFilterDesktop.blur)
                 };
                 break;
               case 2:
@@ -32461,7 +32727,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          "blur" === e.videoBackgroundFilterDesktop.oneofKind && X.internalBinaryWrite(e.videoBackgroundFilterDesktop.blur, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), "presetOption" === e.videoBackgroundFilterDesktop.oneofKind && _.tag(2, M.WireType.Varint).uint32(e.videoBackgroundFilterDesktop.presetOption), "customAsset" === e.videoBackgroundFilterDesktop.oneofKind && K.internalBinaryWrite(e.videoBackgroundFilterDesktop.customAsset, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.alwaysPreviewVideo && h.BoolValue.internalBinaryWrite(e.alwaysPreviewVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.afkTimeout && h.UInt32Value.internalBinaryWrite(e.afkTimeout, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.streamNotificationsEnabled && h.BoolValue.internalBinaryWrite(e.streamNotificationsEnabled, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.nativePhoneIntegrationEnabled && h.BoolValue.internalBinaryWrite(e.nativePhoneIntegrationEnabled, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.soundboardSettings && ef.internalBinaryWrite(e.soundboardSettings, _.tag(9, M.WireType.LengthDelimited).fork(), E).join();
+          "blur" === e.videoBackgroundFilterDesktop.oneofKind && j.internalBinaryWrite(e.videoBackgroundFilterDesktop.blur, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), "presetOption" === e.videoBackgroundFilterDesktop.oneofKind && _.tag(2, M.WireType.Varint).uint32(e.videoBackgroundFilterDesktop.presetOption), "customAsset" === e.videoBackgroundFilterDesktop.oneofKind && K.internalBinaryWrite(e.videoBackgroundFilterDesktop.customAsset, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.alwaysPreviewVideo && h.BoolValue.internalBinaryWrite(e.alwaysPreviewVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.afkTimeout && h.UInt32Value.internalBinaryWrite(e.afkTimeout, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.streamNotificationsEnabled && h.BoolValue.internalBinaryWrite(e.streamNotificationsEnabled, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.nativePhoneIntegrationEnabled && h.BoolValue.internalBinaryWrite(e.nativePhoneIntegrationEnabled, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.soundboardSettings && ef.internalBinaryWrite(e.soundboardSettings, _.tag(9, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -32471,7 +32737,7 @@
             name: "blur",
             kind: "message",
             oneof: "videoBackgroundFilterDesktop",
-            T: () => X
+            T: () => j
           }, {
             no: 2,
             name: "preset_option",
@@ -32512,7 +32778,7 @@
           }])
         }
       }
-      let Q = new j;
+      let Q = new X;
       class J extends M.MessageType {
         create(e) {
           let _ = {
@@ -35442,4 +35708,4 @@
     }
   }
 ]);
-//# sourceMappingURL=534c882c6f9ffe1d4f0f.js.map
+//# sourceMappingURL=7d5b8962e63ef0604d3c.js.map
