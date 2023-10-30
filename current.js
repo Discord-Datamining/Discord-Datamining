@@ -17811,20 +17811,22 @@
           colorClass: a = "",
           ...i
         } = e;
-        return (0, t.jsx)("svg", {
+        return (0, t.jsxs)("svg", {
           ...(0, n.default)(i),
           xmlns: "http://www.w3.org/2000/svg",
           width: _,
           height: E,
           fill: "none",
           viewBox: "0 0 24 24",
-          children: (0, t.jsx)("path", {
+          children: [(0, t.jsx)("path", {
             fill: "string" == typeof r ? r : r.css,
-            fillRule: "evenodd",
-            d: "M16.293 14.707a1 1 0 0 1 0-1.414l2.5-2.5a3.95 3.95 0 1 0-5.586-5.586l-2.5 2.5a1 1 0 1 1-1.414-1.414l2.5-2.5a5.95 5.95 0 0 1 8.414 8.414l-2.5 2.5a1 1 0 0 1-1.414 0ZM7.707 9.293a1 1 0 0 1 0 1.414l-2.5 2.5a3.95 3.95 0 0 0 5.586 5.586l2.5-2.5a1 1 0 0 1 1.414 1.414l-2.5 2.5a5.95 5.95 0 1 1-8.414-8.414l2.5-2.5a1 1 0 0 1 1.414 0Zm7 1.414a1 1 0 1 0-1.414-1.414l-4 4a1 1 0 0 0 1.414 1.414l4-4Z",
-            clipRule: "evenodd",
+            d: "M16.293 14.707a1 1 0 0 1 0-1.414l2.5-2.5a3.95 3.95 0 1 0-5.586-5.586l-2.5 2.5a1 1 0 1 1-1.414-1.414l2.5-2.5a5.95 5.95 0 1 1 8.414 8.414l-2.5 2.5a1 1 0 0 1-1.414 0ZM7.707 9.293a1 1 0 0 1 0 1.414l-2.5 2.5a3.95 3.95 0 0 0 5.586 5.586l2.5-2.5a1 1 0 1 1 1.414 1.414l-2.5 2.5a5.95 5.95 0 0 1-8.414-8.414l2.5-2.5a1 1 0 0 1 1.414 0Z",
             className: a
-          })
+          }), (0, t.jsx)("path", {
+            fill: "string" == typeof r ? r : r.css,
+            d: "M14.707 10.707a1 1 0 1 0-1.414-1.414l-4 4a1 1 0 0 0 1.414 1.414l4-4Z",
+            className: a
+          })]
         })
       }
     },
@@ -17851,7 +17853,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241782", ", Version Hash: ").concat("63a7a2a6684b6abf46568922a9dee7a606a676d4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241795", ", Version Hash: ").concat("552747ed051b49ee13ddfa35c5e583e0a93d6ea1")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20210,8 +20212,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241782", "241782"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241782")), _ = 0), _
+        let _ = parseInt((e = "241795", "241795"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241795")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35722,4 +35724,4 @@
     }
   }
 ]);
-//# sourceMappingURL=0d881356991b14f467cd.js.map
+//# sourceMappingURL=fb0749f5c8cc2f22fd0f.js.map
