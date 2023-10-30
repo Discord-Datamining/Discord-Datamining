@@ -16285,7 +16285,6 @@
         FRIEND_INVITE_SHEET_TITLE: "Send Link to Add Friends",
         FRIEND_INVITE_EXPIRATION: "Links expire in {expirationDays} days, or {expirationUses} uses.",
         FRIEND_INVITE_REVOKE_ALL: "Revoke All Links",
-        FRIEND_ADD_INSTRUCTIONS: "Type both their username and 4-digit tag. Keep in mind that username is case sensitive.",
         FRIEND_INVITE_ACCEPT_CONFIRMATION: "You are now friends with {username}!",
         PAYMENTS_ALL_METHOD_BUTTON: "All payment methods",
         DAY: "{count, plural, =1 {day} other {{count} days}}",
@@ -17853,7 +17852,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241862", ", Version Hash: ").concat("095354fc4be8ec4f5f7277d07fb95565b2554ce1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241874", ", Version Hash: ").concat("ba8523967e352fc0f8197ba570864ce0f7e03461")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20212,8 +20211,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "241862", "241862"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241862")), _ = 0), _
+        let _ = parseInt((e = "241874", "241874"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241874")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35724,4 +35723,4 @@
     }
   }
 ]);
-//# sourceMappingURL=bdc6ecda62fcf714d8cb.js.map
+//# sourceMappingURL=df168150540d3035f85c.js.map
