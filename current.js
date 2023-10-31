@@ -16541,6 +16541,7 @@
         REPORTS_USER_PREVIEW_TITLE: "Selected User",
         REPORTS_FREE_TEXT_PLACEHOLDER: "(Optional) Provide more context about your report here",
         REPORTS_USER_MENU_OPTION_MOBILE: "Report User Profile",
+        POLL: "Poll",
         POLLS: "Polls",
         POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
         POLL_SUBMIT_VOTE: "Submit Vote",
@@ -17960,7 +17961,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), i.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242164", ", Version Hash: ").concat("812507402bb2efa2aaba0fba9160d860cf809e1b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242167", ", Version Hash: ").concat("720a52097552acbf1e11b3eb847041f0e0e9f7a3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20402,8 +20403,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "242164", "242164"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242164")), _ = 0), _
+        let _ = parseInt((e = "242167", "242167"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242167")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36602,4 +36603,4 @@
     }
   }
 ]);
-//# sourceMappingURL=7537ae90ead0395bd9cf.js.map
+//# sourceMappingURL=58b4d8342e9be101cf68.js.map
