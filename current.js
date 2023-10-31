@@ -483,6 +483,8 @@
         COMMAND_ACCESSIBILITY_DESC_APP_ITEM_SELECTED: "{applicationName} application selected",
         COMMAND_ACCESSIBILITY_DESC_APP_HEADER_ITEM: "Slash command application {applicationName}",
         COMMAND_ACCESSIBILITY_DESC_COMMAND_OPTION_BUTTON: "Add command argument {optionName}",
+        APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recent Commands",
+        APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Apps in this server",
         APP_LAUNCHER_NO_REQUIRED_OPTIONS_CALLOUT: "Nothing required. You can send the command or add an option below",
         APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
         READY: "Ready",
@@ -17958,7 +17960,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), i.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242119", ", Version Hash: ").concat("e8f44f7ecc14e36dba1a4c0ee4d50d8c83a761fc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242125", ", Version Hash: ").concat("799a8db9148ac1a42ab3d03f158cac8a57e74f35")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20400,8 +20402,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "242119", "242119"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242119")), _ = 0), _
+        let _ = parseInt((e = "242125", "242125"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242125")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36600,4 +36602,4 @@
     }
   }
 ]);
-//# sourceMappingURL=71e1fb25a959f945d3b3.js.map
+//# sourceMappingURL=121ca10a01176b1dbc27.js.map
