@@ -17961,7 +17961,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), i.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242221", ", Version Hash: ").concat("8a0e8597d0f58938f49e28c8f9b7e905030c7e09")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242225", ", Version Hash: ").concat("d2a64ea5560bdb2a50dc19b56ae51fc96c4d0e77")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20403,8 +20403,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "242221", "242221"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242221")), _ = 0), _
+        let _ = parseInt((e = "242225", "242225"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242225")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20830,7 +20830,7 @@
           if (!(0, l.default)()) return;
           this.applyNativeClipsSettings();
           let e = (0, O.areClipsEnabled)();
-          if (!!e)(null == A.default.getHardwareClassification() || A.default.getHardwareClassificationVersion() !== u.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
+          if (!!e)(null == A.default.getHardwareClassification() || null == A.default.getHardwareClassificationForDecoupled() || A.default.getHardwareClassificationVersion() !== u.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
             o.default.dispatch({
               type: "CLIPS_CLASSIFY_HARDWARE",
               classification: e
@@ -36603,4 +36603,4 @@
     }
   }
 ]);
-//# sourceMappingURL=bbab708a8c76295fbbd5.js.map
+//# sourceMappingURL=923314c8cefa62f66331.js.map
