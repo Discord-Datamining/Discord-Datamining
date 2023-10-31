@@ -4777,6 +4777,7 @@
         FRIENDS_PENDING_REQUEST_HEADER: "Pending Requests — {pendingRequestNumber}",
         FRIENDS_EMPTY_STATE_SUBTITLE: "Try adding a friend with their username, or scan to see who is nearby.",
         FRIENDS_FRIEND_SUGGESTIONS_HEADER: "Friend Suggestions — {count}",
+        FRIENDS_SUGGESTED_FRIENDS_HEADER: "Suggested Friends - {count}",
         FRIENDS_ONLINE_HEADER: "Online — {online}",
         FRIENDS_OFFLINE_HEADER: "Offline — {offline}",
         FRIENDS_ALL_HEADER: "All friends — {count}",
@@ -10841,7 +10842,7 @@
         CONTACT_SYNC_LANDING_TITLE: "Find your friends",
         CONTACT_SYNC_LANDING_SUBTITLE_REDESIGN: "Let's see which of your contacts is already on Discord!",
         CONTACT_SYNC_SUBTITLE: "Discord can connect you with your friends and help them find you.",
-        CONTACT_SYNC_ADD_FRIENDS_SUBTITLE: "Sync your phone contacts to find people you know on Discord. [Learn more](learnMoreHook) about finding your friends",
+        CONTACT_SYNC_ADD_FRIENDS_SUBTITLE: "Sync your phone contacts to find people you know on Discord. [Learn more](learnMoreHook)",
         CONTACT_SYNC_LANDING_TOGGLE_LABEL: "Allow contacts to add me",
         CONTACT_SYNC_LANDING_DISCOVERABILITY_FOOTER: "This allows people to send you friend requests if they have your phone number saved in their contacts. $[Learn more about finding your friends](learnMoreHook)",
         CONTACT_SYNC_SETTING_LABEL: "Sync Contacts",
@@ -17965,7 +17966,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), i.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242310", ", Version Hash: ").concat("860c6a447fc74a862a5a5c78e645d6d5e746e5c1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242312", ", Version Hash: ").concat("fa71ffbea05a4ef1bf68ba47f3716cd3afaa09c3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20407,8 +20408,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "242310", "242310"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242310")), _ = 0), _
+        let _ = parseInt((e = "242312", "242312"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242312")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36607,4 +36608,4 @@
     }
   }
 ]);
-//# sourceMappingURL=84eea2eabd51b1300806.js.map
+//# sourceMappingURL=61e57a113c96c3e67792.js.map
