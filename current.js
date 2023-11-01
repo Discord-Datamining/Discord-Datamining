@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["97463"], {
+  ["49785"], {
     229353: function(e, _, E) {
       e.exports = Object.freeze({
         DISCORD: "Discord",
@@ -17629,6 +17629,40 @@
         })
       }
     },
+    54239: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        pushLayer: function() {
+          return o
+        },
+        popLayer: function() {
+          return n
+        },
+        popAllLayers: function() {
+          return r
+        }
+      });
+      var t = E("913144");
+
+      function o(e) {
+        t.default.dispatch({
+          type: "LAYER_PUSH",
+          component: e
+        })
+      }
+
+      function n() {
+        t.default.dispatch({
+          type: "LAYER_POP"
+        })
+      }
+
+      function r() {
+        t.default.dispatch({
+          type: "LAYER_POP_ALL"
+        })
+      }
+    },
     193990: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -17737,6 +17771,166 @@
           geoRankedRegions: _
         })
       }
+    },
+    920636: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return T
+        }
+      });
+      var t = E("37983"),
+        o = E("884691"),
+        n = E("414456"),
+        r = E.n(n),
+        a = E("77078"),
+        i = E("782340"),
+        I = E("347129");
+      class s extends o.PureComponent {
+        render() {
+          var e;
+          let {
+            title: _,
+            actionText: E,
+            children: n,
+            error: s,
+            isLoading: T,
+            maxLength: S,
+            transitionState: N,
+            helpMessage: O,
+            retryPrompt: A,
+            retrySuccessMessage: R
+          } = this.props, {
+            code: l,
+            errorMessage: L,
+            retrySuccess: u
+          } = this.state, C = o.Children.count(n) > 0 ? (0, t.jsx)(a.Card, {
+            type: a.Card.Types.WARNING,
+            className: I.card,
+            children: (0, t.jsx)(a.Text, {
+              variant: "text-md/normal",
+              children: n
+            })
+          }) : null, D = null != A ? (0, t.jsxs)(a.Text, {
+            className: r(I.submitText, I.spacing),
+            variant: "text-sm/normal",
+            children: [(0, t.jsx)("br", {}), (0, t.jsx)(a.Clickable, {
+              className: r(I.spacing, I.link),
+              onClick: this.handleRetry,
+              children: (0, t.jsx)(a.Anchor, {
+                children: A
+              })
+            })]
+          }) : null, c = u ? (0, t.jsx)(a.Card, {
+            type: a.Card.Types.SUCCESS,
+            className: I.card,
+            children: (0, t.jsx)(a.Text, {
+              variant: "text-md/normal",
+              children: R
+            })
+          }) : null;
+          return (0, t.jsx)(a.ModalRoot, {
+            transitionState: N,
+            children: (0, t.jsxs)("form", {
+              onSubmit: this.handleSubmit,
+              children: [(0, t.jsx)(a.ModalHeader, {
+                separator: !1,
+                children: (0, t.jsx)(a.Heading, {
+                  variant: "heading-lg/semibold",
+                  children: _
+                })
+              }), (0, t.jsxs)(a.ModalContent, {
+                children: [null != O ? (0, t.jsx)(a.Text, {
+                  color: "text-normal",
+                  variant: "text-md/normal",
+                  className: I.spacing,
+                  children: O
+                }) : null, C, c, (0, t.jsxs)(a.FormItem, {
+                  title: this.getLabelText(),
+                  className: I.spacing,
+                  children: [(0, t.jsx)(a.TextInput, {
+                    inputRef: this.setRef,
+                    onChange: this.handleCodeChange,
+                    placeholder: null !== (e = this.getPlaceholder()) && void 0 !== e ? e : void 0,
+                    maxLength: null != S ? S : 10,
+                    value: l,
+                    autoComplete: "one-time-code",
+                    autoFocus: !0
+                  }), this.errorPresent() ? (0, t.jsx)(a.Text, {
+                    color: "text-danger",
+                    variant: "text-xs/normal",
+                    className: I.error,
+                    children: null != s ? s : L
+                  }) : null, D]
+                })]
+              }), (0, t.jsxs)(a.ModalFooter, {
+                children: [(0, t.jsx)(a.Button, {
+                  type: "submit",
+                  disabled: T || 0 === l.length,
+                  children: null != E ? E : i.default.Messages.CONFIRM
+                }), (0, t.jsx)(a.Button, {
+                  onClick: this.handleCancel,
+                  disabled: T,
+                  look: a.Button.Looks.LINK,
+                  color: a.Button.Colors.PRIMARY,
+                  children: i.default.Messages.CANCEL
+                })]
+              })]
+            })
+          })
+        }
+        constructor(...e) {
+          super(...e), this.state = {
+            code: "",
+            errorMessage: "",
+            retrySuccess: !1
+          }, this.setRef = e => {
+            this._input = e
+          }, this.getLabelText = () => {
+            var e;
+            return null !== (e = this.props.label) && void 0 !== e ? e : this.props.disallowBackupCodes ? i.default.Messages.TWO_FA_ENTER_TOKEN_NO_BACKUP_LABEL : i.default.Messages.TWO_FA_ENTER_TOKEN_LABEL
+          }, this.getSupportedCodeTypes = () => this.props.disallowBackupCodes ? i.default.Messages.TWO_FA_AUTH_CODE_NO_BACKUP : i.default.Messages.TWO_FA_AUTH_CODE, this.getPlaceholder = () => {
+            var e;
+            return this.props.forceNoPlaceholder ? null : null !== (e = this.props.placeholder) && void 0 !== e ? e : this.getSupportedCodeTypes()
+          }, this.errorPresent = () => null != this.props.error && "" !== this.props.error || null != this.state.errorMessage && "" !== this.state.errorMessage, this.handleRetry = () => {
+            let {
+              onRetry: e
+            } = this.props;
+            null == e || e().then(() => this.setState({
+              retrySuccess: !0
+            }))
+          }, this.handleSubmit = e => {
+            e.preventDefault();
+            let {
+              handleSubmit: _,
+              onError: E
+            } = this.props;
+            _(this.state.code).catch(e => {
+              null != e.body && (null == E || E(e.body), e.body.message && this.setState({
+                errorMessage: e.body.message
+              }))
+            })
+          }, this.handleCancel = () => {
+            let {
+              onClose: e,
+              handleEarlyClose: _
+            } = this.props;
+            e(), null == _ || _()
+          }, this.handleCodeChange = e => {
+            this.setState({
+              code: e
+            })
+          }
+        }
+      }
+      s.defaultProps = {
+        btnClass: "",
+        isLoading: !1,
+        disallowBackupCodes: !1,
+        error: null,
+        forceNoPlaceholder: !1
+      };
+      var T = s
     },
     918109: function(e, _, E) {
       "use strict";
@@ -17957,7 +18151,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(L.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242769", ", Version Hash: ").concat("aace71aea00ff41b27320df57c7ad4bf122ff035")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242771", ", Version Hash: ").concat("942ecb38b56347ab2dff488fcd668c7d5f2be30c")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19572,6 +19766,18 @@
         return !1
       }
     },
+    988268: function(e, _, E) {
+      "use strict";
+      var t, o, n, r;
+      E.r(_), E.d(_, {
+        ApplicationTypes: function() {
+          return t
+        },
+        BotTagTypes: function() {
+          return o
+        }
+      }), (n = t || (t = {}))[n.GAME = 1] = "GAME", n[n.TICKETED_EVENTS = 3] = "TICKETED_EVENTS", n[n.GUILD_ROLE_SUBSCRIPTIONS = 4] = "GUILD_ROLE_SUBSCRIPTIONS", (r = o || (o = {}))[r.BOT = 0] = "BOT", r[r.SERVER = 1] = "SERVER", r[r.SYSTEM_DM = 2] = "SYSTEM_DM", r[r.OFFICIAL = 3] = "OFFICIAL", r[r.STAFF_ONLY_DM = 4] = "STAFF_ONLY_DM", r[r.ORIGINAL_POSTER = 5] = "ORIGINAL_POSTER", r[r.AI = 6] = "AI", r[r.REMIX = 7] = "REMIX"
+    },
     605393: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -20326,8 +20532,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "242769", "242769"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242769")), _ = 0), _
+        let _ = parseInt((e = "242771", "242771"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242771")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20703,7 +20909,7 @@
         i = E("103979"),
         I = E("271938"),
         s = E("945956"),
-        T = E("336727"),
+        T = E("205817"),
         S = E("599110"),
         N = E("773336"),
         O = E("56947"),
@@ -21582,7 +21788,7 @@
         T = E("546463"),
         S = E("824563"),
         N = E("945956"),
-        O = E("336727"),
+        O = E("205817"),
         A = E("722333"),
         R = E("200521"),
         l = E("49111");
@@ -22921,7 +23127,7 @@
         i = E("42203"),
         I = E("590401"),
         s = E("18494"),
-        T = E("336727"),
+        T = E("205817"),
         S = E("374014"),
         N = E("49111");
       let O = new t.Timeout,
@@ -23441,201 +23647,6 @@
         CONNECTION_OPEN: function() {}
       })
     },
-    677315: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        useGuildHomeExperiment: function() {
-          return T
-        },
-        canSeeGuildHome: function() {
-          return S
-        },
-        GuildFeedRenderSelectorExperiment: function() {
-          return N
-        },
-        GuildFeedRefreshButtonExperiment: function() {
-          return O
-        },
-        GuildHomeBadgeExperiment: function() {
-          return A
-        },
-        GuildHomeFeedbackExperiment: function() {
-          return R
-        },
-        GuildHomeDeprecationExperiment: function() {
-          return l
-        }
-      });
-      var t = E("446674"),
-        o = E("203288"),
-        n = E("862205"),
-        r = E("21121"),
-        a = E("923959"),
-        i = E("305961"),
-        I = E("49111");
-
-      function s(e, _, E) {
-        let t = _.getChannels(e)[a.GUILD_SELECTABLE_CHANNELS_KEY].filter(_ => {
-          let {
-            channel: t
-          } = _;
-          return !E.isChannelGated(e, t.id)
-        });
-        return t.length > 5
-      }
-
-      function T(e) {
-        arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        let _ = (0, t.useStateFromStores)([a.default, o.default], () => null != e && s(e.id, a.default, o.default));
-        return !__OVERLAY__ && !!_ && null != e && e.hasFeature(I.GuildFeatures.GUILD_HOME_DEPRECATION_OVERRIDE)
-      }
-
-      function S(e) {
-        if (__OVERLAY__ || e === I.ME || e === I.FAVORITES || (0, r.isInMainTabsExperiment)()) return !1;
-        let _ = i.default.getGuild(e);
-        return !!(null != _ && s(e, a.default, o.default)) && _.hasFeature(I.GuildFeatures.GUILD_HOME_DEPRECATION_OVERRIDE)
-      }
-      let N = (0, n.createExperiment)({
-          kind: "user",
-          id: "2022-01_home_feed_toggle",
-          label: "Show Guild Feed Sorting Selector",
-          defaultConfig: {
-            showSelector: !1
-          },
-          treatments: [{
-            id: 1,
-            label: "Yes Selector",
-            config: {
-              showSelector: !0
-            }
-          }]
-        }),
-        O = (0, n.createExperiment)({
-          kind: "user",
-          id: "2022-06_home_refresh_button",
-          label: "Show refresh button",
-          defaultConfig: {
-            showRefreshButton: !1
-          },
-          treatments: [{
-            id: 1,
-            label: "Yes button",
-            config: {
-              showRefreshButton: !0
-            }
-          }]
-        }),
-        A = (0, n.createExperiment)({
-          kind: "user",
-          id: "2022-08_home_badge",
-          label: "Show badge on home channel",
-          defaultConfig: {
-            showBadge: !1
-          },
-          treatments: [{
-            id: 1,
-            label: "show badge",
-            config: {
-              showBadge: !0
-            }
-          }]
-        });
-      (0, n.createExperiment)({
-        kind: "user",
-        id: "2022-08_home_drawer_autoclose",
-        label: "Auto close home drawer",
-        defaultConfig: {
-          autoCloseDrawer: !1,
-          animation: !1,
-          delay: null
-        },
-        treatments: [{
-          id: 1,
-          label: "normal animation",
-          config: {
-            autoCloseDrawer: !0,
-            animation: !0,
-            delay: null
-          }
-        }, {
-          id: 2,
-          label: "no animate",
-          config: {
-            autoCloseDrawer: !0,
-            animation: !1,
-            delay: null
-          }
-        }, {
-          id: 3,
-          label: "150 delayed animation",
-          config: {
-            autoCloseDrawer: !0,
-            animation: !0,
-            delay: 150
-          }
-        }, {
-          id: 4,
-          label: "250 delayed animation",
-          config: {
-            autoCloseDrawer: !0,
-            animation: !0,
-            delay: 250
-          }
-        }, {
-          id: 5,
-          label: "500 delayed animation",
-          config: {
-            autoCloseDrawer: !0,
-            animation: !0,
-            delay: 500
-          }
-        }]
-      }), (0, n.createExperiment)({
-        kind: "user",
-        id: "2022-09_welcome_header",
-        label: "Show welcome header for home",
-        defaultConfig: {
-          showWelcomeHeader: !1
-        },
-        treatments: [{
-          id: 1,
-          label: "show welcome header",
-          config: {
-            showWelcomeHeader: !0
-          }
-        }]
-      });
-      let R = (0, n.createExperiment)({
-          kind: "user",
-          id: "2022-12_home_feedback_ux",
-          label: "Show post feedback for home",
-          defaultConfig: {
-            showFeedback: !1
-          },
-          treatments: [{
-            id: 100,
-            label: "show feedback",
-            config: {
-              showFeedback: !0
-            }
-          }]
-        }),
-        l = (0, n.createExperiment)({
-          kind: "guild",
-          id: "2023-03_home_deprecation",
-          label: "Home Deprecation",
-          defaultConfig: {
-            showDeprecationNotice: !1
-          },
-          treatments: [{
-            id: 1,
-            label: "Show notice",
-            config: {
-              showDeprecationNotice: !0
-            }
-          }]
-        })
-    },
     168263: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -23681,6 +23692,309 @@
 
       function o(e, _) {
         return 403 === e && null != _ && _ >= t.AbortCodes.GUILD_LIMITED_ACCESS_DEFAULT && _ <= t.AbortCodes.GUILD_LIMITED_ACCESS_MAX
+      }
+    },
+    50926: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return l
+        }
+      });
+      var t = E("872717"),
+        o = E("913144"),
+        n = E("479756"),
+        r = E("38654"),
+        a = E("9294"),
+        i = E("26989"),
+        I = E("337543"),
+        s = E("697218"),
+        T = E("49111");
+      let S = async (e, _) => {
+        let E = null != _ ? _ : I.default.getInviteKeyForGuildId(e),
+          n = s.default.getCurrentUser(),
+          r = !i.default.isMember(e, null == n ? void 0 : n.id);
+        try {
+          let _ = await t.default.get({
+            url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+            query: {
+              with_guild: r,
+              invite_code: null != E ? (0, a.parseInviteCodeFromInviteKey)(E) : void 0
+            },
+            oldFormErrors: !0
+          });
+          if (null == _.body) throw _;
+          let {
+            body: n
+          } = _;
+          return o.default.dispatch({
+            type: "MEMBER_VERIFICATION_FORM_UPDATE",
+            guildId: e,
+            form: {
+              version: n.version,
+              description: n.description,
+              formFields: n.form_fields,
+              guild: n.guild
+            }
+          }), n
+        } catch (_) {
+          o.default.dispatch({
+            type: "MEMBER_VERIFICATION_FORM_FETCH_FAIL",
+            guildId: e
+          })
+        }
+      }, N = async (e, _) => {
+        let E = await t.default.patch({
+            url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+            body: {
+              form_fields: _
+            },
+            oldFormErrors: !0
+          }),
+          {
+            body: n
+          } = E;
+        o.default.dispatch({
+          type: "MEMBER_VERIFICATION_FORM_UPDATE",
+          guildId: e,
+          form: {
+            version: n.version,
+            description: n.description,
+            formFields: n.form_fields
+          }
+        })
+      }, O = async (e, _) => {
+        let E = await t.default.patch({
+            url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+            body: {
+              description: _
+            },
+            oldFormErrors: !0
+          }),
+          {
+            body: n
+          } = E;
+        o.default.dispatch({
+          type: "MEMBER_VERIFICATION_FORM_UPDATE",
+          guildId: e,
+          form: {
+            version: n.version,
+            description: n.description,
+            formFields: n.form_fields
+          }
+        })
+      }, A = async (e, _) => {
+        await t.default.patch({
+          url: T.Endpoints.GUILD_MEMBER_VERIFICATION(e),
+          body: {
+            enabled: _
+          },
+          oldFormErrors: !0
+        })
+      }, R = async (e, _) => {
+        if (r.default.isFullServerPreview(e)) {
+          (0, n.updateImpersonatedData)(e, {
+            memberOptions: {
+              isPending: !1
+            }
+          });
+          return
+        }
+        try {
+          let E = await t.default.put({
+              url: T.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e),
+              body: {
+                version: _.version,
+                form_fields: _.formFields
+              }
+            }),
+            {
+              body: n
+            } = E;
+          return o.default.dispatch({
+            type: "USER_GUILD_JOIN_REQUEST_UPDATE",
+            guildId: e,
+            request: n
+          }), n
+        } catch (e) {
+          throw e
+        }
+      };
+      var l = {
+        fetchVerificationForm: S,
+        updateVerificationForm: N,
+        updateVerificationFormDescription: O,
+        enableVerificationForm: A,
+        submitVerificationForm: R
+      }
+    },
+    394294: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        AUTOMATIC_APPROVAL_FORM_FIELDS: function() {
+          return n
+        },
+        MANUAL_APPROVAL_FORM_FIELDS: function() {
+          return r
+        },
+        MAX_FORM_ELEMENTS: function() {
+          return a
+        },
+        MAX_NUM_RULES: function() {
+          return i
+        },
+        MAX_RULE_LENGTH: function() {
+          return I
+        },
+        MAX_QUESTION_LENGTH: function() {
+          return s
+        },
+        MAX_NUM_CHOICES: function() {
+          return T
+        },
+        MAX_CHOICE_LENGTH: function() {
+          return S
+        },
+        MAX_TEXT_RESPONSE_LENGTH: function() {
+          return N
+        },
+        MAX_PARAGRAPH_RESPONSE_LENGTH: function() {
+          return O
+        },
+        MAX_DESCRIPTION_LENGTH: function() {
+          return A
+        },
+        MEMBER_VERIFICATION_TYPE: function() {
+          return R
+        },
+        IN_APP_MEMBER_VERIFICATION_MODAL_KEY: function() {
+          return l
+        }
+      });
+      var t, o = E("567054");
+      o.VerificationFormFieldTypes.VERIFICATION;
+      let n = new Set([o.VerificationFormFieldTypes.TERMS]),
+        r = new Set([o.VerificationFormFieldTypes.MULTIPLE_CHOICE, o.VerificationFormFieldTypes.TEXT_INPUT, o.VerificationFormFieldTypes.PARAGRAPH]),
+        a = 5,
+        i = 16,
+        I = 300,
+        s = 300,
+        T = 8,
+        S = 150,
+        N = 150,
+        O = 1e3,
+        A = 300,
+        R = "Membership Gating",
+        l = "in-app-member-verification";
+      (t || (t = {})).VERIFICATION_INFO = "VERIFICATION_INFO"
+    },
+    233322: function(e, _, E) {
+      "use strict";
+      let t;
+      E.r(_), E.d(_, {
+        openMemberVerificationModal: function() {
+          return o
+        }
+      }), t = E("453265").default;
+      let o = t.openMemberVerificationModal;
+      t.closeMemberVerificationModal
+    },
+    347977: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        useMemberVerificationFormNoticeStore: function() {
+          return a
+        },
+        setHasUnsubmittedChanges: function() {
+          return i
+        },
+        setShowWarning: function() {
+          return I
+        }
+      });
+      var t = E("308503"),
+        o = E("659500"),
+        n = E("49111");
+      let r = Object.freeze({
+          hasUnsubmittedChanges: !1,
+          shouldShowWarning: !1
+        }),
+        a = (0, t.default)(e => r),
+        i = e => {
+          a.setState({
+            hasUnsubmittedChanges: e
+          })
+        },
+        I = e => {
+          a.setState({
+            shouldShowWarning: e
+          }), e && o.ComponentDispatch.dispatch(n.ComponentActions.EMPHASIZE_NOTICE)
+        }
+    },
+    453265: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return S
+        }
+      });
+      var t = E("37983");
+      E("884691");
+      var o = E("551042"),
+        n = E("599110"),
+        r = E("50926"),
+        a = E("347977"),
+        i = E("394294"),
+        I = E("49111");
+      let s = () => {
+          n.default.track(I.AnalyticEvents.MODAL_DISMISSED, {
+            type: i.MEMBER_VERIFICATION_TYPE
+          })
+        },
+        T = e => {
+          n.default.track(I.AnalyticEvents.OPEN_MODAL, {
+            type: i.MEMBER_VERIFICATION_TYPE,
+            guild_id: e
+          })
+        };
+      var S = {
+        openMemberVerificationModal(e, _) {
+          T(e);
+          let n = async _ => {
+            await r.default.submitVerificationForm(e, _)
+          };
+          (0, o.openModalLazy)(async () => {
+            let {
+              default: _
+            } = await E.el("93184").then(E.bind(E, "93184"));
+            return E => (0, t.jsx)(_, {
+              ...E,
+              guildId: e,
+              onComplete: n,
+              onClose: function() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                if (!e) {
+                  if (a.useMemberVerificationFormNoticeStore.getState().hasUnsubmittedChanges) {
+                    (0, a.setShowWarning)(!0);
+                    return
+                  }
+                  s()
+                }
+                E.onClose()
+              }
+            })
+          }, {
+            modalKey: i.IN_APP_MEMBER_VERIFICATION_MODAL_KEY,
+            onCloseRequest: () => {
+              s(), a.useMemberVerificationFormNoticeStore.getState().hasUnsubmittedChanges ? (0, a.setShowWarning)(!0) : (0, o.closeModal)(i.IN_APP_MEMBER_VERIFICATION_MODAL_KEY)
+            },
+            onCloseCallback: _
+          })
+        },
+        closeMemberVerificationModal() {
+          let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+          !e && s(), (0, o.closeModal)(i.IN_APP_MEMBER_VERIFICATION_MODAL_KEY)
+        }
       }
     },
     804160: function(e, _, E) {
@@ -24381,14 +24695,125 @@
       }
       var h = new M
     },
-    533613: function(e, _, E) {
+    479756: function(e, _, E) {
       "use strict";
-      var t, o;
       E.r(_), E.d(_, {
-        HotspotLocations: function() {
-          return t
+        startImpersonating: function() {
+          return L
+        },
+        updateImpersonating: function() {
+          return u
+        },
+        stopImpersonating: function() {
+          return C
+        },
+        updateImpersonatedChannels: function() {
+          return c
+        },
+        updateImpersonatedRoles: function() {
+          return d
+        },
+        updateImpersonatedData: function() {
+          return U
         }
-      }), (o = t || (t = {})).REPORT_PROBLEM_POST_STREAM = "REPORT_PROBLEM_POST_STREAM", o.VIDEO_BACKGROUND_FEEDBACK = "VIDEO_BACKGROUND_FEEDBACK", o.VOICE_CALL_FEEDBACK = "VOICE_CALL_FEEDBACK", o.GUILD_ANALYTICS_GUILD_SETTINGS_MENU = "GUILD_ANALYTICS_GUILD_SETTINGS_MENU", o.NOW_PLAYING_CONSENT_CARD = "NOW_PLAYING_CONSENT_CARD", o.IOS_GUILD_NAV_EDUCATION = "IOS_GUILD_NAV_EDUCATION", o.VOICE_PANEL_INTRODUCTION = "VOICE_PANEL_INTRODUCTION", o.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL = "GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL", o.FAVORITE_EMOJI_TOOLTIP = "FAVORITE_EMOJI_TOOLTIP", o.POST_ACTIVITY_FEEDBACK = "POST_ACTIVITY_FEEDBACK", o.GUILD_DELETE_FEEDBACK = "GUILD_DELETE_FEEDBACK", o.GUILD_LEAVE_FEEDBACK = "GUILD_LEAVE_FEEDBACK", o.APPLICATION_COMMAND_TOOLTIP = "APPLICATION_COMMAND_TOOLTIP", o.GUILD_CAP_INLINE_UPSELL = "GUILD_CAP_INLINE_UPSELL", o.STAGE_CHANNEL_UPSELL = "STAGE_CHANNEL_UPSELL", o.HUB_WAITLIST_UPSELL = "HUB_WAITLIST_UPSELL", o.HUB_NEW = "HUB_NEW", o.HUB_SECOND_EMAIL_CONNECTION_UPSELL = "HUB_SECOND_EMAIL_CONNECTION_UPSELL", o.LIVE_STAGE_NOTIFICATION_BADGE = "LIVE_STAGE_NOTIFICATION_BADGE", o.GUILD_EVENT_UPSELL = "GUILD_EVENT_UPSELL", o.HUB_LINK_CHANNEL_NOTICE = "HUB_LINK_CHANNEL_NOTICE", o.PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP = "PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP", o.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP = "ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP", o.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL = "ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL", o.MULTI_ACCOUNT_TOOLTIP = "MULTI_ACCOUNT_TOOLTIP", o.HUB_STUDY_ROOM_NOTICE = "HUB_STUDY_ROOM_NOTICE", o.CHANNEL_BANNER_MEMBER_LIST_NOTICE = "CHANNEL_BANNER_MEMBER_LIST_NOTICE", o.CHANGE_LANGUAGE_MODAL = "CHANGE_LANGUAGE_MODAL", o.ACTIVITY_BEB_TUTORIAL = "ACTIVITY_BEB_TUTORIAL", o.APP_DIRECTORY_SETTINGS_NEW_PILL = "APP_DIRECTORY_SETTINGS_NEW_PILL", o.INVITE_SPLASH_GUILD_HEADER_TOOLTIP = "INVITE_SPLASH_GUILD_HEADER_TOOLTIP", o.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW", o.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW", o.ANIMATED_VIDEO_BG_HACKER_DEN_NEW = "ANIMATED_VIDEO_BG_HACKER_DEN_NEW", o.ANIMATED_VIDEO_BG_WUMPICE_NEW = "ANIMATED_VIDEO_BG_WUMPICE_NEW", o.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW = "ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW", o.ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW = "ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW", o.SOUNDBOARD_WHEEL_EDUCATION_MODAL = "SOUNDBOARD_WHEEL_EDUCATION_MODAL", o.IN_APP_REPORTS_FEEDBACK = "IN_APP_REPORTS_FEEDBACK", o.CLIPS_CHANNEL_ATTACH_REMINDER = "CLIPS_CHANNEL_ATTACH_REMINDER"
+      });
+      var t = E("913144"),
+        o = E("716241"),
+        n = E("393414"),
+        r = E("42203"),
+        a = E("923959"),
+        i = E("26989"),
+        I = E("305961"),
+        s = E("957255"),
+        T = E("18494"),
+        S = E("282109"),
+        N = E("599110"),
+        O = E("38654"),
+        A = E("507950"),
+        R = E("49111"),
+        l = E("724210");
+
+      function L(e, _) {
+        N.default.track(R.AnalyticEvents.VIEW_AS_ROLES_SELECTED, {
+          num_roles: Object.keys(_.roles).length,
+          ...(0, o.collectGuildAnalyticsMetadata)(e),
+          is_viewing_as_member: _.type === A.ImpersonateType.NEW_MEMBER
+        }), t.default.dispatch({
+          type: "IMPERSONATE_UPDATE",
+          guildId: e,
+          data: _
+        }), D(e)
+      }
+
+      function u(e, _) {
+        let E = O.default.getData(e);
+        null != E && E.type === _.type && (N.default.track(R.AnalyticEvents.VIEW_AS_ROLES_SELECTED, {
+          num_roles: Object.keys(E.roles).length,
+          ...(0, o.collectGuildAnalyticsMetadata)(e),
+          is_viewing_as_member: E.type === A.ImpersonateType.NEW_MEMBER
+        }), t.default.dispatch({
+          type: "IMPERSONATE_UPDATE",
+          guildId: e,
+          data: {
+            ...E,
+            ..._
+          }
+        }), D(e))
+      }
+
+      function C(e) {
+        t.default.dispatch({
+          type: "IMPERSONATE_STOP",
+          guildId: e
+        })
+      }
+
+      function D(e) {
+        let _ = T.default.getChannelId(e),
+          E = r.default.getChannel(_),
+          t = null != _ && (0, l.isStaticChannelRoute)(_);
+        if (!t && !s.default.can(R.Permissions.VIEW_CHANNEL, E)) {
+          let _ = a.default.getDefaultChannel(e);
+          null != _ && (0, n.transitionTo)(R.Routes.CHANNEL(e, _.id))
+        }
+      }
+
+      function c(e, _, E) {
+        let t = new Set(S.default.getOptedInChannels(e));
+        _.forEach(e => t.add(e)), E.forEach(e => t.delete(e)), u(e, {
+          type: A.ImpersonateType.NEW_MEMBER,
+          optInChannels: t
+        })
+      }
+
+      function d(e, _) {
+        let E = I.default.getGuild(e);
+        if (null == E) return;
+        ! function(e, _) {
+          let E = [...a.default.getSelectableChannelIds(e), ...a.default.getVocalChannelIds(e)],
+            t = Array.from(_);
+          a.default.addConditionalChangeListener(() => {
+            let _ = i.default.getSelfMember(e);
+            if (null == _) return !1;
+            if (t.some(e => !_.roles.includes(e))) return !0;
+            let o = [...a.default.getSelectableChannelIds(e), ...a.default.getVocalChannelIds(e)],
+              n = o.filter(e => !E.includes(e));
+            return n.length > 0 && c(e, n, []), !1
+          })
+        }(e, _);
+        let t = {};
+        _.forEach(e => t[e] = E.roles[e]), u(e, {
+          type: A.ImpersonateType.NEW_MEMBER,
+          roles: t
+        })
+      }
+
+      function U(e, _) {
+        u(e, {
+          type: A.ImpersonateType.NEW_MEMBER,
+          ..._
+        })
+      }
     },
     9294: function(e, _, E) {
       "use strict";
@@ -25676,263 +26101,6 @@
       }
       var I = new i
     },
-    846325: function(e, _, E) {
-      "use strict";
-      var t, o;
-      E.r(_), E.d(_, {
-        MAX_LENGTH_SOUND_NAME: function() {
-          return n
-        },
-        MAX_SOUND_LENGTH_SECONDS: function() {
-          return r
-        },
-        DEFAULT_SOUND_GUILD_ID: function() {
-          return a
-        },
-        SoundboardWheelSize: function() {
-          return i
-        },
-        DEFAULT_KEYBIND: function() {
-          return I
-        },
-        EMPTY_SOUND_LIST: function() {
-          return s
-        },
-        CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID: function() {
-          return T
-        }
-      });
-      let n = 32,
-        r = 5,
-        a = "DEFAULT";
-      (o = t || (t = {}))[o.SUCCESS = 0] = "SUCCESS", o[o.INTERRUPTED = 1] = "INTERRUPTED", t.SUCCESS, t.INTERRUPTED;
-      let i = {
-          width: 424,
-          height: 424,
-          padding: 100
-        },
-        I = "ctrl+`",
-        s = [],
-        T = "0"
-    },
-    235004: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return G
-        }
-      });
-      var t, o, n = E("917351"),
-        r = E.n(n),
-        a = E("446674"),
-        i = E("913144"),
-        I = E("845579"),
-        s = E("374363"),
-        T = E("697218"),
-        S = E("599110"),
-        N = E("829536"),
-        O = E("846325"),
-        A = E("49111"),
-        R = E("397336");
-      (t = o || (o = {}))[t.NOT_FETCHED = 0] = "NOT_FETCHED", t[t.FETCHING = 1] = "FETCHING", t[t.FETCHED = 2] = "FETCHED";
-      let l = new Map,
-        L = new Map,
-        u = new Set,
-        C = o.NOT_FETCHED,
-        D = o.NOT_FETCHED,
-        c = new Set,
-        d = new Map,
-        U = !1;
-
-      function M(e) {
-        let {
-          sound: _
-        } = e, E = l.get(_.guildId), t = null == E ? void 0 : E.findIndex(e => e.soundId === _.soundId);
-        null != E && null != t && -1 !== t ? (E[t] = _, l.set(_.guildId, [...E])) : null != E && (null == E || E.push(_), l.set(_.guildId, [...E]))
-      }
-      let h = r.debounce(e => {
-        S.default.track(A.AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, {
-          volume: Math.round((0, N.amplitudeToPerceptual)(e))
-        }), I.SoundboardSettings.updateSetting({
-          volume: e
-        })
-      }, 1e3);
-
-      function P(e) {
-        var _, E;
-        let t = null !== (E = null == e ? void 0 : null === (_ = e.audioContextSettings) || void 0 === _ ? void 0 : _.user) && void 0 !== E ? E : {};
-        for (let [e, _] of Object.entries(t)) _.soundboardMuted ? u.add(e) : u.delete(e);
-        for (let e of u.keys()) null == t[e] && u.delete(e)
-      }
-      class m extends a.default.Store {
-        initialize() {
-          this.waitFor(s.default), P(s.default.settings)
-        }
-        getOverlaySerializedState() {
-          return {
-            soundboardSounds: Object.fromEntries(l),
-            favoritedSoundIds: Array.from(c),
-            localSoundboardMutes: Array.from(u)
-          }
-        }
-        getSounds() {
-          return l
-        }
-        getSoundsForGuild(e) {
-          return l.get(e)
-        }
-        getSound(e, _) {
-          var E;
-          let t = null !== (E = l.get(e)) && void 0 !== E ? E : [];
-          return t.find(e => e.soundId === _)
-        }
-        getSoundById(e) {
-          let _ = Array.from(l.values()).flat();
-          return _.find(_ => _.soundId === e)
-        }
-        isFetchingSounds() {
-          return D === o.FETCHING
-        }
-        isFetchingDefaultSounds() {
-          return C === o.FETCHING
-        }
-        isFetching() {
-          return this.isFetchingSounds() || this.isFetchingDefaultSounds()
-        }
-        shouldFetchDefaultSounds() {
-          return C === o.NOT_FETCHED
-        }
-        hasFetchedDefaultSounds() {
-          return C === o.FETCHED
-        }
-        isUserPlayingSounds(e) {
-          let _ = d.get(e);
-          return null != _ && _ > 0
-        }
-        isPlayingSound(e) {
-          return null != L.get(e)
-        }
-        isFavoriteSound(e) {
-          return c.has(e)
-        }
-        getFavorites() {
-          return c
-        }
-        isLocalSoundboardMuted(e) {
-          return u.has(e)
-        }
-        hasHadOtherUserPlaySoundInSession() {
-          return U
-        }
-        hasFetchedAllSounds() {
-          return D === o.FETCHED && C === o.FETCHED
-        }
-      }
-      m.displayName = "SoundboardStore";
-      var G = new m(i.default, {
-        LOGOUT: function() {
-          l.clear(), L.clear(), d.clear(), U = !1, D = o.NOT_FETCHED, C = o.NOT_FETCHED
-        },
-        GUILD_SOUNDBOARD_FETCH: function() {
-          D = o.FETCHING
-        },
-        GUILD_SOUNDBOARD_SOUND_CREATE: M,
-        GUILD_SOUNDBOARD_SOUND_UPDATE: M,
-        GUILD_SOUNDBOARD_SOUND_DELETE: function(e) {
-          let {
-            soundId: _,
-            guildId: E
-          } = e;
-          l.delete(_);
-          let t = l.get(E),
-            o = null == t ? void 0 : t.findIndex(e => e.soundId === _);
-          null != t && null != o && !(o < 0) && (t.splice(o, 1), l.set(E, [...t]))
-        },
-        GUILD_SOUNDBOARD_SOUND_PLAY_START: function(e) {
-          var _, E, t;
-          let {
-            soundId: o,
-            userId: n
-          } = e, r = (null !== (E = L.get(o)) && void 0 !== E ? E : 0) + 1, a = (null !== (t = d.get(n)) && void 0 !== t ? t : 0) + 1;
-          L.set(o, r), d.set(n, a), n !== (null === (_ = T.default.getCurrentUser()) || void 0 === _ ? void 0 : _.id) && (U = !0)
-        },
-        GUILD_SOUNDBOARD_SOUND_PLAY_END: function(e) {
-          var _, E;
-          let {
-            soundId: t,
-            userId: o
-          } = e, n = (null !== (_ = L.get(t)) && void 0 !== _ ? _ : 0) - 1, r = (null !== (E = d.get(o)) && void 0 !== E ? E : 0) - 1;
-          n <= 0 ? L.delete(t) : L.set(t, n), r <= 0 ? d.delete(o) : d.set(o, r)
-        },
-        USER_SOUNDBOARD_SET_VOLUME: function(e) {
-          let {
-            volume: _
-          } = e;
-          h(_)
-        },
-        VOICE_CHANNEL_SELECT: function() {
-          L.clear(), d.clear()
-        },
-        USER_SETTINGS_PROTO_UPDATE: function(e) {
-          let {
-            settings: _
-          } = e, {
-            type: E,
-            proto: t
-          } = _;
-          if (E === R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
-            var o, n;
-            c = new Set(null !== (n = null == t ? void 0 : null === (o = t.favoriteSoundboardSounds) || void 0 === o ? void 0 : o.soundIds) && void 0 !== n ? n : [])
-          } else E === R.UserSettingsTypes.PRELOADED_USER_SETTINGS && P(t)
-        },
-        SOUNDBOARD_FETCH_DEFAULT_SOUNDS: function() {
-          C = o.FETCHING
-        },
-        SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: function(e) {
-          let {
-            soundboardSounds: _
-          } = e;
-          l.set(O.DEFAULT_SOUND_GUILD_ID, _), C = o.FETCHED
-        },
-        SOUNDBOARD_SOUNDS_RECEIVED: function(e) {
-          let {
-            updates: _
-          } = e;
-          _.forEach(e => {
-            let {
-              guildId: _,
-              sounds: E
-            } = e;
-            l.set(_, E)
-          }), D = o.FETCHED
-        },
-        GUILD_DELETE: function(e) {
-          let {
-            guild: _
-          } = e;
-          l.delete(_.id)
-        },
-        AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: function(e) {
-          let {
-            userId: _
-          } = e;
-          u.has(_) ? u.delete(_) : u.add(_)
-        },
-        OVERLAY_INITIALIZE: function(e) {
-          let {
-            soundboardStoreState: _
-          } = e;
-          l = new Map(Object.entries(_.soundboardSounds)), c = new Set(_.favoritedSoundIds), u = new Set(_.localSoundboardMutes)
-        },
-        GUILD_SOUNDBOARD_SOUNDS_UPDATE: function(e) {
-          let {
-            guildId: _,
-            soundboardSounds: E
-          } = e;
-          l.set(_, E)
-        }
-      })
-    },
     728863: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -26891,44 +27059,6 @@
         return t
       }
     },
-    917219: function(e, _, E) {
-      "use strict";
-      var t, o, n, r;
-      E.r(_), E.d(_, {
-        VideoFilterType: function() {
-          return t
-        },
-        DefaultVideoBackground: function() {
-          return o
-        },
-        ANIMATED_DEFAULT_VIDEO_BACKGROUNDS: function() {
-          return a
-        },
-        DEFAULT_VIDEO_BACKGROUND_SORT: function() {
-          return i
-        },
-        BLUR_BACKGROUND_OPTION: function() {
-          return I
-        },
-        BACKGROUND_REPLACEMENT_SIZE: function() {
-          return s
-        },
-        MAX_BACKGROUND_IMAGE_UPLOAD_FILESIZE_BYTES: function() {
-          return T
-        }
-      }), (n = t || (t = {}))[n.BACKGROUND = 0] = "BACKGROUND", (r = o || (o = {}))[r.OPTION_1 = 0] = "OPTION_1", r[r.OPTION_2 = 1] = "OPTION_2", r[r.OPTION_3 = 2] = "OPTION_3", r[r.OPTION_4 = 3] = "OPTION_4", r[r.OPTION_7 = 7] = "OPTION_7", r[r.OPTION_8 = 8] = "OPTION_8", r[r.OPTION_9 = 9] = "OPTION_9", r[r.OPTION_10 = 10] = "OPTION_10";
-      let a = [o.OPTION_7, o.OPTION_8, o.OPTION_9, o.OPTION_10],
-        i = [o.OPTION_7, o.OPTION_8, o.OPTION_9, o.OPTION_10, o.OPTION_1, o.OPTION_2, o.OPTION_3, o.OPTION_4].reduce((e, _, E) => ({
-          ...e,
-          [_]: E
-        }), {}),
-        I = "blur",
-        s = {
-          width: 1280,
-          height: 720
-        },
-        T = 10485760
-    },
     357168: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -27079,20 +27209,49 @@
         }
       })
     },
-    450205: function(e, _, E) {
+    517763: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return o
+          return r
         }
       });
-      var t = E("666038");
-      class o extends t.default {
+      var t = E("866227"),
+        o = E.n(t),
+        n = E("666038");
+      class r extends n.default {
+        static createFromServer(e) {
+          var _;
+          return new r({
+            ...e,
+            maxUses: e.max_uses,
+            maxAge: e.max_age,
+            createdAt: o(null !== (_ = e.created_at) && void 0 !== _ ? _ : void 0),
+            targetType: e.target_type,
+            targetUser: e.target_user,
+            targetApplication: e.target_application
+          })
+        }
+        isExpired() {
+          let e = this.maxAge;
+          if (e > 0) {
+            let _ = o(this.createdAt);
+            if (_.add(e, "seconds").isBefore(Date.now())) return !0
+          }
+          return !1
+        }
+        getExpiresAt() {
+          if (this.maxAge > 0) {
+            let e = o(this.createdAt);
+            return e.add(this.maxAge, "seconds").toDate()
+          }
+          return 1 / 0
+        }
         toString() {
-          return this.name
+          return this.code
         }
         constructor(e) {
-          super(), this.id = e.id, this.type = e.type, this.name = e.name, this.revoked = e.revoked || !1, this.integrations = e.integrations || [], this.visibility = e.visibility || 0, this.friendSync = e.friend_sync || !1, this.showActivity = e.show_activity || !1, this.verified = e.verified || !1, this.accessToken = e.access_token || null, this.twoWayLink = e.two_way_link || !1, this.metadata = e.metadata || null, this.metadataVisibility = e.metadata_visibility || 0
+          super(), this.code = e.code || "", this.temporary = e.temporary || !1, this.revoked = e.revoked || !1, this.uses = e.uses || 0, this.maxUses = e.maxUses || 0, this.maxAge = e.maxAge || 0, this.createdAt = e.createdAt || new Date, this.channel = e.channel, this.guild = e.guild, this.inviter = e.inviter || null, this.targetType = e.targetType || null, this.targetUser = e.targetUser || null, this.targetApplication = e.targetApplication || null, this.type = e.type || null, this.flags = e.flags || 0
         }
       }
     },
@@ -27116,85 +27275,6 @@
         TRACKING_URL: r.Endpoints.TRACK,
         waitFor: [n.default],
         getFingerprint: n.default.getFingerprint
-      })
-    },
-    47319: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return L
-        }
-      });
-      var t = E("446674"),
-        o = E("913144"),
-        n = E("619340"),
-        r = E("376556"),
-        a = E("450205"),
-        i = E("813006"),
-        I = E("49111");
-      let s = new Set([I.PlatformTypes.CONTACTS]),
-        T = !0,
-        S = [],
-        N = [],
-        O = {},
-        A = {},
-        R = e => {
-          S = e.filter(e => !s.has(e.type) && r.default.isSupported(e.type)), N = e.filter(e => s.has(e.type)), T = !1
-        };
-      class l extends t.default.Store {
-        isJoining(e) {
-          return O[e] || !1
-        }
-        isFetching() {
-          return T
-        }
-        getAccounts() {
-          return S
-        }
-        getLocalAccounts() {
-          return N
-        }
-        getAccount(e, _) {
-          return S.find(E => (null == e || E.id === e) && E.type === _)
-        }
-        getLocalAccount(e) {
-          return N.find(_ => _.type === e)
-        }
-        isSuggestedAccountType(e) {
-          return A[e] || !1
-        }
-      }
-      l.displayName = "ConnectedAccountsStore";
-      var L = new l(o.default, {
-        CONNECTION_OPEN: function(e) {
-          let _ = e.connectedAccounts.map(e => new a.default(e));
-          R(_)
-        },
-        USER_CONNECTIONS_UPDATE: function(e) {
-          if (e.local && null != e.accounts) {
-            let _ = e.accounts.map(e => new a.default({
-              ...e,
-              integrations: e.integrations.map(e => ({
-                ...e,
-                guild: new i.default(e.guild)
-              }))
-            }));
-            R(_)
-          } else n.default.fetch()
-        },
-        USER_CONNECTIONS_INTEGRATION_JOINING: function(e) {
-          O[e.integrationId] = e.joining
-        },
-        USER_CONNECTION_UPDATE: function(e) {
-          let {
-            platformType: _,
-            id: E,
-            revoked: t,
-            accessToken: o
-          } = e, n = S.find(e => e.id === E && e.type === _);
-          if (null == n) return !1;
-          null != t && (n.revoked = t), null != o && (n.accessToken = o)
-        }
       })
     },
     787910: function(e, _, E) {
@@ -28122,27 +28202,127 @@
         return !!(o > 0) && -1 !== t.substring(0, o).indexOf("acTL") || !1
       }
     },
-    829536: function(e, _, E) {
+    615931: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
-        perceptualToAmplitude: function() {
-          return t
-        },
-        amplitudeToPerceptual: function() {
-          return o
+        resolveThunk: function() {
+          return n
         }
       });
-
-      function t(e) {
-        let _, E = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 100;
-        return 0 === e ? 0 : (_ = e > E ? (e - E) / E * 6 : e / E * 50 - 50, E * Math.pow(10, _ / 20))
+      var t = E("917351"),
+        o = E.n(t);
+      let n = e => "function" == typeof e ? e() : e;
+      o.curry((e, _, E) => n(_) ? e(E) : E({}))
+    },
+    730622: function(e, _, E) {
+      "use strict";
+      let t, o;
+      E.r(_), E.d(_, {
+        default: function() {
+          return s
+        }
+      });
+      var n = E("697218"),
+        r = E("615931");
+      let a = () => {
+        throw Error("updateModal has not been implemented.")
+      }; {
+        let e = E("670924");
+        t = e.showModal, a = e.updateModalProps, o = E("551042").closeModal
       }
 
-      function o(e) {
-        let _, E = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 100;
-        if (0 === e) return 0;
-        let t = 20 * Math.log10(e / E);
-        return E * (_ = t > 0 ? t / 6 + 1 : (50 + t) / 50)
+      function i(e) {
+        let {
+          promiseFn: _,
+          resolve: E,
+          reject: n,
+          modalProps: r = {},
+          hooks: {
+            onEarlyClose: i
+          } = {}
+        } = e;
+        if (null == t) {
+          null == i || i();
+          return
+        }
+        let s = t(O, T, r);
+
+        function T() {
+          null == i || i()
+        }
+
+        function S(e) {
+          o(s), E(e)
+        }
+
+        function N(e) {
+          o(s), n(e)
+        }
+
+        function O(e) {
+          return a(s, O, T, {
+            ...r,
+            isLoading: !0
+          }), I({
+            promiseFn: _,
+            resolve: S,
+            reject: N,
+            code: e,
+            mfaCodeHandler: A,
+            isModalOpen: !0
+          })
+        }
+
+        function A(e) {
+          let {
+            res: _
+          } = e;
+          a(s, O, T, {
+            ...r,
+            error: _.body.message
+          })
+        }
+      }
+
+      function I(e) {
+        let {
+          promiseFn: _,
+          resolve: E,
+          reject: t,
+          code: o,
+          mfaCodeHandler: n = i,
+          isModalOpen: r = !1,
+          ...a
+        } = e;
+        return _(null != o ? {
+          code: o
+        } : {}).then(E, e => {
+          var o, i;
+          if (o = e, i = r, o.body && 60008 === o.body.code || i && 429 === o.status) return n({
+            promiseFn: _,
+            resolve: E,
+            reject: t,
+            res: e,
+            ...a
+          });
+          t(e)
+        })
+      }
+
+      function s(e, _) {
+        var E, t;
+        let {
+          checkEnabled: o = null !== (t = null === (E = n.default.getCurrentUser()) || void 0 === E ? void 0 : E.mfaEnabled) && void 0 !== t && t,
+          ...a
+        } = null != _ ? _ : {};
+        return new Promise((_, E) => {
+          ((0, r.resolveThunk)(o) ? i : I)({
+            promiseFn: e,
+            resolve: _,
+            reject: E,
+            ...a
+          })
+        })
       }
     },
     773336: function(e, _, E) {
@@ -28412,63 +28592,6 @@
         profiledRootComponent: e => e,
         crash() {
           throw Error("crash")
-        }
-      }
-    },
-    840707: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return r
-        }
-      });
-      var t = E("872717"),
-        o = E("599110");
-
-      function n(e, _, E) {
-        let {
-          trackedActionData: t,
-          ...n
-        } = _, r = {
-          url: n.url,
-          request_method: E
-        };
-        return new Promise((_, E) => {
-          e(n).then(e => {
-            let E = t.properties;
-            "function" == typeof t.properties && (E = t.properties(e)), (0, o.trackNetworkAction)(t.event, {
-              status_code: e.status,
-              ...r,
-              ...E
-            }), _(e)
-          }).catch(e => {
-            var _, n;
-            let a = t.properties;
-            "function" == typeof t.properties && (a = t.properties(e)), (0, o.trackNetworkAction)(t.event, {
-              status_code: e.status,
-              error_code: null === (_ = e.body) || void 0 === _ ? void 0 : _.code,
-              error_message: null === (n = e.body) || void 0 === n ? void 0 : n.message,
-              ...r,
-              ...a
-            }), E(e)
-          })
-        })
-      }
-      var r = {
-        get: function(e) {
-          return n(t.default.get, e, "get")
-        },
-        post: function(e) {
-          return n(t.default.post, e, "post")
-        },
-        put: function(e) {
-          return n(t.default.put, e, "put")
-        },
-        patch: function(e) {
-          return n(t.default.patch, e, "patch")
-        },
-        delete: function(e) {
-          return n(t.default.delete, e, "del")
         }
       }
     },
@@ -28922,6 +29045,39 @@
           } = this.getDiscordUtils(), n = 0 !== e && null != o && null != _ ? o(e, _) : null;
           return -1 === n && (n = null), null !== (t = null != n ? n : E) && void 0 !== t ? t : R.RunningProcessFullscreenType.UNKNOWN
         }
+      }
+    },
+    670924: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        showModal: function() {
+          return a
+        },
+        updateModalProps: function() {
+          return i
+        }
+      });
+      var t = E("37983");
+      E("884691");
+      var o = E("551042"),
+        n = E("920636");
+      let r = (e, _, E) => function(o) {
+        return (0, t.jsx)(n.default, {
+          handleSubmit: e,
+          handleEarlyClose: _,
+          ...E,
+          ...o
+        })
+      };
+
+      function a(e, _, E) {
+        return (0, o.openModal)(r(e, _, E), {
+          onCloseCallback: _
+        })
+      }
+
+      function i(e, _, E, t) {
+        return (0, o.updateModal)(e, r(_, E, t))
       }
     },
     799895: function(e, _, E) {
@@ -35080,4 +35236,4 @@
     }
   }
 ]);
-//# sourceMappingURL=56e48d8d546d68b379e6.js.map
+//# sourceMappingURL=ea4d41c7a5d06aeaa769.js.map
