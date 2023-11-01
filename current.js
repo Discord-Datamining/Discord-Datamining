@@ -11419,6 +11419,8 @@
         USER_SETTINGS_PRONOUNS_EDIT_A11Y_LABEL: "Edit Pronouns",
         USER_SETTINGS_PROFILE_EFFECT_EDIT_A11Y_HINT: "Tap to edit profile effect",
         USER_SETTINGS_PROFILE_EFFECT_EDIT_A11Y_LABEL: "Edit Profile Effect",
+        USER_SETTINGS_AVATAR_DECORATION_EDIT_A11Y_HINT: "Tap to edit avatar decoration",
+        USER_SETTINGS_AVATAR_DECORATION_EDIT_A11Y_LABEL: "Edit avatar decoration",
         USER_SETTINGS_ABOUT_ME_DETAILS: "You can use markdown and links if you’d like.",
         USER_SETTINGS_BANNER_COLOR_TITLE: "Banner Color",
         USER_SETTINGS_BANNER_COLOR_DESCRIPTION: "Visible when no image is set",
@@ -18151,7 +18153,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(L.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242810", ", Version Hash: ").concat("d503e1c2dbde99d5aa19d2724e0b6eb86ff9a56a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242815", ", Version Hash: ").concat("75dd4cd37d37544c1f469dda92e40f2385ca0e54")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20532,8 +20534,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "242810", "242810"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242810")), _ = 0), _
+        let _ = parseInt((e = "242815", "242815"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242815")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35236,4 +35238,4 @@
     }
   }
 ]);
-//# sourceMappingURL=d52ffc7afbeb33737e8b.js.map
+//# sourceMappingURL=4fb0157846169cf526f5.js.map
