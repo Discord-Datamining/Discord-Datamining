@@ -15939,6 +15939,7 @@
         URF_LANDING_PAGE_SUBTITLE: "Use these forms to report illegal content under the Digital Services Act (DSA). For reports of copyright or trademark infringement please [go here]({supportURL}).",
         URF_LANDING_PAGE_REPORT_USER_PROFILE_BUTTON: "Report a User Profile",
         URF_LANDING_PAGE_REPORT_MESSAGE_BUTTON: "Report a Message",
+        EMAIL_ENTER_MODAL_INPUT_ERROR: "Not a well formed email address.",
         IN_APP_REPORTING_FREE_TEXT_INPUT_ERROR: "Invalid Input",
         LEGACY_CHAT_INPUT_SLASH_COMMAND_MISSING_HELP_MESSAGE: "Why don't I see application commands?",
         LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_TITLE: "Upgrade your chat",
@@ -18153,7 +18154,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(L.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242855", ", Version Hash: ").concat("c60ad786252afe0854e36a9421996b6155881fab")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242871", ", Version Hash: ").concat("5e66609498cb27b919aa423ca6dfbe8d7c12315d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20534,8 +20535,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "242855", "242855"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242855")), _ = 0), _
+        let _ = parseInt((e = "242871", "242871"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242871")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35238,4 +35239,4 @@
     }
   }
 ]);
-//# sourceMappingURL=176f5cea3077d0410e36.js.map
+//# sourceMappingURL=9a179c289351a793a4bc.js.map
