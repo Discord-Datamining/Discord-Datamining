@@ -10851,6 +10851,7 @@
         CONTACT_SYNC_SUBTITLE: "Discord can connect you with your friends and help them find you.",
         CONTACT_SYNC_ADD_FRIENDS_SUBTITLE: "Sync your phone contacts to find people you know on Discord. [Learn more](learnMoreHook)",
         CONTACT_SYNC_LANDING_TOGGLE_LABEL: "Allow contacts to add me",
+        CONTACT_SYNC_FIND_FRIENDS: "Find friends",
         CONTACT_SYNC_LANDING_DISCOVERABILITY_FOOTER: "This allows people to send you friend requests if they have your phone number saved in their contacts. $[Learn more about finding your friends](learnMoreHook)",
         CONTACT_SYNC_SETTING_LABEL: "Sync Contacts",
         CONTACT_SYNC_LANDING_INFO_2: "Allow someone to add you if they have your phone number saved in their phone contacts. (Email coming soon!)",
@@ -18066,7 +18067,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243605", ", Version Hash: ").concat("beefae86cd158de1ec30fe11bd948789252b491e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243607", ", Version Hash: ").concat("50a8ab29c8d7a683c0071a7c98666fcf24ba04ad")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20449,8 +20450,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "243605", "243605"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243605")), _ = 0), _
+        let _ = parseInt((e = "243607", "243607"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243607")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36138,4 +36139,4 @@
     }
   }
 ]);
-//# sourceMappingURL=59656fa5562996f190d7.js.map
+//# sourceMappingURL=b7e2f378ee3d8be5652a.js.map
