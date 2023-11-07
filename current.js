@@ -2803,6 +2803,7 @@
         JOIN_SERVER_INVITE_EXAMPLES_HEADER: "Invites should look like",
         JOIN_SERVER_INVITE_EXAMPLES_MOBILE_REFRESH: "Invites should look like $[!!{example1}!!](exampleHook), $[!!{example2}!!](exampleHook), or $[!!{example3}!!](exampleHook)",
         NOTICE_CONNECTION_CONFLICT: "Your voice has been disconnected because you connected at another location.",
+        NOTICE_VOICE_CONNECTED_LAST_SESSION: "You were in a voice channel last time you left Discord.",
         NOTICE_UNCLAIMED_ACCOUNT: "This is an unclaimed account. Claim it before it's lost.",
         NOTICE_UNVERIFIED_ACCOUNT: "Please check your email and follow the instructions to verify your account.",
         NOTICE_NATIVE_APPS_2020_06: "Want to take full advantage of Discord with better performance, in-game overlay, and more? Get the desktop app!",
@@ -9539,6 +9540,7 @@
         ONE_TIME_CHARGE_INFO: "This will be a one time charge for the amount of time chosen. You will not be billed yearly.",
         GIFT_RECIPIENT_NOTIFICATION: "{recipientDisplayName}, you have a gift!",
         GIFT_DURATION: "1 {timeInterval} of Nitro",
+        BASIC_GIFT_DURATION: "1 {timeInterval} of Nitro Basic",
         GIFT_OPEN_PROMPT: "Open gift",
         GIFT_RECIPIENT_INFO: "To: {recipientDisplayName}",
         GIFT_SENDER_INFO: "From: {senderDisplayName}",
@@ -16566,7 +16568,6 @@
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_MINIMAL: "Minimal",
         FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE: "Disconnected",
         FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY: "That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\n\n We disconnected you from the channel to protect your ears.",
-        SECURE_FRAMES_CONNECTION_INDICATOR: "SF Connection",
         SERVER_USAGE_SURVEY_BODY: "Help us make Discord better by answering a few questions about !!{guildName}!!",
         SERVER_USAGE_SURVEY_CTA: "Take Survey",
         REPORTS_USER_PREVIEW_TITLE: "Selected User",
@@ -17554,6 +17555,68 @@
         })
       }
     },
+    568131: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        fetchLibrary: function() {
+          return i
+        },
+        createTestModeLibraryApplications: function() {
+          return I
+        },
+        setActiveLaunchOptionId: function() {
+          return s
+        }
+      });
+      var t = E("872717"),
+        o = E("913144"),
+        n = E("370999"),
+        r = E("271560"),
+        a = E("49111");
+      async function i() {
+        try {
+          let e = await (0, r.httpGetWithCountryCodeQuery)({
+            url: a.Endpoints.LIBRARY,
+            oldFormErrors: !0
+          }, !1);
+          o.default.dispatch({
+            type: "LIBRARY_FETCH_SUCCESS",
+            libraryApplications: e.body
+          })
+        } catch (e) {
+          o.default.dispatch({
+            type: "LIBRARY_FETCH_FAIL",
+            error: e
+          })
+        }
+      }
+      async function I(e) {
+        let _ = e.primarySkuId;
+        if (null == _) return;
+        let E = await t.default.get({
+            url: a.Endpoints.APPLICATION_BRANCH_LIST(e.id),
+            oldFormErrors: !0
+          }).then(e => e.body),
+          r = E.map(E => n.default.createForTestMode({
+            id: e.id,
+            skuId: _,
+            branch: E
+          }));
+        o.default.dispatch({
+          type: "LIBRARY_APPLICATIONS_TEST_MODE_ENABLED",
+          libraryApplications: r
+        })
+      }
+
+      function s(e, _, E) {
+        o.default.dispatch({
+          type: "LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE",
+          applicationId: e,
+          branchId: _,
+          launchOptionId: E
+        })
+      }
+    },
     193990: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -18078,7 +18141,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244133", ", Version Hash: ").concat("351234d2bcba6d7ef90670b3157717a2cb656119")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244336", ", Version Hash: ").concat("feb2073c51db5db5e6a583fd839e47531fcd3ebe")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19431,7 +19494,7 @@
           loadRightBeforeConnectionOpen: !0
         },
         ExplicitMediaManager: {
-          actions: ["LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "SEARCH_FINISH", "LOGOUT"],
+          actions: ["LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "SEARCH_FINISH", "LOAD_FORUM_POSTS", "LOAD_ARCHIVED_THREADS_SUCCESS", "LOAD_THREADS_SUCCESS", "LOGOUT"],
           inlineRequire: () => E("983850").default,
           neverLoadBeforeConnectionOpen: !0
         },
@@ -19654,6 +19717,11 @@
         AnnouncementViewTrackingManager: {
           actions: ["CHANNEL_SELECT"],
           inlineRequire: () => E("596512").default,
+          neverLoadBeforeConnectionOpen: !0
+        },
+        DetectableGamesManager: {
+          actions: ["POST_CONNECTION_OPEN"],
+          inlineRequire: () => E("597090").default,
           neverLoadBeforeConnectionOpen: !0
         }
       };
@@ -20461,8 +20529,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "244133", "244133"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244133")), _ = 0), _
+        let _ = parseInt((e = "244336", "244336"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244336")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -22066,7 +22134,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return M
+          return m
         }
       }), E("222007");
       var t = E("345570"),
@@ -22079,45 +22147,46 @@
         s = E("982108"),
         T = E("377253"),
         S = E("18494"),
-        N = E("695681"),
-        O = E("457971"),
-        A = E("793441");
-      let R = {};
+        N = E("162771"),
+        O = E("695681"),
+        A = E("457971"),
+        R = E("793441");
+      let l = {};
 
-      function l(e) {
+      function u(e) {
         return "".concat(e.channel_id, ":").concat(e.id)
       }
 
-      function u() {
-        Object.values(R).forEach(e => {
+      function L() {
+        Object.values(l).forEach(e => {
           clearTimeout(e)
-        }), R = {}
+        }), l = {}
       }
 
-      function L(e, _) {
+      function C(e, _) {
         if (e.forEach(_ => {
-            let E = l(_);
-            R[E] = setTimeout(() => {
+            let E = u(_);
+            l[E] = setTimeout(() => {
               ! function(e) {
                 e.forEach(e => {
-                  let _ = l(e);
-                  clearTimeout(R[_]);
+                  let _ = u(e);
+                  clearTimeout(l[_]);
                   let E = T.default.getMessage(e.channel_id, e.id);
-                  null != E && C(E) && a.default.dispatch({
+                  null != E && c(E) && a.default.dispatch({
                     type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
                     messageId: e.id,
                     channelId: e.channel_id
-                  }), delete R[_]
+                  }), delete l[_]
                 })
               }(e)
             }, 2e4)
           }), _) {
-          (0, N.sendMultiChannelMessagesForScanning)(e);
+          (0, O.sendMultiChannelMessagesForScanning)(e);
           return
-        }(0, N.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
+        }(0, O.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
       }
 
-      function C(e) {
+      function c(e) {
         var _, E, t, o, n, r, a, i;
         let I = null !== (n = null == e ? void 0 : null === (_ = e.attachments) || void 0 === _ ? void 0 : _.length) && void 0 !== n ? n : 0,
           s = null !== (r = null == e ? void 0 : null === (E = e.embeds) || void 0 === E ? void 0 : E.length) && void 0 !== r ? r : 0;
@@ -22130,7 +22199,7 @@
         return T.length > 0 || S.length > 0
       }
 
-      function c(e) {
+      function D(e) {
         var _;
         let {
           channelId: E,
@@ -22138,50 +22207,82 @@
           optimistic: o,
           isPushNotification: n
         } = e;
-        if (!(0, O.isEligibleForExplicitMediaRedaction)() || o || n || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === I.default.getId()) return !1;
+        if (!(0, A.isEligibleForExplicitMediaRedaction)() || o || n || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === I.default.getId()) return !1;
         let r = S.default.getChannelId(),
           a = s.default.getCurrentSidebarChannelId(r),
           i = E === r || E === a;
-        return !!(i && (0, A.shouldRedactExplicitContent)(t)) && (L([t]), !0)
-      }
-
-      function D(e) {
-        let {
-          channelId: _,
-          messages: E
-        } = e;
-        if (!(0, O.isEligibleForExplicitMediaRedaction)() || null == _ || null == E) return !1;
-        let t = S.default.getChannelId(),
-          o = s.default.getCurrentSidebarChannelId(t),
-          n = _ === t || _ === o;
-        if (n) {
-          let e = E.filter(e => C(e) && (0, A.shouldRedactExplicitContent)(e));
-          if (e.length > 0) return L(e), !0
-        }
-        return !1
+        return !!(i && (0, R.shouldRedactExplicitContent)(t)) && (C([t]), !0)
       }
 
       function d(e) {
         let {
+          channelId: _,
+          messages: E
+        } = e;
+        if (!(0, A.isEligibleForExplicitMediaRedaction)() || null == _ || null == E) return !1;
+        let t = S.default.getChannelId(),
+          o = s.default.getCurrentSidebarChannelId(t),
+          n = _ === t || _ === o;
+        if (n) {
+          let e = E.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+          if (e.length > 0) return C(e), !0
+        }
+        return !1
+      }
+
+      function U(e) {
+        let {
           messages: _
         } = e;
-        if (!(0, O.isEligibleForExplicitMediaRedaction)() || null == _) return !1;
+        if (!(0, A.isEligibleForExplicitMediaRedaction)() || null == _) return !1;
         let E = o(_),
           t = r(E, (e, _) => e.id === _.id && e.channel_id === _.channel_id),
-          n = t.filter(e => C(e) && (0, A.shouldRedactExplicitContent)(e));
-        return !!(n.length > 0) && (L(n, !0), !0)
+          n = t.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+        return !!(n.length > 0) && (C(n, !0), !0)
       }
-      class U extends i.default {
+
+      function M(e) {
+        let {
+          guildId: _,
+          threads: E
+        } = e;
+        if (null == E || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
+        let t = N.default.getGuildId() === _;
+        if (t) {
+          let e = Object.keys(E).map(e => E[e].first_message),
+            _ = e.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+          if (_.length > 0) return C(_, !0), !0
+        }
+        return !1
+      }
+
+      function h(e) {
+        let {
+          guildId: _,
+          firstMessages: E
+        } = e;
+        if (null == E || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
+        let t = N.default.getGuildId() === _;
+        if (t) {
+          let e = E.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+          if (e.length > 0) return C(e, !0), !0
+        }
+        return !1
+      }
+      class P extends i.default {
         constructor(...e) {
           super(...e), this.actions = {
-            LOAD_MESSAGES_SUCCESS: D,
-            MESSAGE_CREATE: c,
-            LOGOUT: u,
-            SEARCH_FINISH: d
+            LOAD_MESSAGES_SUCCESS: d,
+            LOAD_FORUM_POSTS: M,
+            LOAD_THREADS_SUCCESS: h,
+            LOAD_ARCHIVED_THREADS_SUCCESS: h,
+            MESSAGE_CREATE: D,
+            LOGOUT: L,
+            SEARCH_FINISH: U
           }
         }
       }
-      var M = new U
+      var m = new P
     },
     722333: function(e, _, E) {
       "use strict";
@@ -22761,6 +22862,30 @@
           errorCode: E.code
         })), r
       }
+    },
+    597090: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return I
+        }
+      }), E("222007");
+      var t = E("823411"),
+        o = E("568131"),
+        n = E("689988"),
+        r = E("686470"),
+        a = E("773336");
+      class i extends n.default {
+        handlePostConnectionOpen() {
+          (0, a.isDesktop)() && (!r.default.fetched && (0, o.fetchLibrary)(), t.default.getDetectableGames())
+        }
+        constructor(...e) {
+          super(...e), this.actions = {
+            POST_CONNECTION_OPEN: this.handlePostConnectionOpen
+          }
+        }
+      }
+      var I = new i
     },
     676258: function(e, _, E) {
       "use strict";
@@ -36306,4 +36431,4 @@
     }
   }
 ]);
-//# sourceMappingURL=44a3769fe379fcbfa7f9.js.map
+//# sourceMappingURL=0809d114eff509728397.js.map
