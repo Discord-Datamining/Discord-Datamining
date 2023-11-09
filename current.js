@@ -5398,20 +5398,6 @@
         CLYDE_FEEDBACK_OPTION_NOT_HELPFUL: "Not helpful",
         CLYDE_FEEDBACK_OPTION_INAPPROPRIATE: "Inappropriate",
         CLYDE_FEEDBACK_OPTION_OTHER: "Other",
-        SUMMARIES_UPSELL_TITLE: "Catch Up with Summaries!",
-        SUMMARIES_UPSELL_SUBTITLE: "Help members stay updated on conversations in your server with AI-generated summaries.",
-        SUMMARIES_UPSELL_LEARN_MORE_LINK: "[Learn more]({helpdeskArticle})",
-        SUMMARIES_UPSELL_ENABLED: "Summaries Enabled",
-        SUMMARIES_UPSELL_ENABLED_SUBTITLE: "Head over to any text channel to read and navigate through your server's Summaries!",
-        SUMMARIES_UPSELL_BULLET_1: "Use the Summaries icon in the channel header to quickly hide/unhide.",
-        SUMMARIES_UPSELL_BULLET_2: "Enable/Disable Summaries for the entire server or customize for specific channels in server settings.",
-        SUMMARIES_UPSELL_ENABLED_LEARN_MORE_LINK: "[Learn more about Summaries]({helpdeskArticle})",
-        SUMMARIES_CHANNEL_NOTICE_TITLE: "Get ready for Summaries",
-        SUMMARIES_CHANNEL_NOTICE_SUBTITLE: "A new feature is coming soon to your server.",
-        SUMMARIES_CHANNEL_NOTICE_MANAGE_SETTINGS: "Manage Settings",
-        SUMMARIES_CHANNEL_NOTICE_LEARN_MORE: "Learn More",
-        SUMMARIES_CHANNEL_NOTICE_MESSAGE: "A new feature is coming soon to your server. Help members stay updated on conversations in your server with AI-generated summaries.",
-        SUMMARIES_MOBILE_SOON: "Mobile coming soon.",
         INVITE_URL: "Invite URL",
         VANITY_URL_USES: "{uses, plural, =0 {0 uses} one {1 use} other {{uses} uses}}",
         REMOVE_VANITY_URL: "Remove Custom Invite Link",
@@ -18140,7 +18126,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244838", ", Version Hash: ").concat("42041eff6e8395217a4f2616825a095de8fc3651")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244840", ", Version Hash: ").concat("bc3e0d531115689e7281409bb50d896a28667eb3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20530,8 +20516,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "244838", "244838"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244838")), _ = 0), _
+        let _ = parseInt((e = "244840", "244840"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244840")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36432,4 +36418,4 @@
     }
   }
 ]);
-//# sourceMappingURL=0aca4475436ccfbac55c.js.map
+//# sourceMappingURL=45c21ecb77114350f17a.js.map
