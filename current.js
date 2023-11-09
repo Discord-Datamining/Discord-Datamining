@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["27405"], {
+  ["22697"], {
     229353: function(e, _, E) {
       e.exports = Object.freeze({
         DISCORD: "Discord",
@@ -14955,17 +14955,12 @@
         INVENTORY_ADD_NITRO_DESCRIPTION_WITH_PLURAL: "You have already added your {maxFreePacks, plural, one {**{maxFreePacks}** free pack} other {**{maxFreePacks}** free packs}}. Upgrade to Nitro to add up to **{maxPacks}**.",
         INVENTORY_EMOJI_DETAILS: "See details",
         INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
-        INVENTORY_ALLOW_USE_SETTING_MOBILE: "Allow anyone to use server emoji",
-        INVENTORY_ALLOW_USE_SETTING: "Allow anyone to use and collect this server’s emoji",
         INVENTORY_ALLOW_USE_SETTING_V2: "Allow anyone to add and use this server’s emoji",
         INVENTORY_EMOJI_VISIBLE_DESCRIPTION: "Custom emoji from this server will be visible in previews across servers.",
-        INVENTORY_EMOJI_COLLECTED_DESCRIPTION: "{number, plural, one {**{number}** person has} other {**{number}** people have}} collected your server’s emoji.",
         INVENTORY_EMOJI_COLLECTED_DESCRIPTION_V2: "{number, plural, one {**{number}** person has} other {**{number}** people have}} added your server’s emoji.",
         INVENTORY_NEW_SETTING: "New Emoji Setting",
-        INVENTORY_NEW_SETTING_DESCRIPTION_SOON: "Starting soon, users outside of your server will be able to collect and use your server's emoji. You can change this setting at any time.",
         INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2: "Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.",
         INVENTORY_VIEW_SETTING: "View Setting",
-        INVENTORY_DISABLE_SETTING_TITLE: "Are you sure you want to disable collection?",
         INVENTORY_DISABLE_SETTING_TITLE_V2: "Are you sure you want to turn off external access to your server’s emoji?",
         INVENTORY_DISABLE_SETTING_TITLE_MOBILE: "Disable Pack Collection",
         INVENTORY_DISABLE_SETTING_DESCRIPTION: "{collectedCount, plural, one {**{collectedCount}** person} other {**{collectedCount}** people}} will lose access to your server’s emoji.",
@@ -14973,11 +14968,6 @@
         INVENTORY_DISABLE_SETTING_TOAST_DESCRIPTION: "Non-members of your server can no longer access and use your server’s emoji.",
         INVENTORY_LOCKED_PACK_EMOJI_UPSELL: "To use the full pack from **!!{packName}!!**, upgrade to Nitro",
         INVENTORY_LEAVE_SERVER_DESCRIPTION: "Keep emoji from servers you aren’t in.",
-        INVENTORY_TRY_PACKS_TITLE: "Add your favorite emoji packs",
-        INVENTORY_TRY_PACKS_DESCRIPTION: "Now you can add up to {maxPacks} emoji packs straight to your emoji picker with Nitro.",
-        INVENTORY_TRY_PACKS_DESCRIPTION_2: "Here are some popular packs to get you started:",
-        INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM: "Now you can add {maxFreePacks, plural, one {{maxFreePacks} emoji pack} other {{maxFreePacks} emoji packs}} straight to your emoji picker and use {maxFreePacks, plural, one {it} other {them}} anywhere on Discord.",
-        INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM_2: "Let the emoji party begin with one of the popular packs below:",
         INVENTORY_TRY_PACKS_TITLE_NITRO: "Up your emoji game with packs",
         INVENTORY_TRY_PACKS_TITLE_FREEMIUM: "Start your emoji collection with a free pack",
         INVENTORY_TRY_PACKS_DESCRIPTION_V2: "You can now click on emoji from [eligible servers]({helpCenterLink}) to add a pack straight to your emoji collection.",
@@ -15966,7 +15956,17 @@
         ASSISTANT_SKIP_BUTTON: "Skip Tutorial",
         ASSISTANT_SPLASH_TITLE: "Welcome, $[username](usernameHook)",
         ASSISTANT_SPLASH_DESCRIPTION: "Say hello to Wumpus, our mascot and your personal guide through Discord!",
-        ASSISTANT_SPLASH_BUTTON: "Get Started"
+        ASSISTANT_SPLASH_BUTTON: "Get Started",
+        ASSISTANT_SPLASH_BODY: "Say hi to Wumpus, he's here to show you how Discord works!",
+        ASSISTANT_VOICE_STEP_BODY: '**Tap "Join"** to show your friends you\'re available to hang.',
+        ASSISTANT_VOICE_JOINED_STEP_BODY: "**Nice!** Now your friends can see you're around and stop by!",
+        ASSISTANT_TEXT_STEP_BODY: "**Text in the main chat** while you chill in !!{voiceChannelName}!!.",
+        ASSISTANT_TEXT_STEP_BODY_NO_VC: "Text in the main chat.",
+        ASSISTANT_CHAT_BANNER_TEXT: "Say hi so your friends know you're here.",
+        ASSISTANT_CHAT_BANNER_BUTTON_TEXT: "Wave",
+        ASSISTANT_CHAT_BANNER_CLOSE_A11Y_LABEL: "Close",
+        ASSISTANT_VOICE_PANEL_PIP_OVERLAY_TITLE: "While you're chilling, friends will pop in like this. Tap to see more.",
+        ASSISTANT_VOICE_PANEL_ACTIVITY_TITLE: "Share your screen, listen to music or play games together!"
       })
     },
     444051: function(e, _, E) {
@@ -16566,8 +16566,6 @@
         DEADCHAT_ACTION_CAMERA: "My View",
         DEADCHAT_ACTION_STICKER: "Surprise Me",
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_MINIMAL: "Minimal",
-        FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE: "Disconnected",
-        FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY: "That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\n\n We disconnected you from the channel to protect your ears.",
         SERVER_USAGE_SURVEY_BODY: "Help us make Discord better by answering a few questions about !!{guildName}!!",
         SERVER_USAGE_SURVEY_CTA: "Take Survey",
         REPORTS_USER_PREVIEW_TITLE: "Selected User",
@@ -16610,7 +16608,7 @@
         LANGUAGE_CHANGED_CONFIRMATION_SUBTITLE_SPANISH: 'Discord est\xe1 configurado en Espa\xf1ol. Puedes elegir otro idioma en "Ajustes de aplicaci\xf3n" > "Idioma".'
       })
     },
-    617301: function(e, _, E) {
+    795529: function(e, _, E) {
       var t = {
         "./bg.jsona": "148174",
         "./cs.jsona": "466579",
@@ -16656,7 +16654,7 @@
       }
       o.keys = function() {
         return Object.keys(t)
-      }, o.id = "617301", e.exports = o
+      }, o.id = "795529", e.exports = o
     },
     279295: function(e, _, E) {
       "use strict";
@@ -16737,7 +16735,7 @@
         return n
       })
     },
-    918327: function(e, _, E) {
+    437087: function(e, _, E) {
       var t = {
         "./ggsans-400-normal.woff2": "899626",
         "./ggsans-400-normalitalic.woff2": "722885",
@@ -16763,9 +16761,9 @@
       }
       o.keys = function() {
         return Object.keys(t)
-      }, o.id = "918327", e.exports = o
+      }, o.id = "437087", e.exports = o
     },
-    690578: function(e, _, E) {
+    593526: function(e, _, E) {
       var t = {
         "./af": "696777",
         "./af.js": "696777",
@@ -17026,7 +17024,7 @@
         }
         return t[e]
       }
-      o.id = '"690578"', o.keys = function() {
+      o.id = '"593526"', o.keys = function() {
         return Object.keys(t)
       }, o.resolve = n, e.exports = o
     },
@@ -18141,7 +18139,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244384", ", Version Hash: ").concat("6499229968d0e8865cf01eb216eefae249f7e176")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244702", ", Version Hash: ").concat("93d05fb7a73f6175acd1733006757a93d17c8287")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -18149,19 +18147,19 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return r
+          return t
         }
       });
-      var t = E("872717"),
-        o = E("49111"),
-        n = E("782340");
-      class r extends t.default.V8APIError {
+      var t, o = E("872717"),
+        n = E("49111"),
+        r = E("782340");
+      t = class extends o.default.V8APIError {
         constructor(e, _) {
-          super(e, _, null != _ ? n.default.Messages.FORM_ERROR_GENERIC_WITH_DETAILS.format({
-            statusPageURL: o.Links.STATUS,
+          super(e, _, null != _ ? r.default.Messages.FORM_ERROR_GENERIC_WITH_DETAILS.format({
+            statusPageURL: n.Links.STATUS,
             details: "".concat(_)
-          }) : n.default.Messages.FORM_ERROR_GENERIC.format({
-            statusPageURL: o.Links.STATUS
+          }) : r.default.Messages.FORM_ERROR_GENERIC.format({
+            statusPageURL: n.Links.STATUS
           }))
         }
       }
@@ -18170,19 +18168,19 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return r
+          return t
         }
       });
-      var t = E("872717"),
-        o = E("49111"),
-        n = E("782340");
-      class r extends t.default.V6OrEarlierAPIError {
+      var t, o = E("872717"),
+        n = E("49111"),
+        r = E("782340");
+      t = class extends o.default.V6OrEarlierAPIError {
         constructor(e, _) {
-          super(e, _, null != _ ? n.default.Messages.FORM_ERROR_GENERIC_WITH_DETAILS.format({
-            statusPageURL: o.Links.STATUS,
+          super(e, _, null != _ ? r.default.Messages.FORM_ERROR_GENERIC_WITH_DETAILS.format({
+            statusPageURL: n.Links.STATUS,
             details: "".concat(_)
-          }) : n.default.Messages.FORM_ERROR_GENERIC.format({
-            statusPageURL: o.Links.STATUS
+          }) : r.default.Messages.FORM_ERROR_GENERIC.format({
+            statusPageURL: n.Links.STATUS
           }))
         }
       }
@@ -18261,7 +18259,7 @@
           ...e
         }),
         N = new n.default({
-          getMessages: e => "en-US" === e ? S(a) : E("617301")("./messages/".concat(e, ".jsona").replace("./messages/", "./")).then(e => {
+          getMessages: e => "en-US" === e ? S(a) : E("795529")("./messages/".concat(e, ".jsona").replace("./messages/", "./")).then(e => {
             let {
               default: _
             } = e;
@@ -18340,15 +18338,15 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return o
+          return t
         }
       }), E("70102"), E("222007"), E("704744");
-      var t = E("913144");
-      class o {
+      var t, o = E("913144");
+      t = class {
         initialize() {
           this.initializedCount++, !(this.initializedCount > 1) && (this._initialize(), Object.entries(this.actions).forEach(e => {
             let [_, E] = e;
-            t.default.subscribe(_, "function" == typeof E ? E : E.callback)
+            o.default.subscribe(_, "function" == typeof E ? E : E.callback)
           }), this.stores.forEach((e, _) => {
             _.addChangeListener(e), e()
           }))
@@ -18356,7 +18354,7 @@
         terminate(e) {
           !(this.initializedCount <= 0) && (e ? this.initializedCount = 0 : this.initializedCount--, 0 === this.initializedCount && (this._terminate(), Object.entries(this.actions).forEach(e => {
             let [_, E] = e;
-            t.default.unsubscribe(_, "function" == typeof E ? E : E.callback)
+            o.default.unsubscribe(_, "function" == typeof E ? E : E.callback)
           })))
         }
         _initialize() {}
@@ -18402,11 +18400,16 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return o
+          return t
         }
       }), E("222007");
-      var t = E("301165");
-      class o extends t.FrameLoop {
+      var t, o = E("301165");
+
+      function n(e, _) {
+        let E = e.findIndex(_);
+        return E < 0 ? e.length : E
+      }
+      t = class extends o.FrameLoop {
         setRAF(e, _) {
           0 !== this.id && (this._cancelAnimationFrame(this.id), this.id = 0), this._requestAnimationFrame = e, this._cancelAnimationFrame = _, this.loop()
         }
@@ -18423,31 +18426,31 @@
               this.animations.length > 0 || this.startQueue.size > 0 || this.frameQueue.size > 0 || this.writeQueue.size > 0 || this.timeoutQueue.length > 0 ? this.id = this._requestAnimationFrame(this.loop) : (this.lastTime = 0, this.id = 0)
             }
           }, this.startLoop = () => {
-            !(this.lastTime > 0) && (this.lastTime = t.Globals.now(), this.id = this._requestAnimationFrame(this.loop))
+            !(this.lastTime > 0) && (this.lastTime = o.Globals.now(), this.id = this._requestAnimationFrame(this.loop))
           }, this.advance = () => {
-            let e = t.Globals.now();
-            if (this.startQueue.size > 0 && (this.startQueue.forEach(this.addAnimation), this.startQueue.clear()), this.timeoutQueue.length > 0 && t.Globals.batchedUpdates(() => {
+            let e = o.Globals.now();
+            if (this.startQueue.size > 0 && (this.startQueue.forEach(this.addAnimation), this.startQueue.clear()), this.timeoutQueue.length > 0 && o.Globals.batchedUpdates(() => {
                 let _ = n(this.timeoutQueue, _ => _.time > e);
                 this.timeoutQueue.splice(0, _).forEach(e => e.handler())
               }), e > this.lastTime) {
               let _ = Math.min(64, e - this.lastTime);
-              this.lastTime = e, t.Globals.batchedUpdates(() => {
-                this.animations.length > 0 && (t.Globals.willAdvance(this.animations), this.animations = this.animations.filter(e => (this.priority = e.priority, !e.idle && e.advance(_), !e.idle)), this.priority = 0), this.frameQueue.size > 0 && (this.frameQueue.forEach(_ => _(e)), this.frameQueue.clear()), this.writeQueue.size > 0 && (this.writing = !0, this.writeQueue.forEach(_ => _(e)), this.writeQueue.clear(), this.writing = !1)
+              this.lastTime = e, o.Globals.batchedUpdates(() => {
+                this.animations.length > 0 && (o.Globals.willAdvance(this.animations), this.animations = this.animations.filter(e => (this.priority = e.priority, !e.idle && e.advance(_), !e.idle)), this.priority = 0), this.frameQueue.size > 0 && (this.frameQueue.forEach(_ => _(e)), this.frameQueue.clear()), this.writeQueue.size > 0 && (this.writing = !0, this.writeQueue.forEach(_ => _(e)), this.writeQueue.clear(), this.writing = !1)
               })
             }
           }, this.start = e => {
             this.priority > e.priority ? this.startQueue.add(e) : (this.addAnimation(e), this.startLoop())
           }, this.setTimeout = (e, _) => {
-            let E = t.Globals.now() + _,
-              o = () => {
-                let e = this.timeoutQueue.findIndex(e => e.cancel === o);
+            let E = o.Globals.now() + _,
+              t = () => {
+                let e = this.timeoutQueue.findIndex(e => e.cancel === t);
                 e >= 0 && this.timeoutQueue.splice(e, 1)
               },
               r = n(this.timeoutQueue, e => e.time > E),
               a = {
                 time: E,
                 handler: e,
-                cancel: o
+                cancel: t
               };
             return this.timeoutQueue.splice(r, 0, a), this.startLoop(), a
           }, this.onFrame = e => {
@@ -18456,11 +18459,6 @@
             this.writing ? e(this.lastTime) : this.writeQueue.add(e)
           }
         }
-      }
-
-      function n(e, _) {
-        let E = e.findIndex(_);
-        return E < 0 ? e.length : E
       }
     },
     619106: function(e, _, E) {
@@ -18555,14 +18553,16 @@
             }
           }
           o.report("Network", "Sending ".concat(e.method, " to ").concat(e.url)), e.on("response", _ => {
-            let E = null != _ && _.status >= 400 ? _.text : null,
-              t = null == E ? "" : "and body: ".concat(E);
-            o.report("Network", "Completed ".concat(e.method, " to ").concat(e.url, " with status: ").concat(null == _ ? void 0 : _.status, " ").concat(t))
+            let E = null != _ && _.status >= 400 ? _.text : null;
+            o.report("Network", "Completed ".concat(e.method, " to ").concat(e.url, " with status: ").concat(null == _ ? void 0 : _.status, " ").concat(null == E ? "" : "and body: ".concat(E)))
           }), e.on("error", (_, E) => {
-            var t, n;
             if (o.report("Network", "Failed ".concat(e.method, " to ").concat(e.url, " with status ").concat(null == _ ? void 0 : _.status, " and body: ").concat(null == E ? void 0 : E.text)), null != _ && "parse" in _ && _.parse) {
               let E = "[FILTERED]";
-              S.includes(e.url) && (E = null === (n = e.xhr) || void 0 === n ? void 0 : null === (t = n.responseText) || void 0 === t ? void 0 : t.slice(0, 1e3)), I.default.addBreadcrumb({
+              if (S.includes(e.url)) {
+                var t, n;
+                E = null === (n = e.xhr) || void 0 === n ? void 0 : null === (t = n.responseText) || void 0 === t ? void 0 : t.slice(0, 1e3)
+              }
+              I.default.addBreadcrumb({
                 category: "superagent",
                 message: "Failed to parse HTTP response.",
                 data: {
@@ -19076,8 +19076,8 @@
           return S
         }
         getCurrentDesktopIcon() {
-          var e, _;
-          return null === (_ = S) || void 0 === _ ? void 0 : null === (e = _.client) || void 0 === e ? void 0 : e.desktop
+          var e;
+          return null == S ? void 0 : null === (e = S.client) || void 0 === e ? void 0 : e.desktop
         }
       }
       u.displayName = "AppIconPersistedStoreState", u.persistKey = "AppIconPersistedStoreState";
@@ -19096,7 +19096,7 @@
           let {
             markAsDismissed: _
           } = e;
-          if (S.client.coachmarkImpressions += 1, S.client.coachmarkImpressions >= 2) null == _ || _(), l()
+          S.client.coachmarkImpressions += 1, S.client.coachmarkImpressions >= 2 && (null == _ || _(), l())
         }
       })
     },
@@ -20529,8 +20529,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "244384", "244384"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244384")), _ = 0), _
+        let _ = parseInt((e = "244702", "244702"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244702")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20895,44 +20895,44 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return c
+          return t
         }
       }), E("222007");
-      var t = E("773364"),
-        o = E("913144"),
-        n = E("689988"),
-        r = E("49671"),
-        a = E("374014"),
-        i = E("103979"),
-        I = E("271938"),
-        s = E("945956"),
-        T = E("205817"),
-        S = E("599110"),
-        N = E("773336"),
-        O = E("56947"),
-        A = E("386045"),
-        R = E("30591"),
-        l = E("18346"),
-        u = E("80028"),
-        L = E("49111"),
-        C = E("706530");
-      class c extends n.default {
+      var t, o = E("773364"),
+        n = E("913144"),
+        r = E("689988"),
+        a = E("49671"),
+        i = E("374014"),
+        I = E("103979"),
+        s = E("271938"),
+        T = E("945956"),
+        S = E("205817"),
+        N = E("599110"),
+        O = E("773336"),
+        A = E("56947"),
+        R = E("386045"),
+        l = E("30591"),
+        u = E("18346"),
+        L = E("80028"),
+        C = E("49111"),
+        c = E("706530");
+      t = class extends r.default {
         handleVoiceStateUpdates(e) {
-          for (let _ of e.voiceStates) s.default.getChannelId() === _.channelId && this.maybeShowClipsWarning(_.userId)
+          for (let _ of e.voiceStates) T.default.getChannelId() === _.channelId && this.maybeShowClipsWarning(_.userId)
         }
         handleRTCConnectionFlags(e) {
           let {
             userId: _,
             context: E,
-            channelId: o,
+            channelId: t,
             guildId: n
           } = e;
-          if (E === t.MediaEngineContextTypes.DEFAULT) this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
-          else if (E === t.MediaEngineContextTypes.STREAM) {
-            let e = T.default.getRTCConnection(a.encodeStreamKey({
-              streamType: null != n ? C.StreamTypes.GUILD : C.StreamTypes.CALL,
+          if (E === o.MediaEngineContextTypes.DEFAULT) this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
+          else if (E === o.MediaEngineContextTypes.STREAM) {
+            let e = S.default.getRTCConnection(i.encodeStreamKey({
+              streamType: null != n ? c.StreamTypes.GUILD : c.StreamTypes.CALL,
               ownerId: _,
-              channelId: o,
+              channelId: t,
               guildId: n
             }));
             this.recordInboundStream(_, e)
@@ -20942,33 +20942,33 @@
           let {
             userId: _,
             ssrc: E,
-            context: o
+            context: t
           } = e;
-          o === t.MediaEngineContextTypes.DEFAULT && this.applySSRCRecording(_, E)
+          t === o.MediaEngineContextTypes.DEFAULT && this.applySSRCRecording(_, E)
         }
         handleClipsInitFailure(e) {
           let {
             applicationName: _,
             errMsg: E
           } = e;
-          S.default.track(L.AnalyticEvents.CLIPS_INIT_FAILURE, {
+          N.default.track(C.AnalyticEvents.CLIPS_INIT_FAILURE, {
             application_name: _,
             error_message: E
           })
         }
         maybeShowClipsWarning(e) {
-          let _ = s.default.getChannelId();
-          if (!(null == _ || A.default.getClipsWarningShown(_)) && e !== I.default.getId()) A.default.isClipsEnabledForUser(e) && (o.default.dispatch({
+          let _ = T.default.getChannelId();
+          if (!(null == _ || R.default.getClipsWarningShown(_)) && e !== s.default.getId()) R.default.isClipsEnabledForUser(e) && (n.default.dispatch({
             type: "CLIPS_SHOW_CALL_WARNING",
             channelId: _
           }), this.showClipsToast())
         }
         handlePostConnectionOpen() {
-          if (!(0, l.default)()) return;
+          if (!(0, u.default)()) return;
           this.applyNativeClipsSettings();
-          let e = (0, O.areClipsEnabled)();
-          if (!!e)(null == A.default.getHardwareClassification() || null == A.default.getHardwareClassificationForDecoupled() || A.default.getHardwareClassificationVersion() !== u.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
-            o.default.dispatch({
+          let e = (0, A.areClipsEnabled)();
+          if (!!e)(null == R.default.getHardwareClassification() || null == R.default.getHardwareClassificationForDecoupled() || R.default.getHardwareClassificationVersion() !== L.CLIPS_HARDWARE_CLASSIFICATION_VERSION) && this.classifyHardwareAndTrack().then(e => {
+            n.default.dispatch({
               type: "CLIPS_CLASSIFY_HARDWARE",
               classification: e
             })
@@ -20978,25 +20978,25 @@
           let {
             userId: _,
             context: E,
-            channelId: o,
+            channelId: t,
             guildId: n
           } = e;
-          if (E !== t.MediaEngineContextTypes.STREAM || _ === I.default.getId() || !(0, l.default)()) return;
-          let r = T.default.getRTCConnection(a.encodeStreamKey({
-            streamType: null != n ? C.StreamTypes.GUILD : C.StreamTypes.CALL,
+          if (E !== o.MediaEngineContextTypes.STREAM || _ === s.default.getId() || !(0, u.default)()) return;
+          let r = S.default.getRTCConnection(i.encodeStreamKey({
+            streamType: null != n ? c.StreamTypes.GUILD : c.StreamTypes.CALL,
             ownerId: _,
-            channelId: o,
+            channelId: t,
             guildId: n
           }));
           this.recordInboundStream(_, r)
         }
         async classifyHardwareAndTrack() {
           try {
-            let e = await r.default.processUtils.getSystemInfo(),
+            let e = await a.default.processUtils.getSystemInfo(),
               _ = this.classifyHardware(e);
-            return S.default.track(L.AnalyticEvents.CLIPS_HARDWARE_CLASSIFICATION, {
+            return N.default.track(C.AnalyticEvents.CLIPS_HARDWARE_CLASSIFICATION, {
               classification: _,
-              version: u.CLIPS_HARDWARE_CLASSIFICATION_VERSION,
+              version: L.CLIPS_HARDWARE_CLASSIFICATION_VERSION,
               gpu_models: e.gpus.map(e => {
                 let {
                   model: _
@@ -21005,52 +21005,52 @@
               })
             }), _
           } catch (e) {
-            return R.ClipsHardwareClassification.UNKNOWN
+            return l.ClipsHardwareClassification.UNKNOWN
           }
         }
         classifyHardware(e) {
-          if ((0, N.isWindows)()) {
+          if ((0, O.isWindows)()) {
             let _ = e.gpus.some(e => {
                 let {
                   model: _
                 } = e;
-                return u.WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
+                return L.WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
               }),
               E = e.gpus.some(e => {
                 let {
                   model: _
                 } = e;
-                return u.WINDOWS_HARDWARE_MINIMUM_GPU_REGEX.test(_)
+                return L.WINDOWS_HARDWARE_MINIMUM_GPU_REGEX.test(_)
               });
-            return _ ? R.ClipsHardwareClassification.MEETS_AUTO_ENABLE : E ? R.ClipsHardwareClassification.MEETS_MINIMUM : R.ClipsHardwareClassification.BELOW_MINIMUM
+            return _ ? l.ClipsHardwareClassification.MEETS_AUTO_ENABLE : E ? l.ClipsHardwareClassification.MEETS_MINIMUM : l.ClipsHardwareClassification.BELOW_MINIMUM
           }
-          if ((0, N.isMac)()) {
+          if ((0, O.isMac)()) {
             let _ = e.gpus.some(e => {
               let {
                 model: _
               } = e;
-              return u.OSX_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
+              return L.OSX_HARDWARE_AUTO_ENABLE_GPU_REGEX.test(_)
             });
-            return _ ? R.ClipsHardwareClassification.MEETS_AUTO_ENABLE : R.ClipsHardwareClassification.MEETS_MINIMUM
+            return _ ? l.ClipsHardwareClassification.MEETS_AUTO_ENABLE : l.ClipsHardwareClassification.MEETS_MINIMUM
           }
-          return R.ClipsHardwareClassification.UNKNOWN
+          return l.ClipsHardwareClassification.UNKNOWN
         }
         applySSRCRecording(e, _) {
-          if (!(0, l.default)() || e === I.default.getId()) return;
-          let E = s.default.getRTCConnection();
+          if (!(0, u.default)() || e === s.default.getId()) return;
+          let E = T.default.getRTCConnection();
           if (null == E) return;
-          let t = A.default.isVoiceRecordingAllowedForUser(e);
+          let t = R.default.isVoiceRecordingAllowedForUser(e);
           null == E || E.setClipRecordSSRC(e, "audio", "inbound", t, _)
         }
         recordInboundStream(e, _) {
-          if (!(0, l.default)() || e === I.default.getId()) return;
+          if (!(0, u.default)() || e === s.default.getId()) return;
           let {
             enableViewerClipping: E
-          } = i.default.getCurrentConfig({
+          } = I.default.getCurrentConfig({
             location: "ClipsManager:recordInboundStream"
           });
           if (!E) return;
-          let t = A.default.isViewerClippingAllowedForUser(e);
+          let t = R.default.isViewerClippingAllowedForUser(e);
           this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", t), _.setClipRecordSSRC(e, "video", "inbound", t)
         }
         constructor(...e) {
@@ -21428,7 +21428,7 @@
           }(h), function() {
             let [e, _] = o.useState([]);
             return o.useEffect(() => {
-              Promise.all(T.fontsToPreload.map(e => E("918327")("@discordapp/tokens/typography/generated/gg-sans/".concat(e, ".woff2").replace("@discordapp/tokens/typography/generated/gg-sans/", "./")).then(e => {
+              Promise.all(T.fontsToPreload.map(e => E("437087")("@discordapp/tokens/typography/generated/gg-sans/".concat(e, ".woff2").replace("@discordapp/tokens/typography/generated/gg-sans/", "./")).then(e => {
                 let {
                   default: _
                 } = e;
@@ -21842,13 +21842,13 @@
         r = E("147746");
 
       function a() {
-        var e, _;
-        (null === (_ = o.default) || void 0 === _ ? void 0 : null === (e = _.fileManager) || void 0 === e ? void 0 : e.cleanupTempFiles) != null && setTimeout(() => void I(), 1e4)
+        var e;
+        (null === o.default || void 0 === o.default ? void 0 : null === (e = o.default.fileManager) || void 0 === e ? void 0 : e.cleanupTempFiles) != null && setTimeout(() => void I(), 1e4)
       }
       let i = new t.default("tempFiles");
       async function I() {
-        var e, _;
-        if ((null === (_ = o.default) || void 0 === _ ? void 0 : null === (e = _.fileManager) || void 0 === e ? void 0 : e.cleanupTempFiles) != null) try {
+        var e;
+        if ((null === o.default || void 0 === o.default ? void 0 : null === (e = o.default.fileManager) || void 0 === e ? void 0 : e.cleanupTempFiles) != null) try {
           let e = await o.default.fileManager.cleanupTempFiles();
           if ((null == e ? void 0 : e.callscopeLogFiles) != null && e.callscopeLogFiles.length > 0) {
             let _ = Math.floor(1e3 * Math.random()).toString(),
@@ -22001,12 +22001,11 @@
             type: "EMOJI_CAPTIONS_FETCH_SUCCESS",
             emojiCaptions: _
           })
-        } catch (e) {
+        } catch (_) {
+          var e;
           o.default.dispatch({
             type: "EMOJI_CAPTIONS_FETCH_ERROR",
-            is4XXError: function(e) {
-              return (null == e ? void 0 : e.status) >= 400 && (null == e ? void 0 : e.status) <= 499
-            }(e.body)
+            is4XXError: (null == (e = _.body) ? void 0 : e.status) >= 400 && (null == e ? void 0 : e.status) <= 499
           })
         }
       }
@@ -22288,84 +22287,84 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return R
+          return t
         }
       }), E("222007");
-      var t = E("917351"),
-        o = E.n(t),
-        n = E("95410"),
-        r = E("689988"),
-        a = E("139321"),
-        i = E("269596"),
-        I = E("945956"),
-        s = E("200521");
-      let T = {
+      var t, o = E("917351"),
+        n = E.n(o),
+        r = E("95410"),
+        a = E("689988"),
+        i = E("139321"),
+        I = E("269596"),
+        s = E("945956"),
+        T = E("200521");
+      let S = {
           chance: .2,
           cooldown: 864e5
         },
-        S = {
-          [s.FeedbackType.VOICE]: {
-            ...T,
-            hotspot: a.HotspotLocations.VOICE_CALL_FEEDBACK,
+        N = {
+          [T.FeedbackType.VOICE]: {
+            ...S,
+            hotspot: i.HotspotLocations.VOICE_CALL_FEEDBACK,
             storageKey: "lastVoiceFeedback",
             eligibilityChecks: [function(e) {
-              let _ = I.default.getWasEverRtcConnected();
-              return !_ || I.default.getWasEverMultiParticipant()
+              let _ = s.default.getWasEverRtcConnected();
+              return !_ || s.default.getWasEverMultiParticipant()
             }]
           },
-          [s.FeedbackType.STREAM]: {
-            ...T,
-            hotspot: a.HotspotLocations.REPORT_PROBLEM_POST_STREAM
+          [T.FeedbackType.STREAM]: {
+            ...S,
+            hotspot: i.HotspotLocations.REPORT_PROBLEM_POST_STREAM
           },
-          [s.FeedbackType.VIDEO_BACKGROUND]: {
-            ...T,
-            hotspot: a.HotspotLocations.VIDEO_BACKGROUND_FEEDBACK,
+          [T.FeedbackType.VIDEO_BACKGROUND]: {
+            ...S,
+            hotspot: i.HotspotLocations.VIDEO_BACKGROUND_FEEDBACK,
             storageKey: "lastVideoBackgroundFeedback"
           },
-          [s.FeedbackType.ACTIVITY]: {
+          [T.FeedbackType.ACTIVITY]: {
             cooldown: 0,
             chance: .5,
-            hotspot: a.HotspotLocations.POST_ACTIVITY_FEEDBACK,
+            hotspot: i.HotspotLocations.POST_ACTIVITY_FEEDBACK,
             storageKey: "lastActivityFeedback"
           },
-          [s.FeedbackType.IN_APP_REPORTS]: {
+          [T.FeedbackType.IN_APP_REPORTS]: {
             cooldown: 1728e5,
             chance: .5,
-            hotspot: a.HotspotLocations.IN_APP_REPORTS_FEEDBACK,
+            hotspot: i.HotspotLocations.IN_APP_REPORTS_FEEDBACK,
             storageKey: "inAppReportsFeedback"
           }
         };
 
-      function N(e) {
-        return i.default.hasHotspot(e.hotspot)
-      }
-
       function O(e) {
-        return Math.random() < e.chance
+        return I.default.hasHotspot(e.hotspot)
       }
 
       function A(e) {
+        return Math.random() < e.chance
+      }
+
+      function R(e) {
         if (null != e.storageKey) {
-          let _ = n.default.get(e.storageKey);
+          let _ = r.default.get(e.storageKey);
           if (null != _ && Date.now() - _ < e.cooldown) return !1
         }
         return !0
       }
-      class R extends r.default {
+      t = class extends a.default {
         possiblyShowFeedbackModal(e, _) {
           (function(e) {
             var _;
             if (__OVERLAY__) return !1;
-            let E = S[e],
+            let E = N[e],
               t = null !== (_ = E.eligibilityChecks) && void 0 !== _ ? _ : [];
-            return [A, O, N].every(e => e(E)) && t.every(e => e(E))
-          })(e) && (null == this.feedbackTypeToShow || !(s.FeedbackTypePrecedence[this.feedbackTypeToShow] < s.FeedbackTypePrecedence[e])) && (this.feedbackTypeToShow = e, this.showFeedbackModalDebounced(_))
+            return [R, A, O].every(e => e(E)) && t.every(e => e(E))
+          })(e) && (null == this.feedbackTypeToShow || !(T.FeedbackTypePrecedence[this.feedbackTypeToShow] < T.FeedbackTypePrecedence[e])) && (this.feedbackTypeToShow = e, this.showFeedbackModalDebounced(_))
         }
         constructor(...e) {
-          super(...e), this.feedbackTypeToShow = null, this.showFeedbackModalDebounced = o.debounce(e => {
+          super(...e), this.feedbackTypeToShow = null, this.showFeedbackModalDebounced = n.debounce(e => {
             null != this.feedbackTypeToShow && (! function(e) {
-              let _ = S[e];
-              null != _.storageKey && n.default.set(_.storageKey, Date.now())
+              let _ = N[e];
+              null != _.storageKey && r.default.set(_.storageKey, Date.now())
             }(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e())
           }, 200)
         }
@@ -22583,20 +22582,23 @@
           } = e, E = n.default.getChannel(_);
           if (null != E && E.isForumLikeChannel()) {
             let e = function(e) {
-              var _, E;
-              let t = [],
-                n = e.defaultReactionEmoji;
-              return (null == n ? void 0 : n.emojiId) != null ? t.push(r.default.getEmojiURL({
-                id: n.emojiId,
-                animated: null !== (E = null === (_ = o.default.getUsableCustomEmojiById(n.emojiId)) || void 0 === _ ? void 0 : _.animated) && void 0 !== E && E,
-                size: i.EMOJI_SIZE_MAP.reaction
-              })) : (null == n ? void 0 : n.emojiName) != null && t.push(a.default.getURL(n.emojiName)), e.availableTags.forEach(e => {
-                null != e.emojiId ? t.push(r.default.getEmojiURL({
+              let _ = [],
+                E = e.defaultReactionEmoji;
+              if ((null == E ? void 0 : E.emojiId) != null) {
+                var t, n;
+                _.push(r.default.getEmojiURL({
+                  id: E.emojiId,
+                  animated: null !== (n = null === (t = o.default.getUsableCustomEmojiById(E.emojiId)) || void 0 === t ? void 0 : t.animated) && void 0 !== n && n,
+                  size: i.EMOJI_SIZE_MAP.reaction
+                }))
+              } else(null == E ? void 0 : E.emojiName) != null && _.push(a.default.getURL(E.emojiName));
+              return e.availableTags.forEach(e => {
+                null != e.emojiId ? _.push(r.default.getEmojiURL({
                   id: e.emojiId,
                   animated: !1,
                   size: i.EMOJI_SIZE_MAP.reaction
-                })) : null != e.emojiName && t.push(a.default.getURL(e.emojiName))
-              }), t
+                })) : null != e.emojiName && _.push(a.default.getURL(e.emojiName))
+              }), _
             }(E);
             e.forEach(e => {
               if (null != e && 0 !== e.length) {
@@ -22942,25 +22944,25 @@
             return
           }
         }
-        let o = I.default.GameDisplayModeIsGameSupported(e.name);
+        let t = I.default.GameDisplayModeIsGameSupported(e.name);
 
-        function n(_) {
+        function o(_) {
           i.default.track(S.AnalyticEvents.GAME_DISPLAY_MODE_ADJUSTMENT_RESPONSE, {
             game: e.name,
             game_id: e.id,
             response: _,
-            is_game_display_mode_adjustment_supported: o
+            is_game_display_mode_adjustment_supported: t
           })
         }(0, T.OpenGameDisplayModeUpdateDialog)({
           onAccept: () => {
-            I.default.GameDisplayModeUpdate(e.name), n(t.Accepted)
+            I.default.GameDisplayModeUpdate(e.name), o("accepted")
           },
-          onDecline: () => n(t.Declined),
+          onDecline: () => o("declined"),
           onNeverPromptForGameAgain: () => {
-            s.GameDisplayModeStorage.setPromptingForGameDisable(e.name, !0), n(t.NeverPromptAgain)
+            s.GameDisplayModeStorage.setPromptingForGameDisable(e.name, !0), o("never_prompt_again")
           },
           game: e,
-          isSupported: o
+          isSupported: t
         })
       }(o = t || (t = {})).Accepted = "accepted", o.Declined = "declined", o.NeverPromptAgain = "never_prompt_again"
     },
@@ -23306,16 +23308,16 @@
         getByWidget(e) {
           switch (e) {
             case L.OverlayWidgets.VOICE:
-              return this.getByType(t.Voice);
+              return this.getByType(0);
             case L.OverlayWidgets.TEXT:
-              return this.getByType(t.Text);
+              return this.getByType(1);
             default:
               return null
           }
         }
         getAnalytics() {
-          let e = this.types[t.Voice],
-            _ = this.types[t.Text];
+          let e = this.types[0],
+            _ = this.types[1];
           return {
             widget_voice_pin_toggle_count: e.pinnedToggledCount,
             widget_voice_visible_duration: e.visibleDuration.elapsed().asMilliseconds(),
@@ -23327,8 +23329,8 @@
         }
         constructor() {
           this.types = {
-            [t.Voice]: U.makeEmptyAnalytics(),
-            [t.Text]: U.makeEmptyAnalytics()
+            0: U.makeEmptyAnalytics(),
+            1: U.makeEmptyAnalytics()
           }
         }
       }
@@ -23434,8 +23436,8 @@
           delete h.gamesByName[_]
         }
         async getAnalytics() {
-          var e, _, E, t, o, n, r;
-          let a = {
+          var e, _, E, t, o, n;
+          let r = {
               setting_is_enabled: N.default.enabled,
               setting_method: C.OverlayMethod[N.default.method],
               setting_display_user: O.default.getDisplayUserMode(),
@@ -23444,20 +23446,20 @@
               setting_notification_position: O.default.getNotificationPositionMode(),
               setting_chat_notification: O.default.getTextChatNotificationMode()
             },
-            i = (0, T.getOverlayGameStatus)(this.game),
-            I = {
+            a = (0, T.getOverlayGameStatus)(this.game),
+            i = {
               event_uuid: this.uuid,
               overlay_usage_stats_version: 1,
               ...this.notificationAnalytics.getAnalytics(),
               ...this.widgetAnalytics.getAnalytics(),
               ...this.screenAnalytics.getAnalytics(),
-              ...a,
-              overlay_status_game_enabled: i.enabled,
-              overlay_status_game_source: i.source,
-              game_name: null !== (t = this.game.name) && void 0 !== t ? t : null,
-              game_id: null !== (o = this.game.id) && void 0 !== o ? o : null,
+              ...r,
+              overlay_status_game_enabled: a.enabled,
+              overlay_status_game_source: a.source,
+              game_name: null !== (E = this.game.name) && void 0 !== E ? E : null,
+              game_id: null !== (t = this.game.id) && void 0 !== t ? t : null,
               game_elevated: this.game.elevated,
-              game_is_launcher: null !== (n = this.game.isLauncher) && void 0 !== n && n,
+              game_is_launcher: null !== (o = this.game.isLauncher) && void 0 !== o && o,
               game_duration: this.gameTimer.elapsed().asMilliseconds(),
               game_focused_duration: this.gameFocusedTimer.elapsed().asMilliseconds(),
               game_focused_change_count: this.gameFocusChangedCount,
@@ -23468,12 +23470,12 @@
               soundboard_shown_duration: this.soundboardShownTimer.elapsed().asMilliseconds(),
               soundboard_shown_count: this.soundboardShownCount,
               soundboard_keep_open_count: this.soundboardKeepOpenCount,
-              hardware_display_count: null !== (r = await (null === (E = s.default) || void 0 === E ? void 0 : null === (_ = E.hardware) || void 0 === _ ? void 0 : null === (e = _.getDisplayCount) || void 0 === e ? void 0 : e.call(_))) && void 0 !== r ? r : null,
+              hardware_display_count: null !== (n = await (null === s.default || void 0 === s.default ? void 0 : null === (_ = s.default.hardware) || void 0 === _ ? void 0 : null === (e = _.getDisplayCount) || void 0 === e ? void 0 : e.call(_))) && void 0 !== n ? n : null,
               message_ack_count: this.messageAckCount,
               message_created_count: this.messageCreateCount
             };
           return {
-            usage: I,
+            usage: i,
             notifications: this.notificationAnalytics.getCounterAnalytics(this.uuid)
           }
         }
@@ -24189,23 +24191,22 @@
       u.displayName = "ActiveChannelsStore";
       var L = new u(r.default, {
         CHANNEL_SELECT: function(e) {
-          var _;
           let {
-            channelId: E,
-            guildId: t
+            channelId: _,
+            guildId: E
           } = e;
-          if (!(0, I.isGuildHomeChannel)(E) || null == t) return !1;
-          let n = T[t];
-          if (null == n) return !1;
-          n.forEach(e => {
+          if (!(0, I.isGuildHomeChannel)(_) || null == E) return !1;
+          let t = T[E];
+          if (null == t) return !1;
+          t.forEach(e => {
             var _;
             A(e), (null === (_ = S[e]) || void 0 === _ ? void 0 : _.length) === 0 && delete S[e]
           });
-          let r = o.chain(Array.from(n)).filter(e => e in S).sortBy(e => {
-            var E;
-            return -(null !== (_ = null === (E = S[e]) || void 0 === E ? void 0 : E.length) && void 0 !== _ ? _ : 0)
+          let n = o.chain(Array.from(t)).filter(e => e in S).sortBy(e => {
+            var _, E;
+            return -(null !== (E = null === (_ = S[e]) || void 0 === _ ? void 0 : _.length) && void 0 !== E ? E : 0)
           }).value();
-          T[t] = new Set(r)
+          T[E] = new Set(n)
         },
         MESSAGE_CREATE: function(e) {
           var _;
@@ -24717,7 +24718,7 @@
 
       function A(e, _) {
         null != N[_] && O(_, {
-          request: o.PENDING,
+          request: 2,
           lastUpdated: Date.now(),
           limit: c(e)
         })
@@ -24725,44 +24726,44 @@
 
       function R(e) {
         null != N[e] && O(e, {
-          request: o.FAILED,
+          request: 0,
           lastUpdated: Date.now()
         })
       }
 
       function l(e) {
         null != N[e] && O(e, {
-          request: o.SUCCEEDED,
+          request: 3,
           lastUpdated: Date.now()
         })
       }
 
       function u(e, _, E) {
-        let n = function(e, _) {
+        let t = function(e, _) {
             if (null == N[_]) {
-              var E, t, n;
-              t = _, n = (E = e, {
-                request: o.UNFETCHED,
+              var E, t, o;
+              t = _, o = (E = e, {
+                request: 1,
                 lastUpdated: Date.now(),
                 limit: c(E)
-              }), N[t] = n
+              }), N[t] = o
             }
             return N[_]
           }(e, _),
-          r = c(e),
-          a = function(e) {
-            if (e.includes(t.QUERY));
-            else if (e.includes(t.ROLE)) return t.ROLE;
-            else if (e.includes(t.UNUSUAL_DM_ACTIVITY)) return t.UNUSUAL_DM_ACTIVITY;
-            return t.QUERY
+          o = c(e),
+          n = function(e) {
+            if (e.includes("query"));
+            else if (e.includes("role")) return "role";
+            else if (e.includes("unusual_dm_activity")) return "unusual_dm_activity";
+            return "query"
           }(_);
-        switch (a) {
-          case t.QUERY:
-            return n.request >= E && n.limit >= r;
-          case t.ROLE:
-            return n.request >= E;
-          case t.UNUSUAL_DM_ACTIVITY:
-            return n.request >= E && n.lastUpdated + 3e5 > Date.now();
+        switch (n) {
+          case "query":
+            return t.request >= E && t.limit >= o;
+          case "role":
+            return t.request >= E;
+          case "unusual_dm_activity":
+            return t.request >= E && t.lastUpdated + 3e5 > Date.now();
           default:
             return !0
         }
@@ -24786,8 +24787,8 @@
       }
       async function D(e, _) {
         if (!C(_)) return;
-        let E = S(e, t.QUERY, _);
-        if (!u(e, E, o.PENDING)) try {
+        let E = S(e, "query", _);
+        if (!u(e, E, 2)) try {
           A(e, E);
           let [t, o] = (0, I.splitQuery)(_), n = t.map(_ => a.default.requestMembers(e, _, c(e)));
           o.length > 0 && n.push(a.default.requestMembersById(e, o)), await Promise.all(n)
@@ -24796,8 +24797,8 @@
         }
       }
       async function d(e, _) {
-        let E = S(e, t.ROLE, _);
-        if (!u(e, E, o.PENDING)) try {
+        let E = S(e, "role", _);
+        if (!u(e, E, 2)) try {
           A(e, E), await (0, i.requestMembersForRole)(e, _, !1)
         } catch (e) {
           R(E)
@@ -24856,19 +24857,19 @@
           guildId: _
         } = e, {
           query: E,
-          selectedRoleIds: o,
-          requireUnusualDmActivity: n
+          selectedRoleIds: t,
+          requireUnusualDmActivity: o
         } = s.default.getSearchStateByGuildId(_);
         C(E) && ! function(e, _) {
-          let E = S(e, t.QUERY, _);
+          let E = S(e, "query", _);
           l(E)
-        }(_, E), o.size > 0 && o.forEach(e => {
+        }(_, E), t.size > 0 && t.forEach(e => {
           ! function(e, _) {
-            let E = S(e, t.ROLE, _);
+            let E = S(e, "role", _);
             l(E)
           }(_, e)
-        }), n && ! function(e) {
-          let _ = S(e, t.UNUSUAL_DM_ACTIVITY, "");
+        }), o && ! function(e) {
+          let _ = S(e, "unusual_dm_activity", "");
           l(_)
         }(_)
       }
@@ -25882,61 +25883,61 @@
       let t, o;
       E.r(_), E.d(_, {
         default: function() {
-          return S
+          return n
         }
       });
-      var n = E("171718"),
-        r = E("913144"),
-        a = E("689988"),
-        i = E("697218"),
-        I = E("599110"),
-        s = E("770032"),
-        T = E("49111");
-      class S extends a.default {
+      var n, r = E("171718"),
+        a = E("913144"),
+        i = E("689988"),
+        I = E("697218"),
+        s = E("599110"),
+        T = E("770032"),
+        S = E("49111");
+      n = class extends i.default {
         _initialize() {
-          r.default.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
+          a.default.subscribe("CONNECTION_OPEN", () => this.handleConnectionOpen()), this.handleConnectionOpen()
         }
         _terminate() {
-          r.default.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
+          a.default.unsubscribe("CONNECTION_OPEN", () => this.handleConnectionOpen())
         }
         constructor({
           onSwitchStart: e,
           onSwitchSuccess: _,
           onSwitchError: E,
-          onTokenSet: r
+          onTokenSet: n
         }) {
           super(), this.actions = {
             LOGOUT: e => this.handleLogout(e)
           }, this.handleConnectionOpen = () => {
             var e, _, E;
-            let r = i.default.getCurrentUser();
-            if (null == r) return;
+            let n = I.default.getCurrentUser();
+            if (null == n) return;
             if (null != o) {
               if (o !== t) {
-                let e = s.default.getUsers(),
+                let e = T.default.getUsers(),
                   E = e.map(e => {
                     let {
                       id: _
                     } = e;
                     return _
                   });
-                I.default.track(T.AnalyticEvents.MULTI_ACCOUNT_SWITCH_SUCCESS, {
+                s.default.track(S.AnalyticEvents.MULTI_ACCOUNT_SWITCH_SUCCESS, {
                   from_user_id: o,
                   linked_user_ids: E
-                }), null === (_ = this.onSwitchSuccess) || void 0 === _ || _.call(this, r)
-              } else I.default.track(T.AnalyticEvents.MULTI_ACCOUNT_SWITCH_FAILURE), null === (E = this.onSwitchError) || void 0 === E || E.call(this, r);
+                }), null === (_ = this.onSwitchSuccess) || void 0 === _ || _.call(this, n)
+              } else s.default.track(S.AnalyticEvents.MULTI_ACCOUNT_SWITCH_FAILURE), null === (E = this.onSwitchError) || void 0 === E || E.call(this, n);
               o = null
             }
-            t = r.id;
-            let a = n.default.getToken();
-            null != a && "" !== a && n.default.setToken(a, r.id), null === (e = this.onTokenSet) || void 0 === e || e.call(this, r)
+            t = n.id;
+            let a = r.default.getToken();
+            null != a && "" !== a && r.default.setToken(a, n.id), null === (e = this.onTokenSet) || void 0 === e || e.call(this, n)
           }, this.handleLogout = e => {
             if (e.isSwitchingAccount) {
               var _;
               o = t, null === (_ = this.onSwitchStart) || void 0 === _ || _.call(this)
-            } else n.default.removeToken(t);
+            } else r.default.removeToken(t);
             t = null
-          }, this.onSwitchStart = e, this.onSwitchSuccess = _, this.onSwitchError = E, this.onTokenSet = r
+          }, this.onSwitchStart = e, this.onSwitchSuccess = _, this.onSwitchError = E, this.onTokenSet = n
         }
       }
     },
@@ -26052,7 +26053,7 @@
             let {
               tokenStatus: _
             } = e;
-            return _ !== n.INVALID
+            return 0 !== _
           })
         }
         getHasLoggedInAccounts() {
@@ -26063,7 +26064,7 @@
             let {
               tokenStatus: _
             } = e;
-            return _ === n.VALIDATING
+            return 1 === _
           })
         }
         get canUseMultiAccountNotifications() {
@@ -26103,12 +26104,12 @@
               } = e;
               return E === _.id
             });
-          if (o > -1 ? (N[o].avatar = _.avatar, N[o].username = _.username, N[o].discriminator = _.discriminator, N[o].tokenStatus = n.VALID) : E.push({
+          if (o > -1 ? (N[o].avatar = _.avatar, N[o].username = _.username, N[o].discriminator = _.discriminator, N[o].tokenStatus = 2) : E.push({
               id: _.id,
               avatar: _.avatar,
               username: _.username,
               discriminator: _.discriminator,
-              tokenStatus: n.VALID,
+              tokenStatus: 2,
               pushSyncToken: null
             }), (N = E).length > S.MAX_ACCOUNTS) {
             let e = N.splice(S.MAX_ACCOUNTS);
@@ -26128,9 +26129,9 @@
             return _ !== t
           })), t = null
         },
-        MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => R(e.userId, n.VALIDATING),
-        MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => R(e.userId, n.VALID),
-        MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => R(e.userId, n.INVALID),
+        MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => R(e.userId, 1),
+        MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => R(e.userId, 2),
+        MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => R(e.userId, 0),
         MULTI_ACCOUNT_REMOVE_ACCOUNT: e => A(e.userId),
         MULTI_ACCOUNT_MOVE_ACCOUNT: function(e) {
           let {
@@ -26218,11 +26219,11 @@
       let r = !1;
 
       function a() {
-        var e, _;
-        let E = null === (_ = o.default) || void 0 === _ ? void 0 : null === (e = _.window) || void 0 === e ? void 0 : e.setContentProtection;
-        if (null == E) return;
-        let t = n.default.enableContentProtection;
-        t !== r && (E(t), r = t)
+        var e;
+        let _ = null === o.default || void 0 === o.default ? void 0 : null === (e = o.default.window) || void 0 === e ? void 0 : e.setContentProtection;
+        if (null == _) return;
+        let E = n.default.enableContentProtection;
+        E !== r && (_(E), r = E)
       }
       class i extends t.default {
         constructor() {
@@ -26250,21 +26251,21 @@
         T = E("232425");
 
       function S() {
-        var e, _;
-        let E = (0, o.useStateFromStores)([r.default], () => r.default.isIdleStatusIndicatorEnabled),
-          S = (0, o.useStateFromStores)([i.default], () => {
-            var _;
-            return null !== (e = null === (_ = i.default.getCurrentUser()) || void 0 === _ ? void 0 : _.isStaff()) && void 0 !== e && e
+        var e;
+        let _ = (0, o.useStateFromStores)([r.default], () => r.default.isIdleStatusIndicatorEnabled),
+          E = (0, o.useStateFromStores)([i.default], () => {
+            var e, _;
+            return null !== (_ = null === (e = i.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== _ && _
           }),
-          [N, O] = (0, o.useStateFromStoresArray)([a.default], () => [a.default.isIdle(), a.default.isAFK()]),
-          A = [];
-        return !N && !O && A.push("ACTIVE"), N && A.push("IDLE"), O && A.push("AFK"), S && E ? (0, t.jsx)(I.default, {
+          [S, N] = (0, o.useStateFromStoresArray)([a.default], () => [a.default.isIdle(), a.default.isAFK()]),
+          O = [];
+        return !S && !N && O.push("ACTIVE"), S && O.push("IDLE"), N && O.push("AFK"), E && _ ? (0, t.jsx)(I.default, {
           children: (0, t.jsxs)("div", {
             className: T.container,
             children: [(0, t.jsxs)("div", {
               className: T.status,
               children: [(0, t.jsx)(n.Status, {
-                status: A.includes("ACTIVE") ? s.StatusTypes.ONLINE : s.StatusTypes.IDLE,
+                status: O.includes("ACTIVE") ? s.StatusTypes.ONLINE : s.StatusTypes.IDLE,
                 className: T.statusIndicator
               }), (0, t.jsx)(n.Text, {
                 variant: "text-md/normal",
@@ -26273,12 +26274,12 @@
                 className: T.statusText,
                 children: (0, t.jsx)(n.Text, {
                   variant: "text-md/bold",
-                  children: A.join(" + ")
+                  children: O.join(" + ")
                 })
               })]
-            }), N && (0, t.jsxs)(n.Text, {
+            }), S && (0, t.jsxs)(n.Text, {
               variant: "text-md/normal",
-              children: ["Idle since:", " ", new Date(null !== (_ = a.default.getIdleSince()) && void 0 !== _ ? _ : 0).toLocaleDateString(void 0, {
+              children: ["Idle since:", " ", new Date(null !== (e = a.default.getIdleSince()) && void 0 !== e ? e : 0).toLocaleDateString(void 0, {
                 year: "numeric",
                 day: "numeric",
                 month: "numeric",
@@ -26870,41 +26871,41 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return N
+          return t
         }
       });
-      var t = E("327037"),
-        o = E("689988"),
-        n = E("42203"),
-        r = E("18494"),
-        a = E("697218"),
-        i = E("569363"),
-        I = E("49111");
-      let s = !1;
-
-      function T(e) {
-        let _ = a.default.getCurrentUser();
-        if (null == _) return;
-        let E = r.default.getChannelId(),
-          t = n.default.getDMFromUserId(i.SYSTEM_USER);
-        if (!_.hasUrgentMessages() || t === E) return S({
-          channelId: E
-        });
-        !s && (s = !0, e())
-      }
+      var t, o = E("327037"),
+        n = E("689988"),
+        r = E("42203"),
+        a = E("18494"),
+        i = E("697218"),
+        I = E("569363"),
+        s = E("49111");
+      let T = !1;
 
       function S(e) {
+        let _ = i.default.getCurrentUser();
+        if (null == _) return;
+        let E = a.default.getChannelId(),
+          t = r.default.getDMFromUserId(I.SYSTEM_USER);
+        if (!_.hasUrgentMessages() || t === E) return N({
+          channelId: E
+        });
+        !T && (T = !0, e())
+      }
+
+      function N(e) {
         let {
           channelId: _
-        } = e, E = a.default.getCurrentUser(), o = _ === n.default.getDMFromUserId(i.SYSTEM_USER);
-        null != E && E.hasUrgentMessages() && o && (s = !1, t.setFlag(I.UserFlags.HAS_UNREAD_URGENT_MESSAGES, !1))
+        } = e, E = i.default.getCurrentUser(), t = _ === r.default.getDMFromUserId(I.SYSTEM_USER);
+        null != E && E.hasUrgentMessages() && t && (T = !1, o.setFlag(s.UserFlags.HAS_UNREAD_URGENT_MESSAGES, !1))
       }
-      class N extends o.default {
+      t = class extends n.default {
         constructor(e) {
           super(), this.handleShowUrgentMessageAlert = e, this.actions = {
-            POST_CONNECTION_OPEN: () => T(this.handleShowUrgentMessageAlert),
-            MESSAGE_CREATE: () => T(this.handleShowUrgentMessageAlert),
-            CHANNEL_SELECT: S
+            POST_CONNECTION_OPEN: () => S(this.handleShowUrgentMessageAlert),
+            MESSAGE_CREATE: () => S(this.handleShowUrgentMessageAlert),
+            CHANNEL_SELECT: N
           }
         }
       }
@@ -27826,36 +27827,36 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return r
+          return t
         }
       }), E("702976");
-      var t = E("866227"),
-        o = E.n(t),
-        n = E("666038");
-      class r extends n.default {
-        static createFromServer(e) {
-          var _;
-          return new r({
-            ...e,
-            maxUses: e.max_uses,
-            maxAge: e.max_age,
-            createdAt: o(null !== (_ = e.created_at) && void 0 !== _ ? _ : void 0),
-            targetType: e.target_type,
-            targetUser: e.target_user,
-            targetApplication: e.target_application
+      var t, o = E("866227"),
+        n = E.n(o),
+        r = E("666038");
+      t = class e extends r.default {
+        static createFromServer(_) {
+          var E;
+          return new e({
+            ..._,
+            maxUses: _.max_uses,
+            maxAge: _.max_age,
+            createdAt: n(null !== (E = _.created_at) && void 0 !== E ? E : void 0),
+            targetType: _.target_type,
+            targetUser: _.target_user,
+            targetApplication: _.target_application
           })
         }
         isExpired() {
           let e = this.maxAge;
           if (e > 0) {
-            let _ = o(this.createdAt);
+            let _ = n(this.createdAt);
             if (_.add(e, "seconds").isBefore(Date.now())) return !0
           }
           return !1
         }
         getExpiresAt() {
           if (this.maxAge > 0) {
-            let e = o(this.createdAt);
+            let e = n(this.createdAt);
             return e.add(this.maxAge, "seconds").toDate()
           }
           return 1 / 0
@@ -29043,7 +29044,7 @@
       }
 
       function S() {
-        return l() === t.WEB
+        return "WEB" === l()
       }
 
       function N() {
@@ -29064,7 +29065,7 @@
       }
 
       function l() {
-        return i() ? t.WINDOWS : I() ? t.OSX : s() ? t.LINUX : t.WEB
+        return i() ? "WINDOWS" : I() ? "OSX" : s() ? "LINUX" : "WEB"
       }
 
       function u() {
@@ -29553,16 +29554,16 @@
           null != C.window.setBackgroundThrottling ? C.window.setBackgroundThrottling(e) : C.window.webContents.setBackgroundThrottling(e)
         },
         getPidFromDesktopSource(e) {
-          var _;
           if (!((0, l.isWindows)() || (0, l.isMac)()) || null == this.getDiscordUtils().getPidFromWindowHandle) return null;
-          let E = null == e ? void 0 : e.split(":"),
-            t = null == E ? void 0 : E[0];
-          if ("window" === t) {
-            let e = null !== (_ = null == E ? void 0 : E[1]) && void 0 !== _ ? _ : "",
-              t = this.getDiscordUtils().getPidFromWindowHandle(e);
-            return null == t || 0 === t ? null : t
+          let _ = null == e ? void 0 : e.split(":"),
+            E = null == _ ? void 0 : _[0];
+          if ("window" === E) {
+            var t;
+            let e = null !== (t = null == _ ? void 0 : _[1]) && void 0 !== t ? t : "",
+              E = this.getDiscordUtils().getPidFromWindowHandle(e);
+            return null == E || 0 === E ? null : E
           }
-          if ("screen" === t) return 1;
+          if ("screen" === E) return 1;
           return null
         },
         getDesktopSourceFromPid(e) {
@@ -29740,7 +29741,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return h
+          return M
         }
       }), E("222007"), E("860677");
       var t, o = E("917351"),
@@ -29771,7 +29772,7 @@
         O.default.flashFrame(!1)
       }
       R && (window.addEventListener("focus", c), O.default.on("MAIN_WINDOW_FOCUS", c));
-      let D = window.Notification;
+      let Notification = window.Notification;
       if (l) {
         let e = {};
         O.default.on("NOTIFICATION_CLICK", (_, E) => {
@@ -29788,43 +29789,43 @@
             body: E,
             icon: t
           }) {
-            this.id = D._id++, this.onshow = function() {}, this.onclick = function() {}, this.onclose = function() {}, this.title = _, this.body = E, this.icon = t, setImmediate(() => this.onshow()), e[this.id] = this, O.default.send("NOTIFICATION_SHOW", {
+            this.id = Notification._id++, this.onshow = function() {}, this.onclick = function() {}, this.onclose = function() {}, this.title = _, this.body = E, this.icon = t, setImmediate(() => this.onshow()), e[this.id] = this, O.default.send("NOTIFICATION_SHOW", {
               id: this.id,
               title: this.title,
               body: this.body,
               icon: this.icon
             })
           }
-        }).permission = "granted", t._id = 0, D = t
+        }).permission = "granted", t._id = 0, Notification = t
       }
 
-      function d() {
-        return null != D && "granted" === D.permission
+      function D() {
+        return null != Notification && "granted" === Notification.permission
       }
 
-      function U(e) {
+      function d(e) {
         let _ = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
         e.includes("message") ? C(e, _) : (0, N.playSound)(e, _)
       }
 
-      function M(e) {
-        return s.default.disableNotifications && null == e.overrideStreamerMode || !d() || S.isPlatformEmbedded && !O.default.shouldDisplayNotifications()
+      function U(e) {
+        return s.default.disableNotifications && null == e.overrideStreamerMode || !D() || S.isPlatformEmbedded && !O.default.shouldDisplayNotifications()
       }
-      var h = {
-        hasPermission: d,
+      var M = {
+        hasPermission: D,
         requestPermission: function(e) {
-          null != D && D.requestPermission(() => {
-            null != e && e(d())
+          null != Notification && Notification.requestPermission(() => {
+            null != e && e(D())
           })
         },
         showNotification: function(e, _, E, t, o) {
           var r, a, i, s;
           let N;
-          if (M(o)) {
-            null != o.sound && !1 !== o.playSoundIfDisabled && U(o.sound, null !== (a = o.volume) && void 0 !== a ? a : 1);
+          if (U(o)) {
+            null != o.sound && !1 !== o.playSoundIfDisabled && d(o.sound, null !== (a = o.volume) && void 0 !== a ? a : 1);
             return
           }
-          null != o.sound && U(o.sound, null !== (i = o.volume) && void 0 !== i ? i : 1);
+          null != o.sound && d(o.sound, null !== (i = o.volume) && void 0 !== i ? i : 1);
           let l = null !== (s = null == o ? void 0 : o.tag) && void 0 !== s ? s : null;
           (0, S.isLinux)() && (E = n.escape(E));
           let C = {
@@ -29835,7 +29836,7 @@
           };
           R && I.default.taskbarFlash && O.default.flashFrame(!0);
           try {
-            N = new D(_, C)
+            N = new Notification(_, C)
           } catch (e) {
             return null
           }
@@ -29844,12 +29845,12 @@
             S.isPlatformEmbedded ? O.default.focus() : (window.focus(), N.close()), !o.omitClickTracking && T.default.track(A.AnalyticEvents.NOTIFICATION_CLICKED, t), null === (e = o.onClick) || void 0 === e || e.call(o)
           }, L && setTimeout(() => N.close(), 5e3), u) ? N : {
             close() {
-              var e, _;
-              null === (_ = N) || void 0 === _ || null === (e = _.onclose) || void 0 === e || e.call(_)
+              var e;
+              null == N || null === (e = N.onclose) || void 0 === e || e.call(N)
             }
           }
         },
-        disabled: M
+        disabled: U
       }
     },
     816454: function(e, _, E) {
@@ -29913,12 +29914,12 @@
     },
     981980: function(e, _, E) {
       "use strict";
+      var t;
       E.r(_), E.d(_, {
         default: function() {
           return t
         }
-      }), E("70102");
-      class t {
+      }), E("70102"), t = class {
         get fails() {
           return this._fails
         }
@@ -29962,11 +29963,11 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return o
+          return t
         }
       }), E("70102");
-      var t = E("805833");
-      class o {
+      var t, o = E("805833");
+      t = class {
         attach(e) {
           let {
             stores: _
@@ -29984,7 +29985,7 @@
         }
         constructor(e, _) {
           this.handleStoreChange = () => {
-            let e = t.default.getChangeSentinel();
+            let e = o.default.getChangeSentinel();
             this.storeVersionHandled !== e && (this.changeCallback(), this.storeVersionHandled = e)
           }, this.stores = e, this.changeCallback = _
         }
@@ -29992,12 +29993,12 @@
     },
     782648: function(e, _, E) {
       "use strict";
+      var t;
       E.r(_), E.d(_, {
         default: function() {
           return t
         }
-      }), E("222007");
-      class t {
+      }), E("222007"), t = class {
         has(e) {
           return this.listeners.has(e)
         }
@@ -30447,144 +30448,144 @@
     303365: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
-        default: function() {
-          return s
-        },
         DeviceSettingsStore: function() {
-          return S
+          return N
         },
         OfflineCacheStore: function() {
-          return N
+          return O
+        },
+        default: function() {
+          return o
         }
       }), E("222007"), E("70102");
-      var t = E("773179"),
-        o = E.n(t),
-        n = E("102053"),
-        r = E("95410"),
-        a = E("75247");
-      let i = {
+      var t, o, n = E("773179"),
+        r = E.n(n),
+        a = E("102053"),
+        i = E("95410"),
+        I = E("75247");
+      let s = {
           _state: void 0,
           _version: void 0
         },
-        I = null;
-      class s extends a.default {
+        T = null;
+      (t = class e extends I.default {
         getClass() {
           return this.constructor
         }
-        static clearAll(e) {
-          return I = e, null == s._clearAllPromise && (s._clearAllPromise = new Promise(_ => {
+        static clearAll(_) {
+          return T = _, null == e._clearAllPromise && (e._clearAllPromise = new Promise(E => {
             requestIdleCallback(() => {
-              s.clearPersistQueue(e), s.allPersistKeys.forEach(_ => {
-                s.shouldClear(e, _) && r.default.remove(_)
-              }), a.default.getAll().forEach(_ => {
-                _ instanceof s && s.shouldClear(e, _.getClass().persistKey) && (_._isInitialized = !1, _.initializeIfNeeded())
-              }), s._clearAllPromise = null, _()
+              e.clearPersistQueue(_), e.allPersistKeys.forEach(E => {
+                e.shouldClear(_, E) && i.default.remove(E)
+              }), I.default.getAll().forEach(E => {
+                E instanceof e && e.shouldClear(_, E.getClass().persistKey) && (E._isInitialized = !1, E.initializeIfNeeded())
+              }), e._clearAllPromise = null, E()
             }, {
               timeout: 500
             })
-          })), s._clearAllPromise
+          })), e._clearAllPromise
         }
-        static shouldClear(e, _) {
-          var E;
-          return (null === (E = e.omit) || void 0 === E ? !void 0 : !E.includes(_)) && ("all" === e.type || "user-data-only" === e.type && !s.userAgnosticPersistKeys.has(_))
+        static shouldClear(_, E) {
+          var t;
+          return (null === (t = _.omit) || void 0 === t ? !void 0 : !t.includes(E)) && ("all" === _.type || "user-data-only" === _.type && !e.userAgnosticPersistKeys.has(E))
         }
-        static clearPersistQueue(e) {
-          s._writeResolvers.forEach((_, E) => {
-            let [t, o] = _;
-            s.shouldClear(e, E) && (s._writePromises.delete(E), s._writeResolvers.delete(E), cancelIdleCallback(o), t(!1))
-          }), s._writePromises.clear(), s._writeResolvers.clear()
+        static clearPersistQueue(_) {
+          e._writeResolvers.forEach((E, t) => {
+            let [o, n] = E;
+            e.shouldClear(_, t) && (e._writePromises.delete(t), e._writeResolvers.delete(t), cancelIdleCallback(n), o(!1))
+          }), e._writePromises.clear(), e._writeResolvers.clear()
         }
         static getAllStates() {
-          return Promise.all(Array.from(s._writePromises.values())).then(() => {
-            let e = {};
-            return s.allPersistKeys.forEach(_ => {
+          return Promise.all(Array.from(e._writePromises.values())).then(() => {
+            let _ = {};
+            return e.allPersistKeys.forEach(e => {
               var E;
-              e[_] = (null !== (E = r.default.get(_)) && void 0 !== E ? E : i)._state
-            }), e
+              _[e] = (null !== (E = i.default.get(e)) && void 0 !== E ? E : s)._state
+            }), _
           })
         }
-        static initializeAll(e) {
-          a.default.getAll().forEach(_ => {
-            if (_ instanceof s) {
-              let E = _.getClass().persistKey;
-              e.hasOwnProperty(E) && _.initializeFromState(e[E])
+        static initializeAll(_) {
+          I.default.getAll().forEach(E => {
+            if (E instanceof e) {
+              let e = E.getClass().persistKey;
+              _.hasOwnProperty(e) && E.initializeFromState(_[e])
             }
           })
         }
-        initializeFromState(e) {
-          this.initialize(e) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (s.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = !0)
+        initializeFromState(_) {
+          this.initialize(_) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (e.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = !0)
         }
         static destroy() {
-          I = null, a.default.destroy(), s.clearPersistQueue({
+          T = null, I.default.destroy(), e.clearPersistQueue({
             type: "all"
-          }), s.allPersistKeys.clear(), s.userAgnosticPersistKeys.clear()
+          }), e.allPersistKeys.clear(), e.userAgnosticPersistKeys.clear()
         }
         initializeIfNeeded() {
           if (!this._isInitialized) {
-            let e = Date.now();
-            s.allPersistKeys.add(this.getClass().persistKey);
+            let _ = Date.now();
+            e.allPersistKeys.add(this.getClass().persistKey);
             let {
-              state: _,
-              requiresPersist: E
-            } = s.migrateAndReadStoreState(this.getClass().persistKey, this.getClass().migrations);
-            this.initialize(_) && this.asyncPersist(), E && this.asyncPersist(), this._isInitialized = !0;
-            let t = Date.now() - e;
-            t > 5 && n.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", t)
+              state: E,
+              requiresPersist: t
+            } = e.migrateAndReadStoreState(this.getClass().persistKey, this.getClass().migrations);
+            this.initialize(E) && this.asyncPersist(), t && this.asyncPersist(), this._isInitialized = !0;
+            let o = Date.now() - _;
+            o > 5 && a.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", o)
           }
         }
-        static migrateAndReadStoreState(e, _) {
-          if (null != I && s.shouldClear(I, e)) return r.default.remove(e), {
+        static migrateAndReadStoreState(_, E) {
+          if (null != T && e.shouldClear(T, _)) return i.default.remove(_), {
             state: void 0,
             requiresPersist: !1
           };
-          let E = null != s._clearAllPromise ? null : r.default.get(e),
+          let t = null != e._clearAllPromise ? null : i.default.get(_),
             {
-              _state: t,
-              _version: o,
-              ...n
-            } = null != E ? E : i,
-            a = null == _ ? 0 : _.length;
-          if (0 !== a && o !== a && null != _) {
-            let e = null != o ? o : 0,
-              E = t;
-            for (null == o && (E = n); e < a;) {
-              let t = _[e];
-              E = t(E), e++
+              _state: o,
+              _version: n,
+              ...r
+            } = null != t ? t : s,
+            a = null == E ? 0 : E.length;
+          if (0 !== a && n !== a && null != E) {
+            let e = null != n ? n : 0,
+              _ = o;
+            for (null == n && (_ = r); e < a;) {
+              let t = E[e];
+              _ = t(_), e++
             }
             return {
-              state: E,
+              state: _,
               requiresPersist: !0
             }
           }
-          if (Object.values(n).length > 0) return {
-            state: n,
+          if (Object.values(r).length > 0) return {
+            state: r,
             requiresPersist: !0
           };
           return {
-            state: t,
+            state: o,
             requiresPersist: !1
           }
         }
         asyncPersist() {
           let {
-            persistKey: e,
-            disableWrite: _,
-            throttleDelay: E
+            persistKey: _,
+            disableWrite: E,
+            throttleDelay: t
           } = this.getClass();
-          if (s.disableWrites || _) return Promise.resolve(!1);
-          let t = s._writePromises.get(e);
-          return null != t ? t : (t = new Promise(_ => {
-            let t = E > 0 ? () => this.throttledCallback(_) : () => this.callback(_);
-            s._writeResolvers.set(e, [_, requestIdleCallback(t, {
+          if (e.disableWrites || E) return Promise.resolve(!1);
+          let o = e._writePromises.get(_);
+          return null != o ? o : (o = new Promise(E => {
+            let o = t > 0 ? () => this.throttledCallback(E) : () => this.callback(E);
+            e._writeResolvers.set(_, [E, requestIdleCallback(o, {
               timeout: 500
             })])
-          }), s._writePromises.set(e, t), t)
+          }), e._writePromises.set(_, o), o)
         }
         persist() {
           let {
             persistKey: e
           } = this.getClass(), _ = this.getState(), E = this._version;
-          r.default.set(e, {
+          i.default.set(e, {
             _state: _,
             _version: E
           })
@@ -30593,71 +30594,70 @@
           let {
             persistKey: e
           } = this.getClass();
-          r.default.remove(e)
+          i.default.remove(e)
         }
-        constructor(e, _) {
-          if (super(e, _), this._version = null == this.getClass().migrations ? 0 : this.getClass().migrations.length, this.callback = e => {
+        constructor(_, E) {
+          if (super(_, E), this._version = null == this.getClass().migrations ? 0 : this.getClass().migrations.length, this.callback = _ => {
               let {
-                persistKey: _
+                persistKey: E
               } = this.getClass();
-              this.persist(), s._writePromises.delete(_), s._writeResolvers.delete(_), e()
-            }, this.throttledCallback = o.throttle(e => this.callback(e), this.getClass().throttleDelay, {
+              this.persist(), e._writePromises.delete(E), e._writeResolvers.delete(E), _()
+            }, this.throttledCallback = r.throttle(e => this.callback(e), this.getClass().throttleDelay, {
               leading: !1
             }), "string" != typeof this.getClass().persistKey) throw Error("".concat(this.getClass().name, " initialized without a `persistKey`. Add one so we know where to save your stuff!"));
           if ("function" != typeof this.initialize) throw Error("".concat(this.getClass().name, " initialized without an `initialize` method. Add one that accepts the initial cached state."));
           if ("function" != typeof this.getState) throw Error("".concat(this.getClass().name, " initialized without a `getState` method. Add one that returns the full state of the store for persistance to work."));
           this.addChangeListener(() => this.asyncPersist())
         }
-      }
-      s.allPersistKeys = new Set, s.userAgnosticPersistKeys = new Set, s._writePromises = new Map, s._writeResolvers = new Map, s.disableWrites = !1, s.disableWrite = !1, s.throttleDelay = 0;
-      class T extends s {
+      }).allPersistKeys = new Set, t.userAgnosticPersistKeys = new Set, t._writePromises = new Map, t._writeResolvers = new Map, t.disableWrites = !1, t.disableWrite = !1, t.throttleDelay = 0, o = t;
+      class S extends o {
         initializeFromState(e) {
-          return s.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeFromState(e)
+          return o.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeFromState(e)
         }
         initializeIfNeeded() {
-          return s.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeIfNeeded()
+          return o.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeIfNeeded()
         }
         getState() {
           return this.getUserAgnosticState()
         }
       }
-      class S extends T {}
-      class N extends T {}
+      class N extends S {}
+      class O extends S {}
     },
     75247: function(e, _, E) {
       "use strict";
       let t;
       E.r(_), E.d(_, {
         default: function() {
-          return S
+          return n
         }
       }), E("860677"), E("222007"), E("424973");
-      var o = E("627445"),
-        n = E.n(o),
-        r = E("102053");
+      var o, n, r = E("627445"),
+        a = E.n(r),
+        i = E("102053");
       E("704744");
-      var a = E("782648"),
-        i = E("805833");
-      let I = [],
-        s = !1,
-        T = new Promise(e => {
+      var I = E("782648"),
+        s = E("805833");
+      let T = [],
+        S = !1,
+        N = new Promise(e => {
           t = () => {
             e(), t = null
           }
         });
-      class S {
+      (o = class {
         static initialize() {
-          s = !0, I.forEach(e => e.initializeIfNeeded()), null != t && t()
+          S = !0, T.forEach(e => e.initializeIfNeeded()), null != t && t()
         }
         static destroy() {
-          I.length = 0, i.default.destroy()
+          T.length = 0, s.default.destroy()
         }
         static getAll() {
-          return I
+          return T
         }
         registerActionHandlers(e, _) {
           this._dispatcher.register(this.getName(), e, e => {
-            (this._changeCallbacks.hasAny() || this._reactChangeCallbacks.hasAny()) && (i.default.markChanged(this), i.default.getIsPaused() && null != this._mustEmitChanges && this._mustEmitChanges(e) && i.default.resume(!1))
+            (this._changeCallbacks.hasAny() || this._reactChangeCallbacks.hasAny()) && (s.default.markChanged(this), s.default.getIsPaused() && null != this._mustEmitChanges && this._mustEmitChanges(e) && s.default.resume(!1))
           }, _, this._dispatchToken)
         }
         getName() {
@@ -30669,7 +30669,7 @@
             let e = Date.now();
             this.initialize(), this._isInitialized = !0;
             let _ = Date.now() - e;
-            _ > 5 && r.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", _)
+            _ > 5 && i.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", _)
           }
         }
         initialize() {}
@@ -30679,7 +30679,7 @@
           this.waitFor(...e);
           let r = 0,
             a = () => {
-              r !== i.default.getChangeSentinel() && (r = i.default.getChangeSentinel(), !1 !== _() && this.emitChange())
+              r !== s.default.getChangeSentinel() && (r = s.default.getChangeSentinel(), !1 !== _() && this.emitChange())
             };
           t = null != E ? E : 0, o = a, n = null, a = 0 === t ? function() {
             clearImmediate(n), n = setImmediate(o)
@@ -30695,11 +30695,11 @@
         }
         waitFor() {
           for (var e = arguments.length, _ = Array(e), E = 0; E < e; E++) _[E] = arguments[E];
-          let t = _.map((e, _) => (n(null != e, "Store.waitFor(...) called with null Store at index ".concat(_, " for store ").concat(this.getName())), null != e._dispatcher) ? (n(e._dispatcher === this._dispatcher, "Stores belong to two separate dispatchers."), e.getDispatchToken()) : null);
+          let t = _.map((e, _) => (a(null != e, "Store.waitFor(...) called with null Store at index ".concat(_, " for store ").concat(this.getName())), null != e._dispatcher) ? (a(e._dispatcher === this._dispatcher, "Stores belong to two separate dispatchers."), e.getDispatchToken()) : null);
           this._dispatcher.addDependencies(this.getDispatchToken(), t.filter(e => null != e))
         }
         emitChange() {
-          i.default.markChanged(this)
+          s.default.markChanged(this)
         }
         getDispatchToken() {
           return this._dispatchToken
@@ -30709,10 +30709,9 @@
           this._mustEmitChanges = e
         }
         constructor(e, _, E) {
-          this._changeCallbacks = new a.default, this._reactChangeCallbacks = new a.default, this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), null !== _ && this.registerActionHandlers(null != _ ? _ : {}, E), I.push(this), s && this.initializeIfNeeded()
+          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), null !== _ && this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
         }
-      }
-      S.initialized = T
+      }).initialized = N, n = o
     },
     661496: function(e, _, E) {
       "use strict";
@@ -30933,9 +30932,9 @@
       let s = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
 
       function T(e, _, E, t, r) {
-        var S, O, A, R, l, u;
-        let L = o[e](_.url);
-        if (null != _.onRequestCreated && _.onRequestCreated(L), null != _.query) {
+        var S, O, A, R, l;
+        let u = o[e](_.url);
+        if (null != _.onRequestCreated && _.onRequestCreated(u), null != _.query) {
           let e = _.query;
           if ("object" == typeof e) {
             let _ = {
@@ -30945,12 +30944,12 @@
               null == _[e] && delete _[e]
             }), e = _
           }
-          L.query(e)
+          u.query(e)
         }
-        if (_.body && L.send(_.body), null != _.headers && L.set(_.headers), null != _.reason && L.set("X-Audit-Log-Reason", encodeURIComponent(_.reason)), null === (S = _.attachments) || void 0 === S || S.forEach(e => {
-            L.attach(e.name, e.file, e.filename)
+        if (_.body && u.send(_.body), null != _.headers && u.set(_.headers), null != _.reason && u.set("X-Audit-Log-Reason", encodeURIComponent(_.reason)), null === (S = _.attachments) || void 0 === S || S.forEach(e => {
+            u.attach(e.name, e.file, e.filename)
           }), null === (O = _.fields) || void 0 === O || O.forEach(e => {
-            L.field(e.name, e.value)
+            u.field(e.name, e.value)
           }), null != _.context) {
           let e = function(e) {
             try {
@@ -30959,27 +30958,27 @@
               return null
             }
           }(_.context);
-          null != e && L.set("X-Context-Properties", e)
+          null != e && u.set("X-Context-Properties", e)
         }
-        null != _.retried && 0 !== _.retried && L.set("X-Failed-Requests", "".concat(_.retried)), null != _.timeout && 0 !== _.timeout && L.timeout(_.timeout), _.binary && L.responseType("blob"), null != _.onRequestProgress && L.on("progress", e => {
+        null != _.retried && 0 !== _.retried && u.set("X-Failed-Requests", "".concat(_.retried)), null != _.timeout && 0 !== _.timeout && u.timeout(_.timeout), _.binary && u.responseType("blob"), null != _.onRequestProgress && u.on("progress", e => {
           var E;
           null === (E = _.onRequestProgress) || void 0 === E || E.call(_, e)
         });
-        let C = () => {
+        let L = () => {
           _.backoff = null != _.backoff ? _.backoff : new n.default, _.retried = (null != _.retried ? _.retried : 0) + 1, _.backoff.fail(() => d(_.url).then(() => T(e, _, E, t, r)))
         };
-        null === (R = c) || void 0 === R || null === (A = R.prepareRequest) || void 0 === A || A.call(R, L), L.ok(e => null != e.status), L.then(o => {
-          var n, I, S, O;
-          if (null != _.retries && _.retries-- > 0 && s.has(o.status)) return C();
-          let A = {
+        null == c || null === (A = c.prepareRequest) || void 0 === A || A.call(c, u), u.ok(e => null != e.status), u.then(o => {
+          var n, I, S;
+          if (null != _.retries && _.retries-- > 0 && s.has(o.status)) return L();
+          let O = {
             ok: o.ok,
             headers: o.headers,
             body: o.body,
             text: o.text,
             status: o.status
           };
-          N(_, A);
-          let R = (o, n) => {
+          N(_, O);
+          let A = (o, n) => {
               let a = {
                 ..._,
                 headers: {
@@ -30990,38 +30989,38 @@
               };
               T(e, a, E, t, r)
             },
-            l = e => {
+            R = e => {
               t(e), null == r || r({
                 ok: !1,
                 hasErr: !0,
                 err: e
               })
             };
-          if ((null == _ ? void 0 : null === (n = _.interceptResponse) || void 0 === n ? void 0 : n.call(_, o, R, l)) !== !0) {
-            if ((null === (S = c) || void 0 === S ? void 0 : null === (I = S.interceptResponse) || void 0 === I ? void 0 : I.call(S, o, R, l)) !== !0) {
-              if (o.ok) E(A);
+          if ((null == _ ? void 0 : null === (n = _.interceptResponse) || void 0 === n ? void 0 : n.call(_, o, A, R)) !== !0) {
+            if ((null == c ? void 0 : null === (I = c.interceptResponse) || void 0 === I ? void 0 : I.call(c, o, A, R)) !== !0) {
+              if (o.ok) E(O);
               else {
-                if (_.oldFormErrors && (null == A ? void 0 : null === (O = A.body) || void 0 === O ? void 0 : O.code) === a.INVALID_FORM_BODY_ERROR_CODE) {
+                if (_.oldFormErrors && (null == O ? void 0 : null === (S = O.body) || void 0 === S ? void 0 : S.code) === a.INVALID_FORM_BODY_ERROR_CODE) {
                   let {
                     errors: e
-                  } = A.body;
-                  null != e && (A.body = (0, i.default)(e))
+                  } = O.body;
+                  null != e && (O.body = (0, i.default)(e))
                 }
-                t(A)
+                t(O)
               }
               null != r && r({
                 hasErr: !1,
-                ...A
+                ...O
               })
             }
           }
         }, e => {
-          null != _.retries && _.retries-- > 0 && "ABORTED" !== e.code ? C() : (N(_), t(e), null != r && r({
+          null != _.retries && _.retries-- > 0 && "ABORTED" !== e.code ? L() : (N(_), t(e), null != r && r({
             ok: !1,
             hasErr: !0,
             err: e
           }))
-        }), (null === (l = _.signal) || void 0 === l ? void 0 : l.aborted) ? L.abort() : null === (u = _.signal) || void 0 === u || u.addEventListener("abort", () => L.abort(), {
+        }), (null === (R = _.signal) || void 0 === R ? void 0 : R.aborted) ? u.abort() : null === (l = _.signal) || void 0 === l || l.addEventListener("abort", () => u.abort(), {
           once: !0
         })
       }
@@ -31094,12 +31093,13 @@
     },
     644642: function(e, _, E) {
       "use strict";
+      var t;
       E.r(_), E.d(_, {
         default: function() {
           return t
         }
       }), E("70102");
-      class t {
+      t = class {
         getFieldMessage(e) {
           return null != this.fields[e] ? this.fields[e][0] : null
         }
@@ -31139,36 +31139,35 @@
     },
     486196: function(e, _, E) {
       "use strict";
-      var t, o;
+      var t, o, n;
       E.r(_), E.d(_, {
         INVALID_FORM_BODY_ERROR_CODE: function() {
-          return n
+          return r
         },
         CaptchaTypes: function() {
           return t
         },
         default: function() {
-          return a
+          return o
         }
       }), E("222007");
-      let n = 50035;
+      let r = 50035;
 
-      function r(e) {
+      function a(e) {
         return e.map(e => ({
           code: "UNKNOWN",
           message: e
         }))
-      }(o = t || (t = {})).HCAPTCHA = "hcaptcha", o.RECAPTCHA = "recaptcha";
-      class a {
+      }(n = t || (t = {})).HCAPTCHA = "hcaptcha", n.RECAPTCHA = "recaptcha";
+      o = class {
         hasFieldErrors() {
           return null != this.errors && Object.keys(this.errors).length > 0
         }
         getFieldErrors(e) {
-          var _;
           "string" == typeof e && (e = [e]);
-          let E = this.errors;
-          for (; e.length > 0 && null != E;) E = E[e[0]], e = e.splice(1);
-          return null === (_ = E) || void 0 === _ ? void 0 : _._errors
+          let _ = this.errors;
+          for (; e.length > 0 && null != _;) _ = _[e[0]], e = e.splice(1);
+          return null == _ ? void 0 : _._errors
         }
         getFirstFieldErrorMessage(e) {
           let _ = this.getFieldErrors(e);
@@ -31194,7 +31193,7 @@
           let {
             message: t,
             code: o,
-            retryAfter: a,
+            retryAfter: n,
             errors: i,
             status: I,
             captchaFields: s
@@ -31214,16 +31213,16 @@
               message: E.captcha_key.length > 0 ? E.captcha_key[0] : void 0
             } : {
               status: e.status,
-              code: n,
+              code: r,
               errors: function(e) {
                 let _ = {};
                 for (let [E, t] of Object.entries(e)) {
                   if ("_misc" === E) {
-                    _._errors = r(t);
+                    _._errors = a(t);
                     continue
                   }
                   let e = {};
-                  e._errors = r(t), _[E] = e
+                  e._errors = a(t), _[E] = e
                 }
                 return _
               }(E)
@@ -31235,7 +31234,7 @@
               status: e.status
             }
           }(e, _);
-          this.message = null != t ? t : E, this.code = null != o ? o : -1, this.retryAfter = a, this.errors = i, this.status = I, this.captchaFields = null != s ? s : {}
+          this.message = null != t ? t : E, this.code = null != o ? o : -1, this.retryAfter = n, this.errors = i, this.status = I, this.captchaFields = null != s ? s : {}
         }
       }
     },
@@ -31285,27 +31284,27 @@
       "use strict";
       E.r(_), E.d(_, {
         getSystemLocale: function() {
-          return i
+          return I
         },
         default: function() {
-          return S
+          return t
         }
       }), E("222007"), E("70102");
-      var t = E("44170"),
-        o = E("860347"),
-        n = E.n(o),
-        r = E("907407");
-      E.g.IntlMessageFormat = n, E("394069"), E("351752"), E("329547"), E("784943"), E("643072"), E("258947"), E("575137"), E("27213"), E("753950"), E("677642"), E("276542"), E("351643"), E("8575"), E("658724"), E("23647"), E("362209"), E("735062"), E("994548"), E("975990"), E("870043"), E("73319"), E("583263"), E("714405"), E("272318"), E("403290"), E("408237"), E("138432"), E("601337"), delete E.g.IntlMessageFormat, "undefined" == typeof Intl && E("246663");
-      let a = "en-US";
+      var t, o = E("44170"),
+        n = E("860347"),
+        r = E.n(n),
+        a = E("907407");
+      E.g.IntlMessageFormat = r, E("394069"), E("351752"), E("329547"), E("784943"), E("643072"), E("258947"), E("575137"), E("27213"), E("753950"), E("677642"), E("276542"), E("351643"), E("8575"), E("658724"), E("23647"), E("362209"), E("735062"), E("994548"), E("975990"), E("870043"), E("73319"), E("583263"), E("714405"), E("272318"), E("403290"), E("408237"), E("138432"), E("601337"), delete E.g.IntlMessageFormat, "undefined" == typeof Intl && E("246663");
+      let i = "en-US";
 
-      function i() {
+      function I() {
         let e; {
           let _ = Array.isArray(navigator.languages) ? navigator.languages[0] : null;
           e = _ || navigator.language || navigator.browserLanguage || navigator.userLanguage
         }
         return null != e ? e : ""
       }
-      class I {
+      class s {
         getMessages() {
           return this._parsedMessages
         }
@@ -31313,11 +31312,11 @@
           this._context = {
             messages: {},
             defaultMessages: {},
-            locale: a
+            locale: i
           }, this._parsedMessages = {}, this._getParsedMessages = e
         }
       }
-      class s extends I {
+      class T extends s {
         refresh(e) {
           this._context = e, this._refresh(e, this._parsedMessages)
         }
@@ -31334,7 +31333,7 @@
           }
         }
       }
-      class T extends I {
+      class S extends s {
         refresh(e) {
           Object.assign(this._context, e), Object.keys(this._parsedMessages).forEach(e => {
             delete this._parsedMessages[e]
@@ -31350,7 +31349,7 @@
           }, this._parsedMessages = this._createProxy(this._context)
         }
       }
-      class S extends t.EventEmitter {
+      t = class extends o.EventEmitter {
         updateMessagesForExperiment(e, _) {
           let E = this._fetchMessages(e);
           if (E instanceof Promise) {
@@ -31368,27 +31367,27 @@
           this._chosenLocale = e, this.loadPromise = this._loadMessagesForLocale(e), this.emit("locale", this._chosenLocale, _)
         }
         setUpdateRules(e) {
-          (0, r.setUpdateRules)(e)
+          (0, a.setUpdateRules)(e)
         }
         getLanguages() {
           return this._languages
         }
         getAvailableLocales() {
-          var e;
           return this._languages.filter(e => {
             let {
               enabled: _
             } = e;
             return _
-          }).map(_ => {
+          }).map(e => {
+            var _;
             let {
               code: E,
               name: t
-            } = _;
+            } = e;
             return {
               value: E,
               name: t,
-              localizedName: null !== (e = this.Messages[E]) && void 0 !== e ? e : t
+              localizedName: null !== (_ = this.Messages[E]) && void 0 !== _ ? _ : t
             }
           }).sort((e, _) => {
             let {
@@ -31407,7 +31406,7 @@
         }
         getDefaultLocale() {
           var e, _, E;
-          let t = null !== (e = i()) && void 0 !== e ? e : a,
+          let t = null !== (e = I()) && void 0 !== e ? e : i,
             o = this._languages.filter(e => {
               let {
                 enabled: _
@@ -31421,14 +31420,14 @@
             });
           if (o.includes(t)) return t;
           let n = t.split("-");
-          return o.includes(n[0]) ? n[0] : "zh" === n[0] && n.length > 1 && "Hant" === n[1] ? null !== (_ = o.find(e => "zh-TW" === e)) && void 0 !== _ ? _ : a : null !== (E = o.find(e => e.split("-")[0] === n[0])) && void 0 !== E ? E : a
+          return o.includes(n[0]) ? n[0] : "zh" === n[0] && n.length > 1 && "Hant" === n[1] ? null !== (_ = o.find(e => "zh-TW" === e)) && void 0 !== _ ? _ : i : null !== (E = o.find(e => e.split("-")[0] === n[0])) && void 0 !== E ? E : i
         }
         _loadMessagesForLocale(e) {
           let _ = this._fetchMessages(e);
           return _ instanceof Promise ? _.then(_ => this._applyMessagesForLocale(_, e)) : (this._applyMessagesForLocale(_, e), Promise.resolve())
         }
         _applyMessagesForLocale(e, _) {
-          let E = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : this._findMessages(a);
+          let E = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : this._findMessages(i);
           this._requestedLocale === _ && (this._provider.refresh({
             messages: e,
             defaultMessages: E,
@@ -31441,9 +31440,9 @@
           return _
         }
         _fetchMessages(e) {
-          let _ = e === a ? () => {
-            throw Error("Error Loading ".concat(a))
-          } : () => (console.warn("Unsupported Locale", e), -1 === e.indexOf("-")) ? this._fetchMessages(a) : this._fetchMessages(e.split("-")[0]);
+          let _ = e === i ? () => {
+            throw Error("Error Loading ".concat(i))
+          } : () => (console.warn("Unsupported Locale", e), -1 === e.indexOf("-")) ? this._fetchMessages(i) : this._fetchMessages(e.split("-")[0]);
           try {
             let E = this._getMessages(e);
             return E instanceof Promise ? E.catch(_) : E
@@ -31461,23 +31460,23 @@
               messages: t,
               defaultMessages: o,
               locale: n
-            } = e, a = t[_] || o[_];
-            if ("object" == typeof a) return E({
-              messages: a,
+            } = e, r = t[_] || o[_];
+            if ("object" == typeof r) return E({
+              messages: r,
               defaultMessages: o[_],
               locale: n
             });
             try {
-              return (0, r.getMessage)(a, n)
+              return (0, a.getMessage)(r, n)
             } catch (e) {
-              if (console.warn("Failed parsing intl key '".concat(String(_), "' in locale '").concat(n, "' defaulting to English"), e), "string" == typeof(a = o[_])) return (0, r.getMessage)(a, n)
+              if (console.warn("Failed parsing intl key '".concat(String(_), "' in locale '").concat(n, "' defaulting to English"), e), "string" == typeof(r = o[_])) return (0, a.getMessage)(r, n)
             }
             return ""
           }, this._handleNewListener = e => {
             if ("locale" === e) this.emit(e, this._chosenLocale)
           }, this.initialLanguageLoad = new Promise((e, _) => {
             this.resolveLanguageLoaded = e
-          }), Intl.__addLocaleData && Intl.__addLocaleData(E("169123")), this._languages = t(), this._provider = null != window.Proxy ? new T(this._getParsedMessages) : new s(this._getParsedMessages), this.Messages = this._provider.getMessages(), this._getMessages = _, this.setLocale(e || this.getDefaultLocale()), this.on("newListener", this._handleNewListener)
+          }), Intl.__addLocaleData && Intl.__addLocaleData(E("169123")), this._languages = t(), this._provider = null != window.Proxy ? new S(this._getParsedMessages) : new T(this._getParsedMessages), this.Messages = this._provider.getMessages(), this._getMessages = _, this.setLocale(e || this.getDefaultLocale()), this.on("newListener", this._handleNewListener)
         }
       }
     },
@@ -36145,47 +36144,48 @@
     },
     811022: function(e, _, E) {
       "use strict";
+      var t;
       E.r(_), E.d(_, {
         setLogFn: function() {
-          return o
+          return n
         },
         default: function() {
-          return n
+          return t
         }
       }), E("222007");
-      let t = () => {};
+      let o = () => {};
 
-      function o(e) {
-        t = e
+      function n(e) {
+        o = e
       }
-      class n {
+      t = class {
         constructor(e = "default") {
           var _ = this;
           this.log = function(e) {
-            for (var E = arguments.length, o = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) o[n - 1] = arguments[n];
-            t(_.name, "log", e, ...o)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "log", e, ...t)
           }, this.info = function(e) {
-            for (var E = arguments.length, o = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) o[n - 1] = arguments[n];
-            t(_.name, "info", e, ...o)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "info", e, ...t)
           }, this.warn = function(e) {
-            for (var E = arguments.length, o = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) o[n - 1] = arguments[n];
-            t(_.name, "warn", e, ...o)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "warn", e, ...t)
           }, this.error = function(e) {
-            for (var E = arguments.length, o = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) o[n - 1] = arguments[n];
-            t(_.name, "error", e, ...o)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "error", e, ...t)
           }, this.trace = function(e) {
-            for (var E = arguments.length, o = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) o[n - 1] = arguments[n];
-            t(_.name, "trace", e, ...o)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "trace", e, ...t)
           }, this.time = (e, _) => {
             let E = Date.now(),
               t = _();
             return this.log(e, Date.now() - E), t
           }, this.fileOnly = function(e) {
-            for (var E = arguments.length, o = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) o[n - 1] = arguments[n];
-            t(_.name, "file-only", e, ...o)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "file-only", e, ...t)
           }, this.verbose = function(e) {
-            for (var E = arguments.length, o = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) o[n - 1] = arguments[n];
-            t(_.name, "debug", e, ...o)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "debug", e, ...t)
           }, this.name = e
         }
       }
@@ -36213,7 +36213,7 @@
       let a = "domainMigrationSuccess";
 
       function i(e, _, E) {
-        let t = E === o.MIGRATION_SOURCE_DOMAIN ? window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN : window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
+        let t = 0 === E ? window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN : window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
         _.postMessage({
           domainMigrationEvent: e
         }, t)
@@ -36222,7 +36222,7 @@
       function I(e, _) {
         var E;
         return ! function(e, _) {
-          let E = _ === o.MIGRATION_SOURCE_DOMAIN ? window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN : window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
+          let E = 0 === _ ? window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN : window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
           return e.origin === E && null != e.data.domainMigrationEvent && !0
         }(e, _) ? null : null === (E = e.data) || void 0 === E ? void 0 : E.domainMigrationEvent
       }
@@ -36262,7 +36262,7 @@
                 return 0
               }
             }() > 160,
-            E = e ? o.VERTICAL : o.HORIZONTAL;
+            E = e ? "vertical" : "horizontal";
           if (!(_ && e) && (function() {
               try {
                 return window.Firebug.chrome.isInitialized
@@ -36372,12 +36372,12 @@
       }, Set.prototype.toJSON = function() {
         return Array.from(this)
       }; {
-        class e {
-          static fromPoint(_) {
-            return new e(_.x, _.y, void 0 !== _.z ? _.z : 0, void 0 !== _.w ? _.w : 1)
+        class DOMPoint {
+          static fromPoint(e) {
+            return new DOMPoint(e.x, e.y, void 0 !== e.z ? e.z : 0, void 0 !== e.w ? e.w : 1)
           }
-          matrixTransform(_) {
-            return (_.is2D || _ instanceof SVGMatrix) && 0 === this.z && 1 === this.w ? new e(this.x * _.a + this.y * _.c + _.e, this.x * _.b + this.y * _.d + _.f, 0, 1) : new e(this.x * _.m11 + this.y * _.m21 + this.z * _.m31 + this.w * _.m41, this.x * _.m12 + this.y * _.m22 + this.z * _.m32 + this.w * _.m42, this.x * _.m13 + this.y * _.m23 + this.z * _.m33 + this.w * _.m43, this.x * _.m14 + this.y * _.m24 + this.z * _.m34 + this.w * _.m44)
+          matrixTransform(e) {
+            return (e.is2D || e instanceof SVGMatrix) && 0 === this.z && 1 === this.w ? new DOMPoint(this.x * e.a + this.y * e.c + e.e, this.x * e.b + this.y * e.d + e.f, 0, 1) : new DOMPoint(this.x * e.m11 + this.y * e.m21 + this.z * e.m31 + this.w * e.m41, this.x * e.m12 + this.y * e.m22 + this.z * e.m32 + this.w * e.m42, this.x * e.m13 + this.y * e.m23 + this.z * e.m33 + this.w * e.m43, this.x * e.m14 + this.y * e.m24 + this.z * e.m34 + this.w * e.m44)
           }
           toJSON() {
             return {
@@ -36391,11 +36391,11 @@
             this.x = e, this.y = _, this.z = E, this.w = t
           }
         }
-        null == window.DOMPoint && (window.DOMPoint = e)
+        null == window.DOMPoint && (window.DOMPoint = DOMPoint)
       } {
-        class e {
-          static fromRect(_) {
-            return new e(_.x, _.y, _.width, _.height)
+        class DOMRect {
+          static fromRect(e) {
+            return new DOMRect(e.x, e.y, e.width, e.height)
           }
           get top() {
             return this.y
@@ -36425,10 +36425,10 @@
             this.x = e, this.y = _, this.width = E, this.height = t
           }
         }
-        null == window.DOMRect && (window.DOMRect = e)
+        null == window.DOMRect && (window.DOMRect = DOMRect)
       }
       null == window.TextEncoder && E("705479")
     }
   }
 ]);
-//# sourceMappingURL=3b8856ccb2d6d53edc46.js.map
+//# sourceMappingURL=8369fc88309264067390.js.map
