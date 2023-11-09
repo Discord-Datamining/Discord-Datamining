@@ -15957,7 +15957,17 @@
         ASSISTANT_CHAT_BANNER_BUTTON_TEXT: "Wave",
         ASSISTANT_CHAT_BANNER_CLOSE_A11Y_LABEL: "Close",
         ASSISTANT_VOICE_PANEL_PIP_OVERLAY_TITLE: "While you're chilling, friends will pop in like this. Tap to see more.",
-        ASSISTANT_VOICE_PANEL_ACTIVITY_TITLE: "Share your screen, listen to music or play games together!"
+        ASSISTANT_VOICE_PANEL_ACTIVITY_TITLE: "Share your screen, listen to music or play games together!",
+        SCREENSHARE_APPS_TIKTOK: "TikTok",
+        SCREENSHARE_APPS_TIKTOK_ACCESSIBILITY_LABEL: "Screenshare TikTok",
+        SCREENSHARE_APPS_YOUTUBE: "YouTube",
+        SCREENSHARE_APPS_YOUTUBE_ACCESSIBILITY_LABEL: "Screenshare YouTube",
+        SCREENSHARE_APPS_INSTAGRAM: "Instagram",
+        SCREENSHARE_APPS_INSTAGRAM_ACCESSIBILITY_LABEL: "Screenshare Instagram",
+        SCREENSHARE_APPS_PHOTOS: "Photos",
+        SCREENSHARE_APPS_PHOTOS_ACCESSIBILITY_LABEL: "Screenshare Photos",
+        SCREENSHARE_APPS_SNAPCHAT: "Snapchat",
+        SCREENSHARE_APPS_SNAPCHAT_ACCESSIBILITY_LABEL: "Screenshare Snapchat"
       })
     },
     444051: function(e, _, E) {
@@ -18130,7 +18140,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244909", ", Version Hash: ").concat("b07d48e171fc4ddd0bbfc417ce5e563495d4c956")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244920", ", Version Hash: ").concat("a90220c776f2cdd854c27059782147e2e3cf094a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20520,8 +20530,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "244909", "244909"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244909")), _ = 0), _
+        let _ = parseInt((e = "244920", "244920"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244920")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36422,4 +36432,4 @@
     }
   }
 ]);
-//# sourceMappingURL=0c28879f69184505c57c.js.map
+//# sourceMappingURL=e57c78edc51457f3eadb.js.map
