@@ -18140,7 +18140,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244979", ", Version Hash: ").concat("d16ae495baae839e837ce05730b5be4ff11233aa")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244988", ", Version Hash: ").concat("7fd795052fdf63e28cab0887d13ad61a73cf5f93")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19495,7 +19495,7 @@
           loadRightBeforeConnectionOpen: !0
         },
         ExplicitMediaManager: {
-          actions: ["LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "SEARCH_FINISH", "LOAD_FORUM_POSTS", "LOAD_ARCHIVED_THREADS_SUCCESS", "LOAD_THREADS_SUCCESS", "LOGOUT"],
+          actions: ["CHANNEL_SELECT", "LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "SEARCH_FINISH", "LOAD_FORUM_POSTS", "LOAD_ARCHIVED_THREADS_SUCCESS", "LOAD_THREADS_SUCCESS", "LOGOUT"],
           inlineRequire: () => E("983850").default,
           neverLoadBeforeConnectionOpen: !0
         },
@@ -20530,8 +20530,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "244979", "244979"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244979")), _ = 0), _
+        let _ = parseInt((e = "244988", "244988"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244988")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -22134,7 +22134,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return m
+          return G
         }
       }), E("222007");
       var t = E("345570"),
@@ -22211,7 +22211,7 @@
         let r = S.default.getChannelId(),
           a = s.default.getCurrentSidebarChannelId(r),
           i = E === r || E === a;
-        return !!(i && (0, R.shouldRedactExplicitContent)(t)) && (C([t]), !0)
+        return !!(i && c(t) && (0, R.shouldRedactExplicitContent)(t)) && (C([t]), !0)
       }
 
       function d(e) {
@@ -22269,7 +22269,20 @@
         }
         return !1
       }
-      class P extends i.default {
+
+      function P(e) {
+        let {
+          channelId: _
+        } = e;
+        if (null == _ || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
+        let E = _ === S.default.getChannelId();
+        if (!E) return !1;
+        let t = T.default.getMessages(_);
+        if (0 === t.length) return !1;
+        let o = t.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+        return !!(o.length > 0) && (C(o), !0)
+      }
+      class m extends i.default {
         constructor(...e) {
           super(...e), this.actions = {
             LOAD_MESSAGES_SUCCESS: d,
@@ -22278,11 +22291,12 @@
             LOAD_ARCHIVED_THREADS_SUCCESS: h,
             MESSAGE_CREATE: D,
             LOGOUT: L,
-            SEARCH_FINISH: U
+            SEARCH_FINISH: U,
+            CHANNEL_SELECT: P
           }
         }
       }
-      var m = new P
+      var G = new m
     },
     722333: function(e, _, E) {
       "use strict";
@@ -36432,4 +36446,4 @@
     }
   }
 ]);
-//# sourceMappingURL=0e1003261f2192804a87.js.map
+//# sourceMappingURL=29eb18a6baf1a4a9f260.js.map
