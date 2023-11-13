@@ -18142,7 +18142,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245097", ", Version Hash: ").concat("15031dee7dd116542c96ff979187874ae58b216f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245104", ", Version Hash: ").concat("1bd63f6c75071b757a90291c3bb6639037e9164b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -18335,36 +18335,6 @@
             }, E.key)
           }
         }, e
-      }
-    },
-    689988: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return t
-        }
-      }), E("70102"), E("222007"), E("704744");
-      var t, o = E("913144");
-      t = class {
-        initialize() {
-          this.initializedCount++, !(this.initializedCount > 1) && (this._initialize(), Object.entries(this.actions).forEach(e => {
-            let [_, E] = e;
-            o.default.subscribe(_, "function" == typeof E ? E : E.callback)
-          }), this.stores.forEach((e, _) => {
-            _.addChangeListener(e), e()
-          }))
-        }
-        terminate(e) {
-          !(this.initializedCount <= 0) && (e ? this.initializedCount = 0 : this.initializedCount--, 0 === this.initializedCount && (this._terminate(), Object.entries(this.actions).forEach(e => {
-            let [_, E] = e;
-            o.default.unsubscribe(_, "function" == typeof E ? E : E.callback)
-          })))
-        }
-        _initialize() {}
-        _terminate() {}
-        constructor() {
-          this.initializedCount = 0, this.actions = {}, this.stores = new Map
-        }
       }
     },
     900673: function(e, _, E) {
@@ -20532,8 +20502,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245097", "245097"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245097")), _ = 0), _
+        let _ = parseInt((e = "245104", "245104"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245104")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -22131,174 +22101,6 @@
         }
       }
       var i = new a
-    },
-    983850: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return G
-        }
-      }), E("222007");
-      var t = E("345570"),
-        o = E.n(t),
-        n = E("452016"),
-        r = E.n(n),
-        a = E("913144"),
-        i = E("689988"),
-        I = E("271938"),
-        s = E("982108"),
-        T = E("377253"),
-        S = E("18494"),
-        N = E("162771"),
-        O = E("695681"),
-        A = E("457971"),
-        R = E("793441");
-      let l = {};
-
-      function u(e) {
-        return "".concat(e.channel_id, ":").concat(e.id)
-      }
-
-      function L() {
-        Object.values(l).forEach(e => {
-          clearTimeout(e)
-        }), l = {}
-      }
-
-      function C(e, _) {
-        if (e.forEach(_ => {
-            let E = u(_);
-            l[E] = setTimeout(() => {
-              ! function(e) {
-                e.forEach(e => {
-                  let _ = u(e);
-                  clearTimeout(l[_]);
-                  let E = T.default.getMessage(e.channel_id, e.id);
-                  null != E && c(E) && a.default.dispatch({
-                    type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
-                    messageId: e.id,
-                    channelId: e.channel_id
-                  }), delete l[_]
-                })
-              }(e)
-            }, 2e4)
-          }), _) {
-          (0, O.sendMultiChannelMessagesForScanning)(e);
-          return
-        }(0, O.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
-      }
-
-      function c(e) {
-        var _, E, t, o, n, r, a, i;
-        let I = null !== (n = null == e ? void 0 : null === (_ = e.attachments) || void 0 === _ ? void 0 : _.length) && void 0 !== n ? n : 0,
-          s = null !== (r = null == e ? void 0 : null === (E = e.embeds) || void 0 === E ? void 0 : E.length) && void 0 !== r ? r : 0;
-        if (0 === I && 0 === s) return !1;
-        let T = null !== (a = null == e ? void 0 : null === (t = e.attachments) || void 0 === t ? void 0 : t.filter(e => null == e.content_scan_version)) && void 0 !== a ? a : [],
-          S = null !== (i = null == e ? void 0 : null === (o = e.embeds) || void 0 === o ? void 0 : o.filter(e => {
-            var _;
-            return null == (null != (_ = e).content_scan_version ? _.content_scan_version : null != _.contentScanVersion ? _.contentScanVersion : null)
-          })) && void 0 !== i ? i : [];
-        return T.length > 0 || S.length > 0
-      }
-
-      function D(e) {
-        var _;
-        let {
-          channelId: E,
-          message: t,
-          optimistic: o,
-          isPushNotification: n
-        } = e;
-        if (!(0, A.isEligibleForExplicitMediaRedaction)() || o || n || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === I.default.getId()) return !1;
-        let r = S.default.getChannelId(),
-          a = s.default.getCurrentSidebarChannelId(r),
-          i = E === r || E === a;
-        return !!(i && c(t) && (0, R.shouldRedactExplicitContent)(t)) && (C([t]), !0)
-      }
-
-      function d(e) {
-        let {
-          channelId: _,
-          messages: E
-        } = e;
-        if (!(0, A.isEligibleForExplicitMediaRedaction)() || null == _ || null == E) return !1;
-        let t = S.default.getChannelId(),
-          o = s.default.getCurrentSidebarChannelId(t),
-          n = _ === t || _ === o;
-        if (n) {
-          let e = E.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
-          if (e.length > 0) return C(e), !0
-        }
-        return !1
-      }
-
-      function U(e) {
-        let {
-          messages: _
-        } = e;
-        if (!(0, A.isEligibleForExplicitMediaRedaction)() || null == _) return !1;
-        let E = o(_),
-          t = r(E, (e, _) => e.id === _.id && e.channel_id === _.channel_id),
-          n = t.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
-        return !!(n.length > 0) && (C(n, !0), !0)
-      }
-
-      function M(e) {
-        let {
-          guildId: _,
-          threads: E
-        } = e;
-        if (null == E || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
-        let t = N.default.getGuildId() === _;
-        if (t) {
-          let e = Object.keys(E).map(e => E[e].first_message),
-            _ = e.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
-          if (_.length > 0) return C(_, !0), !0
-        }
-        return !1
-      }
-
-      function h(e) {
-        let {
-          guildId: _,
-          firstMessages: E
-        } = e;
-        if (null == E || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
-        let t = N.default.getGuildId() === _;
-        if (t) {
-          let e = E.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
-          if (e.length > 0) return C(e, !0), !0
-        }
-        return !1
-      }
-
-      function P(e) {
-        let {
-          channelId: _
-        } = e;
-        if (null == _ || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
-        let E = _ === S.default.getChannelId();
-        if (!E) return !1;
-        let t = T.default.getMessages(_);
-        if (0 === t.length) return !1;
-        let o = t.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
-        return !!(o.length > 0) && (C(o), !0)
-      }
-      class m extends i.default {
-        constructor(...e) {
-          super(...e), this.actions = {
-            LOAD_MESSAGES_SUCCESS: d,
-            LOAD_FORUM_POSTS: M,
-            LOAD_THREADS_SUCCESS: h,
-            LOAD_ARCHIVED_THREADS_SUCCESS: h,
-            MESSAGE_CREATE: D,
-            LOGOUT: L,
-            SEARCH_FINISH: U,
-            CHANNEL_SELECT: P
-          }
-        }
-      }
-      var G = new m
     },
     722333: function(e, _, E) {
       "use strict";
@@ -36448,4 +36250,4 @@
     }
   }
 ]);
-//# sourceMappingURL=332c97e86ff17b9326a9.js.map
+//# sourceMappingURL=f399d4522b6e6bfb9a6e.js.map
