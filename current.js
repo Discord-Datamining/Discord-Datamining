@@ -16597,7 +16597,8 @@
         POLL_EXPIRED: "Poll Closed",
         APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_TITLE: "Something went wrong...",
         APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_BODY: "We were unable to run the command. Please try again later.",
-        APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER: "Start typing..."
+        APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER: "Start typing...",
+        PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
       })
     },
     657743: function(e, _, E) {
@@ -18142,7 +18143,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245139", ", Version Hash: ").concat("48897b9af60857d8369e22d1d15f3e062a68d01d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245143", ", Version Hash: ").concat("301711d26a93f8b993eb2519cc55d013f61ac94a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20502,8 +20503,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245139", "245139"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245139")), _ = 0), _
+        let _ = parseInt((e = "245143", "245143"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245143")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36250,4 +36251,4 @@
     }
   }
 ]);
-//# sourceMappingURL=93f088e7153a77b601ad.js.map
+//# sourceMappingURL=b6092fd2bbc6dc62d3f8.js.map
