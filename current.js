@@ -2691,6 +2691,8 @@
         DELETE_MESSAGE_CONTEXT_MENU_HINT: "\nYou can hold down shift when clicking **delete message** to bypass this confirmation entirely.",
         EDIT: "Edit",
         PREVIEW: "Preview",
+        EXIT_PREVIEW: "Exit Preview",
+        PREVIEW_MODE: "Preview Mode",
         DELETE: "Delete",
         DELETED: "Deleted",
         RETRY: "Retry",
@@ -18140,7 +18142,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245033", ", Version Hash: ").concat("8b6a6af1c0a6d93336ceaf71ee9b4d87093a9bb6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245047", ", Version Hash: ").concat("47c3723a094e2994d219acc5d5d1d9a7676ec553")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20530,8 +20532,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245033", "245033"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245033")), _ = 0), _
+        let _ = parseInt((e = "245047", "245047"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245047")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36446,4 +36448,4 @@
     }
   }
 ]);
-//# sourceMappingURL=bf080bf85c698003bd05.js.map
+//# sourceMappingURL=b61199a653269d2e1826.js.map
