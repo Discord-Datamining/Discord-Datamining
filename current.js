@@ -15944,7 +15944,7 @@
         LARGE_FILE_UPLOAD_POWERED_BY_NITRO: "Large file upload, powered by Nitro • [Learn More](onClick)",
         ASSISTANT_SKIP_BUTTON: "Skip Tutorial",
         ASSISTANT_SPLASH_TITLE: "Welcome, $[username](usernameHook)",
-        ASSISTANT_SPLASH_DESCRIPTION: "Say hello to Wumpus, our mascot and your personal guide through Discord!",
+        ASSISTANT_SPLASH_DESCRIPTION: "Say hi to Wumpus. He'll show you how Discord helps friends hang out more often.",
         ASSISTANT_SPLASH_BUTTON: "Get Started",
         ASSISTANT_SPLASH_BODY: "Say hi to Wumpus, he's here to show you how Discord works!",
         ASSISTANT_VOICE_STEP_BODY: '**Tap "Join"** to show your friends you\'re available to hang.',
@@ -15955,7 +15955,7 @@
         ASSISTANT_CHAT_BANNER_BUTTON_TEXT: "Wave",
         ASSISTANT_CHAT_BANNER_CLOSE_A11Y_LABEL: "Close",
         ASSISTANT_VOICE_PANEL_PIP_OVERLAY_TITLE: "While you're chilling, friends will pop in like this. Tap to see more.",
-        ASSISTANT_VOICE_PANEL_ACTIVITY_TITLE: "Share your screen, listen to music or play games together!",
+        ASSISTANT_VOICE_PANEL_ACTIVITY_TITLE: "Share your screen, listen to music, or just chill quietly doing your own thing!",
         SCREENSHARE_APPS_TIKTOK: "TikTok",
         SCREENSHARE_APPS_TIKTOK_ACCESSIBILITY_LABEL: "Screenshare TikTok",
         SCREENSHARE_APPS_YOUTUBE: "YouTube",
@@ -18145,7 +18145,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245288", ", Version Hash: ").concat("fec19e36170984aa300b1f5e6f934f460f025319")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245296", ", Version Hash: ").concat("5e96ff5138f4e5730341056176c4bb9f211a21ba")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20505,8 +20505,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245288", "245288"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245288")), _ = 0), _
+        let _ = parseInt((e = "245296", "245296"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245296")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36259,4 +36259,4 @@
     }
   }
 ]);
-//# sourceMappingURL=de14a51ce946338d4033.js.map
+//# sourceMappingURL=407e83230aa333198880.js.map
