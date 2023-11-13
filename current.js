@@ -10536,7 +10536,7 @@
         ROLE_EDIT_CONNECTIONS_CONTROLS_MUST_HAVE_AT_LEAST_FOLLOWERS: "Must have at least $[](metadataHook) followers",
         ROLE_EDIT_CONNECTIONS_CONTROLS_MUST_HAVE_AT_LEAST_FOLLOWING: "Must follow at least $[](metadataHook) users",
         ROLE_EDIT_CONNECTIONS_CONTROLS_MUST_HAVE_AT_LEAST_LIKES: "Must have at least $[](metadataHook) likes",
-        ROLE_EDIT_CONNECTIONS_CONTROLS_MUST_HAVE_AT_LEAST_TWEETS: "Must have at least $[](metadataHook) tweets",
+        ROLE_EDIT_CONNECTIONS_CONTROLS_MUST_HAVE_AT_LEAST_TWEETS: "Must have at least $[](metadataHook) posts",
         ROLE_EDIT_CONNECTIONS_CONTROLS_HEADER_ITEMS: "{gameName} Items",
         ROLE_EDIT_CONNECTIONS_CONTROLS_HEADER_ACCOUNT_AGE: "Account Age",
         ROLE_EDIT_CONNECTIONS_CONTROLS_HEADER_VERIFIED: "Verified",
@@ -13487,7 +13487,7 @@
         CONNECTIONS_STEAM_DOTA2: "DOTA 2",
         CONNECTIONS_STEAM_TF2: "Team Fortress 2",
         CONNECTIONS_STEAM_TOOLTIP: "Make sure your Steam profile is set to public before connecting.",
-        CONNECTIONS_TWITTER_STATUSES: "Tweets",
+        CONNECTIONS_TWITTER_STATUSES: "Posts",
         CONNECTIONS_TWITTER_FOLLOWERS: "Followers",
         CONNECTIONS_TIKTOK_VERIFIED: "Verified",
         CONNECTIONS_TIKTOK_FOLLOWERS: "Followers",
@@ -13506,7 +13506,7 @@
         CONNECTIONS_ROLE_RULE_STEAM_TF2_ITEMS: "{count, plural, =1 {# Team Fortress 2 item} other {# Team Fortress 2 items}} in inventory",
         CONNECTIONS_ROLE_RULE_STEAM_DOTA2_ITEMS: "{count, plural, =1 {# DOTA 2 item} other {# DOTA 2 items}} in inventory",
         CONNECTIONS_ROLE_RULE_TWITTER_FOLLOWERS: "{count, plural, =1 {# follower} other {# followers}}",
-        CONNECTIONS_ROLE_RULE_TWITTER_STATUSES: "{count, plural, =1 {# tweet} other {# tweets}}",
+        CONNECTIONS_ROLE_RULE_TWITTER_STATUSES: "{count, plural, =1 {# post} other {# posts}}",
         CONNECTIONS_ROLE_RULE_TWITTER_VERIFIED: "verified",
         CONNECTIONS_ROLE_RULE_INSTAGRAM_POSTS: "{count, plural, =1 {# post} other {# posts}}",
         CONNECTIONS_ROLE_RULE_GENERIC: "!!{description}!! - **{count, number}**",
@@ -13518,7 +13518,7 @@
         CONNECTIONS_PROFILE_REDDIT_KARMA: "**{value}** Karma",
         CONNECTIONS_PROFILE_STEAM_GAMES: "**{value}** Games",
         CONNECTIONS_PROFILE_TWITTER_FOLLOWERS: "**{value}** Followers",
-        CONNECTIONS_PROFILE_TWITTER_STATUSES: "**{value}** Tweets",
+        CONNECTIONS_PROFILE_TWITTER_STATUSES: "**{value}** Posts",
         CONNECTIONS_PROFILE_EBAY_POSITIVE_FEEDBACK_PERCENTAGE: "**{value}** Positive Ratings",
         CONNECTIONS_PROFILE_TIKTOK_FOLLOWERS: "**{value}** Followers",
         CONNECTIONS_PROFILE_TIKTOK_FOLLOWING: "**{value}** Following",
@@ -18150,7 +18150,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245229", ", Version Hash: ").concat("a9201f9b4886979c5e8c20a7467d6b8391d3ef1f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245233", ", Version Hash: ").concat("262f39e5fad0190c60aa62caf089877b4c2188fc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20510,8 +20510,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245229", "245229"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245229")), _ = 0), _
+        let _ = parseInt((e = "245233", "245233"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245233")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36264,4 +36264,4 @@
     }
   }
 ]);
-//# sourceMappingURL=79503d3689d002b8e27e.js.map
+//# sourceMappingURL=8ceb658f7e7f6e01edbb.js.map
