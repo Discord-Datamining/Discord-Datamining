@@ -932,6 +932,7 @@
         POMELO_EXISTING_FLOW_PROMPT_OCF: "We are asking everyone to update to unique usernames from discriminators (username**#0000**).",
         POMELO_SUGGESTIONS_OCF: "Recommended for you",
         POMELO_CHANGE_LATER_OCF: "You can always change this later.",
+        POMELO_FETCH_OCF: "Checking if username is available",
         UU_REGISTER_DISPLAY_NAME_HEADER: "What's your name?",
         UU_REGISTER_DISPLAY_NAME_HINT: "You can use emoji and special characters.",
         UU_REGISTER_HEADER: "Next, create an account",
@@ -18149,7 +18150,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245221", ", Version Hash: ").concat("1df1e7f38ab46c51c3c5d1e71b9c28248e24d06e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245229", ", Version Hash: ").concat("a9201f9b4886979c5e8c20a7467d6b8391d3ef1f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20509,8 +20510,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245221", "245221"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245221")), _ = 0), _
+        let _ = parseInt((e = "245229", "245229"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245229")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36263,4 +36264,4 @@
     }
   }
 ]);
-//# sourceMappingURL=3731df8aebd5c929f64a.js.map
+//# sourceMappingURL=79503d3689d002b8e27e.js.map
