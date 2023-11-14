@@ -16542,12 +16542,16 @@
         BROADCASTING_BETA_TOOLTIP_TEXT: "Open Parties is an experimental feature. A limited number of users have the ability to host or join.",
         START_BROADCAST_NOTIFICATION_BODY: "Start a party, so your friends can drop by!",
         START_BROADCAST_NOTIFICATION_CTA: "Open a Party",
+        SET_STATUS_MODAL_TITLE: "Set your Hang Status",
+        SET_STATUS_MODAL_SUBTITLE: "Display to your friends know what your vibes are right now. Depending on your selection, we’ll let your friends will know you’re probably available to hang out in your server.",
         STATUS_LEAD_IN_JUST: "I'm just -",
         STATUS_LEAD_IN_HERE: "Here, but -",
         STATUS_CHILLING: "Chilling tbh",
         STATUS_GAMING: "GAMING",
         STATUS_FOCUSING: "Focusing atm",
         STATUS_NONE: "No status",
+        HANG_STATUS: "Hang Status",
+        HANG_STATUS_LOCATION: "in !!{guildName}!!",
         XBOX: "Xbox",
         PLAYSTATION: "PlayStation",
         GO_LIVE_MODAL_CAPTURE: "Capture Devices",
@@ -18144,7 +18148,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245431", ", Version Hash: ").concat("525e572a1499bf1263467502947aa5034cce1762")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245433", ", Version Hash: ").concat("4d2be0590a7e7bb7c3c44137a0cfc8f0bbca5666")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20504,8 +20508,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245431", "245431"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245431")), _ = 0), _
+        let _ = parseInt((e = "245433", "245433"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245433")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36258,4 +36262,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b83dd6c721f1a0a6f4bf.js.map
+//# sourceMappingURL=c3a0da78006af5c24a99.js.map
