@@ -3278,11 +3278,11 @@
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_COZY: "Cozy",
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_COMPACT: "Compact",
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_HYBRID: "Hybrid",
-        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS: "Message Previews",
+        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS: "DM Message Previews",
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_DEFAULT: "Default",
-        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_DEFAULT_SUBLABEL: "Based on the Channel List layout setting. If Cozy, all channels show message previews. If Compact, only unread channels show message previews.",
-        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_ALL: "All channels",
-        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_UNREADS: "Unread channels only",
+        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_DEFAULT_SUBLABEL: "Based on the Channel List layout setting. If Cozy, all DMs show message previews. If Compact, only unread DMs show message previews.",
+        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_ALL: "All Messages",
+        USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_UNREADS: "Unread DMs only",
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_NONE: "None",
         USER_SETTINGS_SHOW_LIBRARY: "Show Game Library",
         USER_SETTINGS_SHOW_LIBRARY_NOTE: "Turn this off to hide your Game Library so you can focus on your conversations.",
@@ -18148,7 +18148,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245448", ", Version Hash: ").concat("3feb2d14e6bee560b43053e63d03426b42276b1a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245449", ", Version Hash: ").concat("bf61a5c62ceadef5c377bd63b71ead71108159f9")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20508,8 +20508,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245448", "245448"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245448")), _ = 0), _
+        let _ = parseInt((e = "245449", "245449"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245449")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36262,4 +36262,4 @@
     }
   }
 ]);
-//# sourceMappingURL=8eb21cde8300dca20880.js.map
+//# sourceMappingURL=1c210c34e0d397ac219d.js.map
