@@ -15712,8 +15712,6 @@
         CLIPS_SETTINGS_ENABLE_DECOUPLED_CLIPS: "Enable Always-On Game Clipping",
         CLIPS_SETTINGS_ENABLE_DECOUPLED_CLIPS_HELP: "Enables you to capture clips while gaming (even if you’re not streaming).",
         CLIPS_SETTINGS_HELP_IN_GO_LIVE_CTA: "Capture clips during your stream with $[!!{keybind}!!](keybindHook).",
-        CLIPS_SETTINGS_ENABLE_HARDWARE_ENCODE: "Hardware Acceleration",
-        CLIPS_SETTINGS_ENABLE_HARDWARE_ENCODE_HELP: "Hardware acceleration uses your GPU for efficient clipping, if available.",
         CLIPS_SETTINGS_VIDEO_QUALITY: "Video Quality Settings",
         CLIPS_SETTINGS_VIDEO_QUALITY_HELP: "Clips will be captured at the same quality as your stream.",
         CLIPS_SETTINGS_QUALITY_INFOBOX: "Please note that clips are captured at the same quality as your stream.",
@@ -15802,6 +15800,7 @@
         CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING_DESCRIPTION: "By turning on this setting, your voice may be included when someone in the same voice channel uses Clips.",
         CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE: "Allow viewers to capture clips",
         CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE_DESCRIPTION: "If this is on, viewers can take clips of your stream.",
+        CLIPS_SETTINGS_HW_ENCODING_MUST_BE_ENABLED_INFOBOX: "To use Clips, enable hardware encoding. Find it in [Voice & Video settings](onClick).",
         SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
         CUSTOM_SOUNDS: "Custom Sounds",
         ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
@@ -18158,7 +18157,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245673", ", Version Hash: ").concat("619dc608bb7f7c02d9dda32add54990bbc52be1e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245686", ", Version Hash: ").concat("af09d2e405a494412742bda64948b184a98517ea")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19696,7 +19695,7 @@
           inlineRequire: () => E("129040").default
         },
         ClipsManager: {
-          actions: ["RTC_CONNECTION_FLAGS", "VOICE_STATE_UPDATES", "RTC_CONNECTION_USER_CREATE_SSRC", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO"],
+          actions: ["RTC_CONNECTION_FLAGS", "VOICE_STATE_UPDATES", "RTC_CONNECTION_USER_CREATE_SSRC", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
           inlineRequire: () => E("332491").default
         },
         BroadcastingManager: {
@@ -20523,8 +20522,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245673", "245673"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245673")), _ = 0), _
+        let _ = parseInt((e = "245686", "245686"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245686")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21059,7 +21058,8 @@
             STREAM_START: () => this.applyNativeClipsSettings(),
             RUNNING_GAMES_CHANGE: () => this.fireClipsInitEvent(),
             CLIPS_RESTART: () => this.fireClipsInitEvent(),
-            RTC_CONNECTION_VIDEO: e => this.handleRTCConnectionVideo(e)
+            RTC_CONNECTION_VIDEO: e => this.handleRTCConnectionVideo(e),
+            MEDIA_ENGINE_SET_HARDWARE_H264: e => this.handleMediaEngineSetHardwareH264(e)
           }
         }
       }
@@ -21068,7 +21068,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return A
+          return R
         }
       });
       var t = E("77078"),
@@ -21080,16 +21080,17 @@
         I = E("111177"),
         s = E("386045"),
         T = E("18346"),
-        S = E("80028"),
-        N = E("782340");
-      class O extends I.default {
+        S = E("803725"),
+        N = E("80028"),
+        O = E("782340");
+      class A extends I.default {
         showClipsToast() {
           (0, t.showToast)({
             id: "CLIPS_IN_CALL_WARNING",
-            message: N.default.Messages.CLIPS_IN_CALL_WARNING,
+            message: O.default.Messages.CLIPS_IN_CALL_WARNING,
             type: t.ToastType.CLIP,
             options: {
-              duration: S.CLIPS_TOAST_DURATION
+              duration: N.CLIPS_TOAST_DURATION
             }
           })
         }
@@ -21113,8 +21114,21 @@
             applicationName: t.name
           })
         }
+        handleMediaEngineSetHardwareH264(e) {
+          let {
+            enabled: _
+          } = e;
+          if (!_) {
+            let {
+              clipsEnabled: e
+            } = s.default.getSettings();
+            e && S.updateClipsEnabled({
+              clipsEnabled: !1
+            })
+          }
+        }
       }
-      var A = new O
+      var R = new A
     },
     887418: function(e, _, E) {
       "use strict";
@@ -36337,4 +36351,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6e24a147a44598461416.js.map
+//# sourceMappingURL=c2209c9ae2b1c920e4c8.js.map
