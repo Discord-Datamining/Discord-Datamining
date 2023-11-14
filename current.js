@@ -16046,6 +16046,11 @@
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
         GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER: "Respond to repeating event",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES_INTERESTED: "Respond as interested in all Events in this Series",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES_UNINTERESTED: "Respond as uninterested in all Events in this Series",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE_INTERESTED: "Respond as interested in this Event",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE_UNINTERESTED: "Respond as uninterested in this Event",
         EDIT_THIS_EVENT: "Edit this Event",
         EDIT_ALL_EVENTS: "Edit all Events in this Series",
         GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
@@ -18148,7 +18153,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245562", ", Version Hash: ").concat("52f7e1f4264fc10e101d025284455937b24ee367")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245563", ", Version Hash: ").concat("371931775875bad2befc968edb2ed2f0cefd9431")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20513,8 +20518,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245562", "245562"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245562")), _ = 0), _
+        let _ = parseInt((e = "245563", "245563"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245563")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36317,4 +36322,4 @@
     }
   }
 ]);
-//# sourceMappingURL=f9af0d0b1266d5a3475c.js.map
+//# sourceMappingURL=fd9b710b98c18b0b1d4c.js.map
