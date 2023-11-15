@@ -16066,6 +16066,8 @@
         GUILD_EVENT_RECURRING_COACHMARK_CTA: "Try it",
         GUILD_EVENT_RECURRING_COACHMARK_TITLE: "NEW! Repeating Events",
         GUILD_EVENT_RECURRING_COACHMARK_BODY: "You can now easily repeat events.",
+        COPY_RECURRENCE_LINK: "Copy this Event Link",
+        COPY_SERIES_LINK: "Copy Event Series Link",
         GET_MOBILE_APP_SUBTITLE: "Discord isn't supported on mobile web browsers. Join over 100 million people who use Discord to talk with communities and friends.",
         MOBILE_APP_DOWNLOAD_CTA: "Get our mobile app",
         MOBILE_APP_DOWNLOAD_SUBHEADER: "Keep the conversion going on our iOS or Android app.",
@@ -18161,7 +18163,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245938", ", Version Hash: ").concat("b673f0f88305464e3f013903f082be916622e7d7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245948", ", Version Hash: ").concat("1335d6a67029c7babe08f70aee021a7d34d9a937")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20526,8 +20528,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245938", "245938"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245938")), _ = 0), _
+        let _ = parseInt((e = "245948", "245948"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245948")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36543,4 +36545,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6d21dd3f71f8a96e1bda.js.map
+//# sourceMappingURL=b7e11c2544af13969373.js.map
