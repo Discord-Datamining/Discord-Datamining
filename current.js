@@ -16050,11 +16050,10 @@
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
         GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER: "Respond to repeating event",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES_INTERESTED: "Respond as interested in all Events in this Series",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES_UNINTERESTED: "Respond as uninterested in all Events in this Series",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE_INTERESTED: "Respond as interested in this Event",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE_UNINTERESTED: "Respond as uninterested in this Event",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED: "I am interested in",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED: "I am not interested in",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES: "All upcoming events",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "This event",
         EDIT_THIS_EVENT: "Edit this Event",
         EDIT_ALL_EVENTS: "Edit all Events in this Series",
         GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
@@ -18157,7 +18156,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245764", ", Version Hash: ").concat("2e4262b14f7b106f2b1db6e6513ecdb3eec0af2f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245769", ", Version Hash: ").concat("dbf64340a06dff2adaf4cfb4235fceefbcf26c6a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20522,8 +20521,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245764", "245764"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245764")), _ = 0), _
+        let _ = parseInt((e = "245769", "245769"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245769")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36351,4 +36350,4 @@
     }
   }
 ]);
-//# sourceMappingURL=f7d790ad9647885b1298.js.map
+//# sourceMappingURL=7d4066cbe91fb987fa9d.js.map
