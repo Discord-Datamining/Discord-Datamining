@@ -8998,10 +8998,12 @@
         APPLICATION_STORE_GIFT_PURCHASE_CONFIRMATION_BLURB: "Send this link to a friend to give them the game. We hope they enjoy it!",
         APPLICATION_STORE_GIFT_PURCHASE_CONFIRM_SUBSCRIPTION_MONTHLY: "You're so generous! Send this gift to a friend to give them {intervalCount, plural, =1 {# month} other {# months}} of {skuName}. We hope they enjoy!",
         APPLICATION_STORE_GIFT_PURCHASE_AND_MESSAGE_CONFIRM_SUBSCRIPTION_MONTHLY: "You're so generous! You've given {intervalCount, plural, =1 {# month} other {# months}} of {skuName}. We hope they enjoy!",
+        APPLICATION_STORE_SEASONAL_GIFT_PURCHASE_AND_MESSAGE_CONFIRM_SUBSCRIPTION_MONTHLY: "You've gifted {intervalCount, plural, =1 {# month} other {# months}} of {skuName}. We know they'll enjoy your holiday surprise!",
         APPLICATION_STORE_GIFT_PURCHASE_FAILURE_GENERIC_BLURB: "We tried to deliver your gift but Wumpus got lost. Share the gift code link to try again!",
         APPLICATION_STORE_GIFT_PURCHASE_AND_MESSAGE_FAILED: "Uh-oh! Something went wrong!",
         APPLICATION_STORE_GIFT_PURCHASE_CONFIRM_SUBSCRIPTION_YEARLY: "You're so generous! Send this gift to a friend to give them {intervalCount, plural, =1 {# year} other {# years}} of {skuName}. We hope they enjoy!",
         APPLICATION_STORE_GIFT_PURCHASE_AND_MESSAGE_CONFIRM_SUBSCRIPTION_YEARLY: "You're so generous! You've given {intervalCount, plural, =1 {# year} other {# years}} of {skuName}. We hope they enjoy!",
+        APPLICATION_STORE_SEASONAL_GIFT_PURCHASE_AND_MESSAGE_CONFIRM_SUBSCRIPTION_YEARLY: "You've gifted {intervalCount, plural, =1 {# year} other {# years}} of {skuName}. We know they'll enjoy your holiday surprise!",
         APPLICATION_STORE_GIFT_PURCHASE_CONFIRM_MONTHLY_MOBILE: "You're so generous! Send this gift to a friend to give them {intervalCount, plural, =1 {# month} other {# months}} of {name}.",
         APPLICATION_STORE_GIFT_PURCHASE_CONFIRM_YEARLY_MOBILE: "You're so generous! Send this gift to a friend to give them {intervalCount, plural, =1 {# year} other {# years}} of {name}.",
         APPLICATION_STORE_GIFT_PURCHASE_CONFIRMATION_SUBTEXT: "This link is included in your confirmation email and can be found and managed in your [gift inventory](onInventoryClick). Gift link expires after 48 hours.",
@@ -18156,7 +18158,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245812", ", Version Hash: ").concat("ca9d35ae82a58056f42b69feafd4cead3666f6f7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245817", ", Version Hash: ").concat("996d1e184bb1ab0e6fe92c1028e56c10e1adabc7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20521,8 +20523,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245812", "245812"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245812")), _ = 0), _
+        let _ = parseInt((e = "245817", "245817"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245817")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36350,4 +36352,4 @@
     }
   }
 ]);
-//# sourceMappingURL=7d7f70bbd066a706931b.js.map
+//# sourceMappingURL=109d4539ed7a54904ded.js.map
