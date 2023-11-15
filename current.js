@@ -7833,13 +7833,13 @@
         GUILD_SETTINGS_STICKERS_UPSELL_BANNER_TOO_MANY_STICKERS_TEXT: "Boost your server to Level {level} or buy a level to unlock your stickers!",
         GUILD_SETTINGS_STICKERS_BOOST_SERVER: "Boost Server",
         GUILD_SETTINGS_STICKERS_UPLOAD_AUTO_RESIZE_HEADING: "Upload Instructions",
-        GUILD_SETTINGS_STICKERS_UPLOAD_AUTO_RESIZE_INSTRUCTIONS: "Stickers can be static (PNG) or animated (APNG). Stickers must be exactly 320 x 320 pixels and no larger than {fileSize}. We will automatically resize static PNG stickers for you.",
+        GUILD_SETTINGS_STICKERS_UPLOAD_AUTO_RESIZE_INSTRUCTIONS: "Stickers can be static (PNG) or animated (APNG, GIF). Stickers must be exactly 320 x 320 pixels and no larger than {fileSize}. We will automatically resize static PNG and animated GIF stickers for you.",
         GUILD_SETTINGS_STICKERS_UPLOAD_AUTO_RESIZE_HELP: "For more information about file types and tips on uploading custom stickers, check out this [Help Center article]({articleUrl}).",
         GUILD_SETTINGS_STICKERS_FREE_SLOTS_HEADER: "Free Slots",
         GUILD_STICKER_A11Y_REMOVE_STICKER: "Remove attached {name} sticker from message",
         GUILD_STICKER_UPLOAD_TITLE: "Upload a file",
-        GUILD_STICKER_UPLOAD_DESCRIPTION_NO_LOTTIE: "File should be APNG or PNG ({fileSize} max)",
-        GUILD_STICKER_UPLOAD_DESCRIPTION: "File should be APNG, PNG, or Lottie ({fileSize} max)",
+        GUILD_STICKER_UPLOAD_DESCRIPTION_NO_LOTTIE: "File should be APNG, PNG, or GIF ({fileSize} max)",
+        GUILD_STICKER_UPLOAD_DESCRIPTION: "File should be APNG, PNG, Lottie, or GIF ({fileSize} max)",
         GUILD_STICKER_UPLOAD_NAME_TITLE: "Sticker Name",
         GUILD_STICKER_UPLOAD_NAME_PLACEHOLDER: "ex: cat hug",
         GUILD_STICKER_UPLOAD_PREVIEW_TITLE: "Preview",
@@ -18164,7 +18164,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246013", ", Version Hash: ").concat("175568b6f4a18b58b03811f4c84723477e7a57bd")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246029", ", Version Hash: ").concat("e7d7733a2c72d977a613610d8d1c645788463d8d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20539,8 +20539,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246013", "246013"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246013")), _ = 0), _
+        let _ = parseInt((e = "246029", "246029"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246029")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36367,4 +36367,4 @@
     }
   }
 ]);
-//# sourceMappingURL=1fc91ff4afc1d6824e8a.js.map
+//# sourceMappingURL=18a48a38f2b1e2556d97.js.map
