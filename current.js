@@ -97,7 +97,7 @@
         MOBILE_GUILD_LIST_CONTEXT_MENU_ADD_A_SERVER: "Add a Server",
         NUF_CHANNEL_CHANNEL_NAME: "making-plans",
         NUF_CHANNEL_FIRST_MESSAGE_AUTHOR: "Mallow",
-        NUF_CHANNEL_FIRST_MESSAGE: "anyone wants to hang out this weekend?",
+        NUF_CHANNEL_FIRST_MESSAGE: "anyone want to hang out this weekend?",
         NUF_CHANNEL_SECOND_MESSAGE_AUTHOR: "Amanda",
         NUF_CHANNEL_SECOND_MESSAGE: "me! how about saturday?",
         CUSTOMIZE_SERVERS: "Customize Servers",
@@ -18164,7 +18164,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246048", ", Version Hash: ").concat("c1e0e5d9083e25768b494464db1b466bd1851809")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246061", ", Version Hash: ").concat("5cdaa40d3813d03d314fb2dae83c078f2f1fbab7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20539,8 +20539,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246048", "246048"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246048")), _ = 0), _
+        let _ = parseInt((e = "246061", "246061"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246061")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36367,4 +36367,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6775b711f684eb065ed8.js.map
+//# sourceMappingURL=eee3f8afc32c91dbc0cc.js.map
