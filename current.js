@@ -18161,7 +18161,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245888", ", Version Hash: ").concat("753d8aefbcc173d70326769edc2cc6b6daabcc5e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245909", ", Version Hash: ").concat("c637ae80b053077292c8c07273aa1c0696a58ea1")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20526,8 +20526,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245888", "245888"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245888")), _ = 0), _
+        let _ = parseInt((e = "245909", "245909"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245909")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26382,20 +26382,24 @@
         },
         CONTROL_CHARACTERS_CODE: function() {
           return T
+        },
+        TIMEOUT_TIME: function() {
+          return S
         }
       });
       let a = /([^A-Za-z0-9_.]+)/g,
         i = /\.+/g;
-      (n = t || (t = {})).NONE = "none", n.EDIT_DISPLAY_NAME = "display-name", n.EDIT_USERNAME = "username", n.PREVIEW = "preview", (r = o || (o = {})).APP_START = "app start", r.NOTICE = "notice", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_EDIT = "user settings edit", r.YOU_TAB = "you tab";
+      (n = t || (t = {})).NONE = "none", n.EDIT_DISPLAY_NAME = "display-name", n.EDIT_USERNAME = "username", n.PREVIEW = "preview", n.SUGGESTION = "suggestion", (r = o || (o = {})).APP_START = "app start", r.NOTICE = "notice", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_EDIT = "user settings edit", r.YOU_TAB = "you tab";
       let I = 32,
         s = "pomelo",
-        T = [1564, 917505, 12644, 65279, 173, 6068, 10240, 4447, 847, 4448, 65440]
+        T = [1564, 917505, 12644, 65279, 173, 6068, 10240, 4447, 847, 4448, 65440],
+        S = 2e3
     },
     485627: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return T
+          return S
         }
       }), E("222007");
       var t = E("95410"),
@@ -26403,13 +26407,19 @@
         n = E("697218"),
         r = E("553257"),
         a = E("363613"),
-        i = E("935583");
-      let I = "lastSawPomelo";
-      class s extends o.default {
+        i = E("275803"),
+        I = E("935583");
+      let s = "lastSawPomelo";
+      class T extends o.default {
         constructor(...e) {
           super(...e), this.actions = {
             POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
           }, this.onPostConnectionOpen = () => {
+            let e = i.UUOneClickExperiment.getCurrentConfig({
+              location: "uu_one_click"
+            }, {
+              autoTrackExposure: !1
+            }).enabled;
             (function() {
               let e = r.experiment.getCurrentConfig({
                 location: "b9eb97_1"
@@ -26419,13 +26429,13 @@
               if (!e) return !1;
               let _ = n.default.getCurrentUser();
               if (null == _ || _.isPomelo() || !_.hasVerifiedEmailOrPhone()) return !1;
-              let E = t.default.get(I);
+              let E = t.default.get(s);
               return !(null != E && Date.now() - E < 6048e5) && !0
-            })() && ((0, a.openPomeloModal)(i.PomeloEntrypoints.APP_START), t.default.set(I, Date.now()))
+            })() && ((0, a.openPomeloModal)(I.PomeloEntrypoints.APP_START, e), t.default.set(s, Date.now()))
           }
         }
       }
-      var T = new s
+      var S = new T
     },
     363613: function(e, _, E) {
       "use strict";
@@ -26437,8 +26447,33 @@
       var t = E("363861");
 
       function o(e) {
-        (0, t.default)(e)
+        let _ = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+        (0, t.default)(e, _)
       }
+    },
+    275803: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        UUOneClickExperiment: function() {
+          return o
+        }
+      });
+      var t = E("862205");
+      let o = (0, t.createExperiment)({
+        kind: "user",
+        id: "2023-11_uu_one_click",
+        label: "Unique Username one click",
+        defaultConfig: {
+          enabled: !1
+        },
+        treatments: [{
+          id: 1,
+          label: "Enable one click",
+          config: {
+            enabled: !0
+          }
+        }]
+      })
     },
     363861: function(e, _, E) {
       "use strict";
@@ -26451,12 +26486,14 @@
       E("884691");
       var o = E("77078");
       async function n(e) {
+        let _ = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
         await (0, o.openModalLazy)(async () => {
           let {
-            default: _
+            default: o
           } = await E.el("892845").then(E.bind(E, "892845"));
-          return E => (0, t.jsx)(_, {
+          return E => (0, t.jsx)(o, {
             source: e,
+            oneClickFlow: _,
             ...E
           })
         })
@@ -36506,4 +36543,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b07b92fcec8bf0c744fe.js.map
+//# sourceMappingURL=16b913aebfb899919915.js.map
