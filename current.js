@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["22697"], {
+  ["17463"], {
     229353: function(e, _, E) {
       e.exports = Object.freeze({
         DISCORD: "Discord",
@@ -18161,7 +18161,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245882", ", Version Hash: ").concat("54379bc750a420cce90de605bb80c23470f5b14f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245884", ", Version Hash: ").concat("f2bcb94d84115bdbb292b04209302c839476ccdf")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20526,8 +20526,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245882", "245882"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245882")), _ = 0), _
+        let _ = parseInt((e = "245884", "245884"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245884")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20578,6 +20578,56 @@
             GUILD_CREATE: this.handleGuildCreate,
             CHANNEL_CREATE: this.handleChannelCreate,
             LOGOUT: this.handleLogout
+          }
+        }
+      }
+      var N = new S
+    },
+    200029: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return N
+        }
+      }), E("222007");
+      var t = E("689988"),
+        o = E("44574"),
+        n = E("512395"),
+        r = E("305961"),
+        a = E("162771"),
+        i = E("718517"),
+        I = E("884422"),
+        s = E("483038"),
+        T = E("49111");
+      class S extends t.default {
+        maybeLoadFeedForGuild(e) {
+          if (null == e) return !1;
+          let _ = (0, n.isChannelHighlightsEnabledForGuild)(e);
+          (function(e) {
+            let _ = s.default.getLastFetchedMillis(e);
+            if (null != _ && Date.now() - _ < 3 * i.default.Millis.HOUR || s.default.isLoading(e)) return !1;
+            let E = r.default.getGuild(e);
+            return null != E && !E.hasFeature(T.GuildFeatures.CHANNEL_HIGHLIGHTS_DISABLED)
+          })(e) && (_ || (0, o.isGuildUnreadsExperimentEnabled)()) && (0, I.fetchChannelHighlights)(e)
+        }
+        constructor(...e) {
+          super(...e), this.actions = {
+            CHANNEL_PRELOAD: e => this.handleChannelPreload(e),
+            CHANNEL_SELECT: e => this.handleChannelSelect(e),
+            POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
+          }, this.handleChannelPreload = e => {
+            let {
+              guildId: _
+            } = e;
+            this.maybeLoadFeedForGuild(_)
+          }, this.handleChannelSelect = e => {
+            let {
+              guildId: _
+            } = e;
+            this.maybeLoadFeedForGuild(_)
+          }, this.handleConnectionOpen = () => {
+            let e = a.default.getGuildId();
+            this.maybeLoadFeedForGuild(e)
           }
         }
       }
@@ -24172,6 +24222,107 @@
         }
       }
       var T = new s
+    },
+    887446: function(e, _, E) {
+      "use strict";
+      let t, o, n, r;
+      E.r(_), E.d(_, {
+        default: function() {
+          return R
+        }
+      });
+      var a = E("748820"),
+        i = E("446674"),
+        I = E("913144"),
+        s = E("724210"),
+        T = E("515631");
+      let S = {};
+
+      function N(e) {
+        return {
+          guildId: e,
+          sessionId: (0, a.v4)()
+        }
+      }
+
+      function O(e) {
+        null != n && n.guildId === e ? (o = n, n = void 0) : o = N(e)
+      }
+      class A extends i.default.Store {
+        getSavedScrollPosition(e) {
+          return S[e]
+        }
+        getHomeSessionId(e) {
+          return null != o && o.guildId === e ? o.sessionId : null != n && n.guildId === e ? n.sessionId : void 0
+        }
+        getHomeSessionSource(e) {
+          return null != r && r.guildId === e ? r.source : T.GuildHomeLandingSource.ORGANIC
+        }
+      }
+      A.displayName = "GuildHomeStore";
+      var R = new A(I.default, {
+        CONNECTION_OPEN: function() {
+          S = {}
+        },
+        GUILD_FEED_FETCH_FRESH_START: function(e) {
+          let {
+            guildId: _
+          } = e;
+          delete S[_]
+        },
+        GUILD_HOME_SET_SCROLL_POSITION: function(e) {
+          let {
+            guildId: _,
+            scrollPosition: E
+          } = e;
+          S[_] = E
+        },
+        CHANNEL_SELECT: function(e) {
+          let {
+            guildId: _,
+            channelId: E
+          } = e;
+          if (null == _ || null == E || !(0, s.isStaticChannelRoute)(E) || !(0, s.isGuildHomeChannel)(E)) {
+            t = void 0, o = void 0, n = void 0, r = void 0;
+            return
+          }
+          let a = (0, s.buildGuildStaticChannelId)(E, _);
+          if (t === a || null != o && o.guildId === _) return !1;
+          O(_), t = a, null != r && r.guildId !== _ && (r = void 0)
+        },
+        CHANNEL_PRELOAD: function(e) {
+          let {
+            guildId: _,
+            channelId: E
+          } = e;
+          if (null == _ || null == E || !(0, s.isStaticChannelRoute)(E) || !(0, s.isGuildHomeChannel)(E)) {
+            n = void 0;
+            return
+          }
+          if (null != n && n.guildId === _) return !1;
+          n = N(_)
+        },
+        GUILD_HOME_SET_SOURCE: function(e) {
+          let {
+            source: _,
+            guildId: E
+          } = e;
+          r = {
+            guildId: E,
+            source: _
+          }
+        },
+        GUILD_HOME_ENSURE_HOME_SESSION: function(e) {
+          let {
+            guildId: _
+          } = e;
+          if (null != o && o.guildId === _) return !1;
+          O(_)
+        },
+        LOGOUT: function() {
+          o = void 0, n = void 0, r = void 0
+        }
+      })
     },
     129966: function(e, _, E) {
       "use strict";
@@ -36355,4 +36506,4 @@
     }
   }
 ]);
-//# sourceMappingURL=0c58bb54f6f76adb5444.js.map
+//# sourceMappingURL=f692a7a6fdfcc448d95e.js.map
