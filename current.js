@@ -8333,6 +8333,7 @@
         GIFT_CONFIRMATION_HEADER_FAIL: "*Sad Trombone*",
         GIFT_CONFIRMATION_BODY_CLAIMED: "You couldn't claim this gift because someone else beat you to the punch. That's jazz baby!",
         GIFT_CONFIRMATION_BODY_OWNED: "You couldn't claim this gift because you already have it. You can find it in [your library](onGoToLibrary).",
+        GIFT_ERROR_OWNED: "You couldn't claim this gift because you already have it.",
         GIFT_CONFIRMATION_BODY_UNKNOWN_ERROR: "Something funky happened and we failed to secure the bag...try again?",
         GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT: "You can't accept this gift. You need to give this gift to someone else.",
         GIFT_CONFIRMATION_BODY_ERROR_NITRO_UPGRADE_DOWNGRADE: "Oops! You're unable to accept this gift because of your existing subscription.",
@@ -18160,7 +18161,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245858", ", Version Hash: ").concat("f75e9ad1ba3d6e4dda5d3c00477ea7eca1732dab")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245864", ", Version Hash: ").concat("ade4ee4cafafcdc0b6386af476d91f331cf6bee8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20525,8 +20526,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "245858", "245858"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245858")), _ = 0), _
+        let _ = parseInt((e = "245864", "245864"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245864")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36354,4 +36355,4 @@
     }
   }
 ]);
-//# sourceMappingURL=8fb6162c0b3116ed9318.js.map
+//# sourceMappingURL=bc887bdea47464a992ec.js.map
