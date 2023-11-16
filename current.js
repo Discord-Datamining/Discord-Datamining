@@ -7971,6 +7971,7 @@
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_BOOSTS: "{numBoosts} Boosts + {percentageOff} off extra Boosts",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_PROFILE_THEMES: "Animated avatar, banner, and profile theme",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SERVER_PROFILE: "Custom server profiles",
+        PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SHOP_DISCOUNTS_GENERIC: "Shop member pricing, and exclusive items",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SHOP_DISCOUNTS: "Shop discounts and exclusive avatar decorations",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_CLIENT_THEME: "Colors for your Discord theme",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_BADGE: "Nitro badge on your profile",
@@ -18166,7 +18167,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246272", ", Version Hash: ").concat("bde207d29e2e6fb1b2c93a5aadb9e03724de97da")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246278", ", Version Hash: ").concat("f837cb277fbf69f05eb88d021aa1e24b6d453c7f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20541,8 +20542,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246272", "246272"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246272")), _ = 0), _
+        let _ = parseInt((e = "246278", "246278"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246278")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36370,4 +36371,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76931765b3456a571a2e.js.map
+//# sourceMappingURL=a81147b6d48b9fed2bdd.js.map
