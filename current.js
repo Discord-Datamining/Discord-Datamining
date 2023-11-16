@@ -8345,6 +8345,7 @@
         GIFT_CONFIRMATION_BODY_ERROR_INVOICE_OPEN: "Unfortunately, you're unable to accept this gift because your subscription has an open invoice.",
         GIFT_CONFIRMATION_BODY_INVALID: "Bummer! You couldn't claim this gift because it has been revoked.",
         GIFT_CONFIRMATION_BODY_SUCCESS: "{skuName} is now available in your library. Go forth and play!",
+        GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC: "Go forth and enjoy your gift!",
         GIFT_CONFIRMATION_BODY_SUCCESS_NITRO_CLASSIC_MOBILE: "Thanks to another generous human, you now have access to enhanced chat perks for {timeFrame}.",
         GIFT_CONFIRMATION_BODY_SUCCESS_NITRO_MOBILE: "Thanks to another generous human, you now have access to enhanced chat perks and Server Boosts for {timeframe}.",
         GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_MONTHLY: "Thanks to another generous human, you now have access to enhanced chat perks for {intervalCount, plural, =1 {# month} other {# months}}.",
@@ -9553,12 +9554,14 @@
         GIFT_RECIPIENT_INFO: "To: {recipientDisplayName}",
         GIFT_SENDER_INFO: "From: {senderDisplayName}",
         GIFT_SUBSCRIPTION_INFO: "{senderDisplayName} has gifted you Nitro for 1 {timeInterval}!",
+        GIFT_SUBSCRIPTION_INFO_GENERIC: "{senderDisplayName} has gifted you Nitro!",
         GIFT_SELECT_SOUND: "Add sound effect",
         GIFT_SELECT_EMOJI: "Add emoji confetti",
         GIFT_SELECT_SOUNDBOARD_ADD: "Add",
         GIFT_SELECT_SOUNDBOARD_OR_EMOJI_DESCRIPTION: "This will play when your friend opens their gift",
         NITRO_CONFIRMATION: "You've got Nitro",
         NITRO_FEATURES: "Now you can use HD streaming, bigger file uploads, custom stickers, and more for 1 {timeInterval}.",
+        NITRO_FEATURES_GENERIC: "Now you can use HD streaming, bigger file uploads, custom stickers, and more.",
         OPENED_GIFT_CONFIRMATION: "You opened this gift!",
         NITRO_PERKS: "Check out your new Nitro perks!",
         TEAL: "Teal",
@@ -18169,7 +18172,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246440", ", Version Hash: ").concat("bacacde83caf18b3383cabd240312e0765b09f71")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246442", ", Version Hash: ").concat("08217515de480c804650a37b4a478198dea14106")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20544,8 +20547,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246440", "246440"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246440")), _ = 0), _
+        let _ = parseInt((e = "246442", "246442"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246442")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36373,4 +36376,4 @@
     }
   }
 ]);
-//# sourceMappingURL=2e0099325a96afd0079b.js.map
+//# sourceMappingURL=db40a8ef6aa5b308ba35.js.map
