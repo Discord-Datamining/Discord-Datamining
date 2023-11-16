@@ -16565,9 +16565,11 @@
         STATUS_CHILLING: "Chilling tbh",
         STATUS_GAMING: "GAMING",
         STATUS_FOCUSING: "Focusing atm",
+        STATUS_BRB: "On the move",
         STATUS_NONE: "No status",
         HANG_STATUS: "Hang Status",
         HANG_STATUS_LOCATION: "in !!{guildName}!!",
+        CUSTOM_HANG_STATUS: "Custom Status",
         XBOX: "Xbox",
         PLAYSTATION: "PlayStation",
         GO_LIVE_MODAL_CAPTURE: "Capture Devices",
@@ -18164,7 +18166,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246269", ", Version Hash: ").concat("326a693486ef61486c4707e9c42fadd1cd5a966d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246271", ", Version Hash: ").concat("819eba62cbff0c2600128d0a0a7d01bad77acd2e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20539,8 +20541,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246269", "246269"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246269")), _ = 0), _
+        let _ = parseInt((e = "246271", "246271"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246271")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36368,4 +36370,4 @@
     }
   }
 ]);
-//# sourceMappingURL=640545a87d510ee0d99e.js.map
+//# sourceMappingURL=3a1cd61d502d9a66fc0f.js.map
