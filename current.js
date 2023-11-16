@@ -7659,8 +7659,10 @@
         SUGGESTED: "Suggested",
         LAUNCH_PAD: "LaunchPad",
         LAUNCH_PAD_DESCRIPTION: "Enables an experimental feature for faster navigation throughout the app. Accessible globally with a gesture or pull-tab UI element.",
-        LAUNCH_PAD_STANDARD_RADIO: "Gesture Only",
-        LAUNCH_PAD_STANDARD_RADIO_DESCRIPTION: "Use a global right to left gesture to activate Launch Pad (note Please note: this will disable the swipe-to-reply function in chat as it utilizes the same gesture).",
+        LAUNCH_PAD_STANDARD_RADIO: "Full Screen Gesture",
+        LAUNCH_PAD_STANDARD_RADIO_ALT: "Right Edge Gesture",
+        LAUNCH_PAD_STANDARD_RADIO_DESCRIPTION: "Use a global right to left gesture to activate Launch Pad (Please Note: this will disable the swipe-to-reply function in chat and require a right edge gesture to drag chats back in due to gesture conflicts).",
+        LAUNCH_PAD_STANDARD_RADIO_DESCRIPTION_ALT: "Use a global right to left gesture to activate Launch Pad that you activate from the right edge (on Android this may conflict with system gestures if you have them enabled and while this keeps swipe to reply enabled, there may be conflicts we still need to fix).",
         LAUNCH_PAD_PULL_TAB_RADIO: "Pull Tab",
         LAUNCH_PAD_PULL_TAB_RADIO_DESCRIPTION: "Use a persistent pull tab element on the right of the screen to activate Launch Pad.",
         LAUNCH_PAD_DISABLED_RADIO: "Disabled",
@@ -18167,7 +18169,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246385", ", Version Hash: ").concat("9e4eed57d3651ddd4fdf2bc90abbc789ee9b0cb6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246414", ", Version Hash: ").concat("1ca2420f51a8b8069cf5239a6768f7ecba416090")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20542,8 +20544,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246385", "246385"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246385")), _ = 0), _
+        let _ = parseInt((e = "246414", "246414"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246414")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36371,4 +36373,4 @@
     }
   }
 ]);
-//# sourceMappingURL=a213724f8a587cdbe364.js.map
+//# sourceMappingURL=651ec3211cb6b467634e.js.map
