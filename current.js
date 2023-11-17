@@ -16038,7 +16038,10 @@
         SCREENSHARE_APPS_PHOTOS: "Photos",
         SCREENSHARE_APPS_PHOTOS_ACCESSIBILITY_LABEL: "Screenshare Photos",
         SCREENSHARE_APPS_SNAPCHAT: "Snapchat",
-        SCREENSHARE_APPS_SNAPCHAT_ACCESSIBILITY_LABEL: "Screenshare Snapchat"
+        SCREENSHARE_APPS_SNAPCHAT_ACCESSIBILITY_LABEL: "Screenshare Snapchat",
+        LAUNCH_PAD_HISTORY: "Recent Channels",
+        LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
+        LAUNCH_PAD_RECENT_SERVERS: "Recent Servers"
       })
     },
     444051: function(e, _, E) {
@@ -16566,9 +16569,6 @@
         SHARED_CANVAS_DRAW_MODE_EMOJI_HOSE: "Emoji Hose",
         SHARED_CANVAS_HIDE_OVERLAY_DRAWINGS: "Hide Drawings in Overlay",
         RECENT_CONVERSATIONS: "Recent Conversations",
-        LAUNCH_PAD_HISTORY: "Recent Channels",
-        LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
-        LAUNCH_PAD_RECENT_SERVERS: "Recent Servers",
         AI_TAG: "AI",
         CLYDE_VIEW_SOURCE_SHOW_TOOLTIP: "View Sources",
         CLYDE_VIEW_SOURCE_HIDE_TOOLTIP: "Hide Sources",
@@ -18274,7 +18274,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247110", ", Version Hash: ").concat("211ba7a8d014a293673e19bfe820e197dc2971e3")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247115", ", Version Hash: ").concat("836a78f449b9289698617fd4fc2320d3bd8819b1")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20555,8 +20555,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247110", "247110"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247110")), _ = 0), _
+        let _ = parseInt((e = "247115", "247115"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247115")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36389,4 +36389,4 @@
     }
   }
 ]);
-//# sourceMappingURL=5f100acf1d32dfba802b.js.map
+//# sourceMappingURL=d482e7274110859e19c9.js.map
