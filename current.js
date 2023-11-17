@@ -1384,6 +1384,8 @@
         GUILD_SETTINGS_ACTION_FILTER_STICKER_UPDATE: "Update Sticker",
         GUILD_SETTINGS_ACTION_FILTER_STICKER_DELETE: "Delete Sticker",
         GUILD_SETTINGS_ACTION_FILTER_APPLICATION_COMMAND_PERMISSION_UPDATE: "Update Command Permissions",
+        GUILD_SETTINGS_ACTION_FILTER_VOICE_CHANNEL_STATUS_CREATE: "Create Voice Channel Status",
+        GUILD_SETTINGS_ACTION_FILTER_VOICE_CHANNEL_STATUS_DELETE: "Delete Voice Channel Status",
         GUILD_SETTINGS_ROLE_ICON_SIDEBAR_NEW_ARIA_LABEL: "Manage Roles",
         PREMIUM_GUILD_TIER_0: "No Level",
         PREMIUM_GUILD_TIER_1: "Level 1",
@@ -18183,7 +18185,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246898", ", Version Hash: ").concat("83b5835b5cd7d9a04d0735a8b87903f58431dadc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246901", ", Version Hash: ").concat("c4bc020097b6fac8943fb966300c59476945a66b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20464,8 +20466,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246898", "246898"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246898")), _ = 0), _
+        let _ = parseInt((e = "246901", "246901"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246901")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36296,4 +36298,4 @@
     }
   }
 ]);
-//# sourceMappingURL=185ab9a17b03e21373ce.js.map
+//# sourceMappingURL=6cb03847c4ae0bd99bf4.js.map
