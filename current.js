@@ -9835,6 +9835,40 @@
         DISCOVERABILITY_LEARN_MORE_REDESIGN: "$[Learn more](learnMoreHook)",
         DISCOVERABILITY_LEARN_MORE: "$[Learn More](learnMoreHook)",
         DISCOVERABILITY_ALLOW_FIND_ME: "Allow people to find me",
+        LAUNCH_WELCOME_LANDING_TITLE: "We've improved our mobile app!",
+        LAUNCH_WELCOME_LANDING_SUBTITLE: "Choose a theme to get started.",
+        LAUNCH_WELCOME_LEARN_MORE: "[Learn more here]({learnMoreUrl})",
+        LAUNCH_WELCOME_NUX_TITLE: "Your DMs live here now!",
+        LAUNCH_WELCOME_NUX_SUBTITLE: "Tap anywhere to dismiss.",
+        LAUNCH_WELCOME_CHOOSE_A_THEME: "Choose a theme,",
+        APP_THEME: "App Theme",
+        THEME_PICKER_MESSAGE_AUTHOR_1: "Nelly",
+        THEME_PICKER_MESSAGE_PREVIEW_1: "Enjoy your trip to spain!",
+        THEME_PICKER_MESSAGE_AUTHOR_2: "bio study group",
+        THEME_PICKER_MESSAGE_PREVIEW_2: "graggle: Can someone explain #4?",
+        THEME_PICKER_MESSAGE_AUTHOR_3: "phibi",
+        THEME_PICKER_MESSAGE_PREVIEW_3: "I'll add them to the server",
+        THEME_PICKER_MESSAGE_AUTHOR_4: "Dodgeball",
+        THEME_PICKER_MESSAGE_PREVIEW_4: "cap: Registration opens on the third!",
+        THEME_PICKER_MESSAGE_AUTHOR_5: "mac",
+        THEME_PICKER_MESSAGE_PREVIEW_5: "What time should we start tonight?",
+        THEME_PICKER_MESSAGE_AUTHOR_6: "Wumpus and Locke",
+        THEME_PICKER_MESSAGE_PREVIEW_6: "Locke: okay I'll see you there",
+        THEME_PICKER_MESSAGE_AUTHOR_7: "amanda",
+        THEME_PICKER_MESSAGE_PREVIEW_7: "ok",
+        THEME_PICKER_MESSAGE_AUTHOR_8: "Wumpus",
+        THEME_PICKER_MESSAGE_PREVIEW_8: "let's play on saturday!",
+        THEME_PICKER_MESSAGE_AUTHOR_9: "olive",
+        THEME_PICKER_MESSAGE_PREVIEW_9: "yeppers",
+        THEME_PICKER_MESSAGE_AUTHOR_10: "tofu",
+        THEME_PICKER_MESSAGE_PREVIEW_10: "lmk if you need another for the group",
+        THEME_PICKER_ACTIVITY_TITLE_1: "Mallow, Cap, and 3 others",
+        THEME_PICKER_ACTIVITY_TITLE_2: "locke, mallow, and graggle",
+        THEME_PICKER_SAMPLE_CHANNEL_NAME: "the-couch",
+        THEME_PICKER_SAMPLE_ACTIVITY_NAME: "SketchHeads",
+        THEME_PICKER_NITRO_ONLY: "This theme is available to Nitro users only.",
+        THEME_PICKER_SYNC_APPEARANCE_HINT: "This will change the theme across all your devices.",
+        THEME_PICKER_YOU_CAN_CHANGE_THIS_LATER: "You can always change this later!",
         AGE_GATE_GO_BACK: "Go back",
         AGE_GATE_SUBMIT: "Submit",
         AGE_GATE_AGE_VERIFIED_BODY: "Thank you for verifying your age. This helps us to keep Discord safe.",
@@ -18223,7 +18257,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246996", ", Version Hash: ").concat("9b02d9fc7dcd8d2634b9210342f379a7657593c8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247001", ", Version Hash: ").concat("19aa90e0acaea9139b75270ee1e39c9fce2ac6e8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20504,8 +20538,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246996", "246996"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246996")), _ = 0), _
+        let _ = parseInt((e = "247001", "247001"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247001")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36338,4 +36372,4 @@
     }
   }
 ]);
-//# sourceMappingURL=0855aecc7a705281bedd.js.map
+//# sourceMappingURL=e5fafde8d11ed45c195c.js.map
