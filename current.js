@@ -18177,7 +18177,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246763", ", Version Hash: ").concat("914b30f86b0cb07475bda3f85a77d4007a09680e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246768", ", Version Hash: ").concat("165f12a9a27a5a88ba589e3eb2cf091fc2d10605")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20552,8 +20552,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246763", "246763"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246763")), _ = 0), _
+        let _ = parseInt((e = "246768", "246768"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246768")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -23144,7 +23144,7 @@
             [i.RunningProcessFullscreenType.BORDERLESS_FULLSCREEN]: new r.StopWatch,
             [i.RunningProcessFullscreenType.FULLSCREEN]: new r.StopWatch,
             [i.RunningProcessFullscreenType.MINIMIZED]: new r.StopWatch
-          }, this.lastscreenType = void 0, this.counters[e.fullscreenType].start(), this.updateScreenInterval = setInterval(() => this.update(), 1e4)
+          }, this.lastscreenType = void 0, this.update(), this.updateScreenInterval = setInterval(() => this.update(), 1e4)
         }
       }
       class M {
@@ -23202,7 +23202,7 @@
             a = (0, T.getOverlayGameStatus)(this.game),
             i = {
               event_uuid: this.uuid,
-              overlay_usage_stats_version: 1,
+              overlay_usage_stats_version: 2,
               ...this.notificationAnalytics.getAnalytics(),
               ...this.widgetAnalytics.getAnalytics(),
               ...this.screenAnalytics.getAnalytics(),
@@ -36381,4 +36381,4 @@
     }
   }
 ]);
-//# sourceMappingURL=c2b7c265c09c345ff0c0.js.map
+//# sourceMappingURL=e5616a0ddd3daea6b8a1.js.map
