@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["17463"], {
+  ["6808"], {
     229353: function(e, _, E) {
       e.exports = Object.freeze({
         DISCORD: "Discord",
@@ -18163,6 +18163,40 @@
         })
       }
     },
+    2662: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        RefreshIcon: function() {
+          return r
+        }
+      });
+      var t = E("37983");
+      E("884691");
+      var o = E("669491"),
+        n = E("75196");
+      let r = e => {
+        let {
+          width: _ = 24,
+          height: E = 24,
+          color: r = o.default.colors.INTERACTIVE_NORMAL,
+          colorClass: a = "",
+          ...i
+        } = e;
+        return (0, t.jsx)("svg", {
+          ...(0, n.default)(i),
+          xmlns: "http://www.w3.org/2000/svg",
+          width: _,
+          height: E,
+          fill: "none",
+          viewBox: "0 0 24 24",
+          children: (0, t.jsx)("path", {
+            fill: "string" == typeof r ? r : r.css,
+            d: "M21 2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.93A7.997 7.997 0 0 0 12 4a7.962 7.962 0 0 0-5.028 1.777 1 1 0 0 1-1.258-1.554A9.962 9.962 0 0 1 12 2a9.985 9.985 0 0 1 8 4V3a1 1 0 0 1 1-1ZM3 22a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H5.07A7.997 7.997 0 0 0 12 20a7.963 7.963 0 0 0 5.028-1.777 1 1 0 1 1 1.258 1.554A9.963 9.963 0 0 1 12 22a9.985 9.985 0 0 1-8-4v3a1 1 0 0 1-1 1Z",
+            className: a
+          })
+        })
+      }
+    },
     320777: function(e, _, E) {
       "use strict";
       E.r(_), E("190709"), E("996763");
@@ -18186,7 +18220,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246912", ", Version Hash: ").concat("84e861caac5bddde9a672a61f343e21a5f88874d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246923", ", Version Hash: ").concat("1158f6d2cd03c0e862643b0f3935736d65444c68")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20467,8 +20501,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246912", "246912"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246912")), _ = 0), _
+        let _ = parseInt((e = "246923", "246923"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246923")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21410,7 +21444,8 @@
                 location: "aa85a3_1"
               }, {
                 autoTrackExposure: !1
-              }).enabledAMOLEDThemeOption;
+              }).enabledAMOLEDThemeOption,
+              F = (0, S.useRedesignIconContext)().enabled;
             return (0, t.jsx)("html", {
               lang: _,
               style: "font-size: ".concat(d, "%; --saturation-factor: ").concat(p, "; --devtools-sidebar-width: ").concat(b, "px;"),
@@ -21426,7 +21461,8 @@
                 "decorate-links": O,
                 "desaturate-user-colors": y,
                 "disable-forced-colors": !g && "active" === B,
-                "enable-forced-colors": g
+                "enable-forced-colors": g,
+                "show-redesigned-icons": F
               }, w && n === P.AMOLEDThemeState.ON ? "theme-dark theme-amoled" : (0, D.getThemeClass)(E), (0, c.default)(), h)
             })
           }(h), function() {
@@ -36299,4 +36335,4 @@
     }
   }
 ]);
-//# sourceMappingURL=9b20f053dd94fff81034.js.map
+//# sourceMappingURL=b4baa45aaf91fb511acc.js.map
