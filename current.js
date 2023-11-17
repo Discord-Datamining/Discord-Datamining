@@ -15739,7 +15739,8 @@
         CLIPS_SETTINGS_KEYBIND: "Clipping Keybind",
         CLIPS_SETTINGS_KEYBIND_HELP: "Set up your keybind to capture clips. The default is ALT + C.",
         CLIPS_SAVE: "Save Clip",
-        CLIPS_VIEWERSIDE_SAVE: "Capture Clip",
+        CLIPS_VIEWERSIDE_BUTTON_FOCUS_TOOLTIP: "Focus on a stream to capture clips.",
+        CLIPS_VIEWERSIDE_BUTTON_DISABLED_TOOLTIP: "Clips are disabled for this stream.",
         CLIPS_SETTINGS_ALLOW_VIEWER_CLIPS: "Allow viewers to capture clips",
         CLIPS_SETTINGS_ALLOW_VIEWER_CLIPS_HELP: "Enable the creation of clips from your Go Live stream",
         CLIPS_SETTINGS_WHO_CAN_CAPTURE: "Who can capture clips",
@@ -18178,7 +18179,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246809", ", Version Hash: ").concat("4eaa477d80437184b3ba4987fd0f33728e0b8b3a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246812", ", Version Hash: ").concat("82f317a8e014988d77460a1217f18ea92e0bf157")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20459,8 +20460,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "246809", "246809"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246809")), _ = 0), _
+        let _ = parseInt((e = "246812", "246812"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246812")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36288,4 +36289,4 @@
     }
   }
 ]);
-//# sourceMappingURL=19d42d69e8513e89bf15.js.map
+//# sourceMappingURL=cd847b0653f098683160.js.map
