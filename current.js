@@ -14984,6 +14984,23 @@
         DIRECTORY_CATEGORY_TOWN_HALL_2: "Gaming",
         DIRECTORY_CATEGORY_TOWN_HALL_3: "Indie Spotlight",
         DIRECTORY_CATEGORY_TOWN_HALL_5: "Creator Corner",
+        MARKETING_PAGE_SHOP_PERK_CARD_HEADER: "Special Shop Perks",
+        MARKETING_PAGE_SHOP_PERK_CARD_SUBHEADER: "Enjoy member pricing plus Nitro exclusive items in the Shop.",
+        MARKETING_PAGE_SHOP_PERK_COMPARISON_CHART: "Shop member pricing, and exclusive items",
+        USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "`Tis the season for feelin' festive!",
+        USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_SUBHEADER: "Deck your profile in seasonal styles with new items in the Shop.",
+        COLLECTIBLES_ACCOUNT_SWITCHER_POPOUT_HEADER: "Level up your look",
+        COLLECTIBLES_ACCOUNT_SWITCHER_POPOUT_SUBHEADER: "Check out the latest and greatest styles in the Shop. Now open to everyone.",
+        COLLECTIBLES_INTERACTIVE_MODAL_HEADER: "Look Your Best: the Shop is Open!",
+        COLLECTIBLES_INTERACTIVE_MODAL_SUBHEADER: "Try on a few items from the Shop below.\nBuy any of them and they're yours to keep.",
+        COLLECTIBLES_SHOP_TAB_COACHMARK_SUBHEADER: "Deck your profile in seasonal styles with new Winter Wonderland items.",
+        AVATAR_DECORATIONS_SOCIAL_UPSELL: "Like this avatar decoration? $[Get your own from the Shop](openShop).",
+        COMBINED_COLLECTIBLES_SOCIAL_UPSELL: "Customize your profile with snazzy animations. $[Check them out](openShop).",
+        STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO: "Like this profile effect? $[Get your own from the Shop](openShop).",
+        COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NON_NITRO: "Unlock this profile customization with Nitro. $[Check it out](openShop).",
+        STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO: "Like this avatar decoration? $[Claim it with your Nitro subscription](openShop).",
+        STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO: "Like this profile effect? $[Claim it with your Nitro subscription](openShop).",
+        COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO: "Like this profile customization? $[Get your own from the Shop](openShop).",
         INVENTORY_ADD_PACK: "Add Pack",
         INVENTORY_VIEW_PACK: "View Pack",
         INVENTORY_REMOVE_PACK: "Remove Pack",
@@ -18257,7 +18274,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247049", ", Version Hash: ").concat("fc0be0c2f9a91bb202199c21593beb597db0b20a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247053", ", Version Hash: ").concat("d8e07c462ad901fa7c05d8bae9e7b42239960b2b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20538,8 +20555,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247049", "247049"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247049")), _ = 0), _
+        let _ = parseInt((e = "247053", "247053"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247053")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36372,4 +36389,4 @@
     }
   }
 ]);
-//# sourceMappingURL=5b83b5cb6bc142a96868.js.map
+//# sourceMappingURL=3cacee53c892a4b73a9d.js.map
