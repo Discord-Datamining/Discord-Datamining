@@ -16663,10 +16663,7 @@
         REPORTS_USER_PREVIEW_TITLE: "Selected User",
         REPORTS_FREE_TEXT_PLACEHOLDER: "(Optional) Provide more context about your report here",
         REPORTS_USER_MENU_OPTION_MOBILE: "Report User Profile",
-        COLLECTIBLES_SHOP_FOR_ALL_NITRO_ONLY_COACHMARK_HEADER: "Get into the holiday spirit",
-        COLLECTIBLES_SHOP_FOR_ALL_NITRO_ONLY_COACHMARK_DESCRIPTION: "Check out the newest Winter collection in the Shop to celebrate the season!",
         COLLECTIBLES_SHOP_FOR_ALL_NITRO_ONLY_COACHMARK_ART: "Asset goes here",
-        COLLECTIBLES_SHOP_FOR_ALL_NITRO_ONLY_COACHMARK_CTA: "Visit Shop",
         POLL: "Poll",
         POLLS: "Polls",
         POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
@@ -18270,7 +18267,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247235", ", Version Hash: ").concat("1ee7999d69f10768628240ab94c43eeaf4f85d7e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247242", ", Version Hash: ").concat("e6080ee5ce00b76a13295e1e2b7b8c18f111ec34")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20551,8 +20548,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247235", "247235"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247235")), _ = 0), _
+        let _ = parseInt((e = "247242", "247242"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247242")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36385,4 +36382,4 @@
     }
   }
 ]);
-//# sourceMappingURL=a6777487b5e0bfefefca.js.map
+//# sourceMappingURL=ee17312083f2494dbc01.js.map
