@@ -786,6 +786,7 @@
         EMBEDDED_ACTIVITIES_MINI_SHELF_GAME_NIGHT_POSTER_ALT: "Wumpus and friends playing games on their phones. Game Night. April 7th",
         EMBEDDED_ACTIVITIES_GAME_NIGHT: "Game Night",
         EMBEDDED_ACTIVITIES_KRUNKER_STRIKE_POSTER_ALT: "Krunker Strike",
+        EMBEDDED_ACTIVITIES_COLONIST_POSTER_ALT: "Colonist",
         EMBEDDED_ACTIVITIES_RESOLVING_ACTIVITY: "Resolving Activity",
         EMBEDDED_ACTIVITIES_EMBED_ENDED: "Activity has ended.",
         EMBEDDED_ACTIVITIES_EMBED_START: "Start a new one?",
@@ -18201,7 +18202,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247469", ", Version Hash: ").concat("a7e17c2b9fd5a26874ea7f37ca39928f851d96ef")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247475", ", Version Hash: ").concat("1a4c62d577c2d8f2a115d835626605a1a61146cb")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20477,8 +20478,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247469", "247469"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247469")), _ = 0), _
+        let _ = parseInt((e = "247475", "247475"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247475")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36305,4 +36306,4 @@
     }
   }
 ]);
-//# sourceMappingURL=92081861df40586f9f5d.js.map
+//# sourceMappingURL=8bfe4f5a9b50b9149e86.js.map
