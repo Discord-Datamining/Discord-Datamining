@@ -16630,6 +16630,7 @@
         STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
         SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
         SET_STATUS_MODAL_SUBTITLE: "Get unique with letting everyone know what you're doing.",
+        SET_STATUS_MODAL_CTA: "Confirm",
         STATUS_LEAD_IN_JUST: "Right now, I'm just -",
         STATUS_CHILLING: "Chilling tbh",
         STATUS_GAMING: "GAMING",
@@ -16640,6 +16641,7 @@
         HANG_STATUS_LOCATION: "in !!{guildName}!!",
         CUSTOM_HANG_STATUS: "Custom Status",
         CUSTOM_HANG_STATUS_CTA: "Jump in here!",
+        CUSTOM_HANG_STATUS_PLACEHOLDER: "Eating a potato",
         XBOX: "Xbox",
         PLAYSTATION: "PlayStation",
         GO_LIVE_MODAL_CAPTURE: "Capture Devices",
@@ -18271,7 +18273,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247317", ", Version Hash: ").concat("a870adfb80d575c4170f2c16a8e0d06ce8acc997")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247328", ", Version Hash: ").concat("6996c970779600b93f39e9694236170856e75d63")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20552,8 +20554,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247317", "247317"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247317")), _ = 0), _
+        let _ = parseInt((e = "247328", "247328"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247328")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36386,4 +36388,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b158e9b37e1a82d671bf.js.map
+//# sourceMappingURL=824e6559b9ffbc223b71.js.map
