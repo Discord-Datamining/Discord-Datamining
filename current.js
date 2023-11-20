@@ -16447,6 +16447,8 @@
         MEMBER_SAFETY_INTEGRATION_TYPE_TWITCH: "Twitch",
         MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE: "YouTube",
         MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
+        MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
+        MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "Quarantined for unallowed content in user profile",
         BAN_MULTIPLE_CONFIRM_TITLE: "Would you like to ban {count, plural, one {1 member} other {{count} members}}?",
         BAN_MULTIPLE_SUCCESS_TOAST: "Mass ban succesful",
         BAN_MULTIPLE_FAILED_TOAST: "Mass ban failed",
@@ -18202,7 +18204,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247475", ", Version Hash: ").concat("1a4c62d577c2d8f2a115d835626605a1a61146cb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247485", ", Version Hash: ").concat("7d9c49cb88424642f0d7bb2c561023dc7eeff966")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20478,8 +20480,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247475", "247475"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247475")), _ = 0), _
+        let _ = parseInt((e = "247485", "247485"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247485")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36306,4 +36308,4 @@
     }
   }
 ]);
-//# sourceMappingURL=8bfe4f5a9b50b9149e86.js.map
+//# sourceMappingURL=7fdff0943b0bc2fd0b66.js.map
