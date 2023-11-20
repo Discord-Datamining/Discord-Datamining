@@ -9312,6 +9312,8 @@
         ACTIVITY_PANEL_GO_LIVE_TOOLTIP_NO_PERMISSION_IN_GUILD: "You can’t stream into this server.",
         ACTIVITY_PANEL_GO_LIVE_TOOLTIP_NOT_IN_GUILD: "Navigate to a server to start streaming.",
         GO_LIVE_MODAL_TITLE: "Screen Share",
+        GO_LIVE_MODAL_CAPTURE: "Capture Devices",
+        GO_LIVE_MODAL_DESCRIPTION_GENERIC: "Set up your stream and have your friends grab a seat!",
         GO_LIVE_MODAL_DESCRIPTION_SELECT_SOURCE: "Select something to stream and have your friends grab a seat!",
         GO_LIVE_MODAL_APPLICATIONS: "Applications",
         GO_LIVE_MODAL_SCREENS: "Screens",
@@ -9322,6 +9324,10 @@
         GO_LIVE_MODAL_OVERFLOW_TWO_USERS: "!!{nickname0}!! and !!{nickname1}!!",
         GO_LIVE_MODAL_OVERFLOW_THREE_USERS: "!!{nickname0}!!, !!{nickname1}!!, and !!{nickname2}!!",
         GO_LIVE_MODAL_OVERFLOW_FOUR_OR_MORE_USERS: "!!{nickname0}!!, !!{nickname1}!!, and !!{remainingCount}!! others",
+        GO_LIVE_MODAL_CAPTURE_DESCRIPTION: "Pick your video device and the matching audio device.",
+        GO_LIVE_FORM_LABEL_AUDIO_DEVICE: "Audio Device",
+        GO_LIVE_FORM_LABEL_VIDEO_DEVICE: "Video Device",
+        GO_LIVE_FORM_BUTTON_CAMERA_READY: "Looks Good!",
         GO_LIVE_HEY: "Hey!",
         GO_LIVE_LOOK: "Look!",
         GO_LIVE_LISTEN: "Listen!",
@@ -16065,7 +16071,6 @@
         DEFAULT_CONFIRMATION_MODAL_HEADER: "Are you sure?",
         DISAPPROVAL: "ಠ_ಠ",
         ENGLISH_LANGUAGE: "English",
-        GO_LIVE_MODAL_DESCRIPTION_GENERIC: "Set up your stream and have your friends grab a seat!",
         GO_LIVE_MODAL_SELECT_GUILD_FORM_TITLE: "Select a server for your stream",
         GO_LIVE_MODAL_GUILD_FORM_TITLE: "Where you're streaming",
         OVERLAY_NEWS_GO_LIVE_BODY_NO_VOICE_CHANNEL: "Stream {game} to your friends!",
@@ -16589,11 +16594,6 @@
         CUSTOM_HANG_STATUS_PLACEHOLDER: "Eating a potato",
         XBOX: "Xbox",
         PLAYSTATION: "PlayStation",
-        GO_LIVE_MODAL_CAPTURE: "Capture Devices",
-        GO_LIVE_MODAL_CAPTURE_DESCRIPTION: "Pick your video device and the matching audio device.",
-        GO_LIVE_FORM_LABEL_AUDIO_DEVICE: "Audio Device",
-        GO_LIVE_FORM_LABEL_VIDEO_DEVICE: "Video Device",
-        GO_LIVE_FORM_BUTTON_CAMERA_READY: "Looks Good!",
         SAFETY_HUB_CLASSIFICATIONS_TABLE_HEADER: "Lorem, ipsum",
         SAFETY_HUB_CLASSIFICATIONS_TABLE_EMPTY_TEXT: "Lorem, ipsum dolor",
         SAFETY_HUB_CLASSIFICATIONS_TABLE_COLUMN_HEADER_DATE: "DATE",
@@ -18221,7 +18221,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247591", ", Version Hash: ").concat("47631391cf536b275c1776f04b5fd8f192f86acd")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247597", ", Version Hash: ").concat("b29c1be65190d5b0e88ed9e7311ca0c595bb3bb3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20497,8 +20497,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247591", "247591"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247591")), _ = 0), _
+        let _ = parseInt((e = "247597", "247597"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247597")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36336,4 +36336,4 @@
     }
   }
 ]);
-//# sourceMappingURL=d2f4716602f7baf9e5e1.js.map
+//# sourceMappingURL=f6c6c51d3ebc020b479a.js.map
