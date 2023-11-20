@@ -14686,6 +14686,7 @@
         GUILD_SETTINGS_ACTION_FILTER_CLYDE_AI_PROFIE_UPDATE: "Update Clyde AI Profile",
         GUILD_SETTINGS_SOUNDBOARD_DELETE_SOUND_TITLE: "Delete '!!{soundName}!!'",
         GUILD_SETTINGS_SOUNDBOARD_DELETE_SOUND_BODY: "Are you sure you want to delete **!!{soundName}!!**? This action cannot be undone.",
+        RECENTLY_HEARD: "Recently Heard",
         SHARE_TITLE: "Send To",
         SHARE_MESSAGE_PLACEHOLDER: "Add a message",
         NEW_MESSAGE_COMPOSER_SEARCH_EMPTY_TITLE: "Unfortunately, no results were found.",
@@ -18267,7 +18268,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247283", ", Version Hash: ").concat("bb5fddd523654bcd355a59748076987d7a2431b6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247301", ", Version Hash: ").concat("81bc137998b1c5a69d1bb7f281352513f2dae2c7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20548,8 +20549,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247283", "247283"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247283")), _ = 0), _
+        let _ = parseInt((e = "247301", "247301"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247301")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36382,4 +36383,4 @@
     }
   }
 ]);
-//# sourceMappingURL=d38bfac28b9c7fa5e62d.js.map
+//# sourceMappingURL=dd84f18d639795e43b32.js.map
