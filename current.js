@@ -14102,7 +14102,7 @@
         VOICE_CHANNEL_BAR_ACTIVE: "{count} in Voice",
         GO_LIVE_SUBTITLE: "Screensharing",
         UNREAD_SETTINGS: "Unread Settings",
-        HIGHLIGHTS_AND_MENTIONS: "Highlights and Mentions",
+        HIGHLIGHTS_AND_MENTIONS: "Mentions",
         FORM_LABEL_UNREAD_SETTINGS_OPT_IN: "Configure Unread Settings",
         FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE: "More granular settings to control when channels should appear as unread.",
         NEW_GUILD_EVENTS_ACCESSIBILITY_LABEL: "New Events",
@@ -18273,7 +18273,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247361", ", Version Hash: ").concat("465e0033532d37cdd328f0babb4269990a03146d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247369", ", Version Hash: ").concat("dc9c48ba25d48b402467f0d51cfc6e0cf47d27f5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19567,11 +19567,6 @@
           inlineRequire: () => E("59734").default,
           neverLoadBeforeConnectionOpen: !0
         },
-        ChannelHighlightsManager: {
-          actions: ["CHANNEL_PRELOAD", "CHANNEL_SELECT", "POST_CONNECTION_OPEN"],
-          inlineRequire: () => E("200029").default,
-          neverLoadBeforeConnectionOpen: !0
-        },
         ClydeAuthorizeManager: {
           actions: ["MESSAGE_FAILED_CLYDE_CONSENT"],
           inlineRequire: () => E("887418").default
@@ -20554,8 +20549,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247361", "247361"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247361")), _ = 0), _
+        let _ = parseInt((e = "247369", "247369"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247369")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20606,56 +20601,6 @@
             GUILD_CREATE: this.handleGuildCreate,
             CHANNEL_CREATE: this.handleChannelCreate,
             LOGOUT: this.handleLogout
-          }
-        }
-      }
-      var N = new S
-    },
-    200029: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return N
-        }
-      }), E("222007");
-      var t = E("689988"),
-        o = E("44574"),
-        n = E("512395"),
-        r = E("305961"),
-        a = E("162771"),
-        i = E("718517"),
-        I = E("884422"),
-        s = E("483038"),
-        T = E("49111");
-      class S extends t.default {
-        maybeLoadFeedForGuild(e) {
-          if (null == e) return !1;
-          let _ = (0, n.isChannelHighlightsEnabledForGuild)(e);
-          (function(e) {
-            let _ = s.default.getLastFetchedMillis(e);
-            if (null != _ && Date.now() - _ < 3 * i.default.Millis.HOUR || s.default.isLoading(e)) return !1;
-            let E = r.default.getGuild(e);
-            return null != E && !E.hasFeature(T.GuildFeatures.CHANNEL_HIGHLIGHTS_DISABLED)
-          })(e) && (_ || (0, o.isGuildUnreadsExperimentEnabled)()) && (0, I.fetchChannelHighlights)(e)
-        }
-        constructor(...e) {
-          super(...e), this.actions = {
-            CHANNEL_PRELOAD: e => this.handleChannelPreload(e),
-            CHANNEL_SELECT: e => this.handleChannelSelect(e),
-            POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
-          }, this.handleChannelPreload = e => {
-            let {
-              guildId: _
-            } = e;
-            this.maybeLoadFeedForGuild(_)
-          }, this.handleChannelSelect = e => {
-            let {
-              guildId: _
-            } = e;
-            this.maybeLoadFeedForGuild(_)
-          }, this.handleConnectionOpen = () => {
-            let e = a.default.getGuildId();
-            this.maybeLoadFeedForGuild(e)
           }
         }
       }
@@ -36432,4 +36377,4 @@
     }
   }
 ]);
-//# sourceMappingURL=f8b6938c2d740fcbcac4.js.map
+//# sourceMappingURL=78fd64ea51488733fc02.js.map
