@@ -16058,25 +16058,11 @@
         SYSTEM_MESSAGE_GUILD_STREAM_ACTIVE_MOBILE: "[!!{username}!!](usernameOnClick) is live. [Join Stream](onJoinStream)",
         SYSTEM_MESSAGE_GUILD_STREAM_ENDED: "$[!!{username}!!](usernameHook) was live for {duration} in !!{channelName}!!",
         SYSTEM_MESSAGE_GUILD_STREAM_ENDED_MOBILE: "[!!{username}!!](usernameOnClick) was live for {duration}.",
-        INTERIM_CREATE_PUBLIC_THREADS: "Use Public Threads",
-        INTERIM_ROLE_PERMISSIONS_CREATE_PUBLIC_THREADS_DESCRIPTION: "Members can both create and talk in public threads. The “Send Messages” permission must be enabled.\n\nIf “Send Messages” is disabled, members can talk in existing public threads but not create new public threads.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_ROLE_PERMISSIONS_CREATE_PUBLIC_THREADS_DESCRIPTION_TEXT: "Members can both create and talk in public threads in this channel. The “Send Messages” permission must be enabled.\n\nIf “Send Messages” is disabled, members can talk in existing public threads but not create new public threads.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_ROLE_PERMISSIONS_CREATE_PUBLIC_THREADS_DESCRIPTION_CATEGORY: "Members can both create and talk in public threads in these channel. The “Send Messages” permission must be enabled.\n\nIf “Send Messages” is disabled, members can talk in existing public threads but not create new public threads.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_CREATE_PRIVATE_THREADS: "Use Private Threads",
-        INTERIM_ROLE_PERMISSIONS_CREATE_PRIVATE_THREADS_DESCRIPTION: "Members can both create and talk in private threads. The “Send Messages in Threads” permission must be enabled.\n\nIf “Send Messages” is disabled, members can only talk in existing private threads but not create new private threads.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_ROLE_PERMISSIONS_CREATE_PRIVATE_THREADS_DESCRIPTION_TEXT: "Members can both create and talk in private threads in this channel. The “Send Messages in Threads” permission must be enabled.\n\nIf “Send Messages” is disabled, members can only talk in existing private threads but not create new private threads.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_ROLE_PERMISSIONS_CREATE_PRIVATE_THREADS_DESCRIPTION_CATEGORY: "Members can both create and talk in private threads in these channels. The “Send Messages in Threads” permission must be enabled.\n\nIf “Send Messages” is disabled, members can only talk in existing private threads but not create new private threads.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_SEND_MESSAGES_IN_THREADS: "Send Messages in Threads (coming soon)",
-        INTERIM_ROLE_PERMISSIONS_SEND_MESSAGES_IN_THREADS_DESCRIPTION: "Allows members to send messages in threads.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_ROLE_PERMISSIONS_SEND_MESSAGES_IN_THREADS_DESCRIPTION_TEXT: "Allows members to send messages in threads under this channel.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
-        INTERIM_ROLE_PERMISSIONS_SEND_MESSAGES_IN_THREADS_DESCRIPTION_CATEGORY: "Allows members to send messages in threads under these channels.\n\nVisit the [Threads Moderation FAQ](https://support.discord.com/hc/en-us/articles/4404809613847) to learn more.",
         INVITE_YOUR_FRIENDS: "Invite your friends!",
         PROGRESS_STEPS_FINISHED: "Completed!",
         MESSAGE_STEP_TITLE: "Send your first message",
         CHANNEL_PERMISSIONS_READ_ONLY_TITLE: "Read Only",
         CHANNEL_PERMISSIONS_READ_ONLY_DESCRIPTION: "By making a channel read only, members will not be able to send messages.",
-        ONBOARDING_VIDEO_BOT_MESSAGE_NEW_USER: "\uD83D\uDC4B Hello! Welcome to Discord. \nGet started by learning how to use Discord here:\n",
-        ONBOARDING_VIDEO_BOT_MESSAGE: "\uD83D\uDC4B Hello! Welcome to your new server. \nLearn all about server setup here:\n",
         ROLE_CREATE_ADD_MEMBERS_SUBTITLE: "Assign this role to your members. Members can have more than one role.",
         INSTANT_INVITE_YOU_HAVE_BEEN_INVITED_TO_JOIN_GROUP_DM_BY_USER: "**!!{username}!!** has invited you to join a group DM",
         INVITE_MODAL_NEVERMIND_BUTTON: "Nevermind",
@@ -16400,7 +16386,6 @@
         SYSTEM_MESSAGE_GUILD_PRODUCT_PURCHASE_MOBILE: "[!!{username}!!](usernameHook) has purchased {productName}!",
         GUILD_PRODUCT_PURCHASE_THANK_YOU_CARD_TEXT: "Thank you,\n $[!!{username}!!](usernameHook)",
         GUILD_PRODUCT_PURCHASE_THANK_YOU_CARD_TEXT_MOBILE: "Thank you,",
-        THREAD_HAS_BEEN_DELETED: "Thread has been deleted.",
         FRIEND_INVITE_SHEET_TITLE: "Send Link to Add Friends",
         FRIEND_INVITE_EXPIRATION: "Links expire in {expirationDays} days, or {expirationUses} uses.",
         FRIEND_INVITE_REVOKE_ALL: "Revoke All Links",
@@ -16472,42 +16457,7 @@
         GUILD_MEMBER_MOD_VIEW_DISCORD_JOIN_DATE: "Discord Join Date",
         GUILD_MEMBER_MOD_VIEW_GUILD_JOIN_DATE: "Server Join Date",
         GUILD_MEMBER_MOD_VIEW_GUILD_MESSAGE_ACTIVITY_TITLE: "Server Activity",
-        MULTIPLE_TOPPING_DONUT: "Sprinkle Donut",
-        NO_TOPPING_DONUT: "Glazed Donut",
-        EAT_DONUT: "Eat Donut",
-        SELECT_A_DONUT: "Select a donut",
-        RELOAD_DONUTS: "Reload",
-        DONUT_BAKED_SPRINKLES_RAW: "Baked Sprinkle Donut",
-        CINNAMON_SUGAR_DONUT: "Cinnamon Sugar",
-        JELLY_FILLED_DONUT: "Jelly Filled",
-        DONUT_BAKERY_REQUIRED_HEADER: "Bakery required",
-        DONUT_BAKERY_REQUIRED_BODY: "To bake donuts, the Bakery app is required. Please download it before continuing.",
-        DONUT_BAKERY_REQUIRED_CONFIRM_IOS: "App Store",
-        DONUT_BAKERY_REQUIRED_CONFIRM_ANDROID: "Google Play Store",
-        DONUT_BAKERY_REQUIRED_CANCEL: "OK",
-        DONUT_BAKING_GLAZED: "Baking **Glazed Donut**",
-        DONUT_BAKED_GLAZED: "Baked **Glazed Donut**",
-        CONNECT_DONUT_LANDING_TITLE: "Bake Donuts",
-        CONNECT_DONUT_LANDING_BODY: "It's what you've been waiting for, huh?",
-        DONUT_DETAILS_TITLE: "Let's get your donut details",
-        DONUT_DETAILS_BODY: "Now that you have a donut, let's make sure your donut is Fresh.",
-        DONUT_DETAILS_BODY_REDIRECT: "You will be redirected to: {donutLinkLabel}",
-        DONUT_STEP_HEADER: "Step {number} of {total}",
-        CONNECT_DONUT_SUCCESS_TITLE: "That's it!",
-        CONNECT_DONUT_SUCCESS_BODY: "Ready! Learn more at our [Help Center]({helpCenterLink}).",
-        CONNECT_DONUT_SUCCESS_APP_TITLE: "Get the Donut Mobile App",
-        CONNECT_DONUT_SUCCESS_APP_BODY: "Imagine delicious donuts. Install the mobile app.",
-        CONNECT_DONUT_SUCCESS_APP_BUTTON_IOS: "View on App Store",
-        CONNECT_DONUT_SUCCESS_APP_BUTTON_ANDROID: "View on Google Play Store",
-        CONNECT_DONUT_ERROR_TITLE: "Oops, something went wrong...",
-        CONNECT_DONUT_ERROR_BODY: "We're out of donuts. Please try again or contact support if the issue persists.",
-        AUTHORIZE_AND_CONTINUE: "Authorize and Continue",
-        DONUT_BAKING_HOLD_ON: "Hold on while we bake your donut.",
-        DONUT_NUX_MOBILE: "Try donuts in space!",
-        DONUT_STREAM_DISABLED: "Unavailable while baking",
-        DONUT_LINK_CONTINUE: "To continue linking your account, return to Discord.",
         APP_ICON_MUSHROOM: "One Up",
-        DONUT_IOS_BROWSER_NOTICE: 'Beta testers: if the above link doesn\'t work, try long-pressing it and select: Open in "Discord"',
         STAFF_PTO_NOTICE: "Heads up! This person may be Out of Office.",
         CONSOLE_PLAYSTATION_STAGING_TRANSFER_VOICE: "Transfer to PlayStation (sp-int)",
         CONSOLE_PLAYSTATION_STAGING_JOIN_VOICE: "Join on PlayStation (sp-int)",
@@ -16542,28 +16492,6 @@
         MESSAGE_REMINDERS_NEVER: "never",
         MESSAGE_REMINDERS_DUE_IN: "Due in {duration}",
         MESSAGE_REMINDERS_OVERDUE: "Due {duration} ago",
-        SERVER_NOTIFICATIONS_TAB: "Server Notifications",
-        CHANNEL_OVERRIDES_TAB: "Channel Overrides",
-        ALL_PROFILE_TITLE: "Everything",
-        ALL_PROFILE_DESC: "Don't miss any updates.",
-        ESSENTIALS_PROFILE_TITLE: "Essentials",
-        ESSENTIALS_PROFILE_DESC: "Stay updated with just the important moments of the server.",
-        MUTED_PROFILE_NAME: "Mute",
-        MUTED_PROFILE_DESC: "No unreads or push notifications",
-        CUSTOM_PROFILE_NAME: "Custom",
-        CUSTOM_PROFILE_DESC: "Tweak unreads & notifications to your needs",
-        NOTIFY_AT_EVERYONE: "Notify me for @everyone and @here",
-        NOTIFY_ROLES: "Notify me for @role",
-        NOTIFY_HIGHLIGHTS: "Highlight Push Notifications",
-        NOTIFY_HIGHLIGHTS_DESC: "Receive notifications for noteworthy updates like messages, friend activity, events, Highlights, and more.",
-        MOBILE_PUSH: "Push Notifications",
-        SERVER_UNREADS: "Server Unreads",
-        MUTE_DURATION: "Mute Duration",
-        SERVER_UNREAD_BADGE: "Server Unread Badge",
-        USER_UNREADS_ALL_MESSAGES: "All Messages",
-        USER_UNREADS_MENTIONS_AND_HIGHLIGHTS: "Mentions & Highlights",
-        USER_UNREADS_NULL: "None",
-        ANNOUNCEMENT_MENTIONS_SEGMENT_TITLE: "ANNOUNCEMENT MENTIONS",
         APPLICATION_AUTOMOD_BADGE: "Uses AutoMod",
         SHARED_CANVAS_DRAW_MODE_LINE: "Draw",
         SHARED_CANVAS_DRAW_MODE_EMOJI_HOSE: "Emoji Hose",
@@ -18273,7 +18201,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247402", ", Version Hash: ").concat("c694626e9b46176291b272edb39a879b0a7bdafb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247408", ", Version Hash: ").concat("2f44e9bd6d2524e6b7c5d3546718ac8404e0931e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20549,8 +20477,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247402", "247402"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247402")), _ = 0), _
+        let _ = parseInt((e = "247408", "247408"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247408")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36377,4 +36305,4 @@
     }
   }
 ]);
-//# sourceMappingURL=e1762df2a6294a09d135.js.map
+//# sourceMappingURL=bf6a0305303df0058efc.js.map
