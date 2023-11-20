@@ -17480,18 +17480,19 @@
           return n
         },
         default: function() {
-          return S
+          return N
         }
       });
       var o, n, r, a = E("446674"),
         i = E("120082"),
         I = E("95410"),
-        s = E("9503");
+        s = E("286235"),
+        T = E("9503");
       (o = n || (n = {}))[o.Early = 0] = "Early", o[o.Database = 1] = "Database", o[o.Default = 2] = "Default", t = new i.ActionLogger({
-        persist: null !== (r = I.default.get(s.STORAGE_KEY_LOG_DISPATCHES)) && void 0 !== r && r
+        persist: null !== (r = I.default.get(T.STORAGE_KEY_LOG_DISPATCHES)) && void 0 !== r && r
       });
-      let T = new a.Dispatcher(2, t);
-      var S = T
+      let S = new a.Dispatcher(2, t, s.default);
+      var N = S
     },
     717811: function(e, _, E) {
       "use strict";
@@ -18218,7 +18219,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247568", ", Version Hash: ").concat("833985a1d05c9d6bcc9e895de3b824bab04cd937")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247570", ", Version Hash: ").concat("42876c61875ef86376e56d55abd479f76587bca1")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20494,8 +20495,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247568", "247568"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247568")), _ = 0), _
+        let _ = parseInt((e = "247570", "247570"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247570")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -28467,7 +28468,9 @@
               fill: o
             })
           })
-        }, n.CheckmarkSmallIcon)
+        }, n.CheckmarkSmallIcon, void 0, {
+          size: 16
+        })
     },
     659500: function(e, _, E) {
       "use strict";
@@ -29947,9 +29950,18 @@
         flushWaitQueue() {
           if (!this._processingWaitQueue) try {
             this._processingWaitQueue = !0, I.default.isDispatching = !0;
-            let e = 0;
+            let _ = 0;
             for (; this._waitQueue.length > 0;) {
-              if (++e > 100) throw N.error("LastFewActions", s.serialize()), Error("Dispatch loop detected, aborting");
+              if (++_ > 100) {
+                var e;
+                let _ = s.serialize();
+                throw N.error("LastFewActions", _), null === (e = this._sentryUtils) || void 0 === e || e.addBreadcrumb({
+                  message: "Dispatcher: Dispatch loop detected",
+                  data: {
+                    lastFewActions: _
+                  }
+                }), Error("Dispatch loop detected, aborting")
+              }
               for (; this._waitQueue.length > 0;) {
                 let e = this._waitQueue.shift();
                 e()
@@ -30017,8 +30029,8 @@
         addDependencies(e, _) {
           this._actionHandlers.addDependencies(e, _)
         }
-        constructor(e = 0, _) {
-          this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._defaultBand = e, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
+        constructor(e = 0, _, E) {
+          this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._sentryUtils = void 0, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
             r.default.isTracing && E >= 10 && r.default.mark("\uD83E\uDDA5", _, E)
           })
         }
@@ -36322,4 +36334,4 @@
     }
   }
 ]);
-//# sourceMappingURL=c9da6db82504e913d058.js.map
+//# sourceMappingURL=84190d2483c638f6e0cb.js.map
