@@ -486,6 +486,9 @@
         COMMAND_ACCESSIBILITY_DESC_COMMAND_OPTION_BUTTON: "Add command argument {optionName}",
         APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recent Commands",
         APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Apps in this server",
+        APP_LAUNCHER_COMMAND_LIST_SORT_HEADER: "Sort By",
+        APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_POPULAR: "Popular",
+        APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_ALPHABETICAL: "Alphabetical",
         APP_LAUNCHER_ALL_COMMANDS_HEADER: "All Commands",
         APP_LAUNCHER_NO_REQUIRED_OPTIONS_CALLOUT: "Nothing required. You can send the command or add an option below",
         APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
@@ -18268,7 +18271,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247312", ", Version Hash: ").concat("2de5474757cca1e261cd34c44b1de9d439e5a504")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247317", ", Version Hash: ").concat("a870adfb80d575c4170f2c16a8e0d06ce8acc997")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20549,8 +20552,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247312", "247312"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247312")), _ = 0), _
+        let _ = parseInt((e = "247317", "247317"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247317")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36383,4 +36386,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b8d13fd297e9a06108ff.js.map
+//# sourceMappingURL=b158e9b37e1a82d671bf.js.map
