@@ -16575,7 +16575,7 @@
         BROADCASTING_BETA_TOOLTIP_TEXT: "Open Parties is an experimental feature. A limited number of users have the ability to host or join.",
         START_BROADCAST_NOTIFICATION_BODY: "Start a party, so your friends can drop by!",
         START_BROADCAST_NOTIFICATION_CTA: "Open a Party",
-        STATUS_POPOUT_DEFAULTS: "The Basics",
+        STATUS_POPOUT_CUSTOM_TITLE: "Customs",
         STATUS_POPOUT_SET_CUSTOM: "Set Custom Activity",
         STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
         SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
@@ -16584,8 +16584,11 @@
         STATUS_LEAD_IN_JUST: "Right now, I'm just -",
         STATUS_CHILLING: "Chilling tbh",
         STATUS_GAMING: "GAMING",
-        STATUS_FOCUSING: "Focusing atm",
-        STATUS_BRB: "On the move",
+        STATUS_FOCUSING: "Locked In",
+        STATUS_BRB: "Gonna BRB",
+        STATUS_EATING: "Grubbin",
+        STATUS_IN_TRANSIT: "Wandering IRL",
+        STATUS_COMING_SOON: "Coming Soon!",
         STATUS_NONE: "No status",
         HANG_STATUS: "Hang Status",
         HANG_STATUS_LOCATION: "in !!{guildName}!!",
@@ -18221,7 +18224,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247728", ", Version Hash: ").concat("7ae02c1d4e5fcc9ec5c6b4fe530a1bcdf4b669f4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247738", ", Version Hash: ").concat("b0410de5488c2d6e458c6f25f0db96df7e746c7a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20508,8 +20511,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247728", "247728"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247728")), _ = 0), _
+        let _ = parseInt((e = "247738", "247738"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247738")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36348,4 +36351,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b051763c3800eb2a4e6e.js.map
+//# sourceMappingURL=ad6507a59c8b32fa3fc8.js.map
