@@ -18221,7 +18221,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247620", ", Version Hash: ").concat("91e535a1a1b1f28515be193cb259863f086fac44")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247623", ", Version Hash: ").concat("ec9962f3c2f7fe96769411f21bf0eae22bfbd563")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19972,63 +19972,72 @@
       "use strict";
       E.r(_), E.d(_, {
         fetchBlockedDomainList: function() {
-          return T
+          return S
         }
       }), E("70102");
       var t = E("872717"),
-        o = E("913144"),
-        n = E("605250"),
-        r = E("618421"),
-        a = E("352266");
+        o = E("102053"),
+        n = E("913144"),
+        r = E("605250"),
+        a = E("618421"),
+        i = E("352266");
       let {
-        WEBAPP_ENDPOINT: i
-      } = window.GLOBAL_ENV, I = "https:".concat(i, "/bad-hash-delta"), s = new n.default("FetchBlockedDomain");
-      async function T() {
-        s.verbose("Fetching blocked domain list");
+        WEBAPP_ENDPOINT: I
+      } = window.GLOBAL_ENV, s = "https:".concat(I, "/bad-hash-delta"), T = new r.default("FetchBlockedDomain");
+
+      function S() {
+        return o.default.timeAsync("\uD83D\uDCBE", "fetchBlockedDomainList", N)
+      }
+      async function N() {
+        T.verbose("Fetching blocked domain list");
         try {
           let e;
           let _ = parseInt((await t.default.get("https://cdn.discordapp.com/bad-domains/current_revision.txt")).text),
-            E = a.default.getCurrentRevision();
-          if (s.verbose("Server revision: ".concat(_, ", Client revision: ").concat(E)), null === E || E !== _) {
+            E = i.default.getCurrentRevision();
+          if (T.verbose("Server revision: ".concat(_, ", Client revision: ").concat(E)), null === E || E !== _) {
             try {
               if (null === E || E > _) {
                 let e = null === E ? "null" : "greater than server revision number";
                 throw Error("Client revision number is " + e)
               }
               if (_ - E > 15) throw Error("Client revision number is more than ".concat(15, " behind the server revision number"));
-              let o = (await t.default.get({
-                url: I,
+              let n = (await t.default.get({
+                url: s,
                 query: {
                   revision: E
                 }
               })).body;
-              s.verbose("Retrieved delta, domains added: ".concat(o.ADDED.length, ", domains removed: ").concat(o.REMOVED.length));
-              let n = a.default.getBlockedDomainList();
-              if (null === n) throw Error("Blocked domain list is null");
-              s.verbose("Blocked domains list length: ".concat(n.size, " before update")), o.ADDED.forEach(e => {
-                if (n.has(e)) throw Error("Unable to add domain which is already in the blockedDomains set: ".concat(e));
-                n.add(e)
-              }), o.REMOVED.forEach(e => {
-                if (!n.has(e)) throw Error("Unable to removed domain which is not in the blockedDomains set: ".concat(e));
-                n.delete(e)
-              }), e = Array.from(n), s.verbose("Delta applied successfully")
-            } catch (_) {
-              if (s.verbose("Unable to process domain list delta: ".concat(_.message)), (0, r.isSlowNetwork)()) {
-                s.verbose("Slow network detected, not downloading full list");
+              if (0 === n.ADDED.length && 0 === n.REMOVED.length) {
+                T.verbose("No changes to blocked domains list.");
                 return
               }
-              s.verbose("Downloading the full bad domains file"), e = (await t.default.get({
+              T.verbose("Retrieved delta, domains added: ".concat(n.ADDED.length, ", domains removed: ").concat(n.REMOVED.length));
+              let r = await o.default.timeAsync("\uD83D\uDCBE", "getBlockedDomainList", () => i.default.getBlockedDomainList());
+              if (null === r) throw Error("Blocked domain list is null");
+              T.verbose("Blocked domains list length: ".concat(r.size, " before update")), n.ADDED.forEach(e => {
+                if (r.has(e)) throw Error("Unable to add domain which is already in the blockedDomains set: ".concat(e));
+                r.add(e)
+              }), n.REMOVED.forEach(e => {
+                if (!r.has(e)) throw Error("Unable to removed domain which is not in the blockedDomains set: ".concat(e));
+                r.delete(e)
+              }), e = Array.from(r), T.verbose("Delta applied successfully")
+            } catch (_) {
+              if (T.verbose("Unable to process domain list delta: ".concat(_.message)), (0, a.isSlowNetwork)()) {
+                T.verbose("Slow network detected, not downloading full list");
+                return
+              }
+              T.verbose("Downloading the full bad domains file"), e = (await t.default.get({
                 url: "https://cdn.discordapp.com/bad-domains/updated_hashes.json"
               })).body
             }
-            s.verbose("Blocked domains list length: ".concat(e.length, " after update")), o.default.dispatch({
+            T.verbose("Blocked domains list length: ".concat(e.length, " after update")), o.default.time("\uD83D\uDCBE", "Save Blocked Domain List", () => n.default.dispatch({
               type: "BLOCKED_DOMAIN_LIST_FETCHED",
               list: e,
               revision: _
-            })
+            }))
           }
         } catch (e) {
-          s.error(e)
+          T.error(e)
         }
       }
     },
@@ -20036,20 +20045,22 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return r
+          return i
         }
       });
-      var t = E("689988"),
-        o = E("303217");
-      class n extends t.default {
+      var t = E("102053"),
+        o = E("689988"),
+        n = E("303217"),
+        r = E("352266");
+      class a extends o.default {
         _initialize() {
-          setTimeout(() => (0, o.fetchBlockedDomainList)(), 1e4), this.intervalID = setInterval(o.fetchBlockedDomainList, 144e5)
+          setTimeout(() => t.default.timeAsync("\uD83D\uDCBE", "getBlockedDomainList", () => r.default.getBlockedDomainList()), 1e3), setTimeout(() => (0, n.fetchBlockedDomainList)(), 1e4), this.intervalID = setInterval(n.fetchBlockedDomainList, 144e5)
         }
         _terminate() {
           clearInterval(this.intervalID)
         }
       }
-      var r = new n
+      var i = new a
     },
     612541: function(e, _, E) {
       "use strict";
@@ -20497,8 +20508,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247620", "247620"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247620")), _ = 0), _
+        let _ = parseInt((e = "247623", "247623"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247623")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36337,4 +36348,4 @@
     }
   }
 ]);
-//# sourceMappingURL=192861f7a616ab2ae977.js.map
+//# sourceMappingURL=711101226e0d33b1a398.js.map
