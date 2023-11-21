@@ -16595,6 +16595,7 @@
         CUSTOM_HANG_STATUS: "Custom Status",
         CUSTOM_HANG_STATUS_CTA: "Jump in here!",
         CUSTOM_HANG_STATUS_PLACEHOLDER: "Eating a potato",
+        CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
         XBOX: "Xbox",
         PLAYSTATION: "PlayStation",
         SAFETY_HUB_CLASSIFICATIONS_TABLE_HEADER: "Lorem, ipsum",
@@ -18224,7 +18225,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247783", ", Version Hash: ").concat("e9f16af66441528b5a2dc3df998bdc2626332edc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("247785", ", Version Hash: ").concat("9961d1ba08de5d5750568d90f44d51ca945128fb")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20511,8 +20512,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "247783", "247783"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247783")), _ = 0), _
+        let _ = parseInt((e = "247785", "247785"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("247785")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36351,4 +36352,4 @@
     }
   }
 ]);
-//# sourceMappingURL=964de2537905fdb7d6ab.js.map
+//# sourceMappingURL=571fc4958655c1990c25.js.map
