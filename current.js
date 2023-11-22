@@ -16655,6 +16655,8 @@
         APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_TITLE: "Something went wrong...",
         APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_BODY: "We were unable to run the command. Please try again later.",
         APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER: "Start typing...",
+        APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE: "No command found",
+        APP_LAUNCHER_COMMAND_NOT_FOUND_BODY: "This command is not available",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
       })
     },
@@ -18235,7 +18237,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248240", ", Version Hash: ").concat("9eabbf90dfcda3c00cefcda947b6a4bd5d94c35e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248244", ", Version Hash: ").concat("8f091c49b4c9acd324181fa5fec056c1805f7154")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20522,8 +20524,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248240", "248240"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248240")), _ = 0), _
+        let _ = parseInt((e = "248244", "248244"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248244")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36362,4 +36364,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b81259206a34f772c165.js.map
+//# sourceMappingURL=9fd0e03afb6c40898188.js.map
