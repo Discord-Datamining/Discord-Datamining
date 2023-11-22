@@ -7736,6 +7736,7 @@
         GUILD_SETTINGS_SPLASH_DESCRIPTION: "This image will display in server invite embeds, invite in browser, and invite confirmation modal.",
         GUILD_SETTINGS_SPLASH_INFO: "This image will display when users receive an invite to the server.",
         UPLOAD_IMAGE: "Upload Image",
+        REPLACE_IMAGE: "Replace Image",
         UPLOAD_BACKGROUND: "Upload Background",
         GUILD_SETTINGS_DEFAULT_NOTIFICATION_SETTINGS_INTRO: "This will determine whether members who have not explicitly set their notification settings receive a notification for every message sent in this server or not.",
         GUILD_SETTINGS_DEFAULT_NOTIFICATION_SETTINGS_TIP: "We highly recommend setting this to only @mentions for a Community Server.",
@@ -18238,7 +18239,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248391", ", Version Hash: ").concat("74a496992a63bfd8343b7f282f3662268afad36c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248398", ", Version Hash: ").concat("0a6dc425dc27814badbf558980ca022ae791467b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20525,8 +20526,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248391", "248391"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248391")), _ = 0), _
+        let _ = parseInt((e = "248398", "248398"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248398")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36376,4 +36377,4 @@
     }
   }
 ]);
-//# sourceMappingURL=7050f225e37dedb6dbf1.js.map
+//# sourceMappingURL=09b24d3803964370cc38.js.map
