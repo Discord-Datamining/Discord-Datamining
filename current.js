@@ -16648,6 +16648,7 @@
         CREATE_POLL_ANSWER_PLACEHOLDER: "Add an answer",
         CREATE_POLL_MULTIPLE_ANSWERS: "Allow Multiple Answers",
         CREATE_POLL_POST: "Post",
+        POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
         POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}D Left}}",
         POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}H Left}}",
         POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}M Left}}",
@@ -18237,7 +18238,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248319", ", Version Hash: ").concat("2dee6cfd444fa6cbadd07de4baef8f1a2a5d2bc7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248320", ", Version Hash: ").concat("8b3f0784725a4a3200a236aa3629d3141726ca0f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20524,8 +20525,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248319", "248319"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248319")), _ = 0), _
+        let _ = parseInt((e = "248320", "248320"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248320")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36364,4 +36365,4 @@
     }
   }
 ]);
-//# sourceMappingURL=691cc5e3928244400515.js.map
+//# sourceMappingURL=adaf963f3d82ade9ccfb.js.map
