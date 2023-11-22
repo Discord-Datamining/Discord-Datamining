@@ -18237,7 +18237,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248434", ", Version Hash: ").concat("5228164c0b328984ded2379773c4e07a6fee539e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248441", ", Version Hash: ").concat("cbb2243c3f19e7763007683a2edbeb44299ea8c4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20524,8 +20524,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248434", "248434"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248434")), _ = 0), _
+        let _ = parseInt((e = "248441", "248441"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248441")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25021,6 +25021,7 @@
             } = e, {
               enableHangStatus: t
             } = r.HangStatusExperiment.getCurrentConfig({
+              guildId: null != E ? E : "",
               location: "HangStatusManager"
             });
             if (!t) return;
@@ -25041,14 +25042,14 @@
                   status: e,
                   emoji: _
                 } = T.customHangStatus;
-                (0, n.updateCustomHangStatus)(e, _, "HangStatusManager");
+                (0, n.updateCustomHangStatus)(e, _);
                 return
               }
               if (null != T.status) {
-                (0, n.updateHangStatus)(T.status, "HangStatusManager");
+                (0, n.updateHangStatus)(T.status);
                 return
               }
-            }(0, n.updateHangStatus)(i.HangStatusTypes.CHILLING, "HangStatusManager")
+            }(0, n.updateHangStatus)(i.HangStatusTypes.CHILLING)
           }, this.handleDisconnectFromVoiceChannel = () => {
             (0, n.clearHangStatus)()
           }, this.handleLogout = () => {
@@ -36375,4 +36376,4 @@
     }
   }
 ]);
-//# sourceMappingURL=7dfee69ed8a142cfe3e4.js.map
+//# sourceMappingURL=ac0b69d3d012f9800068.js.map
