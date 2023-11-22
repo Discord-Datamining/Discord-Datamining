@@ -9570,16 +9570,20 @@
         BASIC_GIFT_DURATION: "1 {timeInterval} of Nitro Basic",
         GIFT_OPEN_PROMPT: "Open gift",
         GIFT_RECIPIENT_INFO: "To: {recipientDisplayName}",
-        GIFT_SENDER_INFO: "From: {senderDisplayName}",
-        GIFT_SUBSCRIPTION_INFO: "{senderDisplayName} has gifted you Nitro for 1 {timeInterval}!",
-        GIFT_SUBSCRIPTION_INFO_GENERIC: "{senderDisplayName} has gifted you Nitro!",
+        GIFT_SENDER_INFO: "From: {sender}",
+        GIFT_SUBSCRIPTION_INFO: "{sender} has gifted you Nitro for 1 {timeInterval}!",
+        GIFT_SUBSCRIPTION_INFO_TIER_0: "{sender} has gifted you Nitro Basic for 1 {timeInterval}!",
+        GIFT_SUBSCRIPTION_INFO_GENERIC: "{sender} has gifted you Nitro!",
+        GIFT_SUBSCRIPTION_INFO_SENDER_UNKNOWN: "You have been gifted you Nitro for 1 {timeInterval}!",
+        GIFT_SUBSCRIPTION_INFO_TIER_0_SENDER_UNKNOWN: "You have been gifted Nitro Basic for 1 {timeInterval}!",
+        GIFT_SUBSCRIPTION_INFO_GENERIC_SENDER_UNKNOWN: "You have been gifted Nitro!",
         GIFT_SELECT_SOUND: "Add sound effect",
         GIFT_SELECT_EMOJI: "Add emoji confetti",
         GIFT_SELECT_SOUNDBOARD_ADD: "Add",
         GIFT_SELECT_SOUNDBOARD_OR_EMOJI_DESCRIPTION: "This will play when your friend opens their gift",
         NITRO_CONFIRMATION: "You've got Nitro",
-        NITRO_FEATURES: "Now you can use HD streaming, bigger file uploads, custom stickers, and more for 1 {timeInterval}.",
-        NITRO_FEATURES_GENERIC: "Now you can use HD streaming, bigger file uploads, custom stickers, and more.",
+        PREMIUM_FEATURES_TIER_2: "Now you can use HD streaming, bigger file uploads, custom stickers, and more for 1 {timeInterval}.",
+        PREMIUM_FEATURES_TIER_2_GENERIC: "Now you can use HD streaming, bigger file uploads, custom stickers, and more.",
         OPENED_GIFT_CONFIRMATION: "You opened this gift!",
         NITRO_PERKS: "Check out your new Nitro perks!",
         TEAL: "Teal",
@@ -14984,6 +14988,8 @@
         COLLECTIBLES_SFA_UNLOCK_DISCOUNT: "Unlock discount with Nitro",
         COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION: "{sender} gifted you an avatar decoration!",
         COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT: "{sender} gifted you a profile effect!",
+        COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION_UNKNOWN_SENDER: "You have been gifted an avatar decoration!",
+        COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT_UNKNOWN_SENDER: "You have been gifted a profile effect!",
         COLLECTIBLES_ACCEPT_GIFT: "Accept gift",
         COLLECTIBLES_FROM_SENDER: "From {sender}",
         COLLECTIBLES_GIFT_DETAILS: "Gifted by {sender} on {date}",
@@ -18228,7 +18234,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248112", ", Version Hash: ").concat("e0458f2a121b13b5337e25432056cd56fccfabbe")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248114", ", Version Hash: ").concat("0e7bbba1e9eefabf3473c67c0d22a058a3aaacc8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20515,8 +20521,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248112", "248112"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248112")), _ = 0), _
+        let _ = parseInt((e = "248114", "248114"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248114")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36355,4 +36361,4 @@
     }
   }
 ]);
-//# sourceMappingURL=02e1d56368987b41ac7f.js.map
+//# sourceMappingURL=f38130d22a2ae8f022b0.js.map
