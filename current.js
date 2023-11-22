@@ -14926,6 +14926,7 @@
         COLLECTIBLES_DETAILS_MODAL_NON_PREMIUM_PURCHASE_DISCLAIMER: "After subscribing to Nitro, you’ll have to purchase this decoration separately. Nitro subscriptions become non-refundable once you’ve purchased a decoration.",
         COLLECTIBLES_DETAILS_MODAL_INCLUDED_WITH_PREMIUM_DISCLAIMER: "This bonus item is yours to keep and use anytime with an active Nitro subscription.",
         COLLECTIBLES_PURCHASE_DISCLAIMER_PAYMENT: "Hey! This purchase is non-refundable. Once you complete your purchase, the item will be available for use immediately and can be accessed in your User Profile settings. Note that Nitro subscriptions become non-refundable once you’ve purchased an item.",
+        COLLECTIBLES_PURCHASE_DISCLAIMER_GIFT_PAYMENT: "This purchase is non-refundable. Once you complete your purchase, the item will be sent to the recipient and can be accessed in their User Profile settings.",
         COLLECTIBLES_SUBSCRIPTION_TOOLTIP_TEXT: "{price} monthly Nitro subscription",
         COLLECTIBLES_PREMIUM_DISCOUNT_TOOLTIP_TEXT: "Nitro subscribers get a discount on this decoration",
         COLLECTIBLES_NON_PREMIUM_PRICE: "{price} with Nitro",
@@ -14999,6 +15000,8 @@
         COLLECTIBLES_GENERIC_GIFTED_YOU_DECORATION: "You've been gifted an avatar decoration!",
         COLLECTIBLES_GENERIC_GIFTED_YOU_EFFECT: "You've been gifted a profile effect!",
         COLLECTIBLES_GIFT_CLAIM: "Claim gift",
+        COLLECTIBLES_SHOP_GIFT_MODAL_SELECT_HEADER: "Send a gift",
+        COLLECTIBLES_SHOP_GIFT_MODAL_REVIEW_HEADER: "Review your gift",
         MOBILE_TIME_REMAINING_DAYS: "{days} days remaining",
         MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS: "{hours}:{minutes}:{seconds} remaining",
         DIRECTORY_CATEGORY_TOWN_HALL_1: "Staff Picks",
@@ -18225,7 +18228,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248080", ", Version Hash: ").concat("dd68ddb49c95eaeba2aa450bca1884e33cb7b37f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248081", ", Version Hash: ").concat("4833e2b294f8c9aa183e7651f47112322ba4ede2")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20512,8 +20515,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248080", "248080"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248080")), _ = 0), _
+        let _ = parseInt((e = "248081", "248081"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248081")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36352,4 +36355,4 @@
     }
   }
 ]);
-//# sourceMappingURL=387f163fb2b8e77770ba.js.map
+//# sourceMappingURL=dbc9fc694e8e01d30fee.js.map
