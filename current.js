@@ -16639,6 +16639,7 @@
         POLL_ANSWER_VOTED_ARIA: "You voted for this answer",
         POLL_OPTIONS_ARIA: "Poll options",
         CREATE_POLL: "Create Poll",
+        CREATE_POLL_HEADING: "Create a Poll",
         CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
         CREATE_POLL_QUESTION_PLACEHOLDER: "What question do you want to ask?",
         CREATE_POLL_LAYOUT_DEFAULT: "Default layout",
@@ -18237,7 +18238,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248483", ", Version Hash: ").concat("110176d13d1836bb01eaf910db5cd5da71558bc9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248491", ", Version Hash: ").concat("9654da473db50c2d37518c43c09d18b8bcf027ae")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20524,8 +20525,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248483", "248483"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248483")), _ = 0), _
+        let _ = parseInt((e = "248491", "248491"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248491")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36389,4 +36390,4 @@
     }
   }
 ]);
-//# sourceMappingURL=db653866caa1619e3bc7.js.map
+//# sourceMappingURL=2b76f74b788b15a95cec.js.map
