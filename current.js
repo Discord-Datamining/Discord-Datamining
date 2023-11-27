@@ -14928,6 +14928,7 @@
         COLLECTIBLES_SUBSCRIPTION_TOOLTIP_TEXT: "{price} monthly Nitro subscription",
         COLLECTIBLES_PREMIUM_DISCOUNT_TOOLTIP_TEXT: "Nitro subscribers get a discount on this decoration",
         COLLECTIBLES_NON_PREMIUM_PRICE: "{price} with Nitro",
+        COLLECTIBLES_NON_PREMIUM_PRICE_SUBSCRIBE_NOW: "{price} with Nitro. $[Subscribe now](subscribeNowHook)",
         COLLECTIBLES_COACHMARK_HEADER: "Add style to your avatar",
         COLLECTIBLES_COACHMARK_HEADER_PREMIUM: "Ready for a new look?",
         COLLECTIBLES_COACHMARK_DESC: "Explore and collect the newest avatar decorations, plus a bonus, with Nitro.",
@@ -18235,7 +18236,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248844", ", Version Hash: ").concat("139d9ed6752c5563de5d75182419269f6f41d1ca")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248887", ", Version Hash: ").concat("a8ab1931f58aa1859046948b09a5dd1674d61ad3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20522,8 +20523,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248844", "248844"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248844")), _ = 0), _
+        let _ = parseInt((e = "248887", "248887"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248887")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36424,4 +36425,4 @@
     }
   }
 ]);
-//# sourceMappingURL=9314fbc8c0fecfaf3748.js.map
+//# sourceMappingURL=7cba460880aa5240a552.js.map
