@@ -18234,7 +18234,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248678", ", Version Hash: ").concat("16e3c1b3f7fe03ea44d8b017de189e77dc57d5c7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248679", ", Version Hash: ").concat("66c75f4b250113da66695723d3d1f90f38dc3402")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19666,7 +19666,7 @@
           loadAfterConnectionOpen: !0
         },
         OverlayUsageStatsManager: {
-          actions: __OVERLAY__ ? ["MESSAGE_ACKED", "MESSAGE_CREATE"] : ["OVERLAY_FOCUSED", "OVERLAY_NOTIFICATION_EVENT", "OVERLAY_SET_UI_LOCKED", "OVERLAY_WIDGET_CHANGED", "OVERLAY_MESSAGE_EVENT_ACTION", "RUNNING_GAMES_CHANGE", "SOUNDBOARD_SET_OVERLAY_ENABLED", "MESSAGE_ACKED", "MESSAGE_CREATE", "WINDOW_FOCUS"],
+          actions: __OVERLAY__ ? ["MESSAGE_ACKED", "MESSAGE_CREATE"] : ["OVERLAY_FOCUSED", "OVERLAY_NOTIFICATION_EVENT", "OVERLAY_SET_UI_LOCKED", "OVERLAY_WIDGET_CHANGED", "OVERLAY_MESSAGE_EVENT_ACTION", "RUNNING_GAMES_CHANGE", "SOUNDBOARD_SET_OVERLAY_ENABLED", "MESSAGE_ACKED", "MESSAGE_CREATE", "WINDOW_FOCUS", "RTC_CONNECTION_STATE"],
           inlineRequire: () => E("488507").default,
           neverLoadBeforeConnectionOpen: !0
         },
@@ -20521,8 +20521,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248678", "248678"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248678")), _ = 0), _
+        let _ = parseInt((e = "248679", "248679"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248679")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -22850,7 +22850,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return F
+          return Y
         }
       }), E("222007"), E("70102");
       var t, o, n = E("811022"),
@@ -23151,7 +23151,8 @@
               desktop_message_ack_count: this.desktopMessageAckCount,
               desktop_message_created_count: this.desktopMessageCreateCount,
               desktop_focused_duration: this.desktopFocusedTimer.elapsed().asMilliseconds(),
-              desktop_focused_change_count: this.desktopFocusChangedCount
+              desktop_focused_change_count: this.desktopFocusChangedCount,
+              rtc_connection_duration: this.rtcConnectionTimer.elapsed().asMilliseconds()
             };
           return {
             usage: i,
@@ -23188,8 +23189,11 @@
               ++_.desktopMessageCreateCount
           }
         }
+        static toggleRtcConnection(e) {
+          for (let _ of Object.values(h.gamesByPid)) _.rtcConnectionTimer.toggle(e)
+        }
         constructor(e) {
-          this.game = e, this.uuid = crypto.randomUUID(), this.notificationAnalytics = new d, this.widgetAnalytics = new U, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = r.StopWatch.startNew(), this.gameFocusedTimer = new r.StopWatch, this.unlockedTimer = new r.StopWatch, this.desktopFocusedTimer = new r.StopWatch, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new r.StopWatch, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.screenAnalytics = new M(e), this.overlayStatus = T.default.getGameOverlayStatus(e), h.desktopMainWindowHasFocus && this.desktopFocusedTimer.start()
+          this.game = e, this.uuid = crypto.randomUUID(), this.notificationAnalytics = new d, this.widgetAnalytics = new U, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = r.StopWatch.startNew(), this.gameFocusedTimer = new r.StopWatch, this.unlockedTimer = new r.StopWatch, this.rtcConnectionTimer = new r.StopWatch, this.desktopFocusedTimer = new r.StopWatch, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new r.StopWatch, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.screenAnalytics = new M(e), this.overlayStatus = T.default.getGameOverlayStatus(e), h.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), b.hasConnection() && this.rtcConnectionTimer.start()
         }
       }
 
@@ -23294,6 +23298,25 @@
       }
       h.gamesByPid = {}, h.gamesByName = {}, h.desktopMainWindowHasFocus = document.hasFocus();
       class b {
+        static hasConnection() {
+          return b.connections.size > 0
+        }
+        static handleRTCConnectionState(e) {
+          var _;
+          let E = (null !== (_ = e.channelId) && void 0 !== _ ? _ : "unknown") + e.context;
+          switch (e.state) {
+            case L.RTCConnectionStates.RTC_CONNECTED:
+              b.connections.add(E);
+              break;
+            case L.RTCConnectionStates.DISCONNECTED:
+              b.connections.delete(E)
+          }
+          let t = b.hasConnection();
+          b.previousHasConnection !== t && (h.toggleRtcConnection(t), b.previousHasConnection = t)
+        }
+      }
+      b.connections = new Set, b.previousHasConnection = !1;
+      class w {
         static handleMessageAcked(e) {
           c.verbose("MESSAGE_ACKED", e);
           let _ = S.default.getGame();
@@ -23324,11 +23347,11 @@
           })
         }
       }
-      class w extends I.default {
+      class F extends I.default {
         constructor(...e) {
           super(...e), this.actions = __OVERLAY__ ? {
-            MESSAGE_ACKED: b.handleMessageAcked,
-            MESSAGE_CREATE: b.handleMessageCreate
+            MESSAGE_ACKED: w.handleMessageAcked,
+            MESSAGE_CREATE: w.handleMessageCreate
           } : {
             OVERLAY_FOCUSED: y,
             OVERLAY_NOTIFICATION_EVENT: G,
@@ -23339,11 +23362,12 @@
             SOUNDBOARD_SET_OVERLAY_ENABLED: g,
             MESSAGE_ACKED: f,
             MESSAGE_CREATE: v,
-            WINDOW_FOCUS: H
+            WINDOW_FOCUS: H,
+            RTC_CONNECTION_STATE: b.handleRTCConnectionState
           }
         }
       }
-      var F = new w
+      var Y = new F
     },
     382022: function(e, _, E) {
       "use strict";
@@ -36386,4 +36410,4 @@
     }
   }
 ]);
-//# sourceMappingURL=a6c47527514673246145.js.map
+//# sourceMappingURL=970ade5d6c0b3f1ff76f.js.map
