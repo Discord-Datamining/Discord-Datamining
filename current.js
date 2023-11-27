@@ -17500,12 +17500,14 @@
       var o, n, r, a = E("446674"),
         i = E("120082"),
         I = E("95410"),
-        s = E("286235"),
+        s = E("303167"),
         T = E("9503");
       (o = n || (n = {}))[o.Early = 0] = "Early", o[o.Database = 1] = "Database", o[o.Default = 2] = "Default", t = new i.ActionLogger({
         persist: null !== (r = I.default.get(T.STORAGE_KEY_LOG_DISPATCHES)) && void 0 !== r && r
       });
-      let S = new a.Dispatcher(2, t, s.default);
+      let S = new a.Dispatcher(2, t, {
+        addBreadcrumb: s.default
+      });
       var N = S
     },
     717811: function(e, _, E) {
@@ -18233,7 +18235,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248835", ", Version Hash: ").concat("29eacf5f1225325373d59aa06bbd3ea43ed18e13")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248836", ", Version Hash: ").concat("034b463d593f5ae9e3e910cf4871df35325a4905")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20520,8 +20522,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248835", "248835"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248835")), _ = 0), _
+        let _ = parseInt((e = "248836", "248836"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248836")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26611,6 +26613,25 @@
       }
       var r = new n
     },
+    303167: function(e, _, E) {
+      "use strict";
+
+      function t(e) {
+        null != window.DiscordSentry && window.DiscordSentry.addBreadcrumb({
+          type: "default",
+          level: "info",
+          category: e.category,
+          message: e.message,
+          data: e.data,
+          timestamp: Date.now()
+        })
+      }
+      E.r(_), E.d(_, {
+        default: function() {
+          return t
+        }
+      })
+    },
     761834: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -29107,34 +29128,35 @@
       "use strict";
       E.r(_), E.d(_, {
         DSN: function() {
-          return r
+          return a
         },
         default: function() {
-          return i
+          return I
         }
       }), E("70102");
-      var t = E("423670"),
-        o = E("773336"),
-        n = E("50885");
-      let r = "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984";
+      var t = E("303167"),
+        o = E("423670"),
+        n = E("773336"),
+        r = E("50885");
+      let a = "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984";
 
-      function a() {
-        var e, _, E, t, r, a;
+      function i() {
+        var e, _, E, t, o, a;
         let i = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-        o.isPlatformEmbedded && n.default.updateCrashReporter({
+        n.isPlatformEmbedded && r.default.updateCrashReporter({
           user_id: null !== (e = i.id) && void 0 !== e ? e : "",
           username: null !== (_ = i.username) && void 0 !== _ ? _ : "",
           email: null !== (E = i.email) && void 0 !== E ? E : "",
           sentry: {
             user: {
               id: null !== (t = i.id) && void 0 !== t ? t : "",
-              username: null !== (r = i.username) && void 0 !== r ? r : "",
+              username: null !== (o = i.username) && void 0 !== o ? o : "",
               email: null !== (a = i.email) && void 0 !== a ? a : ""
             }
           }
         })
       }
-      var i = {
+      var I = {
         setUser(e, _, E, t) {
           let o = {
             id: e,
@@ -29144,12 +29166,12 @@
           };
           null != window.DiscordSentry && window.DiscordSentry.configureScope(e => {
             e.setUser(o)
-          }), a(o)
+          }), i(o)
         },
         clearUser() {
           null != window.DiscordSentry && window.DiscordSentry.configureScope(e => {
             e.setUser(null)
-          }), a()
+          }), i()
         },
         setTags(e) {
           null != window.DiscordSentry && window.DiscordSentry.configureScope(_ => {
@@ -29162,33 +29184,26 @@
           })
         },
         captureException(e, _) {
-          let E = (0, t.getUpdatedOptions)(_);
+          let E = (0, o.getUpdatedOptions)(_);
           null != window.DiscordSentry && window.DiscordSentry.withScope(_ => {
             null != E.tags && _.setTags(E.tags), _.setExtras(E.extra), window.DiscordSentry.captureException(e)
           })
         },
         captureCrash(e, _) {
           let E;
-          let o = (0, t.getUpdatedOptions)(_);
+          let t = (0, o.getUpdatedOptions)(_);
           return null != window.DiscordSentry && window.DiscordSentry.withScope(_ => {
-            _.setExtras(o.extra), _.setTag("crash", "true"), E = window.DiscordSentry.captureException(e)
+            _.setExtras(t.extra), _.setTag("crash", "true"), E = window.DiscordSentry.captureException(e)
           }), E
         },
         captureMessage(e, _) {
-          let E = (0, t.getUpdatedOptions)(_);
+          let E = (0, o.getUpdatedOptions)(_);
           null != window.DiscordSentry && window.DiscordSentry.withScope(_ => {
             null != E.tags && _.setTags(E.tags), _.setExtras(E.extra), window.DiscordSentry.captureMessage(e)
           })
         },
         addBreadcrumb(e) {
-          null != window.DiscordSentry && window.DiscordSentry.addBreadcrumb({
-            type: "default",
-            level: "info",
-            category: e.category,
-            message: e.message,
-            data: e.data,
-            timestamp: Date.now()
-          })
+          (0, t.default)(e)
         },
         profiledRootComponent: e => e,
         crash() {
@@ -36409,4 +36424,4 @@
     }
   }
 ]);
-//# sourceMappingURL=d01d729676d205b21e59.js.map
+//# sourceMappingURL=ad230af6c44cfc3fe606.js.map
