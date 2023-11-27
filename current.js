@@ -5873,7 +5873,6 @@
         SUPER_REACTIONS_LAUNCH_EMOJI_PICKER_DAILY_UPSELL: "Hype up the chat with Super Reactions. Get more each day with [Nitro](onClick).",
         SUPER_REACTIONS_MOBILE_DISMISS_MESSAGE: "Tap anywhere to close",
         SUPER_REACTION_OUT_OF_BURSTS: "Looks like you’re out of Super Reactions",
-        SUPER_REACTIONS_OUT_TOAST: "You’re out of Super Reactions",
         SUPER_REACTIONS_OUT_OF_BURST_GOT_IT: "Got it!",
         SUPER_REACTIONS_OUT_OF_BURSTS_SIMPLE: "But don’t worry! You’ll get more Super Reactions in {n, plural, =1 {1 day} other {{n} days}}.",
         SUPER_REACTIONS_OUT_OF_BURSTS_SIMPLE_SOON: "But don’t worry! You’ll get more Super Reactions later today.",
@@ -5918,8 +5917,6 @@
         REACTION_REMOVE_SUCCESS_A11Y: "{name} reaction successfully removed",
         REACTION_REMOVE_ERROR_A11Y: "{name} reaction could not be removed",
         ADD_BURST_REACTION: "Add Super Reaction",
-        ADD_BURST_REACTION_TOAST: "{remainingCount}/{replenishCount} Super Reactions left",
-        ADD_BURST_REACTION_TOAST_V2: "{remainingCount, plural, =0 {0 Super Reactions} =1 {# Super Reaction} other {# Super Reactions}} left",
         GET_SUPER_REACTIONS: "Get Super Reactions",
         ADD_BURST_REACTION_A11Y: "Add Super Reaction. ({n} left)",
         ADD_A_BURST_REACTION: "Add a Super Reaction",
@@ -5984,7 +5981,6 @@
         SUPER_REACTION_TOGGLE_DISABLED: "Enable Super Reactions",
         SUPER_REACTIONS_UPSELL_TITLE: "A better way to react on Discord",
         SUPER_REACTIONS_UPSELL_TITLE_MOBILE: "A better way to react!",
-        SUPER_REACTIONS_UPSELL_DESCRIPTION_MOBILE: "Hype up the chat with Super Reactions! Get weekly Super Reactions and other cool perks with Nitro.",
         SUPER_REACTIONS_UPSELL_DESCRIPTION_MOBILE_UNLIMITED: "Hype up the chat with Super Reactions! Get unlimited Super Reactions and other cool perks with Nitro.",
         BURST_REACTIONS_UPSELL_BODY: "Want to use emoji from any server with fun reactions? We got you covered on that [and more with Discord Nitro!](onLearnMore)",
         SUPER_REACTIONS_UPSELL_BODY: "Hype up the chat with Super Reactions [[Beta]]({helpdeskArticle})! Get more Super Reactions and other cool perks with Nitro.",
@@ -18238,7 +18234,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248633", ", Version Hash: ").concat("81a329be801baf3fb30330f1cec8691c892696e5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248642", ", Version Hash: ").concat("862beeb5a058f9d5ca2286f6bcfba5ab8bbcf369")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20525,8 +20521,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248633", "248633"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248633")), _ = 0), _
+        let _ = parseInt((e = "248642", "248642"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248642")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36390,4 +36386,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b5977acc628bbaf63e14.js.map
+//# sourceMappingURL=250c6f8111b1e37c1f0d.js.map
