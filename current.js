@@ -18237,7 +18237,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249125", ", Version Hash: ").concat("b2b942b7ce34123cfd7b0c12532f62ea5dbe4358")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249140", ", Version Hash: ").concat("d93a439911ee1046db0a9108f19f9fe814e0f8c4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20524,8 +20524,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249125", "249125"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249125")), _ = 0), _
+        let _ = parseInt((e = "249140", "249140"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249140")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25048,12 +25048,11 @@
               guildId: null != E ? E : "",
               location: "HangStatusManager"
             });
-            if (!t) return;
             if (null == E && null == _) {
               this.handleDisconnectFromVoiceChannel(), this.previousVoiceChannelId = _;
               return
             }
-            if (_ === this.previousVoiceChannelId) return;
+            if (!t || _ === this.previousVoiceChannelId) return;
             if (this.previousVoiceChannelId = _, null == E || null == _) return;
             let I = o.default.getChannel(_);
             if (null == I || I.type !== i.ChannelTypes.GUILD_VOICE) return;
@@ -36426,4 +36425,4 @@
     }
   }
 ]);
-//# sourceMappingURL=7204ed5d844edc5affa3.js.map
+//# sourceMappingURL=c00276054aac300775a3.js.map
