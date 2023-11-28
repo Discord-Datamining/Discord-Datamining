@@ -15012,7 +15012,7 @@
         MARKETING_PAGE_SHOP_PERK_CARD_HEADER: "Special Shop Perks",
         MARKETING_PAGE_SHOP_PERK_CARD_SUBHEADER: "Enjoy member pricing plus Nitro exclusive items in the Shop.",
         MARKETING_PAGE_SHOP_PERK_COMPARISON_CHART: "Shop member pricing, and exclusive items",
-        USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "`Tis the season for feelin' festive!",
+        USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "‘Tis the season for feelin’ festive!",
         USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_SUBHEADER: "Deck your profile in seasonal styles with new items in the Shop.",
         COLLECTIBLES_ACCOUNT_SWITCHER_POPOUT_HEADER: "Level up your look",
         COLLECTIBLES_ACCOUNT_SWITCHER_POPOUT_SUBHEADER: "Check out the latest and greatest styles in the Shop. Now open to everyone.",
@@ -18236,7 +18236,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("248977", ", Version Hash: ").concat("bea03a86f15ef14f62e40e65626e086d2daed3d7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249000", ", Version Hash: ").concat("9f0abd94162438b9e401419b82cfc239443674da")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20523,8 +20523,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "248977", "248977"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("248977")), _ = 0), _
+        let _ = parseInt((e = "249000", "249000"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249000")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36425,4 +36425,4 @@
     }
   }
 ]);
-//# sourceMappingURL=46024cf8d08abcfe333d.js.map
+//# sourceMappingURL=517bd5069f0eafc75cf7.js.map
