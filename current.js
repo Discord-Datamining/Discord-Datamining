@@ -18238,7 +18238,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249286", ", Version Hash: ").concat("da7ae677fd834c11358cc15cfa833804c323bec2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249287", ", Version Hash: ").concat("bce9f79fcd3d41e08909083a69f121ffea1d5189")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19101,7 +19101,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return L
+          return C
         }
       });
       var t = E("446674"),
@@ -19111,71 +19111,72 @@
         a = E("719923"),
         i = E("513196"),
         I = E("49111"),
-        s = E("646718");
-      let T = {
+        s = E("994428"),
+        T = E("646718");
+      let S = {
           desktop: i.FreemiumAppIconIds.DEFAULT,
           coachmarkImpressions: 0
         },
-        S = {
-          client: T
+        N = {
+          client: S
         },
-        N = !1,
-        O = !0,
-        A = () => {
-          O = !a.default.canUsePremiumAppIcons(n.default.getCurrentUser())
+        O = !1,
+        A = !0,
+        R = () => {
+          A = !a.default.canUsePremiumAppIcons(n.default.getCurrentUser())
         },
-        R = e => {
-          if (S.client.desktop = e, !O) {
+        l = e => {
+          if (N.client.desktop = e, !A) {
             var _;
             r.default.track(I.AnalyticEvents.APP_ICON_UPDATED, {
               icon_id: e,
               user_premium_tier: null === (_ = n.default.getCurrentUser()) || void 0 === _ ? void 0 : _.premiumType,
-              icon_premium_tier: e !== i.FreemiumAppIconIds.DEFAULT ? s.PremiumTypes.TIER_2 : null
+              icon_premium_tier: e !== i.FreemiumAppIconIds.DEFAULT ? T.PremiumTypes.TIER_2 : null
             })
           }
         };
 
-      function l() {
-        O && (S.client = {
+      function u() {
+        A && (N.client = {
           desktop: i.FreemiumAppIconIds.DEFAULT,
           coachmarkImpressions: 2
-        }), N = !1
+        }), O = !1
       }
-      class u extends t.default.PersistedStore {
+      class L extends t.default.PersistedStore {
         initialize(e) {
-          null != e && (S = e), this.waitFor(n.default), this.syncWith([n.default], A)
+          null != e && (N = e), this.waitFor(n.default), this.syncWith([n.default], R)
         }
         get isEditorOpen() {
-          return N
-        }
-        get isUpsellPreview() {
           return O
         }
+        get isUpsellPreview() {
+          return A
+        }
         getState() {
-          return S
+          return N
         }
         getCurrentDesktopIcon() {
           var e;
-          return null == S ? void 0 : null === (e = S.client) || void 0 === e ? void 0 : e.desktop
+          return null == N ? void 0 : null === (e = N.client) || void 0 === e ? void 0 : e.desktop
         }
       }
-      u.displayName = "AppIconPersistedStoreState", u.persistKey = "AppIconPersistedStoreState";
-      var L = new u(o.default, {
+      L.displayName = "AppIconPersistedStoreState", L.persistKey = "AppIconPersistedStoreState";
+      var C = new L(o.default, {
         APP_ICON_UPDATED: function(e) {
           let {
             id: _
           } = e;
-          null != _ && R(_)
+          null != _ && l(_)
         },
         APP_ICON_EDITOR_OPEN: function() {
-          N = !0
+          O = !0
         },
-        APP_ICON_EDITOR_CLOSE: l,
+        APP_ICON_EDITOR_CLOSE: u,
         APP_ICON_TRACK_IMPRESSION: function(e) {
           let {
             markAsDismissed: _
           } = e;
-          S.client.coachmarkImpressions += 1, S.client.coachmarkImpressions >= 2 && (null == _ || _(), l())
+          N.client.coachmarkImpressions += 1, N.client.coachmarkImpressions >= 2 && (null == _ || _(s.ContentDismissActionType.UNKNOWN), u())
         }
       })
     },
@@ -20525,8 +20526,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249286", "249286"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249286")), _ = 0), _
+        let _ = parseInt((e = "249287", "249287"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249287")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36426,4 +36427,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b38e96c5e69fcb10e354.js.map
+//# sourceMappingURL=344e6371d01e825f8e82.js.map
