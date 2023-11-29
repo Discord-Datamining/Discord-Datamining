@@ -15168,16 +15168,16 @@
         GUILD_ROLE_SUBSCRIPTION_START_EARNING_CTA: "Start Earning",
         GUILD_ROLE_SUBSCRIPTION_WELCOME_HERO_BANNER_ALT: "A character looking excitedly at coins raining from the sky",
         GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_TITLE: "How it Works",
-        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_1: "Create exclusive perks on Discord",
-        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_2: "Tell your community to subscribe",
-        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_3: "Grow your subscriber count & start earning!",
+        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_1: "Create exclusive perks and digital products on Discord",
+        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_2: "Tell your community to purchase",
+        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_3: "Grow your customer base & start earning!",
         GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_FOOTER: "Need inspiration? The [Creator Portal]({creatorPortalUrl}) has you covered.",
         GUILD_ROLE_SUBSCRIPTION_BENEFITS_FOR_CREATORS_TITLE: "Benefits for Servers",
-        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_1: "Earn consistent income as a creator",
+        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_1: "Earn income by selling digital goods and experiences",
         GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_2: "Reward and create a home for your super supporters",
         GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_3: "Revenue share",
-        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_NEW_SUBS: "You just got 21 new subs!",
-        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_REVENUE_INCREASE: "+$1,245/mo.",
+        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_NEW_SUBS: "100 sales and 50 new subscribers!",
+        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_REVENUE_INCREASE: "+$1200 this month",
         GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_1_PREVIEW_IMG_ALT: "A character monetizing as a creator",
         GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_1_GRID_ARIA_LABEL: "A grid of user avatars",
         GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_2_IMG_1_ALT: "Two characters enjoying ice cream together",
@@ -15188,7 +15188,7 @@
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_2MFA_ELIGIBILITY_CTA: "Go to enable",
         GUILD_ROLE_SUBSCRIPTION_WAITLIST_NOTICE: "We don't currently support server monetization where you're located in the world. Until we do, feel free to sign up for updates regarding Server Subscriptions.",
         GUILD_ROLE_SUBSCRIPTION_WAITLIST_CTA_LABEL: "Sign up for updates",
-        GUILD_ROLE_SUBSCRIPTION_COMMUNITY_REQUIREMENT_NOTICE: "Before you can start monetizing with Server Subscriptions, you'll need to identify your server as a Community first.",
+        GUILD_ROLE_SUBSCRIPTION_COMMUNITY_REQUIREMENT_NOTICE: "Before you can start monetizing, you need to convert your server to a Community",
         GUILD_ROLE_SUBSCRIPTION_COMMUNITY_REQUIREMENT_CTA_LABEL: "Become a Community",
         GUILD_ROLE_SUBSCRIPTION_OTHER_CREATOR_GUILD_SECTION_TITLE: "Learn from other monetizing servers",
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_SUBSCRIBERS_LABEL: "Subscribers",
@@ -15776,7 +15776,7 @@
         GUILD_PRODUCT_EDIT_MODAL_WARNING_UNSAVED_CHANGES_CTA_EXIT: "Exit",
         GUILD_PRODUCT_EDIT_MODAL_WARNING_UNSAVED_CHANGES_BACK_TO_EDITING: "Back to editing",
         GUILD_PRODUCT_TOO_MANY_PUBLISHED_PRODUCT_ERROR_TITLE: "Max product limit reached",
-        GUILD_PRODUCT_TOO_MANY_PUBLISHED_PRODUCT_ERROR_BODY: "You've already reached the maximum number (10) of products that can published and available to to member. Un-publish or delete a previously created public product to create space for this one.\n\nUntil then, $[we've already saved this listing as a draft for you](highlightHook).",
+        GUILD_PRODUCT_TOO_MANY_PUBLISHED_PRODUCT_ERROR_BODY: "You've already reached the maximum number (10) of products that can be published and available to members. Un-publish or delete a previously created public product to create space for this one.\n\nUntil then, $[we've already saved this listing as a draft for you](highlightHook).",
         GUILD_PRODUCT_TWO_FA_NOT_ENABLED_ERROR_TITLE: "2FA not enabled",
         GUILD_PRODUCT_TWO_FA_NOT_ENABLED_ERROR_BODY: "You’ll need to set up and enabled Two-Factor Authentication to publish any Server Product. Head over to the $[My Account](highlightHook) section of your User Settings to get that sorted out before sharing this product with your members.\n\nBe sure to save any changes before exiting!",
         GUILD_PRODUCT_MISSING_BENEFITS_ERROR_TITLE: "What are you selling?",
@@ -16409,13 +16409,6 @@
         PURCHASE_REVIEW_TAX_LABEL: "Tax",
         ONE_TIME_PURCHASE_FINE_PRINT: "This purchase is non-refundable.",
         GUILD_ROLE_SUBSCRIPTION_PURCHASE_BACK_TO_SUBSCRIPTION_USER_SETTING_CTA: "Back to Manage Server Subscriptions",
-        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_1__WITH_GUILD_PRODUCT_EXP: "Create exclusive perks and digital products on Discord",
-        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_2__WITH_GUILD_PRODUCT_EXP: "Tell your community to purchase",
-        GUILD_ROLE_SUBSCRIPTION_HOW_IT_WORKS_STEP_3__WITH_GUILD_PRODUCT_EXP: "Grow your customer base & start earning!",
-        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_1__WITH_GUILD_PRODUCT_EXP: "Earn income by selling digital goods and experiences",
-        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_NEW_SUBS_WITH_GUILD_PRODUCT_EXP: "100 sales and 50 new subscribers!",
-        GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_REVENUE_INCREASE_WITH_GUILD_PRODUCT_EXP: "+$1200 this month",
-        GUILD_ROLE_SUBSCRIPTION_COMMUNITY_REQUIREMENT_NOTICE_WITH_GUILD_PRODUCT_EXP: "Before you can start monetizing, you need to convert your server to a Community",
         FRIEND_INVITE_SHEET_TITLE: "Send Link to Add Friends",
         FRIEND_INVITE_EXPIRATION: "Links expire in {expirationDays} days, or {expirationUses} uses.",
         FRIEND_INVITE_REVOKE_ALL: "Revoke All Links",
@@ -18247,7 +18240,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249837", ", Version Hash: ").concat("3f29232d588c53a1aab366aca3c5c0fd174daed8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249840", ", Version Hash: ").concat("677ad8cf4ae726f6edb114b0c4c6ee9ec6e7b8b5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20535,8 +20528,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249837", "249837"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249837")), _ = 0), _
+        let _ = parseInt((e = "249840", "249840"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249840")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36434,4 +36427,4 @@
     }
   }
 ]);
-//# sourceMappingURL=e057b092d5506612f83f.js.map
+//# sourceMappingURL=ab27e72b82f51cce2f73.js.map
