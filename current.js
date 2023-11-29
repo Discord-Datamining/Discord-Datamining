@@ -494,6 +494,7 @@
         APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
         APP_LAUNCHER_SEARCH_PLACEHOLDER: "Search Apps & Commands",
         APP_LAUNCHER_HOME_EMPTY_STATE_BODY: "No apps have been installed in this server yet",
+        APP_LAUNCHER_SEARCH_EMPTY_STATE_BODY: "No apps or commands match your search",
         READY: "Ready",
         CONNECTING: "Connecting…",
         CONNECTING_PROBLEMS_CTA: "Connection problems? Let us know!",
@@ -18241,7 +18242,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249665", ", Version Hash: ").concat("5cb3c7988417db599add23e3d1ab22dc571f8d86")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249667", ", Version Hash: ").concat("2470b410181360958db36b5c888e55102c9e426e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20529,8 +20530,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249665", "249665"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249665")), _ = 0), _
+        let _ = parseInt((e = "249667", "249667"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249667")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36428,4 +36429,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b583de2a6d1eb012e4ef.js.map
+//# sourceMappingURL=cfe9d9f33a1bfe19d879.js.map
