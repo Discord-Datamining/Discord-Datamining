@@ -18238,7 +18238,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249572", ", Version Hash: ").concat("c33f7ab5ef79a3e8ad02c5ae3fea73b616b550f9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249578", ", Version Hash: ").concat("56837d07d9b21c612445a91f36d51e9c5f41a5f3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20526,8 +20526,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249572", "249572"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249572")), _ = 0), _
+        let _ = parseInt((e = "249578", "249578"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249578")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -27261,7 +27261,7 @@
           }), N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
             hasChanges: () => T.default.hasPendingUsage() && O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!T.default.hasPendingUsage()) O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (!o.isEmpty(T.default.heardSoundHistory) && (e.heardSoundFrecency = n.HeardSoundFrecency.create(), e.heardSoundFrecency.heardSounds = (0, A.serializeUsageHistory)(T.default.heardSoundHistory, 100)), !o.isEmpty(T.default.playedSoundHistory) && (e.playedSoundFrecency = n.PlayedSoundFrecency.create(), e.playedSoundFrecency.playedSounds = (0, A.serializeUsageHistory)(T.default.heardSoundHistory, 100)))
+              if (!!T.default.hasPendingUsage()) O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && !o.isEmpty(T.default.playedSoundHistory) && (e.playedSoundFrecency = n.PlayedSoundFrecency.create(), e.playedSoundFrecency.playedSounds = (0, A.serializeUsageHistory)(T.default.playedSoundHistory, 100))
             }
           }), N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
             hasChanges: () => i.default.hasPendingUsage() && O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -31692,9 +31692,6 @@
         },
         FavoriteSoundboardSounds: function() {
           return h
-        },
-        HeardSoundFrecency: function() {
-          return m
         },
         PlayedSoundFrecency: function() {
           return p
@@ -36427,4 +36424,4 @@
     }
   }
 ]);
-//# sourceMappingURL=f29c0d1dd0fd1f95e98b.js.map
+//# sourceMappingURL=b641bce164f9080e7ae3.js.map
