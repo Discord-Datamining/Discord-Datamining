@@ -4320,7 +4320,7 @@
         FORM_LABEL_NOTIFICATION_POSITION: "Notification Position",
         OVERLAY_NOTIFICATION_SETTINGS_DISABLED: "Notifications Disabled",
         OVERLAY_NOTIFICATION_SETTINGS_POSITION: "Displaying: !!{position}!!",
-        FORM_LABEL_OVERLAY_TEXT_CHAT_NOTIFICATIONS: "Show Text Chat Notifications",
+        FORM_LABEL_OVERLAY_TEXT_CHAT_NOTIFICATIONS: "Show text chat notifications",
         FORM_LABEL_OVERLAY_CHAT_OPACITY: "Opacity",
         ONE_USER_TYPING: "**!!{a}!!** is typing...",
         TWO_USERS_TYPING: "**!!{a}!!** and **!!{b}!!** are typing...",
@@ -16660,6 +16660,7 @@
         APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER: "Start typing...",
         APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE: "No command found",
         APP_LAUNCHER_COMMAND_NOT_FOUND_BODY: "This command is not available",
+        FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
       })
     },
@@ -18246,7 +18247,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249767", ", Version Hash: ").concat("e23185cb5825e60eb8eb76d92b97eb4220c10eb7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249773", ", Version Hash: ").concat("2b3ba8923e22164f8743215a52e4eae27ef189ee")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20534,8 +20535,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249767", "249767"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249767")), _ = 0), _
+        let _ = parseInt((e = "249773", "249773"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249773")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36433,4 +36434,4 @@
     }
   }
 ]);
-//# sourceMappingURL=afeed260fd906d936b9b.js.map
+//# sourceMappingURL=44336dca56a00c42784d.js.map
