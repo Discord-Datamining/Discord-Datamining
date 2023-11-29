@@ -18241,7 +18241,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249900", ", Version Hash: ").concat("574647d299bbc5e6b849d7e11b30afc399c3b78b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249907", ", Version Hash: ").concat("c975dd5460cfe54b5557edf11c239322e056bac0")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20534,8 +20534,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249900", "249900"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249900")), _ = 0), _
+        let _ = parseInt((e = "249907", "249907"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249907")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -27333,7 +27333,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return P
+          return m
         }
       }), E("424973"), E("222007");
       var t = E("917351"),
@@ -27346,78 +27346,84 @@
         s = E("385976"),
         T = E("469607"),
         S = E("865372"),
-        N = E("872173"),
-        O = E("374363"),
-        A = E("116949"),
-        R = E("397336");
-      let l = "lastFrecencySavedTime",
-        u = 3e5 * Math.random(),
-        L = 864e5 + Math.floor(36e5 * Math.random()),
-        C = null,
-        c = Date.now();
-      class D extends i.default {
+        N = E("319781"),
+        O = E("872173"),
+        A = E("374363"),
+        R = E("116949"),
+        l = E("397336");
+      let u = "lastFrecencySavedTime",
+        L = 3e5 * Math.random(),
+        C = 864e5 + Math.floor(36e5 * Math.random()),
+        c = null,
+        D = Date.now();
+      class d extends i.default {
         _initialize() {
-          N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+          O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
             hasChanges: () => !1,
             processProto: () => {
-              h(!0)
+              P(!0)
             }
-          }), N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => S.default.hasPendingUsage() && O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => S.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!S.default.hasPendingUsage()) O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.stickerFrecency = n.StickerFrecency.create(), e.stickerFrecency.stickers = (0, A.serializeUsageHistory)(S.default.stickerFrecencyWithoutFetchingLatest.usageHistory, 100))
+              if (!!S.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.stickerFrecency = n.StickerFrecency.create(), e.stickerFrecency.stickers = (0, R.serializeUsageHistory)(S.default.stickerFrecencyWithoutFetchingLatest.usageHistory, 100))
             }
-          }), N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => s.default.hasPendingUsage() && O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => s.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!s.default.hasPendingUsage()) O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.emojiFrecency = n.EmojiFrecency.create(), e.emojiFrecency.emojis = (0, A.serializeUsageHistory)(s.default.emojiFrecencyWithoutFetchingLatest.usageHistory, 100))
+              if (!!s.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.emojiFrecency = n.EmojiFrecency.create(), e.emojiFrecency.emojis = (0, R.serializeUsageHistory)(s.default.emojiFrecencyWithoutFetchingLatest.usageHistory, 100))
             }
-          }), N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => T.default.hasPendingUsage() && O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => T.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!T.default.hasPendingUsage()) O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && !o.isEmpty(T.default.playedSoundHistory) && (e.playedSoundFrecency = n.PlayedSoundFrecency.create(), e.playedSoundFrecency.playedSounds = (0, A.serializeUsageHistory)(T.default.playedSoundHistory, 100))
+              if (!!T.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && !o.isEmpty(T.default.playedSoundHistory) && (e.playedSoundFrecency = n.PlayedSoundFrecency.create(), e.playedSoundFrecency.playedSounds = (0, R.serializeUsageHistory)(T.default.playedSoundHistory, 100))
             }
-          }), N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => a.default.hasPendingUsage() && O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => a.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!a.default.hasPendingUsage()) O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = n.ApplicationCommandFrecency.create(), e.applicationCommandFrecency.applicationCommands = (0, A.serializeUsageHistory)(a.default.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
+              if (!!a.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = n.ApplicationCommandFrecency.create(), e.applicationCommandFrecency.applicationCommands = (0, R.serializeUsageHistory)(a.default.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
             }
-          }), N.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => I.default.hasPendingUsage() && O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => I.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!I.default.hasPendingUsage()) O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = n.ApplicationFrecency.create(), e.applicationFrecency.applications = (0, A.serializeUsageHistory)(I.default.getApplicationFrecencyWithoutLoadingLatest().usageHistory, I.FREQUENCY_ITEM_LIMIT))
+              if (!!I.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = n.ApplicationFrecency.create(), e.applicationFrecency.applications = (0, R.serializeUsageHistory)(I.default.getApplicationFrecencyWithoutLoadingLatest().usageHistory, I.FREQUENCY_ITEM_LIMIT))
+            }
+          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => N.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+            processProto: e => {
+              if (!!N.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.guildAndChannelFrecency = n.GuildAndChannelFrecency.create(), e.guildAndChannelFrecency.guildAndChannels = (0, R.serializeUsageHistory)(N.default.frecencyWithoutFetchingLatest.usageHistory, N.MAX_NUM_SELECTED_ITEMS))
             }
           })
         }
         constructor(...e) {
           super(...e), this.actions = {
-            POST_CONNECTION_OPEN: d,
-            CONNECTION_RESUMED: d,
-            CONNECTION_CLOSED: U
+            POST_CONNECTION_OPEN: U,
+            CONNECTION_RESUMED: U,
+            CONNECTION_CLOSED: M
           }
         }
       }
 
-      function d() {
+      function U() {
         var e;
-        c = null !== (e = r.default.get(l)) && void 0 !== e ? e : Date.now(), h(!1)
+        D = null !== (e = r.default.get(u)) && void 0 !== e ? e : Date.now(), P(!1)
       }
 
-      function U() {
-        clearTimeout(C), C = null
+      function M() {
+        clearTimeout(c), c = null
       }
-      async function M() {
-        c = Date.now(), h(!0), !O.default.hasLoaded(R.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (S.default.hasPendingUsage() || s.default.hasPendingUsage() || a.default.hasPendingUsage() || I.default.hasPendingUsage()) && await N.FrecencyUserSettingsActionCreators.loadIfNecessary(), o.forEach(N.UserSettingsActionCreatorsByType, e => {
+      async function h() {
+        D = Date.now(), P(!0), !A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (S.default.hasPendingUsage() || s.default.hasPendingUsage() || a.default.hasPendingUsage() || I.default.hasPendingUsage() || N.default.hasPendingUsage()) && await O.FrecencyUserSettingsActionCreators.loadIfNecessary(), o.forEach(O.UserSettingsActionCreatorsByType, e => {
           e.markDirtyIfHasPendingChange()
         })
       }
 
-      function h(e) {
-        e && (c = Date.now(), r.default.set(l, c)), null != C && clearTimeout(C);
-        let _ = Date.now() - c;
-        C = setTimeout(M, Math.max(u, L - _))
+      function P(e) {
+        e && (D = Date.now(), r.default.set(u, D)), null != c && clearTimeout(c);
+        let _ = Date.now() - D;
+        c = setTimeout(h, Math.max(L, C - _))
       }
-      var P = new D
+      var m = new d
     },
     275877: function(e, _, E) {
       "use strict";
@@ -31812,6 +31818,9 @@
         },
         ApplicationFrecency: function() {
           return g
+        },
+        GuildAndChannelFrecency: function() {
+          return f
         }
       }), E("222007"), E("70102"), E("424973");
       var t, o, n = E("849266"),
@@ -31864,6 +31873,9 @@
               case 11:
                 o.playedSoundFrecency = p.internalBinaryRead(e, e.uint32(), E, o.playedSoundFrecency);
                 break;
+              case 12:
+                o.guildAndChannelFrecency = f.internalBinaryRead(e, e.uint32(), E, o.guildAndChannelFrecency);
+                break;
               default:
                 let i = E.readUnknownField;
                 if ("throw" === i) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -31874,7 +31886,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && u.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && D.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && g.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join();
+          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && u.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && D.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && g.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? n.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -31934,6 +31946,11 @@
             name: "played_sound_frecency",
             kind: "message",
             T: () => p
+          }, {
+            no: 12,
+            name: "guild_and_channel_frecency",
+            kind: "message",
+            T: () => f
           }])
         }
       }
@@ -32685,7 +32702,70 @@
           }])
         }
       }
-      let g = new y
+      let g = new y;
+      class B extends n.MessageType {
+        create(e) {
+          let _ = {
+            guildAndChannels: {}
+          };
+          return globalThis.Object.defineProperty(_, n.MESSAGE_TYPE, {
+            enumerable: !1,
+            value: this
+          }), void 0 !== e && (0, n.reflectionMergePartial)(this, _, e), _
+        }
+        internalBinaryRead(e, _, E, t) {
+          let o = null != t ? t : this.create(),
+            r = e.pos + _;
+          for (; e.pos < r;) {
+            let [_, t] = e.tag();
+            if (1 === _) this.binaryReadMap1(o.guildAndChannels, e, E);
+            else {
+              let r = E.readUnknownField;
+              if ("throw" === r) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
+              let i = e.skip(t);
+              !1 !== r && (!0 === r ? n.UnknownFieldHandler.onRead : r)(this.typeName, o, _, t, i)
+            }
+          }
+          return o
+        }
+        binaryReadMap1(e, _, E) {
+          let t = _.uint32(),
+            o = _.pos + t,
+            n, r;
+          for (; _.pos < o;) {
+            let [e, t] = _.tag();
+            switch (e) {
+              case 1:
+                n = _.fixed64().toString();
+                break;
+              case 2:
+                r = U.internalBinaryRead(_, _.uint32(), E);
+                break;
+              default:
+                throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.GuildAndChannelFrecency.guild_and_channels")
+            }
+          }
+          e[null != n ? n : "0"] = null != r ? r : U.create()
+        }
+        internalBinaryWrite(e, _, E) {
+          for (let t of Object.keys(e.guildAndChannels)) _.tag(1, n.WireType.LengthDelimited).fork().tag(1, n.WireType.Bit64).fixed64(t), _.tag(2, n.WireType.LengthDelimited).fork(), U.internalBinaryWrite(e.guildAndChannels[t], _, E), _.join().join();
+          let t = E.writeUnknownFields;
+          return !1 !== t && (!0 == t ? n.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
+        }
+        constructor() {
+          super("discord_protos.discord_users.v1.GuildAndChannelFrecency", [{
+            no: 1,
+            name: "guild_and_channels",
+            kind: "map",
+            K: 6,
+            V: {
+              kind: "message",
+              T: () => U
+            }
+          }])
+        }
+      }
+      let f = new B
     },
     151426: function(e, _, E) {
       "use strict";
@@ -36538,4 +36618,4 @@
     }
   }
 ]);
-//# sourceMappingURL=98df3f9c74bc43131ccd.js.map
+//# sourceMappingURL=c95edcf3253bdf9ec8cb.js.map
