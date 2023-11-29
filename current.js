@@ -16293,7 +16293,9 @@
         SCREENSHARE_APPS_SNAPCHAT_ACCESSIBILITY_LABEL: "Screenshare Snapchat",
         LAUNCH_PAD_HISTORY: "Recent Channels",
         LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
-        LAUNCH_PAD_RECENT_SERVERS: "Recent Servers"
+        LAUNCH_PAD_RECENT_SERVERS: "Recent Servers",
+        REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
+        REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report."
       })
     },
     444051: function(e, _, E) {
@@ -18239,7 +18241,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249629", ", Version Hash: ").concat("cc32f78629b6888ede6ea5e6344cb2bcb223e284")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("249634", ", Version Hash: ").concat("4b5e4ccfd05d4fd62a058d37a14d74a7c267af7a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20527,8 +20529,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "249629", "249629"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249629")), _ = 0), _
+        let _ = parseInt((e = "249634", "249634"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("249634")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36425,4 +36427,4 @@
     }
   }
 ]);
-//# sourceMappingURL=81ba0b7f2656fc2e5ebe.js.map
+//# sourceMappingURL=264798dbc7413228b356.js.map
