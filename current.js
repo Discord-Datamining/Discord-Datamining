@@ -12526,6 +12526,7 @@
         INVITE_PERMISSION_MODAL_TEXT: "To add a friend to this server, ask someone with invite permissions for help.",
         DISABLE_INVITES: "Pause Invites",
         ENABLE_INVITES: "Enable Invites",
+        INVITES_PERMANENTLY_DISABLED_TIP: "Invites to this server are currently permanently disabled.",
         INVITES_DISABLED_TIP: "Invites to this server are currently paused.",
         INVITES_DISABLED_DESCRIPTION: "Invite links, embeds, and vanity urls will still be visible, but their usage will be paused. New users will no longer be able to join this server. Managing invites will still work. [Learn More]({helpArticleUrl})",
         INVITES_DISABLED_DESCRIPTION_MOBILE: "Invite links, embeds, and vanity urls will still be visible, but new users will no longer be able to join this server. [Learn More]({helpArticleUrl})",
@@ -18241,7 +18242,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250052", ", Version Hash: ").concat("15c559304b36095494059697de36089dfc5bb642")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250054", ", Version Hash: ").concat("941af17a472ad131b8a792e0e8d8afaa46e59e1a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20534,8 +20535,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "250052", "250052"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250052")), _ = 0), _
+        let _ = parseInt((e = "250054", "250054"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250054")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36565,4 +36566,4 @@
     }
   }
 ]);
-//# sourceMappingURL=b7852f6edcd52c312b90.js.map
+//# sourceMappingURL=c7c8b7e1e33e8525954a.js.map
