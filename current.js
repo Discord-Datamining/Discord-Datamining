@@ -9467,6 +9467,8 @@
         USER_PROFILE_MUTUAL_GUILDS: "{count, plural, =0 {0 Mutual Servers} one {1 Mutual Server} other {{count} Mutual Servers}}",
         USER_PROFILE_MUTUAL_FRIENDS_PLACEHOLDER: "Mutual Friends",
         USER_PROFILE_MUTUAL_GUILDS_PLACEHOLDER: "Mutual Servers",
+        PROFILE_JOIN_VOICE_CHANNEL: "Join Voice Channel",
+        PROFILE_IN_VOICE_CALL: "In a voice call",
         IOS_PROFILE_IN_VOICE_CALL: "In a voice call",
         IOS_PROFILE_OPEN_VOICE_CHANNEL: "Open Voice Channel",
         USER_PROFILE_INCOMING_FRIEND_REQUEST_DIALOG_BODY: "Accept this friend request?",
@@ -18249,7 +18251,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250233", ", Version Hash: ").concat("cdcad9c2ab98940e02a2677fb91cce9830e09bdf")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250237", ", Version Hash: ").concat("232a6dfc75e9b65c7285ab93c90c1ce8e06bd24a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20542,8 +20544,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "250233", "250233"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250233")), _ = 0), _
+        let _ = parseInt((e = "250237", "250237"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250237")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36573,4 +36575,4 @@
     }
   }
 ]);
-//# sourceMappingURL=830fdae9ada5e81d0657.js.map
+//# sourceMappingURL=a7d7dcdca4d44fcb4bbe.js.map
