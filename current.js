@@ -6631,6 +6631,8 @@
         SEASONAL_GIFTING_DM_POPUP_HEADER: "Gift Nitro for the holidays.",
         SEASONAL_GIFTING_DM_POPUP_BODY: "Send a personalized Nitro gift to spread holiday cheer and chaos!",
         SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
+        SEASONAL_GIFTING_MAKE_SOMEONES_DAY_TOOLTIP: "Make someone's day when you send some sweet Nitro their way.",
+        SEASONAL_GIFTING_SEND_GIFT_CTA: "Send gift",
         PREMIUM_MARKETING_HERO_HEADER: "Make Discord yours",
         PREMIUM_MARKETING_HERO_BODY: "Upgrade your emoji, personalize your profile, and stand out in your servers.",
         PREMIUM_MARKETING_FEATURE_EMOJI_TITLE: "More Emoji Power",
@@ -18242,7 +18244,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250054", ", Version Hash: ").concat("941af17a472ad131b8a792e0e8d8afaa46e59e1a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250060", ", Version Hash: ").concat("ec9c68676e288467f7541962d61ab4fea50a6b69")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20535,8 +20537,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "250054", "250054"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250054")), _ = 0), _
+        let _ = parseInt((e = "250060", "250060"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250060")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36566,4 +36568,4 @@
     }
   }
 ]);
-//# sourceMappingURL=c7c8b7e1e33e8525954a.js.map
+//# sourceMappingURL=3d01d6ce12d1dc2bb7fa.js.map
