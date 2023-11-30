@@ -6385,6 +6385,7 @@
         GUILD_BOOSTING_USER_SETTINGS_PUBLIC_SERVER_CTA: "Explore servers",
         GUILD_BOOSTING_USER_SETTINGS_UNAPPLIED_GUILD_BOOST_DESCRIPTION: "Looks like this Boost could use a new home!",
         GUILD_BOOSTING_USER_SETTINGS_NO_AVAILABLE_GUILD_BOOST_SLOTS: "Oh no! You don't have any available Boosts.",
+        GUILD_BOOSTING_USER_SETTINGS_APPLIED_GUILD_BOOST_UNKNOWN_GUILD: "Unknown Server",
         GUILD_BOOSTING_USER_SETTINGS_PERK_TEMPLATE: "This Boost helped unlock **{perk}** for everyone",
         GUILD_BOOSTING_USER_SETTINGS_PERK_EMOJI_SLOTS: "{numEmojiSlots} emoji slots",
         GUILD_BOOSTING_USER_SETTINGS_PERK_STICKER_SLOTS: "{numStickerSlots} sticker slots",
@@ -18248,7 +18249,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250177", ", Version Hash: ").concat("4b62075b8aa262b49512e117597a359adbfda93b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250181", ", Version Hash: ").concat("14d1c43f66da429b7bc7bf7129a67e5ab0db41a2")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20541,8 +20542,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "250177", "250177"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250177")), _ = 0), _
+        let _ = parseInt((e = "250181", "250181"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250181")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36572,4 +36573,4 @@
     }
   }
 ]);
-//# sourceMappingURL=cd789f04466520c0eb08.js.map
+//# sourceMappingURL=b6227c85b142f6891bb5.js.map
