@@ -16132,6 +16132,7 @@
         CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE: "Allow viewers to capture clips",
         CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE_DESCRIPTION: "If this is on, viewers can take clips of your stream.",
         CLIPS_SETTINGS_HW_ENCODING_MUST_BE_ENABLED_INFOBOX: "To use Clips, enable hardware encoding. Find it in [Voice & Video settings](onClick).",
+        CLIPS_PROCESSING_BADGE: "Processing...",
         SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
         CUSTOM_SOUNDS: "Custom Sounds",
         ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
@@ -18247,7 +18248,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250160", ", Version Hash: ").concat("38154fea19615c67151349b3dbee6665f0e25690")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250177", ", Version Hash: ").concat("4b62075b8aa262b49512e117597a359adbfda93b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20540,8 +20541,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "250160", "250160"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250160")), _ = 0), _
+        let _ = parseInt((e = "250177", "250177"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250177")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36571,4 +36572,4 @@
     }
   }
 ]);
-//# sourceMappingURL=d3366996e43f68196ef8.js.map
+//# sourceMappingURL=cd789f04466520c0eb08.js.map
