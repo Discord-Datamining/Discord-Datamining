@@ -16372,7 +16372,7 @@
         CREATE_EVENT_RECUR_WEEKDAYS: "Every weekday (Monday to Friday)",
         GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES: "View future events",
         GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
-        GUILD_SCHEDULED_EVENT_REPEATS: "Future events in series",
+        GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
         GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
@@ -18251,7 +18251,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250295", ", Version Hash: ").concat("259fa349063c1fd443dd6a6373052e3a91a780bd")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250298", ", Version Hash: ").concat("1b41c555d7750b4d275970a5baf08c9348bf4322")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20544,8 +20544,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "250295", "250295"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250295")), _ = 0), _
+        let _ = parseInt((e = "250298", "250298"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250298")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36575,4 +36575,4 @@
     }
   }
 ]);
-//# sourceMappingURL=bd363b0a44c5f05aeb9c.js.map
+//# sourceMappingURL=353708fd97006ce9e389.js.map
