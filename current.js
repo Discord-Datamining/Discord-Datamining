@@ -257,6 +257,7 @@
         CHANNEL_TOPIC_EMPTY: "Let everyone know how to use this channel!",
         DELETE_CHANNEL: "Delete Channel",
         DELETE_CATEGORY: "Delete Category",
+        DELETE_CATEGORY_SUBTEXT: "Channels will be uncategorized",
         OVERVIEW: "Overview",
         EDIT_OVERVIEW: "Edit Overview",
         ONBOARDING: "Onboarding",
@@ -4124,6 +4125,7 @@
         NEW_MESSAGE: "New Message",
         EXPIRES_IN: "Expires in:",
         DELETE_CHANNEL_BODY: "Are you sure you want to delete **!!{channelName}!!**? This cannot be undone.",
+        DELETE_CHANNEL_BODY_FAVORITES: "Are you sure you want to delete **!!{channelName}!!** from your Favorites? This cannot be undone. Conversations under this category will be uncategorized.",
         SERVERS: "Servers",
         USERS: "Users",
         USER: "User",
@@ -18245,7 +18247,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250104", ", Version Hash: ").concat("14ff3840bde96e3b30bc825094907318a67f8428")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("250127", ", Version Hash: ").concat("757ffc41b836436c630b06f86eed57ad6384406a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20538,8 +20540,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "250104", "250104"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250104")), _ = 0), _
+        let _ = parseInt((e = "250127", "250127"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("250127")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36569,4 +36571,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55603684505f779c0545.js.map
+//# sourceMappingURL=6a454011af948cb7d5c2.js.map
