@@ -10950,6 +10950,9 @@
         CONTACT_SYNC_DONT_SHOW_AGAIN: "Don't show me this again",
         CONTACT_SYNC_SUGGESTIONS_TITLE: "Add Friends",
         REDESIGN_CONTACT_SYNC_SUGGESTIONS_TITLE: "Add friends",
+        CONTACT_SYNC_CONTACT_INVITE_TITLE: "Invite friends",
+        CONTACT_SYNC_CONTACT_INVITE_SUBTITLE_INCENTIVIZED: "Get a free month of Nitro, the premium Discord experience, when these friends sign up.",
+        CONTACT_SYNC_CONTACT_INVITE_SUBTITLE_NON_INCENTIVIZED: "Invite your friends to to join you on Discord for more fun!",
         CONTACT_SYNC_SUGGESTIONS_CTA: "Add Friends",
         CONTACT_SYNC_FRIEND_FINDER_TITLE: "You have {count, plural, one {1 friend} other {{count} friends}} on Discord",
         CONTACT_SYNC_FRIEND_FINDER_SUBTITLE: "Discord can connect you with your friends and help them find you. Enable access to your contacts to find out who they are.",
@@ -18259,7 +18262,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251073", ", Version Hash: ").concat("848a2b6e7a3f1b16a500dd84f2de41dea562263f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251074", ", Version Hash: ").concat("31e507ce4a2e079fa53c4daac2028c1028243465")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20552,8 +20555,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251073", "251073"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251073")), _ = 0), _
+        let _ = parseInt((e = "251074", "251074"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251074")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36601,4 +36604,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.f6c363501d444ec2aa4a.js.map
+//# sourceMappingURL=66318.08f6b0332d64a2aef8eb.js.map
