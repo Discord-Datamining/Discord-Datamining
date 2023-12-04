@@ -6640,7 +6640,7 @@
         SEASONAL_GIFTING_INFO_TOOLTIP: "Your friend will see this image when they receive their gift.",
         SEASONAL_GIFTING_POPUP_HEADER: "Looking for a holiday gift?",
         SEASONAL_GIFTING_DM_POPUP_HEADER: "Gift Nitro for the holidays.",
-        SEASONAL_GIFTING_DM_POPUP_BODY: "Send a personalized Nitro gift to spread holiday cheer and chaos!",
+        SEASONAL_GIFTING_DM_POPUP_BODY: "Send a personalized Nitro gift to spread holiday cheer!",
         SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
         SEASONAL_GIFTING_MAKE_SOMEONES_DAY_TOOLTIP: "Make someone's day when you send some sweet Nitro their way.",
         SEASONAL_GIFTING_SEND_GIFT_CTA: "Send gift",
@@ -18263,7 +18263,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251151", ", Version Hash: ").concat("2eaab8d4dc26571cf8da5e7775c9b98b1be5d177")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251153", ", Version Hash: ").concat("e373a44c070695cd8661a34e4e3a51c62ce92045")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20556,8 +20556,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251151", "251151"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251151")), _ = 0), _
+        let _ = parseInt((e = "251153", "251153"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251153")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36605,4 +36605,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.8be787a020fd84b0af75.js.map
+//# sourceMappingURL=66318.0485744e97d44399d4d9.js.map
