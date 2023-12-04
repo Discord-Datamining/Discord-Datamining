@@ -18185,16 +18185,16 @@
         } = e;
         return (0, t.jsx)("svg", {
           ...(0, n.default)(i),
+          xmlns: "http://www.w3.org/2000/svg",
           width: _,
           height: E,
-          viewBox: "0 0 24 24",
           fill: "none",
-          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 0 24 24",
           children: (0, t.jsx)("path", {
-            fillRule: "evenodd",
-            clipRule: "evenodd",
-            d: "M18.7071 7.29289C19.0976 7.68342 19.0976 8.31658 18.7071 8.70711L10.7071 16.7071C10.3166 17.0976 9.68342 17.0976 9.29289 16.7071L5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929C5.68342 10.9024 6.31658 10.9024 6.70711 11.2929L10 14.5858L17.2929 7.29289C17.6834 6.90237 18.3166 6.90237 18.7071 7.29289Z",
             fill: "string" == typeof r ? r : r.css,
+            fillRule: "evenodd",
+            d: "M18.7 7.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4l3.3 3.29 7.3-7.3a1 1 0 0 1 1.4 0Z",
+            clipRule: "evenodd",
             className: a
           })
         })
@@ -18219,22 +18219,18 @@
           colorClass: a = "",
           ...i
         } = e;
-        return (0, t.jsxs)("svg", {
+        return (0, t.jsx)("svg", {
           ...(0, n.default)(i),
+          xmlns: "http://www.w3.org/2000/svg",
           width: _,
           height: E,
-          viewBox: "0 0 24 24",
           fill: "none",
-          xmlns: "http://www.w3.org/2000/svg",
-          children: [(0, t.jsx)("path", {
-            d: "M21 2C21.5523 2 22 2.44772 22 3V9C22 9.55228 21.5523 10 21 10H15C14.4477 10 14 9.55228 14 9C14 8.44772 14.4477 8 15 8H18.93C17.5456 5.60707 14.9597 4 12 4C10.0939 4 8.34592 4.66536 6.97172 5.77737C6.54239 6.12478 5.91271 6.05837 5.5653 5.62905C5.21789 5.19972 5.2843 4.57004 5.71362 4.22263C7.43087 2.83304 9.61951 2 12 2C15.2724 2 18.1764 3.57195 20 5.9993V3C20 2.44772 20.4477 2 21 2Z",
+          viewBox: "0 0 24 24",
+          children: (0, t.jsx)("path", {
             fill: "string" == typeof r ? r : r.css,
+            d: "M21 2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.93A8 8 0 0 0 6.97 5.78a1 1 0 0 1-1.26-1.56A9.98 9.98 0 0 1 20 6V3a1 1 0 0 1 1-1ZM3 22a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H5.07a8 8 0 0 0 11.96 2.22 1 1 0 1 1 1.26 1.56A9.99 9.99 0 0 1 4 18v3a1 1 0 0 1-1 1Z",
             className: a
-          }), (0, t.jsx)("path", {
-            d: "M3 22C2.44772 22 2 21.5523 2 21V15C2 14.4477 2.44772 14 3 14H9C9.55228 14 10 14.4477 10 15C10 15.5523 9.55228 16 9 16H5.07005C6.4544 18.3929 9.04034 20 12 20C13.9061 20 15.6541 19.3346 17.0283 18.2226C17.4576 17.8752 18.0873 17.9416 18.4347 18.371C18.7821 18.8003 18.7157 19.43 18.2864 19.7774C16.5691 21.167 14.3805 22 12 22C8.7276 22 5.82361 20.428 4 18.0007V21C4 21.5523 3.55228 22 3 22Z",
-            fill: "string" == typeof r ? r : r.css,
-            className: a
-          })]
+          })
         })
       }
     },
@@ -18261,7 +18257,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251014", ", Version Hash: ").concat("630ace1d698255c8768ccfa8199cc3e41b9178d3")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251021", ", Version Hash: ").concat("965958bfd7ea1adcc67c8c6f8fe3314b6bb6ae3c")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20554,8 +20550,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251014", "251014"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251014")), _ = 0), _
+        let _ = parseInt((e = "251021", "251021"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251021")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36603,4 +36599,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.3d294bcd3931e6fdc4f3.js.map
+//# sourceMappingURL=66318.68071c726b1137e99566.js.map
