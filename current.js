@@ -17538,7 +17538,7 @@
       });
       var N = S
     },
-    717811: function(e, _, E) {
+    776156: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
@@ -18263,7 +18263,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251345", ", Version Hash: ").concat("a3f91b7e10ace4c0f8915167686a9ad88b65e186")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251353", ", Version Hash: ").concat("2e71a6ce6587470e3cc1a66aebafd5f2013d7464")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20372,7 +20372,7 @@
       }), E("222007");
       var t = E("249654"),
         o = E("913144"),
-        n = E("717811"),
+        n = E("776156"),
         r = E("689988"),
         a = E("915639"),
         i = E("34966"),
@@ -20556,8 +20556,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251345", "251345"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251345")), _ = 0), _
+        let _ = parseInt((e = "251353", "251353"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251353")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26468,7 +26468,7 @@
         }
       }), E("222007");
       var t = E("850068"),
-        o = E("251472"),
+        o = E("316718"),
         n = E("689988"),
         r = E("697218"),
         a = E("160299"),
@@ -36605,4 +36605,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.06a03a81755f6418f9b0.js.map
+//# sourceMappingURL=66318.9243860620c2352eb166.js.map
