@@ -9478,6 +9478,7 @@
         USER_PROFILE_MUTUAL_GUILDS_PLACEHOLDER: "Mutual Servers",
         PROFILE_JOIN_VOICE_CHANNEL: "Join Voice Channel",
         PROFILE_IN_VOICE_CALL: "In a voice call",
+        PROFILE_OPEN_VOICE_CHANNEL: "Open Voice Channel",
         IOS_PROFILE_IN_VOICE_CALL: "In a voice call",
         IOS_PROFILE_OPEN_VOICE_CHANNEL: "Open Voice Channel",
         USER_PROFILE_INCOMING_FRIEND_REQUEST_DIALOG_BODY: "Accept this friend request?",
@@ -18263,7 +18264,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251599", ", Version Hash: ").concat("6c3f2936863a3b11aaacfa3e63077e26d36364e4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251601", ", Version Hash: ").concat("ef4d8f0b647618a5ceb69805a96d5171232c0294")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20556,8 +20557,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251599", "251599"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251599")), _ = 0), _
+        let _ = parseInt((e = "251601", "251601"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251601")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36605,4 +36606,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.9ee3c1871ab0b341a106.js.map
+//# sourceMappingURL=66318.3f70957a9a86e7afd49e.js.map
