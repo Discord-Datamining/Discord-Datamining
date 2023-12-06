@@ -15819,13 +15819,13 @@
         GUILD_PRODUCT_MISSING_BENEFITS_ERROR_TITLE: "What are you selling?",
         GUILD_PRODUCT_MISSING_BENEFITS_ERROR_BODY: "You need to at least add a Role or a Downloadable before you can publish this product. Just be sure to $[toggle on one or both](highlightHook) of the available benefit types in the footer of the product composer.",
         GUILD_PRODUCT_TERMS_NOT_ACCEPTED_ERROR_TITLE: "Terms not accepted",
-        GUILD_PRODUCT_TERMS_NOT_ACCEPTED_ERROR_BODY: "You haven’t accepted monetization terms yet, so you aren’t able to publish or earn from any Server Products currently. Once you’ve accept terms, you’ll be good to go.",
+        GUILD_PRODUCT_TERMS_NOT_ACCEPTED_ERROR_BODY: "You haven’t accepted monetization terms yet, so you aren’t able to publish or earn from any Server Products currently. Once you’ve accepted terms, you’ll be good to go.",
         GUILD_PRODUCT_GENERIC_ERROR_TITLE: "Error while publishing the product",
         CREATOR_MONETIZATION_PAYMENT_TEAM_REQUIRED_TITLE: "Payment team required",
         CREATOR_MONETIZATION_PAYMENT_TEAM_REQUIRED_BODY: "You must set up a payment team before you can publish. To do that, head over to the $[Payment](highlightHook) tab!",
         CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_TITLE: "Verified payment account required",
-        CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY: "You must setup and complete verification of your payment account before you can publish.\n\nHead over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](highlightHook) to get started.",
-        CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY_WITH_LINK: "You must setup and complete verification of your payment account before you can publish.\n\n[Click here]({url}) to get started, or head over to the $[Payment](highlightHook) tab at any time and click $[Edit Payment Info](highlightHook).",
+        CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY: "You must set up and complete verification of your payment account before you can publish.\n\nHead over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](highlightHook) to get started.",
+        CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY_WITH_LINK: "You must set up and complete verification of your payment account before you can publish.\n\n[Click here]({url}) to get started, or head over to the $[Payment](highlightHook) tab at any time and click $[Edit Payment Info](highlightHook).",
         CREATOR_MONETIZATION_RESTRICTED_GUILD_CANNOT_EDIT_PRODUCT_TITLE: "Cannot edit the product",
         CREATOR_MONETIZATION_RESTRICTED_GUILD_CANNOT_EDIT_PRODUCT_BODY: "Your server is currently restricted for monetization and you cannot edit products. Check your email for details",
         GUILD_PRODUCT_EDIT_MODAL_CARD_PREVIEW_HEADING: "Here's what members see",
@@ -15941,7 +15941,7 @@
         GUILD_STORE_SORT_OPTION_NEWEST_ARRIVALS: "Newest Arrivals",
         GUILD_STORE_SORT_OPTION_SELECT_MENU_ARIA: "Change the sort for Server Shop Listings",
         GUILD_STORE_SORT_OPTION_SELECT_MENU_SORT_BY_LABEL: "Sort By",
-        GUILD_STORE_SORT_OPTION_TOGGLE_ARIA: "Order items",
+        GUILD_STORE_SORT_OPTION_TOGGLE_ARIA: "Sort by:",
         CREATOR_MONETIZATION_SETTINGS_GUILD_PRODUCT_SORT_OPTION_TITLE: "Server Products Sort Order",
         CREATOR_MONETIZATION_SETTINGS_GUILD_PRODUCT_SORT_OPTION_DESCRIPTION: "Sets how your server products will be ordered in your Server Shop page.",
         CREATOR_MONETIZATION_SETTINGS_SERVER_SHOP_DEFAULT_TAB_OPTION_TITLE: "Server Shop Default Tab",
@@ -18273,7 +18273,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251682", ", Version Hash: ").concat("8f2f4f8c0e55b4eec23a35909879fc9702f573c5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251684", ", Version Hash: ").concat("829f4572759a24143665de4687fef1168e0eea0e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20566,8 +20566,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251682", "251682"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251682")), _ = 0), _
+        let _ = parseInt((e = "251684", "251684"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251684")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36621,4 +36621,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.496ca5c725a1f8c8e0e5.js.map
+//# sourceMappingURL=66318.71d16ec84370b5703c76.js.map
