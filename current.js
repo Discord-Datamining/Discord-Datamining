@@ -16694,7 +16694,10 @@
         CREATE_POLL_ANSWER_INPUT_LABEL: "Answer {answerNumber}",
         CREATE_POLL_MULTIPLE_ANSWERS: "Allow Multiple Answers",
         CREATE_POLL_POST: "Post",
-        CREATE_POLL_REMOVE_ANSWER: "Remove answer {answerNumber}",
+        CREATE_POLL_REMOVE_ANSWER_A11Y: "Remove answer {answerNumber}",
+        CREATE_POLL_REMOVE_ANSWER: "Remove answer",
+        CREATE_POLL_REPLACE_IMAGE: "Replace image",
+        CREATE_POLL_EDIT_ALT_TEXT: "Edit alt / descriptive text",
         POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
         POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}D Left}}",
         POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}H Left}}",
@@ -18283,7 +18286,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251905", ", Version Hash: ").concat("bff4f57916cead8c6929aa7cd7385678c8c97327")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251911", ", Version Hash: ").concat("73c82dde1f9aef6c59fb647842b5aa58895931e6")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20576,8 +20579,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251905", "251905"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251905")), _ = 0), _
+        let _ = parseInt((e = "251911", "251911"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251911")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36631,4 +36634,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.3c9e4f53c28fc88d51a2.js.map
+//# sourceMappingURL=66318.8fb7f2989cd494a9feac.js.map
