@@ -9884,6 +9884,7 @@
         LAUNCH_WELCOME_NUX_SUBTITLE: "Tap anywhere to dismiss.",
         LAUNCH_WELCOME_CHOOSE_A_THEME: "Choose a theme",
         APP_THEME: "App Theme",
+        CHANNEL_PREVIEW_A11Y_LABEL: "App preview, with your theme applied",
         THEME_PICKER_MESSAGE_AUTHOR_1: "Nelly",
         THEME_PICKER_MESSAGE_PREVIEW_1: "Enjoy your trip to spain!",
         THEME_PICKER_MESSAGE_AUTHOR_2: "bio study group",
@@ -18282,7 +18283,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251899", ", Version Hash: ").concat("c585b549a3bc20fb8e53e9d797a102bed80acf25")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251905", ", Version Hash: ").concat("bff4f57916cead8c6929aa7cd7385678c8c97327")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20575,8 +20576,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251899", "251899"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251899")), _ = 0), _
+        let _ = parseInt((e = "251905", "251905"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251905")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36630,4 +36631,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.30ad1f718c3d8513c444.js.map
+//# sourceMappingURL=66318.3c9e4f53c28fc88d51a2.js.map
