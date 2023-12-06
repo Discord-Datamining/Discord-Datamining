@@ -15092,7 +15092,8 @@
         INVENTORY_NEW_SETTING: "New Emoji Setting",
         INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2: "Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.",
         INVENTORY_CHANGE_IN_SETTINGS: "Change in your Emoji Settings",
-        INVENTORY_NEW_SETTING_ROLLBACK_DESRIPTION: "In the coming weeks, we're removing the Setting allowing non-server members to collect and use your server's emoji anywhere on Discord.\n\nUsers will only be able to access your server's emoji if they join your server.",
+        INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_1: "In the coming weeks, we're removing the Setting allowing non-server members to collect and use your server's emoji anywhere on Discord.",
+        INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_2: "Users will only be able to access your server's emoji if they join your server.",
         INVENTORY_VIEW_SETTING: "View Setting",
         INVENTORY_DISABLE_SETTING_TITLE_V2: "Are you sure you want to turn off external access to your server’s emoji?",
         INVENTORY_DISABLE_SETTING_TITLE_MOBILE: "Disable Pack Collection",
@@ -18280,7 +18281,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251825", ", Version Hash: ").concat("b6e7020adb4549d76725fbce0b120f1bc3257571")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251829", ", Version Hash: ").concat("baf140485b646b4342b108777a32b3b5ee44e56a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20573,8 +20574,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251825", "251825"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251825")), _ = 0), _
+        let _ = parseInt((e = "251829", "251829"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251829")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36628,4 +36629,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.a69b753d63a17d352812.js.map
+//# sourceMappingURL=66318.1be026494b40a7815a71.js.map
