@@ -16673,14 +16673,18 @@
         CREATE_POLL: "Create Poll",
         CREATE_POLL_HEADING: "Create a Poll",
         CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
+        CREATE_POLL_QUESTION_INPUT_LABEL: "Question",
         CREATE_POLL_QUESTION_PLACEHOLDER: "What question do you want to ask?",
-        CREATE_POLL_LAYOUT_DEFAULT: "Default layout",
-        CREATE_POLL_LAYOUT_IMAGE: "Image-only layout",
-        CREATE_POLL_ADD_IMAGE: "Add image",
+        CREATE_POLL_LAYOUTS_RADIOGROUP_ARIA_LABEL: "Poll answer style",
+        CREATE_POLL_LAYOUT_DEFAULT: "Text answers with optional media",
+        CREATE_POLL_LAYOUT_IMAGE: "Media only answers",
+        CREATE_POLL_ADD_IMAGE: "Add media, answer {answerNumber}",
+        CREATE_POLL_EDIT_IMAGE: "Update media, {imageName}, answer {answerNumber}",
         CREATE_POLL_ANSWER_PLACEHOLDER: "Add an answer",
+        CREATE_POLL_ANSWER_INPUT_LABEL: "Answer {answerNumber}",
         CREATE_POLL_MULTIPLE_ANSWERS: "Allow Multiple Answers",
         CREATE_POLL_POST: "Post",
-        CREATE_POLL_REMOVE_ANSWER: "Remove answer",
+        CREATE_POLL_REMOVE_ANSWER: "Remove answer {answerNumber}",
         POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
         POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}D Left}}",
         POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}H Left}}",
@@ -18269,7 +18273,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251664", ", Version Hash: ").concat("17c2db7ff5b2fd7131edb20bc5a514364016afb1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251667", ", Version Hash: ").concat("4638ec617ac529e623c25608c5a2c20de167e12b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20562,8 +20566,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251664", "251664"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251664")), _ = 0), _
+        let _ = parseInt((e = "251667", "251667"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251667")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36617,4 +36621,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.b3e7c14e952b8c89c100.js.map
+//# sourceMappingURL=66318.abe460a4fe9726e2137a.js.map
