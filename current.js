@@ -14456,7 +14456,7 @@
         GUILD_SETTINGS_AUDIT_LOG_HOME_SETTINGS_RESOURCE_CHANNEL_REMOVED: "Removed resource **!!{name}!!**",
         APPLICATION_DIRECTORY_PROFILE_TOOLTIP_PREMIUM: "This app has premium features!",
         APPLICATION_DIRECTORY_LISTING_TOOLTIP_PREMIUM: "Premium Features Available",
-        INTERACTION_PREMIUM_UPSELL_MOBILE: "This command requires !!{appName}!! Premium, which isn't available to purchase on mobile. You can learn more on desktop or web.",
+        INTERACTION_PREMIUM_UPSELL_MOBILE: "This command requires !!{appName}!! Premium, which isn't available to purchase on mobile.",
         NITRODUCTION_ONBOARDING_HEADING_PROFILE_CUSTOMIZATION_AVATAR: "Animate your avatar",
         NITRODUCTION_ONBOARDING_HEADING_PROFILE_CUSTOMIZATION_AVATAR_DECORATIONS: "Deck out your avatar",
         NITRODUCTION_ONBOARDING_HEADING_PROFILE_CUSTOMIZATION_BANNER: "Express yourself!",
@@ -18273,7 +18273,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251762", ", Version Hash: ").concat("f6fbd54e3bbd745aaa2ea6dc2406a52e41d7d0a7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("251774", ", Version Hash: ").concat("e3792d51814c327e226366935605934fd7835be7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20566,8 +20566,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "251762", "251762"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251762")), _ = 0), _
+        let _ = parseInt((e = "251774", "251774"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("251774")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36621,4 +36621,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.28065b93e28feb447f7d.js.map
+//# sourceMappingURL=66318.7af0556eae15511dfccb.js.map
