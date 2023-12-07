@@ -16702,10 +16702,10 @@
         CREATE_POLL_REPLACE_IMAGE: "Replace image",
         CREATE_POLL_EDIT_ALT_TEXT: "Edit alt / descriptive text",
         POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
-        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}D Left}}",
-        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}H Left}}",
-        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}M Left}}",
-        POLL_EXPIRED: "Poll Closed",
+        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, other {{days}d left}}",
+        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, other {{hours}h left}}",
+        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}m left}}",
+        POLL_EXPIRED: "Poll closed",
         FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
       })
@@ -18289,7 +18289,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252151", ", Version Hash: ").concat("d6d17b135f93b7fd963f6260cec66bf080b48bd8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252161", ", Version Hash: ").concat("c64ad8057a83845a4fc5eaf8ae464bd5cab3b0e2")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20582,8 +20582,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252151", "252151"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252151")), _ = 0), _
+        let _ = parseInt((e = "252161", "252161"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252161")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36648,4 +36648,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.a1948fe07a6c69f7421d.js.map
+//# sourceMappingURL=66318.480b80de03be1575bf10.js.map
