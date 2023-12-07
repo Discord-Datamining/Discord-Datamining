@@ -18292,7 +18292,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252338", ", Version Hash: ").concat("484cac53a36f3bcb9beb04ebc65293e89aaf619d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252344", ", Version Hash: ").concat("b2d75b5a9964e2721e37705c917a5a4a28eea9dd")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20585,8 +20585,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252338", "252338"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252338")), _ = 0), _
+        let _ = parseInt((e = "252344", "252344"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252344")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -28264,68 +28264,80 @@
     },
     449501: function(e, _, E) {
       "use strict";
-      let t;
+      let t, o;
       E.r(_), E.d(_, {
         default: function() {
-          return N
+          return O
         }
       }), E("222007");
-      var o = E("446674"),
-        n = E("95410"),
-        r = E("913144"),
-        i = E("49111");
-      let a = "PictureInPictureLocation",
-        I = new Map,
-        s = i.PictureInPicturePositions.BOTTOM_RIGHT,
-        T = {};
-      class S extends o.default.Store {
+      var n = E("446674"),
+        r = E("95410"),
+        i = E("913144"),
+        a = E("49111");
+      let I = "PictureInPictureLocation",
+        s = new Map,
+        T = a.PictureInPicturePositions.BOTTOM_RIGHT,
+        S = {};
+      class N extends n.default.Store {
         initialize() {
-          s = n.default.get(a, i.PictureInPicturePositions.BOTTOM_RIGHT)
+          T = r.default.get(I, a.PictureInPicturePositions.BOTTOM_RIGHT)
         }
         get pipWindow() {
-          return null == t ? null : I.get(t)
+          var e;
+          return null == t && null == o ? null : s.get(null !== (e = null != t ? t : o) && void 0 !== e ? e : "")
+        }
+        get pipVideoWindow() {
+          return null == t ? null : s.get(t)
+        }
+        get pipActivityWindow() {
+          return null == o ? null : s.get(o)
         }
         get pipWindows() {
-          return I
+          return s
         }
         isEmbeddedActivityHidden() {
-          var e;
-          return null == t || (null === (e = I.get(t)) || void 0 === e ? void 0 : e.component) !== i.PictureInPictureComponents.EMBED_IFRAME
+          return null == o
         }
         getDockedRect(e) {
-          return T[e]
+          return S[e]
         }
         isOpen(e) {
-          return null != e && I.has(e)
+          return null != e && s.has(e)
         }
       }
-      S.displayName = "PictureInPictureStore";
-      var N = new S(r.default, {
+      N.displayName = "PictureInPictureStore";
+      var O = new N(i.default, {
         PICTURE_IN_PICTURE_OPEN: function(e) {
           var _, E;
           let {
-            id: o,
-            component: n,
-            props: r
-          } = e, i = I.get(o);
-          if (null != i) return;
-          let a = {
-            id: o,
-            component: n,
-            position: null !== (_ = r.position) && void 0 !== _ ? _ : s,
-            props: r,
-            docked: null !== (E = r.docked) && void 0 !== E && E
+            id: n,
+            component: r,
+            props: i
+          } = e, I = s.get(n);
+          if (null != I) return;
+          let S = {
+            id: n,
+            component: r,
+            position: null !== (_ = i.position) && void 0 !== _ ? _ : T,
+            props: i,
+            docked: null !== (E = i.docked) && void 0 !== E && E
           };
-          I.set(o, a), null == t && (t = o)
+          s.set(n, S), r === a.PictureInPictureComponents.VIDEO ? null == t && (t = n) : r === a.PictureInPictureComponents.EMBED_IFRAME && null == o && (o = n)
         },
         PICTURE_IN_PICTURE_CLOSE: function(e) {
           let {
             id: _
           } = e;
-          if (!I.has(_)) return !1;
-          if (I.delete(_), t === _) {
-            let e = Array.from(I.keys());
-            t = 0 === e.length ? null : e[0]
+          if (!s.has(_)) return !1; {
+            s.delete(_);
+            let e = Array.from(s.keys());
+            t === _ ? t = e.find(e => {
+              let _ = s.get(e);
+              return null != _ && _.component === a.PictureInPictureComponents.VIDEO
+            }) : o === _ && (o = e.find(e => {
+              let _ = s.get(e);
+              return null != _ && _.component === a.PictureInPictureComponents.EMBED_IFRAME
+            }))
           }
         },
         PICTURE_IN_PICTURE_MOVE: function(e) {
@@ -28333,24 +28345,24 @@
             id: _,
             position: E
           } = e;
-          if (null == t || t !== _) return !1; {
+          if (null == _ || t !== _ && o !== _) return !1; {
             let e = new Map;
-            I.forEach((_, t) => {
+            s.forEach((_, t) => {
               e.set(t, {
                 ..._,
                 position: E
               })
-            }), I = e, s = E, n.default.set(a, E)
+            }), s = e, T = E, r.default.set(I, E)
           }
         },
         PICTURE_IN_PICTURE_HIDE: function(e) {
           let {
             id: _
           } = e;
-          if (t !== _) return !1; {
-            let e = I.get(_);
+          if (t !== _ && o !== _) return !1; {
+            let e = s.get(_);
             if (null == e) return !1;
-            I.set(_, {
+            s.set(_, {
               ...e,
               hidden: !0
             })
@@ -28360,10 +28372,10 @@
           let {
             id: _
           } = e;
-          if (t !== _) return !1; {
-            let e = I.get(_);
+          if (t !== _ && o !== _) return !1; {
+            let e = s.get(_);
             if (null == e) return !1;
-            I.set(_, {
+            s.set(_, {
               ...e,
               hidden: !1
             })
@@ -28374,16 +28386,16 @@
             id: _,
             rect: E
           } = e;
-          T[_] = E
+          S[_] = E
         },
         PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: function(e) {
           let {
             id: _
-          } = e;
-          t = _
+          } = e, E = s.get(_);
+          null != E && (E.component === a.PictureInPictureComponents.VIDEO ? t = _ : E.component === a.PictureInPictureComponents.EMBED_IFRAME && (o = _))
         },
         LOGOUT: function() {
-          t = null, I = new Map
+          t = null, o = null, s = new Map
         }
       })
     },
@@ -36651,4 +36663,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.1e145e6c0fbb164a58aa.js.map
+//# sourceMappingURL=66318.7359cdcfd2b00361a328.js.map
