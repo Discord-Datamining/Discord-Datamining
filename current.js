@@ -4140,11 +4140,8 @@
         NEW_MESSAGE: "New Message",
         EXPIRES_IN: "Expires in:",
         DELETE_CHANNEL_BODY: "Are you sure you want to delete **!!{channelName}!!**? This cannot be undone.",
-        DELETE_FAVORITES_CHANNEL_TITLE: "Remove from Favorites",
-        DELETE_FAVORITES_CHANNEL_BODY: "Are you sure you want to remove **!!{channelName}!!** from Favorites? You can add **!!{channelName}!!** back into Favorites at any time.",
-        DELETE_FAVORITES_CHANNEL_CONFIRM: "Remove Channel",
-        DELETE_FAVORITES_CATEGORY_BODY: "Are you sure you want to delete **!!{channelName}!!** from Favorites? Conversations under this category will be uncategorized.",
-        DELETE_FAVORITES_CATEGORY_CONFIRM: "Remove Category",
+        DELETE_CHANNEL_BODY_FAVORITES: "Are you sure you want to delete **!!{channelName}!!** from your Favorites? This cannot be undone.",
+        DELETE_CATEGORY_BODY_FAVORITES: "Are you sure you want to delete **!!{channelName}!!** from your Favorites? This cannot be undone. Conversations under this category will be uncategorized.",
         SERVERS: "Servers",
         USERS: "Users",
         USER: "User",
@@ -18292,7 +18289,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252301", ", Version Hash: ").concat("22bc7c66498c8de6329746e09e2abaf9466e6fb1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252302", ", Version Hash: ").concat("8602c9a0f84f8ed5ca18316d06d87b80a17abe53")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20585,8 +20582,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252301", "252301"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252301")), _ = 0), _
+        let _ = parseInt((e = "252302", "252302"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252302")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36651,4 +36648,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.7f25345e2e63ff0534ee.js.map
+//# sourceMappingURL=66318.7e4db94fa5fc06235ebd.js.map
