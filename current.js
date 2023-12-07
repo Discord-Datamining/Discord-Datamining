@@ -18292,7 +18292,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252366", ", Version Hash: ").concat("9c1acecebd6fb02af227389b345942bc85f45ee6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252368", ", Version Hash: ").concat("2de4aafd8633efdc9d21e92f1441929c11ab2a6b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19810,6 +19810,10 @@
           actions: ["CHANNEL_UPDATES", "VOICE_STATE_UPDATES"],
           inlineRequire: () => E("783252").default
         },
+        VoiceChannelNotificationsManager: {
+          actions: ["VOICE_CHANNEL_SELECT"],
+          inlineRequire: () => E("778727").default
+        },
         VoicePermissionManager: {
           actions: ["VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATES"],
           inlineRequire: () => E("310045").default
@@ -20585,8 +20589,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252366", "252366"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252366")), _ = 0), _
+        let _ = parseInt((e = "252368", "252368"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252368")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -27935,6 +27939,68 @@
           return t
         }
       })
+    },
+    818766: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        sendVoiceChannelActivityNotification: function() {
+          return n
+        }
+      });
+      var t = E("872717"),
+        o = E("49111");
+
+      function n(e, _) {
+        t.default.post({
+          url: o.Endpoints.VOICE_CHANNEL_NOTIFICATIONS(e),
+          query: {
+            first_user: _
+          }
+        })
+      }
+    },
+    778727: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return s
+        }
+      }), E("222007");
+      var t = E("689988"),
+        o = E("191145"),
+        n = E("721281"),
+        r = E("42203"),
+        i = E("800762"),
+        a = E("818766");
+      class I extends t.default {
+        handleVoiceChannelSelect(e) {
+          var _;
+          let {
+            channelId: E,
+            guildId: t
+          } = e;
+          if (null == E || null == t) return;
+          let I = r.default.getChannel(E),
+            {
+              voiceChannelActivityNotifsEnabled: s
+            } = n.VoiceActivityNotificationGuildExperiment.getCurrentConfig({
+              guildId: null !== (_ = null == I ? void 0 : I.getGuildId()) && void 0 !== _ ? _ : "",
+              location: "voiceChannelNotificationsManager"
+            });
+          if (s && (null == I ? void 0 : I.isGuildVoice())) {
+            let e = o.default.getParticipants(E).length,
+              _ = i.default.isInChannel(E),
+              t = e === (_ ? 1 : 0);
+            t ? a.sendVoiceChannelActivityNotification(E, t) : e === (_ ? 2 : 1) && a.sendVoiceChannelActivityNotification(E, t)
+          }
+        }
+        constructor(...e) {
+          super(...e), this.actions = {
+            VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
+          }
+        }
+      }
+      var s = new I
     },
     517763: function(e, _, E) {
       "use strict";
@@ -36663,4 +36729,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.5932e1d0a82fd9a93393.js.map
+//# sourceMappingURL=66318.d0f558fa5f28f933af4d.js.map
