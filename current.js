@@ -10149,6 +10149,8 @@
         VOICE_PANEL_BAD_CONNECTION_CTA_SUB_LABEL: "Some participants will be audio only.",
         VOICE_PANEL_FOR_DEVELOPERS: "For Developers",
         VOICE_PANEL_SCREENSHARE_SHORTCUTS: "Screen Share Shortcuts",
+        VOICE_PANEL_HIDE_DRAWER: "Hide Drawer",
+        VOICE_PANEL_SHOW_DRAWER: "Show Settings Drawer",
         NUF_DESKTOP_TEMPLATES_TITLE: "Create your first Discord server",
         NUF_DESKTOP_TEMPLATES_SUBTITLE: "Your server is where you and your friends hang out.\n  Make yours and start talking.",
         TOO_MANY_USER_GUILDS_TITLE_2: "You are at the {quantity, number} server limit.",
@@ -18319,7 +18321,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252862", ", Version Hash: ").concat("16200fd34828c16dbb988e81f1cc265c4c4a4247")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252877", ", Version Hash: ").concat("d313cf42c37b1c8fb8030a4117b8ab8a697058ea")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20617,8 +20619,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252862", "252862"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252862")), _ = 0), _
+        let _ = parseInt((e = "252877", "252877"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252877")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36757,4 +36759,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.2add53d0a2eef5aa47a0.js.map
+//# sourceMappingURL=66318.7faa30dbc16ce329ef6b.js.map
