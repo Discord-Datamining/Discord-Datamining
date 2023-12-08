@@ -492,6 +492,7 @@
         APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_ALPHABETICAL: "Alphabetical",
         APP_LAUNCHER_ALL_COMMANDS_HEADER: "All Commands",
         APP_LAUNCHER_NO_REQUIRED_OPTIONS_CALLOUT: "Nothing required. You can send the command or add an option below",
+        APP_LAUNCHER_NO_OPTIONS_CALLOUT: "This command has no options. Send it!",
         APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER: "Select an option below",
         APP_LAUNCHER_SEARCH_PLACEHOLDER: "Search Apps & Commands",
         APP_LAUNCHER_HOME_EMPTY_STATE_BODY: "No apps have been installed in this server yet",
@@ -18316,7 +18317,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252812", ", Version Hash: ").concat("dc56b15f5965276247128777a3a33f3d2a590492")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252829", ", Version Hash: ").concat("5ddd3a59a3b93cac29cb7bd72f5e62afdc919ef1")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20614,8 +20615,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252812", "252812"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252812")), _ = 0), _
+        let _ = parseInt((e = "252829", "252829"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252829")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36754,4 +36755,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.b9b73a96183bc4b966e5.js.map
+//# sourceMappingURL=66318.c92835a370f55d6d0d3d.js.map
