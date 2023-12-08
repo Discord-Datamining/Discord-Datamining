@@ -6763,14 +6763,14 @@
         PREMIUM_MARKETING_WHATS_NEW_REMIXING_DESCRIPTION_NON_SUB: "Nitro members get early beta access to the Remix tool. Join Nitro to create and share your own memes within the mobile app, and much more!",
         PREMIUM_MARKETING_WHATS_NEW_REMIXING_DESCRIPTION_SUB: "Nitro members get early beta access to the Remix tool on mobile. Remix lets you create and share your own memes by adding text, emoji, and stickers to images. Head on over to your mobile app to check it out!",
         PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_TITLE: "New Avatar Decorations",
-        PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_SUBTITLE_SUB: "Enjoy special deals in the shop, where you can buy and collect your favorite styles!",
-        PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_SUBTITLE_NON_SUB: "Unlock access to the shop, where you can buy and collect the latest styles for your avatar.",
-        PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_DESCRIPTION_SUB: "Ready for a new look? The latest avatar decorations just landed in the shop! Find your favorite styles to rock for any occasion.",
+        PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_SUBTITLE_SUB: "Enjoy special deals in the Shop, where you can buy and collect your favorite styles!",
+        PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_SUBTITLE_NON_SUB: "Unlock access to the Shop, where you can buy and collect the latest styles for your avatar.",
+        PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_DESCRIPTION_SUB: "Ready for a new look? The latest avatar decorations just landed in the Shop! Find your favorite styles to rock for any occasion.",
         PREMIUM_MARKETING_WHATS_NEW_AVATAR_DECO_DESCRIPTION_NON_SUB: "Ready for a new look? Get Nitro to buy and collect your favorite avatar decorations to rock for any occasion.",
         PREMIUM_MARKETING_WHATS_NEW_PROFILE_EFFECTS_TITLE: "Profile Effects",
-        PREMIUM_MARKETING_WHATS_NEW_PROFILE_EFFECTS_SUBTITLE: "Level up your look with the latest addition to the shop: animated profile effects.",
-        PREMIUM_MARKETING_WHATS_NEW_PROFILE_EFFECTS_DESCRIPTION_SUB: "Complete your profile vibe with fun, flashy profile effects. Early access to the shop and special deals are now available with Nitro.",
-        PREMIUM_MARKETING_WHATS_NEW_PROFILE_EFFECTS_DESCRIPTION_NON_SUB: "Complete your profile vibe with fun, flashy profile effects. Unlock exclusive shop access and special deals with Nitro.",
+        PREMIUM_MARKETING_WHATS_NEW_PROFILE_EFFECTS_SUBTITLE: "Level up your look with the latest addition to the Shop: animated profile effects.",
+        PREMIUM_MARKETING_WHATS_NEW_PROFILE_EFFECTS_DESCRIPTION_SUB: "Complete your profile vibe with fun, flashy profile effects. Early access to the Shop and special deals are now available with Nitro.",
+        PREMIUM_MARKETING_WHATS_NEW_PROFILE_EFFECTS_DESCRIPTION_NON_SUB: "Complete your profile vibe with fun, flashy profile effects. Unlock exclusive Shop access and special deals with Nitro.",
         PREMIUM_MARKETING_WHATS_NEW_CLIPS_SUBTITLE: "Capture your favorite streaming moments right in Discord and share with friends.",
         PREMIUM_MARKETING_WHATS_NEW_CLIPS_DESCRIPTION_SUB: "Start creating and sharing your favorite clips. Early access now available with Nitro.",
         PREMIUM_MARKETING_WHATS_NEW_CLIPS_DESCRIPTION_NON_SUB: "Clip, edit, share! It's as simple as that. Get early access to clips, only with Nitro.",
@@ -7190,8 +7190,8 @@
         PREMIUM_NITRO_DROP_2023_BANNER_NON_TIER_2_SUB_SUBHEADER: "Check out the latest perks: Themes, Avatar Decorations, Super Reactions (coming soon), and Soundboard!",
         PREMIUM_NITRO_DROP_2023_BANNER_NON_TIER_2_SUB_SUBHEADER_2: "Check out the latest perks: Themes, Avatar Decorations, Soundboard, and Super Reactions!",
         PREMIUM_FEATURE_AVATAR_DECORATIONS_HEADER: "Avatar Decorations",
-        PREMIUM_FEATURE_AVATAR_DECORATIONS_SUBHEADER: "Access exclusive decorations and the shop, where you can buy and collect your favorite styles.",
-        PREMIUM_FEATURE_AVATAR_DECORATIONS_GRID: "Access to shop and exclusive avatar decorations",
+        PREMIUM_FEATURE_AVATAR_DECORATIONS_SUBHEADER: "Access exclusive decorations and the Shop, where you can buy and collect your favorite styles.",
+        PREMIUM_FEATURE_AVATAR_DECORATIONS_GRID: "Access to Shop and exclusive avatar decorations",
         EMOJI_PICKER_PREMIUM_UPSELL_BODY: "Use these emoji and more by subscribing to Nitro.",
         EMOJI_PICKER_PREMIUM_TIER_0_UPSELL_BODY: "Use these emoji and more by subscribing to {planName}.",
         EMOJI_PICKER_PREMIUM_UPSELL_BODY_TOP_OF_LIST: "Unlock every emoji and use them anywhere with Nitro.",
@@ -14957,7 +14957,7 @@
         COLLECTIBLES_UPSELL_ENTRYPOINT_HEADER: "Collect new avatar decorations!",
         COLLECTIBLES_AVAILABLE_FOR_PURCHASE: "Available For Purchase",
         COLLECTIBLES_ACQUIRED_DATE: "Acquired {date}",
-        COLLECTIBLES_GO_TO_SHOP_INSTRUCTIONS: "Want this decoration for yourself? Head to the shop to buy and add it to your collection!",
+        COLLECTIBLES_GO_TO_SHOP_INSTRUCTIONS: "Want this decoration for yourself? Head to the Shop to buy and add it to your collection!",
         COLLECTIBLES_IAP_BANNER_SUBTITLE: "Style your avatar’s look with the newest decorations, now available to buy and collect with Nitro.",
         COLLECTIBLES_MOBILE_IAP_NOTICE: "The ability to acquire new decorations is not available on this platform.",
         COLLECTIBLES_MOBILE_IAP_NOTICE_EDIT_HEADER: "Add more flair to your avatar. The ability to acquire new decorations is not available on this platform.",
@@ -14997,26 +14997,26 @@
         COLLECTIBLES_PURCHASE_DISCLAIMER: "Hey! This purchase is non-refundable. Once you complete your purchase, the item will be available for use immediately and can be accessed in your User Profile settings.",
         COLLECTIBLES_PURCHASE_DISCLAIMER_WAIVER: "You understand that you will receive your item immediately upon purchase, and you waive your right to withdraw.",
         COLLECTIBLES_SHOP_ERROR_HEADING: "Well, this is awkward.",
-        COLLECTIBLES_SHOP_ERROR_SHOP_LOAD: "Hmmm, we weren't able to load the shop. Check back later.",
+        COLLECTIBLES_SHOP_ERROR_SHOP_LOAD: "Hmmm, we weren't able to load the Shop. Check back later.",
         CHANGE_DECORATION_MODAL_PURCHASE_HEADER: "Your Decorations",
         CHANGE_DECORATION_MODAL_STARTER_DESC: "Use anytime with an active Nitro subscription.",
         COLLECTIBLES_CHAT_PREVIEW_TEXT: "Look at my beautiful decoration",
         CHANGE_DECORATION_MODAL_PREMIUM_STARTER_HEADER: "Exclusive to Nitro",
         CHANGE_DECORATION_MODAL_PREMIUM_STARTER_DESC: "Collect and use these bonus decorations anytime with an active Nitro subscription.",
-        CHANGE_DECORATION_MODAL_PREVIEW_PURCHASE: "Want this decoration for yourself? Visit the shop to buy and add it to your collection. Only with Nitro.",
+        CHANGE_DECORATION_MODAL_PREVIEW_PURCHASE: "Want this decoration for yourself? Visit the Shop to buy and add it to your collection. Only with Nitro.",
         CHANGE_DECORATION_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus decoration anytime with an active Nitro subscription.",
         CHANGE_DECORATION_MODAL_PREVIEW_STARTER_CHURNED: "Use this bonus decoration with an active Nitro subscription.",
-        CHANGE_DECORATION_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this decoration for yourself? Head to the shop to buy and collect it!",
-        CHANGE_DECORATION_MODAL_PREVIEW_STARTER_PREMIUM: "Want this for yourself? Head to the shop to collect it!",
+        CHANGE_DECORATION_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this decoration for yourself? Head to the Shop to buy and collect it!",
+        CHANGE_DECORATION_MODAL_PREVIEW_STARTER_PREMIUM: "Want this for yourself? Head to the Shop to collect it!",
         CHANGE_DECORATION_MODAL_SHOP_PREVIEW_HEADER: "Shop Preview",
-        CHANGE_DECORATION_MODAL_SHOP_PREVIEW_DESC: "Try on some of the decorations currently available for purchase in the shop.",
+        CHANGE_DECORATION_MODAL_SHOP_PREVIEW_DESC: "Try on some of the decorations currently available for purchase in the Shop.",
         CHANGE_DECORATION_MODAL_SHOP_PREVIEW_HEADER_STARTER_DESC: "Buy and collect decorations with a Nitro subscription.",
         CHANGE_DECORATION_MODAL_CHAT_PREVIEW: "Chat Preview",
         CHANGE_PFX_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus profile effect anytime with an active Nitro subscription.",
         CHANGE_PFX_MODAL_PREVIEW_STARTER_CHURNED: "Use this bonus profile effect with an active Nitro subscription.",
         CHANGE_PFX_MODAL_SHOP_PREVIEW_HEADER_STARTER_DESC: "Buy and collect profile effects with a Nitro subscription.",
         COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_TITLE: "New Avatar Decorations!",
-        COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_SUB_TITLE: "Try on some of the decorations currently available in the shop.",
+        COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_SUB_TITLE: "Try on some of the decorations currently available in the Shop.",
         COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_CTA: "Check out Shop",
         COLLECTIBLES_BUY_PROFILE_EFFECT: "Buy Profile Effect",
         COLLECTIBLES_DETAILS_MODAL_PROFILE_EFFECT_PREMIUM_PURCHASE_DISCLAIMER: "Once purchased, this effect will be added to your collection and can be used anytime",
@@ -15024,10 +15024,10 @@
         COLLECTIBLES_PROFILE_EFFECT_PERMANENT_COLLECTION: "This effect is now part of your collection and can be used anytime!",
         COLLECTIBLES_DETAILS_MODAL_PROFILE_EFFECTS_NON_PREMIUM_PURCHASE_DISCLAIMER: "After subscribing to Nitro, you’ll have to purchase this effect separately. Nitro subscriptions become non-refundable once you’ve purchased a effect.",
         COLLECTIBLES_PROFILE_EFFECT_PREMIUM_DISCOUNT_TOOLTIP_TEXT: "Nitro subscribers get a discount on this effect",
-        CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE: "Want this profile effect for yourself? Visit the shop to buy and add it to your collection. Only with Nitro.",
-        CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this profile effect for yourself? Head to the shop to buy and collect it!",
+        CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE: "Want this profile effect for yourself? Visit the Shop to buy and add it to your collection. Only with Nitro.",
+        CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this profile effect for yourself? Head to the Shop to buy and collect it!",
         CHANGE_PROFILE_EFFECT_MODAL_SHOP_PREVIEW_HEADER_STARTER_DESC: "Buy and collect profile effects with a Nitro subscription.",
-        COLLECTIBLES_DAYS_LEFT_IN_SHOP: "{days} days left in shop",
+        COLLECTIBLES_DAYS_LEFT_IN_SHOP: "{days} days left in Shop",
         COLLECTIBLES_DAYS_LEFT: "{days} days left",
         COLLECTIBLES_LAST_DAY: "Last day to buy",
         COLLECTIBLES_DISCORD_SHOP: "Discord Shop",
@@ -18301,7 +18301,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252677", ", Version Hash: ").concat("b644d34fc6213c1daea2cbcf3dca40056bc5b171")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252678", ", Version Hash: ").concat("4fc30882a8783229a22fd6187df675aa4969629a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20598,8 +20598,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252677", "252677"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252677")), _ = 0), _
+        let _ = parseInt((e = "252678", "252678"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252678")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36738,4 +36738,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.fdb7541d476d3e7345bc.js.map
+//# sourceMappingURL=66318.4e68f9d10517a222eaf4.js.map
