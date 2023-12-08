@@ -16529,7 +16529,7 @@
         MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE: "YouTube",
         MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
         MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
-        MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "Quarantined for unallowed content in user profile",
+        MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "User can't talk in server until they change their member name",
         BAN_MULTIPLE_CONFIRM_TITLE: "Would you like to ban {count, plural, one {1 member} other {{count} members}}?",
         BAN_MULTIPLE_SUCCESS_TOAST: "Mass ban succesful",
         BAN_MULTIPLE_FAILED_TOAST: "Mass ban failed",
@@ -18301,7 +18301,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252734", ", Version Hash: ").concat("4e2485df6945c83b5f9af66da2d0be2e93cec627")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252737", ", Version Hash: ").concat("2d42aab7034afb417a9013de8d5730cf5e26141b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20598,8 +20598,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252734", "252734"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252734")), _ = 0), _
+        let _ = parseInt((e = "252737", "252737"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252737")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36738,4 +36738,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.ef003b3358b3c8efaed9.js.map
+//# sourceMappingURL=66318.cd819ea46781a7e77f34.js.map
