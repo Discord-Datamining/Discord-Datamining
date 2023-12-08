@@ -3902,6 +3902,8 @@
         UPDATE_DURING_CALL_TITLE: "Briefly leave voice?",
         UPDATE_DURING_CALL_BODY: "Updating Discord while in a voice channel will cause you to leave briefly. You're probably going to update anyway but, you know, just warning you.",
         UPDATE_DURING_CALL_CONTINUE: "Update anyway!",
+        TAB_BADGE_A11Y_LABEL: "{count, plural, =0 {} =1 {, # new} other {, # new}},",
+        SERVERS_TAB_BADGE_A11Y_LABEL: "{count, plural, =0 {} =1 {, # mention} other {, # mentions}},",
         YOU_TAB_ONBOARDING_AVATAR_TITLE: "Add an avatar",
         YOU_TAB_ONBOARDING_AVATAR_DESCRIPTION: "Show off your personality and help others online know they’re talking to the right person!",
         YOU_TAB_ONBOARDING_ABOUT_ME_TITLE: "Add a bio",
@@ -8248,6 +8250,7 @@
         USER_ACTIVITY_ACTION_DOWNLOAD_APP: "Download",
         USER_ACTIVITY_CANNOT_JOIN_SELF: "You can't join yourself",
         USER_ACTIVITY_NOT_DETECTED: "{name} is not detected",
+        USER_ACTIVITY_LISTENING: "Listening",
         USER_ACTIVITY_LISTEN_ALONG: "Listen Along",
         USER_ACTIVITY_WATCH_ALONG: "Watch Along",
         USER_ACTIVITY_PLAY_ON_PLATFORM: "Play on {platform}",
@@ -18313,7 +18316,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252802", ", Version Hash: ").concat("538e580c88d3aa8d94f0ba60242df0824fdf9588")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252808", ", Version Hash: ").concat("46bfbadacb99974b53129531ef9ebae09fed6c12")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20611,8 +20614,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252802", "252802"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252802")), _ = 0), _
+        let _ = parseInt((e = "252808", "252808"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252808")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36751,4 +36754,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.2d6849f8c27f46167099.js.map
+//# sourceMappingURL=66318.a3691431cedc5a56a7df.js.map
