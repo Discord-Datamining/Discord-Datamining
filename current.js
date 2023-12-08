@@ -13276,6 +13276,8 @@
         MEMBER_SAFETY_TABLE_OVERFLOW_TOOLTIP: "More Options",
         MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY: "Unusual DM Activity",
         MEMBER_SAFETY_COMMUNICATION_DISABLED: "Timed Out",
+        MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY: "Unusual Account Activity",
+        MEMBER_SAFETY_USERNAME_QUARANTINED: "Quarantined",
         MEMBER_SAFETY_COMMUNICATION_DISABLED_TOOLTIP: "Timed out for",
         MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY_TOOLTIP: "Sent excessive DMs to non-friend server members in last 24 hrs",
         MEMBER_SAFETY_MEMBER_ROW_ARIA_LABEL: "Member {name}",
@@ -18295,7 +18297,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252649", ", Version Hash: ").concat("cc83648b244def5c6f2c3b0c932d97428d197dcc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252653", ", Version Hash: ").concat("d2a1bca4a540f710e823115dd29b052e9e89a246")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20592,8 +20594,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252649", "252649"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252649")), _ = 0), _
+        let _ = parseInt((e = "252653", "252653"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252653")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36732,4 +36734,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.fcb91c73f9496100016c.js.map
+//# sourceMappingURL=66318.67beb829815636cb993a.js.map
