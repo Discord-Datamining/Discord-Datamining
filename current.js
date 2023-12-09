@@ -18321,7 +18321,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252907", ", Version Hash: ").concat("60bdc292043ac19f99a00553a677129f85b95f8e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252910", ", Version Hash: ").concat("9e687414c547d4c9af898e97622c8b1d34dbcab3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20619,8 +20619,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252907", "252907"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252907")), _ = 0), _
+        let _ = parseInt((e = "252910", "252910"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252910")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34865,46 +34865,27 @@
             n = e.pos + _;
           for (; e.pos < n;) {
             let [_, t] = e.tag();
-            switch (_) {
-              case 1:
-                o.primaryColor = h.UInt64Value.internalBinaryRead(e, e.uint32(), E, o.primaryColor);
-                break;
-              case 2:
-                o.backgroundGradientPresetId = h.UInt32Value.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientPresetId);
-                break;
-              case 3:
-                o.backgroundGradientAngle = h.FloatValue.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientAngle);
-                break;
-              default:
-                let n = E.readUnknownField;
-                if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
-                let r = e.skip(t);
-                !1 !== n && (!0 === n ? M.UnknownFieldHandler.onRead : n)(this.typeName, o, _, t, r)
+            if (2 === _) o.backgroundGradientPresetId = h.UInt32Value.internalBinaryRead(e, e.uint32(), E, o.backgroundGradientPresetId);
+            else {
+              let n = E.readUnknownField;
+              if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
+              let r = e.skip(t);
+              !1 !== n && (!0 === n ? M.UnknownFieldHandler.onRead : n)(this.typeName, o, _, t, r)
             }
           }
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.primaryColor && h.UInt64Value.internalBinaryWrite(e.primaryColor, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.backgroundGradientPresetId && h.UInt32Value.internalBinaryWrite(e.backgroundGradientPresetId, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.backgroundGradientAngle && h.FloatValue.internalBinaryWrite(e.backgroundGradientAngle, _.tag(3, M.WireType.LengthDelimited).fork(), E).join();
+          e.backgroundGradientPresetId && h.UInt32Value.internalBinaryWrite(e.backgroundGradientPresetId, _.tag(2, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
         constructor() {
           super("discord_protos.discord_users.v1.ClientThemeSettings", [{
-            no: 1,
-            name: "primary_color",
-            kind: "message",
-            T: () => h.UInt64Value
-          }, {
             no: 2,
             name: "background_gradient_preset_id",
             kind: "message",
             T: () => h.UInt32Value
-          }, {
-            no: 3,
-            name: "background_gradient_angle",
-            kind: "message",
-            T: () => h.FloatValue
           }])
         }
       }
@@ -35780,26 +35761,23 @@
     750028: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
-        FloatValue: function() {
-          return r
-        },
         Int64Value: function() {
-          return a
+          return i
         },
         UInt64Value: function() {
-          return s
+          return I
         },
         Int32Value: function() {
-          return S
+          return T
         },
         UInt32Value: function() {
-          return O
+          return N
         },
         BoolValue: function() {
-          return R
+          return A
         },
         StringValue: function() {
-          return u
+          return l
         }
       }), E("222007"), E("70102"), E("311790"), E("477657"), E("811875"), E("90301"), E("652153"), E("28797"), E("817884"), E("597349"), E("667536"), E("690341");
       var t = E("849266");
@@ -35894,8 +35872,8 @@
           }])
         }
       }
-      let r = new n;
-      class i extends t.MessageType {
+      new n;
+      class r extends t.MessageType {
         internalJsonWrite(e, _) {
           return this.refJsonWriter.scalar(t.ScalarType.INT64, e.value, "value", !1, !0)
         }
@@ -35940,8 +35918,8 @@
           }])
         }
       }
-      let a = new i;
-      class I extends t.MessageType {
+      let i = new r;
+      class a extends t.MessageType {
         internalJsonWrite(e, _) {
           return this.refJsonWriter.scalar(t.ScalarType.UINT64, e.value, "value", !1, !0)
         }
@@ -35986,8 +35964,8 @@
           }])
         }
       }
-      let s = new I;
-      class T extends t.MessageType {
+      let I = new a;
+      class s extends t.MessageType {
         internalJsonWrite(e, _) {
           return this.refJsonWriter.scalar(5, e.value, "value", !1, !0)
         }
@@ -36032,8 +36010,8 @@
           }])
         }
       }
-      let S = new T;
-      class N extends t.MessageType {
+      let T = new s;
+      class S extends t.MessageType {
         internalJsonWrite(e, _) {
           return this.refJsonWriter.scalar(13, e.value, "value", !1, !0)
         }
@@ -36078,8 +36056,8 @@
           }])
         }
       }
-      let O = new N;
-      class A extends t.MessageType {
+      let N = new S;
+      class O extends t.MessageType {
         internalJsonWrite(e, _) {
           return e.value
         }
@@ -36124,8 +36102,8 @@
           }])
         }
       }
-      let R = new A;
-      class l extends t.MessageType {
+      let A = new O;
+      class R extends t.MessageType {
         internalJsonWrite(e, _) {
           return e.value
         }
@@ -36170,8 +36148,8 @@
           }])
         }
       }
-      let u = new l;
-      class L extends t.MessageType {
+      let l = new R;
+      class u extends t.MessageType {
         internalJsonWrite(e, _) {
           return this.refJsonWriter.scalar(12, e.value, "value", !1, !0)
         }
@@ -36216,7 +36194,7 @@
           }])
         }
       }
-      new L
+      new u
     },
     233736: function(e, _, E) {
       "use strict";
@@ -36759,4 +36737,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.90829a7c826a6e02e6cc.js.map
+//# sourceMappingURL=66318.24df116688d623998c89.js.map
