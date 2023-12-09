@@ -15430,11 +15430,11 @@
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_SELECT_TEAM_LABEL: "Select team",
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_LABEL: "Enter 2FA verification code",
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_PLACEHOLDER: "MFA Code",
-        GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Server Subscriptions",
-        GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "Disable server subscriptions for **!!{guildName}!!**. There should be no remaining payouts and all tiers must be deleted in order to complete this action.",
-        GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Server Subscriptions",
-        GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Server Subscriptions",
-        GUILD_ROLE_SUBSCRIPTION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
+        CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Monetization",
+        CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "This will disable both server subscriptions **and** products for **!!{guildName}!!**. There should be no remaining payouts, and all tiers and product listings must be deleted in order to complete this action.",
+        CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Monetization",
+        CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Monetization",
+        CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions and products for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
         GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_HEADER: "Select Premium Emoji",
         GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_DESCRIPTION: "Want to upload new emoji? You can do so from the [Manage Premium Emoji](transitionToManageEmoji) page.",
         GUILD_ROLE_SUBSCRIPTION_EMOJI_ADD_MODAL_SAVE_BUTTON: "Add {totalEmoji, plural, =1 {1 Emoji} other {{totalEmoji} Emoji}}",
@@ -18311,7 +18311,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252913", ", Version Hash: ").concat("23517fdb9500b533d4b4cf6d2c0ac3fc0510aa18")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252914", ", Version Hash: ").concat("2289662b130048aecf34df9938c09b3fa64bbe09")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20608,8 +20608,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252913", "252913"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252913")), _ = 0), _
+        let _ = parseInt((e = "252914", "252914"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252914")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36726,4 +36726,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.d79a2a270dea6df9ffa2.js.map
+//# sourceMappingURL=66318.994ff30e1292a016557c.js.map
