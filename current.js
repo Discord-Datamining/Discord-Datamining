@@ -3892,8 +3892,6 @@
         LANGUAGE: "Language",
         LANGUAGE_SELECT: "Select a Language",
         LANGUAGE_UPDATED: "Language has been Updated.",
-        ESLATAM_LANGUAGE_LAUNCH_NOTICE: "Discord now supports Latin American Spanish.",
-        ESLATAM_LANGUAGE_LAUNCH_NOTICE_CTA: "Change Language",
         CHECKING_FOR_UPDATES: "Checking For Updates",
         UPDATE_AVAILABLE: "Downloading Update",
         UPDATE_DOWNLOADED: "Update Ready!",
@@ -9463,7 +9461,6 @@
         ru: "Russian",
         it: "Italian",
         "es-ES": "Spanish",
-        "es-419": "Spanish, LATAM",
         ko: "Korean",
         nl: "Dutch",
         "sv-SE": "Swedish",
@@ -16754,7 +16751,6 @@
         "./de.jsona": "293151",
         "./el.jsona": "195418",
         "./en-GB.jsona": "777640",
-        "./es-419.jsona": "523730",
         "./es-ES.jsona": "291795",
         "./fi.jsona": "164426",
         "./fr.jsona": "289264",
@@ -17469,12 +17465,6 @@
         name: "Espa\xf1ol",
         englishName: "Spanish",
         code: "es-ES",
-        postgresLang: "spanish",
-        enabled: !0
-      }, {
-        name: "Espa\xf1ol, LATAM",
-        englishName: "Spanish, LATAM",
-        code: "es-419",
         postgresLang: "spanish",
         enabled: !0
       }, {
@@ -18321,7 +18311,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252910", ", Version Hash: ").concat("9e687414c547d4c9af898e97622c8b1d34dbcab3")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("252913", ", Version Hash: ").concat("23517fdb9500b533d4b4cf6d2c0ac3fc0510aa18")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -18403,9 +18393,8 @@
         de: () => E.el("640841").then(E.bind(E, "640841")),
         el: () => E.el("295194").then(E.bind(E, "295194")),
         "en-GB": () => E.el("796137").then(E.bind(E, "796137")),
-        "en-US": () => E.el("437757").then(E.bind(E, "437757")),
         "es-ES": () => E.el("442177").then(E.bind(E, "442177")),
-        "es-419": () => E.el("442177").then(E.bind(E, "442177")),
+        "en-US": () => E.el("437757").then(E.bind(E, "437757")),
         fi: () => E.el("465431").then(E.bind(E, "465431")),
         fr: () => E.el("754192").then(E.bind(E, "754192")),
         hr: () => E.el("497688").then(E.bind(E, "497688")),
@@ -20619,8 +20608,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "252910", "252910"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252910")), _ = 0), _
+        let _ = parseInt((e = "252913", "252913"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("252913")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36737,4 +36726,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.24df116688d623998c89.js.map
+//# sourceMappingURL=66318.d79a2a270dea6df9ffa2.js.map
