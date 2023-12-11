@@ -11389,6 +11389,8 @@
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_CHANNEL_CLEAR: "Removed the channel",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_LOCATION: "Set the location to **!!{newValue}!!**",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_LOCATION_CLEAR: "Removed the location",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_RECURRENCE_RULE: "Updated the recurrence",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_RECURRENCE_RULE_CLEAR: "Removed the recurrence",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_IMAGE_HASH_CHANGE: "Set the cover image",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_IMAGE_HASH_REMOVE: "Removed the cover image",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_START_TIME_CHANGE: "Set the start time to **!!{newValue}!!**",
@@ -18356,7 +18358,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253230", ", Version Hash: ").concat("bf30bbbbca63ddfc7d555404eccd244108d7db2d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253231", ", Version Hash: ").concat("5f503d4a41fff593a9d8bf095a5ee69826fdea73")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20654,8 +20656,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253230", "253230"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253230")), _ = 0), _
+        let _ = parseInt((e = "253231", "253231"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253231")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36682,4 +36684,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.0d238e18d7af800e6cb7.js.map
+//# sourceMappingURL=66318.0f280c9d217f9431e7c4.js.map
