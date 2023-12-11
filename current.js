@@ -16444,6 +16444,7 @@
         GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
         GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
+        GUILD_SCHEDULED_EVENT_REPEATS_MONTHLY: "Repeats monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
         GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
         GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED: "I am interested in...",
@@ -18358,7 +18359,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253287", ", Version Hash: ").concat("25d4d45cb8f6e1f4575358f4e866faed7e93ed50")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253288", ", Version Hash: ").concat("e1fc03de753ff3351d415c7562250fdb5c274723")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20656,8 +20657,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253287", "253287"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253287")), _ = 0), _
+        let _ = parseInt((e = "253288", "253288"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253288")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36684,4 +36685,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.6b642ba6534d00afdff7.js.map
+//# sourceMappingURL=66318.d53f400a65926a7873c3.js.map
