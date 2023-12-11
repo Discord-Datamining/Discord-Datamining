@@ -11373,6 +11373,8 @@
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_CREATE: "$[**!!{user}!!**](userHook) scheduled the event $[**!!{target}!!**](targetHook)",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_UPDATE: "$[**!!{user}!!**](userHook) updated the scheduled event $[**!!{target}!!**](targetHook)",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_DELETE: "$[**!!{user}!!**](userHook) canceled the scheduled event $[**!!{target}!!**](targetHook)",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_RECURRENCE_UPDATE: "$[**!!{user}!!**](userHook) updated an event recurrence for $[**!!{target}!!**](targetHook) at **!!{subtarget}!!**",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_RECURRENCE_DELETE: "$[**!!{user}!!**](userHook) reset an event recurrence for $[**!!{target}!!**](targetHook) at **!!{subtarget}!!**",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_NAME_CREATE: "With the name **!!{newValue}!!**",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_DESCRIPTION_CREATE: "Set the description to **!!{newValue}!!**",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_STATUS_SCHEDULED: "Set the status to **Scheduled**",
@@ -11389,6 +11391,12 @@
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_LOCATION_CLEAR: "Removed the location",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_IMAGE_HASH_CHANGE: "Set the cover image",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_IMAGE_HASH_REMOVE: "Removed the cover image",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_START_TIME_CHANGE: "Set the start time to **!!{newValue}!!**",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_START_TIME_REMOVED: "Reset the start time",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_END_TIME_CHANGE: "Set the start time to **!!{newValue}!!**",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_END_TIME_REMOVED: "Reset the end time",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_CANCELED: "Canceled this event",
+        GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_RESTORED: "Restored this event",
         GUILD_EVENT_AUTO_START_TOGGLE: "Automatically start event",
         CHANNEL_PERMISSIONS_MODERATOR_TITLE: "Stage Moderators",
         CHANNEL_PERMISSIONS_MODERATOR_CURRENT_TITLE: "Current Stage moderators",
@@ -18348,7 +18356,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253204", ", Version Hash: ").concat("c4e80576db11ca70d6cbc76785d88c0d7bb5affe")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253230", ", Version Hash: ").concat("bf30bbbbca63ddfc7d555404eccd244108d7db2d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20646,8 +20654,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253204", "253204"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253204")), _ = 0), _
+        let _ = parseInt((e = "253230", "253230"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253230")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36674,4 +36682,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.e8d58c1bc0d8013c962c.js.map
+//# sourceMappingURL=66318.0d238e18d7af800e6cb7.js.map
