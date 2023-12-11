@@ -18348,7 +18348,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253203", ", Version Hash: ").concat("557e116da47457720566dc37c363f821c314e3e1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253204", ", Version Hash: ").concat("c4e80576db11ca70d6cbc76785d88c0d7bb5affe")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20646,8 +20646,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253203", "253203"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253203")), _ = 0), _
+        let _ = parseInt((e = "253204", "253204"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253204")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21604,7 +21604,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return et
+          return eo
         }
       }), E("222007"), E("424973");
       var t = E("37983"),
@@ -21670,49 +21670,50 @@
       }), (0, Q.makeLazy)({
         createPromise: () => E.el("424797").then(E.bind(E, "424797")),
         webpackId: "424797"
-      }), (0, Q.makeLazy)({
-        createPromise: () => E.el("406915").then(E.bind(E, "406915")),
-        webpackId: "406915"
       });
-      let eE = o.memo(function(e) {
-        let _ = (0, T.useStateFromStores)([F.default], () => F.default.isFocused());
-        return (0, t.jsx)($.default, {
-          ...e,
-          focused: _
-        })
-      });
-      var et = function(e) {
+      let eE = (0, Q.makeLazy)({
+          createPromise: () => E.el("406915").then(E.bind(E, "406915")),
+          webpackId: "406915"
+        }),
+        et = o.memo(function(e) {
+          let _ = (0, T.useStateFromStores)([F.default], () => F.default.isFocused());
+          return (0, t.jsx)($.default, {
+            ...e,
+            focused: _
+          })
+        });
+      var eo = function(e) {
         let {
           children: _,
           skipsSettingDefaultPageTitle: E
         } = e, {
           pathname: n
-        } = (0, I.useLocation)(), N = (0, j.getPlatform)(), L = s.isMobile || s.isTablet, F = (0, T.useStateFromStores)([H.default], () => H.default.darkSidebar ? Z.ThemeTypes.DARK : void 0), Q = (0, T.useStateFromStores)([c.default], () => c.default.useForcedColors ? "yes" : "no"), [$, et] = (0, T.useStateFromStoresArray)([m.default], () => [m.default.isEditorOpen, m.default.isCoachmark]), eo = (0, T.useStateFromStores)([M.default], () => M.default.isEditorOpen), {
-          enabled: en
+        } = (0, I.useLocation)(), N = (0, j.getPlatform)(), L = s.isMobile || s.isTablet, F = (0, T.useStateFromStores)([H.default], () => H.default.darkSidebar ? Z.ThemeTypes.DARK : void 0), Q = (0, T.useStateFromStores)([c.default], () => c.default.useForcedColors ? "yes" : "no"), [$, eo] = (0, T.useStateFromStoresArray)([m.default], () => [m.default.isEditorOpen, m.default.isCoachmark]), en = (0, T.useStateFromStores)([M.default], () => M.default.isEditorOpen), {
+          enabled: er
         } = f.default.useExperiment({
           location: "client_themes_coachmark_reintro"
         }, {
           autoTrackExposure: !0
-        }), er = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ea = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), ei = $ && !er, eI = [];
-        ei && et && en && !ea && eI.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
-        let [es, eT] = (0, g.useDismissibleContentGroup)(eI, ee.DismissibleContentGroupName.SIDEBAR, !0);
-        eI.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
-        let eS = es === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
-          eN = es === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
+        }), ea = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ei = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), eI = $ && !ea, es = [];
+        eI && eo && er && !ei && es.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
+        let [eT, eS] = (0, g.useDismissibleContentGroup)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
+        es.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
+        let eN = eT === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
+          eO = eT === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
         o.useEffect(() => {
           let e = (0, i.matchPath)(n, {
             path: "invite",
             exact: !1,
             strict: !1
           });
-          null == e && eS && !eN && (A.default.dispatch({
+          null == e && eN && !eO && (A.default.dispatch({
             type: "APP_ICON_EDITOR_OPEN"
           }), A.default.dispatch({
             type: "APP_ICON_TRACK_IMPRESSION",
-            markAsDismissed: eT
+            markAsDismissed: eS
           }))
-        }, [eS, eN, eT, n]);
-        let eO = o.useRef(document.body);
+        }, [eN, eO, eS, n]);
+        let eA = o.useRef(document.body);
         return (0, t.jsx)(v.default, {
           children: (0, t.jsx)(D.default, {
             children: (0, t.jsxs)(O.RedesignIconContextProvider, {
@@ -21721,8 +21722,8 @@
               }), (0, t.jsx)(z.default, {
                 children: (0, t.jsx)(q.default, {
                   children: (0, t.jsxs)(O.FocusRingScope, {
-                    containerRef: eO,
-                    children: [(0, t.jsx)(x.MaskLibrary, {}), (0, t.jsx)(Y.default, {}), (0, t.jsx)(a.FocusGuard, {}), null != N ? (0, t.jsx)(eE, {
+                    containerRef: eA,
+                    children: [(0, t.jsx)(x.MaskLibrary, {}), (0, t.jsx)(Y.default, {}), (0, t.jsx)(a.FocusGuard, {}), null != N ? (0, t.jsx)(et, {
                       type: N,
                       themeOverride: F
                     }) : null, (0, t.jsx)(C.AppWindowContextProvider, {
@@ -21750,15 +21751,15 @@
                                   children: [(0, t.jsx)("div", {
                                     className: r(L ? e_.mobileApp : e_.app),
                                     children: _
-                                  }), (0, t.jsx)(P.default, {}), (0, t.jsx)(l.default, {}), (0, t.jsx)(O.Modals, {}), (0, t.jsx)(u.default, {}), (0, t.jsx)(W.FullScreenLayers, {}), (0, t.jsx)(k.AppLayerContainer, {}), (0, t.jsx)(K.VerificationLayerContainer, {}), (0, t.jsx)(O.ToastContainer, {}), (0, t.jsx)(U.default, {}), (0, t.jsx)(B.default, {})]
+                                  }), (0, t.jsx)(P.default, {}), (0, t.jsx)(l.default, {}), (0, t.jsx)(O.Modals, {}), (0, t.jsx)(u.default, {}), (0, t.jsx)(W.FullScreenLayers, {}), (0, t.jsx)(k.AppLayerContainer, {}), (0, t.jsx)(K.VerificationLayerContainer, {}), (0, t.jsx)(O.ToastContainer, {}), (0, t.jsx)(U.default, {}), (0, t.jsx)(B.default, {}), (0, t.jsx)(eE, {})]
                                 })
                               })
                             })
-                          }), (0, t.jsx)(R.default, {}), ei && !et || eN ? (0, t.jsx)(G.default, {
-                            markAsDismissed: eT
-                          }) : null, !eo || er || eN ? null : (0, t.jsx)(h.default, {
-                            isCoachmark: eS,
-                            markAsDismissed: eT
+                          }), (0, t.jsx)(R.default, {}), eI && !eo || eO ? (0, t.jsx)(G.default, {
+                            markAsDismissed: eS
+                          }) : null, !en || ea || eO ? null : (0, t.jsx)(h.default, {
+                            isCoachmark: eN,
+                            markAsDismissed: eS
                           }), (0, t.jsx)(y.default, {
                             mobile: L
                           })]
@@ -36673,4 +36674,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.ec70319723d96b7b6dec.js.map
+//# sourceMappingURL=66318.e8d58c1bc0d8013c962c.js.map
