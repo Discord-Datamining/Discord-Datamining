@@ -682,9 +682,10 @@
         EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM: "This server doesn't have a high enough boosting level for the requested activity",
         EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE: "This Activity is age-restricted",
         EMBEDDED_ACTIVITY_CHANGE_CONFIRM_TITLE: "You sure?",
-        EMBEDDED_ACTIVITY_CHANGE_CONFIRM_BODY: "Looks like you're already in **!!{currentApplicationName}!!**. Are you sure you want to switch to **!!{targetApplicationName}!!**?",
+        EMBEDDED_ACTIVITY_CHANGE_ACTIVITY_CONFIRM_BODY: "Are you sure you want to disconnect from **!!{currentApplicationName}!!** in **!!{currentApplicationChannelName}!!**?",
         EMBEDDED_ACTIVITY_CURRENT_APPLICATION_DEFAULT: "an Activity",
         EMBEDDED_ACTIVITY_TARGET_APPLICATION_DEFAULT: "another Activity",
+        EMBEDDED_ACTIVITY_CURRENT_APPLICATION_CHANNEL_DEFAULT: "its current channel",
         SPECTATE: "Spectate",
         EMBEDDED_ACTIVITIES_IN_VIDEO_CALL_MOBILE_PREVIEW_SUBTITLE_SHORT: "Coming soon to this OS",
         EMBEDDED_ACTIVITIES_MOBILE_ACTIVITY_PREVIEW_A11Y_LABEL: "A preview of {applicationName}",
@@ -18324,7 +18325,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253119", ", Version Hash: ").concat("8720916355ba977784046b9644b33b8d6cb8a3d6")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253131", ", Version Hash: ").concat("734fee9fc907c2a9f0200fb07114a74d041df41c")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20622,8 +20623,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253119", "253119"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253119")), _ = 0), _
+        let _ = parseInt((e = "253131", "253131"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253131")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36737,4 +36738,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.dd24200474dc8e08f9ab.js.map
+//# sourceMappingURL=66318.e429b0f640260470fb66.js.map
