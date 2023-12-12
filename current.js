@@ -5882,14 +5882,9 @@
         INVALID_EXTERNAL_EMOJI_BODY: "This emoji doesn't work here because it's from a different server. Upgrade to Discord Nitro to use emoji from other servers",
         INVALID_EXTERNAL_EMOJI_BODY_UPGRADE: "This emoji doesn't work here because it's from a different server. Discord Nitro can solve all of that, check User Settings > Nitro for details",
         REACTION_PICKER: "Reaction Picker",
-        REACTION_PICKER_CATEGORIES_A11Y_LABEL: "Reaction Picker Categories",
-        REACTION_PICKER_REACTIONS: "Reactions",
-        REACTION_PICKER_SUPER_REACTIONS: "Super Reactions",
         ADD_REACTION: "Add Reaction",
         REACT: "React",
         SUPER_REACT: "Super React",
-        BURST_REACTION_ADD_SUCCESS_A11Y: "{name} super reaction successfully added. ({n} left)",
-        BURST_REACTION_ADD_ERROR_A11Y: "{name} super reaction could not be added. ({n} left)",
         BURST_REACTION_ADD_UNLIMITED_SUCCESS_A11Y: "{name} super reaction successfully added.",
         BURST_REACTION_ADD_UNLIMITED_ERROR_A11Y: "{name} super reaction could not be added.",
         BURST_REACTION_REMOVE_SUCCESS_A11Y: "{name} super reaction successfully removed.",
@@ -5918,7 +5913,6 @@
         SUPER_REACTIONS_TAB_TOOLTIP_SOON: "You’ll get more Super Reactions later today.",
         SUPER_REACTIONS_TOOLTIP_COACHMARK_TITLE: "NEW! Super Reactions",
         SUPER_REACTIONS_TOOLTIP_COACHMARK: "A better way to react, now available with [Nitro]({nitroLink}).",
-        SUPER_REACTION_COACHMARK_TITLE: "A new way to react",
         SUPER_REACTION_COACHMARK_DESCRIPTION: "Hype up the chat with Super Reactions [[Beta]]({helpdeskArticle}). Now available with Nitro.",
         SUPER_REACTION_COACHMARK_DESCRIPTION_FREE: "Hype up the chat and get a taste of our newest Nitro-exclusive perk: Super Reactions.",
         SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION: "Hype up the chat with Super Reactions. Now available with [Nitro]({nitroLink}).",
@@ -5950,9 +5944,6 @@
         REACTION_REMOVE_SUCCESS_A11Y: "{name} reaction successfully removed",
         REACTION_REMOVE_ERROR_A11Y: "{name} reaction could not be removed",
         ADD_BURST_REACTION: "Add Super Reaction",
-        GET_SUPER_REACTIONS: "Get Super Reactions",
-        ADD_BURST_REACTION_A11Y: "Add Super Reaction. ({n} left)",
-        ADD_A_BURST_REACTION: "Add a Super Reaction",
         REACTION_REACTORS_A11Y: "{name} {n, plural, =1 {1 reaction} other {{n} reactions}}",
         BURST_REACTION_REACTORS_A11Y: "{name} {n, plural, =1 {1 super reaction} other {{n} super reactions}}",
         BURST_REACTIONS_LEFT: "{count} left",
@@ -5960,7 +5951,6 @@
         BURST_REACTIONS_REMOVE_MODAL_DESCRIPTION: "You will not get a credit refund if you choose to remove this Super Reaction.",
         BURST_REACTIONS_REMOVE_MODAL_CONFIRM: "Remove Super Reaction",
         BURST_REACTIONS_REMOVE_MODAL_CANCEL: "Cancel",
-        SUPER_REACTIONS_LEFT_WITH_PLURAL: "{count, plural, =1 {1 Super Reaction} other {{count} Super Reactions}} left",
         BURST_MOBILE_NOT_READY_IMG_ALT: "Wumpus waving",
         BURST_MOBILE_NOT_READY_TITLE: "Super Reactions",
         SUPER_MOBILE_NOT_READY_SUBTITLE: "The ability to add Super Reactions is only on desktop for now. Use the desktop app to send and view these special animated reactions.",
@@ -5997,29 +5987,15 @@
         BURST_REACTION_TOOLTIP_N_INTERACTIVE: "!!{emojiName}!! super reaction sent by {n, plural, one {1 person} other {[{n} people](onClick)}}",
         SUPER_REACTION_TOOLTIP_CTA: "Add Super Reaction",
         SUPER_REACTION_TOOLTIP_CTA_REACTED: "You've sent this Super Reaction",
-        BURST_REACTION_TOOLTIP_CTA_LEFT: "({n} left)",
         SUPER_REACTION_TOOLTIP_UPSELL: "Want to start the hype train? Get Nitro to add a Super Reaction.",
-        BURST_REACTION_TOOLTIP_CTA_UPSELL: "Get Nitro",
-        SUPER_REACTION_TOOLTIP_OUT_OF_REACTIONS_WEEKDAY: "You’re out of Super Reactions. You’ll get {refillAmount} more every week.",
-        SUPER_REACTION_TOOLTIP_OUT_OF_REACTIONS_DAILY: "You’re out of Super Reactions. You’ll get {refillAmount} more tomorrow.",
-        SUPER_REACTION_CREDIT_TOOLTIP_WEEKDAY: "You have {count} Super Reactions. You'll get {refillAmount} more every week.",
-        SUPER_REACTION_NITRO_TOOLTIP: "Hype up the chat with Super Reactions!",
         LOAD_REACTIONS_ERROR: "Whoops, something went wrong. Give it another try?",
         NO_REACTIONS_HEADER: "No Reactions",
         NO_REACTIONS_BODY: "What a cold, emotionless world.",
-        SUPER_REACTION_DESKTOP_NOTIFICATION_TITLE: "You got a super reaction!",
-        SUPER_REACTION_DESKTOP_NOTIFICATION_BODY: "{name} super reacted to your message in {channelName}, {guildName}",
-        SUPER_REACTION_DESKTOP_NOTIFICATION_BODY_NO_USER: "You got a super reaction to your message in {channelName}, {guildName}",
         SUPER_REACTION_TOGGLE_ENABLED: "Super Reactions enabled",
         SUPER_REACTION_TOGGLE_DISABLED: "Enable Super Reactions",
         SUPER_REACTIONS_UPSELL_TITLE: "A better way to react on Discord",
         SUPER_REACTIONS_UPSELL_TITLE_MOBILE: "A better way to react!",
-        SUPER_REACTIONS_UPSELL_DESCRIPTION_MOBILE_UNLIMITED: "Hype up the chat with Super Reactions! Get unlimited Super Reactions and other cool perks with Nitro.",
-        BURST_REACTIONS_UPSELL_BODY: "Want to use emoji from any server with fun reactions? We got you covered on that [and more with Discord Nitro!](onLearnMore)",
-        SUPER_REACTIONS_UPSELL_BODY: "Hype up the chat with Super Reactions [[Beta]]({helpdeskArticle})! Get more Super Reactions and other cool perks with Nitro.",
-        SUPER_REACTIONS_UPSELL_BODY_LAUNCH: "Hype up the chat with Super Reactions! Get more Super Reactions and other cool perks with [Nitro](onClick).",
         SUPER_REACTIONS_UPSELL_UNLIMITED_BODY: "Hype up the chat with Super Reactions! Get unlimited Super Reactions and other cool perks with [Nitro](onClick).",
-        SUPER_REACTIONS_LONG_PRESS_LOADER: "Keep holding to Super React",
         SUPER_REACTIONS_UNLIMITED_NOTICE_TITLE: "Unlimited Super Reactions!",
         SUPER_REACTIONS_UNLIMITED_NOTICE_DESCRIPTION_DESKTOP_V2: "Click the button to add a Super Reaction.",
         SUPER_REACTIONS_UNLIMITED_NOTICE_DESCRIPTION_MOBILE_V2: "Tap the button to add a Super Reaction.",
@@ -6547,8 +6523,6 @@
         PREMIUM_TIER_UPLOAD_ITEM: "{maxUploadPremium} uploads",
         PREMIUM_TIER_NITRO_BADGE_ITEM: "Special Nitro badge on your profile",
         PREMIUM_TIER_CUSTOM_EMOJI_ITEM: "Custom emoji anywhere",
-        PREMIUM_TIER_SUPER_REACTIONS_ITEM: "{weeklyReactionsNumber} Super Reactions per week",
-        PREMIUM_TIER_SUPER_REACTIONS_DAILY_ITEM: "{dailyReactionsNumber} Super Reactions per day",
         PREMIUM_TIER_HD_STREAMING_ITEM: "HD video streaming",
         PREMIUM_TIER_SERVER_BOOST_ITEM: "2 Server Boosts",
         PREMIUM_TIER_SERVER_BOOST_MORE_ITEM: "2 Server Boosts, and more!",
@@ -8096,8 +8070,6 @@
         USER_SETTINGS_NOTIFICATIONS_SHOW_BADGE_LABEL: "Enable Unread Message Badge",
         USER_SETTINGS_NOTIFICATIONS_SHOW_BADGE_BODY: "Shows a red badge on the app icon when you have unread messages.",
         USER_SETTING_NOTIFICATIONS_ENABLE_BURST_REACTION_NOTIFICATIONS_LABEL: "Enable Super Reaction Notifications",
-        USER_SETTING_NOTIFICATIONS_ENABLE_BURST_REACTION_NOTIFICATIONS_LABEL_MOBILE: "Suppress Super Reactions",
-        USER_SETTING_NOTIFICATIONS_ENABLE_BURST_REACTION_NOTIFICATIONS_BODY: "Get a notification when someone super reacts to one of your messages.",
         USER_SETTINGS_NOTIFICATIONS_SHOW_FLASH_LABEL: "Enable Taskbar Flashing",
         USER_SETTINGS_NOTIFICATIONS_SHOW_FLASH_BODY: "Flashes the app in your taskbar when you have new notifications.",
         USER_SETTINGS_NOTIFICATIONS_PREVIEW_SOUND: "Preview sound",
@@ -18348,7 +18320,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253752", ", Version Hash: ").concat("37573cd58a1c8b6435e05956135a5545fd8a6a76")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253755", ", Version Hash: ").concat("00b5a635b7926d6863c2f9b56ce289f2fdf01c8b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20646,8 +20618,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253752", "253752"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253752")), _ = 0), _
+        let _ = parseInt((e = "253755", "253755"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253755")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36465,4 +36437,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.7c2ba38ec04887240781.js.map
+//# sourceMappingURL=66318.e245e0eed1fb51ab997a.js.map
