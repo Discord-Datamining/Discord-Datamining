@@ -16711,6 +16711,7 @@
         NOTIF_MIGRATION_CUSTOMIZE_BOX_3_SUBTITLE: "I don’t expect updates, I’ll check at my own pace.",
         NOTIF_MIGRATION_REVIEW_TITLE: "Here’s what will happen",
         NOTIF_MIGRATION_REVIEW_SUB_TITLE: "We will set **notification presets** for each server based on your selection. You can always change them later, or revert back to your current notification setting whenever.",
+        NOTIFICATION_MIGRATION_SHOW_ALL: "Show All Servers",
         NOTIF_MIGRATION_WARNING: "Hola, it looks like you might be modifying your client. This feature is going to be cool, we're building it for power users, buuut you may want to stay clear it for a bit, because it's not really ready yet and might actually mess up your client (seriously). You can read more here though: [https://dis.gd/notifications-technical-details](https://dis.gd/notifications-technical-details)",
         POLL: "Poll",
         POLLS: "Polls",
@@ -18346,7 +18347,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253743", ", Version Hash: ").concat("3c8e94ca6cf558cd419909cd43b4bb5b34c36f7e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253744", ", Version Hash: ").concat("8161b4f7d8735a545f4a0c69a96a74c497a1333e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20644,8 +20645,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253743", "253743"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253743")), _ = 0), _
+        let _ = parseInt((e = "253744", "253744"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253744")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36463,4 +36464,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.eb107fc789c782202b77.js.map
+//# sourceMappingURL=66318.032254ee273157b50de5.js.map
