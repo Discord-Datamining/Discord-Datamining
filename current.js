@@ -16157,6 +16157,7 @@
         CLIPS_ENABLED_VIEWER_TOOLTIP: "Participants in this call have clips enabled.",
         CLIPS_ENABLED_VIEWER_TOOLTIP_NITRO_EA: "Participants in this call have clips enabled. Now available early access with Nitro.",
         CLIPS_IN_CALL_WARNING: "A participant in the call you joined has clipping enabled, your voice may be recorded.",
+        CLIPS_GALLERY_TOOLTIP: "View Clips",
         CLIPS_GALLERY_NO_CLIPS: "You haven't clipped anything yet! Use $[!!{keybind}!!](keybindHook) to capture a clip while streaming.",
         CLIPS_GALLERY_NO_CLIPS_NO_KEYBIND_SET: "You haven't clipped anything yet! Set up a keybind [here](onClick) to start clipping.",
         CLIPS_GALLERY_NO_CLIPS_MATCH_QUERY: "We can't find any clips matching your query.",
@@ -18347,7 +18348,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253744", ", Version Hash: ").concat("8161b4f7d8735a545f4a0c69a96a74c497a1333e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253751", ", Version Hash: ").concat("fc950282484fbf453f207392162ae0b6cd46849c")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20645,8 +20646,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253744", "253744"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253744")), _ = 0), _
+        let _ = parseInt((e = "253751", "253751"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253751")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36464,4 +36465,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.032254ee273157b50de5.js.map
+//# sourceMappingURL=66318.1f84830c84d72b52a588.js.map
