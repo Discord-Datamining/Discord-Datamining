@@ -6661,9 +6661,9 @@
         SEASONAL_GIFTING_POPUP_HEADER: "Looking for a holiday gift?",
         SEASONAL_GIFTING_DM_POPUP_HEADER: "Gift Nitro for the holidays.",
         SEASONAL_GIFTING_DM_POPUP_BODY: "Send a personalized Nitro gift to spread holiday cheer!",
-        SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
         SEASONAL_GIFTING_MAKE_SOMEONES_DAY_TOOLTIP: "Make someone's day when you send some sweet Nitro their way.",
         SEASONAL_GIFTING_SEND_GIFT_CTA: "Send gift",
+        SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
         PREMIUM_MARKETING_HERO_HEADER: "Make Discord yours",
         PREMIUM_MARKETING_HERO_BODY: "Upgrade your emoji, personalize your profile, and stand out in your servers.",
         PREMIUM_MARKETING_FEATURE_EMOJI_TITLE: "More Emoji Power",
@@ -18360,7 +18360,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253403", ", Version Hash: ").concat("368771c85773bf3efaa8e803d24af065f2ded51b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253406", ", Version Hash: ").concat("c672cce38114b3657a377f95be78eeb53ed91cbd")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20658,8 +20658,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253403", "253403"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253403")), _ = 0), _
+        let _ = parseInt((e = "253406", "253406"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253406")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36686,4 +36686,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.f773ecec5d61e6305f99.js.map
+//# sourceMappingURL=66318.a30cf21e27853892ddc6.js.map
