@@ -18346,7 +18346,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253720", ", Version Hash: ").concat("fb2a0ee0dcf087aa927a1109e7909e3de491ea8d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("253743", ", Version Hash: ").concat("3c8e94ca6cf558cd419909cd43b4bb5b34c36f7e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19760,7 +19760,7 @@
           inlineRequire: () => E("126115").default
         },
         MemberSafetySearchManager: {
-          actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "GUILD_MEMBERS_CHUNK", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING"],
+          actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING"],
           inlineRequire: () => E("804160").default
         },
         MessageCodedLinkManager: {
@@ -20644,8 +20644,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "253720", "253720"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253720")), _ = 0), _
+        let _ = parseInt((e = "253743", "253743"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("253743")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24639,41 +24639,29 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return i
+          return r
         }
       }), E("222007");
       var t = E("689988"),
-        o = E("536999"),
-        n = E("90870"),
-        r = E("219115");
-      class a extends t.default {
+        o = E("219115");
+      class n extends t.default {
         handleInitialize(e) {
-          let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-          return _ ? (0, r.handleInitializeV2)(e) : (0, n.handleInitializeV1)(e)
+          return (0, o.handleInitializeV2)(e)
         }
         handleGuildDelete(e) {
-          let _ = (0, o.isInMembersSearchV2Experiment)(e.guild.id);
-          return _ ? (0, r.handleGuildDeleteV2)(e) : (0, n.handleGuildDeleteV1)(e)
+          return (0, o.handleGuildDeleteV2)(e)
         }
         handleSearchStateUpdate(e) {
-          let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-          return _ ? (0, r.handleSearchStateUpdateV2)(e) : (0, n.handleSearchStateUpdateV1)(e)
+          return (0, o.handleSearchStateUpdateV2)(e)
         }
         handlePaginationUpdate(e) {
-          let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-          return _ ? (0, r.handlePaginationUpdateV2)(e) : (0, n.handlePaginationUpdateV1)(e)
-        }
-        handleGuildMembersChunk(e) {
-          let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-          if (!_) return (0, n.handleGuildMembersChunkV1)(e)
+          return (0, o.handlePaginationUpdateV2)(e)
         }
         handleGuildMemberSearchSuccess(e) {
-          let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-          if (_) return (0, r.handleGuildMemberSearchSuccessV2)(e)
+          return (0, o.handleGuildMemberSearchSuccessV2)(e)
         }
         handleGuildMemberSearchStillIndexing(e) {
-          let _ = (0, o.isInMembersSearchV2Experiment)(e.guildId);
-          if (_) return (0, r.handleGuildMemberSearchStillIndexingV2)(e)
+          return (0, o.handleGuildMemberSearchStillIndexingV2)(e)
         }
         constructor(...e) {
           super(...e), this.actions = {
@@ -24681,209 +24669,12 @@
             GUILD_DELETE: e => this.handleGuildDelete(e),
             MEMBER_SAFETY_SEARCH_STATE_UPDATE: e => this.handleSearchStateUpdate(e),
             MEMBER_SAFETY_PAGINATION_UPDATE: e => this.handlePaginationUpdate(e),
-            GUILD_MEMBERS_CHUNK: e => this.handleGuildMembersChunk(e),
             MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: e => this.handleGuildMemberSearchSuccess(e),
             MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING: e => this.handleGuildMemberSearchStillIndexing(e)
           }
         }
       }
-      var i = new a
-    },
-    90870: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        handleInitializeV1: function() {
-          return U
-        },
-        handleGuildDeleteV1: function() {
-          return M
-        },
-        handleSearchStateUpdateV1: function() {
-          return h
-        },
-        handlePaginationUpdateV1: function() {
-          return P
-        },
-        handleGuildMembersChunkV1: function() {
-          return m
-        }
-      }), E("222007"), E("424973");
-      var t, o, n, r, a = E("851387"),
-        i = E("895026"),
-        I = E("770115"),
-        s = E("178406"),
-        T = E("645266");
-
-      function S(e, _, E) {
-        return "guild_".concat(e, "_search_").concat(_, "_for_").concat(E)
-      }(n = t || (t = {})).QUERY = "query", n.ROLE = "role", n.UNUSUAL_DM_ACTIVITY = "unusual_dm_activity";
-      (r = o || (o = {}))[r.FAILED = 0] = "FAILED", r[r.UNFETCHED = 1] = "UNFETCHED", r[r.PENDING = 2] = "PENDING", r[r.SUCCEEDED = 3] = "SUCCEEDED";
-      let N = {};
-
-      function O(e, _) {
-        null != N[e] && (N[e] = {
-          ...N[e],
-          ..._
-        })
-      }
-
-      function A(e, _) {
-        null != N[_] && O(_, {
-          request: 2,
-          lastUpdated: Date.now(),
-          limit: c(e)
-        })
-      }
-
-      function R(e) {
-        null != N[e] && O(e, {
-          request: 0,
-          lastUpdated: Date.now()
-        })
-      }
-
-      function l(e) {
-        null != N[e] && O(e, {
-          request: 3,
-          lastUpdated: Date.now()
-        })
-      }
-
-      function u(e, _, E) {
-        let t = function(e, _) {
-            if (null == N[_]) {
-              var E, t, o;
-              t = _, o = (E = e, {
-                request: 1,
-                lastUpdated: Date.now(),
-                limit: c(E)
-              }), N[t] = o
-            }
-            return N[_]
-          }(e, _),
-          o = c(e),
-          n = function(e) {
-            if (e.includes("query"));
-            else if (e.includes("role")) return "role";
-            else if (e.includes("unusual_dm_activity")) return "unusual_dm_activity";
-            return "query"
-          }(_);
-        switch (n) {
-          case "query":
-            return t.request >= E && t.limit >= o;
-          case "role":
-            return t.request >= E;
-          case "unusual_dm_activity":
-            return t.request >= E && t.lastUpdated + 3e5 > Date.now();
-          default:
-            return !0
-        }
-      }
-
-      function L(e) {
-        Object.keys(N).forEach(_ => {
-          _.startsWith("guild_".concat(e)) && delete N[_]
-        })
-      }
-
-      function C(e) {
-        return null != e && e.length > 1
-      }
-
-      function c(e) {
-        let {
-          pageSize: _
-        } = s.default.getPaginationStateByGuildId(e);
-        return Math.min(2 * _, 100)
-      }
-      async function D(e, _) {
-        if (!C(_)) return;
-        let E = S(e, "query", _);
-        if (!u(e, E, 2)) try {
-          A(e, E);
-          let [t, o] = (0, I.splitQuery)(_), n = t.map(_ => a.default.requestMembers(e, _, c(e)));
-          o.length > 0 && n.push(a.default.requestMembersById(e, o)), await Promise.all(n)
-        } catch (e) {
-          R(E)
-        }
-      }
-      async function d(e, _) {
-        let E = S(e, "role", _);
-        if (!u(e, E, 2)) try {
-          A(e, E), await (0, i.requestMembersForRole)(e, _, !1)
-        } catch (e) {
-          R(E)
-        }
-      }
-
-      function U(e) {
-        let {
-          guildId: _
-        } = e;
-        L(_)
-      }
-
-      function M(e) {
-        let {
-          guild: _
-        } = e;
-        L(_.id)
-      }
-
-      function h(e) {
-        let {
-          guildId: _,
-          searchState: E
-        } = e, {
-          query: t,
-          selectedRoleIds: o
-        } = E;
-        C(t) && D(_, t), null != o && o.forEach(e => {
-          d(_, e)
-        })
-      }
-
-      function P(e) {
-        let {
-          guildId: _
-        } = e, {
-          query: E
-        } = s.default.getSearchStateByGuildId(_);
-        C(E) && D(_, E);
-        let t = s.default.getPaginationStateByGuildId(_),
-          o = s.default.calculateNewContinuationToken(_, t);
-        if (null != o && o !== t.continuationToken) {
-          let {
-            query: e
-          } = s.default.getSearchStateByGuildId(_);
-          (0, T.requestNewPaginationChunk)(_, {
-            query: e,
-            continuationToken: o
-          })
-        }
-      }
-
-      function m(e) {
-        let {
-          guildId: _
-        } = e, {
-          query: E,
-          selectedRoleIds: t,
-          requireUnusualDmActivity: o
-        } = s.default.getSearchStateByGuildId(_);
-        C(E) && ! function(e, _) {
-          let E = S(e, "query", _);
-          l(E)
-        }(_, E), t.size > 0 && t.forEach(e => {
-          ! function(e, _) {
-            let E = S(e, "role", _);
-            l(E)
-          }(_, e)
-        }), o && ! function(e) {
-          let _ = S(e, "unusual_dm_activity", "");
-          l(_)
-        }(_)
-      }
+      var r = new n
     },
     999243: function(e, _, E) {
       "use strict";
@@ -36672,4 +36463,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.9805ac90db55aeb7466e.js.map
+//# sourceMappingURL=66318.eb107fc789c782202b77.js.map
