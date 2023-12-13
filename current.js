@@ -16709,8 +16709,8 @@
         CREATE_POLL_LAYOUTS_RADIOGROUP_ARIA_LABEL: "Poll answer style",
         CREATE_POLL_LAYOUT_DEFAULT: "Text answers with optional media",
         CREATE_POLL_LAYOUT_IMAGE: "Media only answers",
-        CREATE_POLL_ADD_IMAGE: "Add media, answer {answerNumber}",
-        CREATE_POLL_EDIT_IMAGE: "Update media, {imageName}, answer {answerNumber}",
+        CREATE_POLL_ADD_IMAGE_ARIA: "Add media, answer {answerNumber}",
+        CREATE_POLL_EDIT_IMAGE_ARIA: "Update media, {imageName}, answer {answerNumber}",
         CREATE_POLL_ANSWER_INPUT_LABEL: "Answer {answerNumber}",
         CREATE_POLL_ANSWER_PLACEHOLDER: "Type your answer",
         CREATE_POLL_ADD_ANSWER_BUTTON: "Add another answer",
@@ -16721,8 +16721,9 @@
         CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BODY: "Are you sure you want to exit? Any changes made will be lost if you exit now.",
         CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_CTA_EXIT: "Exit",
         CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BACK_TO_EDITING: "Back to editing",
-        CREATE_POLL_REMOVE_ANSWER: "Remove answer",
-        CREATE_POLL_REPLACE_IMAGE: "Replace image",
+        CREATE_POLL_REMOVE_ANSWER: "Remove Answer",
+        CREATE_POLL_ADD_IMAGE: "Add Media",
+        CREATE_POLL_REPLACE_IMAGE: "Replace Media",
         CREATE_POLL_POLL_ANSWER: "Poll Answer",
         CREATE_POLL_EDIT_ALT_TEXT: "Edit Image Description (Alt Text)",
         CREATE_POLL_EDIT_IMAGE_DESCRIPTION: "Edit Image Description",
@@ -18325,7 +18326,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254104", ", Version Hash: ").concat("93859c074347db56e6f91b5a59a9ba3c1f02f0fb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254111", ", Version Hash: ").concat("fbcb97737bd0e6200af78926f36e03aca38df593")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20623,8 +20624,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254104", "254104"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254104")), _ = 0), _
+        let _ = parseInt((e = "254111", "254111"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254111")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36451,4 +36452,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.b5deb7c85e23b5848e5d.js.map
+//# sourceMappingURL=66318.7e81bc979dcd49bb0aca.js.map
