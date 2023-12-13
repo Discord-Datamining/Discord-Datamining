@@ -16397,6 +16397,7 @@
         CREATE_EVENT_RECUR_LABEL: "Event Frequency",
         CREATE_EVENT_RECUR_NONE: "Does not repeat",
         CREATE_EVENT_RECUR_WEEKLY: "Weekly on {weekday}",
+        CREATE_EVENT_RECUR_BIWEEKLY: "Every other {weekday}",
         CREATE_EVENT_RECUR_MONTHLY: "Monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
         CREATE_EVENT_RECUR_YEARLY: "Annually on {date}",
         CREATE_EVENT_RECUR_WEEKDAYS: "Every weekday (Monday to Friday)",
@@ -16404,6 +16405,7 @@
         GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
         GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
+        GUILD_SCHEDULED_EVENT_REPEATS_BIWEEKLY: "Repeats every other {weekday}",
         GUILD_SCHEDULED_EVENT_REPEATS_MONTHLY: "Repeats monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
         GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
         GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
@@ -18320,7 +18322,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254034", ", Version Hash: ").concat("6c0e2e9173136a08190011381c727cbd797d7bff")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254036", ", Version Hash: ").concat("eb8ac4a804f4b7726ce6c9d0f1ee5c2db1c4acfd")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20618,8 +20620,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254034", "254034"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254034")), _ = 0), _
+        let _ = parseInt((e = "254036", "254036"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254036")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36437,4 +36439,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.278adbb815ebd6701fc4.js.map
+//# sourceMappingURL=66318.12f0736819f549df504b.js.map
