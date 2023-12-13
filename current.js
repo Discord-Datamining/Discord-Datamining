@@ -2381,6 +2381,7 @@
         FORM_LABEL_MUTE_SERVER: "Mute **!!{name}!!**",
         FORM_LABEL_UNMUTE_SERVER: "Unmute **!!{name}!!**",
         FORM_LABEL_MUTE_SERVER_DESCRIPTION: "\nMuting a server prevents unread indicators and notifications from appearing unless you are mentioned.\n",
+        FOR_LABEL_MUTE_SEVER_DESCRIPTION_V2: "Muting prevents unread badges and notifications from appearing unless you are mentioned.",
         FORM_LABEL_MUTE_SERVER_DESCRIPTION_NEW: "Muting a server suppresses notifications but unread indicators will still be visible if you're mentioned.",
         FORM_LABEL_MOBILE_PUSH_NOTIFICATIONS: "Mobile Push Notifications",
         FORM_LABEL_ALL_MESSAGES: "All Messages",
@@ -2402,6 +2403,19 @@
         FORM_LABEL_LIVE_STAGES_ONLY: "All Live Stages",
         RESET: "Reset",
         LARGE_GUILD_NOTIFY_ALL_MESSAGES_DESCRIPTION: "Due to this server's size, you won't get mobile push notifications for non-@mention messages.",
+        NOTIFICATION_SETTINGS_PRESETS: "Notifications Presets",
+        NOTIFICATION_SETTINGS_ADVANCED: "Advanced",
+        NOTIFICATION_SETTINGS_PRESETS_ALL_MESSAGES: "All Messages",
+        NOTIFICATION_SETTINGS_PRESETS_MENTION_ONLY: "Mention Only",
+        NOTIFICATION_SETTINGS_PRESETS_NONE: "None",
+        NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread badges",
+        NOTIFICATION_SETTINGS_PRESETS_UNREAD_SUBTITLE: "Choose when you see a full unread badge next to the channel in this server.",
+        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_TITLE: "Push Notifications",
+        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Choose when you receive a push notification from this server.",
+        NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_1: "new-mention",
+        NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_2: "new-message",
+        NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_3: "nothing-new",
+        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_MESSAGE: "that’s the annoying part yea lol it’s sooooo chunky",
         FORM_LABEL_MOBILE_NOTIFICATIONS_LABEL: "Enable all notifications",
         FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_LABEL: "System notifications",
         FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_DESC: "Get notifications outside of Discord.",
@@ -8129,6 +8143,7 @@
         NEW_OVERRIDE: "New Override",
         SELECT_CHANNEL_OR_CATEGORY: "Select a channel or category…",
         NOTIFICATION_OVERRIDES: "Notification Overrides",
+        CHANNEL_NOTIFICATION_OVERRIDES: "Channel Notification Overrides",
         PRIVATE_CHANNEL: "Private Channel",
         CATEGORY_SETTINGS: "Category Settings",
         PRIVATE_CATEGORY: "Private Category",
@@ -13708,6 +13723,10 @@
         GUILD_CREATE_CHANNEL_CTA: "Create a Channel",
         GUILD_NO_UNREADS_HEADER: "All caught up!",
         GUILD_NO_UNREADS_SUBHEADER: "You don't have any unread messages.",
+        NOTIFICATION_PRESET_EVERYTHING: "Everything",
+        NOTIFICATION_PRESET_ESSENTIALS: "Essentials",
+        NOTIFICATION_PRESET_NOTHING: "Nothing",
+        NOTIFICATION_PRESET_CUSTOM: "Custom",
         APP_DIRECTORY: "App Directory",
         APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON: "View All",
         APP_DIRECTORY_LISTING_ADD_BUTTON: "Add",
@@ -18326,7 +18345,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254158", ", Version Hash: ").concat("4806919670646515b89149f191ef27d80b8add62")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254165", ", Version Hash: ").concat("ea94fa86b3a9ccb2f3201d4d635fb09597097416")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20625,8 +20644,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254158", "254158"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254158")), _ = 0), _
+        let _ = parseInt((e = "254165", "254165"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254165")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36468,4 +36487,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.f2018102a9868d6ec5cb.js.map
+//# sourceMappingURL=66318.80d89dcfc018632c2f4b.js.map
