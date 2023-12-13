@@ -18322,7 +18322,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254053", ", Version Hash: ").concat("75458414f92b3bc4f7f36e4c9d4698a059cb3607")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254056", ", Version Hash: ").concat("036be2d6f851892621ec94fd7e783c214a6b45ce")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20620,8 +20620,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254053", "254053"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254053")), _ = 0), _
+        let _ = parseInt((e = "254056", "254056"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254056")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24968,6 +24968,7 @@
       class I extends t.default {
         constructor(...e) {
           super(...e), this.actions = {
+            CHANNEL_SELECT: e => this.handleChannelSelect(e),
             VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
             LOGOUT: () => this.handleLogout()
           }, this.handleVoiceChannelSelect = e => {
@@ -25009,6 +25010,14 @@
             (0, n.clearHangStatus)()
           }, this.handleLogout = () => {
             this.handleDisconnectFromVoiceChannel()
+          }, this.handleChannelSelect = e => {
+            let {
+              guildId: _
+            } = e;
+            null != _ && r.HangStatusExperiment.trackExposure({
+              guildId: _,
+              location: "HangStatusManager"
+            })
           }
         }
       }
@@ -36439,4 +36448,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.cdf8b3c4eb92eb0807c5.js.map
+//# sourceMappingURL=66318.303fc0c6efca92835d77.js.map
