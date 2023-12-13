@@ -16187,6 +16187,7 @@
         CLIPS_SETTINGS_HW_ENCODING_MUST_BE_ENABLED_INFOBOX: "To use Clips, enable hardware encoding. Find it in [Voice & Video settings](onClick).",
         CLIPS_PROCESSING_BADGE: "Processing...",
         SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
+        SOUND_INCOMING_RING_EOY_2023: "Seasonal Incoming Ring",
         CUSTOM_SOUNDS: "Custom Sounds",
         ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
         GUILD_SHOP_CHANNEL_LABEL: "Server Shop",
@@ -17787,89 +17788,6 @@
         })
       }
     },
-    193990: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return o
-        }
-      });
-      var t = E("913144"),
-        o = {
-          setDesktopType(e) {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_SET_DESKTOP_TYPE",
-              desktopType: e
-            })
-          },
-          setTTSType(e) {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_SET_TTS_TYPE",
-              ttsType: e
-            })
-          },
-          setDisabledSounds(e) {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_SET_DISABLED_SOUNDS",
-              sounds: e
-            })
-          },
-          toggleDisableAllSounds() {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_TOGGLE_ALL_DISABLED"
-            })
-          },
-          setDisableUnreadBadge(e) {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE",
-              disableUnreadBadge: e
-            })
-          },
-          setTaskbarFlash(e) {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_SET_TASKBAR_FLASH",
-              taskbarFlash: e
-            })
-          },
-          setNotifyMessagesInSelectedChannel(e) {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL",
-              notify: e
-            })
-          },
-          setPermissionsState(e, _) {
-            t.default.dispatch({
-              type: "NOTIFICATIONS_SET_PERMISSION_STATE",
-              enabled: e,
-              source: _
-            })
-          },
-          showNotification(e, _, E, o) {
-            let n = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
-            t.default.dispatch({
-              type: "NOTIFICATION_CREATE",
-              icon: e,
-              title: _,
-              body: E,
-              trackingProps: o,
-              options: {
-                ...n,
-                onClick() {
-                  var e;
-                  null === (e = n.onClick) || void 0 === e || e.call(n), t.default.dispatch({
-                    type: "NOTIFICATION_CLICK"
-                  })
-                }
-              }
-            })
-          },
-          clickedNotification() {
-            t.default.dispatch({
-              type: "NOTIFICATION_CLICK"
-            })
-          }
-        }
-    },
     920842: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -18345,7 +18263,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254169", ", Version Hash: ").concat("780d4ad4b9247deee1e9cbfed32abafb41c31749")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254173", ", Version Hash: ").concat("f9f227a5ca9d9ecf266983adf0a011f41b3a3e6b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20644,8 +20562,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254169", "254169"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254169")), _ = 0), _
+        let _ = parseInt((e = "254173", "254173"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254173")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36487,4 +36405,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.0df3f40961ac99885911.js.map
+//# sourceMappingURL=66318.0cf4aa233124baddceec.js.map
