@@ -18326,7 +18326,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254142", ", Version Hash: ").concat("bc9ad8e3e8e954e4765fd934bb123f363f47a920")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254149", ", Version Hash: ").concat("9c221c63b9e86f519669a38fdaa2c83872d692f5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20625,8 +20625,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254142", "254142"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254142")), _ = 0), _
+        let _ = parseInt((e = "254149", "254149"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254149")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36153,51 +36153,66 @@
     },
     811022: function(e, _, E) {
       "use strict";
-      var t;
       E.r(_), E.d(_, {
         setLogFn: function() {
-          return n
+          return r
         },
         default: function() {
           return t
         }
       }), E("222007");
-      let o = () => {};
+      var t, o = E("14334");
+      let n = () => {};
 
-      function n(e) {
-        o = e
+      function r(e) {
+        n = e
       }
       t = class {
         constructor(e = "default") {
           var _ = this;
-          this.log = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-            o(_.name, "log", e, ...t)
+          this.logDangerously = function(e) {
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
+            n(_.name, "log", e, ...t)
+          }, this.log = function(e) {
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+            (0, o.checkLogForPII)(e, ...t), n(_.name, "log", e, ...t)
+          }, this.verbose = function(e) {
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+            (0, o.checkLogForPII)(e, ...t), n(_.name, "debug", e, ...t)
           }, this.info = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-            o(_.name, "info", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+            (0, o.checkLogForPII)(e, ...t), n(_.name, "info", e, ...t)
           }, this.warn = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-            o(_.name, "warn", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+            (0, o.checkLogForPII)(e, ...t), n(_.name, "warn", e, ...t)
           }, this.error = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-            o(_.name, "error", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
+            (0, o.checkLogForPII)(e, ...t), n(_.name, "error", e, ...t)
           }, this.trace = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-            o(_.name, "trace", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
+            n(_.name, "trace", e, ...t)
           }, this.time = (e, _) => {
             let E = Date.now(),
               t = _();
             return this.log(e, Date.now() - E), t
           }, this.fileOnly = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-            o(_.name, "file-only", e, ...t)
-          }, this.verbose = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
-            o(_.name, "debug", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
+            n(_.name, "file-only", e, ...t)
           }, this.name = e
         }
       }
+    },
+    14334: function(e, _, E) {
+      "use strict";
+
+      function t(e) {
+        for (var _ = arguments.length, E = Array(_ > 1 ? _ - 1 : 0), t = 1; t < _; t++) E[t - 1] = arguments[t]
+      }
+      E.r(_), E.d(_, {
+        checkLogForPII: function() {
+          return t
+        }
+      }), E("70102")
     },
     817792: function(e, _, E) {
       "use strict";
@@ -36453,4 +36468,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.ebe947b5c7ab35b3fcd0.js.map
+//# sourceMappingURL=66318.be6668b663cc887ac1cf.js.map
