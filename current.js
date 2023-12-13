@@ -16759,6 +16759,7 @@
         POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, other {{minutes}m left}}",
         POLL_EXPIRED: "Poll closed",
         FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
+        KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink})."
       })
     },
@@ -18265,7 +18266,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254211", ", Version Hash: ").concat("163ac9372c989b59b50dd8cd358ff31205452592")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254226", ", Version Hash: ").concat("70defce8819581450091c6acad9f60d116a29362")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20564,8 +20565,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254211", "254211"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254211")), _ = 0), _
+        let _ = parseInt((e = "254226", "254226"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254226")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20959,20 +20960,17 @@
         handleRTCConnectionFlags(e) {
           let {
             userId: _,
-            context: E,
-            channelId: t,
-            guildId: n
+            channelId: E,
+            guildId: t
           } = e;
-          if (E === o.MediaEngineContextTypes.DEFAULT) this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
-          else if (E === o.MediaEngineContextTypes.STREAM) {
-            let e = N.default.getRTCConnection(i.encodeStreamKey({
-              streamType: null != n ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
-              ownerId: _,
-              channelId: t,
-              guildId: n
-            }));
-            this.recordInboundStream(_, e)
-          }
+          this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
+          let o = N.default.getRTCConnection(i.encodeStreamKey({
+            streamType: null != t ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
+            ownerId: _,
+            channelId: E,
+            guildId: t
+          }));
+          null != o && this.applyInboundStreamRecording(_, o)
         }
         handleRTCUserSSRC(e) {
           let {
@@ -21028,7 +21026,7 @@
             channelId: t,
             guildId: n
           }));
-          this.recordInboundStream(_, r)
+          null != r && this.applyInboundStreamRecording(_, r)
         }
         async classifyHardwareAndTrack() {
           try {
@@ -21082,13 +21080,13 @@
           let t = l.default.isVoiceRecordingAllowedForUser(e);
           null == E || E.setClipRecordSSRC(e, "audio", "inbound", t, _)
         }
-        recordInboundStream(e, _) {
+        applyInboundStreamRecording(e, _) {
           if (!(0, L.default)(T.default) || e === s.default.getId()) return;
           let {
             enableViewerClipping: E,
             ignoreSenderPreference: t
           } = I.default.getCurrentConfig({
-            location: "ClipsManager:recordInboundStream"
+            location: "ClipsManager:applyInboundStreamRecording"
           });
           if (!E) return;
           let o = t || l.default.isViewerClippingAllowedForUser(e);
@@ -23048,7 +23046,8 @@
             [C.OverlayNotificationType.OverlayCrashed]: new D,
             [C.OverlayNotificationType.StartBroadcastNotification]: new D,
             [C.OverlayNotificationType.ClipsReminderNotification]: new D,
-            [C.OverlayNotificationType.ClipsNotification]: new D
+            [C.OverlayNotificationType.ClipsNotification]: new D,
+            [C.OverlayNotificationType.KeybindIndicatorsNotification]: new D
           }
         }
       }(o = t || (t = {}))[o.Voice = 0] = "Voice", o[o.Text = 1] = "Text";
@@ -36407,4 +36406,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.3f70df69441599208f34.js.map
+//# sourceMappingURL=66318.4b930dc605e4ba229f7d.js.map
