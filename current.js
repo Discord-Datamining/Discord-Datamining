@@ -4654,6 +4654,7 @@
         SCOPE_UNSUPPORTED_ON_ANDROID: "Not supported within Android app",
         SCOPE_UNSUPPORTED_ON_ANDROID_DESCRIPTION: "This OAuth2 scope is not supported within the app yet.\nGood news though, it does work on your mobile web browser! So please open it there.",
         OAUTH2_GO_TO_SERVER_NAME_CTA: "Go to **!!{guildName}!!**",
+        OAUTH2_GO_TO_SERVER_DEFAULT_CTA: "Go to Server",
         SETTINGS_TWO_FA: "Multi-Factor Authentication",
         TWO_FA: "Authenticator App",
         TWO_FA_DESCRIPTION: "Configuring an authenticator app is a good way to add an extra layer of security to your Discord account to make sure that only you have the ability to log in.",
@@ -18266,7 +18267,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254227", ", Version Hash: ").concat("a750216dc9bfa5fd5f89160c748f08a232d67f24")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254230", ", Version Hash: ").concat("ef2191060f5490167a4ca97533fbc2a4b90cb788")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20565,8 +20566,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254227", "254227"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254227")), _ = 0), _
+        let _ = parseInt((e = "254230", "254230"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254230")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36406,4 +36407,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.cd8c0faee7a829c83d30.js.map
+//# sourceMappingURL=66318.c098eb8348840ac8f267.js.map
