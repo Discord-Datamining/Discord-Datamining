@@ -4288,6 +4288,7 @@
         TOGGLE_MEDIA_KEYBOARD: "Toggle media keyboard",
         TOGGLE_MEDIA_KEYBOARD_HINT: "Open to add an image to your message, use a command, or start a thread",
         A11Y_MOBILE_HEADER_BUTTON_HINT: "double-tap for more options",
+        A11Y_MOBILE_BUTTON_HINT: "double-tap to activate",
         A11Y_ROLE_CHECKBOX: "checkbox",
         A11Y_ROLE_SWITCH: "switch",
         A11Y_ROLE_RADIO_BUTTON: "radio button",
@@ -16332,9 +16333,11 @@
         SCREENSHARE_APPS_PHOTOS_ACCESSIBILITY_LABEL: "Screenshare Photos",
         SCREENSHARE_APPS_SNAPCHAT: "Snapchat",
         SCREENSHARE_APPS_SNAPCHAT_ACCESSIBILITY_LABEL: "Screenshare Snapchat",
+        LAUNCH_PAD: "LaunchPad",
         LAUNCH_PAD_HISTORY: "Recent Channels",
         LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
         LAUNCH_PAD_RECENT_SERVERS: "Recent Servers",
+        LAUNCH_PAD_TAB_A11Y_LABEL: "Open LaunchPad",
         REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
         REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report."
       })
@@ -18322,7 +18325,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254072", ", Version Hash: ").concat("6262ac7fe7a8a58886af405007fef2ac0a7fb517")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254077", ", Version Hash: ").concat("19ff62e5d18f79ad67a838dfbacd279bb15cfc47")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20620,8 +20623,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254072", "254072"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254072")), _ = 0), _
+        let _ = parseInt((e = "254077", "254077"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254077")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36448,4 +36451,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.dba363be49395444bdfb.js.map
+//# sourceMappingURL=66318.10156a1bb087130889d6.js.map
