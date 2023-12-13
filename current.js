@@ -2434,6 +2434,7 @@
         FORM_LABEL_MOBILE_NOTIFICATIONS_OS_CONTROL_JUMP: "Tweak notification settings",
         FORM_LABEL_MOBILE_NOTIFICATIONS_OS_CONTROL_JUMP_HELP: "Advanced notification settings are controlled by the system.",
         FORM_LABEL_MOBILE_NOTIFICATIONS_CALL_DESC: "Integrate calls with Phone app.",
+        FORM_LABEL_MOBILE_NOTIFICATIONS_VOICE_CHANNEL_OVERRIDE: "Switching to at-mentions only will disable voice activity notifications while still letting you know if somebody pinged you directly in the VC chat.",
         FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_MUTE: "You won't receive notifications from muted channels, and they will appear grayed out in your channel list. This setting applies across all your devices.",
         FORM_LABEL_MOBILE_CATEGORY_OVERRIDE_MUTE: "You won't receive notifications from muted categories, and they will appear grayed out in your channel list. This setting applies across all your devices.",
         FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_GUILD_MUTED: "Your server is currently $[**muted**](mutedHook). You can't get notifications from this channel nor change settings until you unmute this server.",
@@ -2464,6 +2465,7 @@
         FORM_DESCRIPTION_MOBILE_NOTIFICATION_MUTED: "You can’t get notifications from this channel nor change settings until you unmute this channel.",
         FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ALL_MESSAGES: "You are receiving notifications from all messages in this server, but you can override it here",
         FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ONLY_MENTIONS: "You are receiving notifications from only mentions in this server, but you can override it here",
+        FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ALL_ACTIVITY: "You are receiving notifications from all activity in this server, but you can override it here",
         SETTINGS_GAMES_NO_GAME_DETECTED: "No game detected",
         SETTINGS_GAMES_ADDED_GAMES_LABEL: "Added Games",
         SETTINGS_GAMES_HIDDEN_LIBRARY_APPLICATIONS_LABEL: "Hidden Games",
@@ -18263,7 +18265,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254182", ", Version Hash: ").concat("a0f9e5982e59a697f83eecdb9803afa7a3e84687")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254185", ", Version Hash: ").concat("34442276946e9b441f55255e1bc381f927a47a9e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20562,8 +20564,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254182", "254182"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254182")), _ = 0), _
+        let _ = parseInt((e = "254185", "254185"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254185")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36405,4 +36407,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.c0b50bdf44b9bb794389.js.map
+//# sourceMappingURL=66318.e9fc1d5b96f0dd200c2d.js.map
