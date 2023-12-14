@@ -18268,7 +18268,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254289", ", Version Hash: ").concat("ff7ef12ab282cc387d14c5bc4acd6084a16b9353")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254317", ", Version Hash: ").concat("14d75e1b2e59d691bd2efd2f975ddf03d65e3411")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19844,6 +19844,11 @@
           actions: ["CHANNEL_CREATE"],
           inlineRequire: () => E("643857").default,
           neverLoadBeforeConnectionOpen: !0
+        },
+        QuestsManager: {
+          actions: ["POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE"],
+          inlineRequire: () => E("319405").default,
+          neverLoadBeforeConnectionOpen: !0
         }
       };
       (0, t.initialize)(o)
@@ -20567,8 +20572,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254289", "254289"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254289")), _ = 0), _
+        let _ = parseInt((e = "254317", "254317"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254317")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26416,6 +26421,142 @@
         var _;
         return !e.ok && (null === (_ = e.body) || void 0 === _ ? void 0 : _.code) === t.AbortCodes.BLOCKED_BY_PROXY
       }
+    },
+    448881: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        fetchCurrentQuests: function() {
+          return a
+        }
+      });
+      var t = E("872717"),
+        o = E("913144"),
+        n = E("599417"),
+        r = E("49111");
+      async function a() {
+        o.default.dispatch({
+          type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
+        });
+        try {
+          let e = await t.default.get({
+            url: r.Endpoints.QUESTS_CURRENT_QUESTS
+          });
+          o.default.dispatch({
+            type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
+            quests: e.body
+          })
+        } catch (e) {
+          o.default.dispatch({
+            type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
+            error: new n.default(e)
+          })
+        }
+      }
+    },
+    374023: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return n
+        }
+      });
+      var t = E("862205");
+      let o = (0, t.createExperiment)({
+        id: "2023-12_quests",
+        kind: "user",
+        label: "Quests",
+        defaultConfig: {
+          enabled: !1
+        },
+        treatments: [{
+          id: 0,
+          label: "Control",
+          config: {
+            enabled: !1
+          }
+        }, {
+          id: 1,
+          label: "Quests enabled",
+          config: {
+            enabled: !0
+          }
+        }]
+      });
+      var n = o
+    },
+    2973: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return I
+        }
+      });
+      var t = E("446674"),
+        o = E("913144");
+      let n = !1,
+        r = [],
+        a = 0;
+      class i extends t.default.Store {
+        get quests() {
+          return r
+        }
+        get isFetchingCurrentQuests() {
+          return n
+        }
+        get lastFetchedCurrentQuests() {
+          return a
+        }
+      }
+      i.displayName = "QuestsStore";
+      var I = new i(o.default, {
+        LOGOUT: function() {
+          n = !1, r = [], a = 0
+        },
+        QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
+          a = Date.now(), n = !0
+        },
+        QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: function(e) {
+          let {
+            quests: _
+          } = e;
+          n = !1, r = _
+        },
+        QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
+          a = 0, n = !1
+        }
+      })
+    },
+    319405: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return i
+        }
+      }), E("222007");
+      var t = E("689988"),
+        o = E("448881"),
+        n = E("374023"),
+        r = E("2973");
+      class a extends t.default {
+        maybeFetchCurrentQuests() {
+          n.default.getCurrentConfig({
+            location: "maybeFetchCurrentQuests"
+          }, {
+            autoTrackExposure: !1
+          }).enabled && !r.default.isFetchingCurrentQuests && (0, o.fetchCurrentQuests)()
+        }
+        constructor(...e) {
+          super(...e), this.instantiatedAt = Date.now(), this.handleRunningGamesChange = () => {
+            !(this.instantiatedAt + 432e5 > Date.now() || r.default.lastFetchedCurrentQuests + 432e5 > Date.now()) && this.maybeFetchCurrentQuests()
+          }, this.handlePostConnectionOpen = () => {
+            window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(5e3 * Math.random()))
+          }, this.actions = {
+            POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
+            RUNNING_GAMES_CHANGE: this.handleRunningGamesChange
+          }
+        }
+      }
+      var i = new a
     },
     50733: function(e, _, E) {
       "use strict";
@@ -36408,4 +36549,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.0f26f219ec4710ef2df9.js.map
+//# sourceMappingURL=66318.36d6ca8da8de62a79d74.js.map
