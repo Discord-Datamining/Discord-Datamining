@@ -18271,7 +18271,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254438", ", Version Hash: ").concat("edd6c490eed38457d2b6d4dcf90aed0a9b796d6a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254457", ", Version Hash: ").concat("e53730879c2dcf0505cfbccea8adb8102c3a344d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20575,8 +20575,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254438", "254438"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254438")), _ = 0), _
+        let _ = parseInt((e = "254457", "254457"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254457")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26177,23 +26177,25 @@
           super(...e), this.actions = {
             POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
           }, this.onPostConnectionOpen = () => {
-            let e = i.UUOneClickExperiment.getCurrentConfig({
-              location: "uu_one_click"
-            }, {
-              autoTrackExposure: !1
-            }).enabled;
-            (function() {
-              let e = r.experiment.getCurrentConfig({
-                location: "b9eb97_1"
+            if (function() {
+                let e = r.experiment.getCurrentConfig({
+                  location: "b9eb97_1"
+                }, {
+                  autoTrackExposure: !1
+                }).enabled;
+                if (!e) return !1;
+                let _ = n.default.getCurrentUser();
+                if (null == _ || _.isPomelo() || !_.hasVerifiedEmailOrPhone()) return !1;
+                let E = t.default.get(s);
+                return !(null != E && Date.now() - E < 6048e5) && !0
+              }()) {
+              let e = i.UUOneClickExperiment.getCurrentConfig({
+                location: "uu_one_click"
               }, {
                 autoTrackExposure: !1
               }).enabled;
-              if (!e) return !1;
-              let _ = n.default.getCurrentUser();
-              if (null == _ || _.isPomelo() || !_.hasVerifiedEmailOrPhone()) return !1;
-              let E = t.default.get(s);
-              return !(null != E && Date.now() - E < 6048e5) && !0
-            })() && ((0, a.openPomeloModal)(I.PomeloEntrypoints.APP_START, e), t.default.set(s, Date.now()))
+              (0, a.openPomeloModal)(I.PomeloEntrypoints.APP_START, e), t.default.set(s, Date.now())
+            }
           }
         }
       }
@@ -36552,4 +36554,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.7250e89645521ed18ef1.js.map
+//# sourceMappingURL=66318.2f29b3c200f6fccf7b73.js.map
