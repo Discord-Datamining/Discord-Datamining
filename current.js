@@ -71,6 +71,8 @@
         UNREADS_EMPTY_STATE_HEADER: "You're all caught up!",
         UNREADS_EMPTY_STATE_TIP: "Open the Inbox by pressing CTRL+I, and mark your top message as read with CTRL+Shift+E.",
         UNREADS_EMPTY_STATE_TIP_MAC: "Open the Inbox by pressing CMD+I, and mark your top message as read with CMD+Shift+E.",
+        UNREADS_EMPTY_STATE_ERROR_HEADER: "Whoops",
+        UNREADS_EMPTY_STATE_ERROR_SUBTITLE: "The Inbox hit a snag, please close and re-open it.",
         UNREADS_VIEW_CHANNEL: "View all unreads",
         UNREADS_MARK_READ: "Mark Inbox As Read",
         UNREADS_TUTORIAL_HEADER: "Stay up to date with latest messages!",
@@ -18271,7 +18273,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254536", ", Version Hash: ").concat("49e4a8602c0edfd0d207c004c6eeec513f650a50")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254543", ", Version Hash: ").concat("efca5cc5f11cfea00a404a2a8e206071a5b478a4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20575,8 +20577,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254536", "254536"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254536")), _ = 0), _
+        let _ = parseInt((e = "254543", "254543"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254543")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36554,4 +36556,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.c1f903129bd80b4b4ae1.js.map
+//# sourceMappingURL=66318.0c61135dcaf55b78797d.js.map
