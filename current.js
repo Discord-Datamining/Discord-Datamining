@@ -13051,7 +13051,7 @@
         FORM_LABEL_SUPPRESS_HIGHLIGHTS_NOTE: "Suppress notifications for noteworthy content like messages, friend activity, events, and more.",
         HIGHLIGHTS_LEARN_MORE: "Learn more about Highlights",
         HIGHLIGHTS_SERVER_TOO_LARGE: "Due to the server's size, you may not receive highlights.",
-        HIGHLIGHTS_NOTE_SUBTEXT: "Highlights are occasional notifications about popular messages, friend activity, and more.",
+        HIGHLIGHTS_NOTE_SUBTEXT: "Highlights provide occasional updates when your friends are chatting in busy servers, and more.",
         GUILD_HIGHLIGHTS_NOTIFICATIONS_CATEGORY: "Highlights",
         NOTIFICATION_BODY_DISCORD_HIDDEN: "Discord is still running, click to change settings",
         CHAT_DISABLED_CHANNEL_LIST: "Done reading? Check out other channels.",
@@ -16475,7 +16475,12 @@
         DEV_NOTICE_STAGING: "Staging {buildNumber}",
         NOTIF_CENTER_V2_VIEW_SUMMARY: "Join in!",
         NOTIFICATION_CENTER_HIGHLIGHT_SETTINGS: "Highlight Notification Settings",
+        NOTIFICATION_REPORT_IRRELEVANT_CHANNEL: "I don't care about this channel",
+        NOTIFICATION_REPORT_IRRELEVANT_USER: "I don't know these people",
+        NOTIFICATION_REPORT_IRRELEVANT_TOPIC: "Topic isn't relevant to me",
+        NOTIFICATION_REPORT_SENSITIVE_OR_OFFENSIVE_TOPIC: "Topic is sensitive or offensive",
         HIGHLIGHT_NOTIFICATION_SETTINGS_LABEL_SUPPRESS_HIGHLIGHTS: "Suppress Highlights in this server",
+        HIGHLIGHT_NOTIFICATION_ACTIONSHEET_BODY: "Stay informed, without the noise! Highlights provide occasional updates when your friends are chatting in busy servers. [Learn more]({helpUrl})",
         GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED: "We are having trouble loading the requirements. Please check back later.",
         GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED_TOOLTIP: "Something went wrong. Please check back later",
         PURCHASE_REVIEW_TAX_LABEL: "Tax",
@@ -18276,7 +18281,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254677", ", Version Hash: ").concat("05644c8b51ed5048974eb19e5ad47ab46c800626")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254686", ", Version Hash: ").concat("ea568c928333fb679bc8270c707499ca8813ebb8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20580,8 +20585,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254677", "254677"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254677")), _ = 0), _
+        let _ = parseInt((e = "254686", "254686"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254686")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36552,4 +36557,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.477bab9030baa8a76341.js.map
+//# sourceMappingURL=66318.138ae387ca543fc4ba06.js.map
