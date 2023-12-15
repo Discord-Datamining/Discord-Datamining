@@ -11392,7 +11392,6 @@
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_SCHEDULED_END_TIME_REMOVED: "Reset the end time",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_CANCELED: "Canceled this event",
         GUILD_SETTINGS_AUDIT_LOG_SCHEDULED_EVENT_EXCEPTION_IS_CANCELED_RESTORED: "Restored this event",
-        GUILD_EVENT_AUTO_START_TOGGLE: "Automatically start event",
         CHANNEL_PERMISSIONS_MODERATOR_TITLE: "Stage Moderators",
         CHANNEL_PERMISSIONS_MODERATOR_CURRENT_TITLE: "Current Stage moderators",
         CHANNEL_PERMISSIONS_MODERATOR_DESCRIPTION: "Stage moderators are Speakers who can add and remove other Speakers. They can also start the Stage event. Stage moderators don't have to be mods of the server.",
@@ -18273,7 +18272,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254597", ", Version Hash: ").concat("d97221894ee9810aaccd89676aff0298d78e3330")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254602", ", Version Hash: ").concat("4c53d14012550f2b5a7e4110f740d1a6767aefc6")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20577,8 +20576,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254597", "254597"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254597")), _ = 0), _
+        let _ = parseInt((e = "254602", "254602"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254602")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36549,4 +36548,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.a505592cdd4fdc7b73a9.js.map
+//# sourceMappingURL=66318.a9d3aa72e94eb3bc276d.js.map
