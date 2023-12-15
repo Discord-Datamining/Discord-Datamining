@@ -16696,25 +16696,30 @@
         REPORTS_USER_MENU_OPTION_MOBILE: "Report User Profile",
         NOTIF_MIGRATION_INTRO_TAB: "Intro",
         NOTIF_MIGRATION_CUSTOMIZE_TAB: "Customize",
-        NOTIF_MIGRATION_REVIEW_TAB: "Review",
-        NOTIF_MIGRATION_INTRO_TITLE: "Introducing Essentials",
-        NOTIF_MIGRATION_INTRO_SUB_TITLE: "New notification setting for busy servers you care about **just a bit**",
-        NOTIF_MIGRATION_INTRO_BOX_1_TITLE: "Easy Presets, Granular Controls",
-        NOTIF_MIGRATION_INTRO_BOX_1_SUBTITLE: "We’ve made it easier for you to manage and understand Notification Settings with Presets. You can still adjust them on a granular level if you want to.",
-        NOTIF_MIGRATION_INTRO_BOX_2_TITLE: "New Unread Badge Tier",
-        NOTIF_MIGRATION_INTRO_BOX_2_SUBTITLE: "You will only see an unread badge when you’ve been mentioned. Otherwise, when there’s a new message it will have a grey dot that doesn’t seek your attention.",
-        NOTIF_MIGRATION_INTRO_BOX_3_TITLE: "Channels you care can still get a badge",
-        NOTIF_MIGRATION_INTRO_BOX_3_SUBTITLE: "We will automatically set channels you visit frequently to still show unread badges for all messages. You can change this per channel in the future.",
+        NOTIF_MIGRATION_REVIEW_TAB: "Additional Tips",
+        NOTIF_MIGRATION_INTRO_TITLE: "Discord notifications just got better!",
+        NOTIF_MIGRATION_INTRO_SUB_TITLE: "Cut through the noise and stay focused on what's important.",
+        NOTIF_MIGRATION_INTRO_BOX_1_TITLE: "Choose which channels matter the most",
+        NOTIF_MIGRATION_INTRO_BOX_1_SUBTITLE: "Servers show as unread for new messages in your important channels.",
+        NOTIF_MIGRATION_INTRO_BOX_2_TITLE: "Read other channels when it suits you",
+        NOTIF_MIGRATION_INTRO_BOX_2_SUBTITLE: "All channels indicate when there are new messages, but only important channels mark the server as unread.",
+        NOTIF_MIGRATION_INTRO_BOX_3_TITLE: "One-click to control everything",
+        NOTIF_MIGRATION_INTRO_BOX_3_SUBTITLE: "Manage your notifications with our smart presets.",
         NOTIF_MIGRATION_CUSTOMIZE_TITLE: "How much do you care about these servers?",
-        NOTIF_MIGRATION_CUSTOMIZE_SUB_TITLE: "We’ve made a guess based on your usage pattern. Feel free to drag & drop based on your preferences.",
-        NOTIF_MIGRATION_CUSTOMIZE_BOX_1_TITLE: "I care about these servers **a lot**.",
-        NOTIF_MIGRATION_CUSTOMIZE_BOX_1_SUBTITLE: "I expect every updates from this server.",
-        NOTIF_MIGRATION_CUSTOMIZE_BOX_2_TITLE: "I care about these servers **a bit**.",
-        NOTIF_MIGRATION_CUSTOMIZE_BOX_2_SUBTITLE: "I expect updates when they are relevant to me.",
+        NOTIF_MIGRATION_CUSTOMIZE_SUB_TITLE_1: "We will touch up your settings based on which channels you use the most.",
+        NOTIF_MIGRATION_CUSTOMIZE_SUB_TITLE_2: "We aren't sure about these servers below, but you can drag them to a different category.",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_1_TITLE: "I care about these servers **a lot**",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_1_SUBTITLE: "I expect every update from this server",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_1_TOOLTIP: "These servers will get **unread badges for every message** in each channel.",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_2_TITLE: "I care about these servers **a bit**",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_2_SUBTITLE: "I'll check this server at my own pace",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_2_TOOLTIP: "These servers will get **unread badges for mentions only** in each channel.",
         NOTIF_MIGRATION_CUSTOMIZE_BOX_3_TITLE: "I **don’t care** about these servers.",
-        NOTIF_MIGRATION_CUSTOMIZE_BOX_3_SUBTITLE: "I don’t expect updates, I’ll check at my own pace.",
-        NOTIF_MIGRATION_REVIEW_TITLE: "Here’s what will happen",
-        NOTIF_MIGRATION_REVIEW_SUB_TITLE: "We will set **notification presets** for each server based on your selection. You can always change them later, or revert back to your current notification setting whenever.",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_3_SUBTITLE: "I don’t expect updates from this server",
+        NOTIF_MIGRATION_CUSTOMIZE_BOX_3_TOOLTIP: "These servers will get **unread badges for mentions only** in each channel, and **will not send you push notifications**.",
+        NOTIF_MIGRATION_REVIEW_TITLE: "You’re all set!",
+        NOTIF_MIGRATION_REVIEW_SUB_TITLE_1: "We’ve updated your notification setting based on your preferences.",
+        NOTIF_MIGRATION_REVIEW_SUB_TITLE_2: "Here are some helpful tips:",
         NOTIFICATION_MIGRATION_SHOW_ALL: "Show All Servers",
         NOTIF_MIGRATION_WARNING: "Hola, it looks like you might be modifying your client. This feature is going to be cool, we're building it for power users, buuut you may want to stay clear it for a bit, because it's not really ready yet and might actually mess up your client (seriously). You can read more here though: [https://dis.gd/notifications-technical-details](https://dis.gd/notifications-technical-details)",
         POLL: "Poll",
@@ -18272,7 +18277,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254638", ", Version Hash: ").concat("e32a2eb8e9c5e21920e0802df3d0e0229a1e84fb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254640", ", Version Hash: ").concat("1138a4c066f4d44b4228166f96d72dd37e57b38e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20576,8 +20581,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254638", "254638"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254638")), _ = 0), _
+        let _ = parseInt((e = "254640", "254640"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254640")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36548,4 +36553,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.09d69a6701fb07b14c62.js.map
+//# sourceMappingURL=66318.ad8106e4be3705b52b47.js.map
