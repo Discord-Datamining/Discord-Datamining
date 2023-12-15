@@ -16770,6 +16770,10 @@
         POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {1 min} other {{minutes} mins left}}",
         POLL_EXPIRED: "Poll closed",
         POLL_NOT_INTERACTIVE: "View original message to interact",
+        POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
+        POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
+        POLL_TAP_FOR_VOTERS_A11Y_ANDROID: "Reveal voters",
+        POLL_TAP_FOR_VOTERS_A11Y_IOS: "Reveals voters",
         FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
         KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
@@ -18279,7 +18283,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254927", ", Version Hash: ").concat("85a2c0f19a366c9e9a04ec73eb5f010dfa18afc6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254931", ", Version Hash: ").concat("453da07b19c34380ee5caf83ca14305c86d95933")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19829,7 +19833,7 @@
           inlineRequire: () => E("129040").default
         },
         ClipsManager: {
-          actions: ["RTC_CONNECTION_FLAGS", "VOICE_STATE_UPDATES", "RTC_CONNECTION_USER_CREATE_SSRC", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
+          actions: ["RTC_CONNECTION_FLAGS", "VOICE_STATE_UPDATES", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
           inlineRequire: () => E("332491").default
         },
         BroadcastingManager: {
@@ -20583,8 +20587,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254927", "254927"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254927")), _ = 0), _
+        let _ = parseInt((e = "254931", "254931"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254931")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20981,7 +20985,7 @@
             channelId: E,
             guildId: t
           } = e;
-          this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
+          this.maybeShowClipsWarning(_), this.applyUserRecording(_);
           let o = N.default.getRTCConnection(a.encodeStreamKey({
             streamType: null != t ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
             ownerId: _,
@@ -20989,14 +20993,6 @@
             guildId: t
           }));
           null != o && this.applyInboundStreamRecording(_, o)
-        }
-        handleRTCUserSSRC(e) {
-          let {
-            userId: _,
-            ssrc: E,
-            context: t
-          } = e;
-          t === o.MediaEngineContextTypes.DEFAULT && this.applySSRCRecording(_, E)
         }
         handleClipsInitFailure(e) {
           let {
@@ -21091,12 +21087,12 @@
           }
           return u.ClipsHardwareClassification.UNKNOWN
         }
-        applySSRCRecording(e, _) {
+        applyUserRecording(e) {
           if (!(0, L.default)(T.default) || e === s.default.getId()) return;
-          let E = S.default.getRTCConnection();
-          if (null == E) return;
-          let t = l.default.isVoiceRecordingAllowedForUser(e);
-          null == E || E.setClipRecordSSRC(e, "audio", "inbound", t, _)
+          let _ = S.default.getRTCConnection();
+          if (null == _) return;
+          let E = l.default.isVoiceRecordingAllowedForUser(e);
+          null == _ || _.setClipRecordUser(e, "audio", E)
         }
         applyInboundStreamRecording(e, _) {
           if (!(0, L.default)(T.default) || e === s.default.getId()) return;
@@ -21108,7 +21104,7 @@
           });
           if (!E) return;
           let o = t || l.default.isViewerClippingAllowedForUser(e);
-          this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", o), _.setClipRecordSSRC(e, "video", "inbound", o)
+          this.applyNativeClipsSettings(), _.setClipRecordUser(e, "audio", o), _.setClipRecordUser(e, "video", o)
         }
         disableClips() {}
         constructor(...e) {
@@ -21116,7 +21112,6 @@
             POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
             RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
             VOICE_STATE_UPDATES: e => this.handleVoiceStateUpdates(e),
-            RTC_CONNECTION_USER_CREATE_SSRC: e => this.handleRTCUserSSRC(e),
             CLIPS_INIT_FAILURE: e => this.handleClipsInitFailure(e),
             CLIPS_SETTINGS_UPDATE: e => this.applyNativeClipsSettings(e),
             STREAM_START: () => this.applyNativeClipsSettings(),
@@ -29037,8 +29032,11 @@
         getPlatformName: function() {
           return u
         },
-        getOS: function() {
+        getNativePlatform: function() {
           return L
+        },
+        getOS: function() {
+          return C
         }
       }), (o = t || (t = {})).WINDOWS = "WINDOWS", o.OSX = "OSX", o.LINUX = "LINUX", o.WEB = "WEB";
       let n = window.DiscordNative,
@@ -29091,6 +29089,16 @@
       }
 
       function L() {
+        switch (i) {
+          case "ios":
+          case "android":
+            return i;
+          default:
+            return "web"
+        }
+      }
+
+      function C() {
         let {
           userAgent: e
         } = window.navigator;
@@ -36547,4 +36555,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.c56c22c3a07cd0bfb27c.js.map
+//# sourceMappingURL=66318.bad81402a5ddc9a3922e.js.map
