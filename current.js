@@ -6287,8 +6287,6 @@
         EXPERIMENTAL_FEATURES: "Experimental Features",
         EXPERIMENTAL_DESCRIPTION: "These settings/features are in testing phase and may be unstable. They are subject to change or removal without notice. Use with caution.",
         EXPERIMENTAL_FEATURES_TOAST: "These settings are still baking. Try not to get burnt \uD83D\uDD25",
-        EXPERIMENTAL_AMOLED_MODE_TITLE: "AMOLED Mode",
-        EXPERIMENTAL_AMOLED_MODE_NOTE: "This feature is experimental and incomplete. Things might break unexpectedly. Use at your own risk.",
         PREMIUM_PERKS_TIER_2_PROFILE: "Style your profile with a banner, custom tag, theme, animated avatar, and exclusive Nitro badge",
         PREMIUM_PERKS_TIER_1_PROFILE: "Style your profile with a custom tag, animated avatar, and exclusive Nitro badge",
         PREMIUM_PERKS_TIER_2_CUSTOM_EMOJI: "Use your custom emoji anywhere and animate them",
@@ -18281,7 +18279,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254776", ", Version Hash: ").concat("e074459e58352bfb6ca49fb3664b898fa465b893")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("254788", ", Version Hash: ").concat("ccc9b054714fc260c5e1bafcc3b706a1c9665987")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20585,8 +20583,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "254776", "254776"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254776")), _ = 0), _
+        let _ = parseInt((e = "254788", "254788"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("254788")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21403,7 +21401,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return G
+          return h
         }
       }), E("222007");
       var t = E("37983"),
@@ -21419,53 +21417,50 @@
         N = E("206230"),
         O = E("338733"),
         A = E("584369"),
-        R = E("87469"),
-        l = E("915639"),
-        u = E("161778"),
-        L = E("168973"),
-        C = E("471671"),
-        c = E("439932"),
-        D = E("779601"),
-        d = E("69927"),
-        U = E("983689"),
-        M = E("628922"),
-        h = E("49111");
+        R = E("915639"),
+        l = E("161778"),
+        u = E("471671"),
+        L = E("439932"),
+        C = E("779601"),
+        c = E("69927"),
+        D = E("983689"),
+        d = E("628922"),
+        U = E("49111");
       E("313380");
-      var P = E("559980");
-      let m = new Set([h.Routes.LOGIN, h.Routes.REGISTER]);
-      var G = o.memo(function(e) {
+      let M = new Set([U.Routes.LOGIN, U.Routes.REGISTER]);
+      var h = o.memo(function(e) {
         let {
           children: _,
           skipsSettingDefaultPageTitle: n
         } = e;
-        (0, d.usePageTitleManager)({
+        (0, c.usePageTitleManager)({
           skipsSettingDefaultPageTitle: n
         });
         let {
-          clientThemesClassName: h,
-          clientThemesCSS: G
-        } = (0, O.default)(), p = o.createElement("style", {
+          clientThemesClassName: U,
+          clientThemesCSS: h
+        } = (0, O.default)(), P = o.createElement("style", {
           [O.CLIENT_THEMES_DATA_ATTRIBUTE]: !0
-        }, G);
+        }, h);
         return (0, t.jsxs)(i.Helmet, {
           children: [function(e) {
             let {
               locale: _,
               theme: E
-            } = (0, s.useStateFromStoresObject)([u.default, l.default], () => ({
-              locale: l.default.locale,
-              theme: u.default.theme
-            })), n = (0, s.useStateFromStores)([L.default], () => L.default.useAMOLEDTheme), i = (0, s.useStateFromStores)([C.default], () => C.default.isFocused(), []), {
-              reducedMotion: T,
-              alwaysShowLinkDecorations: O
+            } = (0, s.useStateFromStoresObject)([l.default, R.default], () => ({
+              locale: R.default.locale,
+              theme: l.default.theme
+            })), n = (0, s.useStateFromStores)([u.default], () => u.default.isFocused(), []), {
+              reducedMotion: i,
+              alwaysShowLinkDecorations: T
             } = o.useContext(S.AccessibilityPreferencesContext), {
-              fontScale: d,
-              fontScaleClass: h,
-              keyboardModeEnabled: G,
-              saturation: p,
-              desaturateUserColors: y,
-              useForcedColors: g,
-              systemForcedColors: B
+              fontScale: O,
+              fontScaleClass: c,
+              keyboardModeEnabled: U,
+              saturation: h,
+              desaturateUserColors: P,
+              useForcedColors: m,
+              systemForcedColors: G
             } = (0, s.useStateFromStoresObject)([N.default], () => {
               let {
                 fontScale: e,
@@ -21485,36 +21480,31 @@
                 useForcedColors: n,
                 systemForcedColors: r
               }
-            }), f = (0, a.useLocation)(), v = o.useMemo(() => m.has(f.pathname), [f.pathname]);
-            (0, U.default)(window, v);
-            let H = (0, M.default)(window, __OVERLAY__ || i),
-              b = (0, s.useStateFromStores)([A.default], () => A.default.sidebarWidth),
-              w = R.default.useExperiment({
-                location: "aa85a3_1"
-              }, {
-                autoTrackExposure: !1
-              }).enabledAMOLEDThemeOption,
-              F = (0, S.useRedesignIconContext)().enabled;
+            }), p = (0, a.useLocation)(), y = o.useMemo(() => M.has(p.pathname), [p.pathname]);
+            (0, D.default)(window, y);
+            let g = (0, d.default)(window, __OVERLAY__ || n),
+              B = (0, s.useStateFromStores)([A.default], () => A.default.sidebarWidth),
+              f = (0, S.useRedesignIconContext)().enabled;
             return (0, t.jsx)("html", {
               lang: _,
-              style: "font-size: ".concat(d, "%; --saturation-factor: ").concat(p, "; --devtools-sidebar-width: ").concat(b, "px;"),
+              style: "font-size: ".concat(O, "%; --saturation-factor: ").concat(h, "; --devtools-sidebar-width: ").concat(B, "px;"),
               className: r(e, {
                 overlay: __OVERLAY__,
-                "mouse-mode": H,
-                "keyboard-mode": G,
-                "reduce-motion": T.enabled,
-                "full-motion": !T.enabled,
+                "mouse-mode": g,
+                "keyboard-mode": U,
+                "reduce-motion": i.enabled,
+                "full-motion": !i.enabled,
                 "is-mobile": I.isMobile,
-                "app-focused": i,
-                "low-saturation": p <= S.LOW_SATURATION_THRESHOLD,
-                "decorate-links": O,
-                "desaturate-user-colors": y,
-                "disable-forced-colors": !g && "active" === B,
-                "enable-forced-colors": g,
-                "show-redesigned-icons": F
-              }, w && n === P.AMOLEDThemeState.ON ? "theme-dark theme-amoled" : (0, c.getThemeClass)(E), (0, D.default)(), h)
+                "app-focused": n,
+                "low-saturation": h <= S.LOW_SATURATION_THRESHOLD,
+                "decorate-links": T,
+                "desaturate-user-colors": P,
+                "disable-forced-colors": !m && "active" === G,
+                "enable-forced-colors": m,
+                "show-redesigned-icons": f
+              }, (0, L.getThemeClass)(E), (0, C.default)(), c)
             })
-          }(h), function() {
+          }(U), function() {
             let [e, _] = o.useState([]);
             return o.useEffect(() => {
               Promise.all(T.fontsToPreload.map(e => E("437087")("@discordapp/tokens/typography/generated/gg-sans/".concat(e, ".woff2").replace("@discordapp/tokens/typography/generated/gg-sans/", "./")).then(e => {
@@ -21532,7 +21522,7 @@
                 crossOrigin: "true"
               }, _))
             })
-          }(), p, _]
+          }(), P, _]
         })
       })
     },
@@ -36557,4 +36547,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.2fd6473ea73112e8f3ea.js.map
+//# sourceMappingURL=66318.5143db2c841f499b736a.js.map
