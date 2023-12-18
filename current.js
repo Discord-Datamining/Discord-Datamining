@@ -12233,6 +12233,7 @@
         SUGGEST_STICKERS: "Stickers",
         MISSING_PAYMENT_METHOD_BANNER: "Your Nitro sub is about to expire. Enter a valid payment method to keep your subscription.",
         INVALID_PAYMENT_METHOD_BANNER: "Your payment method failed, update your payment details to continue your Nitro subscription.",
+        DUPLICATE_SUBSCRIPTIONS_BANNER: "You currently have multiple active Nitro subscriptions. For instructions on how cancel your duplicate subscriptions, please [click here]({helpCenterLink}).",
         BRL_NAME: "Brazilian Real",
         PLN_NAME: "Polish Złoty",
         TRY_NAME: "Turkish Lira",
@@ -18283,7 +18284,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255082", ", Version Hash: ").concat("040c8b5d05847f02e63e58ce68b7028a95d07cf7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255094", ", Version Hash: ").concat("dc74aa41b394e552412102bae64f3de866db17e9")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20587,8 +20588,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255082", "255082"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255082")), _ = 0), _
+        let _ = parseInt((e = "255094", "255094"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255094")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36555,4 +36556,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.a9a275781337f8461903.js.map
+//# sourceMappingURL=66318.36418038df3670330c5d.js.map
