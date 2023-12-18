@@ -16654,14 +16654,15 @@
         BROADCASTING_BETA_TOOLTIP_TEXT: "Open Parties is an experimental feature. A limited number of users have the ability to host or join.",
         START_BROADCAST_NOTIFICATION_BODY: "Start a party, so your friends can drop by!",
         START_BROADCAST_NOTIFICATION_CTA: "Open a Party",
-        STATUS_POPOUT_CUSTOM_TITLE: "Customs",
+        STATUS_POPOUT_CUSTOM_TITLE: "Custom",
         STATUS_POPOUT_SET_CUSTOM: "Set Custom Activity",
         STATUS_POPOUT_EDIT_CUSTOM: "Edit Custom Activity",
         STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
         SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
-        SET_STATUS_MODAL_SUBTITLE: "Get unique with letting everyone know what you're doing.",
+        SET_STATUS_MODAL_SUBTITLE: "We'll save you most recent creations and auto-delete them after a while.",
         SET_STATUS_MODAL_CTA: "Confirm",
         STATUS_LEAD_IN_JUST: "Right now, I'm -",
+        STATUS_LEAD_IN_WIDGET: "Right now, I'm: ",
         STATUS_CHILLING: "Chilling tbh",
         STATUS_GAMING: "GAMING",
         STATUS_FOCUSING: "In the zone",
@@ -16674,7 +16675,7 @@
         HANG_STATUS_LOCATION: "in !!{guildName}!!",
         CUSTOM_HANG_STATUS: "Custom Status",
         CUSTOM_HANG_STATUS_CTA: "Jump in here!",
-        CUSTOM_HANG_STATUS_PLACEHOLDER: "Eating a potato",
+        CUSTOM_HANG_STATUS_PLACEHOLDER: "What are you doing?",
         CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
         XBOX: "Xbox",
         PLAYSTATION: "PlayStation",
@@ -18284,7 +18285,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255111", ", Version Hash: ").concat("cc4c8c38175e3589e69fe250010c4e00d545ccd1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255114", ", Version Hash: ").concat("bcd8a32911e162e8080a2041896f2dc2fd3c4e61")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20588,8 +20589,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255111", "255111"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255111")), _ = 0), _
+        let _ = parseInt((e = "255114", "255114"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255114")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36556,4 +36557,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.3171b8ce81a1e2221dae.js.map
+//# sourceMappingURL=66318.f5c0b021f1fce1d6c9b7.js.map
