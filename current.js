@@ -16182,6 +16182,7 @@
         CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_BODY: "Take clips right in Discord and share them with friends. Early access now available with Nitro.",
         CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_SUBS: "Got it",
         CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_NON_SUBS: "Get Nitro",
+        CLIPS_ADD_A_TITLE: "Add a title",
         CLIPS_UNTITLED: "Untitled",
         CLIPS_UNKNOWN_SOURCE: "Unknown",
         CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING: "Allow my voice to be recorded in Clips",
@@ -18291,7 +18292,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255202", ", Version Hash: ").concat("3edc624801c6dc56211230ae09ca0a89c1a4e80b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255214", ", Version Hash: ").concat("fbb06791dfd329fc631f23265767697ec8e9c8e7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20595,8 +20596,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255202", "255202"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255202")), _ = 0), _
+        let _ = parseInt((e = "255214", "255214"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255214")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36564,4 +36565,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.5e3e194e75fd01db061d.js.map
+//# sourceMappingURL=66318.10627d329b0844723f44.js.map
