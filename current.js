@@ -16099,7 +16099,7 @@
         CLIPS_SETTINGS_HELP_IN_GO_LIVE_CTA: "Capture clips during your stream with $[!!{keybind}!!](keybindHook).",
         CLIPS_SETTINGS_VIDEO_QUALITY: "Video Quality Settings",
         CLIPS_SETTINGS_VIDEO_QUALITY_HELP: "Clips will be captured at the same quality as your stream.",
-        CLIPS_SETTINGS_QUALITY_INFOBOX: "Please note that clips are captured at the same quality as your stream.",
+        CLIPS_SETTINGS_QUALITY_INFOBOX: "Please note that clips are currently captured at the same quality as your stream when streaming.",
         CLIPS_SETTINGS_UNDER_MIN_SPECS: "Your computer doesn't meet the minimum specifications for Clips, performance may be impacted if you enable Clips.",
         CLIPS_QUALITY_DEFAULT: "Default",
         CLIPS_SETTINGS_LENGTH: "Clip Length",
@@ -16190,6 +16190,10 @@
         CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE_DESCRIPTION: "If this is on, viewers can take clips of your stream.",
         CLIPS_SETTINGS_HW_ENCODING_MUST_BE_ENABLED_INFOBOX: "To use Clips, enable hardware encoding. Find it in [Voice & Video settings](onClick).",
         CLIPS_PROCESSING_BADGE: "Processing...",
+        CLIPS_SETTINGS_RESOLUTION: "Clip Resolution",
+        CLIPS_SETTINGS_RESOLUTION_NOTE: "This is the maximum resolution your clips will be recorded in.",
+        CLIPS_SETTINGS_FRAMERATE: "Clip Frame Rate",
+        CLIPS_SETTINGS_FRAMERATE_NOTE: "This is the maximum frame rate your clips will be recorded at.",
         SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
         SOUND_INCOMING_RING_EOY_2023: "Seasonal Incoming Ring",
         CUSTOM_SOUNDS: "Custom Sounds",
@@ -18287,7 +18291,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255174", ", Version Hash: ").concat("58a0976107d640b553b77bc124becf6399866562")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255188", ", Version Hash: ").concat("fb060cdef4968851c14b628573f0a423b5f763db")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20591,8 +20595,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255174", "255174"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255174")), _ = 0), _
+        let _ = parseInt((e = "255188", "255188"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255188")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21162,7 +21166,7 @@
           let _ = (0, a.areClipsEnabled)(),
             E = s.default.getSettings(),
             t = (E.clipsEnabled || E.decoupledClipsEnabled) && _;
-          r.default.getMediaEngine().setClipBufferLength(t ? E.clipsLength / 1e3 : 0), (null == e ? void 0 : e.settings.decoupledClipsEnabled) && this.fireClipsInitEvent()
+          r.default.getMediaEngine().setClipBufferLength(t ? E.clipsLength / 1e3 : 0), ((null == e ? void 0 : e.settings.decoupledClipsEnabled) || (null == e ? void 0 : e.settings.clipsQuality) != null) && this.fireClipsInitEvent()
         }
         fireClipsInitEventHelper(e) {
           let _ = i.default.getVisibleGame();
@@ -21180,7 +21184,8 @@
           (null == t ? void 0 : t.pid) != null && (null == t ? void 0 : t.windowHandle) != null && null != t.name && "" !== t.name && o.default.dispatch({
             type: "CLIPS_INIT",
             sourceId: "window:".concat(null == t ? void 0 : t.windowHandle),
-            applicationName: t.name
+            applicationName: t.name,
+            quality: _.clipsQuality
           })
         }
         handleMediaEngineSetHardwareH264(e) {
@@ -36559,4 +36564,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.00d8cd0de5edafb64bf8.js.map
+//# sourceMappingURL=66318.3aa7ff5179b6a64d7410.js.map
