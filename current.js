@@ -6213,6 +6213,7 @@
         SEARCH_NO_RESULTS_ALT: "No results found. Empathy banana is here for you.",
         SEARCH_GUILD_STILL_INDEXING: "Before searching, we need to index this server. Give us a bit.",
         SEARCH_DM_STILL_INDEXING: "Before searching, we need to index this DM. Give us a bit.",
+        SEARCH_DMS_STILL_INDEXING: "Before searching, we need to index your messages. Give us a bit.",
         SEARCH_ERROR: "We dropped the magnifying glass. Can you try searching again?",
         SEARCH_STILL_INDEXING_HINT: "{count, plural, =0 {No results} one {{count} result} other {{count} results}} indexed so far. We’re still indexing older messages.",
         SEARCH_NUM_RESULTS_BLOCKED_NOT_SHOWN: "We’ve hidden {count, plural, one {{count} result} other {{count} results}} from users you’ve blocked.",
@@ -18293,7 +18294,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255464", ", Version Hash: ").concat("f0b315952a7514aa3756917b90a0d4f538f70d2b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255466", ", Version Hash: ").concat("09adfb477b6ef3085f93f4915e5fb844ab888a89")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20596,8 +20597,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255464", "255464"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255464")), _ = 0), _
+        let _ = parseInt((e = "255466", "255466"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255466")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36558,4 +36559,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.0a66cde4c5d9194f58df.js.map
+//# sourceMappingURL=66318.e0f61beeadbde27f4c0e.js.map
