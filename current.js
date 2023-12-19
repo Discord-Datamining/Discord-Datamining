@@ -18293,7 +18293,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255462", ", Version Hash: ").concat("06d7d027acb4cdf35a81e024e323d8e8c58aaa61")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255464", ", Version Hash: ").concat("f0b315952a7514aa3756917b90a0d4f538f70d2b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19690,9 +19690,8 @@
           inlineRequire: () => E("589636").default
         },
         HangStatusManager: {
-          actions: ["VOICE_CHANNEL_SELECT", "LOGOUT", "CHANNEL_SELECT"],
+          actions: ["VOICE_CHANNEL_SELECT", "LOGOUT"],
           inlineRequire: () => E("360557").default,
-          neverLoadBeforeConnectionOpen: !0,
           hasStoreChangeListeners: !0
         },
         InteractionModalManager: {
@@ -20597,8 +20596,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255462", "255462"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255462")), _ = 0), _
+        let _ = parseInt((e = "255464", "255464"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255464")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24927,7 +24926,6 @@
       class I extends t.default {
         constructor(...e) {
           super(...e), this.actions = {
-            CHANNEL_SELECT: e => this.handleChannelSelect(e),
             VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
             LOGOUT: () => this.handleLogout()
           }, this.handleVoiceChannelSelect = e => {
@@ -24939,6 +24937,8 @@
             } = r.HangStatusExperiment.getCurrentConfig({
               guildId: null != E ? E : "",
               location: "HangStatusManager"
+            }, {
+              autoTrackExposure: !0
             });
             if (null == E && null == _) {
               this.handleDisconnectFromVoiceChannel(), this.previousVoiceChannelId = _;
@@ -24969,14 +24969,6 @@
             (0, n.clearHangStatus)()
           }, this.handleLogout = () => {
             this.handleDisconnectFromVoiceChannel()
-          }, this.handleChannelSelect = e => {
-            let {
-              guildId: _
-            } = e;
-            null != _ && r.HangStatusExperiment.trackExposure({
-              guildId: _,
-              location: "HangStatusManager"
-            })
           }
         }
       }
@@ -36566,4 +36558,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.f04d98ec13a5a9fe0545.js.map
+//# sourceMappingURL=66318.0a66cde4c5d9194f58df.js.map
