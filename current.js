@@ -16267,6 +16267,8 @@
         SAFETY_POLICY_NOTICE_HEADER: "You broke Discord's community guidelines",
         SAFETY_POLICY_NOTICE_BODY: "We've taken action that affects your account.",
         SAFETY_POLICY_NOTICE_DAYS_AGO: "{daysAgo, plural, =0 {Today} =1 {Yesterday} other {# days ago}}",
+        SAFETY_SYSTEM_NOTIFICATION_SEE_DETAILS_BUTTON: "See Details",
+        SAFETY_SYSTEM_NOTIFICATION_LEARN_MORE_BUTTON: "Learn More",
         BLOCKED_BY_PROXY_NOTICE: "Please bear with us as we are encountering some network errors.",
         OBSCURED_CONTENT_HIDE_CONTENT_ALT: "Hide content",
         OBSCURED_CONTENT_SHOW_CONTENT_ALT: "Show content",
@@ -18294,7 +18296,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255473", ", Version Hash: ").concat("52a3aecddf1bf2cda16e8bc25ffff45ae8f1fc99")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255475", ", Version Hash: ").concat("e5be555df0c335dafb5fd8779b27a87ebcc417e3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20597,8 +20599,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255473", "255473"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255473")), _ = 0), _
+        let _ = parseInt((e = "255475", "255475"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255475")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36559,4 +36561,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.d2b793aecbb5fdf1d320.js.map
+//# sourceMappingURL=66318.83d5524f679d441cee38.js.map
