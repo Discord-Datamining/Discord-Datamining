@@ -6197,6 +6197,13 @@
         TERMS_OF_SERVICE_UPDATE_03_27_2023_DESCRIPTION: "We announced our annual updates to our policies last month, which are now in effect. Check out our [blog post](https://discord.com/blog/important-policy-updates) for a summary of these changes, and read the full policies below.",
         COMMUNITY_GUIDELINES: "[Community Guidelines]({url})",
         BLOG_POST: "[Our blog post]({url})",
+        SEARCH_FILTER_CONTEXT_MENU_FROM: "From a specific person",
+        SEARCH_FILTER_CONTEXT_MENU_MENTIONS: "Mention someone",
+        SEARCH_FILTER_CONTEXT_MENU_CHANNEL: "In a specific channel",
+        SEARCH_FILTER_MESSAGES_FROM_USER: "Filter messages from a particular user",
+        SEARCH_FILTER_MESSAGES_FROM_CHANNEL: "Filter messages from a particular channel",
+        SEARCH_FILTER_MESSAGES_MENTION_USER: "Filter messages that mention a particular user",
+        SEARCH_ADD_FILTERS: "Add Filters",
         SEARCH_RESULTS_SECTION_LABEL: "Search Results",
         SEARCH_IN: "Search in {guildName}",
         SEARCH_DM_WITH: "Search DM with {userName}",
@@ -18296,7 +18303,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255603", ", Version Hash: ").concat("5718250995627286ae9e2874e0894aea5b708833")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255611", ", Version Hash: ").concat("735b013b333a50e846336538e4aeb216457a5032")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19587,11 +19594,6 @@
           inlineRequire: () => E("728966").default,
           hasStoreChangeListeners: !0
         },
-        ChannelDetailsSearchManager: {
-          actions: ["CHANNEL_SELECT"],
-          inlineRequire: () => E("59734").default,
-          neverLoadBeforeConnectionOpen: !0
-        },
         ClydeAuthorizeManager: {
           actions: ["MESSAGE_FAILED_CLYDE_CONSENT"],
           inlineRequire: () => E("887418").default
@@ -20599,8 +20601,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255603", "255603"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255603")), _ = 0), _
+        let _ = parseInt((e = "255611", "255611"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255611")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25506,57 +25508,6 @@
         }
       }
       var I = new a
-    },
-    59734: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return i
-        }
-      }), E("222007");
-      var t = E("689988"),
-        o = E("42203"),
-        n = E("596759");
-      class r extends t.default {
-        _initialize() {
-          (0, n.deleteChannelStates)()
-        }
-        _terminate() {
-          (0, n.deleteChannelStates)()
-        }
-        handleChannelSelect(e) {
-          let {
-            channelId: _
-          } = e;
-          if (_ === this._selectedChannelId || null == _) return;
-          let E = o.default.getChannel(this._selectedChannelId);
-          _ !== (null == E ? void 0 : E.parent_id) && ((0, n.deleteChannelStates)(), this._selectedChannelId = _)
-        }
-        constructor(...e) {
-          super(...e), this._selectedChannelId = null, this.actions = {
-            CHANNEL_SELECT: e => this.handleChannelSelect(e)
-          }
-        }
-      }
-      var i = new r
-    },
-    596759: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        deleteChannelStates: function() {
-          return n
-        }
-      }), E("222007");
-      var t = E("308503");
-      let o = (0, t.default)(() => ({
-        states: new Map
-      }));
-
-      function n() {
-        o.setState({
-          states: new Map
-        })
-      }
     },
     104545: function(e, _, E) {
       "use strict";
@@ -36561,4 +36512,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.1a74e2ac12d8a3868c69.js.map
+//# sourceMappingURL=66318.3273eede75135e4e3bc6.js.map
