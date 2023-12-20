@@ -18302,7 +18302,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255725", ", Version Hash: ").concat("64cb59af4933feaf17db6ab348080f23bec8db1b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255727", ", Version Hash: ").concat("66feaa8795343eef00f636983ee75e299283acee")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19846,7 +19846,7 @@
           inlineRequire: () => E("129040").default
         },
         ClipsManager: {
-          actions: ["RTC_CONNECTION_FLAGS", "VOICE_STATE_UPDATES", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
+          actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "VOICE_STATE_UPDATES", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
           inlineRequire: () => E("332491").default
         },
         BroadcastingManager: {
@@ -20600,8 +20600,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255725", "255725"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255725")), _ = 0), _
+        let _ = parseInt((e = "255727", "255727"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255727")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20992,6 +20992,13 @@
         handleVoiceStateUpdates(e) {
           for (let _ of e.voiceStates) S.default.getChannelId() === _.channelId && this.maybeShowClipsWarning(_.userId)
         }
+        handleRTCUserCreate(e) {
+          let {
+            userId: _,
+            context: E
+          } = e;
+          E === o.MediaEngineContextTypes.DEFAULT && this.applyUserRecording(_)
+        }
         handleRTCConnectionFlags(e) {
           let {
             userId: _,
@@ -21124,6 +21131,7 @@
           super(...e), this.actions = {
             POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
             RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
+            RTC_CONNECTION_USER_CREATE: e => this.handleRTCUserCreate(e),
             VOICE_STATE_UPDATES: e => this.handleVoiceStateUpdates(e),
             CLIPS_INIT_FAILURE: e => this.handleClipsInitFailure(e),
             CLIPS_SETTINGS_UPDATE: e => this.applyNativeClipsSettings(e),
@@ -36511,4 +36519,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.a30bab439e0c25709ac9.js.map
+//# sourceMappingURL=66318.37468390e45e3688f840.js.map
