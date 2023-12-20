@@ -15026,9 +15026,6 @@
         CHANGE_PFX_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus profile effect anytime with an active Nitro subscription.",
         CHANGE_PFX_MODAL_PREVIEW_STARTER_CHURNED: "Use this bonus profile effect with an active Nitro subscription.",
         CHANGE_PFX_MODAL_SHOP_PREVIEW_HEADER_STARTER_DESC: "Buy and collect profile effects with a Nitro subscription.",
-        COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_TITLE: "New Avatar Decorations!",
-        COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_SUB_TITLE: "Try on some of the decorations currently available in the Shop.",
-        COLLECTIBLES_ACCOUNT_SWITCH_UPSELL_CTA: "Check out Shop",
         COLLECTIBLES_BUY_PROFILE_EFFECT: "Buy Profile Effect",
         COLLECTIBLES_DETAILS_MODAL_PROFILE_EFFECT_PREMIUM_PURCHASE_DISCLAIMER: "Once purchased, this effect will be added to your collection and can be used anytime",
         COLLECTIBLES_PROFILE_EFFECT_NON_PREMIUM_CARD_INFO: "Access to purchase this effect is only available with Nitro.",
@@ -15084,8 +15081,6 @@
         MARKETING_PAGE_SHOP_PERK_COMPARISON_CHART: "Shop member pricing, and exclusive items",
         USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "‘Tis the season for feelin’ festive!",
         USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_SUBHEADER: "Deck your profile in seasonal styles with new items in the Shop.",
-        COLLECTIBLES_ACCOUNT_SWITCHER_POPOUT_HEADER: "Level up your look",
-        COLLECTIBLES_ACCOUNT_SWITCHER_POPOUT_SUBHEADER: "Check out the latest and greatest styles in the Shop. Now open to everyone.",
         COLLECTIBLES_INTERACTIVE_MODAL_HEADER: "Look Your Best: the Shop is Open!",
         COLLECTIBLES_INTERACTIVE_MODAL_SUBHEADER: "Try on a few items from the Shop below.\nBuy any of them and they're yours to keep.",
         COLLECTIBLES_SHOP_TAB_COACHMARK_SUBHEADER: "Deck your profile in seasonal styles with new Winter Wonderland items.",
@@ -18304,7 +18299,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255805", ", Version Hash: ").concat("839f54bca4c256473df7c816b006131e2a8a124d")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255815", ", Version Hash: ").concat("32f111677bdd9772c078f830a265299940057d8e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20772,8 +20767,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255805", "255805"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255805")), _ = 0), _
+        let _ = parseInt((e = "255815", "255815"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255815")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36982,4 +36977,4 @@
     }
   }
 ]);
-//# sourceMappingURL=85664.77ff457f3c52dc0bcff9.js.map
+//# sourceMappingURL=85664.3829af6fbd3a959088a3.js.map
