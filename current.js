@@ -13300,6 +13300,7 @@
         MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY: "Unusual Account Activity",
         MEMBER_SAFETY_USERNAME_QUARANTINED: "Quarantined",
         MEMBER_SAFETY_COMMUNICATION_DISABLED_TOOLTIP: "Timed out for",
+        MEMBER_SAFETY_MORE_ROLES_TOOLTIP: "More Roles",
         MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY_TOOLTIP: "Sent excessive DMs to non-friend server members in last 24 hrs",
         MEMBER_SAFETY_MEMBER_ROW_ARIA_LABEL: "Member {name}",
         MEMBER_SAFETY_DM_PAUSED_HEADER: "Direct messages are paused",
@@ -18296,7 +18297,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255907", ", Version Hash: ").concat("5c99828189bb42c4106531b3b0dc9254a94999a5")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255914", ", Version Hash: ").concat("8900013040739834700cc443859480a611915e73")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -19875,8 +19876,12 @@
           inlineRequire: () => E("126115").default
         },
         MemberSafetySearchManager: {
-          actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING"],
+          actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_DELETE", "MEMBER_SAFETY_SEARCH_STATE_UPDATE", "MEMBER_SAFETY_PAGINATION_UPDATE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING", "MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH"],
           inlineRequire: () => E("804160").default
+        },
+        MemberSafetyStoreBatchUpdateManager: {
+          actions: ["INITIALIZE_MEMBER_SAFETY_STORE", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "GUILD_MEMBER_REMOVE", "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS"],
+          inlineRequire: () => E("332336").default
         },
         MessageCodedLinkManager: {
           actions: ["POST_CONNECTION_OPEN", "MESSAGE_UPDATE", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_AROUND_SUCCESS", "LOAD_RECENT_MENTIONS_SUCCESS", "LOAD_PINNED_MESSAGES_SUCCESS", "SEARCH_FINISH", "GUILD_FEED_FETCH_SUCCESS"],
@@ -20764,8 +20769,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255907", "255907"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255907")), _ = 0), _
+        let _ = parseInt((e = "255914", "255914"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255914")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24772,6 +24777,9 @@
         handleGuildMemberSearchStillIndexing(e) {
           return (0, o.handleGuildMemberSearchStillIndexingV2)(e)
         }
+        handleNewMemberTimestampRefresh(e) {
+          return (0, o.handleGuildMemberNewTimestampRefreshV2)(e)
+        }
         constructor(...e) {
           super(...e), this.actions = {
             INITIALIZE_MEMBER_SAFETY_STORE: e => this.handleInitialize(e),
@@ -24779,11 +24787,102 @@
             MEMBER_SAFETY_SEARCH_STATE_UPDATE: e => this.handleSearchStateUpdate(e),
             MEMBER_SAFETY_PAGINATION_UPDATE: e => this.handlePaginationUpdate(e),
             MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: e => this.handleGuildMemberSearchSuccess(e),
-            MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING: e => this.handleGuildMemberSearchStillIndexing(e)
+            MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING: e => this.handleGuildMemberSearchStillIndexing(e),
+            MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: e => this.handleNewMemberTimestampRefresh(e)
           }
         }
       }
       var r = new n
+    },
+    332336: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return O
+        }
+      }), E("222007");
+      var t = E("913144"),
+        o = E("689988"),
+        n = E("525065"),
+        r = E("178406");
+      let i = {},
+        a = {},
+        I = null;
+      async function s(e, _) {
+        null == i[e] && (i[e] = new Set), i[e].add(_), null == a[e] && (a[e] = Date.now()), S(e) && await T(e)
+      }
+
+      function T(e) {
+        if (null == i[e]) return;
+        let _ = Array.from(i[e]);
+        i[e] = new Set, a[e] = Date.now(), requestAnimationFrame(async () => {
+          await t.default.dispatch({
+            type: "MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH",
+            guildId: e,
+            userIds: _
+          })
+        })
+      }
+
+      function S(e) {
+        let _ = i[e];
+        if (null == _) return !1;
+        let E = _.size >= function(e) {
+            var _;
+            let E = null !== (_ = n.default.getMemberCount(e)) && void 0 !== _ ? _ : 0;
+            return E >= 75e3 ? 10 : 2
+          }(e),
+          t = a[e];
+        if (E) return !0;
+        if (null == t) return !1;
+        let o = Date.now() - t,
+          r = null != t && o >= function(e) {
+            var _;
+            let E = null !== (_ = n.default.getMemberCount(e)) && void 0 !== _ ? _ : 0;
+            return E >= 75e3 ? 5e3 : 2e3
+          }(e);
+        return r
+      }
+
+      function N(e) {
+        i[e] = new Set, a[e] = null
+      }
+      class A extends o.default {
+        handleInitialize() {
+          null == I && null == I && (I = setInterval(() => {
+            for (let e in i) S(e) && T(e)
+          }, 1e4))
+        }
+        handleGuildMemberUpdate(e, _) {
+          let E = r.default.isInitialized(e);
+          if (E) return s(e, _)
+        }
+        handleGuildMemberRemove(e, _) {
+          let E = r.default.isInitialized(e);
+          if (E) return s(e, _)
+        }
+        handleGuildDelete(e) {
+          let _ = e.guild.id,
+            E = r.default.isInitialized(_);
+          E && N(_)
+        }
+        handleGuildMemberSearchSuccess(e) {
+          let {
+            guildId: _
+          } = e, E = r.default.isInitialized(_);
+          E && N(_)
+        }
+        constructor(...e) {
+          super(...e), this.actions = {
+            INITIALIZE_MEMBER_SAFETY_STORE: () => this.handleInitialize(),
+            GUILD_MEMBER_ADD: e => this.handleGuildMemberUpdate(e.guildId, e.user.id),
+            GUILD_MEMBER_UPDATE: e => this.handleGuildMemberUpdate(e.guildId, e.user.id),
+            GUILD_MEMBER_REMOVE: e => this.handleGuildMemberRemove(e.guildId, e.user.id),
+            MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: e => this.handleGuildMemberSearchSuccess(e)
+          }
+        }
+      }
+      var O = new A
     },
     999243: function(e, _, E) {
       "use strict";
@@ -37004,4 +37103,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.0c97406c8d1caec1c9c1.js.map
+//# sourceMappingURL=14907.c95c6542d5a914aedaf9.js.map
