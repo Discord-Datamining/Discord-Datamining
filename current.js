@@ -18302,7 +18302,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255758", ", Version Hash: ").concat("5d8e29302f13ea420007e5a6289a05136e399bdf")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255759", ", Version Hash: ").concat("da08b1a26bc29da9685e301b242f4e3b6763f988")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20600,8 +20600,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255758", "255758"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255758")), _ = 0), _
+        let _ = parseInt((e = "255759", "255759"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255759")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35966,16 +35966,20 @@
     233736: function(e, _, E) {
       "use strict";
 
-      function t(e, _, E) {
+      function t(e, _, E, t) {
         if (e === _) return !0;
-        let t = Object.keys(e),
-          o = Object.keys(_);
-        if (t.length !== o.length) return !1;
-        for (let o = 0; o < t.length; o++) {
-          let n = t[o];
-          if (e[n] !== _[n] && (null == E || !E.includes(n))) return !1
+        let o = Object.keys(e),
+          n = Object.keys(_);
+        if (o.length !== n.length) return null != t && t("shallowEqual: unequal key lengths ".concat(o.length, " !=== ").concat(n.length)), !1;
+        let r = [];
+        for (let n = 0; n < o.length; n++) {
+          let i = o[n];
+          if (e[i] !== _[i] && (null == E || !E.includes(i))) {
+            if (null == t) return !1;
+            r.push(i)
+          }
         }
-        return !0
+        return null != t && r.length > 0 && t("shallowEqual: unequal keys: ".concat(r.join(", "))), 0 === r.length
       }
 
       function o(e, _) {
@@ -35988,7 +35992,7 @@
         areArraysShallowEqual: function() {
           return o
         }
-      })
+      }), E("424973")
     },
     95410: function(e, _, E) {
       "use strict";
@@ -36519,4 +36523,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.f7356a1f4bfe2ad5567d.js.map
+//# sourceMappingURL=66318.020cc28b9ecd811c3624.js.map
