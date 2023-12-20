@@ -6088,6 +6088,10 @@
         ACCESSIBILITY_SETTINGS_TTS_RATE_SLOWER: "Slower",
         ACCESSIBILITY_SETTINGS_TTS_RATE_FASTER: "Faster",
         ACCESSIBILITY_SETTINGS_CONTRAST: "Contrast",
+        ACCESSIBILITY_SETTINGS_CONTRAST_MOBILE_DESCRIPTION: "Adjust the contrast between foreground and background colors",
+        ACCESSIBILITY_SETTINGS_INCREASE_CONTRAST: "Increase Contrast",
+        ACCESSIBILITY_SETTINGS_REDUCE_CONTRAST: "Reduce Contrast",
+        ACCESSIBILITY_SETTINGS_REDUCE_SATURATION: "Reduce Saturation",
         ACCESSIBILITY_SETTINGS_SYNC_FORCED_COLORS_LABEL: "Sync contrast settings",
         ACCESSIBILITY_SETTINGS_SYNC_FORCED_COLORS_DESCRIPTION: "This allows Discord to use your computer's contrast theme. [Learn more]({learnMoreLink}) about contrast settings.",
         ACCESSIBILITY_SETTINGS_SYNC_FORCED_COLORS_DESCRIPTION_WITH_FEEDBACK: "This allows Discord to use your computer's contrast theme. [Learn more]({learnMoreLink}) about contrast settings, or [share your feedback]({shareFeedbackLink}).",
@@ -18305,7 +18309,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256037", ", Version Hash: ").concat("f71e98ddc094337b1e44130540041ddf0fbc1149")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256041", ", Version Hash: ").concat("a730eaa96939f5a1cfd6f7313beac8f76430c824")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20777,8 +20781,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256037", "256037"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256037")), _ = 0), _
+        let _ = parseInt((e = "256041", "256041"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256041")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37111,4 +37115,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.945ce3f560123e7f6973.js.map
+//# sourceMappingURL=14907.c0bf82977cc75cd4a136.js.map
