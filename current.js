@@ -2410,14 +2410,16 @@
         NOTIFICATION_SETTINGS_PRESETS_ALL_MESSAGES: "All Messages",
         NOTIFICATION_SETTINGS_PRESETS_MENTION_ONLY: "Mention Only",
         NOTIFICATION_SETTINGS_PRESETS_NONE: "None",
-        NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread badges",
+        NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread Badges",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_SUBTITLE: "Choose when you see a full unread badge next to the channel in this server.",
         NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_TITLE: "Push Notifications",
         NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Choose when you receive a push notification from this server.",
+        NOTIFICATION_SETTINGS_CUSTOMIZE: "Customize",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_1: "new-mention",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_2: "new-message",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_3: "nothing-new",
         NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_MESSAGE: "that’s the annoying part yea lol it’s sooooo chunky",
+        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_AUTHOR: "Lone Wanderer",
         FORM_LABEL_MOBILE_NOTIFICATIONS_LABEL: "Enable all notifications",
         FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_LABEL: "System notifications",
         FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_DESC: "Get notifications outside of Discord.",
@@ -2535,6 +2537,10 @@
         INVITE_FRIEND_MODAL_INVITE: "Invite",
         INVITE_FRIEND_MODAL_RETRY: "Retry",
         INVITE_FRIEND_MODAL_BOOSTING_UPSELL: "Add an image to your invite link with Boosting",
+        NOTIFICATION_SETTINGS_MUTE_BANNER_GUILD_TITLE: "Server is currently muted",
+        NOTIFICATION_SETTINGS_MUTE_BANNER_CHANNEL_TITLE: "Channel is currently muted",
+        NOTIFICATION_SETTINGS_MUTE_BANNER_SUBTITLE: "You are not seeing any notifications or unread badges.",
+        NOTIFICATION_SETTINGS_MUTE_BANNER_SUBTITLE_UNTIL: "You are not seeing any notifications or unread badges until !!{endTime}!!",
         CONTACT_SYNC_FAILED_ALERT_TITLE: "Uh oh something went wrong.",
         CONTACT_SYNC_FAILED_ALERT_MESSAGE: "Something went wrong while syncing your contacts. Please wait a moment and try again.",
         CONTACT_SYNC_ENTER_PHONE_NUMBER_TITLE: "Verify your phone number",
@@ -13740,6 +13746,7 @@
         NOTIFICATION_PRESET_ESSENTIALS: "Essentials",
         NOTIFICATION_PRESET_NOTHING: "Nothing",
         NOTIFICATION_PRESET_CUSTOM: "Custom",
+        NOTIFICATION_PRESET_CUSTOM_DESCRIPTION: "You are changing notifications manually.",
         APP_DIRECTORY: "App Directory",
         APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON: "View All",
         APP_DIRECTORY_LISTING_ADD_BUTTON: "Add",
@@ -18297,7 +18304,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255926", ", Version Hash: ").concat("29dacbf4efd772245727f51c4fc403203e065039")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255929", ", Version Hash: ").concat("3c8acb1ec2764fc12d9841a2e0eba9ee064dd4e8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20769,8 +20776,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255926", "255926"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255926")), _ = 0), _
+        let _ = parseInt((e = "255929", "255929"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255929")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37103,4 +37110,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.2a4a5f86bb59e52bf43d.js.map
+//# sourceMappingURL=14907.dac5994134acea28cc5b.js.map
