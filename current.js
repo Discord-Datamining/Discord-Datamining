@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["85664"], {
+  ["14907"], {
     229353: function(e, _, E) {
       e.exports = Object.freeze({
         DISCORD: "Discord",
@@ -15081,7 +15081,6 @@
         MARKETING_PAGE_SHOP_PERK_COMPARISON_CHART: "Shop member pricing, and exclusive items",
         USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "‘Tis the season for feelin’ festive!",
         USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_SUBHEADER: "Deck your profile in seasonal styles with new items in the Shop.",
-        COLLECTIBLES_SHOP_TAB_COACHMARK_SUBHEADER: "Deck your profile in seasonal styles with new Winter Wonderland items.",
         AVATAR_DECORATIONS_SOCIAL_UPSELL: "Like this avatar decoration? $[Get your own from the Shop](openShop).",
         COMBINED_COLLECTIBLES_SOCIAL_UPSELL: "Customize your profile with snazzy animations. $[Check them out](openShop).",
         STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO: "Like this profile effect? $[Get your own from the Shop](openShop).",
@@ -18297,7 +18296,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255841", ", Version Hash: ").concat("c2600caff579a9764be6cd0bb4a5385837fedd9f")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255848", ", Version Hash: ").concat("a30bd48dd9ad8ac7bdbe9341690404ebe2c8a814")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20765,8 +20764,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255841", "255841"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255841")), _ = 0), _
+        let _ = parseInt((e = "255848", "255848"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255848")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25870,6 +25869,36 @@
         }
       }
       var S = new T
+    },
+    651693: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        isImageFile: function() {
+          return r
+        },
+        isAnimatedImageUrl: function() {
+          return a
+        },
+        isVideoUrl: function() {
+          return s
+        },
+        isVideoFile: function() {
+          return T
+        }
+      }), E("222007");
+      var t = E("773336");
+      let o = (e, _) => {
+          if (null == e) return !1;
+          let [E, t] = e.split(/\?/, 1);
+          return _.test(E)
+        },
+        n = /\.(png|jpe?g|webp|gif|heic|heif|dng)$/i,
+        r = e => null != e && n.test(e),
+        i = /\.(webp|gif)$/i,
+        a = e => o(e, i),
+        I = (0, t.isIOS)() ? /\.(mp4|mov)$/i : ((0, t.isAndroid)(), /\.(mp4|webm|mov)$/i),
+        s = e => o(e, I),
+        T = e => null != e && I.test(e)
     },
     643857: function(e, _, E) {
       "use strict";
@@ -36975,4 +37004,4 @@
     }
   }
 ]);
-//# sourceMappingURL=85664.5618570f8ab3eea93622.js.map
+//# sourceMappingURL=14907.b291dfd91293797248e8.js.map
