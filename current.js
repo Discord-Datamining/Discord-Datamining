@@ -2412,8 +2412,8 @@
         NOTIFICATION_SETTINGS_PRESETS_NONE: "None",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_TITLE: "Unread Badges",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_SUBTITLE: "Choose when you see a full unread badge next to the channel in this server.",
-        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_TITLE: "Push Notifications",
-        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Choose when you receive a push notification from this server.",
+        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_TITLE: "Notifications",
+        NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_SUBTITLE: "Choose when you receive a notification from this server.",
         NOTIFICATION_SETTINGS_CUSTOMIZE: "Customize",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_1: "new-mention",
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_2: "new-message",
@@ -13742,11 +13742,11 @@
         GUILD_CREATE_CHANNEL_CTA: "Create a Channel",
         GUILD_NO_UNREADS_HEADER: "All caught up!",
         GUILD_NO_UNREADS_SUBHEADER: "You don't have any unread messages.",
-        NOTIFICATION_PRESET_EVERYTHING: "Everything",
-        NOTIFICATION_PRESET_ESSENTIALS: "Essentials",
-        NOTIFICATION_PRESET_NOTHING: "Nothing",
+        NOTIFICATION_PRESET_1: "All Messages",
+        NOTIFICATION_PRESET_2: "@Mentions",
+        NOTIFICATION_PRESET_3: "Nothing",
         NOTIFICATION_PRESET_CUSTOM: "Custom",
-        NOTIFICATION_PRESET_CUSTOM_DESCRIPTION: "You are changing notifications manually.",
+        NOTIFICATION_PRESET_CUSTOM_DESCRIPTION: "You are changing settings manually.",
         APP_DIRECTORY: "App Directory",
         APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON: "View All",
         APP_DIRECTORY_LISTING_ADD_BUTTON: "Add",
@@ -18304,7 +18304,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255956", ", Version Hash: ").concat("0ab1c8055473c44a5feddaac9e292c509d06c089")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255968", ", Version Hash: ").concat("173124271a2b7ccee4300163b60fde028b2b5e48")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20776,8 +20776,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255956", "255956"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255956")), _ = 0), _
+        let _ = parseInt((e = "255968", "255968"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255968")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37110,4 +37110,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.dfdfe92d11261b2379cc.js.map
+//# sourceMappingURL=14907.b448488a86dba9ee1f3b.js.map
