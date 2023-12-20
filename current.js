@@ -16372,6 +16372,29 @@
         SCREENSHARE_APPS_PHOTOS_ACCESSIBILITY_LABEL: "Screenshare Photos",
         SCREENSHARE_APPS_SNAPCHAT: "Snapchat",
         SCREENSHARE_APPS_SNAPCHAT_ACCESSIBILITY_LABEL: "Screenshare Snapchat",
+        STATUS_POPOUT_CUSTOM_TITLE: "Custom",
+        STATUS_POPOUT_SET_CUSTOM: "Set Custom Activity",
+        STATUS_POPOUT_EDIT_CUSTOM: "Edit Custom Activity",
+        STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
+        SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
+        SET_STATUS_MODAL_SUBTITLE: "We'll save you most recent creations and auto-delete them after a while.",
+        SET_STATUS_MODAL_CTA: "Confirm",
+        STATUS_LEAD_IN_JUST: "Right now, I'm -",
+        STATUS_CHILLING: "Chilling tbh",
+        STATUS_GAMING: "GAMING",
+        STATUS_FOCUSING: "In the zone",
+        STATUS_BRB: "Gonna BRB",
+        STATUS_EATING: "Grubbin",
+        STATUS_IN_TRANSIT: "Wandering IRL",
+        STATUS_WATCHING: "Watchin' stuff",
+        STATUS_NONE: "No status",
+        HANG_STATUS: "Hang Status",
+        HANG_STATUS_LOCATION: "in !!{guildName}!!",
+        CUSTOM_HANG_STATUS: "Custom Status",
+        CUSTOM_HANG_STATUS_CTA: "Jump in here!",
+        CUSTOM_HANG_STATUS_PLACEHOLDER: "What are you doing?",
+        CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
+        HANG_STATUS_VC_ROW_ADD: "Add a status",
         LAUNCH_PAD: "LaunchPad",
         LAUNCH_PAD_HISTORY: "Recent Channels",
         LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
@@ -16671,30 +16694,6 @@
         BROADCASTING_BETA_TOOLTIP_TEXT: "Open Parties is an experimental feature. A limited number of users have the ability to host or join.",
         START_BROADCAST_NOTIFICATION_BODY: "Start a party, so your friends can drop by!",
         START_BROADCAST_NOTIFICATION_CTA: "Open a Party",
-        STATUS_POPOUT_CUSTOM_TITLE: "Custom",
-        STATUS_POPOUT_SET_CUSTOM: "Set Custom Activity",
-        STATUS_POPOUT_EDIT_CUSTOM: "Edit Custom Activity",
-        STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
-        SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
-        SET_STATUS_MODAL_SUBTITLE: "We'll save you most recent creations and auto-delete them after a while.",
-        SET_STATUS_MODAL_CTA: "Confirm",
-        STATUS_LEAD_IN_JUST: "Right now, I'm -",
-        STATUS_LEAD_IN_WIDGET: "Right now, I'm: ",
-        STATUS_CHILLING: "Chilling tbh",
-        STATUS_GAMING: "GAMING",
-        STATUS_FOCUSING: "In the zone",
-        STATUS_BRB: "Gonna BRB",
-        STATUS_EATING: "Grubbin",
-        STATUS_IN_TRANSIT: "Wandering IRL",
-        STATUS_WATCHING: "Watchin' stuff",
-        STATUS_NONE: "No status",
-        HANG_STATUS: "Hang Status",
-        HANG_STATUS_LOCATION: "in !!{guildName}!!",
-        CUSTOM_HANG_STATUS: "Custom Status",
-        CUSTOM_HANG_STATUS_CTA: "Jump in here!",
-        CUSTOM_HANG_STATUS_PLACEHOLDER: "What are you doing?",
-        CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
-        HANG_STATUS_VC_ROW_ADD: "Add a status",
         XBOX: "Xbox",
         PLAYSTATION: "PlayStation",
         SAFETY_HUB_CLASSIFICATIONS_TABLE_HEADER: "Lorem, ipsum",
@@ -18303,7 +18302,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255717", ", Version Hash: ").concat("58ace1b3c96cecfadde335a11e6f944c7b2c25d5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("255724", ", Version Hash: ").concat("0460ef999504d1a0f8906064187c6881d68166f8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20601,8 +20600,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "255717", "255717"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255717")), _ = 0), _
+        let _ = parseInt((e = "255724", "255724"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("255724")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36512,4 +36511,4 @@
     }
   }
 ]);
-//# sourceMappingURL=66318.e8bd776cabc3245bfb3d.js.map
+//# sourceMappingURL=66318.af278a6d56d0a6557f00.js.map
