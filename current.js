@@ -4372,7 +4372,7 @@
         DISPLAY_OPTION_ONLY_WHILE_SPEAKING: "Only While Speaking",
         FORM_LABEL_AUTOMATIC_VAD_MOBILE: "Auto Sensitivity",
         RESET_NOTIFICATION_SETTINGS: "Reset Notification Settings",
-        RESET_NOTIFICATION_OVERRIDE: "Reset Notification Override",
+        RESET_NOTIFICATION_OVERRIDE: "Reset Override",
         CHANNEL_SETTINGS: "Channel Settings",
         SEND_MESSAGE: "Send Message",
         OVERLAY_NOTIFICATIONS_SETTINGS: "Overlay Notifications",
@@ -18325,7 +18325,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256421", ", Version Hash: ").concat("49b48d013bc2934106ae442728d4fe6bf656b1dc")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256426", ", Version Hash: ").concat("469edda27554c3f5b3c0c48e914d6aa71f484b23")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20797,8 +20797,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256421", "256421"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256421")), _ = 0), _
+        let _ = parseInt((e = "256426", "256426"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256426")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37131,4 +37131,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.064ad0d719d23a58912f.js.map
+//# sourceMappingURL=14907.681eaa01fb2ea215f26d.js.map
