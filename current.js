@@ -3561,6 +3561,9 @@
         SEND_IMAGES_LABEL: "Send images",
         LOW_QUALITY_IMAGE_MODE: "Low quality image mode.",
         LOW_QUALITY_IMAGE_MODE_HELP: "When this is on, images sent will be lower quality on cellular networks.",
+        CAMERA_UPLOADS_LABEL: "Camera Uploads",
+        SAVE_CAMERA_UPLOADS_TO_DEVICE_SETTING: "Save to device",
+        SAVE_CAMERA_UPLOADS_TO_DEVICE_SETTING_HELP: "When this is on, images and videos captured using the camera when sending a message will save to the device as well",
         VIDEO_UPLOAD_QUALITY_SETTING_TITLE: "Video Uploads",
         VIDEO_UPLOAD_QUALITY_SETTING_BEST: "Best Quality",
         VIDEO_UPLOAD_QUALITY_SETTING_STANDARD: "Standard (recommended)",
@@ -18322,7 +18325,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256406", ", Version Hash: ").concat("7c0fcd641500e4337305bf3d9cb109d156152ad5")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256413", ", Version Hash: ").concat("dc5ec1906fd1cc9722c175bcfb1321ab277c1c77")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -19663,7 +19666,7 @@
             subscriptionTier: h.PremiumSubscriptionSKUs.TIER_2
           })
         },
-        y = e => {
+        g = e => {
           let {
             markAsDismissed: _
           } = e, E = () => {
@@ -19688,7 +19691,7 @@
             })]
           })
         },
-        g = e => {
+        y = e => {
           let {
             isCoachmark: _,
             markAsDismissed: E
@@ -19737,14 +19740,14 @@
             ref: L,
             className: r(m.editor, l ? m.editorAnimate : null),
             children: (0, t.jsxs)(a.HeadingLevel, {
-              children: [(0, t.jsx)(y, {
+              children: [(0, t.jsx)(g, {
                 markAsDismissed: E
               }), (0, t.jsx)(a.Scroller, {
                 className: m.editorBody,
                 children: (0, t.jsx)(d.default, {
                   className: m.selectionGroup
                 })
-              }), (0, t.jsx)(g, {
+              }), (0, t.jsx)(y, {
                 markAsDismissed: E,
                 isCoachmark: _
               })]
@@ -20794,8 +20797,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256406", "256406"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256406")), _ = 0), _
+        let _ = parseInt((e = "256413", "256413"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256413")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20953,18 +20956,18 @@
         m = E("49111"),
         G = E("994428"),
         p = E("646718"),
-        y = E("782340"),
-        g = E("286609");
+        g = E("782340"),
+        y = E("286609");
       let B = () => (0, t.jsx)("div", {
-          className: g.editorHeader,
+          className: y.editorHeader,
           children: (0, t.jsxs)("div", {
-            className: g.bannerUpsell,
+            className: y.bannerUpsell,
             children: [(0, t.jsx)(L.default, {
-              className: g.premiumIcon
+              className: y.premiumIcon
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-md/bold",
               color: "always-white",
-              children: y.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
+              children: g.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
             })]
           })
         }),
@@ -20973,18 +20976,18 @@
             markAsDismissed: _
           } = e, E = (0, h.useTrackClientThemePreviewEvent)();
           return (0, t.jsxs)("div", {
-            className: g.editorHeader,
+            className: y.editorHeader,
             children: [(0, t.jsx)(s.Clickable, {
-              className: g.closeCircleButton,
+              className: y.closeCircleButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), E(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)()
               },
               children: (0, t.jsx)(c.default, {
-                className: g.closeCircle
+                className: y.closeCircle
               })
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-lg/extrabold",
-              children: y.default.Messages.CLIENT_THEMES_EDITOR_HEADER
+              children: g.default.Messages.CLIENT_THEMES_EDITOR_HEADER
             })]
           })
         },
@@ -21001,7 +21004,7 @@
           });
           return (0, t.jsx)(u.default, {
             size: s.Button.Sizes.MEDIUM,
-            buttonText: N ? y.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == A ? void 0 : null === (o = A.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? L : y.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
+            buttonText: N ? g.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == A ? void 0 : null === (o = A.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? L : g.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
             subscriptionTier: p.PremiumSubscriptionSKUs.TIER_2,
             onSubscribeModalClose: e => {
               if (!!e) null == n || n(), null != r && r(G.ContentDismissActionType.PRIMARY), null != S && ((0, P.trackClientThemeUpdated)({
@@ -21032,18 +21035,18 @@
             isCoachmark: !0
           }, {
             forceShowCloseButton: !0
-          }, () => y.default.Messages.CLOSE).with({
+          }, () => g.default.Messages.CLOSE).with({
             isPreview: !0
-          }, () => y.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => y.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
+          }, () => g.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => g.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
           return (0, t.jsxs)("div", {
-            className: g.editorFooter,
+            className: y.editorFooter,
             children: [E && (0, t.jsx)(v, {
               onSubscribeSuccess: () => {
                 I(!0)
               },
               markAsDismissed: _
             }), (0, t.jsx)(s.Button, {
-              className: g.footerButton,
+              className: y.footerButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), T(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)(), !n && S.default.open()
               },
@@ -21084,18 +21087,18 @@
         }, [i, T, u]), (0, t.jsx)(n, {
           children: (0, t.jsx)("div", {
             ref: L,
-            className: r(g.themeEditor, S ? g.editorAnimate : null),
+            className: r(y.themeEditor, S ? y.editorAnimate : null),
             children: (0, t.jsxs)(s.HeadingLevel, {
               children: [I ? (0, t.jsx)(B, {}) : (0, t.jsx)(f, {
                 markAsDismissed: _
               }), (0, t.jsx)(s.Scroller, {
-                className: g.editorBody,
+                className: y.editorBody,
                 children: (0, t.jsxs)(P.default, {
                   type: P.ThemeSelectionGroupType.EDITOR,
                   children: [!i && (0, t.jsx)(P.default.Basic, {
-                    className: g.selectionGroup
+                    className: y.selectionGroup
                   }), (0, t.jsx)(P.default.Gradient, {
-                    className: g.selectionGroup
+                    className: y.selectionGroup
                   })]
                 })
               }), (0, t.jsx)(H, {
@@ -21690,9 +21693,9 @@
                 useForcedColors: n,
                 systemForcedColors: r
               }
-            }), p = (0, a.useLocation)(), y = o.useMemo(() => M.has(p.pathname), [p.pathname]);
-            (0, D.default)(window, y);
-            let g = (0, d.default)(window, __OVERLAY__ || n),
+            }), p = (0, a.useLocation)(), g = o.useMemo(() => M.has(p.pathname), [p.pathname]);
+            (0, D.default)(window, g);
+            let y = (0, d.default)(window, __OVERLAY__ || n),
               B = (0, s.useStateFromStores)([O.default], () => O.default.sidebarWidth),
               f = (0, S.useRedesignIconContext)().enabled;
             return (0, t.jsx)("html", {
@@ -21700,7 +21703,7 @@
               style: "font-size: ".concat(A, "%; --saturation-factor: ").concat(h, "; --devtools-sidebar-width: ").concat(B, "px;"),
               className: r(e, {
                 overlay: __OVERLAY__,
-                "mouse-mode": g,
+                "mouse-mode": y,
                 "keyboard-mode": U,
                 "reduce-motion": i.enabled,
                 "full-motion": !i.enabled,
@@ -21771,8 +21774,8 @@
         m = E("714657"),
         G = E("262194"),
         p = E("36773"),
-        y = E("374036"),
-        g = E("509802"),
+        g = E("374036"),
+        y = E("509802"),
         B = E("234819"),
         f = E("182033"),
         v = E("928741"),
@@ -21832,7 +21835,7 @@
           autoTrackExposure: !0
         }), ei = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ea = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), eI = $ && !ei, es = [];
         eI && eo && er && !ea && es.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
-        let [eT, eS] = (0, g.useDismissibleContentGroup)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
+        let [eT, eS] = (0, y.useDismissibleContentGroup)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
         es.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
         let eN = eT === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
           eA = eT === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
@@ -21896,7 +21899,7 @@
                           }) : null, !en || ei || eA ? null : (0, t.jsx)(h.default, {
                             isCoachmark: eN,
                             markAsDismissed: eS
-                          }), (0, t.jsx)(y.default, {
+                          }), (0, t.jsx)(g.default, {
                             mobile: L
                           })]
                         }), !1]
@@ -23545,7 +23548,7 @@
         null != t && (!t.initialized && (t.initialized = !0, t.pinned = e.pinned), t.pinned !== e.pinned && ++t.pinnedToggledCount, t.pinned = e.pinned, t.visibleDuration.toggle(e.visible))
       }
 
-      function y(e) {
+      function g(e) {
         if (c.verbose("OVERLAY_FOCUSED", e), h.gameSetAllUnfocused(), null == e.pid) return;
         let _ = h.getByPid(e.pid);
         if (null == _) {
@@ -23555,7 +23558,7 @@
         _.gameSetFocused(!0)
       }
 
-      function g(e) {
+      function y(e) {
         var _;
         c.verbose("SOUNDBOARD_SET_OVERLAY_ENABLED", e);
         let E = h.getByPid(e.pid);
@@ -23660,13 +23663,13 @@
             MESSAGE_ACKED: w.handleMessageAcked,
             MESSAGE_CREATE: w.handleMessageCreate
           } : {
-            OVERLAY_FOCUSED: y,
+            OVERLAY_FOCUSED: g,
             OVERLAY_NOTIFICATION_EVENT: G,
             OVERLAY_SET_UI_LOCKED: m,
             OVERLAY_WIDGET_CHANGED: p,
             OVERLAY_MESSAGE_EVENT_ACTION: B,
             RUNNING_GAMES_CHANGE: P,
-            SOUNDBOARD_SET_OVERLAY_ENABLED: g,
+            SOUNDBOARD_SET_OVERLAY_ENABLED: y,
             MESSAGE_ACKED: f,
             MESSAGE_CREATE: v,
             WINDOW_FOCUS: H,
@@ -29824,7 +29827,7 @@
           return a
         },
         default: function() {
-          return y
+          return g
         }
       }), E("222007"), E("70102"), E("511434"), E("313619"), E("654714"), E("287168"), E("956660"), E("424973");
       var t, o, n, r, i, a, I, s, T = E("627445"),
@@ -29881,7 +29884,7 @@
           fullscreenType: null !== (a = e.fullscreenType) && void 0 !== a ? a : R.RunningProcessFullscreenType.UNKNOWN
         }
       }(I = i || (i = {}))[I.Camera = 0] = "Camera", I[I.Microphone = 1] = "Microphone", I[I.Photo = 2] = "Photo", I[I.InputMonitoring = 3] = "InputMonitoring", I[I.ScreenRecording = 4] = "ScreenRecording", (s = a || (a = {})).VIDEO = "VIDEO", s.MUTE = "MUTE", s.DEAFEN = "DEAFEN", s.DISCONNECT = "DISCONNECT";
-      var y = {
+      var g = {
         requireModule: e => C.nativeModules.requireModule(e),
         ensureModule: e => l.isPlatformEmbedded ? __OVERLAY__ && h.has(e) ? Promise.resolve() : C.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
         get canBootstrapNewUpdater() {
@@ -32309,7 +32312,7 @@
           return p
         },
         ApplicationFrecency: function() {
-          return g
+          return y
         },
         GuildAndChannelFrecency: function() {
           return f
@@ -32357,7 +32360,7 @@
                 o.favoriteSoundboardSounds = h.internalBinaryRead(e, e.uint32(), E, o.favoriteSoundboardSounds);
                 break;
               case 9:
-                o.applicationFrecency = g.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
+                o.applicationFrecency = y.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
                 break;
               case 10:
                 o.heardSoundFrecency = m.internalBinaryRead(e, e.uint32(), E, o.heardSoundFrecency);
@@ -32378,7 +32381,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && A.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && u.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && D.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && g.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
+          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && A.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && u.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && D.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && y.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? n.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -32427,7 +32430,7 @@
             no: 9,
             name: "application_frecency",
             kind: "message",
-            T: () => g
+            T: () => y
           }, {
             no: 10,
             name: "heard_sound_frecency",
@@ -33132,7 +33135,7 @@
         }
       }
       let p = new G;
-      class y extends n.MessageType {
+      class g extends n.MessageType {
         create(e) {
           let _ = {
             applications: {}
@@ -33194,7 +33197,7 @@
           }])
         }
       }
-      let g = new y;
+      let y = new g;
       class B extends n.MessageType {
         create(e) {
           let _ = {
@@ -33296,7 +33299,7 @@
           return p
         },
         InboxSettings: function() {
-          return g
+          return y
         },
         AllGuildSettings: function() {
           return f
@@ -33361,7 +33364,7 @@
                 o.versions = m.Versions.internalBinaryRead(e, e.uint32(), E, o.versions);
                 break;
               case 2:
-                o.inbox = g.internalBinaryRead(e, e.uint32(), E, o.inbox);
+                o.inbox = y.internalBinaryRead(e, e.uint32(), E, o.inbox);
                 break;
               case 3:
                 o.guilds = f.internalBinaryRead(e, e.uint32(), E, o.guilds);
@@ -33406,7 +33409,7 @@
                 o.audioContextSettings = ep.internalBinaryRead(e, e.uint32(), E, o.audioContextSettings);
                 break;
               case 17:
-                o.communities = eg.internalBinaryRead(e, e.uint32(), E, o.communities);
+                o.communities = ey.internalBinaryRead(e, e.uint32(), E, o.communities);
                 break;
               case 18:
                 o.broadcast = ew.internalBinaryRead(e, e.uint32(), E, o.broadcast);
@@ -33424,7 +33427,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && g.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ea.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && eg.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
+          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && y.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ea.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && ey.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -33438,7 +33441,7 @@
             no: 2,
             name: "inbox",
             kind: "message",
-            T: () => g
+            T: () => y
           }, {
             no: 3,
             name: "guilds",
@@ -33513,7 +33516,7 @@
             no: 17,
             name: "communities",
             kind: "message",
-            T: () => eg
+            T: () => ey
           }, {
             no: 18,
             name: "broadcast",
@@ -33528,7 +33531,7 @@
         }
       }
       let p = new G;
-      class y extends M.MessageType {
+      class g extends M.MessageType {
         create(e) {
           let _ = {
             currentTab: 0,
@@ -33579,7 +33582,7 @@
           }])
         }
       }
-      let g = new y;
+      let y = new g;
       class B extends M.MessageType {
         create(e) {
           let _ = {
@@ -35692,7 +35695,7 @@
         }
       }
       let ep = new eG;
-      class ey extends M.MessageType {
+      class eg extends M.MessageType {
         create(e) {
           let _ = {};
           return globalThis.Object.defineProperty(_, M.MESSAGE_TYPE, {
@@ -35729,7 +35732,7 @@
           }])
         }
       }
-      let eg = new ey;
+      let ey = new eg;
       class eB extends M.MessageType {
         create(e) {
           let _ = {
@@ -37128,4 +37131,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.5d429c0b06d1b5796563.js.map
+//# sourceMappingURL=14907.294624309286817344fb.js.map
