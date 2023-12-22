@@ -6214,6 +6214,7 @@
         SEARCH_FILTER_MESSAGES_FROM_USER: "Filter messages from a particular user",
         SEARCH_FILTER_MESSAGES_FROM_CHANNEL: "Filter messages from a particular channel",
         SEARCH_FILTER_MESSAGES_MENTION_USER: "Filter messages that mention a particular user",
+        SEARCH_AUTOCOMPLETE_PROMPT: "Start typing to see some suggestions!",
         SEARCH_ADD_FILTERS: "Add Filters",
         SEARCH_RESULTS_SECTION_LABEL: "Search Results",
         SEARCH_IN: "Search in {guildName}",
@@ -18312,7 +18313,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256306", ", Version Hash: ").concat("2db2b4e81ebc5e1d9c4857b4e7b7809523cb54cf")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256307", ", Version Hash: ").concat("d3d0d99e9edb4bfedac8017dfacd9a200260e901")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20784,8 +20785,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256306", "256306"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256306")), _ = 0), _
+        let _ = parseInt((e = "256307", "256307"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256307")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37118,4 +37119,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.bf0ccfc5e3d625142508.js.map
+//# sourceMappingURL=14907.1a99e09e1e45122f1d88.js.map
