@@ -18322,7 +18322,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256369", ", Version Hash: ").concat("5491755635d1993f62b9b21ccf3bacba39080f49")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256390", ", Version Hash: ").concat("2eb64f0aedc7a39da99d38b129f7d2bba29545d5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -18669,7 +18669,7 @@
       });
       var t = E("37983");
       E("884691");
-      var o = E("132710"),
+      var o = E("463928"),
         n = E.n(o),
         r = E("77078");
 
@@ -20794,8 +20794,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256369", "256369"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256369")), _ = 0), _
+        let _ = parseInt((e = "256390", "256390"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256390")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -32095,7 +32095,7 @@
           return A
         }
       });
-      var t = E("132710");
+      var t = E("463928");
       let {
         newline: o,
         paragraph: n,
@@ -32171,7 +32171,7 @@
       }), E("222007"), E("781738");
       var n = E("860347"),
         r = E.n(n),
-        i = E("132710"),
+        i = E("463928"),
         a = E.n(i),
         I = E("841206"),
         s = E("853812");
@@ -32241,7 +32241,7 @@
       });
       var t = E("37983");
       E("884691");
-      var o = E("132710");
+      var o = E("463928");
 
       function n(e) {
         return e.heading = o.defaultRules.heading, e.lheading = o.defaultRules.lheading, e.list = o.defaultRules.list, e.paragraph = {
@@ -37128,4 +37128,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.e467335365786fb6c3b0.js.map
+//# sourceMappingURL=14907.52617348f832ec0e755b.js.map
