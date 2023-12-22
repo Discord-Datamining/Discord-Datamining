@@ -16782,6 +16782,8 @@
         CREATE_POLL_DURATION_OPTION_LABEL_3_DAYS: "3 days",
         CREATE_POLL_DURATION_OPTION_LABEL_7_DAYS: "1 week",
         CREATE_POLL_DURATION_SELECTION_ARIA_LABEL: "Poll will be live for {duration}",
+        CREATE_POLL_POLL_DURATION_HEADING: "Poll Duration",
+        CREATE_POLL_DURATION_BUTTON_A11Y_HINT: "Tap to change poll duration",
         CREATE_POLL_MULTIPLE_ANSWERS: "Allow Multiple Answers",
         CREATE_POLL_POST: "Post",
         CREATE_POLL_REMOVE_ANSWER_A11Y: "Remove answer {answerNumber}",
@@ -18319,7 +18321,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256327", ", Version Hash: ").concat("fa674b53cb16d834b05413fc6756e5e6fba1a6c1")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256345", ", Version Hash: ").concat("96f6fe71d7ee0a3771c813070f63a8ebdcb4c0c4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20791,8 +20793,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256327", "256327"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256327")), _ = 0), _
+        let _ = parseInt((e = "256345", "256345"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256345")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37125,4 +37127,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.a5e57a412039e4034e54.js.map
+//# sourceMappingURL=14907.b5881facc79be1be50f5.js.map
