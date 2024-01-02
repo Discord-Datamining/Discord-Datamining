@@ -10419,7 +10419,7 @@
         ROLE_PERMISSIONS_KICK_MEMBERS_DESCRIPTION: "Allows members to remove other members from this server. Kicked members will be able to rejoin if they have another invite.",
         ROLE_PERMISSIONS_KICK_MEMBERS_AND_REVIEW_APPLICATION_DESCRIPTION: "Kick will remove other members from this server. Kicked members will be able to rejoin if they have another invite. If the server enables Member Requirements, this permission enables the ability to approve or reject members who request to join.",
         BAN_MEMBERS: "Ban Members",
-        ROLE_PERMISSIONS_BAN_MEMBERS_DESCRIPTION: "Allows members to permanently ban other members from this server.",
+        ROLE_PERMISSIONS_BAN_MEMBERS_DESCRIPTION: "Allows members to permanently ban and delete the message history of other members from this server.",
         SEND_MESSAGES: "Send Messages",
         ROLE_PERMISSIONS_SEND_MESSAGES_DESCRIPTION: "Allows members to send messages in text channels.",
         EMBED_LINKS: "Embed Links",
@@ -18326,7 +18326,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256597", ", Version Hash: ").concat("148bf46e34f9642a539ef3e26828d9a4422cbdbb")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256602", ", Version Hash: ").concat("f0932fdadaaa320237a259c651a14cbba6aac493")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20798,8 +20798,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256597", "256597"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256597")), _ = 0), _
+        let _ = parseInt((e = "256602", "256602"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256602")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37132,4 +37132,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.360ca83106e95194ccc8.js.map
+//# sourceMappingURL=14907.024bd9ae2721cd85ded3.js.map
