@@ -15062,13 +15062,11 @@
         COLLECTIBLES_DAYS_LEFT: "{days} days left",
         COLLECTIBLES_LAST_DAY: "Last day to buy",
         COLLECTIBLES_DISCORD_SHOP: "Discord Shop",
-        COLLECTIBLES_UPGRADE_FOR_DISCOUNT: "Upgrade for Discount",
         COLLECTIBLES_SFA_TITLE: "The Shop is now open to you!",
         COLLECTIBLES_SFA_STARTER_BANNER_DESCRIPTION: "Collect these sweet, bonus items when you join Nitro! $[Unlock with Nitro](getPremium)",
         COLLECTIBLES_SFA_HERO_BANNER_SUBTITLE: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
         COLLECTIBLES_SFA_COACHMARK_DESCRIPTION: "You can now add pizzazz to your profile with stylish animations. Grab your favorite styles from the Shop.",
         COLLECTIBLES_SFA_BANNER_DESCRIPTION: "Make your profile feel alive with snazzy profile effects and avatar decorations. What's not to love?",
-        COLLECTIBLES_SFA_UNLOCK_DISCOUNT: "Unlock discount with Nitro",
         COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION: "{sender} gifted you an avatar decoration!",
         COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT: "{sender} gifted you a profile effect!",
         COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION_UNKNOWN_SENDER: "You have been gifted an avatar decoration!",
@@ -18329,7 +18327,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256757", ", Version Hash: ").concat("9b63464c52007859f53d60b45133bd0c7f33ea66")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256759", ", Version Hash: ").concat("442f71b8f75632c6f9da37cb7a39e399f8f198d1")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20801,8 +20799,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256757", "256757"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256757")), _ = 0), _
+        let _ = parseInt((e = "256759", "256759"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256759")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37296,4 +37294,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.190bb738eea11136f1ca.js.map
+//# sourceMappingURL=14907.68e63aef3c606366ec6c.js.map
