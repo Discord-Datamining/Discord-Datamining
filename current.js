@@ -892,6 +892,7 @@
         EMBEDDED_ACTIVITIES_IAP_NON_REFUNDABLE_SUBSCRIPTION_RATE_AND_RENEWAL: "Hey! This purchase is for a recurring subscription, which will renew for **{rate}** on **{renewalDate, date, medium}**. You may cancel anytime under User Settings > Subscriptions, and previous charges won’t be refunded unless required by law. This purchase is being offered to you by the developer of this Activity and can be accessed and used only when you’re in this Activity.",
         EMBEDDED_ACTIVITIES_MINIMIZE_A11Y_LABEL: "Minimize activity",
         EMBEDDED_ACTIVITIES_EXPAND_A11Y_LABEL: "Expand activity",
+        EMBEDDED_ACTIVITIES_DEVELOPER_ACTIVITY: "In Development",
         KRUNKER_STRIKE_COACHMARK_TITLE: "Updated! Krunker Strike FRVR",
         KRUNKER_STRIKE_COACHMARK_DESCRIPTION: "Squad up with friends or other players around the world and battle your way to victory in this first person shooter game.",
         KRUNKER_STRIKE_COACHMARK_BUTTON_CANCEL: "Maybe later",
@@ -18331,7 +18332,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257059", ", Version Hash: ").concat("00f430ba9ff60334a93fd1e64de8155fce08bff9")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257061", ", Version Hash: ").concat("a4b19d899bd03acf75b49ccdc1f1abdcaab14abf")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20803,8 +20804,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257059", "257059"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257059")), _ = 0), _
+        let _ = parseInt((e = "257061", "257061"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257061")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37299,4 +37300,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.e03d652b6e56285b34b1.js.map
+//# sourceMappingURL=14907.ba81ae486972d482efb1.js.map
