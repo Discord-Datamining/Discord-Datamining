@@ -13286,7 +13286,12 @@
         GUILD_AUTOMOD_MENTION_SPAM_NOTICE_REMOVE_RESTRICTION: "Remove Restrictions",
         GUILD_AUTOMOD_REMOVE_MENTION_RAID_MODAL_TITLE: "Remove Mention Raid Restrictions",
         GUILD_AUTOMOD_REMOVE_MENTION_RAID_MODAL_BODY: "Are you sure you want to remove all message restrictions that were placed on this server due to a suspected mention raid?",
-        GUILD_AUTOMOD_NOTIFICATION_TITLE: "activity alert!",
+        GUILD_AUTOMOD_NOTFICATION_ALERT_TITLE: "safety alert!",
+        GUILD_AUTOMOD_NOTFICATION_UNSUPPORTED_TITLE: "Unsupported Message",
+        GUILD_AUTOMOD_NOTFICATION_UNSUPPORTED_DESCRIPTION: "Your Discord client doesn’t support this message type. Please update it to see this message.",
+        GUILD_AUTOMOD_NOTIFICATION_ACTIVITY_ALERTS_ENABLED_TITLE: "Activity Alerts Enabled",
+        GUILD_AUTOMOD_NOTIFICATION_ACTIVITY_ALERTS_ENABLED_DESCRIPTION: "New and improved Activity Alerts are monitoring your server safety. AutoMod will send a message here if there is any DM or join activity that exceed what is normal for your server.",
+        GUILD_AUTOMOD_NOTIFICATION_ACTIVITY_ALERTS_ENABLED_BY_PREFIX: "Enabled by",
         GUILD_AUTOMOD_NOTIFICATION_RAID_JOINS: "~{joinCount, number} Joins Actioned",
         GUILD_AUTOMOD_NOTIFICATION_RAID_TITLE: "Unusual Join Activity Detected",
         GUILD_AUTOMOD_NOTIFICATION_DM_RAID_TITLE: "Unusual DM Activity Detected",
@@ -18322,7 +18327,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256936", ", Version Hash: ").concat("cf47360069a30e0adacb53fdf50006a3e0a79196")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256941", ", Version Hash: ").concat("aa4e2340408be1e75039bbfda793557e7f119e2b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20794,8 +20799,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256936", "256936"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256936")), _ = 0), _
+        let _ = parseInt((e = "256941", "256941"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256941")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37290,4 +37295,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.e15e5b262f6e648505db.js.map
+//# sourceMappingURL=14907.f4255ee47e033e0a43dd.js.map
