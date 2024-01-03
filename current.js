@@ -8470,6 +8470,10 @@
         GAME_INVITES_EXPIRED_HEADER: "Expired Invites",
         GAME_INVITES_DELETE_ALL: "Delete all",
         GAME_INVITES_SENT_YOU_AN_INVITE: "{username} Sent You a Game Invite",
+        GAME_INVITES_JOIN_GAME: "Join Game",
+        GAME_INVITES_LAUNCH_GAME: "Launch Game",
+        GAME_INVITES_INSTALL_GAME: "Install Game",
+        GAME_INVITES_LAUNCH_GAME_OUTSIDE_OF_DISCORD: "This game must be launched outside of Discord",
         NUX_NAVIGATION_HELP_GUILD: "A server is a superpowered group chat where people come together to hang out",
         NUX_NAVIGATION_HELP_CHANNELS: "Servers are made up of channels; places where people talk about different topics",
         NUX_NAVIGATION_HELP_DMS: "Add friends and chat with them directly",
@@ -18317,7 +18321,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256835", ", Version Hash: ").concat("34334c7b9a497b3e2c2531b86d389fa483f57fa9")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256842", ", Version Hash: ").concat("d57f3c773bf8b01061cd2963d65e03ef4ad0c6b7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20789,8 +20793,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256835", "256835"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256835")), _ = 0), _
+        let _ = parseInt((e = "256842", "256842"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256842")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37284,4 +37288,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.0e2a3b02dad898862dad.js.map
+//# sourceMappingURL=14907.7560d75d3c804b0f8ab1.js.map
