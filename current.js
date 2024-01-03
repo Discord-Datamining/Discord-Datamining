@@ -8471,6 +8471,7 @@
         GAME_INVITES_EXPIRED_HEADER: "Expired Invites",
         GAME_INVITES_DELETE_ALL: "Delete all",
         GAME_INVITES_SENT_YOU_AN_INVITE: "{username} Sent You a Game Invite",
+        GAME_INVITES_INVITE_FROM: "Invite from {username}",
         GAME_INVITES_JOIN_GAME: "Join Game",
         GAME_INVITES_LAUNCH_GAME: "Launch Game",
         GAME_INVITES_INSTALL_GAME: "Install Game",
@@ -18330,7 +18331,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257006", ", Version Hash: ").concat("c85772b090fa99173a41e47af8266a43593457a1")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257017", ", Version Hash: ").concat("46a2b8b4431c675e20f92a456e6d113c4652852a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20802,8 +20803,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257006", "257006"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257006")), _ = 0), _
+        let _ = parseInt((e = "257017", "257017"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257017")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37298,4 +37299,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.77df370f111b40bae82e.js.map
+//# sourceMappingURL=14907.1c07f3ddf4f3e0ed0ca7.js.map
