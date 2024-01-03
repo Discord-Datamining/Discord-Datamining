@@ -16558,6 +16558,8 @@
         GUILD_DISCOVERY_CATEGORY_SEARCH_PLACEHOLDER_TAGS: "Explore {categoryName} servers, or try popular tags below",
         CHANNEL_CHAT_NOTIFICATION_SETTINGS_NOTICE_MUTED: "You will not be notified of new messages because **!!{name}!!** is muted.",
         CHANNEL_CHAT_NOTIFICATION_SETTINGS_NOTICE_ONLY_MENTIONS: "You will only be notified when you are mentioned because **!!{name}!!** is set to **Only @mentions**.",
+        NOTIFICATION_SETTINGS_UNREAD_MENTION_ONLY_DISABLED: "Disabled when notification is set to all messages",
+        NOTIFICATION_SETTINGS_UNREAD_UPDATE_WARNING: "This will update unread badges to all messages",
         GUILD_JOIN_FEEDBACK_HEADER: "How is !!{guildName}!! going?",
         GUILD_JOIN_FEEDBACK_BODY: "Tell us about your community experience",
         GUILD_JOIN_FEEDBACK_ISSUE_SECTION_HEADER: "Choose your main issue",
@@ -18328,7 +18330,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256988", ", Version Hash: ").concat("65d6f8f348bcd943e141356d075eb7830c3c45fc")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256990", ", Version Hash: ").concat("582d6748be44bb0babc4b8f904933448bc8bafa2")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20800,8 +20802,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256988", "256988"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256988")), _ = 0), _
+        let _ = parseInt((e = "256990", "256990"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256990")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37296,4 +37298,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.30331822a17f44ad3d35.js.map
+//# sourceMappingURL=14907.c5c8bd94c2d044d79851.js.map
