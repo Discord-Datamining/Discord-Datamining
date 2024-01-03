@@ -15415,6 +15415,7 @@
         GUILD_ROLE_SUBSCRIPTION_SETUP_TIER_ACTIVE_TRIAL_USER_LIMIT_DESCRIPTION: "Set how many users can claim a free trial at a given time.",
         GUILD_ROLE_SUBSCRIPTION_SETUP_TIER_ACTIVE_TRIAL_USER_LIMIT_NONE_OPTION: "Unlimited (Default)",
         GUILD_ROLE_SUBSCRIPTION_TRIAL_RENEWAL_FOOTER: "Your free {trialInterval} credit will be applied until it runs out, and we'll send you a reminder email **{days, plural, =1 {1 day} other {{days} days}}** before your free period ends. Have questions? [Check out our offer FAQ]({helpdeskArticle}) or [contact our support team]({contactLink}).",
+        GUILD_ROLE_SUBSCRIPTION_TRIAL_RENEWAL_FOOTER_V2: 'By selecting "{buttonText}", you’re agreeing to Discord’s [Paid Service Terms]({paidServiceTermsArticle}). "{tierName}" is a recurring subscription. Your payment method will be charged after your trial ends and continue to be charged every {interval} unless you [cancel your subscription]({cancelSubscriptionArticle}). We’ll send a reminder email **{days, plural, =1 {1 day} other {{days} days}}** before your trial ends. Total doesn’t include any additional fees charged by your financial institution. Have questions? [Check out our offer FAQ]({helpdeskArticle}) or [contact our support team]({contactLink}).',
         GUILD_ROLE_SUBSCRIPTION_SETUP_FLAIR_PREVIEW_MESSAGE_TEXT: "wow this looks so cool",
         GUILD_ROLE_SUBSCRIPTION_SETUP_FLAIR_BADGE_TITLE: "Icon",
         GUILD_ROLE_SUBSCRIPTION_SETUP_FLAIR_BADGE_DESCRIPTION: "Upload an image under 256kb or pick a custom emoji from this server. We recommend at least 64x64 pixels. Members will see the icon for their highest role if they have multiple roles.",
@@ -18321,7 +18322,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256867", ", Version Hash: ").concat("8e9aad4aeecba79d3d4ccb574ce88e4b9bdbd324")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256873", ", Version Hash: ").concat("a5a74cf0608e3604336fdadaf7434b395f75082b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20793,8 +20794,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256867", "256867"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256867")), _ = 0), _
+        let _ = parseInt((e = "256873", "256873"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256873")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37288,4 +37289,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.d4b9cd08a941bb40514e.js.map
+//# sourceMappingURL=14907.1fd2f66449e6da5a1bb5.js.map
