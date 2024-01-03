@@ -2425,6 +2425,7 @@
         NOTIFICATION_SETTINGS_PRESETS_UNREAD_CHANNEL_3: "random",
         NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_MESSAGE: "that’s the annoying part yea lol it’s sooooo chunky",
         NOTIFICATION_SETTINGS_PRESETS_NOTIFICATION_AUTHOR: "Lone Wanderer",
+        NOTIFICATION_SETTINGS_CHANNELS_CUSTOM_MENU_ARIA_LABEL: "The channel custom notification settings",
         FORM_LABEL_MOBILE_NOTIFICATIONS_LABEL: "Enable all notifications",
         FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_LABEL: "System notifications",
         FORM_LABEL_MOBILE_NOTIFICATIONS_SYSTEM_DESC: "Get notifications outside of Discord.",
@@ -18327,7 +18328,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256941", ", Version Hash: ").concat("aa4e2340408be1e75039bbfda793557e7f119e2b")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("256942", ", Version Hash: ").concat("10098fa2343f3f37e4c6fe0a052a6d3005f9ad19")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20799,8 +20800,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "256941", "256941"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256941")), _ = 0), _
+        let _ = parseInt((e = "256942", "256942"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("256942")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37295,4 +37296,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.f4255ee47e033e0a43dd.js.map
+//# sourceMappingURL=14907.0b2c26c2e8f177fb3c50.js.map
