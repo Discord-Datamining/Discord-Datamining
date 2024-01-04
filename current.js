@@ -16435,7 +16435,16 @@
         REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
         REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report.",
         APPEAL_INGESTION_LEARN_MORE_LINK_TITLE: "Learn more about this policy",
-        POLL_NOTIFICATIONS: "Polls"
+        POLL_NOTIFICATIONS: "Polls",
+        APPEAL_INGESTION_AGE_VERIFICATION_LINK_TITLE: "Submit age verification",
+        APPEAL_INGESTION_MODAL_HEADER: "Request a review",
+        APPEAL_INGESTION_MODAL_REQUEST_SENT_HEADER: "Request sent",
+        APPEAL_INGESTION_MODAL_THANKS_HEADER: "Thanks for letting us know.",
+        APPEAL_INGESTION_MODAL_SPAM_HEADER: "This request is for spam.",
+        APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBHEADER: "Did we make a mistake? Let us know.",
+        APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_HEADER: "YOUR ACTIVITY",
+        APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_SUBHEADER: "We determined this content violates our policy",
+        APPEAL_INGESTION_MODAL_SPEED_BUMP_POLICY_HEADER: "OUR POLICY"
       })
     },
     444051: function(e, _, E) {
@@ -18347,7 +18356,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257253", ", Version Hash: ").concat("d61fc6d103568481455e37581e4db7ad4534e869")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257255", ", Version Hash: ").concat("70f941130a81788523aa528b833e97a9f1877ba8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20819,8 +20828,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257253", "257253"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257253")), _ = 0), _
+        let _ = parseInt((e = "257255", "257255"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257255")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37270,4 +37279,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.c6cab17b5f4877545c8a.js.map
+//# sourceMappingURL=14907.fb21904eae4dd4f466dc.js.map
