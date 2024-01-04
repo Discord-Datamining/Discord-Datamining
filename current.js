@@ -9261,7 +9261,7 @@
         NUF_COMPLETE_TITLE: "Your server is ready!",
         NUF_COMPLETE_SUBTITLE: "Welcome! You belong here",
         NUF_COMPLETE_CTA: "Take me to my server!",
-        NUF_CREATE_SERVER_CUSTOMIZE_HEADER: "Customize your server",
+        NUF_CREATE_SERVER_CUSTOMIZE_HEADER: "Customize Your Server",
         NUF_CREATE_SERVER_CUSTOMIZE_SUBHEADER: "Give your new server a personality with a name and an icon. You can always change it later.",
         NUF_CREATE_SERVER_BUTTON: "Create Server",
         NUF_JOIN_SERVER_TITLE_2: "Welcome to Discord!",
@@ -10179,7 +10179,7 @@
         VOICE_PANEL_SCREENSHARE_SHORTCUTS: "Screen Share Shortcuts",
         VOICE_PANEL_HIDE_DRAWER: "Hide Drawer",
         VOICE_PANEL_SHOW_DRAWER: "Show Settings Drawer",
-        NUF_DESKTOP_TEMPLATES_TITLE: "Create your first Discord server",
+        NUF_DESKTOP_TEMPLATES_TITLE: "Create Your First Discord Server",
         NUF_DESKTOP_TEMPLATES_SUBTITLE: "Your server is where you and your friends hang out.\n  Make yours and start talking.",
         TOO_MANY_USER_GUILDS_TITLE_2: "You are at the {quantity, number} server limit.",
         TOO_MANY_USER_GUILDS_DESCRIPTION: "You must leave a server first to join.",
@@ -10960,7 +10960,7 @@
         COUNTRY_NAME_ZW: "Zimbabwe",
         INACCESSIBLE_CHANNEL_LINK_TITLE: "You don't have access to this link.",
         INACCESSIBLE_CHANNEL_LINK_SUBTITLE: "This link is to a server or channel you don't have access to.",
-        CREATION_INTENT_TITLE: "Tell us more about your server",
+        CREATION_INTENT_TITLE: "Tell Us More About Your Server",
         CREATION_INTENT_DESCRIPTION: "In order to help you with your setup, is your new server for just a few friends or a larger community?",
         CREATION_INTENT_OPTION_FRIENDS: "For me and my friends",
         CREATION_INTENT_OPTION_COMMUNITY: "For a club or community",
@@ -12189,7 +12189,7 @@
         HUB_ENTRY_UPDATE_DESCRIPTION_TITLE: "Edit Settings for !!{guildName}!!",
         DIRECTORY_SEARCH_NO_RESULTS_SUBTITLE_MOBILE: "Try another search or [add a server](addServerHook).",
         DIRECTORY_SEARCH_NO_RESULTS_NO_ADD: "Try another search",
-        HUB_CREATE_TITLE: "Customize your server",
+        HUB_CREATE_TITLE: "Customize Your Server",
         HUB_CREATE_DESCRIPTION: "Give your server a personality with a name and icon.",
         GUILD_TEMPLATE_HEADER_CLASS: "Class",
         GUILD_TEMPLATE_HEADER_SOCIAL: "Social",
@@ -16498,6 +16498,7 @@
         GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED: "I am not interested in...",
         GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES: "All events in this series",
         GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "This event",
+        GUILD_CREATE_STAFF_ONLY_HINT: "Only Discord employees would be able to join this server.",
         EDIT_THIS_EVENT: "Edit this Event",
         EDIT_ALL_EVENTS: "Edit all Events in this Series",
         GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
@@ -18332,7 +18333,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257129", ", Version Hash: ").concat("3a7705d503fb96df34c4ff7ecb4a88f3ab2b0687")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257139", ", Version Hash: ").concat("cf93c3f44ee7f1a492e30d9bd659de9251ac5df0")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20804,8 +20805,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257129", "257129"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257129")), _ = 0), _
+        let _ = parseInt((e = "257139", "257139"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257139")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37300,4 +37301,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.e4badd7bc728150bfddb.js.map
+//# sourceMappingURL=14907.8ad072310ad17364adf4.js.map
