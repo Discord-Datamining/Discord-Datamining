@@ -18339,7 +18339,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257181", ", Version Hash: ").concat("4b23403bb1badbf6db68b73bd99224c71b949224")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257191", ", Version Hash: ").concat("c5b3b0492b01cb4445d74cb65ddd51a9b4d02405")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20811,8 +20811,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257181", "257181"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257181")), _ = 0), _
+        let _ = parseInt((e = "257191", "257191"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257191")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24790,51 +24790,6 @@
           !e && s(), (0, o.closeModal)(a.IN_APP_MEMBER_VERIFICATION_MODAL_KEY)
         }
       }
-    },
-    804160: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return r
-        }
-      }), E("222007");
-      var t = E("689988"),
-        o = E("219115");
-      class n extends t.default {
-        handleInitialize(e) {
-          return (0, o.handleInitializeV2)(e)
-        }
-        handleGuildDelete(e) {
-          return (0, o.handleGuildDeleteV2)(e)
-        }
-        handleSearchStateUpdate(e) {
-          return (0, o.handleSearchStateUpdateV2)(e)
-        }
-        handlePaginationUpdate(e) {
-          return (0, o.handlePaginationUpdateV2)(e)
-        }
-        handleGuildMemberSearchSuccess(e) {
-          return (0, o.handleGuildMemberSearchSuccessV2)(e)
-        }
-        handleGuildMemberSearchStillIndexing(e) {
-          return (0, o.handleGuildMemberSearchStillIndexingV2)(e)
-        }
-        handleNewMemberTimestampRefresh(e) {
-          return (0, o.handleGuildMemberNewTimestampRefreshV2)(e)
-        }
-        constructor(...e) {
-          super(...e), this.actions = {
-            INITIALIZE_MEMBER_SAFETY_STORE: e => this.handleInitialize(e),
-            GUILD_DELETE: e => this.handleGuildDelete(e),
-            MEMBER_SAFETY_SEARCH_STATE_UPDATE: e => this.handleSearchStateUpdate(e),
-            MEMBER_SAFETY_PAGINATION_UPDATE: e => this.handlePaginationUpdate(e),
-            MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: e => this.handleGuildMemberSearchSuccess(e),
-            MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING: e => this.handleGuildMemberSearchStillIndexing(e),
-            MEMBER_SAFETY_NEW_MEMBER_TIMESTAMP_REFRESH: e => this.handleNewMemberTimestampRefresh(e)
-          }
-        }
-      }
-      var r = new n
     },
     332336: function(e, _, E) {
       "use strict";
@@ -37307,4 +37262,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.1b42aef9e069cb703fa9.js.map
+//# sourceMappingURL=14907.90c02afb8ad690376e03.js.map
