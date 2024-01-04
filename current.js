@@ -18378,7 +18378,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257369", ", Version Hash: ").concat("5a2812f84600f947448186f4fa84ce44403d07b5")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257383", ", Version Hash: ").concat("2ef69e22abbcb8656dfd0a407226b1c8efbf478d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20850,8 +20850,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257369", "257369"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257369")), _ = 0), _
+        let _ = parseInt((e = "257383", "257383"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257383")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -27991,12 +27991,15 @@
       function N(e, _) {
         if (null == _) return null;
         let E = (0, t.base64decode)(_);
-        return e.fromBinary(E, s)
+        try {
+          return e.fromBinary(E, s)
+        } catch (e) {
+          throw Error("Settings proto failed to deserialize (potentially corrupt): ".concat(e))
+        }
       }
 
       function A(e) {
-        let _ = (0, t.base64decode)(e);
-        return i.PreloadedUserSettings.fromBinary(_, s)
+        return N(i.PreloadedUserSettings, e)
       }
 
       function O(e, _) {
@@ -37092,4 +37095,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.34a270cdcf3d6c31358b.js.map
+//# sourceMappingURL=14907.0a99bed37855e6edf88f.js.map
