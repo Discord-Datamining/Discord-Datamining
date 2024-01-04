@@ -6220,9 +6220,15 @@
         SEARCH_FILTER_CONTEXT_MENU_FROM: "From a specific person",
         SEARCH_FILTER_CONTEXT_MENU_MENTIONS: "Mention someone",
         SEARCH_FILTER_CONTEXT_MENU_CHANNEL: "In a specific channel",
+        SEARCH_FILTER_CONTEXT_MENU_BEFORE_DATE: "Before a date",
+        SEARCH_FILTER_CONTEXT_MENU_AFTER_DATE: "After a date",
+        SEARCH_FILTER_CONTEXT_MENU_ON_DATE: "Sent on a date",
         SEARCH_FILTER_MESSAGES_FROM_USER: "Filter messages from a particular user",
         SEARCH_FILTER_MESSAGES_FROM_CHANNEL: "Filter messages from a particular channel",
         SEARCH_FILTER_MESSAGES_MENTION_USER: "Filter messages that mention a particular user",
+        SEARCH_FILTER_MESSAGES_BEFORE_DATE: "Filter messages from before a date",
+        SEARCH_FILTER_MESSAGES_AFTER_DATE: "Filter messages from after a date",
+        SEARCH_FILTER_MESSAGES_ON_DATE: "Filter messages sent on a specific date",
         SEARCH_AUTOCOMPLETE_PROMPT: "Start typing to see some suggestions!",
         SEARCH_ADD_FILTERS: "Add Filters",
         SEARCH_RESULTS_SECTION_LABEL: "Search Results",
@@ -18333,7 +18339,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257152", ", Version Hash: ").concat("804b6d237540b719777badbd24a38670d4f23dde")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257161", ", Version Hash: ").concat("4e2f99df8badcd0069df5f1f74530fde613b291d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20805,8 +20811,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257152", "257152"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257152")), _ = 0), _
+        let _ = parseInt((e = "257161", "257161"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257161")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37301,4 +37307,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.2151ddc3c6d6fce2c1fb.js.map
+//# sourceMappingURL=14907.a577945c03b4921196c6.js.map
