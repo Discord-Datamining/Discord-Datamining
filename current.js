@@ -9900,6 +9900,7 @@
         GUILD_RULES_HEADER: "Server Rules",
         GUILD_RULES_SUBHEADER: "By participating in this server, you have read and agreed to the server's rules.",
         GUILD_RULES_EDIT_LINK: "Edit Server Rules",
+        GUILD_RULES_INVALID_CHANNEL: "Invalid server rules channel",
         DISCOVER: "Discover",
         AVATAR_UPLOAD_EDIT_MEDIA: "Edit Image",
         AVATAR_UPLOAD_CANCEL: "Cancel",
@@ -18356,7 +18357,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257279", ", Version Hash: ").concat("66be3541e2e6f22a7bdcff6817094304403291f3")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257294", ", Version Hash: ").concat("0aef3d33b3662c5c060b0861a8b930ac57f1fa94")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20828,8 +20829,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257279", "257279"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257279")), _ = 0), _
+        let _ = parseInt((e = "257294", "257294"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257294")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37279,4 +37280,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.3a54a8cc0a01a9f69d70.js.map
+//# sourceMappingURL=14907.0940c7529bed4bc1e1be.js.map
