@@ -16445,7 +16445,18 @@
         APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBHEADER: "Did we make a mistake? Let us know.",
         APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_HEADER: "YOUR ACTIVITY",
         APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_SUBHEADER: "We determined this content violates our policy",
-        APPEAL_INGESTION_MODAL_SPEED_BUMP_POLICY_HEADER: "OUR POLICY"
+        APPEAL_INGESTION_MODAL_SPEED_BUMP_POLICY_HEADER: "OUR POLICY",
+        SUMMONED: "Summoned!",
+        WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
+        WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
+        YOU_ARE_IN_CHANNEL: "You are in $[](channelHook)",
+        THEY_ARE_IN_CHANNEL: "They're hanging out in $[](channelHook)",
+        HANGOUT_OVER_SENDER: "The hangout is over, want to start it again?",
+        HANGOUT_OVER_RECEIVER: "You missed the hangout :(",
+        WAVE_AGAIN: "Wave again",
+        WAVE_BACK: "Wave back",
+        JOIN_HANGOUT: "Join Hangout",
+        CANNOT_ACCESS_HANGOUT: "You cannot access this hangout"
       })
     },
     444051: function(e, _, E) {
@@ -18357,7 +18368,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257306", ", Version Hash: ").concat("0738569824f05a6f0e8d928846d96aa6f92bc604")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257308", ", Version Hash: ").concat("46f055ca2415e46e78e54f1e536f0816929c9656")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20829,8 +20840,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257306", "257306"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257306")), _ = 0), _
+        let _ = parseInt((e = "257308", "257308"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257308")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37280,4 +37291,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.59c762b8351e301f4f96.js.map
+//# sourceMappingURL=14907.8450c9c539de07db621c.js.map
