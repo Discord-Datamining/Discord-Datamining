@@ -16456,7 +16456,17 @@
         WAVE_AGAIN: "Wave again",
         WAVE_BACK: "Wave back",
         JOIN_HANGOUT: "Join Hangout",
-        CANNOT_ACCESS_HANGOUT: "You cannot access this hangout"
+        CANNOT_ACCESS_HANGOUT: "You cannot access this hangout",
+        QUESTS: "Quests",
+        QUESTS_AVAILABLE_THROUGH: "Available through {date}",
+        QUESTS_SHOW_CODE: "Show code",
+        QUESTS_CLAIM_REWARD: "Claim reward",
+        QUESTS_ACCEPT: "Accept Quest",
+        QUESTS_COMPLETE_TOOLTIP: "Hit claim to get your reward code!",
+        QUESTS_ACCEPT_TOOLTIP: "Accept the quest and complete the task to unlock the reward",
+        QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
+        QUESTS_STREAM_TASK: "Stream for {minutes} minutes",
+        QUEST_REWARD: "Win {reward}"
       })
     },
     444051: function(e, _, E) {
@@ -18368,7 +18378,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257359", ", Version Hash: ").concat("b375f679e6325cb15feb6081737c614fd79a6573")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257367", ", Version Hash: ").concat("9555340ba9d2da7697c5f4ce2711bbc1257227cc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20840,8 +20850,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257359", "257359"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257359")), _ = 0), _
+        let _ = parseInt((e = "257367", "257367"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257367")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26914,215 +26924,6 @@
       function i() {
         return (0, n.isAndroid)(), null
       }(t = o || (o = {})).REMINDER = "reminder", t.TOP_MESSAGE_PUSH = "top_messages_push", t.TRENDING_CONTENT_PUSH = "trending_content_push"
-    },
-    448881: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        fetchCurrentQuests: function() {
-          return a
-        },
-        sendHeartbeat: function() {
-          return I
-        }
-      });
-      var t = E("872717"),
-        o = E("913144"),
-        n = E("599417"),
-        r = E("227231"),
-        i = E("49111");
-      async function a() {
-        o.default.dispatch({
-          type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
-        });
-        try {
-          let e = await t.default.get({
-            url: i.Endpoints.QUESTS_CURRENT_QUESTS
-          });
-          o.default.dispatch({
-            type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
-            quests: e.body.map(r.questWithUserStatusFromServer)
-          })
-        } catch (e) {
-          o.default.dispatch({
-            type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
-            error: new n.default(e)
-          })
-        }
-      }
-      async function I(e) {
-        let {
-          questId: _,
-          streamKey: E,
-          applicationId: a
-        } = e;
-        try {
-          let e = await t.default.post({
-            url: i.Endpoints.QUESTS_HEARTBEAT(_),
-            body: {
-              stream_key: E,
-              application_id: a
-            }
-          });
-          o.default.dispatch({
-            type: "QUESTS_SEND_HEARTBEAT_SUCCESS",
-            userStatus: (0, r.questUserStatusFromServer)(e.body),
-            applicationId: a,
-            questId: _,
-            streamKey: E
-          })
-        } catch (e) {
-          o.default.dispatch({
-            type: "QUESTS_SEND_HEARTBEAT_FAILURE",
-            error: new n.default(e),
-            questId: _,
-            streamKey: E
-          })
-        }
-      }
-    },
-    374023: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return n
-        }
-      });
-      var t = E("862205");
-      let o = (0, t.createExperiment)({
-        id: "2023-12_quests",
-        kind: "user",
-        label: "Quests",
-        defaultConfig: {
-          enabled: !1
-        },
-        treatments: [{
-          id: 0,
-          label: "Control",
-          config: {
-            enabled: !1
-          }
-        }, {
-          id: 1,
-          label: "Quests enabled",
-          config: {
-            enabled: !0
-          }
-        }]
-      });
-      var n = o
-    },
-    2973: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return I
-        }
-      }), E("222007");
-      var t = E("446674"),
-        o = E("913144");
-      let n = !1,
-        r = new Map,
-        i = 0;
-      class a extends t.default.Store {
-        get quests() {
-          return r
-        }
-        get isFetchingCurrentQuests() {
-          return n
-        }
-        get lastFetchedCurrentQuests() {
-          return i
-        }
-      }
-      a.displayName = "QuestsStore";
-      var I = new a(o.default, {
-        LOGOUT: function() {
-          n = !1, r = new Map, i = 0
-        },
-        QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
-          i = Date.now(), n = !0
-        },
-        QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: function(e) {
-          let {
-            quests: _
-          } = e;
-          for (let e of (n = !1, r = new Map, _)) r.set(e.id, e)
-        },
-        QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
-          i = 0, n = !1
-        },
-        QUESTS_SEND_HEARTBEAT_SUCCESS: function(e) {
-          let {
-            questId: _,
-            userStatus: E
-          } = e;
-          r = new Map(r);
-          let t = r.get(_);
-          null != t && r.set(_, {
-            ...t,
-            userStatus: E
-          })
-        }
-      })
-    },
-    227231: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        getQuestByApplicationId: function() {
-          return o
-        },
-        isQuestExpired: function() {
-          return n
-        },
-        questUserStatusFromServer: function() {
-          return r
-        },
-        questWithUserStatusFromServer: function() {
-          return i
-        }
-      }), E("222007");
-      var t = E("2973");
-
-      function o(e) {
-        let _;
-        for (let [E, o] of t.default.quests)
-          if (o.config.applicationId === e) {
-            _ = o;
-            break
-          } return _
-      }
-
-      function n(e) {
-        let _ = new Date(e.config.expiresAt);
-        return _.valueOf() <= Date.now()
-      }
-
-      function r(e) {
-        return {
-          userId: e.user_id,
-          questId: e.quest_id,
-          enrolledAt: e.enrolled_at,
-          completedAt: e.completed_at,
-          claimedAt: e.claimed_at,
-          lastStreamHeartbeatAt: e.last_stream_heartbeat_at,
-          streamProgressSeconds: e.stream_progress_seconds,
-          dismissedQuestContent: e.dismissed_quest_content
-        }
-      }
-
-      function i(e) {
-        var _;
-        return {
-          id: e.id,
-          config: {
-            expiresAt: (_ = e.config).expires_at,
-            streamDurationRequirementMinutes: _.stream_duration_requirement_minutes,
-            gameTitle: _.game_title,
-            applicationId: _.application_id
-          },
-          userStatus: null == e.user_status ? null : r(e.user_status)
-        }
-      }
     },
     319405: function(e, _, E) {
       "use strict";
@@ -37291,4 +37092,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.40cceec8ed06b643aea2.js.map
+//# sourceMappingURL=14907.6ee12cfbd6a02091af44.js.map
