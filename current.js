@@ -16661,6 +16661,18 @@
         MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
         MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
         MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "User can't talk in server until they change their member name",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_ALL: "All",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_1_HOUR: "Past 1 hr",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_24_HOURS: "Past 24 hrs",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_7_DAYS: "Past 7 days",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_2_WEEKS: "Past 2 weeks",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_4_WEEKS: "Past 4 weeks",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_3_MONTHS: "Past 3 months",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_CUSTOM: "Custom Range",
+        MEMBER_SAFETY_DATE_OPTION_AFTER: "After Date",
+        MEMBER_SAFETY_DATE_OPTION_BEFORE: "Before Date",
+        MEMBER_SAFETY_JOINED_DATE_LABEL: "Member Since Date Options",
+        MEMBER_SAFETY_ACCOUNT_AGE_LABEL: "Discord Join Date Options",
         BAN_MULTIPLE_CONFIRM_TITLE: "Would you like to ban {count, plural, one {1 member} other {{count} members}}?",
         BAN_MULTIPLE_SUCCESS_TOAST: "Mass ban succesful",
         BAN_MULTIPLE_FAILED_TOAST: "Mass ban failed",
@@ -18385,7 +18397,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257532", ", Version Hash: ").concat("280299c3f1c2f881ec5f5a070d4a4eab77d30f82")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257534", ", Version Hash: ").concat("9c661cbc929af02c9b7b1e5c06728a990e524c6e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20857,8 +20869,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257532", "257532"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257532")), _ = 0), _
+        let _ = parseInt((e = "257534", "257534"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257534")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37102,4 +37114,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.3aba0b17d6a34dd6c502.js.map
+//# sourceMappingURL=14907.4a9cabfa8034a5c0229c.js.map
