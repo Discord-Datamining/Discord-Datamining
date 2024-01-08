@@ -16342,6 +16342,8 @@
         WAVE_BACK: "Wave back",
         JOIN_HANGOUT: "Join Hangout",
         CANNOT_ACCESS_HANGOUT: "You cannot access this hangout",
+        GEO_RESTRICTED_MODAL_TITLE: "Server Unavailable",
+        GEO_RESTRICTED_MODAL_BODY: "**{serverName}** is not available in your region.",
         QUESTS: "Quests",
         QUESTS_AVAILABLE_THROUGH: "Available through {date}",
         QUESTS_SHOW_CODE: "Show code",
@@ -18275,7 +18277,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257987", ", Version Hash: ").concat("9e531abf0d839d85fb6f77f2d1112452a5549db0")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257993", ", Version Hash: ").concat("6666c4435ac46e1729b146ed5a3b92f917fd4217")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20747,8 +20749,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257987", "257987"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257987")), _ = 0), _
+        let _ = parseInt((e = "257993", "257993"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257993")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37043,4 +37045,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.4a3e7dda428f0dccc3eb.js.map
+//# sourceMappingURL=14907.1f8a3983e4c43e7e44e5.js.map
