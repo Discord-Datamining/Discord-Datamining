@@ -262,6 +262,7 @@
         CHANNEL_TOPIC_EMPTY: "Let everyone know how to use this channel!",
         DELETE_CHANNEL: "Delete Channel",
         DELETE_CATEGORY: "Delete Category",
+        REMOVE_CATEGORY: "Remove Category",
         DELETE_CATEGORY_SUBTEXT: "Channels will be uncategorized",
         OVERVIEW: "Overview",
         EDIT_OVERVIEW: "Edit Overview",
@@ -1059,7 +1060,7 @@
         PREMIUM_GUILD_SUBSCRIPTION: "Boost",
         OPEN_CHAT: "Open Chat",
         INTERNAL_EMPLOYEE_ONLY: "Internal Employee (Staff)",
-        FAVORITE_CHANNEL: "Add to Favorites Server",
+        FAVORITE_CHANNEL: "Add to Favorites",
         UNFAVORITE_CHANNEL: "Remove from Favorites",
         FAVORITE_DM: "Favorite DM",
         UNFAVORITE_DM: "Unfavorite DM",
@@ -4487,7 +4488,7 @@
         SWITCH_TO_COMPACT_MODE: "Switch to Compact Mode",
         SWITCH_TO_PUSH_TO_TALK: "Switch to Push to Talk",
         SWITCH_TO_VOICE_ACTIVITY: "Switch to Voice Activity",
-        MOVE_TO: "Move To",
+        MOVE_TO: "Move to",
         MOVE_TO_SUCCESS: "User has been moved to the selected channel.",
         DISCONNECT_USER_SUCCESS: "User has been disconnected from voice.",
         CHANGE: "Change",
@@ -18401,7 +18402,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257880", ", Version Hash: ").concat("07b94c54e6ae7acbc0295ea0db308e9262872301")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257881", ", Version Hash: ").concat("d02f5c79eadfa653b475db2642af4338a81953ab")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20873,8 +20874,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257880", "257880"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257880")), _ = 0), _
+        let _ = parseInt((e = "257881", "257881"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257881")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37142,4 +37143,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.c9cd9d40e06f3115faea.js.map
+//# sourceMappingURL=14907.811ae323a74a41641acf.js.map
