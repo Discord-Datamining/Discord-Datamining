@@ -3346,8 +3346,6 @@
         USER_SETTINGS_APPEARANCE_ZOOM_TIP: "You can change the zoom level with {modKey} +/- and reset to the default zoom with {modKey}+0.",
         USER_SETTINGS_APPEARANCE_PREVIEW_THEMES_TITLE: "Preview Themes",
         USER_SETTINGS_APPEARANCE_PREVIEW_THEME_TITLE: "Preview Theme",
-        USER_SETTINGS_APPEARANCE_FLIP_GRADIENT: "Flip Gradient",
-        USER_SETTINGS_APPEARANCE_GRADIENT_THEME_BASIC: "Basic",
         USER_SETTINGS_APPEARANCE_GRADIENT_THEME_TITLE: "Color",
         USER_SETTINGS_APPEARANCE_IN_APP_ICON_TITLE: "App Icon",
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT: "Channel List Layout",
@@ -4560,7 +4558,6 @@
         CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_PREVIEW_WITH_LINK: "Get [Nitro](onPremiumClick) and make Discord yours with unique colors.",
         CLIENT_THEMES_EDITOR_UPSELL: "New Theme colors! Add your vibe to Discord. [Learn more](onClick).",
         CLIENT_THEMES_EDITOR_GRADIENT_DESCRIPTION_COACHMARK: "Make Discord yours with unique colors. Only with Nitro.",
-        CLIENT_THEMES_BETA_TOOLTIP: "Color Themes are currently in beta and not all surfaces will be themed.",
         CLIENT_THEMES_EDITOR_PICK_A_THEME_HEADER: "Pick a Theme",
         CLIENT_THEMES_EDITOR_PREVIEW_A_THEME_HEADER: "Preview a Theme",
         CLIENT_THEMES_EDITOR_UPSELL_HEADER: "NEW THEMES! Add your vibe to Discord",
@@ -6703,35 +6700,9 @@
         SEASONAL_GIFTING_MAKE_SOMEONES_DAY_TOOLTIP: "Make someone's day when you send some sweet Nitro their way.",
         SEASONAL_GIFTING_SEND_GIFT_CTA: "Send gift",
         SEASONAL_GIFTING_DM_POPUP_CTA: "Try it out",
-        PREMIUM_MARKETING_HERO_HEADER: "Make Discord yours",
-        PREMIUM_MARKETING_HERO_BODY: "Upgrade your emoji, personalize your profile, and stand out in your servers.",
         PREMIUM_MARKETING_FEATURE_EMOJI_TITLE: "More Emoji Power",
-        PREMIUM_MARKETING_FEATURE_EMOJI_DESCRIPTION: "Use your favorite emoji anywhere and make them animated.",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_GUILD_TITLE: "Support Your Server",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_GUILD_DESCRIPTION: "Get {numFreeGuildSubscriptions, plural, =1 {# Server Boost} other {# Server Boosts}} and !!{percentageOff}!! off extra Boosts. $[Learn more](learnMoreHook).",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_BADGE_TITLE: "Rep Your Status",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_BADGE_DESCRIPTION: "Custom profile badge to show off your Nitro status.",
         PREMIUM_MARKETING_FEATURE_PREMIUM_BADGE_DESCRIPTION_VARIANT_1: "Get this cool badge for being a Nitro subscriber.",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_TIER_2_UPLOAD_SIZE_TITLE: "{uploadSizeLimit} Uploads",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_TIER_0_UPLOAD_SIZE_TITLE: "{uploadSizeLimit} Uploads",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_TIER_0_UPLOAD_SIZE_DESCRIPTION: "Upload what you want with increased {uploadSizeLimit} upload size.",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_TIER_0_ANIMATED_AVATAR_TITLE: "Animated Avatar",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_TIER_0_ANIMATED_AVATAR_DESCRIPTION: "Show up in style with your own animated avatar",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_UPLOAD_SIZE_TITLE: "Bigger Uploads",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_UPLOAD_SIZE_DESCRIPTION: "Upload what you want with increased 100MB upload size.",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_UPLOAD_SIZE_DESCRIPTION_INCREASE: "Upload what you want with increased {premiumMaxSize} upload size.",
         PREMIUM_MARKETING_FEATURE_PREMIUM_GO_LIVE_TITLE: "HD Video",
-        PREMIUM_MARKETING_FEATURE_PREMIUM_GO_LIVE_DESCRIPTION: "Better video resolutions for all your streams. $[Info](infoHook)",
-        PREMIUM_MARKETING_FEATURE_VIDEO_BACKGROUNDS_TITLE: "More Backgrounds",
-        PREMIUM_MARKETING_FEATURE_VIDEO_BACKGROUNDS_DESCRIPTION: "Customize video calls with your own video backgrounds.",
-        PREMIUM_MARKETING_FEATURE_STICKERS_TITLE: "Special Stickers Access",
-        PREMIUM_MARKETING_FEATURE_STICKERS_DESCRIPTION: "Use custom stickers anywhere. $[Info](infoHook)",
-        PREMIUM_MARKETING_FEATURE_STICKERS_INFO: "Boosted servers can upload custom stickers through Server Settings > Stickers. Nitro users can use custom stickers anywhere.",
-        PREMIUM_MARKETING_FEATURE_SUPER_REACTIONS_TITLE: "Super Reactions",
-        PREMIUM_MARKETING_FEATURE_SUPER_REACTIONS_DESCRIPTION: "Get {weeklyReactionsNumber} Super Reactions every week to celebrate your favorite posts.",
-        PREMIUM_MARKETING_FEATURE_SUPER_REACTIONS_DAILY_DESCRIPTION: "Get {dailyReactionsNumber} Super Reactions every day to celebrate your favorite posts.",
-        PREMIUM_MARKETING_FEATURE_CLIENT_THEMES_TITLE: "Color Your Theme",
-        PREMIUM_MARKETING_FEATURE_CLIENT_THEMES_DESCRIPTION: "Add your vibe to Discord and change the color of your theme.",
         PREMIUM_MARKETING_VARIANT_2_FEATURE_CLIENT_THEMES_TITLE: "Color Themes",
         PREMIUM_MARKETING_VARIANT_2_FEATURE_CLIENT_THEMES_DESCRIPTION: "Add your vibe to Discord with unique theme colors.",
         PREMIUM_MARKETING_FEATURE_CUSTOM_APP_ICONS_TITLE: "Custom App Icons",
@@ -6765,7 +6736,6 @@
         PREMIUM_MARKETING_STICKER_PERK_TITLE: "Special Sticker Access",
         PREMIUM_MARKETING_STICKER_PERK_DESCRIPTION: "Use custom stickers anywhere.",
         PREMIUM_MARKETING_PER_GUILD_PROFILES_PERK_TITLE: "Custom Profiles",
-        PREMIUM_MARKETING_PER_GUILD_PROFILE_THEMES_PERK_DESCRIPTION: "Use a different avatar, profile theme, banner, and bio in each of your servers.",
         PREMIUM_MARKETING_PER_GUILD_PROFILE_THEMES_PERK_DESCRIPTION_CHECK_IT_OUT: "Use a different avatar, profile theme, banner, and bio in each of your servers. [Check it out.](onCheckItOutClick)",
         PREMIUM_MARKETING_PER_GUILD_PROFILE_THEMES_PERK_DESCRIPTION_TRY_IT_OUT: "Use a different avatar, profile theme, banner, and bio in each of your servers. [Try it out.](onTryItOutClick)",
         PREMIUM_MARKETING_BADGE_PERK_TITLE: "Nitro Badge",
@@ -7237,7 +7207,6 @@
         PREMIUM_NITRO_DROP_2023_BANNER_NON_TIER_2_SUB_SUBHEADER: "Check out the latest perks: Themes, Avatar Decorations, Super Reactions (coming soon), and Soundboard!",
         PREMIUM_NITRO_DROP_2023_BANNER_NON_TIER_2_SUB_SUBHEADER_2: "Check out the latest perks: Themes, Avatar Decorations, Soundboard, and Super Reactions!",
         PREMIUM_FEATURE_AVATAR_DECORATIONS_HEADER: "Avatar Decorations",
-        PREMIUM_FEATURE_AVATAR_DECORATIONS_SUBHEADER: "Access exclusive decorations and the Shop, where you can buy and collect your favorite styles.",
         EMOJI_PICKER_PREMIUM_UPSELL_BODY: "Use these emoji and more by subscribing to Nitro.",
         EMOJI_PICKER_PREMIUM_TIER_0_UPSELL_BODY: "Use these emoji and more by subscribing to {planName}.",
         EMOJI_PICKER_PREMIUM_UPSELL_BODY_TOP_OF_LIST: "Unlock every emoji and use them anywhere with Nitro.",
@@ -11565,23 +11534,15 @@
         USER_SETTINGS_DISPLAY_NAME_TITLE: "Name",
         USER_SETTINGS_AVATAR_SPECS: "Upload a PNG or JPG under 8MB. Images should be at least 128x128.",
         USER_SETTINGS_PROFILE_BANNER: "Profile Banner",
-        USER_SETTINGS_BANNER_SPECS: "We recommend an image of at least 600x240. You can upload a PNG, JPG, or an animated GIF under 10 MB.",
         USER_SETTINGS_ADD_BANNER_SPECS: "Turn your favorite photos, memes, or GIFs into profile banners!",
         USER_SETTINGS_CUSTOMIZE_PROFILE_TITLE: "Customizing My Profile",
         USER_SETTINGS_CUSTOMIZE_PROFILE_EXAMPLE_BUTTON: "Example Button",
-        USER_SETTINGS_IMAGE_UPLOAD_FILETYPE_ERROR: "Unsupported image format. You can upload a PNG, JPG or an animated GIF.",
-        USER_SETTINGS_IMAGE_UPLOAD_FILE_TOO_LARGE: "File size too large, try again with a file smaller than {maxFileSizeMB} MB.",
-        USER_SETTINGS_UPLOAD_BANNER: "Upload Banner",
         USER_SETTINGS_REMOVE_BANNER: "Remove Banner",
         USER_SETTINGS_RESET_BANNER: "Reset Banner",
         USER_SETTINGS_UNLOCK_BANNER: "Unlock Banner",
-        USER_SETTINGS_CHANGE_BANNER_A11Y_LABEL: "Change Banner",
-        USER_SETTINGS_CHANGE_PROFILE_BANNER: "Change Profile Banner",
-        USER_SETTINGS_REMOVE_PROFILE_BANNER: "Remove Profile Banner",
         USER_SETTINGS_ADD_BANNER: "Add Banner",
         USER_SETTINGS_REMOVE_AVATAR: "Remove Avatar",
         USER_SETTINGS_RESET_AVATAR: "Reset Avatar",
-        USER_SETTINGS_CHANGE_AVATAR_A11Y_LABEL: "Change Avatar",
         USER_SETTINGS_ADD_ANIMATED_AVATAR: "Add Animated Avatar",
         USER_SETTINGS_AVATAR_DECORATION: "Avatar Decoration",
         USER_SETTINGS_REMOVE_AVATAR_DECORATION: "Remove Decoration",
@@ -11589,7 +11550,6 @@
         USER_SETTINGS_PROFILE_EFFECT: "Profile Effect",
         USER_SETTINGS_REMOVE_PROFILE_EFFECT: "Remove Effect",
         USER_SETTINGS_CHANGE_PROFILE_EFFECT: "Change Effect",
-        USER_SETTINGS_ADD_PROFILE_EFFECT: "Add Effect",
         USER_SETTINGS_ABOUT_ME: "About Me",
         USER_SETTINGS_ABOUT_ME_HINT: "Tap to add an about me",
         USER_SETTINGS_PRONOUNS_HINT: "Tap to add pronouns",
@@ -11603,7 +11563,6 @@
         USER_SETTINGS_AVATAR_DECORATION_EDIT_A11Y_LABEL: "Edit avatar decoration",
         USER_SETTINGS_ABOUT_ME_DETAILS: "You can use markdown and links if you’d like.",
         USER_SETTINGS_BANNER_COLOR_TITLE: "Banner Color",
-        USER_SETTINGS_BANNER_COLOR_DESCRIPTION: "Visible when no image is set",
         USER_SETTINGS_PROFILE_COLOR_MOBILE: "Banner Color",
         USER_SETTINGS_PROFILE_THEME: "Profile Theme",
         USER_SETTINGS_PROFILE_THEME_PRIMARY: "Primary",
@@ -11616,8 +11575,6 @@
         EDIT_PROFILE_CATEGORY_USER_PROFILE: "User Profile",
         EDIT_PROFILE_CATEGORY_GUILD_IDENTITY: "Server Profiles",
         LIMITED_TIME: "Limited time",
-        LIMITED_TIME_AVATAR_DECORATIONS: "Limited Time Avatar Decorations",
-        LIMITED_TIME_AVATAR_DECORATIONS_CHECK_IT_OUT: "Available on Nitro through {date}. Check it out!",
         USER_SETTINGS_TRY_OUT_PREMIUM_HEADER: "Try out Nitro!",
         USER_SETTINGS_TRY_OUT_PREMIUM_HEADER_MOBILE: "Try out Profile Customization",
         USER_SETTINGS_TRY_OUT_PREMIUM_DESCRIPTION: "See what your profile could look like with Nitro.",
@@ -11639,28 +11596,16 @@
         PROFILE_THEMES_ACCESSIBILITY_TOOLTIP_DESCRIPTION: "Make profile colors easier on the eyes by syncing them to your Discord theme under Accessibility settings.",
         PREMIUM_UPSELL_PROFILE_CUSTOMIZATION_TITLE: "Show up how you want with profile customization",
         PREMIUM_UPSELL_PROFILE_CUSTOMIZATION_DESCRIPTION: "Get profile themes, animated avatars, banners and more with Nitro!",
-        AVATAR_DECORATION_MODAL_HEADER: "Edit Avatar Decoration",
-        AVATAR_DECORATION_MODAL_DECORATION_SECTION: "Decorations",
         AVATAR_DECORATION_MODAL_APPLY: "Apply",
-        AVATAR_DECORATION_MODAL_DISCOVER_MORE_PERKS: "Discover more perks",
         AVATAR_DECORATION_SELECTION_SECTION_A11Y: "Avatar Decoration Selection Section",
-        AVATAR_DECORATION_SHOP_UPSELL_NITRO_CTA: "Visit Shop",
         PROFILE_EFFECT_MODAL_HEADER: "Add Profile Effect",
-        PROFILE_EFFECT_MODAL_SUBHEADER: "Choose a unique profile effect to play when someone views your profile",
-        PROFILE_EFFECT_MODAL_EFFECT_SECTION: "Effects",
-        PROFILE_EFFECT_MODAL_PLAY_FROM_BEGINNING: "Play from beginning",
-        PROFILE_EFFECT_MODAL_PURCHASES_HEADER: "Your Effects",
         PROFILE_EFFECT_MODAL_SHOP_PREVIEW_HEADER: "Preview The Shop",
         PROFILE_EFFECT_MODAL_APPLY: "Apply",
         PROFILE_EFFECT_ACQUIRABILITY_DISCLAIMER_MOBILE: "The ability to acquire new profile effects is not available on this platform.",
         PROFILE_EFFECT_NON_NITRO_DISCLAIMER_HEADER_MOBILE: "Looking for profile effects?",
-        USER_AVATAR_DECORATIONS_FETCH_FAILURE: "Something went wrong fetching your avatar decorations. Please try again later.",
-        USER_PROFILE_EFFECTS_FETCH_FAILURE: "Something went wrong fetching your profile effects. Please try again later.",
         PROFILE_EFFECTS_HERO_BANNER_TITLE: "New styles for your profile!",
         PROFILE_EFFECTS_HERO_BANNER_SUBTITLE: "Make your profile feel alive with snazzy profile effects and avatar decorations. What’s not to love?",
-        PROFILE_EFFECTS_PROFILE_SETTINGS_SECTION_DESCRIPTION: "Level up your profile with fun animated effects",
         PROFILE_EFFECTS_SOCIAL_UPSELL: "Level up your look with animated profile effects! $[Check them out](openShop).",
-        PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO: "Level up your look with animated profile effects, only with Nitro. $[Check them out](openShop).",
         GUILD_IDENTITY_UPSELL_OVERLAY_TITLE: "Make unique profiles for each server",
         GUILD_IDENTITY_UPSELL_OVERLAY_DESCRIPTION_THEMES: "Customize your avatar, banner, theme, and bio for every server.",
         GUILD_IDENTITY_UPSELL_OVERLAY_TITLE_VARIANT: "Customize your profile for every server!",
@@ -11669,9 +11614,6 @@
         PREMIUM_PROFILE_CUSTOMIZATION_UPSELL_HEADER: "Wanna upload your own banner?",
         PREMIUM_PROFILE_CUSTOMIZATION_UPGRADE_BODY: "Get more customization with a profile banner and join more servers by [upgrading to Discord Nitro](onLearnMore)",
         PREMIUM_PROFILE_CUSTOMIZATION_UPSELL_BODY: "Get more customization with a profile banner, an animated avatar, a custom tag, [and more with Discord Nitro!](onLearnMore)",
-        PREMIUM_FEATURES_PROFILE_CUSTOMIZATION_HEADER: "Style Your Profile",
-        PREMIUM_FEATURES_PROFILE_THEMES_SUBHEADER_TRY_IT_OUT: "Customize a color theme for your profile. Add a profile banner and animated avatar. [Try it out.](onTryItOutClick)",
-        PREMIUM_FEATURES_PROFILE_THEMES_SUBHEADER_CHECK_IT_OUT: "Customize a color theme for your profile. Add a profile banner and animated avatar. [Check it out.](onCheckItOutClick)",
         PROFILE_CUSTOMIZATION_NITRO_ICON_TOOLTIP: "Exclusive to Nitro",
         PROFILE_USER_BADGES: "User Badges",
         PROFILE_USER_BADGE_A11Y_LABEL: "Badge, {badgeLabel}",
@@ -11679,7 +11621,6 @@
         PROFILE_CUSTOMIZATION_PREVIEW: "Preview",
         PROFILE_CUSTOMIZATION_ACTIVITY_TIME: "$[](renderTimeHook) elapsed",
         EDIT_PROFILE: "Edit Profile",
-        EDIT_DEFAULT_PROFILE: "Edit Default Profile",
         USER_SETTINGS_BANNER_A11Y_LABEL: "Change Profile Banner",
         PROFILE_CUSTOMIZATION_GUILD_SELECT_TITLE: "Choose a Server",
         PROFILE_CUSTOMIZATION_GUILD_SELECT_PLACEHOLDER: "Search servers",
@@ -11754,14 +11695,7 @@
         BUG_REPORT_ATTACHMENTS: "Attachments",
         BUG_REPORT_ADD_ATTACHMENTS: "Add attachment(s)",
         BUG_REPORT_UPLOAD_ATTACHMENT: "Upload Attachment",
-        GUILD_MEMBER_AVATAR_UPSELL_TITLE: "Wanna use a different avatar?",
-        GUILD_MEMBER_AVATAR_UPSELL_BODY: "Be who you want and use a different avatar in each of your servers, upgrade your profile, [and more with Discord Nitro!](onAndMore)",
-        CHANGE_GUILD_MEMBER_AVATAR: "Change Server Avatar",
-        UPLOAD_GUILD_MEMBER_AVATAR: "Upload Server Avatar",
         UNLOCK_GUILD_MEMBER_AVATAR: "Unlock\nAvatar",
-        PER_GUILD_PROFILES_PREMIUM_FEATURE_TITLE: "Multiple Profiles",
-        PER_GUILD_PROFILE_THEMES_PREMIUM_FEATURE_DESCRIPTION: "Be you and use a different avatar, banner, theme, and bio in each of your servers.",
-        PER_GUILD_AVATARS_PREMIUM_MARKETING_FEATURE_MOBILE: "Be who you want and use a different avatar in each of your servers",
         GUILD_IDENTITY_UPSELL_MODAL_TITLE: "Express yourself fully with server profiles",
         GUILD_IDENTITY_UPSELL_MODAL_BODY: "Be who you want and use a different avatar, banner, and bio in each of your servers, unlock animated avatars, and more with [Discord Nitro!](onAndMore)",
         GUILD_IDENTITY_BANNER_A11Y_LABEL: "Change Server Profile Banner",
@@ -11782,37 +11716,16 @@
         GUILD_IDENTITY_SETTINGS_EMPTY_STATE_DESCRIPTION_V2: "Create or join a server to hang out with friends.",
         GUILD_IDENTITY_SETTINGS_EMPTY_STATE_CTA: "Browse Servers",
         CHANGE_IDENTITY: "Edit Server Profile",
-        CHANGE_IDENTITY_MODAL_RESET_PRIMARY_AVATAR: "Reset to Default Avatar",
         CHANGE_IDENTITY_MODAL_UNKNOWN_ERROR: "Unknown error",
         CHANGE_IDENTITY_MODAL_CHANGE_NICKNAME_DISABLED: "Nickname (Disabled)",
-        CHANGE_IDENTITY_MODAL_DESCRIPTION: "You can change how others see you inside this server by setting a server nickname and avatar.",
         AKA_MORE_AVATARS_OVERFLOW: "See more server avatars",
-        PER_GUILD_AVATAR: "Server Avatar",
-        PER_GUILD_IDENTITY_SAVED: "Server Profile updated!",
-        CHANGE_IDENTITY_MOBILE_UPSELL: "Use a different avatar in each of your servers and more with Discord Nitro!",
         CHANGE_IDENTITY_UPSELL: "Unlock with Nitro",
-        CHANGE_IDENTITY_HELP_TEXT_OVERALL: "You can change how others see you inside this server (!!{guildName}!!) only.",
-        CHANGE_IDENTITY_AVATAR_AND_BANNER_LABEL: "Avatar and Profile Banner",
-        CHANGE_IDENTITY_PROFILE_COLOR: "Server Profile Color",
-        CHANGE_IDENTITY_PROFILE_BANNER: "Change Server Profile Banner",
-        CHANGE_IDENTITY_RESET_BANNER: "Reset to Primary Profile Banner",
-        CHANGE_IDENTITY_BIO_HELP_TEXT: "If left blank, your main bio will be used.",
-        CHANGE_IDENTITY_BIO_HEADER: "Server Bio",
-        CHANGE_IDENTITY_PREVIEW: "Preview In This Server",
         CHANGE_IDENTITY_PREVIEW_WITH_GUILD_NAME: "Preview For !!{guildName}!!",
         CHANGE_IDENTITY_BIO_PLACEHOLDER: "Tell this server a bit about yourself",
         CHANGE_IDENTITY_SERVER_PROFILE: "Server Profile",
         CHANGE_IDENTITY_SERVER_PROFILE_MENU_HELP: "Visible only to those in this server",
         CHANGE_IDENTITY_NICKNAME_PERMISSIONS_DISABLED: "You don't have permission to change your nickname in this server.",
         USER_PROFILE_MENU_HELP: "Default profile and visible to everyone",
-        ANIMATED_GUILD_BANNER_TOOLTIP_HEADER: "NEW! Animated Server Banner",
-        ANIMATED_GUILD_BANNER_TOOLTIP_CONTENT_V2: "Servers with {tier3} can choose a GIF for their server banner under **Server Settings > Overview**.",
-        ANIMATED_GUILD_BANNER_TOOLTIP_CONTENT_TIER_NAME: "Boosting Level 3",
-        ANIMATED_GUILD_BANNER_TOOLTIP_CONTENT_TIER_3_V2: "You can now choose a GIF for your server banner as part of your {tier3}. Try it out now under **Server Settings > Overview**!",
-        ANIMATED_GUILD_BANNER_TOOLTIP_CONTENT_TIER_3_TIER_NAME: "Boosting Level 3 perks",
-        ANIMATED_GUILD_BANNER_TOOLTIP_CTA: "Open Settings",
-        ANIMATED_GUILD_BANNER_TOOLTIP_CTA_TIER_3: "Set New Banner",
-        ANIMATED_GUILD_BANNER_TOOLTIP_CTA_SECONDARY: "Got it",
         PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP_TITLE: "Want to get to the next Level?",
         PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP_CONTENT: "The **Boost Progress Bar** shows members how many Boosts your server needs to reach the next Level. Toggle it under **Server Settings > Display**.",
         PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP_CTA_PRIMARY_ROLE_SETTINGS: "Toggle On",
@@ -12429,14 +12342,10 @@
         SELECT_IMAGE_MODAL_CHOOSE_GIF: "Choose GIF",
         SELECT_IMAGE_MODAL_UPLOAD_IMAGE_OR_VIDEO: "Upload Image or Video",
         USER_SETTINGS_CHOOSE_FROM_LIBRARY: "**NEW!** Choose a GIF from our library for your avatar.",
-        USER_SETTINGS_TRY_ANIMATED_AVATAR: "**Try animated avatars with Nitro!** See how your profile looks animated.",
         USER_SETTINGS_ANIMATED_AVATAR_UPSELL: "Get Animated Avatars",
         USER_SETTINGS_ANIMATED_AVATAR_UPSELL_DESCRIPTION: "Upload GIFs to animate your avatars! Only with Nitro.",
         USER_SETTINGS_TRY_IT_OUT: "Try it out!",
-        USER_SETTINGS_TRY_IT_NOW: "Try it now!",
         USER_SETTINGS_WITH_IMAGE_DESCRIPTIONS: "With image descriptions",
-        USER_SETTINGS_IMAGE_AND_VIDEO_DISPLAY: "Image & Video Display",
-        USER_SETTINGS_IMAGE_DESCRIPTIONS: "Image Descriptions",
         DONT_ASK_AGAIN: "Don't ask again",
         VOICE_CHANNEL_CHANGE_CONFIRMATION_BODY: "Looks like you're in another voice channel. Are you sure you want to switch to **!!{channel}!!**?",
         VOICE_CHANNEL_CHANGE_CONFIRMATION_HEADER: "You sure?",
@@ -15016,13 +14925,8 @@
         SAFETY_USER_SENTIMENT_FEEDBACK_CONFIRMATION: "Thanks for the feedback!",
         COLLECTIBLES_SHOP: "Shop",
         COLLECTIBLES_USE_NOW: "Use Now",
-        COLLECTIBLES_USE_NOW_SENTENCE_CASE: "Use now",
         COLLECTIBLES_CTA_GO_TO_SHOP: "Go to Shop",
-        COLLECTIBLES_UPSELL_ENTRYPOINT_HEADER: "Collect new avatar decorations!",
-        COLLECTIBLES_AVAILABLE_FOR_PURCHASE: "Available For Purchase",
         COLLECTIBLES_ACQUIRED_DATE: "Acquired {date}",
-        COLLECTIBLES_GO_TO_SHOP_INSTRUCTIONS: "Want this decoration for yourself? Head to the Shop to buy and add it to your collection!",
-        COLLECTIBLES_IAP_BANNER_SUBTITLE: "Style your avatar’s look with the newest decorations, now available to buy and collect with Nitro.",
         COLLECTIBLES_MOBILE_IAP_NOTICE: "The ability to acquire new decorations is not available on this platform.",
         COLLECTIBLES_MOBILE_IAP_NOTICE_EDIT_HEADER: "Add more flair to your avatar. The ability to acquire new decorations is not available on this platform.",
         COLLECTIBLES_PURCHASE: "Buy for {price}",
@@ -15030,63 +14934,42 @@
         COLLECTIBLES_ADD_TO_YOUR_COLLECTION: "Add to your collection",
         COLLECTIBLES_COLLECTING: "Collecting",
         COLLECTIBLES_COLLECTING_FINISHED: "Collecting finished",
-        COLLECTIBLES_NON_PREMIUM_STARTER_BANNER: "Collect these bonus avatar decorations for extra style when you subscribe to Nitro! $[Unlock with Nitro](unlockHook)",
-        COLLECTIBLES_PREMIUM_STARTER_BANNER: "Collect these bonus items for extra style! Use them anytime with an active Nitro subscription. $[Unlock with Nitro](unlockHook)",
         COLLECTIBLES_NITRO_EXCLUSIVE: "Nitro exclusive",
         COLLECTIBLES_PERMANENT_COLLECTION: "This decoration is now part of your collection and can be used anytime!",
-        COLLECTIBLES_STARTER_PACK_COLLECTED: "This decoration is now part of your collection and can be used anytime with an active Nitro subscription.",
         COLLECTIBLES_YOU_COLLECTED: "You've collected {itemName}!",
         COLLECTIBLES_ALREADY_OWNED: "Already owned",
         COLLECTIBLES_INCLUDED_WITH_PREMIUM: "Included with Nitro",
-        COLLECTIBLES_DETAILS_MODAL_PRICE: "{price} if you have an active Nitro subscription",
         COLLECTIBLES_DETAILS_MODAL_PREMIUM_PURCHASE_DISCLAIMER: "Once purchased, this decoration will be added to your collection and can be used anytime",
         COLLECTIBLES_DETAILS_MODAL_INCLUDED_WITH_PREMIUM_DISCLAIMER: "This bonus item is yours to keep and use anytime with an active Nitro subscription.",
         COLLECTIBLES_PURCHASE_DISCLAIMER_PAYMENT: "Hey! This purchase is non-refundable. Once you complete your purchase, the item will be available for use immediately and can be accessed in your User Profile settings. Note that Nitro subscriptions become non-refundable once you’ve purchased an item.",
         COLLECTIBLES_PURCHASE_DISCLAIMER_GIFT_PAYMENT: "This purchase is non-refundable. Once you complete your purchase, the item will be sent to the recipient and can be accessed in their User Profile settings.",
-        COLLECTIBLES_SUBSCRIPTION_TOOLTIP_TEXT: "{price} monthly Nitro subscription",
         COLLECTIBLES_PREMIUM_DISCOUNT_TOOLTIP_TEXT: "Nitro subscribers get a discount on this decoration",
         COLLECTIBLES_NON_PREMIUM_PRICE: "{price} with Nitro",
         COLLECTIBLES_NON_PREMIUM_PRICE_SUBSCRIBE_NOW: "{price} with Nitro. $[Subscribe now](subscribeNowHook)",
-        COLLECTIBLES_COACHMARK_HEADER: "Add style to your avatar",
-        COLLECTIBLES_COACHMARK_HEADER_PREMIUM: "Ready for a new look?",
-        COLLECTIBLES_COACHMARK_DESC: "Explore and collect the newest avatar decorations, plus a bonus, with Nitro.",
-        COLLECTIBLES_COACHMARK_DESC_PREMIUM: "Browse & buy the newest avatar decorations with Nitro.",
-        COLLECTIBLES_COACHMARK_CTA_PREMIUM: "Visit Shop",
         COLLECTIBLES_SHOP_HERO_BANNER_TITLE: "Ready for a new look?",
         COLLECTIBLES_SHOP_HERO_BANNER_SUBTITLE_ALT: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
-        COLLECTIBLES_PURCHASE_DISCLAIMER: "Hey! This purchase is non-refundable. Once you complete your purchase, the item will be available for use immediately and can be accessed in your User Profile settings.",
-        COLLECTIBLES_PURCHASE_DISCLAIMER_WAIVER: "You understand that you will receive your item immediately upon purchase, and you waive your right to withdraw.",
         COLLECTIBLES_SHOP_ERROR_HEADING: "Well, this is awkward.",
         COLLECTIBLES_SHOP_ERROR_SHOP_LOAD: "Hmmm, we weren't able to load the Shop. Check back later.",
         CHANGE_DECORATION_MODAL_PURCHASE_HEADER: "Your Decorations",
         CHANGE_DECORATION_MODAL_STARTER_DESC: "Use anytime with an active Nitro subscription.",
         COLLECTIBLES_CHAT_PREVIEW_TEXT: "Look at my beautiful decoration",
         CHANGE_DECORATION_MODAL_PREMIUM_STARTER_HEADER: "Exclusive to Nitro",
-        CHANGE_DECORATION_MODAL_PREMIUM_STARTER_DESC: "Collect and use these bonus decorations anytime with an active Nitro subscription.",
         CHANGE_DECORATION_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus decoration anytime with an active Nitro subscription.",
         CHANGE_DECORATION_MODAL_PREVIEW_STARTER_CHURNED: "Use this bonus decoration with an active Nitro subscription.",
         CHANGE_DECORATION_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this decoration for yourself? Head to the Shop to buy and collect it!",
         CHANGE_DECORATION_MODAL_PREVIEW_STARTER_PREMIUM: "Want this for yourself? Head to the Shop to collect it!",
-        CHANGE_DECORATION_MODAL_SHOP_PREVIEW_HEADER: "Shop Preview",
-        CHANGE_DECORATION_MODAL_SHOP_PREVIEW_DESC: "Try on some of the decorations currently available for purchase in the Shop.",
-        CHANGE_DECORATION_MODAL_CHAT_PREVIEW: "Chat Preview",
         CHANGE_PFX_MODAL_PREVIEW_STARTER: "Want this for yourself? Collect and use this bonus profile effect anytime with an active Nitro subscription.",
         CHANGE_PFX_MODAL_PREVIEW_STARTER_CHURNED: "Use this bonus profile effect with an active Nitro subscription.",
-        CHANGE_PFX_MODAL_SHOP_PREVIEW_HEADER_STARTER_DESC: "Buy and collect profile effects with a Nitro subscription.",
         COLLECTIBLES_BUY_PROFILE_EFFECT: "Buy Profile Effect",
         COLLECTIBLES_DETAILS_MODAL_PROFILE_EFFECT_PREMIUM_PURCHASE_DISCLAIMER: "Once purchased, this effect will be added to your collection and can be used anytime",
         COLLECTIBLES_PROFILE_EFFECT_PERMANENT_COLLECTION: "This effect is now part of your collection and can be used anytime!",
-        COLLECTIBLES_PROFILE_EFFECT_PREMIUM_DISCOUNT_TOOLTIP_TEXT: "Nitro subscribers get a discount on this effect",
-        CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE: "Want this profile effect for yourself? Visit the Shop to buy and add it to your collection. Only with Nitro.",
         CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this profile effect for yourself? Head to the Shop to buy and collect it!",
         COLLECTIBLES_DAYS_LEFT_IN_SHOP: "{days} days left in Shop",
         COLLECTIBLES_DAYS_LEFT: "{days} days left",
         COLLECTIBLES_LAST_DAY: "Last day to buy",
-        COLLECTIBLES_DISCORD_SHOP: "Discord Shop",
         COLLECTIBLES_SFA_TITLE: "The Shop is now open to you!",
         COLLECTIBLES_SFA_STARTER_BANNER_DESCRIPTION: "Collect these sweet, bonus items when you join Nitro! $[Unlock with Nitro](getPremium)",
         COLLECTIBLES_SFA_HERO_BANNER_SUBTITLE: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
-        COLLECTIBLES_SFA_COACHMARK_DESCRIPTION: "You can now add pizzazz to your profile with stylish animations. Grab your favorite styles from the Shop.",
         COLLECTIBLES_SFA_BANNER_DESCRIPTION: "Make your profile feel alive with snazzy profile effects and avatar decorations. What's not to love?",
         COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION: "{sender} gifted you an avatar decoration!",
         COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT: "{sender} gifted you a profile effect!",
@@ -15094,33 +14977,20 @@
         COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT_UNKNOWN_SENDER: "You have been gifted a profile effect!",
         COLLECTIBLES_ACCEPT_GIFT: "Accept gift",
         COLLECTIBLES_FROM_SENDER: "From {sender}",
-        COLLECTIBLES_GIFT_DETAILS: "Gifted by {sender} on {date}",
         COLLECTIBLES_SEND_ITEM_AS_A_GIFT: "Send item as a gift",
         COLLECTIBLES_GIFT_COACHMARK_HEADING: "Give the gift of style",
         COLLECTIBLES_GIFT_COACHMARK_DESC: "Check out the latest profile styles and surprise your friend with a fresh new look.",
         COLLECTIBLES_GIFT_SEND_ERROR_OWNED: "Hey! Your friend already has this. Try sending something else.",
-        COLLECTIBLES_GIFT_DISCLAIMER: "This purchase is non-refundable. Once you complete your purchase, the item will be sent to the recipient and can be accessed in their User Profile settings.",
-        COLLECTIBLES_PRICE_WITH_PREMIUM_TIER: "!!{price}!! with Nitro.",
-        COLLECTIBLES_SUBSCRIBE_NOW: "Subscribe now",
         COLLECTIBLES_GIFT_RECIPIENT_PLACEHOLDER: "Select a friend",
-        COLLECTIBLES_GIFT_MSG_PLACEHOLDER: "Add a message...",
         COLLECTIBLES_GIFT_LABEL: "Your gift",
         COLLECTIBLES_PREVIEW_GIFT_PROFILE: "Preview on your friend's profile",
-        COLLECTIBLES_GENERIC_GIFTED_YOU_DECORATION: "You've been gifted an avatar decoration!",
-        COLLECTIBLES_GENERIC_GIFTED_YOU_EFFECT: "You've been gifted a profile effect!",
-        COLLECTIBLES_GIFT_CLAIM: "Claim gift",
         COLLECTIBLES_SHOP_GIFT_MODAL_SELECT_HEADER: "Send a gift",
         COLLECTIBLES_SHOP_GIFT_MODAL_REVIEW_HEADER: "Review your gift",
         COLLECTIBLES_GIFT_CODE_MODAL_UPSELL: "You can also send gifts to your friends from the Shop! $[Check it out](checkItOut).",
-        MOBILE_TIME_REMAINING_DAYS: "{days} days remaining",
-        MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS: "{hours}:{minutes}:{seconds} remaining",
         DIRECTORY_CATEGORY_TOWN_HALL_1: "Staff Picks",
         DIRECTORY_CATEGORY_TOWN_HALL_2: "Gaming",
         DIRECTORY_CATEGORY_TOWN_HALL_3: "Indie Spotlight",
         DIRECTORY_CATEGORY_TOWN_HALL_5: "Creator Corner",
-        MARKETING_PAGE_SHOP_PERK_CARD_HEADER: "Special Shop Perks",
-        MARKETING_PAGE_SHOP_PERK_CARD_SUBHEADER: "Enjoy member pricing plus Nitro exclusive items in the Shop.",
-        MARKETING_PAGE_SHOP_PERK_COMPARISON_CHART: "Shop member pricing, and exclusive items",
         USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_HEADER: "‘Tis the season for feelin’ festive!",
         USER_PROFILE_SETTINGS_SHOP_FOR_ALL_BANNER_SUBHEADER: "Deck your profile in seasonal styles with new items in the Shop.",
         AVATAR_DECORATIONS_SOCIAL_UPSELL: "Like this avatar decoration? $[Get your own from the Shop](openShop).",
@@ -16389,7 +16259,6 @@
         LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_TITLE: "Upgrade your chat",
         LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_MESSAGE: "Get access to slash commands and other great ways to chat by enabling our latest features.\n\nYou can always go back to legacy chat at any time by heading over to $[User Settings > Accessibility](openSettingsHook).",
         LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_BUTTON_CTA: "Enable now",
-        MESSAGE_AUTHOR_NITRO_BADGE: "Nitro User",
         LARGE_FILE_UPLOAD_POWERED_BY_NITRO: "Large file upload, powered by Nitro • [Learn More](onClick)",
         ASSISTANT_SKIP_BUTTON: "Skip Tutorial",
         ASSISTANT_SPLASH_TITLE: "Welcome, $[username](usernameHook)",
@@ -18406,7 +18275,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257964", ", Version Hash: ").concat("e29869c5ff6438300a55fd8c15bbe917a2b67800")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257971", ", Version Hash: ").concat("05931ef7ebf18b11cb727b93556bff4e036e4e1d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20124,7 +19993,7 @@
           inlineRequire: () => E("129040").default
         },
         ClipsManager: {
-          actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "VOICE_STATE_UPDATES", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
+          actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
           inlineRequire: () => E("332491").default
         },
         BroadcastingManager: {
@@ -20878,8 +20747,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257964", "257964"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257964")), _ = 0), _
+        let _ = parseInt((e = "257971", "257971"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257971")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21267,15 +21136,31 @@
         c = E("49111"),
         D = E("706530");
       t = class extends r.default {
-        handleVoiceStateUpdates(e) {
-          for (let _ of e.voiceStates) S.default.getChannelId() === _.channelId && this.maybeShowClipsWarning(_.userId)
+        handleRTCConnectionState(e) {
+          let {
+            context: _,
+            state: E,
+            streamKey: t
+          } = e;
+          if (!(0, R.areClipsEnabled)() || E !== c.RTCConnectionStates.RTC_CONNECTED) return;
+          let n = s.default.getId();
+          if (_ === o.MediaEngineContextTypes.DEFAULT) return this.applyUserVoiceRecording(n);
+          if (_ === o.MediaEngineContextTypes.STREAM && null != t) {
+            let {
+              ownerId: e
+            } = (0, a.decodeStreamKey)(t);
+            if (e !== n) return;
+            let _ = N.default.getRTCConnection(t);
+            if (null == _) return;
+            this.applyStreamRecording(n, _)
+          }
         }
         handleRTCUserCreate(e) {
           let {
             userId: _,
             context: E
           } = e;
-          E === o.MediaEngineContextTypes.DEFAULT && this.applyUserRecording(_)
+          E === o.MediaEngineContextTypes.DEFAULT && this.applyUserVoiceRecording(_)
         }
         handleRTCConnectionFlags(e) {
           let {
@@ -21283,14 +21168,14 @@
             channelId: E,
             guildId: t
           } = e;
-          this.maybeShowClipsWarning(_), this.applyUserRecording(_);
+          this.maybeShowClipsWarning(_), this.applyUserVoiceRecording(_);
           let o = N.default.getRTCConnection(a.encodeStreamKey({
             streamType: null != t ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
             ownerId: _,
             channelId: E,
             guildId: t
           }));
-          null != o && this.applyInboundStreamRecording(_, o)
+          null != o && this.applyStreamRecording(_, o)
         }
         handleClipsInitFailure(e) {
           let {
@@ -21331,14 +21216,14 @@
             channelId: t,
             guildId: n
           } = e;
-          if (E !== o.MediaEngineContextTypes.STREAM || _ === s.default.getId() || !(0, L.default)(T.default)) return;
+          if (E !== o.MediaEngineContextTypes.STREAM || !(0, L.default)(T.default)) return;
           let r = N.default.getRTCConnection(a.encodeStreamKey({
             streamType: null != n ? D.StreamTypes.GUILD : D.StreamTypes.CALL,
             ownerId: _,
             channelId: t,
             guildId: n
           }));
-          null != r && this.applyInboundStreamRecording(_, r)
+          null != r && this.applyStreamRecording(_, r)
         }
         async classifyHardwareAndTrack() {
           try {
@@ -21385,20 +21270,31 @@
           }
           return u.ClipsHardwareClassification.UNKNOWN
         }
-        applyUserRecording(e) {
-          if (!(0, L.default)(T.default) || e === s.default.getId()) return;
+        applyUserVoiceRecording(e) {
+          if (!(0, L.default)(T.default)) return;
           let _ = S.default.getRTCConnection();
           if (null == _) return;
+          if (e === s.default.getId()) {
+            _.setClipRecordUser(e, "audio", l.default.getSettings().clipsEnabled);
+            return
+          }
           let E = l.default.isVoiceRecordingAllowedForUser(e);
-          null == _ || _.setClipRecordUser(e, "audio", E)
+          _.setClipRecordUser(e, "audio", E)
         }
-        applyInboundStreamRecording(e, _) {
-          if (!(0, L.default)(T.default) || e === s.default.getId()) return;
+        applyStreamRecording(e, _) {
+          if (!(0, L.default)(T.default)) return;
+          if (s.default.getId() === e) {
+            let {
+              clipsEnabled: E
+            } = l.default.getSettings(), t = (0, R.areClipsEnabled)();
+            _.setClipRecordUser(e, "audio", t && E), _.setClipRecordUser(e, "video", t && E);
+            return
+          }
           let {
             enableViewerClipping: E,
             ignoreSenderPreference: t
           } = I.default.getCurrentConfig({
-            location: "ClipsManager:applyInboundStreamRecording"
+            location: "ClipsManager:applyStreamRecording"
           });
           if (!E) return;
           let o = t || l.default.isViewerClippingAllowedForUser(e);
@@ -21410,13 +21306,13 @@
             POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
             RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
             RTC_CONNECTION_USER_CREATE: e => this.handleRTCUserCreate(e),
-            VOICE_STATE_UPDATES: e => this.handleVoiceStateUpdates(e),
             CLIPS_INIT_FAILURE: e => this.handleClipsInitFailure(e),
             CLIPS_SETTINGS_UPDATE: e => this.applyNativeClipsSettings(e),
             STREAM_START: () => this.applyNativeClipsSettings(),
             RUNNING_GAMES_CHANGE: e => this.fireClipsInitEventHelper(e),
             CLIPS_RESTART: () => this.fireClipsInitEvent(),
             RTC_CONNECTION_VIDEO: e => this.handleRTCConnectionVideo(e),
+            RTC_CONNECTION_STATE: e => this.handleRTCConnectionState(e),
             MEDIA_ENGINE_SET_HARDWARE_H264: e => this.handleMediaEngineSetHardwareH264(e)
           }
         }
@@ -37147,4 +37043,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.64d2e3e2d024d83e12bf.js.map
+//# sourceMappingURL=14907.3d4b3b60b2e59ed9676a.js.map
