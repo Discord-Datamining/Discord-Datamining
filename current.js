@@ -16279,6 +16279,7 @@
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_SHORT: "$[Suspended](hook)",
         SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER: "You broke Discord's rules against $[!!{classification_type}!!](classificationHook).",
         SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_V2: "You broke Discord's rules on $[!!{classification_type}!!](classificationHook).",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_GUILD: "Your server {guildName} broke Discord's rules on $[!!{classification_type}!!](classificationHook).",
         SAFETY_HUB_CLASSIFICATION_DETAIL_EVIDENCE_HEADER: "YOUR RECENT ACTIVITY BROKE DISCORD'S RULES",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTIONS_TAKEN_HEADER: "WE TOOK THESE ACTIONS",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_EXPLAINED_HEADER: "WHY WE TOOK THIS ACTION",
@@ -16303,6 +16304,7 @@
         SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_ACTIVE: "Expires on {expirationDate}",
         SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_EXPIRED: "Expired on {expirationDate}",
         SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION: "You broke the rules against $[!!{description}!!](descriptionHook).",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_GUILD: "Your server {guildName} broke the rules against $[!!{description}!!](descriptionHook).",
         SAFETY_HUB_VIOLATIONS_CONTAINER_NEW: "NEW",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR: "Protecting our users is a top priority. When a user engages in repeated violations or particularly egregious harms, we take swift action",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR_CTA: "Learn More",
@@ -18399,7 +18401,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257750", ", Version Hash: ").concat("466e48f1b90042b5543f517b6203f2c46f4f69bd")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("257766", ", Version Hash: ").concat("7cb29f7d942c4436ce9c60a6ff5db7aaf58a266a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20871,8 +20873,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "257750", "257750"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257750")), _ = 0), _
+        let _ = parseInt((e = "257766", "257766"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("257766")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37116,4 +37118,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.887177acfba32499465f.js.map
+//# sourceMappingURL=14907.fbf430b074373ea4aec8.js.map
