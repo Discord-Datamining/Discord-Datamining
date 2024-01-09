@@ -18278,7 +18278,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258208", ", Version Hash: ").concat("453afa25e1299940b3aaf8f98e6a970e627fedea")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258213", ", Version Hash: ").concat("023cad880868dcc6bc5117250e8b3a02576f0261")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20024,7 +20024,7 @@
           neverLoadBeforeConnectionOpen: !0
         },
         QuestsManager: {
-          actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE"],
+          actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE"],
           inlineRequire: () => E("319405").default,
           neverLoadBeforeConnectionOpen: !0
         }
@@ -20750,8 +20750,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258208", "258208"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258208")), _ = 0), _
+        let _ = parseInt((e = "258213", "258213"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258213")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26904,6 +26904,23 @@
             window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, 6e4))
           }, this.terminateHeartbeat = e => {
             window.clearInterval(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
+          }, this.handleEnrollmentSuccess = e => {
+            let {
+              enrolledQuestUserStatus: {
+                questId: _
+              }
+            } = e, E = n.default.getStreamerActiveStreamMetadata();
+            if (null == E || null == E.pid) return;
+            let t = i.default.getGameForPID(E.pid);
+            if (null == t || null == t.id) return;
+            let r = (0, T.getQuestByApplicationId)(t.id);
+            if (null == r || r.id !== _) return;
+            let a = n.default.getCurrentUserActiveStream();
+            null != a && this.initiateHeartbeat({
+              streamKey: (0, o.encodeStreamKey)(a),
+              applicationId: r.config.applicationId,
+              questId: r.id
+            })
           }, this.handlePostConnectionOpen = () => {
             window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(5e3 * Math.random()))
           }, this.handleSendHeartbeatSuccess = e => {
@@ -26940,6 +26957,7 @@
             } = e;
             this.terminateHeartbeat(_)
           }, this.actions = {
+            QUESTS_ENROLL_SUCCESS: this.handleEnrollmentSuccess,
             QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
             POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
             RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
@@ -37046,4 +37064,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.fdbc3009e5fc2ae02f1e.js.map
+//# sourceMappingURL=14907.3dcd06499ca0d61a3921.js.map
