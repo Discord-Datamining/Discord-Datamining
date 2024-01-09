@@ -9577,6 +9577,7 @@
         SHOW_ALL: "Show all",
         CLEAR_ALL: "Clear all",
         PHOTOS: "Photos",
+        PHOTOS_AND_FILES: "Photos & Files",
         RECENTS: "Recents",
         IOS_MEDIA_KEYBOARD_NO_PERMISSION: "Enable permissions to access your photo library. Show everyone how cute your pet is.",
         IOS_MEDIA_KEYBOARD_NO_PHOTOS: "You don’t have any photos in your photo library. The best time to start is now.",
@@ -18278,7 +18279,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258240", ", Version Hash: ").concat("fd03f7ec8e812be63d6090a35e057a25706799ca")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258243", ", Version Hash: ").concat("3380e21720ef6352a0f43ed5637105634b5476f5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20750,8 +20751,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258240", "258240"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258240")), _ = 0), _
+        let _ = parseInt((e = "258243", "258243"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258243")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37064,4 +37065,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.e6fc278ba17009d40d6d.js.map
+//# sourceMappingURL=14907.7d148ac0251a239f6006.js.map
