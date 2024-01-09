@@ -2866,6 +2866,7 @@
         PASSWORDLESS_ENTER_PASSWORD_DESCRIPTION_PHONE: "Enter the password for the account with the phone number {phone}",
         PASSWORDLESS_ENTER_PASSWORD_DESCRIPTION_EMAIL: "Enter the password for the account with the email address {email}",
         TEXT_DATA_RATES: "Standard message and data rates apply.",
+        PHONE_NOT_MOBILE_ERROR: "Unable to register using phone number. Please register with an e-mail address.",
         NUF_BODY_REFRESH: "Join over 100 million people who use Discord to talk with communities and friends.",
         NUF_TITLE_MOBILE: "Welcome to Discord",
         NUF_BODY_MOBILE: "Login or Register to get started",
@@ -18277,7 +18278,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258153", ", Version Hash: ").concat("b8f18a579bd0718d0ae61f2ccd647e0bde1f5760")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258156", ", Version Hash: ").concat("bfdff5f3737de2fd7cfbe89a72c932f992d5c4ff")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20749,8 +20750,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258153", "258153"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258153")), _ = 0), _
+        let _ = parseInt((e = "258156", "258156"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258156")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37045,4 +37046,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.54ec75814117152b8ca9.js.map
+//# sourceMappingURL=14907.3456da0b80d54bc56ac5.js.map
