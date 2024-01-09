@@ -18290,7 +18290,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258300", ", Version Hash: ").concat("a3fca4266a067d80f2f81c85e6cda469adb79fb1")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258304", ", Version Hash: ").concat("4e5c6859502aaa3f1bf56c4d523321edf622d6ff")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20762,8 +20762,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258300", "258300"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258300")), _ = 0), _
+        let _ = parseInt((e = "258304", "258304"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258304")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -30435,20 +30435,6 @@
         o === e && (o = null)
       }
     },
-    360782: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return o
-        }
-      });
-      var t = E("860957");
-
-      function o() {
-        let e = t.default.getFocusedPID();
-        return null != e && (t.default.isReady(e) || t.default.isCrashed(e)) ? e : null
-      }
-    },
     981980: function(e, _, E) {
       "use strict";
       var t;
@@ -37086,4 +37072,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.729ac6d3587946c77bde.js.map
+//# sourceMappingURL=14907.2f30df70d696378e8688.js.map
