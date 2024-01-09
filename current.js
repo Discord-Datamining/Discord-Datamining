@@ -16316,11 +16316,21 @@
         LAUNCH_PAD_TAB_A11Y_LABEL: "Open LaunchPad",
         REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
         REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report.",
-        APPEAL_INGESTION_LEARN_MORE_LINK_TITLE: "Learn more about this policy",
-        POLL_NOTIFICATIONS: "Polls",
         APPEAL_INGESTION_AGE_VERIFICATION_LINK_TITLE: "Submit age verification",
+        APPEAL_INGESTION_LEARN_MORE_LINK_TITLE: "Learn more about this policy",
+        APPEAL_INGESTION_BREADCRUMBS_HEADER: "REASON",
+        APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ADD_DETAILS: "Add details",
+        APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_EDIT_DETAILS: "Edit details",
+        APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_FOOTER: "Your request will be sent to our team. Violations will stay on your account until they expire or are removed after review.",
+        APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_SUBHEADER: "Here's a summary of your request.",
+        APPEAL_INGESTION_ADD_DETAILS_ACTION_SHEET_SUBHEADER: "You can add context or anything else that might be helpful for us to know.",
+        APPEAL_INGESTION_ADD_DETAILS_ACTION_SHEET_PLACEHOLDER: "What would you like us to know?",
         APPEAL_INGESTION_MODAL_HEADER: "Request a review",
         APPEAL_INGESTION_MODAL_REQUEST_SENT_HEADER: "Request sent",
+        APPEAL_INGESTION_MODAL_REQUEST_SENT_SUBHEADER: "Thank you for your submission. We will let you know the outcome of this review.",
+        APPEAL_INGESTION_MODAL_REQUEST_SENT_ACTIONS_HEADER: "More you can do",
+        APPEAL_INGESTION_MODAL_REQUEST_SENT_GUIDELINES_LINK: "View our Community Guidelines",
+        APPEAL_INGESTION_MODAL_REQUEST_SENT_RULES_LINK: "Learn about how we enforce rules",
         APPEAL_INGESTION_MODAL_THANKS_HEADER: "Thanks for letting us know.",
         APPEAL_INGESTION_MODAL_SPAM_HEADER: "This request is for spam.",
         APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBHEADER: "Did we make a mistake? Let us know.",
@@ -16333,6 +16343,7 @@
         APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DONT_AGREE_PENALTY: "I don't agree with the penalty",
         APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_SOMETHING_ELSE: "Something else",
         APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DISCLAIMER: "This request is sent to Discord. Creating false reports and/or spamming the report button may result in suspension of reporting abilities. Learn more from the [Discord Community Guidelines](https://discord.com/guidelines).",
+        POLL_NOTIFICATIONS: "Polls",
         SUMMONED: "Summoned!",
         WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
         WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
@@ -18279,7 +18290,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258272", ", Version Hash: ").concat("65bc67f356af3b22d7370815f83d9d99cb8d6d69")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258275", ", Version Hash: ").concat("d86aeb20bfb1edefc6d981202c90b524c8fd9072")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20751,8 +20762,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258272", "258272"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258272")), _ = 0), _
+        let _ = parseInt((e = "258275", "258275"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258275")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37075,4 +37086,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.58fcb0b30984acecab5f.js.map
+//# sourceMappingURL=14907.2ab53fddf054add963a8.js.map
