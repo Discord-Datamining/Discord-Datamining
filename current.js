@@ -18278,7 +18278,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258224", ", Version Hash: ").concat("dc08522786872c9ac1b838603ece1ce927b27790")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258228", ", Version Hash: ").concat("dc4d1c747d26e83c1bd5e2f108b889e5831cd15f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20750,8 +20750,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258224", "258224"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258224")), _ = 0), _
+        let _ = parseInt((e = "258228", "258228"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258228")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21755,7 +21755,7 @@
         G = E("262194"),
         p = E("36773"),
         g = E("374036"),
-        y = E("509802"),
+        y = E("384997"),
         B = E("234819"),
         f = E("182033"),
         v = E("928741"),
@@ -21815,7 +21815,7 @@
           autoTrackExposure: !0
         }), ei = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ea = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), eI = $ && !ei, es = [];
         eI && eo && er && !ea && es.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
-        let [eT, eS] = (0, y.useDismissibleContentGroup)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
+        let [eT, eS] = (0, y.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
         es.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
         let eN = eT === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
           eA = eT === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
@@ -37064,4 +37064,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.3db0844506c39a450029.js.map
+//# sourceMappingURL=14907.3c4b7cb52cb321a14838.js.map
