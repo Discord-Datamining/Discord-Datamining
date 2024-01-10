@@ -16020,6 +16020,8 @@
         CLIPS_SETTINGS_TOP_SUBHEADER: "Change settings for clipping",
         CLIPS_SETTINGS_ENABLE_CLIPS: "Enable Clipping",
         CLIPS_SETTINGS_ENABLE_CLIPS_HELP: "Enables you to capture clips while you're streaming by using the clipping keybind.",
+        CLIPS_SETTINGS_ENABLE_REMINDERS: "Enable Reminders",
+        CLIPS_SETTINGS_ENABLE_REMINDERS_HELP: "After a clip is captured, show a reminder for new clips",
         CLIPS_SETTINGS_ENABLE_DECOUPLED_CLIPS: "Enable Always-On Game Clipping",
         CLIPS_SETTINGS_ENABLE_DECOUPLED_CLIPS_HELP: "Enables you to capture clips while gaming (even if you’re not streaming).",
         CLIPS_SETTINGS_HELP_IN_GO_LIVE_CTA: "Capture clips during your stream with $[!!{keybind}!!](keybindHook).",
@@ -16059,8 +16061,9 @@
         CLIPS_REMINDER_NOTIFICATION_TITLE: "Create clips with keybind $[!!{keybind}!!](keybindHook)",
         CLIPS_CALL_TOOLTIP_TITLE: "You recently captured a clip!",
         CLIPS_CALL_TOOLTIP_LINK_CTA: "View Clip",
+        CLIPS_YOU_HAVE_NEW_CLIPS: "You have {count, plural, =1 {# new clip} other {# new clips}}!",
+        CLIPS_REVIEW_NOW: "Review Now",
         CLIPS_SESSION_ENDED_TOOLTIP_BODY: "You captured clips during your recent !!{applicationName}!! stream. Check them out in your clips library!",
-        CLIPS_SESSION_ENDED_TOOLTIP_HEADER: "You have {count, plural, =1 {# new clip} other {# new clips}}!",
         CLIPS_SESSION_ENDED_TOOLTIP_PRIMARY_CTA: "View Clips",
         CLIPS_SESSION_ENDED_TOOLTIP_SECONDARY_CTA: "Stop Reminders",
         CLIPS_CHANNEL_NOTICE_EDUCATION_BODY: "Clipping is here! Use $[!!{keybind}!!](keybindHook) to capture clips while you're streaming.",
@@ -18297,7 +18300,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258574", ", Version Hash: ").concat("d6945c8d2102ef63a4aee9d8cd51ef408ac5b0c6")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258578", ", Version Hash: ").concat("0897c538859a061a3187c7f354b289b99eb78b2d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20769,8 +20772,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258574", "258574"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258574")), _ = 0), _
+        let _ = parseInt((e = "258578", "258578"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258578")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37079,4 +37082,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.de52a7536f6ce1986d82.js.map
+//# sourceMappingURL=14907.55f6b78bc8c52dd91eb2.js.map
