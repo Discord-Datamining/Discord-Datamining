@@ -1659,7 +1659,6 @@
         MEMBER_VERIFICATION_VERIFIED: "Verified",
         MEMBER_VERIFICATION_PHONE_VERIFIED: "Phone Verified",
         MEMBER_VERIFICATION_EMAIL_VERIFIED: "Email Verified",
-        MEMBER_VERIFICATION_ACCOUNT_VERIFIED: "Passed Verification Level",
         MEMBER_VERIFICATION_NEED_RULES_CHANNEL_PERMS: "You need to have Send Message permissions in your server's rules channel to add or edit server rules here.",
         MEMBER_VERIFICATION_PREVIEW_DISABLED_MARKDOWN_WARNING: "Channel and role mentions will not show up properly in rules if you've disabled preview.",
         MEMBER_VERIFICATION_FIELD_QUESTION: "Enter your question",
@@ -18296,7 +18295,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258518", ", Version Hash: ").concat("9abd1f7a7e720133a83e6c3bf0de4dd0ec1ece0e")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258521", ", Version Hash: ").concat("3d9e94d97874ba339c0a16d617dabd3e176a53ca")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20768,8 +20767,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258518", "258518"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258518")), _ = 0), _
+        let _ = parseInt((e = "258521", "258521"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258521")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37078,4 +37077,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.69e8e8c47dd30e222d7b.js.map
+//# sourceMappingURL=14907.10851a1579a82f6a0d3f.js.map
