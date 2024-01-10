@@ -1073,6 +1073,7 @@
         FAVORITES_SET_NICKNAME_DESCRIPTION: "This name will only appear in your favorites.",
         FAVORITE_ADDED: "Added to Favorites!",
         FAVORITES_RENAME_CATEGORY: "Rename Category",
+        FAVORITES_ADD_A_CHANNEL: "Add a channel",
         AFK_SETTINGS: "Inactive Settings",
         NO_AFK_CHANNEL: "No Inactive Channel",
         FORM_LABEL_AFK_CHANNEL: "Inactive Channel",
@@ -18300,7 +18301,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258718", ", Version Hash: ").concat("518502906ab75f858e8af1860f0ba9d19678e417")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258719", ", Version Hash: ").concat("6137a9364f59516352fdefacb1d23c718c08d6f3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20772,8 +20773,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258718", "258718"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258718")), _ = 0), _
+        let _ = parseInt((e = "258719", "258719"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258719")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37082,4 +37083,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.189a1e8c23e662755af2.js.map
+//# sourceMappingURL=14907.42db05469f17e7627852.js.map
