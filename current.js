@@ -4849,6 +4849,7 @@
         INCOMING_FRIEND_REQUEST_FROM: "Incoming Friend Request from !!{name}!!",
         INCOMING_FRIEND_REQUESTS_COUNT: "{count} incoming friend requests",
         OUTGOING_FRIEND_REQUEST: "Outgoing Friend Request",
+        CANCEL_FRIEND_REQUEST: "Cancel Friend Request",
         OUTGOING_FRIEND_REQUEST_DELETE_MSG: "Are you sure you want to delete your friend request to **!!{name}!!**?",
         FRIEND_REQUESTS_COMBINED_COUNT: "{incoming, number} received  •  {outgoing, number} sent",
         INCOMING_FRIEND_REQUEST_ACCEPTED_SUBLABEL: "is now your friend!",
@@ -18301,7 +18302,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258746", ", Version Hash: ").concat("0b110011b0e780bff5e2ce5095f88c898f294715")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("258754", ", Version Hash: ").concat("de10d48cab42877c7b5870e82060057767e05d04")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20773,8 +20774,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258746", "258746"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258746")), _ = 0), _
+        let _ = parseInt((e = "258754", "258754"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258754")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37083,4 +37084,4 @@
     }
   }
 ]);
-//# sourceMappingURL=14907.f0dc23e4b0d123e96f31.js.map
+//# sourceMappingURL=14907.e102dc833cdf24afc688.js.map
