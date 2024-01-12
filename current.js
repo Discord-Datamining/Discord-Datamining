@@ -16400,6 +16400,8 @@
         APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DONT_AGREE_PENALTY: "I don't agree with the penalty",
         APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_SOMETHING_ELSE: "Something else",
         APPEAL_INGESTION_MODAL_COLLECT_SIGNAL_DISCLAIMER: "This request is sent to Discord. Creating false reports and/or spamming the report button may result in suspension of reporting abilities. Learn more from the [Discord Community Guidelines](https://discord.com/guidelines).",
+        APPEAL_INGESTION_MODAL_SPEED_BUMP_LEARN_MORE_OTHER_OPTIONS_DSA: "Learn more about your other options under the [Digital Services Act](https://support.discord.com/hc/articles/17861767909527).",
+        APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBMIT_SPAM: "Submit a spam appeal",
         POLL: "Poll",
         POLLS: "Polls",
         POLL_NOTIFICATIONS: "Polls",
@@ -18125,7 +18127,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("258985", ", Version Hash: ").concat("d143d9e38a6e5302ff9f37dcd4787a7baf2cb7e4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("258996", ", Version Hash: ").concat("3efc9636cba7418a95d0300c80deedb830df6f9e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20398,8 +20400,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "258985", "258985"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258985")), _ = 0), _
+        let _ = parseInt((e = "258996", "258996"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("258996")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35678,4 +35680,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.ed7ba55b2bdee7ec5d3e.js.map
+//# sourceMappingURL=6575.7c88cda11da6bd7ff647.js.map
