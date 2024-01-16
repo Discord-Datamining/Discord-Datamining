@@ -721,6 +721,8 @@
         EMBEDDED_ACTIVITIES_SELECT_VOICE_CHANNEL: "Select Voice Channel",
         EMBEDDED_ACTIVITIES_LAUNCH: "Launch",
         EMBEDDED_ACTIVITIES_JOIN: "Join",
+        EMBEDDED_ACTIVITIES_JOINED: "Joined",
+        EMBEDDED_ACTIVITIES_ENDED: "Ended",
         EMBEDDED_ACTIVITIES_RETURN_TO_ACTIVITY: "Return to Activity",
         EMBEDDED_ACTIVITIES_PEOPLE_ARE_IN_AN_ACTIVITY: "{n, plural, one {1 person is} other {{n} people are}} in an Activity",
         EMBEDDED_ACTIVITIES_SUPPORTED_PLATFORMS_MOBILE: "Mobile",
@@ -18111,7 +18113,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259229", ", Version Hash: ").concat("bb0ced68aac7c8232ff30b5e9510165ab90558d6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259230", ", Version Hash: ").concat("fbdcbc6e2bb33da6d5e258955549447e297c36d8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20384,8 +20386,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259229", "259229"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259229")), _ = 0), _
+        let _ = parseInt((e = "259230", "259230"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259230")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35665,4 +35667,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.554532b6c6f73c2089f1.js.map
+//# sourceMappingURL=6575.86e5b0da751dfc30c20a.js.map
