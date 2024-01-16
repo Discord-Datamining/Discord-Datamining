@@ -16362,8 +16362,9 @@
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_EDIT_DETAILS: "Edit details",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_FOOTER: "Your request will be sent to our team. Violations will stay on your account until they expire or are removed after review.",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_SUBHEADER: "Here's a summary of your request.",
-        APPEAL_INGESTION_ADD_DETAILS_ACTION_SHEET_SUBHEADER: "You can add context or anything else that might be helpful for us to know.",
-        APPEAL_INGESTION_ADD_DETAILS_ACTION_SHEET_PLACEHOLDER: "What would you like us to know?",
+        APPEAL_INGESTION_FREE_TEXT_REASON_ACTION_SHEET_SUBHEADER: "You can add context or anything else that might be helpful for us to know.",
+        APPEAL_INGESTION_FREE_TEXT_REASON_ACTION_SHEET_PLACEHOLDER: "What would you like us to know?",
+        APPEAL_INGESTION_FREE_TEXT_REASON_ACTION_SHEET_FOOTER: "Your note will be shared with Discord. Please be advised that abusive language may count as another violation.",
         APPEAL_INGESTION_MODAL_HEADER: "Request a review",
         APPEAL_INGESTION_MODAL_REQUEST_SENT_HEADER: "Request sent",
         APPEAL_INGESTION_MODAL_REQUEST_SENT_SUBHEADER: "Thank you for your submission. We will let you know the outcome of this review.",
@@ -18110,7 +18111,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259189", ", Version Hash: ").concat("da826f5b0bcbc95ed17f56166aa31aba6d662e2a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259192", ", Version Hash: ").concat("188c8f7e098bd6643abd0677fd9de648c01c42fc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20383,8 +20384,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259189", "259189"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259189")), _ = 0), _
+        let _ = parseInt((e = "259192", "259192"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259192")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35663,4 +35664,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.be05dcd7094723d35a33.js.map
+//# sourceMappingURL=6575.88c1f90829c09b8b096b.js.map
