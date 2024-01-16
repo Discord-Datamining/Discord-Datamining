@@ -13653,7 +13653,7 @@
         GENERIC_FORMATTED_LIST_FOUR: "$[](a), $[](b), $[](c), and $[](d)",
         NUMBER_ABBREVIATION_FULL: "{value, number}",
         NUMBER_ABBREVIATION_THOUSANDS: "{value, number}k",
-        NUMBER_ABBREVIATION_MILLIONS: "{value, number}M",
+        NUMBER_ABBREVIATION_MILLIONS: "{value}M",
         FINISH: "Finish",
         ONBOARDING_NO_PROMPTS: "We hope you enjoy your stay!",
         ONBOARDING_COVER_WELCOME_TITLE: "Welcome to !!{guildName}!!, !!{userName}!!!",
@@ -18113,7 +18113,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259257", ", Version Hash: ").concat("b0425a729b4a62ae8f3cdf6868f127ea1bb6468c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259271", ", Version Hash: ").concat("146d7c1436e2f09b439a05d611e14dd392bb9b27")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20386,8 +20386,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259257", "259257"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259257")), _ = 0), _
+        let _ = parseInt((e = "259271", "259271"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259271")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35667,4 +35667,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.3bcb64d4352438fccb4f.js.map
+//# sourceMappingURL=6575.7658d49f1462adcded37.js.map
