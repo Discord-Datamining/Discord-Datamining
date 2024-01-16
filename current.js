@@ -2341,8 +2341,6 @@
         CLYDE_NUX_CHANNEL_NOTICE_LEARN_MORE: "Learn More",
         CLYDE_NUX_USER_CHANNEL_NOTICE_TITLE: "Chat with Clyde",
         CLYDE_NUX_USER_CHANNEL_NOTICE_MESSAGE: "Mention @Clyde to talk to our new AI chatbot.",
-        CLYDE_USER_RATING_TOOLTIP_GOOD: "Helpful",
-        CLYDE_USER_RATING_TOOLTIP_BAD: "Not Helpful",
         CLYDE_SEND_MESSAGE: "Message",
         CLYDE_PROFILE_EMBED_HEADER: "Apply personality to server",
         CLYDE_PROFILE_APPLY: "Apply",
@@ -2365,16 +2363,6 @@
         CLYDE_GENERATE_PERSONALITY_HINT: "Generate a more detailed personality",
         CLYDE_GENERATE_PERSONALITY_UNDO: "Undo generated personality",
         CLYDE_EDIT_NAME_LABEL: "Name",
-        CLYDE_USER_RATING_THANKS_1: "Clyde's neurons are buzzing \uD83E\uDDE0",
-        CLYDE_USER_RATING_THANKS_2: "Your feedback is the secret sauce \uD83C\uDF1F",
-        CLYDE_USER_RATING_THANKS_3: "You're helping Clyde evolve one byte at a time \uD83D\uDE4C",
-        CLYDE_USER_RATING_THANKS_4: "Your insights are the nuts and bolts of Clyde's growth \uD83D\uDD27",
-        CLYDE_USER_RATING_THANKS_5: "Your feedback keeps Clyde's gears turning smoothly ⚙️",
-        CLYDE_USER_RATING_THANKS_6: "Thanks for helping Clyde level up!",
-        CLYDE_USER_RATING_THANKS_7: "We've relayed your feedback to Clyde's supervisor",
-        CLYDE_USER_RATING_THANKS_8: "Your feedback has been delivered to the command center",
-        CLYDE_USER_RATING_THANKS_9: "We've dispatched your insights to the top brass.",
-        CLYDE_USER_RATING_THANKS_10: "Clyde's circuits have been informed of your opinion",
         MODERATION: "Moderation",
         SAFETY_SETUP: "Safety Setup",
         WEBHOOKS: "Webhooks",
@@ -5487,15 +5475,6 @@
         SUMMARIES_NOTIFICATIONS_FOOTER: "Change this in [server settings](notifSettingsHook) at any time.",
         GENERIC_FEEDBACK_THANKS: "Thanks for your feedback!",
         SUMMARIES_DELETE_SUMMARY: "Delete Summary",
-        CLYDE_FEEDBACK_MENU_ITEM_LABEL: "Give feedback",
-        CLYDE_FEEDBACK_HEADER: "How was this response?",
-        CLYDE_FEEDBACK_BODY: "Let us know so we can improve responses.",
-        CLYDE_FEEDBACK_PROBLEM_TITLE: "What was your main issue?",
-        CLYDE_FEEDBACK_OPTION_INACCURATE: "Wrong or incorrect information",
-        CLYDE_FEEDBACK_OPTION_HARMFUL: "Harmful or unsafe",
-        CLYDE_FEEDBACK_OPTION_NOT_HELPFUL: "Not helpful",
-        CLYDE_FEEDBACK_OPTION_INAPPROPRIATE: "Inappropriate",
-        CLYDE_FEEDBACK_OPTION_OTHER: "Other",
         INVITE_URL: "Invite URL",
         VANITY_URL_USES: "{uses, plural, =0 {0 uses} one {1 use} other {{uses} uses}}",
         REMOVE_VANITY_URL: "Remove Custom Invite Link",
@@ -18130,7 +18109,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259161", ", Version Hash: ").concat("6fdc63a6c756c72c196c0825f42e6ccba816141d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259169", ", Version Hash: ").concat("8d34466fe7fc2c65b868ba0b0d9d15f9c9022a6b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20403,8 +20382,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259161", "259161"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259161")), _ = 0), _
+        let _ = parseInt((e = "259169", "259169"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259169")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35683,4 +35662,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.5f644b1cdde40d9b58a2.js.map
+//# sourceMappingURL=6575.9b59eb3be534e209a8e1.js.map
