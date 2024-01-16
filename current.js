@@ -16372,6 +16372,7 @@
         APPEAL_INGESTION_MODAL_REQUEST_SENT_RULES_LINK: "Learn about how we enforce rules",
         APPEAL_INGESTION_MODAL_THANKS_HEADER: "Thanks for letting us know.",
         APPEAL_INGESTION_MODAL_SPAM_HEADER: "This request is for spam.",
+        APPEAL_INGESTION_MODAL_SPAM_LINK: "Contact Discord Support",
         APPEAL_INGESTION_MODAL_SPEED_BUMP_SUBHEADER: "Did we make a mistake? Let us know.",
         APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_HEADER: "YOUR ACTIVITY",
         APPEAL_INGESTION_MODAL_SPEED_BUMP_ACTIVITY_SUBHEADER: "We determined this content violates our policy",
@@ -18109,7 +18110,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259172", ", Version Hash: ").concat("b5ffe5d607a7555fdf06850355b8a50f80915e66")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259186", ", Version Hash: ").concat("b4e8da00147473f1f6c0e2a6eb4b11c91dee4d0e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20382,8 +20383,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259172", "259172"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259172")), _ = 0), _
+        let _ = parseInt((e = "259186", "259186"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259186")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35662,4 +35663,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.e7ce6a782de0f17b0c84.js.map
+//# sourceMappingURL=6575.38e3c0ed6a787ae14da7.js.map
