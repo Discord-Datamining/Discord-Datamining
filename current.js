@@ -8446,16 +8446,23 @@
         MENTIONS_AND_QUICKSWITCHER: "Mentions and Quickswitcher",
         CATEGORIES: "Categories",
         GAME_INVITES: "Invites",
-        GAME_INVITES_RECENT_HEADER: "Recent Invites",
-        GAME_INVITES_EXPIRED_HEADER: "Expired Invites",
-        GAME_INVITES_DELETE_ALL: "Delete all Invites",
+        GAME_INVITES_RECENT_HEADER: "Recent invites",
+        GAME_INVITES_EXPIRED_HEADER: "Expired invites",
+        GAME_INVITES_DELETE_ALL: "Delete all invites",
         GAME_INVITES_SENT_YOU_AN_INVITE: "{username} Sent You a Game Invite",
         GAME_INVITES_INVITE_FROM: "Invite from {username}",
         GAME_INVITES_JOIN_GAME: "Join Game",
         GAME_INVITES_LAUNCH_GAME: "Launch Game",
         GAME_INVITES_INSTALL_GAME: "Install Game",
-        GAME_INVITES_LAUNCH_GAME_OUTSIDE_OF_DISCORD: "This game must be launched outside of Discord",
-        GAME_INVITE_ACTIONS_MENU_LABEL: "Game Invite Actions",
+        GAME_INVITES_LAUNCH_TO_JOIN: "Launch to Join",
+        GAME_INVITES_EMPTY_STATE_TITLE: "Game invites from your friends will show up here!",
+        GAME_INVITES_EMPTY_STATE_SUBTITLE: "You’ll be able to launch or install games you own\n directly your from invites.",
+        GAME_INVITE_ACTIONS_MENU_LABEL: "Game invite actions",
+        GAME_INVITES_DELETE_MODAL_TITLE: "Are you sure you want to delete all game invites?",
+        GAME_INVITES_DELETE_MODAL_SUBTITLE: "Your current game invites will be deleted permanently.",
+        GAME_INVITES_DELETE_INVITES: "Delete invites",
+        GAME_INVITES_NOT_DETECTED_TOOLTIP: "!!{gameTitle}!! is not detected",
+        GAME_INVITES_EXPIRED: "Expired",
         NUX_NAVIGATION_HELP_GUILD: "A server is a superpowered group chat where people come together to hang out",
         NUX_NAVIGATION_HELP_CHANNELS: "Servers are made up of channels; places where people talk about different topics",
         NUX_NAVIGATION_HELP_DMS: "Add friends and chat with them directly",
@@ -18120,7 +18127,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259461", ", Version Hash: ").concat("4d4337ca16d6f2dd9f402b343c40638c4453fbb8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259462", ", Version Hash: ").concat("458bf45f3ba7e7c95a755aac3f39c89b2b708bee")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20397,8 +20404,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259461", "259461"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259461")), _ = 0), _
+        let _ = parseInt((e = "259462", "259462"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259462")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35689,4 +35696,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.3da6bc59e7c70e1f2fe0.js.map
+//# sourceMappingURL=6575.723ee6fd4e143133b2de.js.map
