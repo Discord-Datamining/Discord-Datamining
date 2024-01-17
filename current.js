@@ -18117,7 +18117,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259438", ", Version Hash: ").concat("f3333fd8995de7e127c98c091f71ae587abbc827")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259447", ", Version Hash: ").concat("73562de57799e19a20792e036fc830c57802bff5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -18747,7 +18747,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return R
+          return L
         }
       }), E("222007");
       var t = E("862337"),
@@ -18760,9 +18760,11 @@
         s = E("101125"),
         T = E("280168"),
         S = E("316133"),
-        N = E("716241"),
-        O = E("49111");
-      class A extends o.default {
+        N = E("718517"),
+        O = E("716241"),
+        A = E("49111");
+      let R = 1 * N.default.Millis.MINUTE;
+      class l extends o.default {
         _initialize() {
           __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(T.default, () => this._handleSpeakingStoreChanged()).set(a.default, () => this._handleRTCConnectionStoreChanged()), this._reset())
         }
@@ -18775,7 +18777,7 @@
               _ = a.default.getGuildId(),
               E = r.default.getChannel(e),
               t = null == E ? void 0 : E.isBroadcastChannel();
-            (0, N.trackWithMetadata)(O.AnalyticEvents.START_SPEAKING, {
+            (0, O.trackWithMetadata)(A.AnalyticEvents.START_SPEAKING, {
               mode: i.default.getMode(),
               priority: T.default.isCurrentUserPrioritySpeaking(),
               channel: e,
@@ -18797,7 +18799,7 @@
             _ = a.default.getGuildId(),
             E = r.default.getChannel(e),
             t = null == E ? void 0 : E.isBroadcastChannel();
-          (0, N.trackWithMetadata)(O.AnalyticEvents.START_LISTENING, {
+          (0, O.trackWithMetadata)(A.AnalyticEvents.START_LISTENING, {
             mute: i.default.isMute(),
             anyone_priority: T.default.isAnyonePrioritySpeaking(),
             channel: e,
@@ -18815,7 +18817,7 @@
           this._reset(), T.default.removeChangeListener(this._handleSpeakingStoreChanged), a.default.removeChangeListener(this._handleRTCConnectionStoreChanged)
         }
         getGameMetadata() {
-          let e = s.default.findActivity(e => e.type === O.ActivityTypes.PLAYING),
+          let e = s.default.findActivity(e => e.type === A.ActivityTypes.PLAYING),
             _ = I.default.getCurrentGameForAnalytics();
           return {
             game_platform: (0, n.default)(e),
@@ -18832,7 +18834,7 @@
                 this._reset();
                 return
               }
-              null == this._reportInterval && (this._reportInterval = new t.Interval, this._reportInterval.start(6e4, () => {
+              null == this._reportInterval && (this._reportInterval = new t.Interval, this._reportInterval.start(R, () => {
                 this._trackStartSpeaking(), this._trackStartListening()
               }))
             }
@@ -18844,7 +18846,7 @@
           }
         }
       }
-      var R = new A
+      var L = new l
     },
     73749: function(e, _, E) {
       "use strict";
@@ -19927,22 +19929,24 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return a
+          return s
         }
       });
       var t = E("102053"),
         o = E("689988"),
-        n = E("303217"),
-        r = E("352266");
-      class i extends o.default {
+        n = E("718517"),
+        r = E("303217"),
+        i = E("352266");
+      let a = 4 * n.default.Millis.HOUR;
+      class I extends o.default {
         _initialize() {
-          setTimeout(() => t.default.timeAsync("\uD83D\uDCBE", "getBlockedDomainList", () => r.default.getBlockedDomainList()), 1e3), setTimeout(() => (0, n.fetchBlockedDomainList)(), 1e4), this.intervalID = setInterval(n.fetchBlockedDomainList, 144e5)
+          setTimeout(() => t.default.timeAsync("\uD83D\uDCBE", "getBlockedDomainList", () => i.default.getBlockedDomainList()), 1e3), setTimeout(() => (0, r.fetchBlockedDomainList)(), 10 * n.default.Millis.SECOND), this.intervalID = setInterval(r.fetchBlockedDomainList, a)
         }
         _terminate() {
           clearInterval(this.intervalID)
         }
       }
-      var a = new i
+      var s = new I
     },
     612541: function(e, _, E) {
       "use strict";
@@ -20390,8 +20394,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259438", "259438"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259438")), _ = 0), _
+        let _ = parseInt((e = "259447", "259447"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259447")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -23410,7 +23414,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return u
+          return c
         }
       }), E("222007");
       var t = E("862337"),
@@ -23422,13 +23426,16 @@
         I = E("590401"),
         s = E("18494"),
         T = E("205817"),
-        S = E("374014"),
-        N = E("49111");
-      let O = new t.Timeout,
-        A = new t.Timeout,
-        R = null;
+        S = E("718517"),
+        N = E("374014"),
+        O = E("49111");
+      let A = new t.Timeout,
+        R = new t.Timeout,
+        l = 5 * S.default.Millis.SECOND,
+        L = 12 * S.default.Millis.SECOND,
+        u = null;
 
-      function l(e, _) {
+      function C(e, _) {
         if (s.default.getVoiceChannelId() !== e) return !1;
         let E = a.default.getChannel(e);
         if (null == E || !E.isDM() && !E.isGuildStageVoice()) return !1;
@@ -23436,20 +23443,20 @@
         if (null != t) return !1;
         let o = r.default.getStreamForUser(_, E.getGuildId());
         if (null == o) return !1;
-        let i = (0, S.encodeStreamKey)(o);
-        return i !== R && (R = i, (0, n.watchStream)(o, {
+        let i = (0, N.encodeStreamKey)(o);
+        return i !== u && (u = i, (0, n.watchStream)(o, {
           noFocus: !0
         }), !0)
       }
 
-      function L(e, _) {
+      function D(e, _) {
         let E = null != _ ? _ : I.default.getPreferredRegion();
         null != E && E !== I.default.getRegion(T.default.getHostname(T.default.getActiveStreamKey())) && (0, n.changeStreamRegion)(e, E)
       }
-      var u = {
+      var c = {
         init() {
           let e = (e, _) => {
-            !T.default.getAllActiveStreamKeys().includes(e) && A.start(_ ? 12e3 : 5e3, () => {
+            !T.default.getAllActiveStreamKeys().includes(e) && R.start(_ ? L : l, () => {
               o.default.dispatch({
                 type: "STREAM_TIMED_OUT",
                 streamKey: e
@@ -23461,7 +23468,7 @@
               streamKey: E
             } = _, {
               channelId: t
-            } = (0, S.decodeStreamKey)(E), o = a.default.getChannel(t);
+            } = (0, N.decodeStreamKey)(E), o = a.default.getChannel(t);
             e(E, null == o ? void 0 : o.isGuildStageVoice())
           }), o.default.subscribe("STREAM_START", _ => {
             let {
@@ -23469,33 +23476,33 @@
               guildId: t,
               channelId: o
             } = _, n = a.default.getChannel(o);
-            e((0, S.encodeStreamKey)({
+            e((0, N.encodeStreamKey)({
               streamType: E,
               guildId: t,
               channelId: o,
               ownerId: i.default.getId()
             }), null == n ? void 0 : n.isGuildStageVoice())
           }), o.default.subscribe("STREAM_CREATE", () => {
-            A.stop()
+            R.stop()
           }), o.default.subscribe("STREAM_UPDATE", () => {
-            A.stop()
+            R.stop()
           }), o.default.subscribe("STREAM_DELETE", () => {
-            A.stop()
+            R.stop()
           }), o.default.subscribe("STREAM_CLOSE", () => {
-            O.stop(), A.stop()
+            A.stop(), R.stop()
           }), o.default.subscribe("VOICE_CHANNEL_SELECT", e => {
             let {
               channelId: _
             } = e;
             if (null == _) return;
-            R = null;
+            u = null;
             let E = r.default.getAllApplicationStreamsForChannel(_).filter(e => {
               let {
                 ownerId: _
               } = e;
               return _ !== i.default.getId()
             })[0];
-            null != E && l(_, E.ownerId)
+            null != E && C(_, E.ownerId)
           }), o.default.subscribe("VOICE_STATE_UPDATES", e => {
             let {
               voiceStates: _
@@ -23508,10 +23515,10 @@
                 selfStream: o
               } = e;
               if (_ !== i.default.getId() && null != E) {
-                if (o && l(E, _)) return;
+                if (o && C(E, _)) return;
                 let e = r.default.getActiveStreamForUser(_, t);
-                if (null != e && e.channelId === E && (!o && e.state !== N.ApplicationStreamStates.ENDED && O.start(18e4, () => (0, n.closeStream)((0, S.encodeStreamKey)(e), !1)), o && e.state === N.ApplicationStreamStates.ENDED)) {
-                  O.stop();
+                if (null != e && e.channelId === E && (!o && e.state !== O.ApplicationStreamStates.ENDED && A.start(18e4, () => (0, n.closeStream)((0, N.encodeStreamKey)(e), !1)), o && e.state === O.ApplicationStreamStates.ENDED)) {
+                  A.stop();
                   let e = r.default.getStreamForUser(_, t);
                   if (null == e) return;
                   (0, n.watchStream)(e)
@@ -23523,13 +23530,13 @@
               channelId: _,
               region: E
             } = e, t = r.default.getCurrentUserActiveStream();
-            (null == t ? void 0 : t.channelId) === _ && L((0, S.encodeStreamKey)(t), E)
+            (null == t ? void 0 : t.channelId) === _ && D((0, N.encodeStreamKey)(t), E)
           }), o.default.subscribe("CHANNEL_UPDATES", e => {
             let {
               channels: _
             } = e, E = r.default.getCurrentUserActiveStream();
             if (null != E)
-              for (let e of _) E.channelId === e.id && L((0, S.encodeStreamKey)(E), e.rtcRegion)
+              for (let e of _) E.channelId === e.id && D((0, N.encodeStreamKey)(E), e.rtcRegion)
           })
         }
       }
@@ -25850,7 +25857,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return N
+          return l
         }
       }), E("222007");
       var t = E("689988"),
@@ -25858,17 +25865,21 @@
         n = E("373469"),
         r = E("271938"),
         i = E("568307"),
-        a = E("448881"),
-        I = E("374023"),
-        s = E("2973"),
-        T = E("227231");
-      class S extends t.default {
+        a = E("718517"),
+        I = E("448881"),
+        s = E("374023"),
+        T = E("2973"),
+        S = E("227231");
+      let N = 5 * a.default.Millis.SECOND,
+        O = 12 * a.default.Millis.HOUR,
+        A = 1 * a.default.Millis.MINUTE;
+      class R extends t.default {
         maybeFetchCurrentQuests() {
-          I.default.getCurrentConfig({
+          s.default.getCurrentConfig({
             location: "maybeFetchCurrentQuests"
           }, {
             autoTrackExposure: !1
-          }).enabled && !s.default.isFetchingCurrentQuests && (0, a.fetchCurrentQuests)()
+          }).enabled && !T.default.isFetchingCurrentQuests && (0, I.fetchCurrentQuests)()
         }
         constructor(...e) {
           super(...e), this.instantiatedAt = Date.now(), this.sendHeartbeatIntervalIds = new Map, this.initiateHeartbeat = e => {
@@ -25879,13 +25890,13 @@
             } = e;
 
             function o() {
-              null != n.default.getRTCStream(E) && 0 !== n.default.getViewerIds(E).length && (0, a.sendHeartbeat)({
+              null != n.default.getRTCStream(E) && 0 !== n.default.getViewerIds(E).length && (0, I.sendHeartbeat)({
                 questId: _,
                 streamKey: E,
                 applicationId: t
               })
             }
-            window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, 6e4))
+            window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, A))
           }, this.terminateHeartbeat = e => {
             window.clearInterval(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
           }, this.handleEnrollmentSuccess = e => {
@@ -25897,7 +25908,7 @@
             if (null == E || null == E.pid) return;
             let t = i.default.getGameForPID(E.pid);
             if (null == t || null == t.id) return;
-            let r = (0, T.getQuestByApplicationId)(t.id);
+            let r = (0, S.getQuestByApplicationId)(t.id);
             if (null == r || r.id !== _) return;
             let a = n.default.getCurrentUserActiveStream();
             null != a && this.initiateHeartbeat({
@@ -25906,7 +25917,7 @@
               questId: r.id
             })
           }, this.handlePostConnectionOpen = () => {
-            window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(5e3 * Math.random()))
+            window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * N))
           }, this.handleSendHeartbeatSuccess = e => {
             let {
               streamKey: _,
@@ -25914,7 +25925,7 @@
             } = e;
             null != E.completedAt && this.terminateHeartbeat(_)
           }, this.handleRunningGamesChange = () => {
-            !(this.instantiatedAt + 432e5 > Date.now() || s.default.lastFetchedCurrentQuests + 432e5 > Date.now()) && this.maybeFetchCurrentQuests()
+            !(this.instantiatedAt + O > Date.now() || T.default.lastFetchedCurrentQuests + O > Date.now()) && this.maybeFetchCurrentQuests()
           }, this.handleStreamStart = e => {
             var _, E;
             let {
@@ -25924,16 +25935,16 @@
               pid: I
             } = e, s = null != I ? i.default.getGameForPID(I) : null;
             if (null == s) return;
-            let S = null != s.id ? (0, T.getQuestByApplicationId)(s.id) : null;
-            if ((null == S ? void 0 : null === (_ = S.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) != null && (null == S ? void 0 : null === (E = S.userStatus) || void 0 === E ? void 0 : E.completedAt) == null) !(0, T.isQuestExpired)(S) && this.initiateHeartbeat({
+            let T = null != s.id ? (0, S.getQuestByApplicationId)(s.id) : null;
+            if ((null == T ? void 0 : null === (_ = T.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) != null && (null == T ? void 0 : null === (E = T.userStatus) || void 0 === E ? void 0 : E.completedAt) == null) !(0, S.isQuestExpired)(T) && this.initiateHeartbeat({
               streamKey: (0, o.encodeStreamKey)({
                 streamType: t,
                 guildId: n,
                 channelId: a,
                 ownerId: r.default.getId()
               }),
-              applicationId: S.config.applicationId,
-              questId: S.id
+              applicationId: T.config.applicationId,
+              questId: T.id
             })
           }, this.handleStreamClose = e => {
             let {
@@ -25950,7 +25961,7 @@
           }
         }
       }
-      var N = new S
+      var l = new R
     },
     50733: function(e, _, E) {
       "use strict";
@@ -26007,7 +26018,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return T
+          return O
         }
       }), E("222007");
       var t = E("920842"),
@@ -26015,9 +26026,12 @@
         n = E("605250"),
         r = E("42887"),
         i = E("590401"),
-        a = E("773336");
-      let I = new n.default("RTCLatencyTestManager");
-      class s extends o.default {
+        a = E("718517"),
+        I = E("773336");
+      let s = 1 * a.default.Millis.SECOND,
+        T = 30 * a.default.Millis.SECOND,
+        S = new n.default("RTCLatencyTestManager");
+      class N extends o.default {
         _terminate() {
           null != this.refetchTimeout && clearTimeout(this.refetchTimeout)
         }
@@ -26029,17 +26043,17 @@
             if (i.default.shouldPerformLatencyTest(_)) {
               let E = r.default.getMediaEngine();
               E.rankRtcRegions(e).then(e => {
-                I.verbose("RTC region latency test completed: ", e), (0, t.completeRTCLatencyTest)(e, _)
-              }).catch(e => I.warn(e))
-            } else I.verbose("RTC cached preferred region is ".concat(i.default.getPreferredRegion()))
+                S.verbose("RTC region latency test completed: ", e), (0, t.completeRTCLatencyTest)(e, _)
+              }).catch(e => S.warn(e))
+            } else S.verbose("RTC cached preferred region is ".concat(i.default.getPreferredRegion()))
           }, this._fetchAndScheduleRefetch = () => {
-            (0, t.fetchRTCLatencyTestRegions)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => I.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, 216e5)
+            (0, t.fetchRTCLatencyTestRegions)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => S.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, 360 * a.default.Millis.MINUTE)
           }, this._handleConnectionOpen = () => {
-            a.isPlatformEmbedded && !__OVERLAY__ && (null != this.refetchTimeout && clearTimeout(this.refetchTimeout), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, Math.floor(1e3 + 3e4 * Math.random())))
+            I.isPlatformEmbedded && !__OVERLAY__ && (null != this.refetchTimeout && clearTimeout(this.refetchTimeout), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, Math.floor(s + Math.random() * T)))
           }
         }
       }
-      var T = new s
+      var O = new N
     },
     739362: function(e, _, E) {
       "use strict";
@@ -26579,7 +26593,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return m
+          return G
         }
       }), E("424973"), E("222007");
       var t = E("917351"),
@@ -26593,83 +26607,84 @@
         T = E("469607"),
         S = E("865372"),
         N = E("319781"),
-        O = E("872173"),
-        A = E("374363"),
-        R = E("116949"),
-        l = E("397336");
-      let L = "lastFrecencySavedTime",
-        u = 3e5 * Math.random(),
-        C = 864e5 + Math.floor(36e5 * Math.random()),
-        D = null,
-        c = Date.now();
-      class d extends i.default {
+        O = E("718517"),
+        A = E("872173"),
+        R = E("374363"),
+        l = E("116949"),
+        L = E("397336");
+      let u = "lastFrecencySavedTime",
+        C = Math.random() * (5 * O.default.Millis.MINUTE),
+        D = 1 * O.default.Millis.DAY + Math.floor(Math.random() * (1 * O.default.Millis.HOUR)),
+        c = null,
+        d = Date.now();
+      class U extends i.default {
         _initialize() {
-          O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+          A.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
             hasChanges: () => !1,
             processProto: () => {
-              P(!0)
+              m(!0)
             }
-          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => S.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), A.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => S.default.hasPendingUsage() && R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!S.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.stickerFrecency = n.StickerFrecency.create(), e.stickerFrecency.stickers = (0, R.serializeUsageHistory)(S.default.stickerFrecencyWithoutFetchingLatest.usageHistory, 100))
+              if (!!S.default.hasPendingUsage()) R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.stickerFrecency = n.StickerFrecency.create(), e.stickerFrecency.stickers = (0, l.serializeUsageHistory)(S.default.stickerFrecencyWithoutFetchingLatest.usageHistory, 100))
             }
-          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => s.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), A.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => s.default.hasPendingUsage() && R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!s.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.emojiFrecency = n.EmojiFrecency.create(), e.emojiFrecency.emojis = (0, R.serializeUsageHistory)(s.default.emojiFrecencyWithoutFetchingLatest.usageHistory, 100))
+              if (!!s.default.hasPendingUsage()) R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.emojiFrecency = n.EmojiFrecency.create(), e.emojiFrecency.emojis = (0, l.serializeUsageHistory)(s.default.emojiFrecencyWithoutFetchingLatest.usageHistory, 100))
             }
-          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => T.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), A.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => T.default.hasPendingUsage() && R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!T.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && !o.isEmpty(T.default.playedSoundHistory) && (e.playedSoundFrecency = n.PlayedSoundFrecency.create(), e.playedSoundFrecency.playedSounds = (0, R.serializeUsageHistory)(T.default.playedSoundHistory, 100))
+              if (!!T.default.hasPendingUsage()) R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && !o.isEmpty(T.default.playedSoundHistory) && (e.playedSoundFrecency = n.PlayedSoundFrecency.create(), e.playedSoundFrecency.playedSounds = (0, l.serializeUsageHistory)(T.default.playedSoundHistory, 100))
             }
-          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => a.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), A.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => a.default.hasPendingUsage() && R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!a.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = n.ApplicationCommandFrecency.create(), e.applicationCommandFrecency.applicationCommands = (0, R.serializeUsageHistory)(a.default.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
+              if (!!a.default.hasPendingUsage()) R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = n.ApplicationCommandFrecency.create(), e.applicationCommandFrecency.applicationCommands = (0, l.serializeUsageHistory)(a.default.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
             }
-          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => I.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), A.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => I.default.hasPendingUsage() && R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!I.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = n.ApplicationFrecency.create(), e.applicationFrecency.applications = (0, R.serializeUsageHistory)(I.default.getApplicationFrecencyWithoutLoadingLatest().usageHistory, I.FREQUENCY_ITEM_LIMIT))
+              if (!!I.default.hasPendingUsage()) R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationFrecency = n.ApplicationFrecency.create(), e.applicationFrecency.applications = (0, l.serializeUsageHistory)(I.default.getApplicationFrecencyWithoutLoadingLatest().usageHistory, I.FREQUENCY_ITEM_LIMIT))
             }
-          }), O.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
-            hasChanges: () => N.default.hasPendingUsage() && A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
+          }), A.FrecencyUserSettingsActionCreators.beforeSendCallbacks.push({
+            hasChanges: () => N.default.hasPendingUsage() && R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-              if (!!N.default.hasPendingUsage()) A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.guildAndChannelFrecency = n.GuildAndChannelFrecency.create(), e.guildAndChannelFrecency.guildAndChannels = (0, R.serializeUsageHistory)(N.default.frecencyWithoutFetchingLatest.usageHistory, N.MAX_NUM_SELECTED_ITEMS))
+              if (!!N.default.hasPendingUsage()) R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (e.guildAndChannelFrecency = n.GuildAndChannelFrecency.create(), e.guildAndChannelFrecency.guildAndChannels = (0, l.serializeUsageHistory)(N.default.frecencyWithoutFetchingLatest.usageHistory, N.MAX_NUM_SELECTED_ITEMS))
             }
           })
         }
         constructor(...e) {
           super(...e), this.actions = {
-            POST_CONNECTION_OPEN: U,
-            CONNECTION_RESUMED: U,
-            CONNECTION_CLOSED: M
+            POST_CONNECTION_OPEN: M,
+            CONNECTION_RESUMED: M,
+            CONNECTION_CLOSED: h
           }
         }
       }
 
-      function U() {
+      function M() {
         var e;
-        c = null !== (e = r.default.get(L)) && void 0 !== e ? e : Date.now(), P(!1)
+        d = null !== (e = r.default.get(u)) && void 0 !== e ? e : Date.now(), m(!1)
       }
 
-      function M() {
-        clearTimeout(D), D = null
+      function h() {
+        clearTimeout(c), c = null
       }
-      async function h() {
-        c = Date.now(), P(!0), !A.default.hasLoaded(l.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (S.default.hasPendingUsage() || s.default.hasPendingUsage() || a.default.hasPendingUsage() || I.default.hasPendingUsage() || N.default.hasPendingUsage()) && await O.FrecencyUserSettingsActionCreators.loadIfNecessary(), o.forEach(O.UserSettingsActionCreatorsByType, e => {
+      async function P() {
+        d = Date.now(), m(!0), !R.default.hasLoaded(L.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) && (S.default.hasPendingUsage() || s.default.hasPendingUsage() || a.default.hasPendingUsage() || I.default.hasPendingUsage() || N.default.hasPendingUsage()) && await A.FrecencyUserSettingsActionCreators.loadIfNecessary(), o.forEach(A.UserSettingsActionCreatorsByType, e => {
           e.markDirtyIfHasPendingChange()
         })
       }
 
-      function P(e) {
-        e && (c = Date.now(), r.default.set(L, c)), null != D && clearTimeout(D);
-        let _ = Date.now() - c;
-        D = setTimeout(h, Math.max(u, C - _))
+      function m(e) {
+        e && (d = Date.now(), r.default.set(u, d)), null != c && clearTimeout(c);
+        let _ = Date.now() - d;
+        c = setTimeout(P, Math.max(C, D - _))
       }
-      var m = new d
+      var G = new U
     },
     275877: function(e, _, E) {
       "use strict";
@@ -35671,4 +35686,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.98eeb5d3a28db51959b2.js.map
+//# sourceMappingURL=6575.23a5916c31c9ec589aeb.js.map
