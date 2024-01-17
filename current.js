@@ -13233,6 +13233,8 @@
         GUILD_AUTOMOD_NOTIFICATION_RAID_FALSE_ALARM: "Report False Alarm",
         GUILD_AUTOMOD_NOTIFICATION_RAID_DMS: "~{dmsSent, number} DMs Detected",
         GUILD_AUTOMOD_NOTIFICATION_MARK_AS_RESOLVED: "Mark as resolved",
+        GUILD_AUTOMOD_NOTIFICATION_MENTION_RAID_TITLE: "Unusual Mention Activity Detected",
+        GUILD_AUTOMOD_NOTIFICATION_MENTION_RAID_DESCRIPTION: "We're restricting some messages due to a potential mention raid.",
         MEMBER_SAFETY_CHANNEL_TITLE: "Members",
         MEMBER_SAFETY_TABLE_TITLE: "Recent Members",
         MEMBER_SAFETY_TABLE_TITLE_SEARCH: "Search Results",
@@ -17752,68 +17754,6 @@
         }
       }
     },
-    568131: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        fetchLibrary: function() {
-          return a
-        },
-        createTestModeLibraryApplications: function() {
-          return I
-        },
-        setActiveLaunchOptionId: function() {
-          return s
-        }
-      });
-      var t = E("872717"),
-        o = E("913144"),
-        n = E("370999"),
-        r = E("271560"),
-        i = E("49111");
-      async function a() {
-        try {
-          let e = await (0, r.httpGetWithCountryCodeQuery)({
-            url: i.Endpoints.LIBRARY,
-            oldFormErrors: !0
-          }, !1);
-          o.default.dispatch({
-            type: "LIBRARY_FETCH_SUCCESS",
-            libraryApplications: e.body
-          })
-        } catch (e) {
-          o.default.dispatch({
-            type: "LIBRARY_FETCH_FAIL",
-            error: e
-          })
-        }
-      }
-      async function I(e) {
-        let _ = e.primarySkuId;
-        if (null == _) return;
-        let E = await t.default.get({
-            url: i.Endpoints.APPLICATION_BRANCH_LIST(e.id),
-            oldFormErrors: !0
-          }).then(e => e.body),
-          r = E.map(E => n.default.createForTestMode({
-            id: e.id,
-            skuId: _,
-            branch: E
-          }));
-        o.default.dispatch({
-          type: "LIBRARY_APPLICATIONS_TEST_MODE_ENABLED",
-          libraryApplications: r
-        })
-      }
-
-      function s(e, _, E) {
-        o.default.dispatch({
-          type: "LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE",
-          applicationId: e,
-          branchId: _,
-          launchOptionId: E
-        })
-      }
-    },
     920842: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -18129,7 +18069,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259501", ", Version Hash: ").concat("4c841731306295603660fe7315e25632f9ed8762")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259512", ", Version Hash: ").concat("b533e51189c9c4a7ec7e39036ddf54aa595f2952")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20406,8 +20346,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259501", "259501"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259501")), _ = 0), _
+        let _ = parseInt((e = "259512", "259512"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259512")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25558,43 +25498,6 @@
         }) : null
       }
     },
-    935583: function(e, _, E) {
-      "use strict";
-      var t, o, n, r;
-      E.r(_), E.d(_, {
-        dirtyChars: function() {
-          return i
-        },
-        coalescePeriods: function() {
-          return a
-        },
-        EditState: function() {
-          return t
-        },
-        PomeloEntrypoints: function() {
-          return o
-        },
-        MAX_DISPLAY_NAME_LENGTH: function() {
-          return I
-        },
-        POMELO_KEYWORD: function() {
-          return s
-        },
-        CONTROL_CHARACTERS_CODE: function() {
-          return T
-        },
-        TIMEOUT_TIME: function() {
-          return S
-        }
-      });
-      let i = /([^A-Za-z0-9_.]+)/g,
-        a = /\.+/g;
-      (n = t || (t = {})).NONE = "none", n.EDIT_DISPLAY_NAME = "display-name", n.EDIT_USERNAME = "username", n.PREVIEW = "preview", n.SUGGESTION = "suggestion", (r = o || (o = {})).APP_START = "app start", r.NOTICE = "notice", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_EDIT = "user settings edit", r.YOU_TAB = "you tab";
-      let I = 32,
-        s = "pomelo",
-        T = [1564, 917505, 12644, 65279, 173, 6068, 10240, 4447, 847, 4448, 65440],
-        S = 2e3
-    },
     485627: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -25676,30 +25579,6 @@
           }
         }]
       })
-    },
-    363861: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return n
-        }
-      });
-      var t = E("37983");
-      E("884691");
-      var o = E("77078");
-      async function n(e) {
-        let _ = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        await (0, o.openModalLazy)(async () => {
-          let {
-            default: o
-          } = await E.el("892845").then(E.bind(E, "892845"));
-          return E => (0, t.jsx)(o, {
-            source: e,
-            oneClickFlow: _,
-            ...E
-          })
-        })
-      }
     },
     53808: function(e, _, E) {
       "use strict";
@@ -35698,4 +35577,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.977eb2dd44e30566fbc2.js.map
+//# sourceMappingURL=6575.d793ce62ce3477b59b6d.js.map
