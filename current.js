@@ -13312,6 +13312,35 @@
         MEMBER_SAFETY_JOIN_TYPE_HUB: "Student Hub",
         MEMBER_SAFETY_INVITER_TOOLTIP: "Invited by",
         MEMBER_SAFETY_INVITER_BOT_TOOLTIP: "Added by Bot",
+        MEMBER_SAFETY_JOIN_TYPE_FILTER_NAME: "Other Join Methods",
+        MEMBER_SAFETY_JOIN_TYPE_HUB_LABEL_NAME: "Hub",
+        MEMBER_SAFETY_JOIN_TYPE_VANITY_URL_LABEL_NAME: "{vanityUrl} (Vanity)",
+        MEMBER_SAFETY_JOIN_TYPE_VANITY_URL: "Vanity URL",
+        MEMBER_SAFETY_JOIN_TYPE_BOT_LABEL_NAME: "Bot (OAuth2)",
+        MEMBER_SAFETY_JOIN_TYPE_LABEL_NAME: "Member Joined Via",
+        MEMBER_SAFETY_INVITE_CODE_: "Member Joined Via",
+        MEMBER_SAFETY_INVITE_CODE_SEARCH_PLACEHOLDER: "Enter invite code...",
+        MEMBER_SAFETY_JOIN_TYPE_INVITE: "Server Invite",
+        MEMBER_SAFETY_JOIN_TYPE_VANITY: "Vanity URL",
+        MEMBER_SAFETY_INTEGRATION_TYPE_DISCORD: "Discord",
+        MEMBER_SAFETY_INTEGRATION_TYPE_TWITCH: "Twitch",
+        MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE: "YouTube",
+        MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
+        MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
+        MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "User can't talk in server until they change their member name",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_ALL: "All",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_1_HOUR: "Past 1 hr",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_24_HOURS: "Past 24 hrs",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_7_DAYS: "Past 7 days",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_2_WEEKS: "Past 2 weeks",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_4_WEEKS: "Past 4 weeks",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_3_MONTHS: "Past 3 months",
+        MEMBER_SAFETY_DATE_OPTION_LABEL_CUSTOM: "Custom Range",
+        MEMBER_SAFETY_DATE_OPTION_AFTER: "After Date",
+        MEMBER_SAFETY_DATE_OPTION_BEFORE: "Before Date",
+        MEMBER_SAFETY_JOINED_DATE_LABEL: "Member Since Date Options",
+        MEMBER_SAFETY_ACCOUNT_AGE_LABEL: "Discord Join Date Options",
+        MEMBER_SAFETY_JOIN_METHOD_LABEL: "Server Join Method Options",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
         GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
@@ -16667,26 +16696,6 @@
         VOICE_CHANNEL_TYPE: "Voice",
         FORUM_CHANNEL_TYPE: "Forum",
         TEXT_CHANNEL_TYPE: "Text",
-        MEMBER_SAFETY_JOIN_TYPE_INVITE: "Server Invite",
-        MEMBER_SAFETY_JOIN_TYPE_VANITY: "Vanity URL",
-        MEMBER_SAFETY_INTEGRATION_TYPE_DISCORD: "Discord",
-        MEMBER_SAFETY_INTEGRATION_TYPE_TWITCH: "Twitch",
-        MEMBER_SAFETY_INTEGRATION_TYPE_YOUTUBE: "YouTube",
-        MEMBER_SAFETY_INTEGRATION_TYPE_GUILD_SUBSCRIPTION: "Server Subscription",
-        MEMBER_SAFETY_UNUSUAL_ACCOUNT_ACTIVITY_TOOLTIP: "Engaged in suspected spam activity",
-        MEMBER_SAFETY_QUARANTINED_USER_TOOLTIP: "User can't talk in server until they change their member name",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_ALL: "All",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_1_HOUR: "Past 1 hr",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_24_HOURS: "Past 24 hrs",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_7_DAYS: "Past 7 days",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_2_WEEKS: "Past 2 weeks",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_4_WEEKS: "Past 4 weeks",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_3_MONTHS: "Past 3 months",
-        MEMBER_SAFETY_DATE_OPTION_LABEL_CUSTOM: "Custom Range",
-        MEMBER_SAFETY_DATE_OPTION_AFTER: "After Date",
-        MEMBER_SAFETY_DATE_OPTION_BEFORE: "Before Date",
-        MEMBER_SAFETY_JOINED_DATE_LABEL: "Member Since Date Options",
-        MEMBER_SAFETY_ACCOUNT_AGE_LABEL: "Discord Join Date Options",
         BAN_MULTIPLE_CONFIRM_TITLE: "Would you like to ban {count, plural, one {1 member} other {{count} members}}?",
         BAN_MULTIPLE_SUCCESS_TOAST: "Mass ban succesful",
         BAN_MULTIPLE_FAILED_TOAST: "Mass ban failed",
@@ -18069,7 +18078,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259784", ", Version Hash: ").concat("c59068e88ce36cecbf6d7b28d34300acf1fec12f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259785", ", Version Hash: ").concat("9b8f5f31824bc25b5bc8061a22490f0a6e141b5d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20346,8 +20355,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259784", "259784"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259784")), _ = 0), _
+        let _ = parseInt((e = "259785", "259785"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259785")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35601,4 +35610,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.0029dabe108a29c2f1b9.js.map
+//# sourceMappingURL=6575.6bf3d37ccf8703d737eb.js.map
