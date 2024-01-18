@@ -18078,7 +18078,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259785", ", Version Hash: ").concat("9b8f5f31824bc25b5bc8061a22490f0a6e141b5d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259791", ", Version Hash: ").concat("1ea0c54812371afa724799f6a00938af3135a7fd")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19607,7 +19607,7 @@
           inlineRequire: () => E("129040").default
         },
         ClipsManager: {
-          actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
+          actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_USER_CREATE", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "RUNNING_GAME_TOGGLE_DETECTION", "RUNNING_GAMES_CHANGE", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO", "MEDIA_ENGINE_SET_HARDWARE_H264"],
           inlineRequire: () => E("332491").default
         },
         BroadcastingManager: {
@@ -20355,8 +20355,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259785", "259785"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259785")), _ = 0), _
+        let _ = parseInt((e = "259791", "259791"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259791")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20917,7 +20917,8 @@
             CLIPS_INIT_FAILURE: e => this.handleClipsInitFailure(e),
             CLIPS_SETTINGS_UPDATE: e => this.applyNativeClipsSettings(e),
             STREAM_START: () => this.applyNativeClipsSettings(),
-            RUNNING_GAMES_CHANGE: e => this.fireClipsInitEventHelper(e),
+            RUNNING_GAME_TOGGLE_DETECTION: e => this.handleClipsInitOnToggleDetection(e),
+            RUNNING_GAMES_CHANGE: e => this.handleClipsInitOnGamesChange(e),
             CLIPS_RESTART: () => this.fireClipsInitEvent(),
             RTC_CONNECTION_VIDEO: e => this.handleRTCConnectionVideo(e),
             RTC_CONNECTION_STATE: e => this.handleRTCConnectionState(e),
@@ -20963,10 +20964,14 @@
             t = (E.clipsEnabled || E.decoupledClipsEnabled) && _;
           r.default.getMediaEngine().setClipBufferLength(t ? E.clipsLength / 1e3 : 0), ((null == e ? void 0 : e.settings.decoupledClipsEnabled) || (null == e ? void 0 : e.settings.clipsQuality) != null) && this.fireClipsInitEvent()
         }
-        fireClipsInitEventHelper(e) {
+        handleClipsInitOnToggleDetection(e) {
+          let _ = i.default.getVisibleGame();
+          null != _ && _.id === e.game.id && this.fireClipsInitEvent()
+        }
+        handleClipsInitOnGamesChange(e) {
           let _ = i.default.getVisibleGame();
           if (null == _) return;
-          let E = !!e.added.find(e => e.pid === (null == _ ? void 0 : _.pid));
+          let E = !!e.added.find(e => e.pid === _.pid);
           E ? setTimeout(() => this.fireClipsInitEvent(), N.CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY) : this.fireClipsInitEvent()
         }
         fireClipsInitEvent() {
@@ -35610,4 +35615,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.6bf3d37ccf8703d737eb.js.map
+//# sourceMappingURL=6575.a8efafd0b11277e4e516.js.map
