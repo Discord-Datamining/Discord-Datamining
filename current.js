@@ -3371,7 +3371,7 @@
         KEYBIND_DESCRIPTION_TOGGLE_VOICE_MODE: "Toggle to switch between Push To Talk and Voice Activity mode.",
         KEYBIND_DESCRIPTION_TOGGLE_OVERLAY_INPUT_LOCK: "Toggle overlay interactivity lock.",
         KEYBIND_DESCRIPTION_TOGGLE_STREAMER_MODE: "Toggle to enable/disable Streamer Mode.",
-        KEYBIND_DESCRIPTION_TOGGLE_GO_LIVE_STREAMING: "Toggle to start/stop streaming in your current voice channel. Streams can only be started with this keybind if Discord recognizes the game you are currently playing.",
+        KEYBIND_DESCRIPTION_TOGGLE_GO_LIVE_STREAMING: "Toggle to start/stop streaming the foreground game or window in your current voice channel.",
         KEYBIND_DESCRIPTION_NAVIGATE_BACK: "Navigate backward in page history",
         KEYBIND_DESCRIPTION_NAVIGATE_FORWARD: "Navigate forward in page history",
         KEYBIND_UNASSIGNED: "Unassigned",
@@ -9392,6 +9392,7 @@
         GO_LIVE_WATCHING_USER: "Watching {username}",
         GO_LIVE_MODAL_NOTIFY_FRIENDS_CHECKBOX_LABEL: "Notify my friends in this server that I'm streaming.",
         GO_LIVE_MODAL_ENABLE_SCREEN_SOUNDSHARE_LABEL: "Also share system audio.",
+        GO_LIVE_HOTKEY_HINT: "**Pro Tip**: Share the foreground window with $[!!{keybind}!!](keybindHook)",
         VOICE_CHANNEL_EFFECTS: "Voice Channel Effects",
         VOICE_CHANNEL_EFFECTS_COOLDOWN: "Reaction Cooldown {seconds}s",
         VOICE_CHANNEL_EFFECTS_MORE: "More Reactions",
@@ -18079,7 +18080,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259829", ", Version Hash: ").concat("da6ca563b7e96438453a1233ead6399a02e9c01a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259844", ", Version Hash: ").concat("1e03d2ff04df8118b430db3a5230de91a3b1c2d4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20356,8 +20357,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259829", "259829"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259829")), _ = 0), _
+        let _ = parseInt((e = "259844", "259844"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259844")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35616,4 +35617,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.4eb8eff407b189c2b8db.js.map
+//# sourceMappingURL=6575.43947b7360c9441b7f69.js.map
