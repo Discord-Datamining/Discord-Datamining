@@ -16518,7 +16518,12 @@
         QUESTS_ACCEPT_TOOLTIP: "Accept the quest and complete the task to unlock the reward",
         QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
         QUESTS_STREAM_TASK: "Stream for {minutes} minutes",
-        QUEST_REWARD: "Win {reward}"
+        QUEST_REWARD: "Win {reward}",
+        FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
+        PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
+        PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
+        DEADCHAT_ACTION_CAMERA: "My View",
+        DEADCHAT_ACTION_STICKER: "Surprise Me"
       })
     },
     444051: function(e, _, E) {
@@ -16817,10 +16822,6 @@
         CHANNEL_PROMPT_RANDOM_STICKER_CTA: "Random sticker",
         DEADCHAT_PROMPT_1: "It's quiet in here.",
         CHANNEL_PROMPT_GAMING_CTA: "Get my stats!",
-        FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
-        PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
-        DEADCHAT_ACTION_CAMERA: "My View",
-        DEADCHAT_ACTION_STICKER: "Surprise Me",
         USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_MINIMAL: "Minimal",
         SERVER_USAGE_SURVEY_BODY: "Help us make Discord better by answering a few questions about !!{guildName}!!",
         SERVER_USAGE_SURVEY_CTA: "Take Survey",
@@ -18080,7 +18081,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259873", ", Version Hash: ").concat("283e72f065bbd15c0f897e9d05be20746031c324")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("259874", ", Version Hash: ").concat("25e6048ac9aa3cda72a7a9467868a31d4ea0fe40")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20357,8 +20358,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "259873", "259873"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259873")), _ = 0), _
+        let _ = parseInt((e = "259874", "259874"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("259874")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35617,4 +35618,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.1b164ca0f016dbe60844.js.map
+//# sourceMappingURL=6575.3e36510dca85f45b3b8c.js.map
