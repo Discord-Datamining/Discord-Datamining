@@ -16202,6 +16202,8 @@
         CLIPS_SETTINGS_FRAMERATE_NOTE: "This is the maximum frame rate your clips will be recorded at.",
         CLIPS_CROP_START: "Crop Start",
         CLIPS_CROP_END: "Crop End",
+        CLIPS_ATTACHMENT_UTILITIES_SPOILER: "Spoiler Clip",
+        CLIPS_ATTACHMENT_UTILITIES_REMOVE: "Remove Clip",
         SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
         SOUND_INCOMING_RING_EOY_2023: "Seasonal Incoming Ring",
         CUSTOM_SOUNDS: "Custom Sounds",
@@ -18086,7 +18088,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260048", ", Version Hash: ").concat("d5c32d14bead6621fb8a94c9238c7e187b94ddfc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260050", ", Version Hash: ").concat("f6a6fc95efc41846f7b83b5a6276198cd55facd7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20363,8 +20365,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260048", "260048"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260048")), _ = 0), _
+        let _ = parseInt((e = "260050", "260050"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260050")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35623,4 +35625,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.5476b185e8f57442b22a.js.map
+//# sourceMappingURL=6575.3293ad701e04babe4576.js.map
