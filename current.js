@@ -16495,6 +16495,10 @@
         CREATE_POLL_ALT_TEXT_LABEL: "Image Description (Alt Text)",
         CREATE_POLL_ALT_TEXT_SCREEN_READER_HINT: "Alt text:",
         POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
+        EXPRESSION_PICKER_UPLOAD: "Upload",
+        EXPRESSION_PICKER_UPLOAD_IMAGE_TAG: "IMAGE",
+        EXPRESSION_PICKER_UPLOAD_DESCRIPTION: "Drag and drop or click to upload an image",
+        EXPRESSION_PICKER_UPLOAD_ARIA: "Upload an image",
         SUMMONED: "Summoned!",
         WAVED_AT_USER: "\uD83D\uDC4B You waved at !!{username}!!",
         WAVED_AT_YOU: "\uD83D\uDC4B !!{username}!! waved at you",
@@ -18082,7 +18086,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260020", ", Version Hash: ").concat("ec3a459fce92c344f4e44f9b3bd3aeb3fe648370")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260030", ", Version Hash: ").concat("757c0f56b395002eba242ad3076e4904b4448a45")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20359,8 +20363,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260020", "260020"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260020")), _ = 0), _
+        let _ = parseInt((e = "260030", "260030"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260030")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35619,4 +35623,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.82b59ec522f6ef36107b.js.map
+//# sourceMappingURL=6575.766a6093339c47045bd6.js.map
