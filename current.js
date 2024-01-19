@@ -18088,7 +18088,7 @@
         L = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260124", ", Version Hash: ").concat("8be7e58a10258e1935066fb4e7c700aa51f7503a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260135", ", Version Hash: ").concat("12ecf4d68bd99bfd2d481590a9475601c20e4c7f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20365,8 +20365,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260124", "260124"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260124")), _ = 0), _
+        let _ = parseInt((e = "260135", "260135"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260135")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25555,11 +25555,12 @@
                 return !(null != E && Date.now() - E < 6048e5) && !0
               }()) {
               let e = a.UUOneClickExperiment.getCurrentConfig({
-                location: "uu_one_click"
-              }, {
-                autoTrackExposure: !1
-              }).enabled;
-              (0, i.openPomeloModal)(I.PomeloEntrypoints.APP_START, e), t.default.set(s, Date.now())
+                  location: "uu_one_click"
+                }, {
+                  autoTrackExposure: !1
+                }).enabled,
+                _ = (0, i.openPomeloModal)(I.PomeloEntrypoints.APP_START, e, !1);
+              _ && t.default.set(s, Date.now())
             }
           }
         }
@@ -25570,14 +25571,16 @@
       "use strict";
       E.r(_), E.d(_, {
         openPomeloModal: function() {
-          return o
+          return n
         }
       });
-      var t = E("363861");
+      var t = E("77078"),
+        o = E("363861");
 
-      function o(e) {
-        let _ = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        (0, t.default)(e, _)
+      function n(e) {
+        let _ = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+          E = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+        return !(!E && (0, t.hasAnyModalOpen)()) && ((0, o.default)(e, _), !0)
       }
     },
     275803: function(e, _, E) {
@@ -35625,4 +35628,4 @@
     }
   }
 ]);
-//# sourceMappingURL=6575.2461d50753429e68ad60.js.map
+//# sourceMappingURL=6575.71fea9b9791b5c1d256c.js.map
