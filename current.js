@@ -3980,9 +3980,8 @@
         STATUS_TAB_A11Y_ACTION: "Set your status",
         PINNED_MESSAGES: "Pinned Messages",
         PINNED_MESSAGES_PRO_TIP: "PROTIP:",
-        PINNED_MESSAGES_PRO_TIP_BODY_CHANNEL: "Users with 'Manage Messages' can pin from the cog menu.",
-        PINNED_MESSAGES_PRO_TIP_BODY_DM: "You and !!{other}!! can pin a message from its cog menu.",
-        PINNED_MESSAGES_PRO_TIP_BODY_GROUP_DM: "Any group member can pin a message from its cog menu.",
+        PINNED_MESSAGES_PRO_TIP_BODY_CHANNEL: "Users with 'Manage Messages' permission can pin a message from its context menu.",
+        PINNED_MESSAGES_PRO_TIP_BODY_DMS: "You can pin a message from its context menu.",
         NO_PINS_IN_CHANNEL: "This channel doesn't have any\npinned messages... yet.",
         NO_PINS_IN_DM: "This direct message doesn't have\nany pinned messages... yet.",
         JUMP: "Jump",
@@ -18056,7 +18055,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260339", ", Version Hash: ").concat("6c4dc2e6c7e0b50bb7c78768e5268f33bdf50bc8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260354", ", Version Hash: ").concat("adfe0ececee24a8f9bafa01173db6117aad61643")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20289,8 +20288,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260339", "260339"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260339")), _ = 0), _
+        let _ = parseInt((e = "260354", "260354"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260354")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34914,4 +34913,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.0efdf937526a5115ac71.js.map
+//# sourceMappingURL=34546.747c4d0d224ac080d36a.js.map
