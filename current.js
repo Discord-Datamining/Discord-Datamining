@@ -16535,7 +16535,11 @@
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
         DEADCHAT_ACTION_CAMERA: "My View",
-        DEADCHAT_ACTION_STICKER: "Surprise Me"
+        DEADCHAT_ACTION_STICKER: "Surprise Me",
+        LIST_SUMMARY_A11Y_LABEL_ONE: "!!{first}!!",
+        LIST_SUMMARY_A11Y_LABEL_TWO: "!!{first}!! and !!{second}!!",
+        LIST_SUMMARY_A11Y_LABEL_THREE: "!!{first}!!, !!{second}!!, and !!{third}!!",
+        LIST_SUMMARY_A11Y_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}"
       })
     },
     444051: function(e, _, E) {
@@ -18058,7 +18062,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260414", ", Version Hash: ").concat("de97c1d794a1ee0b5c4192ef6bed011b6cac6ebc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260433", ", Version Hash: ").concat("5e6928e191a54d1993dfb3e9a6e7456b595ed840")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20291,8 +20295,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260414", "260414"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260414")), _ = 0), _
+        let _ = parseInt((e = "260433", "260433"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260433")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34916,4 +34920,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.62c5e36064b53a9c57d1.js.map
+//# sourceMappingURL=34546.d68e5364d5a8e64dd081.js.map
