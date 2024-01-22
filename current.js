@@ -16536,10 +16536,10 @@
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
         DEADCHAT_ACTION_CAMERA: "My View",
         DEADCHAT_ACTION_STICKER: "Surprise Me",
-        LIST_SUMMARY_A11Y_LABEL_ONE: "!!{first}!!",
-        LIST_SUMMARY_A11Y_LABEL_TWO: "!!{first}!! and !!{second}!!",
-        LIST_SUMMARY_A11Y_LABEL_THREE: "!!{first}!!, !!{second}!!, and !!{third}!!",
-        LIST_SUMMARY_A11Y_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}"
+        LIST_SUMMARY_LABEL_ONE: "!!{first}!!",
+        LIST_SUMMARY_LABEL_TWO: "!!{first}!! and !!{second}!!",
+        LIST_SUMMARY_LABEL_THREE: "!!{first}!!, !!{second}!!, and !!{third}!!",
+        LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}"
       })
     },
     444051: function(e, _, E) {
@@ -18062,7 +18062,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260453", ", Version Hash: ").concat("b3ab44b647872d1bb7c73399e5cb35a38f393c44")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260461", ", Version Hash: ").concat("c1774bab0e12baf72c594bb90ea41c5dc207e8cf")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20295,8 +20295,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260453", "260453"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260453")), _ = 0), _
+        let _ = parseInt((e = "260461", "260461"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260461")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34920,4 +34920,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.3e8a80ee179ca48dbcf7.js.map
+//# sourceMappingURL=34546.3652c4f61fa668baa18d.js.map
