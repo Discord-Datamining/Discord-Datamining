@@ -16841,7 +16841,8 @@
         FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
         KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
-        MANAGE_AUTHORIZED_APP: "Manage Authorized App"
+        MANAGE_AUTHORIZED_APP: "Manage Authorized App",
+        MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff."
       })
     },
     657743: function(e, _, E) {
@@ -18055,7 +18056,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260308", ", Version Hash: ").concat("6a4e55d5dabd0c590ad092a3f3c7c1f3a875d9dc")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260313", ", Version Hash: ").concat("cd7d8f762c6a59fbd5dbc85cfc70ac9b4bb69053")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20288,8 +20289,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260308", "260308"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260308")), _ = 0), _
+        let _ = parseInt((e = "260313", "260313"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260313")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34913,4 +34914,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.39c5fbfb636cb5e0676f.js.map
+//# sourceMappingURL=34546.282cc021848210a89019.js.map
