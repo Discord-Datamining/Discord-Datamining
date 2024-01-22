@@ -10289,7 +10289,10 @@
         USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_RESEND: "[Didn’t receive a code or it expired? Resend it.](onResend)",
         USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT: "Verification code sent.",
         USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_SEND_TITLE: "Verify email address",
-        USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_SEND_DESCRIPTION_NO_LINK: "We’ll need to verify your old email address, **!!{oldEmail}!!** in order to change it.\n\nLost access to your email? Please contact your email provider to regain access.",
+        USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_SEND_DESCRIPTION_NO_LINK: "We’ll need to verify your old email address, **!!{oldEmail}!!**, in order to change it.\n\nLost access to your email? Please contact your email provider to regain access.",
+        USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_COMPLETE_TITLE: "Confirm your new email",
+        USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_COMPLETE_DESCRIPTION: "To finish, we sent a verification email to: **!!{email}!!**",
+        USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CHECK_SPAM: "Didn't get the email? Make sure to check your spam folder.",
         USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_SEND_BUTTON: "Send Verification Code",
         USER_SETTINGS_ACCOUNT_EDIT_USERNAME_A11Y_LABEL: "Edit username",
         USER_SETTINGS_ACCOUNT_EDIT_DISPLAYNAME_A11Y_LABEL: "Edit display name",
@@ -18055,7 +18058,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260395", ", Version Hash: ").concat("1b930ad81c9a0f30f6041550bd422e31bc1c97bb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260396", ", Version Hash: ").concat("aea80ea77c2fa9db329918bd433c10d968d3f3e1")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20288,8 +20291,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260395", "260395"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260395")), _ = 0), _
+        let _ = parseInt((e = "260396", "260396"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260396")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34913,4 +34916,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.8c647a80abf524037215.js.map
+//# sourceMappingURL=34546.bb0a8e3d7cc09206ee57.js.map
