@@ -5111,8 +5111,6 @@
         INVITE_CONTACTS_TO_GUILD_CONTACTS_SECTION_TITLE: "Contacts",
         INVITE_CONTACTS_SEE_ALL: "See All",
         INVITE_CONTACTS_DM_SUBHEADER: "Invite Contacts to Message",
-        INVITE_CONTACTS_INCENTIVIZED_SUCCESS_MESSAGE: "Invitation sent! You will receive a free Boost when they accept.",
-        INVITE_CONTACTS_INCENTIVIZED_SUCCESS_MESSAGE_NEW_USER: "Invitation sent! You will receive a free month of Nitro when they accept.",
         USER_SUMMARY_WITH_OTHERS: "{name} and {count, plural, one {1 other} other {{count} others}}",
         USER_SUMMARY_ONE: "!!{first}!!",
         USER_SUMMARY_TWO: "!!{first}!!, !!{second}!!",
@@ -10973,15 +10971,6 @@
         FRIEND_FINDER_SUGGESTIONS: "Suggestions",
         FRIEND_FINDER_FRIENDS: "All Friends",
         FRIEND_FINDER_CONTACT_FRIEND_SUGGESTIONS_HEADER: "Contacts on Discord — {count}",
-        FRIEND_FINDER_INCENTIVIZED_INVITE_TITLE: "Invite friends, earn Boosts",
-        FRIEND_FINDER_INCENTIVIZED_INVITE_SUBTITLE: "Get free Boosts when your friends sign up for Discord.",
-        FRIEND_FINDER_INCENTIVIZED_BOOST_TITLE: "Free Boosts Earned",
-        FRIEND_FINDER_INCENTIVIZED_BOOST_PROGRESS: "{earned, plural, =1 {1 of {count}} =0 {{count} left} other {{earned} of {count}}}",
-        FRIEND_FINDER_PEOPLE_YOU_MAY_KNOW_HEADER: "People you may know — {count}",
-        FRIEND_FINDER_INCENTIVIZED_INVITE_TITLE_NEW_USER: "Invite friends, get Nitro",
-        FRIEND_FINDER_INCENTIVIZED_INVITE_SUBTITLE_NEW_USER: "Get a free month of Nitro when these friends sign up for Discord.",
-        FRIEND_FINDER_INCENTIVIZED_BOOST_TITLE_NEW_USER: "Free Nitro Earned",
-        FRIEND_FINDER_INCENTIVIZED_BOOST_PROGRESS_NEW_USER: "{earned, plural, =1 {1 month} =0 {0 months} other {{earned} months}}",
         FRIEND_FINDER_PEOPLE_YOU_MAY_KNOW_HEADER_NEW_USER: "People you may know — {count}",
         FRIEND_FINDER_SEARCH_ROW_NOT_FOUND: "No exact username matches found",
         FRIEND_FINDER_SHOW_ALL: "Show All ({count})",
@@ -18065,7 +18054,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260620", ", Version Hash: ").concat("8f31839eb081a5803ae426d15aa2a03ee866b85e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260624", ", Version Hash: ").concat("0b395060cc730ac324ee584096da6948e3f539c2")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20298,8 +20287,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260620", "260620"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260620")), _ = 0), _
+        let _ = parseInt((e = "260624", "260624"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260624")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34923,4 +34912,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.9551776cf966e38968c1.js.map
+//# sourceMappingURL=34546.f9d0850690af0861a6e7.js.map
