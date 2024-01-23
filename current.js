@@ -16529,7 +16529,7 @@
         QUESTS_COMPLETE_TOOLTIP: "Hit claim to get your reward code!",
         QUESTS_ACCEPT_TOOLTIP: "Accept the quest and complete the task to unlock the reward",
         QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
-        QUESTS_STREAM_TASK: "Stream for {minutes} minutes",
+        QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
         QUEST_REWARD: "Win {reward}",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
@@ -18062,7 +18062,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260516", ", Version Hash: ").concat("1b8549f325b3d6e9e59e806f93a7ba239f6be362")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260518", ", Version Hash: ").concat("fd0933c63fcfd921a0fbf2f04e6016fe518fc045")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20295,8 +20295,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260516", "260516"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260516")), _ = 0), _
+        let _ = parseInt((e = "260518", "260518"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260518")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34920,4 +34920,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.97ecda41de69500a2369.js.map
+//# sourceMappingURL=34546.4f176157f3ba0002635d.js.map
