@@ -10230,6 +10230,7 @@
         VIEW_AS_MEMBER_ROLES_WARNING: "Changing roles manually may not reflect the new member experience.",
         VIEW_AS_ROLES_NO_ACCESS: "You do not have permissions to use this feature",
         VIEWING_AS_ONBOARDING_MEMBER_BACK: "Back to Onboarding Settings",
+        SERVER_SHOP_PREVIEW_DISCLAIMER: "Currently viewing all server subscription tiers and products. There is a maximum of {maxTiers} tiers and {maxProducts} products that can be published at a time.",
         MESSAGE_ACTION_REPLY: "Reply",
         REPLYING_TO: "Replying to $[](userHook)",
         REPLYING_TO_A11Y_LABEL: "Replying to !!{username}!!",
@@ -18062,7 +18063,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260584", ", Version Hash: ").concat("5da830c87205a76127790a8a8b164d270d949fe6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260606", ", Version Hash: ").concat("3ec728b662805ae1568b9b09010421262e3c695b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20295,8 +20296,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260584", "260584"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260584")), _ = 0), _
+        let _ = parseInt((e = "260606", "260606"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260606")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34920,4 +34921,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.687fc587a9ad5dfbcd58.js.map
+//# sourceMappingURL=34546.fab4764db83ef3d54313.js.map
