@@ -16279,7 +16279,7 @@
         SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION: "You broke the rules against $[!!{description}!!](descriptionHook).",
         SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_GUILD: "Your server {guildName} broke the rules against $[!!{description}!!](descriptionHook).",
         SAFETY_HUB_VIOLATIONS_CONTAINER_NEW: "NEW",
-        SAFETY_HUB_STANDALONE_PAGE_NAGBAR: "Protecting our users is a top priority. When a user engages in repeated violations or particularly egregious harms, we take swift action",
+        SAFETY_HUB_STANDALONE_PAGE_NAGBAR: "You lost access to Discord. Review your violations to understand for how long and why.",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR_CTA: "Learn More",
         SAFETY_POLICY_NOTICE_BUTTON: "Learn more",
         SAFETY_POLICY_NOTICE_HEADER: "You broke Discord's community guidelines",
@@ -18063,7 +18063,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260606", ", Version Hash: ").concat("3ec728b662805ae1568b9b09010421262e3c695b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260617", ", Version Hash: ").concat("2265bee8a6aed37adf326fca0eb082a28acc7170")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20296,8 +20296,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260606", "260606"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260606")), _ = 0), _
+        let _ = parseInt((e = "260617", "260617"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260617")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34921,4 +34921,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.fab4764db83ef3d54313.js.map
+//# sourceMappingURL=34546.9b742f145db4bb1edb6c.js.map
