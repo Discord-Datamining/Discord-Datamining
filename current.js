@@ -11612,8 +11612,6 @@
         PROFILE_EFFECT_MODAL_APPLY: "Apply",
         PROFILE_EFFECT_ACQUIRABILITY_DISCLAIMER_MOBILE: "The ability to acquire new profile effects is not available on this platform.",
         PROFILE_EFFECT_NON_NITRO_DISCLAIMER_HEADER_MOBILE: "Looking for profile effects?",
-        PROFILE_EFFECTS_HERO_BANNER_TITLE: "New styles for your profile!",
-        PROFILE_EFFECTS_HERO_BANNER_SUBTITLE: "Make your profile feel alive with snazzy profile effects and avatar decorations. What’s not to love?",
         PROFILE_EFFECTS_SOCIAL_UPSELL: "Level up your look with animated profile effects! $[Check them out](openShop).",
         GUILD_IDENTITY_UPSELL_OVERLAY_TITLE: "Make unique profiles for each server",
         GUILD_IDENTITY_UPSELL_OVERLAY_DESCRIPTION_THEMES: "Customize your avatar, banner, theme, and bio for every server.",
@@ -18071,7 +18069,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260893", ", Version Hash: ").concat("319935cf2aca27c376fbc3acb9295324d5795d17")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260898", ", Version Hash: ").concat("88302733a431e6742c4a1068ea6bd9f3b41a81a3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20304,8 +20302,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260893", "260893"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260893")), _ = 0), _
+        let _ = parseInt((e = "260898", "260898"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260898")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34929,4 +34927,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.2d8db6af02ff89cc13a9.js.map
+//# sourceMappingURL=34546.1ebcab53dbe1f1475b81.js.map
