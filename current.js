@@ -8176,6 +8176,19 @@
         NITRO_HOME_ENJOY_UPDATED_DISCORD: "Enjoy An Upgraded Discord",
         NITRO_HOME_SHOW_UP_HOW_YOU_WANT: "Show Up The Way You Want",
         NITRO_HOME_ALL_YOUR_NITRO_PERKS: "All Your Nitro Perks",
+        NITRO_HOME_CARD_INCLUDED_WITH_BASIC_AND_NITRO: "Included with Basic and Nitro.",
+        NITRO_HOME_CARD_INCLUDED_WITH_ONLY_NITRO: "Only with Nitro.",
+        NITRO_HOME_CARD_CHOOSE_CUSTOM_EMOJI: "Choose from all of your custom emojis in any conversation.",
+        NITRO_HOME_CARD_CUSTOM_SOUNDS_EVERYWHERE: "Custom Sounds Everywhere",
+        NITRO_HOME_CARD_USE_CUSTOM_SOUNDS: "Use custom soundboard sounds across voice channels.",
+        NITRO_HOME_CARD_UPLOAD_POWER: "Feel the upload power.",
+        NITRO_HOME_STREAM_UP_TO_4K: "Up to 4K and 60FPS.",
+        NITRO_HOME_SUPER_REACTIONS: "Super Reactions",
+        NITRO_HOME_SUPER_REACTIONS_DESCRIPTION: "Hype up the chat with action-packed, animated reactions.",
+        NITRO_HOME_ENTRANCE_SOUNDS_BENEFIT: "Make a splash like only Nitro subscribers can in your favorite voice channels.",
+        NITRO_HOME_SUBSCRIBER_BADGE: "Subscriber Badge",
+        NITRO_HOME_GET_THIS_SUBSCRIBER_BADGE: "Get this cool badge for being a Nitro subscriber.",
+        NITRO_HOME_SUBSCRIBER_BADGE_FOR_THE_COLLECTORS: "For the collectors. Grab this exclusive Nitro-only badge.",
         MARKETING_PAGE_CAROUSEL_TITLE: "Make Discord Yours",
         MARKETING_PAGE_CHOOSE_PLAN_TITLE: "Choose Your Nitro",
         MARKETING_PAGE_CHOOSE_PLAN_SUBTITLE: "Upgrade to get all the customization thangs.",
@@ -18058,7 +18071,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260885", ", Version Hash: ").concat("d8735d31a799ee22310d77b742ef640ba7aa8579")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260893", ", Version Hash: ").concat("319935cf2aca27c376fbc3acb9295324d5795d17")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20291,8 +20304,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260885", "260885"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260885")), _ = 0), _
+        let _ = parseInt((e = "260893", "260893"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260893")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -34916,4 +34929,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.73f03639103dbd85431a.js.map
+//# sourceMappingURL=34546.2d8db6af02ff89cc13a9.js.map
