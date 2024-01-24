@@ -5045,6 +5045,10 @@
         FORTNITE_DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP: "Stream for {streamLengthRequirement, plural, one {1 minute} other {{streamLengthRequirement} minutes}} to at least 1 viewer and unlock the {rewardName}!",
         FORTNITE_DROPS_COMPLETION_TOOLTIP: "You streamed for {streamLengthRequirement, plural, one {1 minute} other {{streamLengthRequirement} minutes}} and unlocked the {rewardName}.",
         FORTNITE_GIFT_INVENTORY_INFO: "Get your gear to match your {guardOutfitName}!\n\nStarting May 4, unlock the {rewardName} Discord Drop by doing one of two things:\n\nStream live and Screen Share Fortnite on Discord for 15+ or more minutes to at least one Discord friend.\n\nAfter 15 minutes of screen sharing to a friend, you’ll receive a link as a gift in your Settings > Gift Inventory.\n\nClick the link to log into your Epic Games account and the Wrap will be added to your Fortnite Locker!\n\nCan’t stream? You can also accept the Discord Bot Quest! Start by joining the [official Fortnite Discord server](http://discord.gg/fortnite).\n\nIn the server, you’ll see a bot you can interact with to join the Discord Quest.\n\nUpon interacting with the bot, you’ll be taken to a page where you can link your Epic and Discord accounts.\n\nWith your accounts linked, participate in the Quest by completing a task inside Discord and a task inside Fortnite.\n\nAfter both of these tasks are complete, the Wrap will be added to your Fortnite Locker!\n\nLearn more on our blog post!\n",
+        QUESTS_SPONSORED: "Sponsored",
+        QUESTS_LEARN_MORE: "Learn\n\nmore",
+        QUESTS_ACCEPT_QUEST: "Accept Quest",
+        QUESTS_ACCEPT_TO_WIN: "Accept to win {questReward}",
         ACTIVITY_RESTRICTION_DEFAULT: "Share your activity status by default when joining large servers",
         ACTIVITY_RESTRICTION_DEFAULT_NOTE: "This setting allows you to control how you share your activity status by default when you join a new server with over 200 members. [Learn more about this setting]({helpdeskArticle}).",
         ACTIVITY_RESTRICTION_MODAL_DESC: "Do you want to apply this Activity Status setting change to all your existing servers (regardless of size)? You can also disable sharing your activity status in individual servers by visiting that server's Privacy Settings.",
@@ -18069,7 +18073,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260987", ", Version Hash: ").concat("b0e42e2ddc06d48e9a9682c50e86530aca59062e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260994", ", Version Hash: ").concat("2c8ed6adcc4cc9503203169c21a7bb87bca868b5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19177,7 +19181,7 @@
             subscriptionTier: h.PremiumSubscriptionSKUs.TIER_2
           })
         },
-        y = e => {
+        g = e => {
           let {
             markAsDismissed: _
           } = e, E = () => {
@@ -19202,7 +19206,7 @@
             })]
           })
         },
-        g = e => {
+        y = e => {
           let {
             isCoachmark: _,
             markAsDismissed: E
@@ -19251,14 +19255,14 @@
             ref: u,
             className: r(m.editor, l ? m.editorAnimate : null),
             children: (0, t.jsxs)(i.HeadingLevel, {
-              children: [(0, t.jsx)(y, {
+              children: [(0, t.jsx)(g, {
                 markAsDismissed: E
               }), (0, t.jsx)(i.Scroller, {
                 className: m.editorBody,
                 children: (0, t.jsx)(d.default, {
                   className: m.selectionGroup
                 })
-              }), (0, t.jsx)(g, {
+              }), (0, t.jsx)(y, {
                 markAsDismissed: E,
                 isCoachmark: _
               })]
@@ -20302,8 +20306,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260987", "260987"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260987")), _ = 0), _
+        let _ = parseInt((e = "260994", "260994"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260994")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20461,18 +20465,18 @@
         m = E("49111"),
         G = E("994428"),
         p = E("646718"),
-        y = E("782340"),
-        g = E("286609");
+        g = E("782340"),
+        y = E("286609");
       let B = () => (0, t.jsx)("div", {
-          className: g.editorHeader,
+          className: y.editorHeader,
           children: (0, t.jsxs)("div", {
-            className: g.bannerUpsell,
+            className: y.bannerUpsell,
             children: [(0, t.jsx)(u.default, {
-              className: g.premiumIcon
+              className: y.premiumIcon
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-md/bold",
               color: "always-white",
-              children: y.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
+              children: g.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
             })]
           })
         }),
@@ -20481,18 +20485,18 @@
             markAsDismissed: _
           } = e, E = (0, h.useTrackClientThemePreviewEvent)();
           return (0, t.jsxs)("div", {
-            className: g.editorHeader,
+            className: y.editorHeader,
             children: [(0, t.jsx)(s.Clickable, {
-              className: g.closeCircleButton,
+              className: y.closeCircleButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), E(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)()
               },
               children: (0, t.jsx)(D.default, {
-                className: g.closeCircle
+                className: y.closeCircle
               })
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-lg/extrabold",
-              children: y.default.Messages.CLIENT_THEMES_EDITOR_HEADER
+              children: g.default.Messages.CLIENT_THEMES_EDITOR_HEADER
             })]
           })
         },
@@ -20509,7 +20513,7 @@
           });
           return (0, t.jsx)(L.default, {
             size: s.Button.Sizes.MEDIUM,
-            buttonText: N ? y.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == O ? void 0 : null === (o = O.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? u : y.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
+            buttonText: N ? g.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == O ? void 0 : null === (o = O.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? u : g.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
             subscriptionTier: p.PremiumSubscriptionSKUs.TIER_2,
             onSubscribeModalClose: e => {
               if (!!e) null == n || n(), null != r && r(G.ContentDismissActionType.PRIMARY), null != S && ((0, P.trackClientThemeUpdated)({
@@ -20540,18 +20544,18 @@
             isCoachmark: !0
           }, {
             forceShowCloseButton: !0
-          }, () => y.default.Messages.CLOSE).with({
+          }, () => g.default.Messages.CLOSE).with({
             isPreview: !0
-          }, () => y.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => y.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
+          }, () => g.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => g.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
           return (0, t.jsxs)("div", {
-            className: g.editorFooter,
+            className: y.editorFooter,
             children: [E && (0, t.jsx)(H, {
               onSubscribeSuccess: () => {
                 I(!0)
               },
               markAsDismissed: _
             }), (0, t.jsx)(s.Button, {
-              className: g.footerButton,
+              className: y.footerButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), T(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)(), !n && S.default.open()
               },
@@ -20592,18 +20596,18 @@
         }, [a, T, L]), (0, t.jsx)(n, {
           children: (0, t.jsx)("div", {
             ref: u,
-            className: r(g.themeEditor, S ? g.editorAnimate : null),
+            className: r(y.themeEditor, S ? y.editorAnimate : null),
             children: (0, t.jsxs)(s.HeadingLevel, {
               children: [I ? (0, t.jsx)(B, {}) : (0, t.jsx)(f, {
                 markAsDismissed: _
               }), (0, t.jsx)(s.Scroller, {
-                className: g.editorBody,
+                className: y.editorBody,
                 children: (0, t.jsxs)(P.default, {
                   type: P.ThemeSelectionGroupType.EDITOR,
                   children: [!a && (0, t.jsx)(P.default.Basic, {
-                    className: g.selectionGroup
+                    className: y.selectionGroup
                   }), (0, t.jsx)(P.default.Gradient, {
-                    className: g.selectionGroup
+                    className: y.selectionGroup
                   })]
                 })
               }), (0, t.jsx)(v, {
@@ -21230,9 +21234,9 @@
                 useForcedColors: n,
                 systemForcedColors: r
               }
-            }), p = (0, i.useLocation)(), y = o.useMemo(() => M.has(p.pathname), [p.pathname]);
-            (0, c.default)(window, y);
-            let g = (0, d.default)(window, __OVERLAY__ || n),
+            }), p = (0, i.useLocation)(), g = o.useMemo(() => M.has(p.pathname), [p.pathname]);
+            (0, c.default)(window, g);
+            let y = (0, d.default)(window, __OVERLAY__ || n),
               B = (0, s.useStateFromStores)([A.default], () => A.default.sidebarWidth),
               f = (0, S.useRedesignIconContext)().enabled;
             return (0, t.jsx)("html", {
@@ -21240,7 +21244,7 @@
               style: "font-size: ".concat(O, "%; --saturation-factor: ").concat(h, "; --devtools-sidebar-width: ").concat(B, "px;"),
               className: r(e, {
                 overlay: __OVERLAY__,
-                "mouse-mode": g,
+                "mouse-mode": y,
                 "keyboard-mode": U,
                 "reduce-motion": a.enabled,
                 "full-motion": !a.enabled,
@@ -21311,8 +21315,8 @@
         m = E("714657"),
         G = E("262194"),
         p = E("36773"),
-        y = E("374036"),
-        g = E("384997"),
+        g = E("374036"),
+        y = E("384997"),
         B = E("234819"),
         f = E("182033"),
         H = E("928741"),
@@ -21372,7 +21376,7 @@
           autoTrackExposure: !0
         }), ea = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ei = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), eI = $ && !ea, es = [];
         eI && eo && er && !ei && es.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
-        let [eT, eS] = (0, g.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
+        let [eT, eS] = (0, y.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
         es.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
         let eN = eT === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
           eO = eT === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
@@ -21436,7 +21440,7 @@
                           }) : null, !en || ea || eO ? null : (0, t.jsx)(h.default, {
                             isCoachmark: eN,
                             markAsDismissed: eS
-                          }), (0, t.jsx)(y.default, {
+                          }), (0, t.jsx)(g.default, {
                             mobile: u
                           })]
                         }), !1]
@@ -23062,7 +23066,7 @@
         E.notificationAnalytics.increment(e.notificationType, e.action)
       }
 
-      function y(e) {
+      function g(e) {
         var _;
         c.verbose("OVERLAY_WIDGET_CHANGED", e);
         let E = P.getByName(null !== (_ = e.gameName) && void 0 !== _ ? _ : e.gameId);
@@ -23074,7 +23078,7 @@
         null != t && (!t.initialized && (t.initialized = !0, t.pinned = e.pinned), t.pinned !== e.pinned && ++t.pinnedToggledCount, t.pinned = e.pinned, t.visibleDuration.toggle(e.visible))
       }
 
-      function g(e) {
+      function y(e) {
         if (c.verbose("OVERLAY_FOCUSED", e), P.gameSetAllUnfocused(), null == e.pid) return;
         let _ = P.getByPid(e.pid);
         if (null == _) {
@@ -23193,10 +23197,10 @@
             MESSAGE_ACKED: Y.handleMessageAcked,
             MESSAGE_CREATE: Y.handleMessageCreate
           } : {
-            OVERLAY_FOCUSED: g,
+            OVERLAY_FOCUSED: y,
             OVERLAY_NOTIFICATION_EVENT: p,
             OVERLAY_SET_UI_LOCKED: G,
-            OVERLAY_WIDGET_CHANGED: y,
+            OVERLAY_WIDGET_CHANGED: g,
             OVERLAY_MESSAGE_EVENT_ACTION: f,
             RUNNING_GAMES_CHANGE: m,
             SOUNDBOARD_SET_OVERLAY_ENABLED: B,
@@ -25623,6 +25627,320 @@
         return !e.ok && (null === (_ = e.body) || void 0 === _ ? void 0 : _.code) === t.AbortCodes.BLOCKED_BY_PROXY
       }
     },
+    448881: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        fetchCurrentQuests: function() {
+          return I
+        },
+        sendHeartbeat: function() {
+          return s
+        },
+        enrollInQuest: function() {
+          return T
+        }
+      });
+      var t = E("872717"),
+        o = E("913144"),
+        n = E("599417"),
+        r = E("2973"),
+        a = E("227231"),
+        i = E("49111");
+      async function I() {
+        o.default.dispatch({
+          type: "QUESTS_FETCH_CURRENT_QUESTS_BEGIN"
+        });
+        try {
+          let e = await t.default.get({
+            url: i.Endpoints.QUESTS_CURRENT_QUESTS
+          });
+          o.default.dispatch({
+            type: "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS",
+            quests: e.body.quests.map(a.questWithUserStatusFromServer)
+          })
+        } catch (e) {
+          o.default.dispatch({
+            type: "QUESTS_FETCH_CURRENT_QUESTS_FAILURE",
+            error: new n.default(e)
+          })
+        }
+      }
+      async function s(e) {
+        let {
+          questId: _,
+          streamKey: E,
+          applicationId: r
+        } = e;
+        try {
+          let e = await t.default.post({
+            url: i.Endpoints.QUESTS_HEARTBEAT(_),
+            body: {
+              stream_key: E,
+              application_id: r
+            }
+          });
+          o.default.dispatch({
+            type: "QUESTS_SEND_HEARTBEAT_SUCCESS",
+            userStatus: (0, a.questUserStatusFromServer)(e.body),
+            applicationId: r,
+            questId: _,
+            streamKey: E
+          })
+        } catch (e) {
+          o.default.dispatch({
+            type: "QUESTS_SEND_HEARTBEAT_FAILURE",
+            error: new n.default(e),
+            questId: _,
+            streamKey: E
+          })
+        }
+      }
+      async function T(e) {
+        let _ = r.default.isEnrolling(e);
+        if (!_) {
+          o.default.dispatch({
+            type: "QUESTS_ENROLL_BEGIN",
+            questId: e
+          });
+          try {
+            let _ = await t.default.post({
+              url: i.Endpoints.QUESTS_ENROLL(e)
+            });
+            o.default.dispatch({
+              type: "QUESTS_ENROLL_SUCCESS",
+              enrolledQuestUserStatus: (0, a.questUserStatusFromServer)(_.body)
+            })
+          } catch (_) {
+            o.default.dispatch({
+              type: "QUESTS_ENROLL_FAILURE",
+              questId: e
+            })
+          }
+        }
+      }
+    },
+    374023: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return n
+        }
+      });
+      var t = E("862205");
+      let o = (0, t.createExperiment)({
+        id: "2023-12_quests",
+        kind: "user",
+        label: "Quests",
+        defaultConfig: {
+          enabled: !1
+        },
+        treatments: [{
+          id: 0,
+          label: "Control",
+          config: {
+            enabled: !1
+          }
+        }, {
+          id: 1,
+          label: "Quests enabled",
+          config: {
+            enabled: !0
+          }
+        }]
+      });
+      var n = o
+    },
+    2973: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return S
+        }
+      }), E("222007");
+      var t = E("446674"),
+        o = E("913144");
+      let n = !1,
+        r = new Map,
+        a = 0,
+        i = new Set;
+
+      function I(e, _) {
+        r = new Map(r);
+        let E = r.get(e);
+        null != E && r.set(e, {
+          ...E,
+          ..._
+        })
+      }
+
+      function s(e) {
+        let _ = new Set(i);
+        _.delete(e), i = _
+      }
+      class T extends t.default.Store {
+        get quests() {
+          return r
+        }
+        get isFetchingCurrentQuests() {
+          return n
+        }
+        get lastFetchedCurrentQuests() {
+          return a
+        }
+        isEnrolling(e) {
+          return i.has(e)
+        }
+      }
+      T.displayName = "QuestsStore";
+      var S = new T(o.default, {
+        LOGOUT: function() {
+          n = !1, r = new Map, a = 0, i = new Set
+        },
+        QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
+          a = Date.now(), n = !0
+        },
+        QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: function(e) {
+          let {
+            quests: _
+          } = e;
+          for (let e of (n = !1, r = new Map, _)) r.set(e.id, e)
+        },
+        QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
+          a = 0, n = !1
+        },
+        QUESTS_SEND_HEARTBEAT_SUCCESS: function(e) {
+          let {
+            questId: _,
+            userStatus: E
+          } = e;
+          I(_, {
+            userStatus: E
+          })
+        },
+        QUESTS_ENROLL_BEGIN: function(e) {
+          let {
+            questId: _
+          } = e, E = new Set(i);
+          E.add(_), i = E
+        },
+        QUESTS_ENROLL_SUCCESS: function(e) {
+          let {
+            enrolledQuestUserStatus: _
+          } = e;
+          I(_.questId, {
+            userStatus: _
+          }), s(_.questId)
+        },
+        QUESTS_ENROLL_FAILURE: function(e) {
+          let {
+            questId: _
+          } = e;
+          s(_)
+        }
+      })
+    },
+    227231: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        getQuestByApplicationId: function() {
+          return n
+        },
+        isQuestExpired: function() {
+          return r
+        },
+        questUserStatusFromServer: function() {
+          return a
+        },
+        questWithUserStatusFromServer: function() {
+          return i
+        },
+        getRewardAssetUrl: function() {
+          return I
+        },
+        getHeroAssetUrl: function() {
+          return s
+        },
+        getQuestBarHeroAssetUrl: function() {
+          return T
+        },
+        getGameTileAssetUrl: function() {
+          return S
+        },
+        getGameLogotypeAssetUrl: function() {
+          return N
+        },
+        getQuestForTargetedContent: function() {
+          return O
+        }
+      }), E("222007");
+      var t = E("2973");
+      let o = "https://cdn.discordapp.com/assets/quests/";
+
+      function n(e) {
+        let _;
+        for (let [E, o] of t.default.quests)
+          if (o.config.applicationId === e) {
+            _ = o;
+            break
+          } return _
+      }
+
+      function r(e) {
+        let _ = new Date(e.config.expiresAt);
+        return _.valueOf() <= Date.now()
+      }
+
+      function a(e) {
+        return {
+          userId: e.user_id,
+          questId: e.quest_id,
+          enrolledAt: e.enrolled_at,
+          completedAt: e.completed_at,
+          claimedAt: e.claimed_at,
+          lastStreamHeartbeatAt: e.last_stream_heartbeat_at,
+          streamProgressSeconds: e.stream_progress_seconds,
+          dismissedQuestContent: e.dismissed_quest_content
+        }
+      }
+
+      function i(e) {
+        var _, E, t;
+        return {
+          id: e.id,
+          config: {
+            expiresAt: (_ = e.config).expires_at,
+            streamDurationRequirementMinutes: _.stream_duration_requirement_minutes,
+            gameTitle: _.game_title,
+            applicationId: _.application_id,
+            messages: {
+              questName: (E = _.messages).quest_name,
+              rewardName: E.reward_name,
+              rewardNameWithArticle: E.reward_name_with_article,
+              rewardRedemptionInstructions: E.reward_redemption_instructions,
+              gameTitle: E.game_title,
+              gamePublisher: E.game_publisher
+            },
+            colors: {
+              primary: (t = _.colors).primary,
+              secondary: t.secondary
+            }
+          },
+          userStatus: null == e.user_status ? null : a(e.user_status),
+          targetedContent: e.targeted_content
+        }
+      }
+      let I = e => "".concat(o).concat(e).concat("/reward.png"),
+        s = e => "".concat(o).concat(e).concat("/hero.png"),
+        T = e => "".concat(o).concat(e).concat("/quest_bar_hero.gif"),
+        S = e => "".concat(o).concat(e).concat("/game_tile.png"),
+        N = (e, _) => "".concat(o).concat(e, "/").concat(_).concat("/game_logotype.png");
+
+      function O(e, _) {
+        for (let [E, t] of e)
+          if (!r(t) && t.targetedContent.includes(_)) return t;
+        return null
+      }
+    },
     319405: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -27677,7 +27995,7 @@
           return i
         },
         default: function() {
-          return y
+          return g
         }
       }), E("222007"), E("70102"), E("511434"), E("313619"), E("654714"), E("287168"), E("956660"), E("424973");
       var t, o, n, r, a, i, I, s, T = E("627445"),
@@ -27734,7 +28052,7 @@
           fullscreenType: null !== (i = e.fullscreenType) && void 0 !== i ? i : R.RunningProcessFullscreenType.UNKNOWN
         }
       }(I = a || (a = {}))[I.Camera = 0] = "Camera", I[I.Microphone = 1] = "Microphone", I[I.Photo = 2] = "Photo", I[I.InputMonitoring = 3] = "InputMonitoring", I[I.ScreenRecording = 4] = "ScreenRecording", (s = i || (i = {})).VIDEO = "VIDEO", s.MUTE = "MUTE", s.DEAFEN = "DEAFEN", s.DISCONNECT = "DISCONNECT";
-      var y = {
+      var g = {
         requireModule: e => C.nativeModules.requireModule(e),
         ensureModule: e => l.isPlatformEmbedded ? __OVERLAY__ && h.has(e) ? Promise.resolve() : C.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
         get canBootstrapNewUpdater() {
@@ -30129,7 +30447,7 @@
           return p
         },
         ApplicationFrecency: function() {
-          return g
+          return y
         },
         GuildAndChannelFrecency: function() {
           return f
@@ -30177,7 +30495,7 @@
                 o.favoriteSoundboardSounds = h.internalBinaryRead(e, e.uint32(), E, o.favoriteSoundboardSounds);
                 break;
               case 9:
-                o.applicationFrecency = g.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
+                o.applicationFrecency = y.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
                 break;
               case 10:
                 o.heardSoundFrecency = m.internalBinaryRead(e, e.uint32(), E, o.heardSoundFrecency);
@@ -30198,7 +30516,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && L.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && c.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && g.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
+          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && L.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && c.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && y.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? n.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -30247,7 +30565,7 @@
             no: 9,
             name: "application_frecency",
             kind: "message",
-            T: () => g
+            T: () => y
           }, {
             no: 10,
             name: "heard_sound_frecency",
@@ -30952,7 +31270,7 @@
         }
       }
       let p = new G;
-      class y extends n.MessageType {
+      class g extends n.MessageType {
         create(e) {
           let _ = {
             applications: {}
@@ -31014,7 +31332,7 @@
           }])
         }
       }
-      let g = new y;
+      let y = new g;
       class B extends n.MessageType {
         create(e) {
           let _ = {
@@ -31116,7 +31434,7 @@
           return p
         },
         InboxSettings: function() {
-          return g
+          return y
         },
         AllGuildSettings: function() {
           return f
@@ -31181,7 +31499,7 @@
                 o.versions = m.Versions.internalBinaryRead(e, e.uint32(), E, o.versions);
                 break;
               case 2:
-                o.inbox = g.internalBinaryRead(e, e.uint32(), E, o.inbox);
+                o.inbox = y.internalBinaryRead(e, e.uint32(), E, o.inbox);
                 break;
               case 3:
                 o.guilds = f.internalBinaryRead(e, e.uint32(), E, o.guilds);
@@ -31226,7 +31544,7 @@
                 o.audioContextSettings = ep.internalBinaryRead(e, e.uint32(), E, o.audioContextSettings);
                 break;
               case 17:
-                o.communities = eg.internalBinaryRead(e, e.uint32(), E, o.communities);
+                o.communities = ey.internalBinaryRead(e, e.uint32(), E, o.communities);
                 break;
               case 18:
                 o.broadcast = ew.internalBinaryRead(e, e.uint32(), E, o.broadcast);
@@ -31244,7 +31562,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && g.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ei.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && eg.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
+          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && y.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ei.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && ey.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -31258,7 +31576,7 @@
             no: 2,
             name: "inbox",
             kind: "message",
-            T: () => g
+            T: () => y
           }, {
             no: 3,
             name: "guilds",
@@ -31333,7 +31651,7 @@
             no: 17,
             name: "communities",
             kind: "message",
-            T: () => eg
+            T: () => ey
           }, {
             no: 18,
             name: "broadcast",
@@ -31348,7 +31666,7 @@
         }
       }
       let p = new G;
-      class y extends M.MessageType {
+      class g extends M.MessageType {
         create(e) {
           let _ = {
             currentTab: 0,
@@ -31399,7 +31717,7 @@
           }])
         }
       }
-      let g = new y;
+      let y = new g;
       class B extends M.MessageType {
         create(e) {
           let _ = {
@@ -33512,7 +33830,7 @@
         }
       }
       let ep = new eG;
-      class ey extends M.MessageType {
+      class eg extends M.MessageType {
         create(e) {
           let _ = {};
           return globalThis.Object.defineProperty(_, M.MESSAGE_TYPE, {
@@ -33549,7 +33867,7 @@
           }])
         }
       }
-      let eg = new ey;
+      let ey = new eg;
       class eB extends M.MessageType {
         create(e) {
           let _ = {
@@ -34927,4 +35245,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.5401b6c6acfcdb2cd7ca.js.map
+//# sourceMappingURL=34546.14ad4da2236b714f0eb8.js.map
