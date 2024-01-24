@@ -16254,10 +16254,10 @@
         SAFETY_HUB_ACCOUNT_STANDING_VERY_LIMITED_SHORT: "$[Very limited](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_SHORT: "$[At risk](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_SHORT: "$[Suspended](hook)",
-        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER: "You broke Discord's rules against $[!!{classification_type}!!](classificationHook).",
-        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_V2: "You broke Discord's rules on $[!!{classification_type}!!](classificationHook).",
-        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_GUILD: "Your server {guildName} broke Discord's rules on $[!!{classification_type}!!](classificationHook).",
-        SAFETY_HUB_CLASSIFICATION_DETAIL_EVIDENCE_HEADER: "YOUR RECENT ACTIVITY BROKE DISCORD'S RULES",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER: "You broke the rules for $[!!{classification_type}!!](classificationHook).",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_V2: "You broke the rules for $[!!{classification_type}!!](classificationHook).",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_GUILD: "Your server {guildName} broke the rules for $[!!{classification_type}!!](classificationHook).",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_EVIDENCE_HEADER: "YOUR RECENT ACTIVITY",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTIONS_TAKEN_HEADER: "WE TOOK THESE ACTIONS",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_EXPLAINED_HEADER: "WHY WE TOOK THIS ACTION",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_EXPLAINED_DESCRIPTION: "Our teams use automation and manual review to enforce our rules. We found your activity violated our [Terms of Service]({tosLink}) or [Community Guidelines]({communityGuidelinesLink}).",
@@ -16280,8 +16280,8 @@
         SAFETY_HUB_VIOLATIONS_CONTAINER_PAGINATION_BUTTON: "See {nextPageSize} more",
         SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_ACTIVE: "Expires on {expirationDate}",
         SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_EXPIRED: "Expired on {expirationDate}",
-        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION: "You broke the rules against $[!!{description}!!](descriptionHook).",
-        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_GUILD: "Your server {guildName} broke the rules against $[!!{description}!!](descriptionHook).",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION: "You broke the rules for $[!!{description}!!](descriptionHook).",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_GUILD: "Your server {guildName} broke the rules for $[!!{description}!!](descriptionHook).",
         SAFETY_HUB_VIOLATIONS_CONTAINER_NEW: "NEW",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR: "You lost access to Discord. Review your violations to understand for how long and why.",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR_CTA: "Learn More",
@@ -18073,7 +18073,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("260994", ", Version Hash: ").concat("2c8ed6adcc4cc9503203169c21a7bb87bca868b5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261000", ", Version Hash: ").concat("d499fd6eb2b129df60bbe0463661a49f2522d472")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20306,8 +20306,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "260994", "260994"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("260994")), _ = 0), _
+        let _ = parseInt((e = "261000", "261000"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261000")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35245,4 +35245,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.14ad4da2236b714f0eb8.js.map
+//# sourceMappingURL=34546.f00bba6cf7451f35558a.js.map
