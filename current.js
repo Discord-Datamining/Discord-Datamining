@@ -16427,6 +16427,7 @@
         APPEAL_INGESTION_BREADCRUMBS_HEADER: "REASON",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ADD_DETAILS: "Add details",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_EDIT_DETAILS: "Edit details",
+        APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ERROR: "Error requesting review",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_FOOTER: "Your request will be sent to our team. Violations will stay on your account until they expire or are removed after review.",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_SUBHEADER: "Here's a summary of your request.",
         APPEAL_INGESTION_FREE_TEXT_REASON_ACTION_SHEET_SUBHEADER: "You can add context or anything else that might be helpful for us to know.",
@@ -18076,7 +18077,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261392", ", Version Hash: ").concat("4a2db153c372a2475fed482972594a8396ff3017")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261398", ", Version Hash: ").concat("ace6cff91b86b17601e9dde3a76c2048167b3519")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20314,8 +20315,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261392", "261392"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261392")), _ = 0), _
+        let _ = parseInt((e = "261398", "261398"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261398")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35361,4 +35362,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.e73447d92fa96d14d849.js.map
+//# sourceMappingURL=34546.5d98734a8e3dc2cbf7e2.js.map
