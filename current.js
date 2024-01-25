@@ -18082,7 +18082,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261436", ", Version Hash: ").concat("77b52ba09b4185886a441ddc19bfbb68a9b65626")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261437", ", Version Hash: ").concat("49eda801a38f9da8d6cb1929ae25dc31abfaea13")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19607,6 +19607,11 @@
           actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE"],
           inlineRequire: () => E("319405").default,
           neverLoadBeforeConnectionOpen: !0
+        },
+        VoiceChannelGameActivityManager: {
+          actions: ["PRESENCE_UPDATES", "POST_CONNECTION_OPEN", "VOICE_STATE_UPDATES"],
+          inlineRequire: () => E("282655").default,
+          neverLoadBeforeConnectionOpen: !0
         }
       };
       (0, t.initialize)(o)
@@ -20320,8 +20325,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261436", "261436"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261436")), _ = 0), _
+        let _ = parseInt((e = "261437", "261437"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261437")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24383,6 +24388,76 @@
         }
       }
       var C = new u
+    },
+    282655: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return R
+        }
+      }), E("222007");
+      var t = E("823411"),
+        o = E("689988"),
+        n = E("651057"),
+        r = E("42203"),
+        a = E("546463"),
+        i = E("824563"),
+        I = E("162771"),
+        s = E("800762"),
+        T = E("785814"),
+        S = E("49111");
+
+      function N(e) {
+        return e.filter(e => e.type === S.ActivityTypes.PLAYING && null != e.application_id && null != a.default.getDetectableGame(e.application_id)).map(e => e.application_id)
+      }
+
+      function O(e) {
+        n.default.fetchApplications(e, !1)
+      }
+      class A extends o.default {
+        handleConnectionOpen() {
+          let e = I.default.getGuildId();
+          null != e && t.default.getDetectableGames()
+        }
+        handlePresenceUpdates(e) {
+          let {
+            updates: _
+          } = e, E = new Set;
+          _.forEach(e => {
+            var _, t;
+            let {
+              user: o,
+              activities: n
+            } = e, a = s.default.getVoiceStateForUser(o.id);
+            if (null == a || !(0, T.isVoiceChannelGameActivityEnabled)(null !== (t = null === (_ = r.default.getChannel(a.channelId)) || void 0 === _ ? void 0 : _.guild_id) && void 0 !== t ? t : "", "presence_update", !1)) return;
+            let i = N([...n]);
+            E = new Set([...E, ...i])
+          }), O([...E])
+        }
+        handleVoiceStateUpdates(e) {
+          let {
+            voiceStates: _
+          } = e, E = new Set;
+          _.forEach(e => {
+            let {
+              userId: _,
+              guildId: t
+            } = e;
+            if (!(0, T.isVoiceChannelGameActivityEnabled)(null != t ? t : "", "voice_state_update", !1)) return;
+            let o = i.default.getActivities(_, t),
+              n = N([...o]);
+            E = new Set([...E, ...n])
+          }), O([...E])
+        }
+        constructor(...e) {
+          super(...e), this.actions = {
+            POST_CONNECTION_OPEN: this.handleConnectionOpen,
+            PRESENCE_UPDATES: this.handlePresenceUpdates,
+            VOICE_STATE_UPDATES: this.handleVoiceStateUpdates
+          }
+        }
+      }
+      var R = new A
     },
     589636: function(e, _, E) {
       "use strict";
@@ -35367,4 +35442,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.56f3f44cd634bef80b5a.js.map
+//# sourceMappingURL=34546.429e6273af408d310355.js.map
