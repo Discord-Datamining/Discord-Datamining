@@ -15440,7 +15440,7 @@
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_LABEL: "Enter 2FA verification code",
         GUILD_ROLE_SUBSCRIPTION_SETTINGS_PAYMENT_TEAM_SECTION_MODAL_MFA_PLACEHOLDER: "MFA Code",
         CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_TITLE: "Disable Monetization",
-        CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "This will disable both server subscriptions **and** products for **!!{guildName}!!**. There should be no remaining payouts, and all tiers and product listings must be deleted in order to complete this action.",
+        CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_SECTION_DESCRIPTION: "This will disable Server Subscriptions and Server Products for **!!{guildName}!!**. There should be no remaining payouts and all subscription tiers must be deleted in order to complete this action.",
         CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_CTA: "Disable Monetization",
         CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_HEADER: "Disable Monetization",
         CREATOR_MONETIZATION_SETTINGS_DISABLE_MONETIZATION_MODAL_DESCRIPTION: "Disable server subscriptions and products for **!!{guildName}!!**. To delete your payment team you will need to do so in the [Developer Portal]({url}).",
@@ -18072,7 +18072,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261274", ", Version Hash: ").concat("41e5ecc33968f7489cbc9ce4caf348c28eb13a2c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261276", ", Version Hash: ").concat("05e66df5161f9bef48f159647f4338ea7eb0f4c8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20310,8 +20310,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261274", "261274"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261274")), _ = 0), _
+        let _ = parseInt((e = "261276", "261276"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261276")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35357,4 +35357,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.cc0d2199d084ddb50160.js.map
+//# sourceMappingURL=34546.c1bb72865f6d9398ac00.js.map
