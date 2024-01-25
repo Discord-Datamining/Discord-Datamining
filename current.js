@@ -16745,6 +16745,8 @@
         STAFF_PTO_NOTICE: "Heads up! This person may be Out of Office.",
         CONSOLE_PLAYSTATION_STAGING_TRANSFER_VOICE: "Transfer to PlayStation (sp-int)",
         CONSOLE_PLAYSTATION_STAGING_JOIN_VOICE: "Join on PlayStation (sp-int)",
+        SEARCH_EVERYWHERE: "Search Everywhere",
+        SEARCH_FAVORITES: "Search Favorites",
         ROLE_PERMISSIONS_CONNECT_DESCRIPTION_THREADS: "Allows members to talk in voice and hear others in this channel's threads.",
         ROLE_PERMISSIONS_CONNECT_DESCRIPTION_THREADS_EVERYONE: "Allows members to talk in voice and hear others in this channel's threads.",
         ROLE_PERMISSIONS_SPEAK_DESCRIPTION_THREADS: "Allows members to talk in voice in this channel's threads. If this permission is disabled, members are default muted until somebody with the “Mute Members” permission un-mutes them.",
@@ -18072,7 +18074,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261276", ", Version Hash: ").concat("05e66df5161f9bef48f159647f4338ea7eb0f4c8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261309", ", Version Hash: ").concat("a987cc44a8a55b3eb761b0dc196d699668d9b64d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20310,8 +20312,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261276", "261276"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261276")), _ = 0), _
+        let _ = parseInt((e = "261309", "261309"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261309")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35357,4 +35359,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.c1bb72865f6d9398ac00.js.map
+//# sourceMappingURL=34546.16762c92ab16354a7ea3.js.map
