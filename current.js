@@ -906,6 +906,7 @@
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_INVALID_CHANNEL: "You cannot join Activities in this channel.",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an activity",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE: "[!!{username}!!](usernameOnClick) started an activity",
+        APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_NOTIFICATION: "{username} started an activity",
         KRUNKER_STRIKE_COACHMARK_TITLE: "Updated! Krunker Strike FRVR",
         KRUNKER_STRIKE_COACHMARK_DESCRIPTION: "Squad up with friends or other players around the world and battle your way to victory in this first person shooter game.",
         KRUNKER_STRIKE_COACHMARK_BUTTON_CANCEL: "Maybe later",
@@ -18075,7 +18076,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261370", ", Version Hash: ").concat("5cb3619f93ca42d4e3fb4eadd46d84108f733640")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261376", ", Version Hash: ").concat("4c94ccbeac82dde2d8b52f4455016641451e1633")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20313,8 +20314,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261370", "261370"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261370")), _ = 0), _
+        let _ = parseInt((e = "261376", "261376"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261376")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35360,4 +35361,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.65085618c62658924643.js.map
+//# sourceMappingURL=34546.8c48c5f1952cb81e4abf.js.map
