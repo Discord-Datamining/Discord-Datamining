@@ -15065,8 +15065,6 @@
         COLLECTIBLES_SFA_STARTER_BANNER_DESCRIPTION: "Collect these sweet, bonus items when you join Nitro! $[Unlock with Nitro](getPremium)",
         COLLECTIBLES_SFA_HERO_BANNER_SUBTITLE: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
         COLLECTIBLES_SFA_BANNER_DESCRIPTION: "Make your profile feel alive with snazzy profile effects and avatar decorations. What's not to love?",
-        COLLECTIBLES_CYBERPUNK_COACHMARK_HEADER: "NEW in the Shop! Cyberpunk",
-        COLLECTIBLES_CYBERPUNK_COACHMARK_DESC: "The future is here, and it's looking good.",
         COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION: "{sender} gifted you an avatar decoration!",
         COLLECTIBLES_SENDER_GIFTED_YOU_EFFECT: "{sender} gifted you a profile effect!",
         COLLECTIBLES_SENDER_GIFTED_YOU_DECORATION_UNKNOWN_SENDER: "You have been gifted an avatar decoration!",
@@ -18074,7 +18072,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261256", ", Version Hash: ").concat("ba789c5554b9fce503af5ae26b38411de86311cf")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261269", ", Version Hash: ").concat("1e50851b201e1402f1b7534e465842e274330d04")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20312,8 +20310,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261256", "261256"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261256")), _ = 0), _
+        let _ = parseInt((e = "261269", "261269"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261269")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35359,4 +35357,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.99f56a557932d510830f.js.map
+//# sourceMappingURL=34546.8322ce42d08a1c6168e7.js.map
