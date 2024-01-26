@@ -16291,9 +16291,13 @@
         SAFETY_HUB_ERROR_MESSAGE: "Something went wrong...",
         SAFETY_HUB_ERROR_ACTION_BUTTON: "Retry",
         SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_ACTIVE: "ACTIVE VIOLATIONS — {count}",
-        SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_EXPIRED: "EXPIRED VIOLATIONS — {count}",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_EXPIRED: "EXPIRED VIOLATIONS  — {count}",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_ACTIVE_V2: "Active violations — {count}",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_EXPIRED_V2: "Expired violations — {count}",
         SAFETY_HUB_VIOLATIONS_CONTAINER_SUBHEADER_ACTIVE: "Violations affect your account status until they expire",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_SUBHEADER_ACTIVE_V2: "These affect your account status until they expire.",
         SAFETY_HUB_VIOLATIONS_CONTAINER_SUBHEADER_EXPIRED: "These violations no longer affect your account",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_SUBHEADER_EXPIRED_V2: "These no longer affect your account status.",
         SAFETY_HUB_VIOLATIONS_CONTAINER_EMPTY_STATE_ACTIVE: "Your account doesn't have any active violations.",
         SAFETY_HUB_VIOLATIONS_CONTAINER_EMPTY_STATE_EXPIRED: "Your account doesn't have any expired violations.",
         SAFETY_HUB_VIOLATIONS_CONTAINER_EMPTY_STATE_SUBTEXT_ACTIVE: "If you break Discord's rules, we'll let you know about it here.",
@@ -18101,7 +18105,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261796", ", Version Hash: ").concat("35c4e16505020483639d47bd898067c40e188439")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261799", ", Version Hash: ").concat("3c5d3729987ab4a8d3abba208c311201aa262895")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20344,8 +20348,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261796", "261796"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261796")), _ = 0), _
+        let _ = parseInt((e = "261799", "261799"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261799")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35495,4 +35499,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.99b75d18b262bc204018.js.map
+//# sourceMappingURL=34546.842ea86824b21b990b98.js.map
