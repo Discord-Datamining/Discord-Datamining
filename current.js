@@ -4897,7 +4897,7 @@
         CONTACTS: "Contacts",
         CONTACTS_ON_DISCORD: "Contacts on Discord",
         FRIEND_REQUEST_NO_RESULTS_FOUND: "Wumpus looked, but couldn’t find anyone with that name.",
-        SEARCH_OR_ADD_BY_USERNAME: "Search or add by username",
+        SEARCH_OR_ADD_BY_USERNAME: "Search or add by @username",
         ADD_BY_USERNAME: "Add by Username",
         ADD_BY_ID_TITLE: "Add your friend on Discord",
         ADD_BY_ID_BODY: "You will need both their username and a tag. Keep in mind that username is case sensitive.",
@@ -18105,7 +18105,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261805", ", Version Hash: ").concat("fed092665156872241c6de8eeefd322410da92ac")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261812", ", Version Hash: ").concat("a59aca416512543e2aa20982a86e90a6349c1032")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20348,8 +20348,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261805", "261805"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261805")), _ = 0), _
+        let _ = parseInt((e = "261812", "261812"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261812")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35499,4 +35499,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.658cc8dd4df3b070dd7e.js.map
+//# sourceMappingURL=34546.4880a729de8f8c55d619.js.map
