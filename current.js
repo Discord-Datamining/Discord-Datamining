@@ -16243,16 +16243,27 @@
         SAFETY_HUB_PAGE_TITLE: "Safety Hub",
         PRIVACY_AND_SAFETY_TAB_TITLE_SETTINGS: "Preferences",
         PRIVACY_AND_SAFETY_TAB_TITLE_SUPPORT: "Account Standing",
+        PRIVACY_AND_SAFETY_TAB_TITLE_SUPPORT_V2: "Standing",
         SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE: "Your account is $[all good!](hook)",
+        SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE_V2: "Your account is $[all good](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION: "Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).",
+        SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION_V2: "Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}). If you break the fules, it will show up here.",
         SAFETY_HUB_ACCOUNT_STANDING_LIMITED_TITLE: "Your account is $[limited.](hook)",
+        SAFETY_HUB_ACCOUNT_STANDING_LIMITED_TITLE_V2: "Your account is $[limited](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_LIMITED_DESCRIPTION: "You broke Discord's rules and will lose feature access if you break them again.",
+        SAFETY_HUB_ACCOUNT_STANDING_LIMITED_DESCRIPTION_V2: "You may lose access to some parts of Discord if you break the rules again.",
         SAFETY_HUB_ACCOUNT_STANDING_VERY_LIMITED_TITLE: "Your account is $[very limited.](hook)",
+        SAFETY_HUB_ACCOUNT_STANDING_VERY_LIMITED_TITLE_V2: "Your account is $[very limited](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_VERY_LIMITED_DESCRIPTION: "You broke Discord's rules and you may lose your account if you break them again.",
+        SAFETY_HUB_ACCOUNT_STANDING_VERY_LIMITED_DESCRIPTION_V2: "You can't use some parts of Discord. You may be suspended if you break the rules again.",
         SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_TITLE: "Your account is $[at risk.](hook)",
+        SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_TITLE_V2: "Your account is $[at risk](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION: "You broke Discord's rules. You will be permanently suspended if you break them again.",
+        SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION_V2: "You can't use some parts of Discord. You may be permanently banned if you break the rules again.",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE: "Your account is $[suspended.](hook)",
+        SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE_V2: "Your account is $[suspended](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_DESCRIPTION: "You broke Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).",
+        SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_DESCRIPTION_V2: "Due to serious policy violations, you can no longer use Discord.",
         SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_SHORT: "$[All good!](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_LIMITED_SHORT: "$[Limited](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_VERY_LIMITED_SHORT: "$[Very limited](hook)",
@@ -16260,16 +16271,22 @@
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_SHORT: "$[Suspended](hook)",
         SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER: "You broke the rules for $[!!{classification_type}!!](classificationHook).",
         SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_V2: "You broke the rules for $[!!{classification_type}!!](classificationHook).",
-        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_GUILD: "Your server {guildName} broke the rules for $[!!{classification_type}!!](classificationHook).",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_V3: "You broke Discord's rules for $[!!{classification_type}!!](classificationHook)",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_HEADER_GUILD: "Your server {guildName} broke Discord's rules for $[!!{classification_type}!!](classificationHook)",
         SAFETY_HUB_CLASSIFICATION_DETAIL_EVIDENCE_HEADER: "YOUR RECENT ACTIVITY",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTIONS_TAKEN_HEADER: "WE TOOK THESE ACTIONS",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_ACTIONS_TAKEN_HEADER_V2: "What this means for you",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_EXPLAINED_HEADER: "WHY WE TOOK THIS ACTION",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_EXPLAINED_DESCRIPTION: "Our teams use automation and manual review to enforce our rules. We found your activity violated our [Terms of Service]({tosLink}) or [Community Guidelines]({communityGuidelinesLink}).",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_WHAT_YOU_CAN_DO_HEADER: "What you can do",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_WHAT_YOU_CAN_DO_DESCRIPTION: "To keep your account in good standing, get familiar with our [Terms of Service]({tosLink}) and [Community Guidelines]({communityGuidelinesLink}).",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_APPEAL: "Did we make a mistake? [Let us know]({link})",
         SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_APPEAL_V2: "Did we make a mistake? $[Let us know](letUsKnowHook)",
         SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_HEADER: "Learn about our {classificationDescription} policy.",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_HEADER_V2: "Learn about our {classificationDescription} policy.",
         SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_SUBTEXT: "Discord's rules apply to everyone",
         SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT: "Go to account standing",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT_V2: "Go to account standing",
         SAFETY_HUB_CLASSIFICATION_DETAIL_APPEAL_STATUS: "You requested a review of this violation.",
         SAFETY_HUB_ERROR_MESSAGE: "Something went wrong...",
         SAFETY_HUB_ERROR_ACTION_BUTTON: "Retry",
@@ -16285,7 +16302,8 @@
         SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_ACTIVE: "Expires on {expirationDate}",
         SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_EXPIRED: "Expired on {expirationDate}",
         SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION: "You broke the rules for $[!!{description}!!](descriptionHook).",
-        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_GUILD: "Your server {guildName} broke the rules for $[!!{description}!!](descriptionHook).",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_V2: "You broke Discord's rules for $[!!{description}!!](descriptionHook).",
+        SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION_GUILD: "Your server {guildName} broke Discord's rules for $[!!{description}!!](descriptionHook).",
         SAFETY_HUB_VIOLATIONS_CONTAINER_NEW: "NEW",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR: "You lost access to Discord. Review your violations to understand for how long and why.",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR_CTA: "Learn More",
@@ -18081,7 +18099,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261740", ", Version Hash: ").concat("a1a101ee1aa4f5f5a23c95bc0f56584dde0c88c4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261749", ", Version Hash: ").concat("4e26bbf17e071a50a2b6f4c74576a5174379ae49")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20324,8 +20342,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261740", "261740"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261740")), _ = 0), _
+        let _ = parseInt((e = "261749", "261749"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261749")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35441,4 +35459,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.82a2f413874a1b0d873a.js.map
+//# sourceMappingURL=34546.a775e755d1deec7c3052.js.map
