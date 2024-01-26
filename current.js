@@ -13759,27 +13759,27 @@
         NOTIF_MIGRATION_INTRO_TAB: "1. What's New",
         NOTIF_MIGRATION_CUSTOMIZE_TAB: "2. Choose Servers",
         NOTIF_MIGRATION_TIPS_TAB: "3. Apply Changes",
-        NOTIF_MIGRATION_INTRO_TITLE: "Cut through the noise with new notifications",
-        NOTIF_MIGRATION_INTRO_SUB_TITLE: "Focus more on the channels you actually care about.",
+        NOTIF_MIGRATION_INTRO_TITLE: "Discord notifications just got better!",
+        NOTIF_MIGRATION_INTRO_SUB_TITLE: "We added a new setting to cut through the noise and stay focused on what's important.",
         NOTIF_MIGRATION_INTRO_CHANNEL_1: "announcements",
         NOTIF_MIGRATION_INTRO_CHANNEL_2: "general",
         NOTIF_MIGRATION_INTRO_CHANNEL_3: "random",
         NOTIF_MIGRATION_INTRO_CHANNEL_4: "introductions",
-        NOTIF_MIGRATION_INTRO_CHANNEL_5: "events",
+        NOTIF_MIGRATION_INTRO_CHANNEL_5: "mods-only",
+        NOTIF_MIGRATION_INTRO_CHANNEL_6: "jokes",
+        NOTIF_MIGRATION_INTRO_CHANNEL_7: "chatter",
         NOTIF_MIGRATION_INTRO_BEFORE: "Before",
-        NOTIF_MIGRATION_INTRO_BEFORE_TITLE: "Are all your channels always unread?",
-        NOTIF_MIGRATION_INTRO_BEFORE_SUBTITLE: "Every channel is highlighted, so you often get lost in busy servers with lots of new messages.",
         NOTIF_MIGRATION_INTRO_AFTER: "After",
-        NOTIF_MIGRATION_INTRO_AFTER_TITLE: "Check just the channels that matter the most.",
-        NOTIF_MIGRATION_INTRO_AFTER_SUBTITLE: "Servers only show as unread for new messages in your important channels and mentions.",
-        NOTIF_MIGRATION_INTRO_TIP1: "A server will show as unread when the channels you care about are active.",
-        NOTIF_MIGRATION_INTRO_TIP3: "Choose which channels you use most to highlight so you don’t miss a message.",
-        NOTIF_MIGRATION_INTRO_TIP4: "Channels you rarely or never use won’t be highlighted, so you can ignore them.",
-        NOTIF_MIGRATION_CUSTOMIZE_TITLE: "Choose servers that will use the new setting",
-        NOTIF_MIGRATION_CUSTOMIZE_SUB_TITLE: "We’ll adjust your notification settings based on what channels you use the most.",
-        NOTIF_MIGRATION_CUSTOMIZE_SECTION1_TITLE: "Recommended Servers",
-        NOTIF_MIGRATION_CUSTOMIZE_SECTION1_SUBTITLE: "We picked these servers that you might find overwhelming.",
-        NOTIF_MIGRATION_CUSTOMIZE_SECTION2_TITLE: "Additional Servers",
+        NOTIF_MIGRATION_INTRO_TIP_BEFORE1: "Every server is unread for any new message.",
+        NOTIF_MIGRATION_INTRO_TIP_BEFORE2: "Every channel is highlighted for each new message.",
+        NOTIF_MIGRATION_INTRO_TIP_AFTER1: "Server is unread only when there’s a message from channels you care about, like #announcements.",
+        NOTIF_MIGRATION_INTRO_TIP_AFTER2: "New messages from channels you don’t care about are de-emphasized.",
+        NOTIF_MIGRATION_CUSTOMIZE_TITLE: "Choose servers to update",
+        NOTIF_MIGRATION_CUSTOMIZE_SUB_TITLE: "Your notification settings will be updated based on what channels you use the most.",
+        NOTIF_MIGRATION_CUSTOMIZE_SECTION1_TITLE: "Selected",
+        NOTIF_MIGRATION_CUSTOMIZE_SECTION1_SUBTITLE: "You will only be notified for important channels and mentions.",
+        NOTIF_MIGRATION_CUSTOMIZE_SECTION2_TITLE: "Unselected",
+        NOTIF_MIGRATION_CUSTOMIZE_SECTION2_SUBTITLE: "Your settings will not be changed.",
         NOTIF_MIGRATION_BACKUP: "You can undo this later in Settings > Notifications.",
         NOTIF_MIGRATION_GUILD_TOOLTIP_BUSY: "Busy server",
         NOTIF_MIGRATION_GUILD_TOOLTIP_QUIET: "Quiet server",
@@ -13788,13 +13788,12 @@
         NOTIF_MIGRATION_GUILD_TOOLTIP_MUTED: "Muted",
         NOTIF_MIGRATION_GUILD_TOOLTIP_NOT_MUTED: "Not muted",
         NOTIF_MIGRATION_TIPS_TITLE: "{count, plural, =0 {No servers updated.} one {1 server updated!} other {{count} servers updated!}}",
-        NOTIF_MIGRATION_TIPS_SUB_TITLE: "Here are some additional tips to manage your notifications.",
-        NOTIF_MIGRATION_TIPS_1_TITLE: "Want to change the server setting later?",
-        NOTIF_MIGRATION_TIPS_1_SUBTITLE: "Click on the server name and open Notification Settings.",
-        NOTIF_MIGRATION_TIPS_2_TITLE: "Getting overwhelmed by a channel?",
-        NOTIF_MIGRATION_TIPS_2_SUBTITLE: "Right-click and set it to @Mentions.",
-        NOTIF_MIGRATION_TIPS_3_TITLE: "Need more control?",
-        NOTIF_MIGRATION_TIPS_3_SUBTITLE: "Use the custom option to set the notification and unread badge settings individually.",
+        NOTIF_MIGRATION_TIPS_SUB_TITLE: "Here’s how you can change your settings in the future.",
+        NOTIF_MIGRATION_TIPS_TAB1: "Server Notifications",
+        NOTIF_MIGRATION_TIPS_TAB2: "Channel Notifications",
+        NOTIF_MIGRATION_TIPS_TAB1_TIP2: "Choose @Mentions to get notified for only mentions and important channels.",
+        NOTIF_MIGRATION_TIPS_TAB2_TIP1: "Choose @Mentions to make a channel less overwhelming.",
+        NOTIF_MIGRATION_TIPS_TAB2_TIP2: "Choose Custom to control notification and unread settings individually.",
         NOTIF_MIGRATION_ERROR: "Looks like something went wrong! We'll try again the next time you launch Discord.",
         APP_DIRECTORY: "App Directory",
         APP_DIRECTORY_LISTING_VIEW_ALL_BUTTON: "View All",
@@ -18082,7 +18081,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261665", ", Version Hash: ").concat("686f4220ad987e73f6976bb7bb7cf1303cd9855e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261666", ", Version Hash: ").concat("a53f8ba654279cf11b6f79f7afde3a21773d3b9e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20325,8 +20324,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261665", "261665"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261665")), _ = 0), _
+        let _ = parseInt((e = "261666", "261666"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261666")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35442,4 +35441,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.bc3b54e29e9d67833372.js.map
+//# sourceMappingURL=34546.706e777c6ef60385f8c0.js.map
