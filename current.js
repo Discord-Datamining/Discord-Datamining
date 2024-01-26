@@ -16247,7 +16247,7 @@
         SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE: "Your account is $[all good!](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE_V2: "Your account is $[all good](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION: "Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).",
-        SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION_V2: "Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}). If you break the fules, it will show up here.",
+        SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION_V2: "Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}). If you break the rules, it will show up here.",
         SAFETY_HUB_ACCOUNT_STANDING_LIMITED_TITLE: "Your account is $[limited.](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_LIMITED_TITLE_V2: "Your account is $[limited](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_LIMITED_DESCRIPTION: "You broke Discord's rules and will lose feature access if you break them again.",
@@ -16263,7 +16263,7 @@
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE: "Your account is $[suspended.](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE_V2: "Your account is $[suspended](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_DESCRIPTION: "You broke Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).",
-        SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_DESCRIPTION_V2: "Due to serious policy violations, you can no longer use Discord.",
+        SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_DESCRIPTION_V2: "Due to serious policy violations, your account is permanently suspended. You can no longer use Discord.",
         SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_SHORT: "$[All good!](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_LIMITED_SHORT: "$[Limited](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_VERY_LIMITED_SHORT: "$[Very limited](hook)",
@@ -18099,7 +18099,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261759", ", Version Hash: ").concat("a655dc427da48f42821083b55f8289ff589c6797")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261761", ", Version Hash: ").concat("74946f5c992aa1d59155a81554f1c784eeaf78b7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20342,8 +20342,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261759", "261759"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261759")), _ = 0), _
+        let _ = parseInt((e = "261761", "261761"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261761")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35460,4 +35460,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.3c3f9b359ac07b0e3f9f.js.map
+//# sourceMappingURL=34546.85440697ed7672621108.js.map
