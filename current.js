@@ -491,8 +491,8 @@
         COMMAND_ACCESSIBILITY_DESC_APP_ITEM_SELECTED: "{applicationName} application selected",
         COMMAND_ACCESSIBILITY_DESC_APP_HEADER_ITEM: "Slash command application {applicationName}",
         COMMAND_ACCESSIBILITY_DESC_COMMAND_OPTION_BUTTON: "Add command argument {optionName}",
-        APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recent Commands",
-        APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Apps in this server",
+        APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER: "Recents",
+        APP_LAUNCHER_HOME_SERVER_APPS_HEADER: "Bots in this server",
         APP_LAUNCHER_COMMAND_LIST_SORT_HEADER: "Sort By",
         APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_POPULAR: "Popular",
         APP_LAUNCHER_COMMAND_LIST_SORT_OPTION_ALPHABETICAL: "Alphabetical",
@@ -18081,7 +18081,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261669", ", Version Hash: ").concat("f5d651f8d7cfa9c2f06a0fdb86f4e37294eebbd3")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("261689", ", Version Hash: ").concat("cf77944e098dd166ec2775ef8e80d96bd85ce594")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20324,8 +20324,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "261669", "261669"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261669")), _ = 0), _
+        let _ = parseInt((e = "261689", "261689"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("261689")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35441,4 +35441,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.9b97307143af0cd5e170.js.map
+//# sourceMappingURL=34546.6ae5292231928383a83e.js.map
