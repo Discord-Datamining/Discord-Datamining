@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-  ["34546"], {
+  ["90486"], {
     229353: function(e, _, E) {
       e.exports = Object.freeze({
         DISCORD: "Discord",
@@ -16584,7 +16584,9 @@
         LIST_SUMMARY_LABEL_ONE: "!!{first}!!",
         LIST_SUMMARY_LABEL_TWO: "!!{first}!! and !!{second}!!",
         LIST_SUMMARY_LABEL_THREE: "!!{first}!!, !!{second}!!, and !!{third}!!",
-        LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}"
+        LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}",
+        STOREFRONT: "App Store",
+        STOREFRONT_TITLE: "{appName} App Store"
       })
     },
     444051: function(e, _, E) {
@@ -18108,7 +18110,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262115", ", Version Hash: ").concat("a0115601652db61cbff46e8b738326c8a58b358e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262117", ", Version Hash: ").concat("5eaac12c34352e5d7c52b4090d07e9383d519fec")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20351,8 +20353,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262115", "262115"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262115")), _ = 0), _
+        let _ = parseInt((e = "262117", "262117"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262117")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -23943,107 +23945,6 @@
         }
       }
       var T = new s
-    },
-    887446: function(e, _, E) {
-      "use strict";
-      let t, o, n, r;
-      E.r(_), E.d(_, {
-        default: function() {
-          return R
-        }
-      });
-      var a = E("748820"),
-        i = E("446674"),
-        I = E("913144"),
-        s = E("724210"),
-        T = E("515631");
-      let S = {};
-
-      function N(e) {
-        return {
-          guildId: e,
-          sessionId: (0, a.v4)()
-        }
-      }
-
-      function O(e) {
-        null != n && n.guildId === e ? (o = n, n = void 0) : o = N(e)
-      }
-      class A extends i.default.Store {
-        getSavedScrollPosition(e) {
-          return S[e]
-        }
-        getHomeSessionId(e) {
-          return null != o && o.guildId === e ? o.sessionId : null != n && n.guildId === e ? n.sessionId : void 0
-        }
-        getHomeSessionSource(e) {
-          return null != r && r.guildId === e ? r.source : T.GuildHomeLandingSource.ORGANIC
-        }
-      }
-      A.displayName = "GuildHomeStore";
-      var R = new A(I.default, {
-        CONNECTION_OPEN: function() {
-          S = {}
-        },
-        GUILD_FEED_FETCH_FRESH_START: function(e) {
-          let {
-            guildId: _
-          } = e;
-          delete S[_]
-        },
-        GUILD_HOME_SET_SCROLL_POSITION: function(e) {
-          let {
-            guildId: _,
-            scrollPosition: E
-          } = e;
-          S[_] = E
-        },
-        CHANNEL_SELECT: function(e) {
-          let {
-            guildId: _,
-            channelId: E
-          } = e;
-          if (null == _ || null == E || !(0, s.isStaticChannelRoute)(E) || !(0, s.isGuildHomeChannel)(E)) {
-            t = void 0, o = void 0, n = void 0, r = void 0;
-            return
-          }
-          let a = (0, s.buildGuildStaticChannelId)(E, _);
-          if (t === a || null != o && o.guildId === _) return !1;
-          O(_), t = a, null != r && r.guildId !== _ && (r = void 0)
-        },
-        CHANNEL_PRELOAD: function(e) {
-          let {
-            guildId: _,
-            channelId: E
-          } = e;
-          if (null == _ || null == E || !(0, s.isStaticChannelRoute)(E) || !(0, s.isGuildHomeChannel)(E)) {
-            n = void 0;
-            return
-          }
-          if (null != n && n.guildId === _) return !1;
-          n = N(_)
-        },
-        GUILD_HOME_SET_SOURCE: function(e) {
-          let {
-            source: _,
-            guildId: E
-          } = e;
-          r = {
-            guildId: E,
-            source: _
-          }
-        },
-        GUILD_HOME_ENSURE_HOME_SESSION: function(e) {
-          let {
-            guildId: _
-          } = e;
-          if (null != o && o.guildId === _) return !1;
-          O(_)
-        },
-        LOGOUT: function() {
-          o = void 0, n = void 0, r = void 0
-        }
-      })
     },
     129966: function(e, _, E) {
       "use strict";
@@ -35510,4 +35411,4 @@
     }
   }
 ]);
-//# sourceMappingURL=34546.ab142c9635d9da9e49cf.js.map
+//# sourceMappingURL=90486.4e72b64b61ca9ca19a77.js.map
