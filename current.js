@@ -2473,6 +2473,7 @@
         FORM_LABEL_MOBILE_CATEGORY_MUTED: "You have muted this category",
         FORM_LABEL_MOBILE_CATEGORY_MUTED_UNTIL: "You have muted this category until $[**{endTime}**](endTimeHook)",
         MUTE_DURATION_15_MINUTES: "For 15 Minutes",
+        MUTE_DURATION_30_MINUTES: "For 30 Minutes",
         MUTE_DURATION_1_HOUR: "For 1 Hour",
         MUTE_DURATION_3_HOURS: "For 3 Hours",
         MUTE_DURATION_8_HOURS: "For 8 Hours",
@@ -2480,6 +2481,7 @@
         MUTE_DURATION_ALWAYS: "Until I turn it back on",
         MUTE_UNTIL: "Mute duration",
         MUTED_UNTIL_TIME: "Muted until {endTime}",
+        DURATION_FOREVER: "Forever",
         FORM_DESCRIPTION_MOBILE_NOTIFICATION_MUTED: "You can’t get notifications from this channel nor change settings until you unmute this channel.",
         FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ALL_MESSAGES: "You are receiving notifications from all messages in this server, but you can override it here",
         FORM_DESCRIPTION_MOBILE_GUILD_NOTIFICATION_ONLY_MENTIONS: "You are receiving notifications from only mentions in this server, but you can override it here",
@@ -9467,6 +9469,7 @@
         CUSTOM_STATUS_CLEARS_IN_HOURS: "Clears in {hours} hours",
         CUSTOM_STATUS_PLACEHOLDER: "What're you up to?",
         CUSTOM_STATUS_DURATION: "Status Duration",
+        CUSTOM_STATUS_ALSO_CLEAR_STATUS: "Also clear status?",
         SYSTEM_DM_CHANNEL_DESCRIPTION: "This thread is reserved for official Discord notifications.",
         SYSTEM_DM_CHANNEL_DESCRIPTION_SUBTEXT: "Discord will never ask you for your password or account token.",
         SYSTEM_DM_EMPTY_MESSAGE: "This is an official message from Team Discord. Please be advised that Discord will never ask you for your password or account token.",
@@ -16586,7 +16589,16 @@
         LIST_SUMMARY_LABEL_THREE: "!!{first}!!, !!{second}!!, and !!{third}!!",
         LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}",
         STOREFRONT: "App Store",
-        STOREFRONT_TITLE: "{appName} App Store"
+        STOREFRONT_TITLE: "{appName} App Store",
+        QUIET_MODE_DISABLED: "Quiet Mode Disabled",
+        QUIET_MODE_ENABLED: "Quiet Mode Enabled",
+        QUIET_MODE_DND: "Quiet Mode (DND) Enabled",
+        QUIET_MODE_WHILE_DND_UPSELL_TITLE: "Switch to Online?",
+        QUIET_MODE_WHILE_DND_UPSELL_BODY: "With Quiet Mode, Discord will no longer show in-app, desktop notifications or play message sounds. Would you like to switch to Online?",
+        QUIET_MODE_SETTINGS_LABEL: "Quiet Mode (BETA)",
+        QUIET_MODE_SETTINGS_DESCRIPTION: 'Discord will not show in-app, desktop notifications or play message sounds. Like "Do Not Disturb".',
+        QUIET_MODE_DISABLED_BY: "This is disabled by Quiet Mode",
+        QUIET_MODE_HABITUAL_DND_NOTICE: "You use Do Not Disturb a lot. Would you like to enable Quiet Mode instead?"
       })
     },
     444051: function(e, _, E) {
@@ -18110,7 +18122,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262250", ", Version Hash: ").concat("215224fb4d9edfae5f5747b9b90444fcea8fc47c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262266", ", Version Hash: ").concat("9499ccf19063bb985e6ec105510132200f179335")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20353,8 +20365,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262250", "262250"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262250")), _ = 0), _
+        let _ = parseInt((e = "262266", "262266"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262266")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -32822,6 +32834,9 @@
               case 4:
                 o.enableBurstReactionNotifications = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.enableBurstReactionNotifications);
                 break;
+              case 5:
+                o.quietMode = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.quietMode);
+                break;
               default:
                 let n = E.readUnknownField;
                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -32832,7 +32847,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.showInAppNotifications && h.BoolValue.internalBinaryWrite(e.showInAppNotifications, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.notifyFriendsOnGoLive && h.BoolValue.internalBinaryWrite(e.notifyFriendsOnGoLive, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), "0" !== e.notificationCenterAckedBeforeId && _.tag(3, M.WireType.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && h.BoolValue.internalBinaryWrite(e.enableBurstReactionNotifications, _.tag(4, M.WireType.LengthDelimited).fork(), E).join();
+          e.showInAppNotifications && h.BoolValue.internalBinaryWrite(e.showInAppNotifications, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.notifyFriendsOnGoLive && h.BoolValue.internalBinaryWrite(e.notifyFriendsOnGoLive, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), "0" !== e.notificationCenterAckedBeforeId && _.tag(3, M.WireType.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && h.BoolValue.internalBinaryWrite(e.enableBurstReactionNotifications, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.quietMode && h.BoolValue.internalBinaryWrite(e.quietMode, _.tag(5, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -32855,6 +32870,11 @@
           }, {
             no: 4,
             name: "enable_burst_reaction_notifications",
+            kind: "message",
+            T: () => h.BoolValue
+          }, {
+            no: 5,
+            name: "quiet_mode",
             kind: "message",
             T: () => h.BoolValue
           }])
@@ -33191,7 +33211,9 @@
       let er = new en;
       class ea extends M.MessageType {
         create(e) {
-          let _ = {};
+          let _ = {
+            statusExpiresAtMs: "0"
+          };
           return globalThis.Object.defineProperty(_, M.MESSAGE_TYPE, {
             enumerable: !1,
             value: this
@@ -33212,6 +33234,9 @@
               case 3:
                 o.showCurrentGame = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.showCurrentGame);
                 break;
+              case 4:
+                o.statusExpiresAtMs = e.fixed64().toString();
+                break;
               default:
                 let n = E.readUnknownField;
                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -33222,7 +33247,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.status && h.StringValue.internalBinaryWrite(e.status, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.customStatus && es.internalBinaryWrite(e.customStatus, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.showCurrentGame && h.BoolValue.internalBinaryWrite(e.showCurrentGame, _.tag(3, M.WireType.LengthDelimited).fork(), E).join();
+          e.status && h.StringValue.internalBinaryWrite(e.status, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.customStatus && es.internalBinaryWrite(e.customStatus, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.showCurrentGame && h.BoolValue.internalBinaryWrite(e.showCurrentGame, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), "0" !== e.statusExpiresAtMs && _.tag(4, M.WireType.Bit64).fixed64(e.statusExpiresAtMs);
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -33242,6 +33267,11 @@
             name: "show_current_game",
             kind: "message",
             T: () => h.BoolValue
+          }, {
+            no: 4,
+            name: "status_expires_at_ms",
+            kind: "scalar",
+            T: 6
           }])
         }
       }
@@ -35411,4 +35441,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.c955c807a16d22f9d6c8.js.map
+//# sourceMappingURL=90486.10df310473245c25a389.js.map
