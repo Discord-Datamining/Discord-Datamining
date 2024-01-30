@@ -13371,6 +13371,14 @@
         MEMBER_SAFETY_GUILD_JOINED_AT_ASC: "Member Since (Oldest first)",
         MEMBER_SAFETY_USER_JOINED_AT_DESC: "Joined Discord (Newest first)",
         MEMBER_SAFETY_USER_JOINED_AT_ASC: "Joined Discord (Oldest first)",
+        GUILD_MEMBER_MOD_VIEW_PHONE_VERIFIED: "Phone Verified",
+        GUILD_MEMBER_MOD_VIEW_AGREE_TO_RULES: "Agreed to Rules",
+        GUILD_MEMBER_MOD_VIEW_INVITE_LINK: "Invite Link",
+        GUILD_MEMBER_MOD_VIEW_INVITE_LINK_TOOLTIP: "Invite link used to join server",
+        GUILD_MEMBER_MOD_VIEW_INVITE_LINK_LABEL: "Join Method",
+        GUILD_MEMBER_MOD_VIEW_DISCORD_JOIN_DATE: "Discord Join Date",
+        GUILD_MEMBER_MOD_VIEW_GUILD_JOIN_DATE: "Server Join Date",
+        GUILD_MEMBER_MOD_VIEW_GUILD_MESSAGE_ACTIVITY_TITLE: "Server Activity",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
         GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
@@ -18128,7 +18136,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262313", ", Version Hash: ").concat("207206a67d904ff632c4d3b04e07dee2311a2650")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262315", ", Version Hash: ").concat("23555ca26a9b9f56d895cad05e4f4f33d360fb4c")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20371,8 +20379,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262313", "262313"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262313")), _ = 0), _
+        let _ = parseInt((e = "262315", "262315"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262315")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35447,4 +35455,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.6dc2a72c46abfa0fa79d.js.map
+//# sourceMappingURL=90486.0e9b74fc6e2f4eef9744.js.map
