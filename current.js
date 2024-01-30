@@ -3988,6 +3988,7 @@
         STATUS_INVISIBLE: "Invisible",
         STATUS_DND_HELP: "You will not receive any desktop notifications.",
         STATUS_INVISIBLE_HELPER: "You will not appear online, but will have full access to all of Discord.",
+        STATUS_UNTIL: "until {endTime}",
         STATUS_STREAMING: "Streaming",
         STATUS_TAB_A11Y_ACTION: "Set your status",
         PINNED_MESSAGES: "Pinned Messages",
@@ -18153,7 +18154,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262420", ", Version Hash: ").concat("e1eb81ee1fcd36a3fc6f53b422216ccefa0b96ed")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262424", ", Version Hash: ").concat("7aa6f2dfd75f3d7f10a3fea68d84582768c6996c")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20396,8 +20397,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262420", "262420"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262420")), _ = 0), _
+        let _ = parseInt((e = "262424", "262424"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262424")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35658,4 +35659,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.317682d88cdb70672359.js.map
+//# sourceMappingURL=90486.ed497bb3787fa0674a88.js.map
