@@ -7979,6 +7979,7 @@
         COUNTRY_CODES: "Country Codes",
         COUNTRY_NO_RESULTS: "No countries found.",
         EMAIL: "Email",
+        YOUR_EMAIL: "Your Email",
         USE_EMAIL: "Use Email",
         PHONE: "Phone",
         USE_PHONE: "Use Phone",
@@ -18150,7 +18151,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262316", ", Version Hash: ").concat("a5eea21f92f675da5226d920d1ddfb5972a3e4b7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262327", ", Version Hash: ").concat("1768f702f2d1a8b60f382b8ad7903742229e51c7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20393,8 +20394,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262316", "262316"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262316")), _ = 0), _
+        let _ = parseInt((e = "262327", "262327"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262327")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35647,4 +35648,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.3506278ba38b87a7827f.js.map
+//# sourceMappingURL=90486.d847f1b441a6ce43b3f4.js.map
