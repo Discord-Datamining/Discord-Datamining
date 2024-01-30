@@ -930,6 +930,7 @@
         POMELO_ADD_FRIEND_DESCRIPTION: "You can add friends with their Discord username.",
         POMELO_ADD_FRIEND_PLACEHOLDER: "Enter a username",
         POMELO_ACTION_NEEDED: "**Action needed**: Update your username.",
+        POMELO_ACTION_NEEDED_FORCE: "**Action needed**: Update your username. Starting {date}, Discord will assign unique usernames to users who have not updated their usernames.",
         POMELO_ACTION_LABEL: "Update Your Username",
         POMELO_UPDATE_DISABLED_MESSAGE: "You need to verify your email or add a phone number to change your username.",
         POMELO_EXISTING_FLOW_PROMPT_TITLE: "Update your username, {n}",
@@ -987,6 +988,8 @@
         UU_REGISTER_SUGGESTION: "Here is a suggestion: [!!{suggestion}!!](nameOnClick)",
         UU_REGISTER_DISPLAY_NAME_HINT_2: "This is how others see you. You can use special characters and emoji.",
         UU_REGISTER_UNCLAIMED_HINT: "Your username is **!!{name}!!**, finish signing up so you can choose your own.",
+        UU_FORCE_MIGRATION_EXISTING_FLOW_REMINDER_BODY_1: "Update your username by {date}",
+        UU_FORCE_MIGRATION_EXISTING_FLOW_REMINDER_BODY_2: "Starting {date}, Discord will begin assigning unique usernames to users who have not updated their usernames.",
         ACTIVITIES_SHARE_LOGS: "Share Activity Logs",
         DEVELOPER_APPLICATION_TEST_MODE_ORIGIN_LABEL: "Select URL Origin Type (Embedded Apps Only)",
         DEVELOPER_APPLICATION_TEST_MODE_PORT_NUMBER_LABEL: "Localhost Port Number",
@@ -13364,6 +13367,10 @@
         MEMBER_SAFETY_JOINED_DATE_LABEL: "Member Since Date Options",
         MEMBER_SAFETY_ACCOUNT_AGE_LABEL: "Discord Join Date Options",
         MEMBER_SAFETY_JOIN_METHOD_LABEL: "Server Join Method Options",
+        MEMBER_SAFETY_GUILD_JOINED_AT_DESC: "Member Since (Newest first)",
+        MEMBER_SAFETY_GUILD_JOINED_AT_ASC: "Member Since (Oldest first)",
+        MEMBER_SAFETY_USER_JOINED_AT_DESC: "Joined Discord (Newest first)",
+        MEMBER_SAFETY_USER_JOINED_AT_ASC: "Joined Discord (Oldest first)",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
         GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
@@ -18121,7 +18128,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262300", ", Version Hash: ").concat("57fa977f29d5b15f571946a58c910790bc3dd544")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262305", ", Version Hash: ").concat("bf456d5f18b57f17a368a5e5b53a74f572b50348")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20364,8 +20371,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262300", "262300"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262300")), _ = 0), _
+        let _ = parseInt((e = "262305", "262305"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262305")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35440,4 +35447,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.b380055602645100a36d.js.map
+//# sourceMappingURL=90486.1e97c606c970959b714d.js.map
