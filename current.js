@@ -16623,15 +16623,15 @@
         LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}",
         STOREFRONT: "App Store",
         STOREFRONT_TITLE: "{appName} App Store",
-        QUIET_MODE_DISABLED: "Quiet Mode Disabled",
-        QUIET_MODE_ENABLED: "Quiet Mode Enabled",
-        QUIET_MODE_DND: "Quiet Mode (DND) Enabled",
+        QUIET_MODE_DISABLED: "Focus Mode Disabled",
+        QUIET_MODE_ENABLED: "Focus Mode Enabled",
+        QUIET_MODE_DND: "Focus Mode (DND) Enabled",
         QUIET_MODE_WHILE_DND_UPSELL_TITLE: "Switch to Online?",
-        QUIET_MODE_WHILE_DND_UPSELL_BODY: "With Quiet Mode, Discord will no longer show in-app, desktop notifications or play message sounds. Would you like to switch to Online?",
-        QUIET_MODE_SETTINGS_LABEL: "Quiet Mode (BETA)",
-        QUIET_MODE_SETTINGS_DESCRIPTION: 'Discord will not show in-app, desktop notifications or play message sounds. Like "Do Not Disturb".',
-        QUIET_MODE_DISABLED_BY: "This is disabled by Quiet Mode",
-        QUIET_MODE_HABITUAL_DND_NOTICE: "You use Do Not Disturb a lot. Would you like to enable Quiet Mode instead?"
+        QUIET_MODE_WHILE_DND_UPSELL_BODY: "With Focus Mode, Discord will no longer show in-app, desktop notifications or play message sounds, just like with DND. Would you like to switch to Online?",
+        QUIET_MODE_SETTINGS_LABEL: "Focus Mode (BETA)",
+        QUIET_MODE_SETTINGS_DESCRIPTION: "Discord will not show in-app, desktop notifications or play message sounds.",
+        QUIET_MODE_DISABLED_BY: "This is disabled by Focus Mode",
+        QUIET_MODE_HABITUAL_DND_NOTICE: "You use Do Not Disturb a lot. Would you like to enable Focus Mode instead?"
       })
     },
     444051: function(e, _, E) {
@@ -18155,7 +18155,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262542", ", Version Hash: ").concat("c4bf55d2682a80f809e56dd3be9b2aa5c394866c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262547", ", Version Hash: ").concat("377fe5bbf78c5d57e02f1805a9d19f70313e1719")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20398,8 +20398,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262542", "262542"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262542")), _ = 0), _
+        let _ = parseInt((e = "262547", "262547"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262547")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35660,4 +35660,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.104c20a6c736ffcecea8.js.map
+//# sourceMappingURL=90486.8c644d138a31f7ee4dbc.js.map
