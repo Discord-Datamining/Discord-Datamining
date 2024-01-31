@@ -18167,7 +18167,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262669", ", Version Hash: ").concat("ab3d59fd3b763a94bfe7977ea8a5a1dd8c9f7deb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262671", ", Version Hash: ").concat("a8fd2df3f117f24970196fdb14a9cdbafd4cc459")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20410,8 +20410,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262669", "262669"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262669")), _ = 0), _
+        let _ = parseInt((e = "262671", "262671"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262671")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35396,6 +35396,9 @@
           }, this.log = function(e) {
             for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
             (0, o.checkLogForPII)(e, ...t), n(_.name, "log", e, ...t)
+          }, this.verboseDangerously = function(e) {
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
+            n(_.name, "debug", e, ...t)
           }, this.verbose = function(e) {
             for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
             (0, o.checkLogForPII)(e, ...t), n(_.name, "debug", e, ...t)
@@ -35688,4 +35691,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.206d4c64e0e70b9389d0.js.map
+//# sourceMappingURL=90486.dea4a9b070f93dec1fd1.js.map
