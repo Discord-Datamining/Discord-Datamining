@@ -18169,7 +18169,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262855", ", Version Hash: ").concat("e9e8bc23067b8dc81ad7ff7db1592668412546cd")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262857", ", Version Hash: ").concat("a8fa05c5e64b8ebd1518ef479c259004558d688e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20412,8 +20412,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262855", "262855"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262855")), _ = 0), _
+        let _ = parseInt((e = "262857", "262857"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262857")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24404,7 +24404,7 @@
         N = E("162771"),
         O = E("101125"),
         A = E("800762"),
-        R = E("785814"),
+        R = E("774539"),
         l = E("49111");
 
       function L(e) {
@@ -24414,19 +24414,18 @@
         await r.default.fetchApplications(e, !1)
       }
       async function C(e) {
-        var _;
         if (null == e) return;
-        let E = I.default.getChannel(e);
-        if (null == E || !(0, R.isVoiceChannelGameActivityEnabled)(null !== (_ = E.guild_id) && void 0 !== _ ? _ : "", "running_games_change", !1)) return;
-        let t = O.default.getActivities();
-        if (0 === t.length) return;
-        let o = L([...t]);
-        await u([...o]);
-        let r = a.default.getApplication(o[0]);
-        null != r && n.default.trackWithMetadata(l.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
+        let _ = I.default.getChannel(e);
+        if (null == _ || !(0, R.isVoiceUserGameActivityEnabled)("running_games_change", !1)) return;
+        let E = O.default.getActivities();
+        if (0 === E.length) return;
+        let t = L([...E]);
+        await u([...t]);
+        let o = a.default.getApplication(t[0]);
+        null != o && n.default.trackWithMetadata(l.AnalyticEvents.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
           channel_id: e,
-          guild_id: E.guild_id,
-          game_name: r.name,
+          guild_id: _.guild_id,
+          game_name: o.name,
           user_id: i.default.getId()
         })
       }
@@ -24440,14 +24439,13 @@
             updates: _
           } = e, E = new Set;
           _.forEach(e => {
-            var _, t;
             let {
-              user: o,
-              activities: n
-            } = e, r = A.default.getVoiceStateForUser(o.id);
-            if (null == r || !(0, R.isVoiceChannelGameActivityEnabled)(null !== (t = null === (_ = I.default.getChannel(r.channelId)) || void 0 === _ ? void 0 : _.guild_id) && void 0 !== t ? t : "", "presence_update", !1)) return;
-            let a = L([...n]);
-            E = new Set([...E, ...a])
+              user: _,
+              activities: t
+            } = e, o = A.default.getVoiceStateForUser(_.id);
+            if (null == o || !(0, R.isVoiceUserGameActivityEnabled)("presence_update", !1)) return;
+            let n = L([...t]);
+            E = new Set([...E, ...n])
           }), u([...E])
         }
         handleVoiceStateUpdates(e) {
@@ -24459,7 +24457,7 @@
               userId: _,
               guildId: t
             } = e;
-            if (!(0, R.isVoiceChannelGameActivityEnabled)(null != t ? t : "", "voice_state_update", !1)) return;
+            if (!(0, R.isVoiceUserGameActivityEnabled)("voice_state_update", !1)) return;
             let o = T.default.getActivities(_, t),
               n = L([...o]);
             E = new Set([...E, ...n])
@@ -35693,4 +35691,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.094fd5e40ff14f70c85c.js.map
+//# sourceMappingURL=90486.c5ae98aa6998a882acdd.js.map
