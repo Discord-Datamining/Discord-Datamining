@@ -10184,6 +10184,8 @@
         VOICE_PANEL_DEAFEN_SUBTITLE: "Disables all sound",
         VOICE_PANEL_ONLY_SHOW_VIDEO_TITLE: "Only Show Videos",
         VOICE_PANEL_ONLY_SHOW_VIDEO_SUBTITLE: "We won't show non-video participants",
+        VOICE_PANEL_CHANGE_BACKGROUND_TITLE: "Change Background",
+        VOICE_PANEL_CHANGE_BACKGROUND_SUBTITLE: "Set background for everyone",
         VOICE_PANEL_LOAD_MORE: "Load more",
         VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_TITLE: "You don’t have permission to join this Voice Channel.",
         VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_SUBTITLE: "This channel is only for selected members and roles.",
@@ -18167,7 +18169,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262807", ", Version Hash: ").concat("810da2a9787d7886e3e57c7c3ab2e9df04e30c27")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262817", ", Version Hash: ").concat("fcc5e552b668fa145cddbbb61817f83b5b0bcbd4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20410,8 +20412,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262807", "262807"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262807")), _ = 0), _
+        let _ = parseInt((e = "262817", "262817"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262817")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35691,4 +35693,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.0e18f4f7274346d6724a.js.map
+//# sourceMappingURL=90486.2c85d4bf958f49b09d16.js.map
