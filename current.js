@@ -18169,7 +18169,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262965", ", Version Hash: ").concat("3de82aac1775a19c1ec9367cfe7c0ea9a35e86a2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("262967", ", Version Hash: ").concat("f39b07d73a64b7b7f60957de6a36886ea93d1a46")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20412,8 +20412,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "262965", "262965"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262965")), _ = 0), _
+        let _ = parseInt((e = "262967", "262967"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("262967")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21140,7 +21140,7 @@
           } = e;
           if (_ === a.CodedLinkType.INVITE);
           else if (_ === a.CodedLinkType.TEMPLATE) null == r.default.getGuildTemplate(E) && n.default.resolveGuildTemplate(E);
-          else if (_ === a.CodedLinkType.BUILD_OVERRIDE);
+          else if (_ === a.CodedLinkType.BUILD_OVERRIDE || _ === a.CodedLinkType.MANUAL_BUILD_OVERRIDE);
           else if (_ === a.CodedLinkType.EVENT);
           else if (_ === a.CodedLinkType.CHANNEL_LINK);
           else if (_ === a.CodedLinkType.APP_DIRECTORY_PROFILE);
@@ -35691,4 +35691,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.59661c68fb66c898ec81.js.map
+//# sourceMappingURL=90486.bc86ac4c405d2d044fc0.js.map
