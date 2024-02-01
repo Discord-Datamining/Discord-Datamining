@@ -136,7 +136,6 @@
         DEAFEN: "Deafen",
         UNDEAFEN: "Undeafen",
         SEARCH: "Search",
-        SEARCH_EXPERIMENTAL: "Search (Experimental)",
         AUTOCOMPLETE_NO_RESULTS_HEADER: "Nope!",
         AUTOCOMPLETE_NO_RESULTS_BODY: "Did you make a typo?",
         AUTOCOMPLETE_STICKERS_QUERY_MATCH: "Similar to: !!{queryMatch}!!",
@@ -18170,7 +18169,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263106", ", Version Hash: ").concat("4a07a82066076611151ef503b4c45e17324d4e56")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263108", ", Version Hash: ").concat("fc4977daf862d93b4059bf403bdd934e124456f4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20413,8 +20412,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263106", "263106"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263106")), _ = 0), _
+        let _ = parseInt((e = "263108", "263108"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263108")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35700,4 +35699,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.5e211fc65ad9a44e2e07.js.map
+//# sourceMappingURL=90486.448eb571116235f50f91.js.map
