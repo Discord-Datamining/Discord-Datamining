@@ -18169,7 +18169,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263111", ", Version Hash: ").concat("0471efff9de565fc61f970225e8a6c351f3a1494")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263115", ", Version Hash: ").concat("4c2b898557d5df8c97c01798d5647e3c71d492d6")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20412,8 +20412,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263111", "263111"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263111")), _ = 0), _
+        let _ = parseInt((e = "263115", "263115"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263115")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24540,7 +24540,8 @@
               channelId: _,
               guildId: E
             } = e, {
-              enableHangStatus: t
+              enableHangStatus: t,
+              setDefaultStatus: I
             } = r.HangStatusExperiment.getCurrentConfig({
               guildId: null != E ? E : "",
               location: "HangStatusManager"
@@ -24553,26 +24554,27 @@
             }
             if (!t || _ === this.previousVoiceChannelId) return;
             if (this.previousVoiceChannelId = _, null == E || null == _) return;
-            let I = o.default.getChannel(_);
-            if (null == I || I.type !== i.ChannelTypes.GUILD_VOICE) return;
-            let s = a.default.getCurrentHangStatus();
-            if (null != s) return;
-            let T = a.default.getCurrentDefaultStatus();
-            if ((null == T ? void 0 : T.expiresAt) != null && (null == T ? void 0 : T.expiresAt) >= Date.now()) {
-              if (T.status === i.HangStatusTypes.CUSTOM && null != T.customHangStatus) {
+            let s = o.default.getChannel(_);
+            if (null == s || s.type !== i.ChannelTypes.GUILD_VOICE) return;
+            let T = a.default.getCurrentHangStatus();
+            if (null != T) return;
+            let S = a.default.getCurrentDefaultStatus();
+            if ((null == S ? void 0 : S.expiresAt) != null && (null == S ? void 0 : S.expiresAt) >= Date.now()) {
+              if (S.status === i.HangStatusTypes.CUSTOM && null != S.customHangStatus) {
                 let {
                   status: e,
                   emoji: _
-                } = T.customHangStatus;
+                } = S.customHangStatus;
                 (0, n.updateCustomHangStatus)(e, _);
                 return
               }
-              if (null == T.status) return;
+              if (null == S.status) return;
               else {
-                (0, n.updateHangStatus)(T.status);
+                (0, n.updateHangStatus)(S.status);
                 return
               }
             }
+            I && (0, n.updateHangStatus)(i.HangStatusTypes.CHILLING)
           }, this.handleDisconnectFromVoiceChannel = () => {
             (0, n.clearHangStatus)()
           }, this.handleLogout = () => {
@@ -35699,4 +35701,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.af6c638848c876284ef5.js.map
+//# sourceMappingURL=90486.0763fbf99fa6607a537e.js.map
