@@ -18179,7 +18179,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263272", ", Version Hash: ").concat("c54a3ac83c2540912c73a6f41babd980556d4911")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263282", ", Version Hash: ").concat("b8b7ec8606669421da52bdbf09d9276a8a860e3d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20422,8 +20422,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263272", "263272"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263272")), _ = 0), _
+        let _ = parseInt((e = "263282", "263282"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263282")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29194,7 +29194,7 @@
           return new Promise((_, E) => {
             this._waitQueue.push(() => {
               try {
-                this._dispatchWithDevtools(e), _()
+                null == this.functionCache[e.type] && (this.functionCache[e.type] = e => this._dispatchWithDevtools(e), R(this.functionCache[e.type], "dispatch_" + e.type)), this.functionCache[e.type](e), _()
               } catch (e) {
                 E(e)
               }
@@ -29284,7 +29284,7 @@
           this._actionHandlers.addDependencies(e, _)
         }
         constructor(e = 0, _, E) {
-          this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._sentryUtils = void 0, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
+          this._interceptors = [], this._subscriptions = {}, this._waitQueue = [], this._processingWaitQueue = !1, this._currentDispatchActionType = null, this._actionHandlers = new A, this._sentryUtils = void 0, this.functionCache = {}, this._defaultBand = e, this._sentryUtils = E, null != _ ? this.actionLogger = _ : this.actionLogger = new T.ActionLogger, this.actionLogger.on("trace", (e, _, E) => {
             r.default.isTracing && E >= 10 && r.default.mark("\uD83E\uDDA5", _, E)
           })
         }
@@ -29296,10 +29296,17 @@
         }
         register(e, _, E, t) {
           let o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : this.createToken();
-          return n(t >= 0 && Number.isInteger(t), "band must be a non-negative integer."), this._dependencyGraph.addNode(o, {
+          n(t >= 0 && Number.isInteger(t), "band must be a non-negative integer.");
+          let r = {};
+          for (let E in _) {
+            let t = _[E],
+              o = e => t(e);
+            R(o, "".concat(e, "_").concat(E)), r[E] = o
+          }
+          return this._dependencyGraph.addNode(o, {
             name: e,
             band: t,
-            actionHandler: _,
+            actionHandler: r,
             storeDidChange: E
           }), this._addToBand(o, t), this._invalidateCaches(), o
         }
@@ -29359,6 +29366,12 @@
         constructor() {
           this._orderedActionHandlers = {}, this._orderedCallbackTokens = null, this._lastID = 1, this._dependencyGraph = new t.DepGraph
         }
+      }
+
+      function R(e, _) {
+        Object.defineProperty(e, "name", {
+          value: _
+        })
       }
     },
     805833: function(e, _, E) {
@@ -35707,4 +35720,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.f43de4dc320df4de55ff.js.map
+//# sourceMappingURL=90486.add287abd4ebac0d2552.js.map
