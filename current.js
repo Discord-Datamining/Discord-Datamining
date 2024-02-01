@@ -16613,6 +16613,8 @@
         QUESTS_REWARD_CODE_DONE: "Done",
         QUESTS_REWARD_CODE_GET_CODE: "Get code",
         QUESTS_REWARD_CODE_TRY_AGAIN: "Try again",
+        QUESTS_REWARD_CODE_UNCLAIMED_REWARD_TILE_SUBHEADER: "Claim this",
+        QUESTS_REWARD_CODE_CLAIMED_REWARD_TILE_SUBHEADER: "You claimed this",
         QUESTS_REWARD_CODE_PLATFORM_XBOX: "Xbox",
         QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION: "PlayStation",
         QUESTS_REWARD_CODE_PLATFORM_SWITCH: "Switch",
@@ -18179,7 +18181,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263282", ", Version Hash: ").concat("b8b7ec8606669421da52bdbf09d9276a8a860e3d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263283", ", Version Hash: ").concat("0b5b97bccbaa8324d8f557603fc47c17a2378964")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20422,8 +20424,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263282", "263282"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263282")), _ = 0), _
+        let _ = parseInt((e = "263283", "263283"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263283")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35720,4 +35722,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.add287abd4ebac0d2552.js.map
+//# sourceMappingURL=90486.2c9514d5349a3531437d.js.map
