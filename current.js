@@ -1181,9 +1181,6 @@
         COMMUNITY_POLICY_HELP: "By setting your server as a Community Server, you agree that your server complies with our [Community Server Guidelines]({helpdeskArticle}). Remember, all activity on Discord must abide by our [Community Guidelines](https://discord.com/guidelines).",
         ENABLE_COMMUNITY_BUTTON_TEXT: "Finish Setup",
         TOOLTIP_COMMUNITY_FEATURE_DISABLED: "This option is not available for Community Servers.",
-        GROWING_FRIEND_GUILD_PERMANENT_INVITE_LINKS_UPSELL_HEADER: "Unlock permanent invite links!",
-        GROWING_FRIEND_GUILD_PERMANENT_INVITE_LINKS_UPSELL_DESCRIPTION: "Convert to a Community Server to unlock permanent invite links and other powerful tools to help you grow.",
-        GROWING_FRIEND_GUILD_PERMANENT_INVITE_LINKS_ALT_TEXT: "Three friends on a floating island in the sky greet each other.",
         GUILD_SETTINGS_LABEL_AUDIT_LOG: "Audit Log",
         GUILD_SETTINGS_AUDIT_LOG_LOAD_MORE: "Load More",
         GUILD_SETTINGS_LABEL_AUDIT_LOG_EMPTY_TITLE: "No Logs Yet",
@@ -18201,7 +18198,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263579", ", Version Hash: ").concat("8ee183c37f47f251c69137bda031c8a0ca205b13")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263580", ", Version Hash: ").concat("ead21027cea28286f2f0b45658e56a05279e1509")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20444,8 +20441,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263579", "263579"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263579")), _ = 0), _
+        let _ = parseInt((e = "263580", "263580"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263580")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35796,4 +35793,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.ed99e8adef86decf4bf2.js.map
+//# sourceMappingURL=90486.95bd4ba6c554a66325b5.js.map
