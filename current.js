@@ -2813,6 +2813,7 @@
         SENSITIVE_CONTENT: "Content warning: images or videos may contain nudity, violence, or other sensitive content",
         IMAGE_ALT: "Alt",
         SUPPRESS_ALL_EMBEDS: "Remove all embeds",
+        APP_TAG: "APP",
         BOT_TAG_BOT: "BOT",
         BOT_TAG_SERVER: "SERVER",
         REPORT_MESSAGE_MENU_OPTION: "Report Message",
@@ -18200,7 +18201,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263658", ", Version Hash: ").concat("b100c091bf6811193d63193016df9bc678d8aace")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263660", ", Version Hash: ").concat("80d1e9a3cde0a9b0c898443e3e0bc8ca8c6e7bf5")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20443,8 +20444,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263658", "263658"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263658")), _ = 0), _
+        let _ = parseInt((e = "263660", "263660"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263660")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35795,4 +35796,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.85a069e93f1a20e522d7.js.map
+//# sourceMappingURL=90486.d690b3e19b278f00e021.js.map
