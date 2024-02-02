@@ -9743,6 +9743,7 @@
         AUDIO_DEVICES_INVALID: "INVALID",
         AUDIO_DEVICES_TOGGLE_UNAVAILABLE: "Unavailable during video call.",
         AUDIO_DEVICES_NONE_AVAILABLE: "No devices available",
+        AUDIO_DEVICES_BLUETOOTH_LE_HEADSET: "Bluetooth LE",
         WORKING: "Working...",
         GUILD_TEMPLATE_RESOLVING_TITLE: "Loading server template",
         GUILD_TEMPLATE_INVALID_TITLE: "Invalid server template",
@@ -18201,7 +18202,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263661", ", Version Hash: ").concat("9aa46d9c019218340f6eda4767aae17a855d8c73")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263669", ", Version Hash: ").concat("a8ec839f8a88cece64c94730bd0762ed512537dc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20444,8 +20445,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263661", "263661"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263661")), _ = 0), _
+        let _ = parseInt((e = "263669", "263669"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263669")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35796,4 +35797,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.e323ef9bc2a67e0dba93.js.map
+//# sourceMappingURL=90486.0ca69ccb8eebc3b7036b.js.map
