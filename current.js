@@ -18195,7 +18195,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263357", ", Version Hash: ").concat("a7d45c5000e174ad38c9e7b71b85608c721b65e8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263371", ", Version Hash: ").concat("41d8520a837ebfd9f26d711a8f1a85b43cd497fb")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20438,8 +20438,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263357", "263357"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263357")), _ = 0), _
+        let _ = parseInt((e = "263371", "263371"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263371")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25925,36 +25925,78 @@
         }
       }
     },
+    166604: function(e, _, E) {
+      "use strict";
+      var t, o;
+      E.r(_), E.d(_, {
+        QuestsExperimentLocations: function() {
+          return t
+        }
+      }), (o = t || (t = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", o.QUESTS_MANAGER = "quests_manager", o.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory"
+    },
     374023: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
-        default: function() {
-          return n
+        getIsEligibleForQuests: function() {
+          return r
+        },
+        useIsEligibleForQuests: function() {
+          return a
         }
       });
-      var t = E("862205");
-      let o = (0, t.createExperiment)({
-        id: "2023-12_quests",
-        kind: "user",
-        label: "Quests",
-        defaultConfig: {
-          enabled: !1
-        },
-        treatments: [{
-          id: 0,
-          label: "Control",
-          config: {
+      var t = E("619935"),
+        o = E("862205");
+      let n = (0, o.createExperiment)({
+          id: "2023-12_quests",
+          kind: "user",
+          label: "Quests",
+          defaultConfig: {
             enabled: !1
-          }
-        }, {
-          id: 1,
-          label: "Quests enabled",
-          config: {
-            enabled: !0
-          }
-        }]
-      });
-      var n = o
+          },
+          treatments: [{
+            id: 0,
+            label: "Control",
+            config: {
+              enabled: !1
+            }
+          }, {
+            id: 1,
+            label: "Quests enabled",
+            config: {
+              enabled: !0
+            }
+          }]
+        }),
+        r = e => {
+          let {
+            location: _,
+            autoTrackExposure: E
+          } = e, o = n.getCurrentConfig({
+            location: _
+          }, {
+            autoTrackExposure: E
+          }), r = t.default.getCurrentConfig({
+            location: _
+          }, {
+            autoTrackExposure: E
+          });
+          return o.enabled && !r.paymentsBlocked
+        },
+        a = e => {
+          let {
+            location: _,
+            autoTrackExposure: E
+          } = e, o = n.useExperiment({
+            location: _
+          }, {
+            autoTrackExposure: E
+          }), r = t.default.useExperiment({
+            location: _
+          }, {
+            autoTrackExposure: E
+          });
+          return o.enabled && !r.paymentsBlocked
+        }
     },
     2973: function(e, _, E) {
       "use strict";
@@ -26277,7 +26319,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return l
+          return L
         }
       }), E("222007");
       var t = E("689988"),
@@ -26289,17 +26331,17 @@
         I = E("448881"),
         s = E("374023"),
         T = E("2973"),
-        S = E("227231");
-      let N = 5 * i.default.Millis.SECOND,
-        O = 12 * i.default.Millis.HOUR,
-        A = 1 * i.default.Millis.MINUTE;
-      class R extends t.default {
+        S = E("227231"),
+        N = E("166604");
+      let O = 5 * i.default.Millis.SECOND,
+        A = 12 * i.default.Millis.HOUR,
+        R = 1 * i.default.Millis.MINUTE;
+      class l extends t.default {
         maybeFetchCurrentQuests() {
-          s.default.getCurrentConfig({
-            location: "maybeFetchCurrentQuests"
-          }, {
+          (0, s.getIsEligibleForQuests)({
+            location: N.QuestsExperimentLocations.QUESTS_MANAGER,
             autoTrackExposure: !1
-          }).enabled && !T.default.isFetchingCurrentQuests && (0, I.fetchCurrentQuests)()
+          }) && !T.default.isFetchingCurrentQuests && (0, I.fetchCurrentQuests)()
         }
         constructor(...e) {
           super(...e), this.instantiatedAt = Date.now(), this.sendHeartbeatIntervalIds = new Map, this.initiateHeartbeat = e => {
@@ -26316,7 +26358,7 @@
                 applicationId: t
               })
             }
-            window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, A))
+            window.clearInterval(this.sendHeartbeatIntervalIds.get(E)), o(), this.sendHeartbeatIntervalIds.set(E, window.setInterval(o, R))
           }, this.terminateHeartbeat = e => {
             window.clearInterval(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
           }, this.handleEnrollmentSuccess = e => {
@@ -26337,7 +26379,7 @@
               questId: r.id
             })
           }, this.handlePostConnectionOpen = () => {
-            window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * N))
+            window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * O))
           }, this.handleSendHeartbeatSuccess = e => {
             let {
               streamKey: _,
@@ -26345,7 +26387,7 @@
             } = e;
             null != E.completedAt && this.terminateHeartbeat(_)
           }, this.handleRunningGamesChange = () => {
-            !(this.instantiatedAt + O > Date.now() || T.default.lastFetchedCurrentQuests + O > Date.now()) && this.maybeFetchCurrentQuests()
+            !(this.instantiatedAt + A > Date.now() || T.default.lastFetchedCurrentQuests + A > Date.now()) && this.maybeFetchCurrentQuests()
           }, this.handleStreamStart = e => {
             var _, E;
             let {
@@ -26381,7 +26423,7 @@
           }
         }
       }
-      var l = new R
+      var L = new l
     },
     50733: function(e, _, E) {
       "use strict";
@@ -35758,4 +35800,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.d53a142f9ae15a7ec505.js.map
+//# sourceMappingURL=90486.2797a9d0288f8ea2736e.js.map
