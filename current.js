@@ -5112,6 +5112,8 @@
         INVITE_GUILD_CONTACT_MESSAGE_PLACEHOLDER: "Join this server on Discord !!{link}!!",
         INVITE_TAP_TO_INVITE: "Tap to Invite",
         INVITE_YOUR_CONTACTS: "Your Contacts",
+        INVITE_YOUR_CONTACTS_HEADER: "Invite Your Contacts",
+        SHOW_ALL_WITH_COUNT: "Show all ({count})",
         INVITE_CONTACTS_HEADER: "Contacts You Should Invite — {count}",
         INVITE_CONTACTS_EMPTY_TITLE: "Find your friends",
         INVITE_CONTACTS_EMPTY_BODY: "By syncing your contacts, Discord can find your friends and help them find you.",
@@ -18207,7 +18209,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263985", ", Version Hash: ").concat("2a8a4da7d1502ce95e456acc254c0b7c77f244c9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263989", ", Version Hash: ").concat("c55e03c2cfafaf0736a3c9115ca9b0669d0a801e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20450,8 +20452,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263985", "263985"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263985")), _ = 0), _
+        let _ = parseInt((e = "263989", "263989"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263989")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35797,4 +35799,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.e8dba0a3071e7ee9f4df.js.map
+//# sourceMappingURL=90486.70fe9f1e143ad933e2aa.js.map
