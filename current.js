@@ -18207,7 +18207,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263938", ", Version Hash: ").concat("71d386d407cf9ce946e58300200e2f0e6492bb93")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263958", ", Version Hash: ").concat("ceb18746af743f2705b737a2b77034d2fa34f3f9")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20450,8 +20450,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263938", "263938"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263938")), _ = 0), _
+        let _ = parseInt((e = "263958", "263958"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263958")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25536,7 +25536,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return S
+          return N
         }
       }), E("222007");
       var t = E("95410"),
@@ -25544,10 +25544,11 @@
         n = E("697218"),
         r = E("553257"),
         a = E("363613"),
-        i = E("275803"),
-        I = E("935583");
-      let s = "lastSawPomelo";
-      class T extends o.default {
+        i = E("42060"),
+        I = E("275803"),
+        s = E("935583");
+      let T = "lastSawPomelo";
+      class S extends o.default {
         constructor(...e) {
           super(...e), this.actions = {
             POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
@@ -25561,21 +25562,22 @@
                 if (!e) return !1;
                 let _ = n.default.getCurrentUser();
                 if (null == _ || _.isPomelo() || !_.hasVerifiedEmailOrPhone()) return !1;
-                let E = t.default.get(s);
-                return !(null != E && Date.now() - E < 6048e5) && !0
+                let E = (0, i.getForceMigration)(),
+                  o = t.default.get(E ? "lastSawPomeloMigration" : T);
+                return !(null != o && Date.now() - o < 6048e5) && !0
               }()) {
-              let e = i.UUOneClickExperiment.getCurrentConfig({
+              let e = I.UUOneClickExperiment.getCurrentConfig({
                   location: "uu_one_click"
                 }, {
                   autoTrackExposure: !1
                 }).enabled,
-                _ = (0, a.openPomeloModal)(I.PomeloEntrypoints.APP_START, e, !1);
-              _ && t.default.set(s, Date.now())
+                _ = (0, a.openPomeloModal)(s.PomeloEntrypoints.APP_START, e, !1);
+              _ && t.default.set(T, Date.now())
             }
           }
         }
       }
-      var S = new T
+      var N = new S
     },
     363613: function(e, _, E) {
       "use strict";
@@ -35795,4 +35797,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.87144e73577a546857e5.js.map
+//# sourceMappingURL=90486.ff9c8446a3f5e437fe43.js.map
