@@ -10190,6 +10190,7 @@
         VOICE_PANEL_ONLY_SHOW_VIDEO_SUBTITLE: "We won't show non-video participants",
         VOICE_PANEL_CHANGE_BACKGROUND_TITLE: "Change Background",
         VOICE_PANEL_CHANGE_BACKGROUND_SUBTITLE: "Set background for everyone",
+        VOICE_PANEL_CHANGE_BACKGROUND_FOOTER: "This background will be shown to everyone after saving.",
         VOICE_PANEL_LOAD_MORE: "Load more",
         VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_TITLE: "You don’t have permission to join this Voice Channel.",
         VOICE_PANEL_NO_JOIN_PERMISSIONS_ALERT_SUBTITLE: "This channel is only for selected members and roles.",
@@ -16639,10 +16640,11 @@
         QUESTS_REWARD_CODE_TRY_AGAIN: "Try again",
         QUESTS_REWARD_CODE_UNCLAIMED_REWARD_TILE_SUBHEADER: "Claim this",
         QUESTS_REWARD_CODE_CLAIMED_REWARD_TILE_SUBHEADER: "You claimed this",
-        QUESTS_REWARD_CODE_PLATFORM_XBOX: "Xbox",
+        QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM: "Cross-platform",
+        QUESTS_REWARD_CODE_PLATFORM_PC: "PC",
         QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION: "PlayStation",
         QUESTS_REWARD_CODE_PLATFORM_SWITCH: "Switch",
-        QUESTS_REWARD_CODE_PLATFORM_PC: "PC",
+        QUESTS_REWARD_CODE_PLATFORM_XBOX: "Xbox",
         QUESTS_SPONSORED: "Sponsored",
         QUESTS_LEARN_MORE_V2: "Learn more",
         QUESTS_LEARN_MORE_STACKED: "Learn\n\nmore",
@@ -18205,7 +18207,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263904", ", Version Hash: ").concat("4d77e329bb2374b02c51fbff529ef5673adf4e94")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263938", ", Version Hash: ").concat("71d386d407cf9ce946e58300200e2f0e6492bb93")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20448,8 +20450,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263904", "263904"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263904")), _ = 0), _
+        let _ = parseInt((e = "263938", "263938"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263938")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26170,10 +26172,15 @@
         QuestRewardCodePlatforms: function() {
           return t
         },
+        QUEST_REWARD_CODE_PLATFORMS_SET: function() {
+          return a
+        },
         QuestContent: function() {
           return o
         }
-      }), (n = t || (t = {}))[n.NO_PLATFORM = 0] = "NO_PLATFORM", n[n.XBOX = 1] = "XBOX", n[n.PLAYSTATION = 2] = "PLAYSTATION", n[n.SWITCH = 3] = "SWITCH", n[n.PC = 4] = "PC", (r = o || (o = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR"
+      }), E("222007"), (n = t || (t = {}))[n.CROSS_PLATFORM = 0] = "CROSS_PLATFORM", n[n.XBOX = 1] = "XBOX", n[n.PLAYSTATION = 2] = "PLAYSTATION", n[n.SWITCH = 3] = "SWITCH", n[n.PC = 4] = "PC";
+      let a = new Set(Object.values(t).filter(e => "number" == typeof e));
+      (r = o || (o = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR"
     },
     227231: function(e, _, E) {
       "use strict";
@@ -26247,31 +26254,35 @@
       }
 
       function I(e) {
+        var _, E, o;
         return {
           id: e.id,
-          config: function(e) {
-            var _, E;
-            let o = new Set(Object.values(t.QuestRewardCodePlatforms));
-            return {
-              expiresAt: e.expires_at,
-              streamDurationRequirementMinutes: e.stream_duration_requirement_minutes,
-              gameTitle: e.game_title,
-              applicationId: e.application_id,
-              messages: {
-                questName: (_ = e.messages).quest_name,
-                rewardName: _.reward_name,
-                rewardNameWithArticle: _.reward_name_with_article,
-                rewardRedemptionInstructions: _.reward_redemption_instructions,
-                gameTitle: _.game_title,
-                gamePublisher: _.game_publisher
-              },
-              colors: {
-                primary: (E = e.colors).primary,
-                secondary: E.secondary
-              },
-              rewardCodePlatforms: e.reward_code_platforms.filter(e => o.has(e))
-            }
-          }(e.config),
+          config: {
+            expiresAt: (_ = e.config).expires_at,
+            streamDurationRequirementMinutes: _.stream_duration_requirement_minutes,
+            gameTitle: _.game_title,
+            applicationId: _.application_id,
+            messages: {
+              questName: (E = _.messages).quest_name,
+              rewardName: E.reward_name,
+              rewardNameWithArticle: E.reward_name_with_article,
+              rewardRedemptionInstructionsByPlatform: function(e) {
+                let _ = {};
+                for (let E in e) {
+                  let o = parseInt(E);
+                  t.QUEST_REWARD_CODE_PLATFORMS_SET.has(o) && (_[o] = e[E])
+                }
+                return _
+              }(E.reward_redemption_instructions_by_platform),
+              gameTitle: E.game_title,
+              gamePublisher: E.game_publisher
+            },
+            colors: {
+              primary: (o = _.colors).primary,
+              secondary: o.secondary
+            },
+            rewardCodePlatforms: _.reward_code_platforms.filter(e => t.QUEST_REWARD_CODE_PLATFORMS_SET.has(e))
+          },
           userStatus: null == e.user_status ? null : i(e.user_status),
           targetedContent: e.targeted_content
         }
@@ -26307,8 +26318,8 @@
             return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
           case t.QuestRewardCodePlatforms.PC:
             return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
-          default:
-            return ""
+          case t.QuestRewardCodePlatforms.CROSS_PLATFORM:
+            return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
         }
       };
 
@@ -35784,4 +35795,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.5402863b00c604ccb7f2.js.map
+//# sourceMappingURL=90486.87144e73577a546857e5.js.map
