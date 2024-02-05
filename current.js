@@ -18205,7 +18205,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263883", ", Version Hash: ").concat("0531f77fff67a4b27b38addd5568eda67b21e6d6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263903", ", Version Hash: ").concat("9725b2e512ab9f043c7428393cabf85acf9a100e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19313,7 +19313,7 @@
             subscriptionTier: h.PremiumSubscriptionSKUs.TIER_2
           })
         },
-        g = e => {
+        y = e => {
           let {
             markAsDismissed: _
           } = e, E = () => {
@@ -19338,7 +19338,7 @@
             })]
           })
         },
-        y = e => {
+        g = e => {
           let {
             isCoachmark: _,
             markAsDismissed: E
@@ -19387,14 +19387,14 @@
             ref: u,
             className: r(m.editor, l ? m.editorAnimate : null),
             children: (0, t.jsxs)(i.HeadingLevel, {
-              children: [(0, t.jsx)(g, {
+              children: [(0, t.jsx)(y, {
                 markAsDismissed: E
               }), (0, t.jsx)(i.Scroller, {
                 className: m.editorBody,
                 children: (0, t.jsx)(d.default, {
                   className: m.selectionGroup
                 })
-              }), (0, t.jsx)(y, {
+              }), (0, t.jsx)(g, {
                 markAsDismissed: E,
                 isCoachmark: _
               })]
@@ -20448,8 +20448,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263883", "263883"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263883")), _ = 0), _
+        let _ = parseInt((e = "263903", "263903"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263903")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20607,18 +20607,18 @@
         m = E("49111"),
         G = E("994428"),
         p = E("646718"),
-        g = E("782340"),
-        y = E("286609");
+        y = E("782340"),
+        g = E("286609");
       let B = () => (0, t.jsx)("div", {
-          className: y.editorHeader,
+          className: g.editorHeader,
           children: (0, t.jsxs)("div", {
-            className: y.bannerUpsell,
+            className: g.bannerUpsell,
             children: [(0, t.jsx)(u.default, {
-              className: y.premiumIcon
+              className: g.premiumIcon
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-md/bold",
               color: "always-white",
-              children: g.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
+              children: y.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
             })]
           })
         }),
@@ -20627,18 +20627,18 @@
             markAsDismissed: _
           } = e, E = (0, h.useTrackClientThemePreviewEvent)();
           return (0, t.jsxs)("div", {
-            className: y.editorHeader,
+            className: g.editorHeader,
             children: [(0, t.jsx)(s.Clickable, {
-              className: y.closeCircleButton,
+              className: g.closeCircleButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), E(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)()
               },
               children: (0, t.jsx)(D.default, {
-                className: y.closeCircle
+                className: g.closeCircle
               })
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-lg/extrabold",
-              children: g.default.Messages.CLIENT_THEMES_EDITOR_HEADER
+              children: y.default.Messages.CLIENT_THEMES_EDITOR_HEADER
             })]
           })
         },
@@ -20655,7 +20655,7 @@
           });
           return (0, t.jsx)(L.default, {
             size: s.Button.Sizes.MEDIUM,
-            buttonText: N ? g.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == O ? void 0 : null === (o = O.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? u : g.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
+            buttonText: N ? y.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == O ? void 0 : null === (o = O.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? u : y.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
             subscriptionTier: p.PremiumSubscriptionSKUs.TIER_2,
             onSubscribeModalClose: e => {
               if (!!e) null == n || n(), null != r && r(G.ContentDismissActionType.PRIMARY), null != S && ((0, P.trackClientThemeUpdated)({
@@ -20686,18 +20686,18 @@
             isCoachmark: !0
           }, {
             forceShowCloseButton: !0
-          }, () => g.default.Messages.CLOSE).with({
+          }, () => y.default.Messages.CLOSE).with({
             isPreview: !0
-          }, () => g.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => g.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
+          }, () => y.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => y.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
           return (0, t.jsxs)("div", {
-            className: y.editorFooter,
+            className: g.editorFooter,
             children: [E && (0, t.jsx)(H, {
               onSubscribeSuccess: () => {
                 I(!0)
               },
               markAsDismissed: _
             }), (0, t.jsx)(s.Button, {
-              className: y.footerButton,
+              className: g.footerButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), T(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)(), !n && S.default.open()
               },
@@ -20738,18 +20738,18 @@
         }, [a, T, L]), (0, t.jsx)(n, {
           children: (0, t.jsx)("div", {
             ref: u,
-            className: r(y.themeEditor, S ? y.editorAnimate : null),
+            className: r(g.themeEditor, S ? g.editorAnimate : null),
             children: (0, t.jsxs)(s.HeadingLevel, {
               children: [I ? (0, t.jsx)(B, {}) : (0, t.jsx)(f, {
                 markAsDismissed: _
               }), (0, t.jsx)(s.Scroller, {
-                className: y.editorBody,
+                className: g.editorBody,
                 children: (0, t.jsxs)(P.default, {
                   type: P.ThemeSelectionGroupType.EDITOR,
                   children: [!a && (0, t.jsx)(P.default.Basic, {
-                    className: y.selectionGroup
+                    className: g.selectionGroup
                   }), (0, t.jsx)(P.default.Gradient, {
-                    className: y.selectionGroup
+                    className: g.selectionGroup
                   })]
                 })
               }), (0, t.jsx)(v, {
@@ -21384,9 +21384,9 @@
                 useForcedColors: n,
                 systemForcedColors: r
               }
-            }), p = (0, i.useLocation)(), g = o.useMemo(() => M.has(p.pathname), [p.pathname]);
-            (0, c.default)(window, g);
-            let y = (0, d.default)(window, __OVERLAY__ || n),
+            }), p = (0, i.useLocation)(), y = o.useMemo(() => M.has(p.pathname), [p.pathname]);
+            (0, c.default)(window, y);
+            let g = (0, d.default)(window, __OVERLAY__ || n),
               B = (0, s.useStateFromStores)([A.default], () => A.default.sidebarWidth),
               f = (0, S.useRedesignIconContext)().enabled;
             return (0, t.jsx)("html", {
@@ -21394,7 +21394,7 @@
               style: "font-size: ".concat(O, "%; --saturation-factor: ").concat(h, "; --devtools-sidebar-width: ").concat(B, "px;"),
               className: r(e, {
                 overlay: __OVERLAY__,
-                "mouse-mode": y,
+                "mouse-mode": g,
                 "keyboard-mode": U,
                 "reduce-motion": a.enabled,
                 "full-motion": !a.enabled,
@@ -21465,8 +21465,8 @@
         m = E("714657"),
         G = E("262194"),
         p = E("36773"),
-        g = E("374036"),
-        y = E("384997"),
+        y = E("374036"),
+        g = E("384997"),
         B = E("234819"),
         f = E("182033"),
         H = E("928741"),
@@ -21526,7 +21526,7 @@
           autoTrackExposure: !0
         }), ea = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ei = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), eI = $ && !ea, es = [];
         eI && eo && er && !ei && es.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
-        let [eT, eS] = (0, y.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
+        let [eT, eS] = (0, g.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
         es.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
         let eN = eT === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
           eO = eT === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
@@ -21590,7 +21590,7 @@
                           }) : null, !en || ea || eO ? null : (0, t.jsx)(h.default, {
                             isCoachmark: eN,
                             markAsDismissed: eS
-                          }), (0, t.jsx)(g.default, {
+                          }), (0, t.jsx)(y.default, {
                             mobile: u
                           })]
                         }), !1]
@@ -23216,7 +23216,7 @@
         E.notificationAnalytics.increment(e.notificationType, e.action)
       }
 
-      function g(e) {
+      function y(e) {
         var _;
         c.verbose("OVERLAY_WIDGET_CHANGED", e);
         let E = P.getByName(null !== (_ = e.gameName) && void 0 !== _ ? _ : e.gameId);
@@ -23228,7 +23228,7 @@
         null != t && (!t.initialized && (t.initialized = !0, t.pinned = e.pinned), t.pinned !== e.pinned && ++t.pinnedToggledCount, t.pinned = e.pinned, t.visibleDuration.toggle(e.visible))
       }
 
-      function y(e) {
+      function g(e) {
         if (c.verbose("OVERLAY_FOCUSED", e), P.gameSetAllUnfocused(), null == e.pid) return;
         let _ = P.getByPid(e.pid);
         if (null == _) {
@@ -23347,10 +23347,10 @@
             MESSAGE_ACKED: Y.handleMessageAcked,
             MESSAGE_CREATE: Y.handleMessageCreate
           } : {
-            OVERLAY_FOCUSED: y,
+            OVERLAY_FOCUSED: g,
             OVERLAY_NOTIFICATION_EVENT: p,
             OVERLAY_SET_UI_LOCKED: G,
-            OVERLAY_WIDGET_CHANGED: g,
+            OVERLAY_WIDGET_CHANGED: y,
             OVERLAY_MESSAGE_EVENT_ACTION: f,
             RUNNING_GAMES_CHANGE: m,
             SOUNDBOARD_SET_OVERLAY_ENABLED: B,
@@ -28462,7 +28462,7 @@
           return i
         },
         default: function() {
-          return g
+          return y
         }
       }), E("222007"), E("70102"), E("511434"), E("313619"), E("654714"), E("287168"), E("956660"), E("424973");
       var t, o, n, r, a, i, I, s, T = E("627445"),
@@ -28519,7 +28519,7 @@
           fullscreenType: null !== (i = e.fullscreenType) && void 0 !== i ? i : R.RunningProcessFullscreenType.UNKNOWN
         }
       }(I = a || (a = {}))[I.Camera = 0] = "Camera", I[I.Microphone = 1] = "Microphone", I[I.Photo = 2] = "Photo", I[I.InputMonitoring = 3] = "InputMonitoring", I[I.ScreenRecording = 4] = "ScreenRecording", (s = i || (i = {})).VIDEO = "VIDEO", s.MUTE = "MUTE", s.DEAFEN = "DEAFEN", s.DISCONNECT = "DISCONNECT";
-      var g = {
+      var y = {
         requireModule: e => C.nativeModules.requireModule(e),
         ensureModule: e => l.isPlatformEmbedded ? __OVERLAY__ && h.has(e) ? Promise.resolve() : C.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
         get canBootstrapNewUpdater() {
@@ -30118,27 +30118,29 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return C
+          return d
         },
         setRequestPatch: function() {
-          return c
+          return M
         },
         setAwaitOnline: function() {
-          return U
+          return P
         }
       }), E("222007"), E("424973");
       var t = E("726581"),
         o = E.n(t),
         n = E("981980");
       E("704744");
-      var r = E("644642"),
-        a = E("486196"),
-        i = E("614247"),
-        I = E("446825").Buffer;
-      let s = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
+      var r = E("811022"),
+        a = E("644642"),
+        i = E("486196"),
+        I = E("614247"),
+        s = E("446825").Buffer;
+      let T = new r.default("HTTPUtils"),
+        S = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
 
-      function T(e, _, E, t, r) {
-        var S, O, A, R, l;
+      function N(e, _, E, t, r) {
+        var a, T, O, A, l;
         let L = o[e](_.url);
         if (null != _.onRequestCreated && _.onRequestCreated(L), null != _.query) {
           let e = _.query;
@@ -30152,14 +30154,14 @@
           }
           L.query(e)
         }
-        if (_.body && L.send(_.body), null != _.headers && L.set(_.headers), null != _.reason && L.set("X-Audit-Log-Reason", encodeURIComponent(_.reason)), null === (S = _.attachments) || void 0 === S || S.forEach(e => {
+        if (_.body && L.send(_.body), null != _.headers && L.set(_.headers), null != _.reason && L.set("X-Audit-Log-Reason", encodeURIComponent(_.reason)), null === (a = _.attachments) || void 0 === a || a.forEach(e => {
             L.attach(e.name, e.file, e.filename)
-          }), null === (O = _.fields) || void 0 === O || O.forEach(e => {
+          }), null === (T = _.fields) || void 0 === T || T.forEach(e => {
             L.field(e.name, e.value)
           }), null != _.context) {
           let e = function(e) {
             try {
-              return I.from(JSON.stringify(e)).toString("base64")
+              return s.from(JSON.stringify(e)).toString("base64")
             } catch (e) {
               return null
             }
@@ -30171,21 +30173,21 @@
           null === (E = _.onRequestProgress) || void 0 === E || E.call(_, e)
         });
         let u = () => {
-          _.backoff = null != _.backoff ? _.backoff : new n.default, _.retried = (null != _.retried ? _.retried : 0) + 1, _.backoff.fail(() => d(_.url).then(() => T(e, _, E, t, r)))
+          _.backoff = null != _.backoff ? _.backoff : new n.default, _.retried = (null != _.retried ? _.retried : 0) + 1, _.backoff.fail(() => h(_.url).then(() => N(e, _, E, t, r)))
         };
-        null == D || null === (A = D.prepareRequest) || void 0 === A || A.call(D, L), L.ok(e => null != e.status), L.then(o => {
-          var n, I, S;
-          if (null != _.retries && _.retries-- > 0 && s.has(o.status)) return u();
-          let O = {
+        null == U || null === (O = U.prepareRequest) || void 0 === O || O.call(U, L), L.ok(e => null != e.status), L.then(o => {
+          var n, a, s;
+          if (null != _.retries && _.retries-- > 0 && S.has(o.status)) return u();
+          let T = {
             ok: o.ok,
             headers: o.headers,
             body: o.body,
             text: o.text,
             status: o.status
           };
-          N(_, O);
-          let A = !1,
-            R = (o, n) => {
+          R(_, T);
+          let O = !1,
+            A = (o, n) => {
               let a = {
                 ..._,
                 headers: {
@@ -30194,76 +30196,96 @@
                 },
                 interceptResponse: n
               };
-              A = !0, T(e, a, E, t, r)
+              O = !0, N(e, a, E, t, r)
             },
             l = e => {
-              !A && (t(e), null == r || r({
+              !O && (t(e), null == r || r({
                 ok: !1,
                 hasErr: !0,
                 err: e
               }))
             };
-          if ((null == _ ? void 0 : null === (n = _.interceptResponse) || void 0 === n ? void 0 : n.call(_, o, R, l)) !== !0) {
-            if ((null == D ? void 0 : null === (I = D.interceptResponse) || void 0 === I ? void 0 : I.call(D, o, R, l)) !== !0) {
-              if (o.ok) E(O);
+          if ((null == _ ? void 0 : null === (n = _.interceptResponse) || void 0 === n ? void 0 : n.call(_, o, A, l)) !== !0) {
+            if ((null == U ? void 0 : null === (a = U.interceptResponse) || void 0 === a ? void 0 : a.call(U, o, A, l)) !== !0) {
+              if (o.ok) E(T);
               else {
-                if (_.oldFormErrors && (null == O ? void 0 : null === (S = O.body) || void 0 === S ? void 0 : S.code) === a.INVALID_FORM_BODY_ERROR_CODE) {
+                if (_.oldFormErrors && (null == T ? void 0 : null === (s = T.body) || void 0 === s ? void 0 : s.code) === i.INVALID_FORM_BODY_ERROR_CODE) {
                   let {
                     errors: e
-                  } = O.body;
-                  null != e && (O.body = (0, i.default)(e))
+                  } = T.body;
+                  null != e && (T.body = (0, I.default)(e))
                 }
-                t(O)
+                t(T)
               }
               null != r && r({
                 hasErr: !1,
-                ...O
+                ...T
               })
             }
           }
         }, e => {
-          null != _.retries && _.retries-- > 0 && "ABORTED" !== e.code ? u() : (N(_), t(e), null != r && r({
+          null != _.retries && _.retries-- > 0 && "ABORTED" !== e.code ? u() : (R(_), t(e), null != r && r({
             ok: !1,
             hasErr: !0,
             err: e
           }))
-        }), (null === (R = _.signal) || void 0 === R ? void 0 : R.aborted) ? L.abort() : null === (l = _.signal) || void 0 === l || l.addEventListener("abort", () => L.abort(), {
+        }), (null === (A = _.signal) || void 0 === A ? void 0 : A.aborted) ? L.abort() : null === (l = _.signal) || void 0 === l || l.addEventListener("abort", () => L.abort(), {
           once: !0
         })
       }
-      let S = new Map;
+      let O = new Map;
 
-      function N(e, _) {
-        let E = S.get(e.url);
-        if (null == E) return;
-        let t = E.queue.shift();
-        if (null == t) {
-          S.delete(e.url);
+      function A(e) {
+        let _ = O.get(e);
+        if (null == _) {
+          T.verbose("rateLimitExpirationHandler: rate limit for", e, "expired, but record was already removed");
           return
         }
-        if (null != _ && 429 === _.status) {
-          var o;
-          let e = (null === (o = _.body) || void 0 === o ? void 0 : o.retry_after) || 5;
-          setTimeout(t, 1e3 * e)
-        } else t()
+        let E = _.queue.shift();
+        if (null == E) {
+          T.verbose("rateLimitExpirationHandler: removing key for", e), O.delete(e);
+          return
+        }
+        T.verbose("rateLimitExpirationHandler: moving to next record for ", e), E()
       }
 
-      function O(e, _, E) {
+      function R(e, _) {
+        let E = O.get(e.url);
+        if (null != _ && 429 === _.status) {
+          var t, o;
+          let n = (null === (t = _.body) || void 0 === t ? void 0 : t.retry_after) || 5,
+            r = Date.now() + 1e3 * n;
+          if (null != E) {
+            if (E.retryAfterTimestamp < r) T.verbose("cleanupRequestEntry: extending rate limit for ", e.url), clearTimeout(E.timeoutId);
+            else {
+              T.verbose("cleanupRequestEntry: already has rate limit for ", e.url);
+              return
+            }
+          }
+          T.verbose("cleanupRequestEntry: rate limit for ".concat(e.url, " retry after ").concat(n, " seconds"));
+          let a = setTimeout(() => A(e.url), 1e3 * n);
+          O.set(e.url, {
+            queue: null !== (o = null == E ? void 0 : E.queue) && void 0 !== o ? o : [],
+            retryAfterTimestamp: r,
+            timeoutId: a
+          })
+        } else null != E && E.retryAfterTimestamp < Date.now() && (T.verbose("cleanupRequestEntry: rate limit for ", e.url, "expired"), A(e.url))
+      }
+
+      function l(e, _, E) {
         return new Promise((t, o) => {
           "string" == typeof _ && (_ = {
             url: _
           });
-          let n = S.get(_.url);
-          null != n ? n.queue.push(T.bind(null, e, _, t, o, E)) : (S.set(_.url, {
-            queue: []
-          }), T(e, _, t, o, E))
+          let n = O.get(_.url);
+          null != n ? (T.verbose("makeRequest: queueing request for ", _.url), n.queue.push(N.bind(null, e, _, t, o, E))) : N(e, _, t, o, E)
         })
       }
-      let A = O.bind(null, "get"),
-        R = O.bind(null, "post"),
-        l = O.bind(null, "put"),
-        L = O.bind(null, "patch"),
-        u = O.bind(null, "del");
+      let L = l.bind(null, "get"),
+        u = l.bind(null, "post"),
+        C = l.bind(null, "put"),
+        D = l.bind(null, "patch"),
+        c = l.bind(null, "del");
       if (E.g.isServerRendering) {
         let e = (e, _) => Promise.resolve({
           ok: !0,
@@ -30272,30 +30294,30 @@
           body: null,
           text: ""
         });
-        A = e, R = e, l = e, L = e, u = e
+        L = e, u = e, C = e, D = e, c = e
       }
-      var C = {
-        get: A,
-        post: R,
-        put: l,
-        patch: L,
-        delete: u,
-        V6OrEarlierAPIError: r.default,
-        V8APIError: a.default,
+      var d = {
+        get: L,
+        post: u,
+        put: C,
+        patch: D,
+        delete: c,
+        V6OrEarlierAPIError: a.default,
+        V8APIError: i.default,
         getAPIBaseURL() {
           let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
           return "https:" + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
         }
       };
-      let D = null;
+      let U = null;
 
-      function c(e) {
-        D = e
+      function M(e) {
+        U = e
       }
-      let d = () => Promise.resolve();
+      let h = () => Promise.resolve();
 
-      function U(e) {
-        d = e
+      function P(e) {
+        h = e
       }
     },
     644642: function(e, _, E) {
@@ -30927,7 +30949,7 @@
           return p
         },
         ApplicationFrecency: function() {
-          return y
+          return g
         },
         GuildAndChannelFrecency: function() {
           return f
@@ -30975,7 +30997,7 @@
                 o.favoriteSoundboardSounds = h.internalBinaryRead(e, e.uint32(), E, o.favoriteSoundboardSounds);
                 break;
               case 9:
-                o.applicationFrecency = y.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
+                o.applicationFrecency = g.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
                 break;
               case 10:
                 o.heardSoundFrecency = m.internalBinaryRead(e, e.uint32(), E, o.heardSoundFrecency);
@@ -30996,7 +31018,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && L.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && c.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && y.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
+          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && L.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && c.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && g.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? n.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -31045,7 +31067,7 @@
             no: 9,
             name: "application_frecency",
             kind: "message",
-            T: () => y
+            T: () => g
           }, {
             no: 10,
             name: "heard_sound_frecency",
@@ -31750,7 +31772,7 @@
         }
       }
       let p = new G;
-      class g extends n.MessageType {
+      class y extends n.MessageType {
         create(e) {
           let _ = {
             applications: {}
@@ -31812,7 +31834,7 @@
           }])
         }
       }
-      let y = new g;
+      let g = new y;
       class B extends n.MessageType {
         create(e) {
           let _ = {
@@ -31914,7 +31936,7 @@
           return p
         },
         InboxSettings: function() {
-          return y
+          return g
         },
         AllGuildSettings: function() {
           return f
@@ -31979,7 +32001,7 @@
                 o.versions = m.Versions.internalBinaryRead(e, e.uint32(), E, o.versions);
                 break;
               case 2:
-                o.inbox = y.internalBinaryRead(e, e.uint32(), E, o.inbox);
+                o.inbox = g.internalBinaryRead(e, e.uint32(), E, o.inbox);
                 break;
               case 3:
                 o.guilds = f.internalBinaryRead(e, e.uint32(), E, o.guilds);
@@ -32024,7 +32046,7 @@
                 o.audioContextSettings = ep.internalBinaryRead(e, e.uint32(), E, o.audioContextSettings);
                 break;
               case 17:
-                o.communities = ey.internalBinaryRead(e, e.uint32(), E, o.communities);
+                o.communities = eg.internalBinaryRead(e, e.uint32(), E, o.communities);
                 break;
               case 18:
                 o.broadcast = ew.internalBinaryRead(e, e.uint32(), E, o.broadcast);
@@ -32042,7 +32064,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && y.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ei.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && ey.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
+          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && g.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ei.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && eg.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -32056,7 +32078,7 @@
             no: 2,
             name: "inbox",
             kind: "message",
-            T: () => y
+            T: () => g
           }, {
             no: 3,
             name: "guilds",
@@ -32131,7 +32153,7 @@
             no: 17,
             name: "communities",
             kind: "message",
-            T: () => ey
+            T: () => eg
           }, {
             no: 18,
             name: "broadcast",
@@ -32146,7 +32168,7 @@
         }
       }
       let p = new G;
-      class g extends M.MessageType {
+      class y extends M.MessageType {
         create(e) {
           let _ = {
             currentTab: 0,
@@ -32197,7 +32219,7 @@
           }])
         }
       }
-      let y = new g;
+      let g = new y;
       class B extends M.MessageType {
         create(e) {
           let _ = {
@@ -34344,7 +34366,7 @@
         }
       }
       let ep = new eG;
-      class eg extends M.MessageType {
+      class ey extends M.MessageType {
         create(e) {
           let _ = {};
           return globalThis.Object.defineProperty(_, M.MESSAGE_TYPE, {
@@ -34381,7 +34403,7 @@
           }])
         }
       }
-      let ey = new eg;
+      let eg = new ey;
       class eB extends M.MessageType {
         create(e) {
           let _ = {
@@ -35762,4 +35784,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.b20f88cbd71612c5935c.js.map
+//# sourceMappingURL=90486.5f33aca11e5584a98bc6.js.map
