@@ -16390,6 +16390,7 @@
         SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_HEADER: "Unable to Mark as Not Sensitive",
         SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_BODY: "We don't store blocked media permanently. Since this media was uploaded a while ago, the option to mark it as not sensitive has expired.",
         SAFETY_WARNING_BANNER_CLOSE_A11Y: "Close",
+        SAFETY_TOOLS_BUTTON_LABEL: "Open Safety Tools",
         STRANGER_DANGER_BANNER_HEADER: "Unwanted message?",
         STRANGER_DANGER_BANNER_DESCRIPTION: "If you don't want to chat with this person, you can block or mute them.",
         STRANGER_DANGER_BANNER_MORE_TIPS: "More tips",
@@ -18204,7 +18205,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263882", ", Version Hash: ").concat("a60936f821d82002dbbc389946c8f74f6f5697f4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("263883", ", Version Hash: ").concat("0531f77fff67a4b27b38addd5568eda67b21e6d6")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20447,8 +20448,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "263882", "263882"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263882")), _ = 0), _
+        let _ = parseInt((e = "263883", "263883"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("263883")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26621,44 +26622,6 @@
         if (E.length > 0) return null;
         let o = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 && null == e.dismiss_timestamp);
         return 1 === o.length ? o[0] : null
-      }
-    },
-    761771: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        isEligibleForInappropriateConversationWarning: function() {
-          return n
-        }
-      });
-      var t = E("862205");
-      let o = (0, t.createExperiment)({
-        kind: "user",
-        id: "2024-01_inappropriate_conversation_warning",
-        label: "Inappropriate Conversation Warning",
-        defaultConfig: {
-          enabled: !1
-        },
-        treatments: [{
-          id: 1,
-          label: "Enable Inappropriate Conversation Warning",
-          config: {
-            enabled: !0
-          }
-        }]
-      });
-
-      function n(e) {
-        let {
-          location: _,
-          autoTrackExposure: E = !1
-        } = e, {
-          enabled: t
-        } = o.getCurrentConfig({
-          location: _
-        }, {
-          autoTrackExposure: E
-        });
-        return t
       }
     },
     537597: function(e, _, E) {
@@ -35799,4 +35762,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.e0cd03477c950d3ce8d6.js.map
+//# sourceMappingURL=90486.b20f88cbd71612c5935c.js.map
