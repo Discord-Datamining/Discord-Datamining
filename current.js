@@ -13591,6 +13591,8 @@
         GUILD_AUTOMOD_NAGBAR_QUARANTINED_USER_PROFILE_NO_PERMS: "Please update your username to start chatting in this community.",
         GUILD_AUTOMOD_NAGBAR_QUARANTINED_USER_PROFILE_CTA: "Update Server Profile",
         GUILD_AUTOMOD_NAGBAR_QUARANTINED_ACCOUNT_USERNAME_CTA: "Update Username",
+        GUILD_AUTOMOD_RULE_DELETE_ERROR_CONFIRM_MODAL_HEADER: "Cannot delete rule",
+        GUILD_AUTOMOD_RULE_DELETE_ERROR_CONFIRM_MODAL_BODY: "The Mention Spam AutoMod rule cannot be deleted from community servers. Please disable the rule instead.",
         GUILD_REPORT_RAID_BUTTON_TITLE: "Report Raid",
         GUILD_REPORT_RAID_MODAL_TITLE: "Report a Raid",
         GUILD_REPORT_RAID_MODAL_DESCRIPTION: "Which behavior best describes how this raid is currently disrupting your server? [Learn more about raids]({helpArticle})",
@@ -15135,46 +15137,7 @@
         COLLECTIBLES_BANNER_TITLE_2024: "Give your profile a fresh look",
         COLLECTIBLES_BANNER_DESCRIPTION_2024: "Check out the latest avatar decorations and profile effects and collect your favorite styles.",
         COLLECTIBLES_LUNAR_NEW_YEAR_TOOLTIP_TEXT: "Explore Lunar New Year styles",
-        INVENTORY_ADD_PACK: "Add Pack",
-        INVENTORY_VIEW_PACK: "View Pack",
-        INVENTORY_REMOVE_PACK: "Remove Pack",
-        INVENTORY_PACK_ADDED: "{number, plural, one {Pack Added} other {Packs Added}}",
-        INVENTORY_PACK_REMOVED: "{number, plural, one {Pack Removed} other {Packs Removed}}",
-        INVENTORY_ADD_PACK_WITHOUT_JOINING: "Add this pack to use emoji without joining the server.",
-        INVENTORY_ADD_PACK_WITHOUT_JOINING_V2: "Add up to {maxPacks} packs with your Nitro plan!",
-        INVENTORY_ADD_PACK_NON_NITRO: "You can add {maxFreePacks, plural, one {**{maxFreePacks}** pack} other {**{maxFreePacks}** packs}} for free, and up to **{maxPacks}** with Nitro.",
-        INVENTORY_ADD_PACK_DESCRIPTION: "Add this pack to use this emoji anywhere.",
-        INVENTORY_EMOJI_FROM_ADDABLE_PACK: "Want to use this emoji everywhere? Add the pack.",
-        INVENTORY_REMOVE_PACK_DESCRIPTION: "You already have this pack added. You can remove it from your expression picker anytime.",
-        INVENTORY_REMOVE_PACK_DESCRIPTION_V2: "You already added this pack. You can remove it from your emoji picker anytime.",
-        INVENTORY_ADD_NITRO_DESCRIPTION_WITH_PLURAL: "You have already added your {maxFreePacks, plural, one {**{maxFreePacks}** free pack} other {**{maxFreePacks}** free packs}}. Upgrade to Nitro to add up to **{maxPacks}**.",
-        INVENTORY_EMOJI_DETAILS: "See details",
         INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
-        INVENTORY_ALLOW_USE_SETTING_V2: "Allow anyone to add and use this server’s emoji",
-        INVENTORY_EMOJI_VISIBLE_DESCRIPTION: "Custom emoji from this server will be visible in previews across servers.",
-        INVENTORY_EMOJI_COLLECTED_DESCRIPTION_V2: "{number, plural, one {**{number}** person has} other {**{number}** people have}} added your server’s emoji.",
-        INVENTORY_NEW_SETTING: "New Emoji Setting",
-        INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2: "Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.",
-        INVENTORY_CHANGE_IN_SETTINGS: "Change in your Emoji Settings",
-        INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_1: "In the coming weeks, we're removing the Setting allowing non-server members to collect and use your server's emoji anywhere on Discord.",
-        INVENTORY_NEW_SETTING_ROLLBACK_DESCRIPTION_LINE_2: "Users will only be able to access your server's emoji if they join your server.",
-        INVENTORY_VIEW_SETTING: "View Setting",
-        INVENTORY_DISABLE_SETTING_TITLE_V2: "Are you sure you want to turn off external access to your server’s emoji?",
-        INVENTORY_DISABLE_SETTING_TITLE_MOBILE: "Disable Pack Collection",
-        INVENTORY_DISABLE_SETTING_DESCRIPTION: "{collectedCount, plural, one {**{collectedCount}** person} other {**{collectedCount}** people}} will lose access to your server’s emoji.",
-        INVENTORY_DISABLE_SETTING_TOAST_TITLE: "Non-member emoji access disabled",
-        INVENTORY_DISABLE_SETTING_TOAST_DESCRIPTION: "Non-members of your server can no longer access and use your server’s emoji.",
-        INVENTORY_LOCKED_PACK_EMOJI_UPSELL: "To use the full pack from **!!{packName}!!**, upgrade to Nitro",
-        INVENTORY_LEAVE_SERVER_DESCRIPTION: "Keep emoji from servers you aren’t in.",
-        INVENTORY_TRY_PACKS_TITLE_NITRO: "Up your emoji game with packs",
-        INVENTORY_TRY_PACKS_TITLE_FREEMIUM: "Start your emoji collection with a free pack",
-        INVENTORY_TRY_PACKS_DESCRIPTION_V2: "You can now click on emoji from [eligible servers]({helpCenterLink}) to add a pack straight to your emoji collection.",
-        INVENTORY_TRY_PACKS_SECONDARY_DESCRIPTION_V2_NITRO: "Add up to {maxPacks} packs with Nitro, starting with these popular packs:",
-        INVENTORY_TRY_PACKS_SECONDARY_DESCRIPTION_V2_FREEMIUM: "Kickstart your collection with a free pack:",
-        INVENTORY_ADD_FREE_PACK: "Add Free Pack",
-        INVENTORY_REMOVE_FREE_PACK: "Remove Free Pack",
-        INVENTORY_TRY_PACKS_MORE_EMOJI: "+{numberOfEmoji} more emoji",
-        INVENTORY_TRY_PACKS_UPSELL: "Upgrade to Nitro to add up to {maxPacks} emoji packs.",
         PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
         PRIVATE_CHANNEL_INTEGRATION_ADDED_DELETED_APPLICATION: "$[!!{username}!!](usernameHook) added a deleted application. See our [help center]({helpCenterLink}) for more info.",
         PRIVATE_CHANNEL_INTEGRATION_REMOVED: "$[!!{username}!!](usernameHook) removed the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
@@ -18214,7 +18177,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264200", ", Version Hash: ").concat("b7b695ea60e40c61c173c979a1ccf3f8b069f94c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264204", ", Version Hash: ").concat("3a69123933fb580d8e6f4fd891a23d40f41cf306")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19322,7 +19285,7 @@
             subscriptionTier: h.PremiumSubscriptionSKUs.TIER_2
           })
         },
-        y = e => {
+        g = e => {
           let {
             markAsDismissed: _
           } = e, E = () => {
@@ -19347,7 +19310,7 @@
             })]
           })
         },
-        g = e => {
+        y = e => {
           let {
             isCoachmark: _,
             markAsDismissed: E
@@ -19396,14 +19359,14 @@
             ref: u,
             className: r(m.editor, l ? m.editorAnimate : null),
             children: (0, t.jsxs)(i.HeadingLevel, {
-              children: [(0, t.jsx)(y, {
+              children: [(0, t.jsx)(g, {
                 markAsDismissed: E
               }), (0, t.jsx)(i.Scroller, {
                 className: m.editorBody,
                 children: (0, t.jsx)(d.default, {
                   className: m.selectionGroup
                 })
-              }), (0, t.jsx)(g, {
+              }), (0, t.jsx)(y, {
                 markAsDismissed: E,
                 isCoachmark: _
               })]
@@ -19472,10 +19435,6 @@
         EmojiCaptionsDataManager: {
           actions: ["EMOJI_INTERACTION_INITIATED"],
           inlineRequire: () => E("531150").default
-        },
-        InventoryDataManager: {
-          actions: ["EMOJI_INTERACTION_INITIATED"],
-          inlineRequire: () => E("338169").default
         },
         EntityVersionsManager: {
           actions: ["GUILD_CREATE", "DELETED_ENTITY_IDS"],
@@ -20457,8 +20416,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264200", "264200"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264200")), _ = 0), _
+        let _ = parseInt((e = "264204", "264204"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264204")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20616,18 +20575,18 @@
         m = E("49111"),
         G = E("994428"),
         p = E("646718"),
-        y = E("782340"),
-        g = E("286609");
+        g = E("782340"),
+        y = E("286609");
       let B = () => (0, t.jsx)("div", {
-          className: g.editorHeader,
+          className: y.editorHeader,
           children: (0, t.jsxs)("div", {
-            className: g.bannerUpsell,
+            className: y.bannerUpsell,
             children: [(0, t.jsx)(u.default, {
-              className: g.premiumIcon
+              className: y.premiumIcon
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-md/bold",
               color: "always-white",
-              children: y.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
+              children: g.default.Messages.CLIENT_THEMES_EDITOR_UPSELL_HEADER
             })]
           })
         }),
@@ -20636,18 +20595,18 @@
             markAsDismissed: _
           } = e, E = (0, h.useTrackClientThemePreviewEvent)();
           return (0, t.jsxs)("div", {
-            className: g.editorHeader,
+            className: y.editorHeader,
             children: [(0, t.jsx)(s.Clickable, {
-              className: g.closeCircleButton,
+              className: y.closeCircleButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), E(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)()
               },
               children: (0, t.jsx)(D.default, {
-                className: g.closeCircle
+                className: y.closeCircle
               })
             }), (0, t.jsx)(s.Heading, {
               variant: "heading-lg/extrabold",
-              children: y.default.Messages.CLIENT_THEMES_EDITOR_HEADER
+              children: g.default.Messages.CLIENT_THEMES_EDITOR_HEADER
             })]
           })
         },
@@ -20664,7 +20623,7 @@
           });
           return (0, t.jsx)(L.default, {
             size: s.Button.Sizes.MEDIUM,
-            buttonText: N ? y.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == O ? void 0 : null === (o = O.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? u : y.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
+            buttonText: N ? g.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : (null == O ? void 0 : null === (o = O.subscription_trial) || void 0 === o ? void 0 : o.sku_id) === p.PremiumSubscriptionSKUs.TIER_2 ? u : g.default.Messages.USER_SETTINGS_CUSTOMIZATION_UPSELL,
             subscriptionTier: p.PremiumSubscriptionSKUs.TIER_2,
             onSubscribeModalClose: e => {
               if (!!e) null == n || n(), null != r && r(G.ContentDismissActionType.PRIMARY), null != S && ((0, P.trackClientThemeUpdated)({
@@ -20695,18 +20654,18 @@
             isCoachmark: !0
           }, {
             forceShowCloseButton: !0
-          }, () => y.default.Messages.CLOSE).with({
+          }, () => g.default.Messages.CLOSE).with({
             isPreview: !0
-          }, () => y.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => y.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
+          }, () => g.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => g.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
           return (0, t.jsxs)("div", {
-            className: g.editorFooter,
+            className: y.editorFooter,
             children: [E && (0, t.jsx)(H, {
               onSubscribeSuccess: () => {
                 I(!0)
               },
               markAsDismissed: _
             }), (0, t.jsx)(s.Button, {
-              className: g.footerButton,
+              className: y.footerButton,
               onClick: () => {
                 null != _ && _(G.ContentDismissActionType.DISMISS), T(m.AnalyticEvents.CLIENT_THEME_PREVIEW_CLOSED), (0, U.closeEditor)(), !n && S.default.open()
               },
@@ -20747,18 +20706,18 @@
         }, [a, T, L]), (0, t.jsx)(n, {
           children: (0, t.jsx)("div", {
             ref: u,
-            className: r(g.themeEditor, S ? g.editorAnimate : null),
+            className: r(y.themeEditor, S ? y.editorAnimate : null),
             children: (0, t.jsxs)(s.HeadingLevel, {
               children: [I ? (0, t.jsx)(B, {}) : (0, t.jsx)(f, {
                 markAsDismissed: _
               }), (0, t.jsx)(s.Scroller, {
-                className: g.editorBody,
+                className: y.editorBody,
                 children: (0, t.jsxs)(P.default, {
                   type: P.ThemeSelectionGroupType.EDITOR,
                   children: [!a && (0, t.jsx)(P.default.Basic, {
-                    className: g.selectionGroup
+                    className: y.selectionGroup
                   }), (0, t.jsx)(P.default.Gradient, {
-                    className: g.selectionGroup
+                    className: y.selectionGroup
                   })]
                 })
               }), (0, t.jsx)(v, {
@@ -21393,9 +21352,9 @@
                 useForcedColors: n,
                 systemForcedColors: r
               }
-            }), p = (0, i.useLocation)(), y = o.useMemo(() => M.has(p.pathname), [p.pathname]);
-            (0, c.default)(window, y);
-            let g = (0, d.default)(window, __OVERLAY__ || n),
+            }), p = (0, i.useLocation)(), g = o.useMemo(() => M.has(p.pathname), [p.pathname]);
+            (0, c.default)(window, g);
+            let y = (0, d.default)(window, __OVERLAY__ || n),
               B = (0, s.useStateFromStores)([A.default], () => A.default.sidebarWidth),
               f = (0, S.useRedesignIconContext)().enabled;
             return (0, t.jsx)("html", {
@@ -21403,7 +21362,7 @@
               style: "font-size: ".concat(O, "%; --saturation-factor: ").concat(h, "; --devtools-sidebar-width: ").concat(B, "px;"),
               className: r(e, {
                 overlay: __OVERLAY__,
-                "mouse-mode": g,
+                "mouse-mode": y,
                 "keyboard-mode": U,
                 "reduce-motion": a.enabled,
                 "full-motion": !a.enabled,
@@ -21474,8 +21433,8 @@
         m = E("714657"),
         G = E("262194"),
         p = E("36773"),
-        y = E("374036"),
-        g = E("384997"),
+        g = E("374036"),
+        y = E("384997"),
         B = E("234819"),
         f = E("182033"),
         H = E("928741"),
@@ -21535,7 +21494,7 @@
           autoTrackExposure: !0
         }), ea = (0, T.useStateFromStores)([b.default], () => b.default.getLayers().includes(Z.Layers.USER_SETTINGS)), ei = (0, T.useStateFromStores)([w.default], () => X.default.canUseClientThemes(w.default.getCurrentUser())), eI = $ && !ea, es = [];
         eI && eo && er && !ei && es.push(S.DismissibleContent.CLIENT_THEMES_COACHMARK);
-        let [eT, eS] = (0, g.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
+        let [eT, eS] = (0, y.useSelectedDismissibleContent)(es, ee.DismissibleContentGroupName.SIDEBAR, !0);
         es.push(S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
         let eN = eT === S.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
           eO = eT === S.DismissibleContent.CLIENT_THEMES_COACHMARK;
@@ -21599,7 +21558,7 @@
                           }) : null, !en || ea || eO ? null : (0, t.jsx)(h.default, {
                             isCoachmark: eN,
                             markAsDismissed: eS
-                          }), (0, t.jsx)(y.default, {
+                          }), (0, t.jsx)(g.default, {
                             mobile: u
                           })]
                         }), !1]
@@ -23225,7 +23184,7 @@
         E.notificationAnalytics.increment(e.notificationType, e.action)
       }
 
-      function y(e) {
+      function g(e) {
         var _;
         c.verbose("OVERLAY_WIDGET_CHANGED", e);
         let E = P.getByName(null !== (_ = e.gameName) && void 0 !== _ ? _ : e.gameId);
@@ -23237,7 +23196,7 @@
         null != t && (!t.initialized && (t.initialized = !0, t.pinned = e.pinned), t.pinned !== e.pinned && ++t.pinnedToggledCount, t.pinned = e.pinned, t.visibleDuration.toggle(e.visible))
       }
 
-      function g(e) {
+      function y(e) {
         if (c.verbose("OVERLAY_FOCUSED", e), P.gameSetAllUnfocused(), null == e.pid) return;
         let _ = P.getByPid(e.pid);
         if (null == _) {
@@ -23356,10 +23315,10 @@
             MESSAGE_ACKED: Y.handleMessageAcked,
             MESSAGE_CREATE: Y.handleMessageCreate
           } : {
-            OVERLAY_FOCUSED: g,
+            OVERLAY_FOCUSED: y,
             OVERLAY_NOTIFICATION_EVENT: p,
             OVERLAY_SET_UI_LOCKED: G,
-            OVERLAY_WIDGET_CHANGED: y,
+            OVERLAY_WIDGET_CHANGED: g,
             OVERLAY_MESSAGE_EVENT_ACTION: f,
             RUNNING_GAMES_CHANGE: m,
             SOUNDBOARD_SET_OVERLAY_ENABLED: B,
@@ -24884,31 +24843,6 @@
           })
         }
       }
-    },
-    338169: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return a
-        }
-      }), E("222007");
-      var t = E("689988"),
-        o = E("557562"),
-        n = E("958706");
-      class r extends t.default {
-        handleInteraction(e) {
-          let {
-            interaction: _
-          } = e, E = [n.EmojiInteractionPoint.EmojiButtonMouseEntered, n.EmojiInteractionPoint.ChatInputExpressionPressed, n.EmojiInteractionPoint.SearchEmojiKeybindPressed, n.EmojiInteractionPoint.AutocompleteTyped, n.EmojiInteractionPoint.GuildLeaveModalShown, n.EmojiInteractionPoint.AddReactionPopoutMouseEntered, n.EmojiInteractionPoint.AddReactionPopoutFocused, n.EmojiInteractionPoint.MessageContextMenuMouseEntered, n.EmojiInteractionPoint.AutocompleteWrapperShown, n.EmojiInteractionPoint.EmojiPickerActionSheetOpened, n.EmojiInteractionPoint.TrackOpenPopoutUsed, n.EmojiInteractionPoint.CustomEmojiTooltipShown];
-          E.includes(_) && (0, o.maybeGetPacksForUser)(_)
-        }
-        constructor(...e) {
-          super(...e), this.actions = {
-            EMOJI_INTERACTION_INITIATED: this.handleInteraction
-          }
-        }
-      }
-      var a = new r
     },
     702917: function(e, _, E) {
       "use strict";
@@ -28474,7 +28408,7 @@
           return i
         },
         default: function() {
-          return y
+          return g
         }
       }), E("222007"), E("70102"), E("511434"), E("313619"), E("654714"), E("287168"), E("956660"), E("424973");
       var t, o, n, r, a, i, I, s, T = E("627445"),
@@ -28531,7 +28465,7 @@
           fullscreenType: null !== (i = e.fullscreenType) && void 0 !== i ? i : R.RunningProcessFullscreenType.UNKNOWN
         }
       }(I = a || (a = {}))[I.Camera = 0] = "Camera", I[I.Microphone = 1] = "Microphone", I[I.Photo = 2] = "Photo", I[I.InputMonitoring = 3] = "InputMonitoring", I[I.ScreenRecording = 4] = "ScreenRecording", (s = i || (i = {})).VIDEO = "VIDEO", s.MUTE = "MUTE", s.DEAFEN = "DEAFEN", s.DISCONNECT = "DISCONNECT";
-      var y = {
+      var g = {
         requireModule: e => C.nativeModules.requireModule(e),
         ensureModule: e => l.isPlatformEmbedded ? __OVERLAY__ && h.has(e) ? Promise.resolve() : C.nativeModules.ensureModule(e) : Promise.reject(Error("not embedded")),
         get canBootstrapNewUpdater() {
@@ -30961,7 +30895,7 @@
           return p
         },
         ApplicationFrecency: function() {
-          return g
+          return y
         },
         GuildAndChannelFrecency: function() {
           return f
@@ -31009,7 +30943,7 @@
                 o.favoriteSoundboardSounds = h.internalBinaryRead(e, e.uint32(), E, o.favoriteSoundboardSounds);
                 break;
               case 9:
-                o.applicationFrecency = g.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
+                o.applicationFrecency = y.internalBinaryRead(e, e.uint32(), E, o.applicationFrecency);
                 break;
               case 10:
                 o.heardSoundFrecency = m.internalBinaryRead(e, e.uint32(), E, o.heardSoundFrecency);
@@ -31030,7 +30964,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && L.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && c.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && g.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
+          e.versions && r.Versions.internalBinaryWrite(e.versions, _.tag(1, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteGifs && s.internalBinaryWrite(e.favoriteGifs, _.tag(2, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteStickers && O.internalBinaryWrite(e.favoriteStickers, _.tag(3, n.WireType.LengthDelimited).fork(), E).join(), e.stickerFrecency && R.internalBinaryWrite(e.stickerFrecency, _.tag(4, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteEmojis && L.internalBinaryWrite(e.favoriteEmojis, _.tag(5, n.WireType.LengthDelimited).fork(), E).join(), e.emojiFrecency && C.internalBinaryWrite(e.emojiFrecency, _.tag(6, n.WireType.LengthDelimited).fork(), E).join(), e.applicationCommandFrecency && c.internalBinaryWrite(e.applicationCommandFrecency, _.tag(7, n.WireType.LengthDelimited).fork(), E).join(), e.favoriteSoundboardSounds && h.internalBinaryWrite(e.favoriteSoundboardSounds, _.tag(8, n.WireType.LengthDelimited).fork(), E).join(), e.applicationFrecency && y.internalBinaryWrite(e.applicationFrecency, _.tag(9, n.WireType.LengthDelimited).fork(), E).join(), e.heardSoundFrecency && m.internalBinaryWrite(e.heardSoundFrecency, _.tag(10, n.WireType.LengthDelimited).fork(), E).join(), e.playedSoundFrecency && p.internalBinaryWrite(e.playedSoundFrecency, _.tag(11, n.WireType.LengthDelimited).fork(), E).join(), e.guildAndChannelFrecency && f.internalBinaryWrite(e.guildAndChannelFrecency, _.tag(12, n.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? n.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -31079,7 +31013,7 @@
             no: 9,
             name: "application_frecency",
             kind: "message",
-            T: () => g
+            T: () => y
           }, {
             no: 10,
             name: "heard_sound_frecency",
@@ -31784,7 +31718,7 @@
         }
       }
       let p = new G;
-      class y extends n.MessageType {
+      class g extends n.MessageType {
         create(e) {
           let _ = {
             applications: {}
@@ -31846,7 +31780,7 @@
           }])
         }
       }
-      let g = new y;
+      let y = new g;
       class B extends n.MessageType {
         create(e) {
           let _ = {
@@ -31948,7 +31882,7 @@
           return p
         },
         InboxSettings: function() {
-          return g
+          return y
         },
         AllGuildSettings: function() {
           return f
@@ -32013,7 +31947,7 @@
                 o.versions = m.Versions.internalBinaryRead(e, e.uint32(), E, o.versions);
                 break;
               case 2:
-                o.inbox = g.internalBinaryRead(e, e.uint32(), E, o.inbox);
+                o.inbox = y.internalBinaryRead(e, e.uint32(), E, o.inbox);
                 break;
               case 3:
                 o.guilds = f.internalBinaryRead(e, e.uint32(), E, o.guilds);
@@ -32058,7 +31992,7 @@
                 o.audioContextSettings = ep.internalBinaryRead(e, e.uint32(), E, o.audioContextSettings);
                 break;
               case 17:
-                o.communities = eg.internalBinaryRead(e, e.uint32(), E, o.communities);
+                o.communities = ey.internalBinaryRead(e, e.uint32(), E, o.communities);
                 break;
               case 18:
                 o.broadcast = ew.internalBinaryRead(e, e.uint32(), E, o.broadcast);
@@ -32076,7 +32010,7 @@
           return o
         }
         internalBinaryWrite(e, _, E) {
-          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && g.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ei.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && eg.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
+          e.versions && m.Versions.internalBinaryWrite(e.versions, _.tag(1, M.WireType.LengthDelimited).fork(), E).join(), e.inbox && y.internalBinaryWrite(e.inbox, _.tag(2, M.WireType.LengthDelimited).fork(), E).join(), e.guilds && f.internalBinaryWrite(e.guilds, _.tag(3, M.WireType.LengthDelimited).fork(), E).join(), e.userContent && k.internalBinaryWrite(e.userContent, _.tag(4, M.WireType.LengthDelimited).fork(), E).join(), e.voiceAndVideo && Q.internalBinaryWrite(e.voiceAndVideo, _.tag(5, M.WireType.LengthDelimited).fork(), E).join(), e.textAndImages && $.internalBinaryWrite(e.textAndImages, _.tag(6, M.WireType.LengthDelimited).fork(), E).join(), e.notifications && ee.internalBinaryWrite(e.notifications, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.privacy && eE.internalBinaryWrite(e.privacy, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.debug && eo.internalBinaryWrite(e.debug, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.gameLibrary && er.internalBinaryWrite(e.gameLibrary, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.status && ei.internalBinaryWrite(e.status, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.localization && eS.internalBinaryWrite(e.localization, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.appearance && eR.internalBinaryWrite(e.appearance, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.guildFolders && eC.internalBinaryWrite(e.guildFolders, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.favorites && eU.internalBinaryWrite(e.favorites, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.audioContextSettings && ep.internalBinaryWrite(e.audioContextSettings, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.communities && ey.internalBinaryWrite(e.communities, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.broadcast && ew.internalBinaryWrite(e.broadcast, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.clips && eY.internalBinaryWrite(e.clips, _.tag(19, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -32090,7 +32024,7 @@
             no: 2,
             name: "inbox",
             kind: "message",
-            T: () => g
+            T: () => y
           }, {
             no: 3,
             name: "guilds",
@@ -32165,7 +32099,7 @@
             no: 17,
             name: "communities",
             kind: "message",
-            T: () => eg
+            T: () => ey
           }, {
             no: 18,
             name: "broadcast",
@@ -32180,7 +32114,7 @@
         }
       }
       let p = new G;
-      class y extends M.MessageType {
+      class g extends M.MessageType {
         create(e) {
           let _ = {
             currentTab: 0,
@@ -32231,7 +32165,7 @@
           }])
         }
       }
-      let g = new y;
+      let y = new g;
       class B extends M.MessageType {
         create(e) {
           let _ = {
@@ -34378,7 +34312,7 @@
         }
       }
       let ep = new eG;
-      class ey extends M.MessageType {
+      class eg extends M.MessageType {
         create(e) {
           let _ = {};
           return globalThis.Object.defineProperty(_, M.MESSAGE_TYPE, {
@@ -34415,7 +34349,7 @@
           }])
         }
       }
-      let eg = new ey;
+      let ey = new eg;
       class eB extends M.MessageType {
         create(e) {
           let _ = {
@@ -35796,4 +35730,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.61bcf0344909de39eb3d.js.map
+//# sourceMappingURL=90486.accf503c4b6a52e036c3.js.map
