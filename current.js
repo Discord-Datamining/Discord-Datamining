@@ -16505,6 +16505,11 @@
         LAUNCH_PAD_TAB_A11Y_LABEL: "Open LaunchPad",
         REPORT_SECOND_LOOK_SUCCESS_TITLE: "We have received your request.",
         REPORT_SECOND_LOOK_FAILURE_TITLE: "You have already submitted a review request for this report.",
+        REPORT_SECOND_LOOK_NOT_FOUND_ERROR: "Report not found.",
+        REPORT_SECOND_LOOK_ALREADY_REQUESTED_ERROR: "Report Review already requested.",
+        REPORT_SECOND_LOOK_LIMITED_TIME_ERROR: "Report Review is only available for a limited time.",
+        REPORT_SECOND_LOOK_INELIGIBLE_ERROR: "Report is ineligible for Review request.",
+        REPORT_SECOND_LOOK_UNKNOWN_ERROR: "Something went wrong. Try again.",
         APPEAL_INGESTION_AGE_VERIFICATION_LINK_TITLE: "Submit age verification",
         APPEAL_INGESTION_LEARN_MORE_LINK_TITLE: "Learn more about this policy",
         APPEAL_INGESTION_BREADCRUMBS_HEADER: "REASON",
@@ -18209,7 +18214,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264076", ", Version Hash: ").concat("971b1b879e1319a16b3a8e272da729ff8bebc162")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264079", ", Version Hash: ").concat("6b955c8b6a95cb363cbdb7faf67db485096f30bd")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20452,8 +20457,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264076", "264076"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264076")), _ = 0), _
+        let _ = parseInt((e = "264079", "264079"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264079")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21487,8 +21492,8 @@
         j = E("773336"),
         X = E("719923"),
         Q = E("269936"),
-        J = E("302537"),
-        q = E("967889"),
+        q = E("302537"),
+        J = E("967889"),
         z = E("102999"),
         $ = E("160139"),
         Z = E("49111"),
@@ -21551,10 +21556,10 @@
         return (0, t.jsx)(H.default, {
           children: (0, t.jsx)(c.default, {
             children: (0, t.jsxs)(O.RedesignIconContextProvider, {
-              children: [(0, t.jsx)(J.default, {
+              children: [(0, t.jsx)(q.default, {
                 skipsSettingDefaultPageTitle: E
               }), (0, t.jsx)(z.default, {
-                children: (0, t.jsx)(q.default, {
+                children: (0, t.jsx)(J.default, {
                   children: (0, t.jsxs)(O.FocusRingScope, {
                     containerRef: eA,
                     children: [(0, t.jsx)(x.MaskLibrary, {}), (0, t.jsx)(Y.default, {}), (0, t.jsx)(a.FocusGuard, {}), null != N ? (0, t.jsx)(et, {
@@ -32822,7 +32827,7 @@
         }
       }
       let Q = new X;
-      class J extends M.MessageType {
+      class q extends M.MessageType {
         create(e) {
           let _ = {
             explicitContentGuilds: 0,
@@ -32882,7 +32887,7 @@
           }])
         }
       }
-      let q = new J;
+      let J = new q;
       class z extends M.MessageType {
         create(e) {
           let _ = {
@@ -32984,7 +32989,7 @@
                 o.includeStickersInAutocomplete = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.includeStickersInAutocomplete);
                 break;
               case 29:
-                o.explicitContentSettings = q.internalBinaryRead(e, e.uint32(), E, o.explicitContentSettings);
+                o.explicitContentSettings = J.internalBinaryRead(e, e.uint32(), E, o.explicitContentSettings);
                 break;
               default:
                 let n = E.readUnknownField;
@@ -33001,7 +33006,7 @@
           for (let E = 0; E < e.stickerPickerCollapsedSections.length; E++) _.tag(6, M.WireType.LengthDelimited).string(e.stickerPickerCollapsedSections[E]);
           e.viewImageDescriptions && h.BoolValue.internalBinaryWrite(e.viewImageDescriptions, _.tag(7, M.WireType.LengthDelimited).fork(), E).join(), e.showCommandSuggestions && h.BoolValue.internalBinaryWrite(e.showCommandSuggestions, _.tag(8, M.WireType.LengthDelimited).fork(), E).join(), e.inlineAttachmentMedia && h.BoolValue.internalBinaryWrite(e.inlineAttachmentMedia, _.tag(9, M.WireType.LengthDelimited).fork(), E).join(), e.inlineEmbedMedia && h.BoolValue.internalBinaryWrite(e.inlineEmbedMedia, _.tag(10, M.WireType.LengthDelimited).fork(), E).join(), e.gifAutoPlay && h.BoolValue.internalBinaryWrite(e.gifAutoPlay, _.tag(11, M.WireType.LengthDelimited).fork(), E).join(), e.renderEmbeds && h.BoolValue.internalBinaryWrite(e.renderEmbeds, _.tag(12, M.WireType.LengthDelimited).fork(), E).join(), e.renderReactions && h.BoolValue.internalBinaryWrite(e.renderReactions, _.tag(13, M.WireType.LengthDelimited).fork(), E).join(), e.animateEmoji && h.BoolValue.internalBinaryWrite(e.animateEmoji, _.tag(14, M.WireType.LengthDelimited).fork(), E).join(), e.animateStickers && h.UInt32Value.internalBinaryWrite(e.animateStickers, _.tag(15, M.WireType.LengthDelimited).fork(), E).join(), e.enableTtsCommand && h.BoolValue.internalBinaryWrite(e.enableTtsCommand, _.tag(16, M.WireType.LengthDelimited).fork(), E).join(), e.messageDisplayCompact && h.BoolValue.internalBinaryWrite(e.messageDisplayCompact, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentFilter && h.UInt32Value.internalBinaryWrite(e.explicitContentFilter, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.viewNsfwGuilds && h.BoolValue.internalBinaryWrite(e.viewNsfwGuilds, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.convertEmoticons && h.BoolValue.internalBinaryWrite(e.convertEmoticons, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.expressionSuggestionsEnabled && h.BoolValue.internalBinaryWrite(e.expressionSuggestionsEnabled, _.tag(22, M.WireType.LengthDelimited).fork(), E).join(), e.viewNsfwCommands && h.BoolValue.internalBinaryWrite(e.viewNsfwCommands, _.tag(23, M.WireType.LengthDelimited).fork(), E).join(), e.useLegacyChatInput && h.BoolValue.internalBinaryWrite(e.useLegacyChatInput, _.tag(24, M.WireType.LengthDelimited).fork(), E).join();
           for (let E = 0; E < e.soundboardPickerCollapsedSections.length; E++) _.tag(25, M.WireType.LengthDelimited).string(e.soundboardPickerCollapsedSections[E]);
-          e.dmSpamFilter && h.UInt32Value.internalBinaryWrite(e.dmSpamFilter, _.tag(26, M.WireType.LengthDelimited).fork(), E).join(), 0 !== e.dmSpamFilterV2 && _.tag(27, M.WireType.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && h.BoolValue.internalBinaryWrite(e.includeStickersInAutocomplete, _.tag(28, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentSettings && q.internalBinaryWrite(e.explicitContentSettings, _.tag(29, M.WireType.LengthDelimited).fork(), E).join();
+          e.dmSpamFilter && h.UInt32Value.internalBinaryWrite(e.dmSpamFilter, _.tag(26, M.WireType.LengthDelimited).fork(), E).join(), 0 !== e.dmSpamFilterV2 && _.tag(27, M.WireType.Varint).int32(e.dmSpamFilterV2), e.includeStickersInAutocomplete && h.BoolValue.internalBinaryWrite(e.includeStickersInAutocomplete, _.tag(28, M.WireType.LengthDelimited).fork(), E).join(), e.explicitContentSettings && J.internalBinaryWrite(e.explicitContentSettings, _.tag(29, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -33148,7 +33153,7 @@
             no: 29,
             name: "explicit_content_settings",
             kind: "message",
-            T: () => q
+            T: () => J
           }])
         }
       }
@@ -35799,4 +35804,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.d26cbba6990d476e7926.js.map
+//# sourceMappingURL=90486.6852758240781b633ee3.js.map
