@@ -19,6 +19,7 @@
         NOTIFICATION_FRIEND_SUGGESTION_CONTACT_TITLE: "Your contact !!{contact}!! just joined Discord!",
         NOTIFICATION_FRIEND_SUGGESTION_TITLE: "!!{contact}!! just joined Discord!",
         NOTIFICATION_FRIEND_SUGGESTION_BODY: "Send them a friend request",
+        NOTIFICATION_MESSAGE_ACTIVITY_INSTANCE: "!!{user}!! started an activity",
         IOS_NOTIFICATION_SEE_FULL: "Tap to see full message.",
         ERRORS_UNEXPECTED_CRASH: "Looks like Discord has crashed unexpectedly....",
         ERRORS_ACTION_TO_TAKE: "We've tracked the error and will get right on it.",
@@ -18153,7 +18154,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264335", ", Version Hash: ").concat("13c24885fbf085ab915bfd3612a083598b9b574a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264337", ", Version Hash: ").concat("fdf2a6197ff34786484fc85e240ccc38678d009f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20392,8 +20393,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264335", "264335"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264335")), _ = 0), _
+        let _ = parseInt((e = "264337", "264337"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264337")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35743,4 +35744,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.79835341da3185de0db0.js.map
+//# sourceMappingURL=90486.9ebb068a8f55a7cec159.js.map
