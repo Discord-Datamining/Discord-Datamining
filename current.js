@@ -18124,37 +18124,9 @@
     },
     2662: function(e, _, E) {
       "use strict";
-      E.r(_), E.d(_, {
-        RefreshIcon: function() {
-          return r
-        }
-      });
-      var t = E("37983");
-      E("884691");
-      var o = E("669491"),
-        n = E("75196");
-      let r = e => {
-        let {
-          width: _ = 24,
-          height: E = 24,
-          color: r = o.default.colors.INTERACTIVE_NORMAL,
-          colorClass: a = "",
-          ...i
-        } = e;
-        return (0, t.jsx)("svg", {
-          ...(0, n.default)(i),
-          xmlns: "http://www.w3.org/2000/svg",
-          width: _,
-          height: E,
-          fill: "none",
-          viewBox: "0 0 24 24",
-          children: (0, t.jsx)("path", {
-            fill: "string" == typeof r ? r : r.css,
-            d: "M21 2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.93A8 8 0 0 0 6.97 5.78a1 1 0 0 1-1.26-1.56A9.98 9.98 0 0 1 20 6V3a1 1 0 0 1 1-1ZM3 22a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H5.07a8 8 0 0 0 11.96 2.22 1 1 0 1 1 1.26 1.56A9.99 9.99 0 0 1 4 18v3a1 1 0 0 1-1 1Z",
-            className: a
-          })
-        })
-      }
+      E.r(_);
+      var t = E("129611");
+      E.es(t, _)
     },
     320777: function(e, _, E) {
       "use strict";
@@ -18179,7 +18151,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(L.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264236", ", Version Hash: ").concat("cc7dd88cee8e763b8b80b644ecd6e96416a472d5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("264239", ", Version Hash: ").concat("454b68c6c8de1362bb6fd96046a7c26e45178197")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20418,8 +20390,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264236", "264236"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264236")), _ = 0), _
+        let _ = parseInt((e = "264239", "264239"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264239")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -29091,6 +29063,40 @@
         }
       }
     },
+    129611: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        RefreshIcon: function() {
+          return r
+        }
+      });
+      var t = E("37983");
+      E("884691");
+      var o = E("669491"),
+        n = E("82169");
+      let r = e => {
+        let {
+          width: _ = 24,
+          height: E = 24,
+          color: r = o.default.colors.INTERACTIVE_NORMAL,
+          colorClass: a = "",
+          ...i
+        } = e;
+        return (0, t.jsx)("svg", {
+          ...(0, n.default)(i),
+          xmlns: "http://www.w3.org/2000/svg",
+          width: _,
+          height: E,
+          fill: "none",
+          viewBox: "0 0 24 24",
+          children: (0, t.jsx)("path", {
+            fill: "string" == typeof r ? r : r.css,
+            d: "M21 2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.93A8 8 0 0 0 6.97 5.78a1 1 0 0 1-1.26-1.56A9.98 9.98 0 0 1 20 6V3a1 1 0 0 1 1-1ZM3 22a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H5.07a8 8 0 0 0 11.96 2.22 1 1 0 1 1 1.26 1.56A9.99 9.99 0 0 1 4 18v3a1 1 0 0 1-1 1Z",
+            className: a
+          })
+        })
+      }
+    },
     995113: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -35732,4 +35738,4 @@
     }
   }
 ]);
-//# sourceMappingURL=90486.70d6818ad85ad48d6775.js.map
+//# sourceMappingURL=90486.5f690111bca03b089158.js.map
