@@ -16661,7 +16661,8 @@
         QUIET_MODE_SETTINGS_LABEL: "Focus Mode (BETA)",
         QUIET_MODE_SETTINGS_DESCRIPTION: "Discord will not show in-app, desktop notifications or play message sounds.",
         QUIET_MODE_DISABLED_BY: "This is disabled by Focus Mode",
-        QUIET_MODE_HABITUAL_DND_NOTICE: "You've been on Do Not Disturb for a while. Would you like to enable Focus Mode instead?"
+        QUIET_MODE_HABITUAL_DND_NOTICE: "You've been on Do Not Disturb for a while. Would you like to enable Focus Mode instead?",
+        QUICK_REPLY_CLOSE_ARIA_LABEL: "Close reply popout"
       })
     },
     444051: function(e, _, E) {
@@ -18163,7 +18164,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264544", ", Version Hash: ").concat("83071742f5cb48ebfb7fd8c7939e5e5585c99f04")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264552", ", Version Hash: ").concat("698b97549e65baddda7f6858eb894eaa70db0d94")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20446,8 +20447,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264544", "264544"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264544")), _ = 0), _
+        let _ = parseInt((e = "264552", "264552"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264552")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36418,4 +36419,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.3d23918041e09a3cd38c.js.map
+//# sourceMappingURL=73222.eac1bd0060449dc95b1c.js.map
