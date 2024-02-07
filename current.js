@@ -511,7 +511,7 @@
         APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER: "Start typing...",
         APP_LAUNCHER_COMMAND_NOT_FOUND_TITLE: "No command found",
         APP_LAUNCHER_COMMAND_NOT_FOUND_BODY: "This command is not available",
-        APP_LAUNCHER_NO_PERMISSIONS_STATE_BODY: "You don't have permission to use any apps in this channel",
+        APP_LAUNCHER_NO_PERMISSIONS_STATE_BODY: "You do not have permissions to run commands in this channel",
         APP_LAUNCHER_PREVIOUSLY_EXECUTED_COMMAND_OPEN: "Open Command",
         APP_LAUNCHER_COMMAND_NO_PERMISSIONS_TITLE: "No permissions",
         APP_LAUNCHER_COMMAND_NO_PERMISSIONS_BODY: "You do not have permissions to run this command",
@@ -18179,7 +18179,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264715", ", Version Hash: ").concat("11358dc864577e1b1a31ca7d5d968328a5025f24")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264717", ", Version Hash: ").concat("329164cdf5f287b1eefd98e493869aa18eab29b4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20462,8 +20462,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264715", "264715"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264715")), _ = 0), _
+        let _ = parseInt((e = "264717", "264717"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264717")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36453,4 +36453,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.5c97e19f01c1261b28f2.js.map
+//# sourceMappingURL=73222.0faff534a55c65ba3367.js.map
