@@ -18179,7 +18179,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264705", ", Version Hash: ").concat("2621f2d67137f7152f9c8247352adab63147850f")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264715", ", Version Hash: ").concat("11358dc864577e1b1a31ca7d5d968328a5025f24")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20462,8 +20462,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264705", "264705"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264705")), _ = 0), _
+        let _ = parseInt((e = "264715", "264715"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264715")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -28632,8 +28632,11 @@
         dataUrlToFile: function() {
           return C
         },
-        isPNGAnimated: function() {
+        dataUrlToBlob: function() {
           return D
+        },
+        isPNGAnimated: function() {
+          return c
         }
       }), E("424973"), E("101997"), E("311790"), E("477657"), E("811875"), E("90301"), E("652153"), E("28797"), E("817884"), E("597349"), E("667536"), E("690341"), E("70102");
       var t = E("627445"),
@@ -28744,22 +28747,24 @@
         return o(2 === _.length, "Input data is not a valid image."), atob(_[1]).length
       }
       async function C(e, _, E) {
-        let t = function(e) {
-            let _;
-            _ = e.split(",")[0].indexOf("base64") >= 0 ? atob(e.split(",")[1]) : btoa(e.split(",")[1]);
-            let E = e.split(",")[0].split(":")[1].split(";")[0],
-              t = new Uint8Array(_.length);
-            for (var o = 0; o < _.length; o++) t[o] = _.charCodeAt(o);
-            return new Blob([t], {
-              type: E
-            })
-          }(e),
+        let t = D(e),
           o = await t.arrayBuffer();
         return new File([o], _, {
           type: E
         })
       }
-      async function D(e) {
+
+      function D(e) {
+        let _;
+        _ = e.split(",")[0].indexOf("base64") >= 0 ? atob(e.split(",")[1]) : btoa(e.split(",")[1]);
+        let E = e.split(",")[0].split(":")[1].split(";")[0],
+          t = new Uint8Array(_.length);
+        for (var o = 0; o < _.length; o++) t[o] = _.charCodeAt(o);
+        return new Blob([t], {
+          type: E
+        })
+      }
+      async function c(e) {
         var _;
         let E = null === (_ = e.type) || void 0 === _ ? void 0 : _.split(";")[0];
         if ("image/png" !== E) throw Error("File is not a PNG");
@@ -36448,4 +36453,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.6aa94e50518ddef6fcaa.js.map
+//# sourceMappingURL=73222.5c97e19f01c1261b28f2.js.map
