@@ -662,6 +662,7 @@
         WINDOWS_32_BIT_DEPRECATED_WARNING: "Your version of Windows is out of date. Update it to continue receiving Discord updates and technical support. [Learn more about system requirements]({helpCenterLink})",
         WINDOWS_7_8_DEPRECATED_WARNING: "Your version of Windows is out of date. Update it to continue receiving Discord updates and technical support. [Learn more about system requirements]({helpCenterLink})",
         MACOS_DEPRECATED_WARNING: "Your version of macOS is out of date. Update it to continue receiving Discord updates and technical support. [Learn more about system requirements]({helpCenterLink})",
+        EMBEDDED_ACTIVITIES_ACTIVITY: "activity",
         EMBEDDED_ACTIVITIES_LEAVE_ACTIVITY: "Leave Activity",
         EMBEDDED_ACTIVITIES_LEAVE: "Leave",
         EMBEDDED_ACTIVITIES_JOIN_ACTIVITY: "Join Activity",
@@ -910,7 +911,8 @@
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity started",
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_INVALID_CHANNEL: "You cannot join Activities in this channel.",
-        APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an activity",
+        APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_CANNOT_LAUNCH: "$[](userHook) started an activity",
+        APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an **$[activity](activityHook)**",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE: "[!!{username}!!](usernameOnClick) started an activity",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_NOTIFICATION: "{username} started an activity",
         KRUNKER_STRIKE_COACHMARK_TITLE: "Updated! Krunker Strike FRVR",
@@ -18177,7 +18179,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264607", ", Version Hash: ").concat("936b71820e7cfb8675725d596024f9ceadf8a3c8")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264612", ", Version Hash: ").concat("9fd8a321b31952f7693558feea4a4aefba808cc8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20460,8 +20462,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264607", "264607"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264607")), _ = 0), _
+        let _ = parseInt((e = "264612", "264612"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264612")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36432,4 +36434,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.b2fa1f034905bedbb68a.js.map
+//# sourceMappingURL=73222.769e372bb3c0aa58a1e7.js.map
