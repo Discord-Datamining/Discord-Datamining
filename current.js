@@ -16365,6 +16365,19 @@
         SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_BODY: "We don't store blocked media permanently. Since this media was uploaded a while ago, the option to mark it as not sensitive has expired.",
         SAFETY_WARNING_BANNER_CLOSE_A11Y: "Close",
         SAFETY_TOOLS_BUTTON_LABEL: "Open Safety Tools",
+        SAFETY_TOOLS_ACTION_SHEET_HEADER: "Safety tools",
+        SAFETY_TOOLS_ACTION_SHEET_BLOCK_TITLE: "Block",
+        SAFETY_TOOLS_ACTION_SHEET_BLOCK_SUBTITLE: "Stop them from messaging you",
+        SAFETY_TOOLS_ACTION_SHEET_REPORT_TITLE: "Report",
+        SAFETY_TOOLS_ACTION_SHEET_REPORT_SUBTITLE: "Help make Discord safer for everyone.",
+        SAFETY_TOOLS_ACTION_SHEET_CRISIS_TEXT_LINE_TITLE: "Contact Crisis Text Line",
+        SAFETY_TOOLS_ACTION_SHEET_CRISIS_TEXT_LINE_SUBTITLE: "Get live support.",
+        SAFETY_TOOLS_ACTION_SHEET_NO_FILTR_TITLE: "Visit NoFiltr",
+        SAFETY_TOOLS_ACTION_SHEET_NO_FILTR_SUBTITLE: "NoFiltr is a community that empowers young people to safely navigate online.",
+        SAFETY_TOOLS_ACTION_SHEET_BREAK_TITLE: "Take a break",
+        SAFETY_TOOLS_ACTION_SHEET_BREAK_SUBTITLE: "Relax with Wumpus.",
+        SAFETY_TOOLS_ACTION_SHEET_SAFETY_TIPS_TITLE: "Safety tips",
+        SAFETY_TOOLS_ACTION_SHEET_ABOUT_TITLE: "About safety alerts",
         STRANGER_DANGER_BANNER_HEADER: "Unwanted message?",
         STRANGER_DANGER_BANNER_DESCRIPTION: "If you don't want to chat with this person, you can block or mute them.",
         STRANGER_DANGER_BANNER_MORE_TIPS: "More tips",
@@ -18164,7 +18177,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264604", ", Version Hash: ").concat("b30003d8b42969a949964a7bd7fa724601cac246")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264607", ", Version Hash: ").concat("936b71820e7cfb8675725d596024f9ceadf8a3c8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20447,8 +20460,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264604", "264604"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264604")), _ = 0), _
+        let _ = parseInt((e = "264607", "264607"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264607")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36419,4 +36432,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.a4b2f7ab32110a4041db.js.map
+//# sourceMappingURL=73222.b2fa1f034905bedbb68a.js.map
