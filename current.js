@@ -18179,7 +18179,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264634", ", Version Hash: ").concat("56d5581c5a65a711bf2adabf29d5ca3ff7d38cf1")), t.default.setTags({
+      new(0, O.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264643", ", Version Hash: ").concat("a6c45a098282d2eeaebb09553dd8000ebe45a04f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), A.init(), (0, R.cleanupTempFiles)()
     },
@@ -20462,8 +20462,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264634", "264634"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264634")), _ = 0), _
+        let _ = parseInt((e = "264643", "264643"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264643")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -28286,13 +28286,18 @@
           windowSize: {
             width: 0,
             height: 0
-          }
+          },
+          visible: !1
         }) : _
       }
       class s extends n.default.Store {
         isFocused() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, a.getMainWindowId)();
           return I(e).focused
+        }
+        isVisible() {
+          let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, a.getMainWindowId)();
+          return I(e).visible
         }
         getFocusedWindowId() {
           let e = null;
@@ -28317,7 +28322,8 @@
             width: _,
             height: E,
             isElementFullscreen: t,
-            focused: n
+            focused: n,
+            visible: r
           } = e;
           return i.set(e.windowId, {
             windowSize: {
@@ -28325,7 +28331,8 @@
               height: E
             },
             isElementFullscreen: t,
-            focused: n
+            focused: n,
+            visible: r
           }), !0
         },
         WINDOW_FULLSCREEN_CHANGE: function(e) {
@@ -28354,6 +28361,13 @@
         },
         WINDOW_UNLOAD: function(e) {
           return i.delete(e.windowId), !0
+        },
+        WINDOW_VISIBILITY_CHANGE: function(e) {
+          let _ = I(e.windowId);
+          return _.visible !== e.visible && (i.set(e.windowId, {
+            ..._,
+            visible: e.visible
+          }), !0)
         }
       });
       E.el("599110").then(E.bind(E, "599110")).then(e => {
@@ -36434,4 +36448,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.51701ec5cb2346ad8b7a.js.map
+//# sourceMappingURL=73222.7454a915dc7663742eca.js.map
