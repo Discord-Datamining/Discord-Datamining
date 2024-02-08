@@ -16464,7 +16464,7 @@
         SET_STATUS_MODAL_SUBTITLE: "We'll save your most recent creations and auto-delete them after a while.",
         SET_STATUS_MODAL_CTA: "Confirm",
         STATUS_LEAD_IN_JUST: "Right now, I'm -",
-        STATUS_CHILLING: "Chilling tbh",
+        STATUS_CHILLING: "Chilling",
         STATUS_GAMING: "GAMING",
         STATUS_FOCUSING: "In the zone",
         STATUS_BRB: "Gonna BRB",
@@ -18175,7 +18175,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264860", ", Version Hash: ").concat("877d78a8743fe53095d1a6b75e4f7634bd712cb6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264861", ", Version Hash: ").concat("684cc6619b206e31aa17aded3d89b3981fc7a707")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19549,7 +19549,7 @@
           inlineRequire: () => E("589636").default
         },
         HangStatusManager: {
-          actions: ["VOICE_CHANNEL_SELECT", "LOGOUT"],
+          actions: ["VOICE_CHANNEL_SELECT", "LOGOUT", "GUILD_MEMBER_UPDATE"],
           inlineRequire: () => E("360557").default,
           hasStoreChangeListeners: !0
         },
@@ -20453,8 +20453,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264860", "264860"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264860")), _ = 0), _
+        let _ = parseInt((e = "264861", "264861"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264861")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24516,19 +24516,23 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return s
+          return N
         }
       }), E("222007");
       var t = E("689988"),
-        o = E("42203"),
-        n = E("233965"),
-        r = E("699209"),
-        a = E("32346"),
-        i = E("49111");
-      class I extends t.default {
+        o = E("271938"),
+        n = E("42203"),
+        r = E("957255"),
+        a = E("800762"),
+        i = E("233965"),
+        I = E("699209"),
+        s = E("32346"),
+        T = E("49111");
+      class S extends t.default {
         constructor(...e) {
           super(...e), this.actions = {
             VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
+            GUILD_MEMBER_UPDATE: e => this.handleGuildMemberUpdate(e),
             LOGOUT: () => this.handleLogout()
           }, this.handleVoiceChannelSelect = e => {
             let {
@@ -24536,8 +24540,8 @@
               guildId: E
             } = e, {
               enableHangStatus: t,
-              setDefaultStatus: I
-            } = r.HangStatusExperiment.getCurrentConfig({
+              setDefaultStatus: o
+            } = I.HangStatusExperiment.getCurrentConfig({
               guildId: null != E ? E : "",
               location: "HangStatusManager"
             }, {
@@ -24549,35 +24553,47 @@
             }
             if (!t || _ === this.previousVoiceChannelId) return;
             if (this.previousVoiceChannelId = _, null == E || null == _) return;
-            let s = o.default.getChannel(_);
-            if (null == s || s.type !== i.ChannelTypes.GUILD_VOICE) return;
-            let T = a.default.getCurrentHangStatus();
-            if (null != T) return;
-            let S = a.default.getCurrentDefaultStatus();
-            if ((null == S ? void 0 : S.expiresAt) != null && (null == S ? void 0 : S.expiresAt) >= Date.now()) {
-              if (S.status === i.HangStatusTypes.CUSTOM && null != S.customHangStatus) {
+            let a = n.default.getChannel(_);
+            if (null == a || a.type !== T.ChannelTypes.GUILD_VOICE || !r.default.can(T.Permissions.SET_VOICE_CHANNEL_STATUS, a)) return;
+            let S = s.default.getCurrentHangStatus();
+            if (null != S) return;
+            let N = s.default.getCurrentDefaultStatus();
+            if ((null == N ? void 0 : N.expiresAt) != null && (null == N ? void 0 : N.expiresAt) >= Date.now()) {
+              if (N.status === T.HangStatusTypes.CUSTOM && null != N.customHangStatus) {
                 let {
                   status: e,
                   emoji: _
-                } = S.customHangStatus;
-                (0, n.updateCustomHangStatus)(e, _);
+                } = N.customHangStatus;
+                (0, i.updateCustomHangStatus)(e, _);
                 return
               }
-              if (null == S.status) return;
+              if (null == N.status) return;
               else {
-                (0, n.updateHangStatus)(S.status);
+                (0, i.updateHangStatus)(N.status);
                 return
               }
             }
-            I && (0, n.updateHangStatus)(i.HangStatusTypes.CHILLING)
+            o && (0, i.updateHangStatus)(T.HangStatusTypes.CHILLING)
+          }, this.handleGuildMemberUpdate = e => {
+            let {
+              user: _,
+              guildId: E
+            } = e;
+            if (_.id !== o.default.getId()) return;
+            let t = a.default.getCurrentClientVoiceChannelId(E);
+            if (null == t) return;
+            let I = s.default.getCurrentHangStatus();
+            if (null == I) return;
+            let S = n.default.getChannel(t);
+            !r.default.can(T.Permissions.SET_VOICE_CHANNEL_STATUS, S) && (0, i.clearHangStatus)()
           }, this.handleDisconnectFromVoiceChannel = () => {
-            (0, n.clearHangStatus)()
+            (0, i.clearHangStatus)()
           }, this.handleLogout = () => {
             this.handleDisconnectFromVoiceChannel()
           }
         }
       }
-      var s = new I
+      var N = new S
     },
     636371: function(e, _, E) {
       "use strict";
@@ -36350,4 +36366,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.61ca961bf0d58bb1ac4b.js.map
+//# sourceMappingURL=73222.d2e57c7f3f11d4c549d6.js.map
