@@ -3971,17 +3971,17 @@
         YOU_TAB_ONBOARDING_ABOUT_ME_DESCRIPTION: "Games, music, TV shows, movies - what are you into? Tell people what you’re all about!",
         ACCOUNT_CLICK_TO_COPY: "Click to copy username",
         ACCOUNT_SPEAKING_WHILE_MUTED: "You are currently muted!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_1: "Copied!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_2: "Double Copy!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_3: "Triple Copy!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_4: "Dominating!!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_5: "Rampage!!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_6: "Mega Copy!!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_7: "Unstoppable!!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_8: "Wicked Sick!!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_9: "Monster Copy!!!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_10: "GODLIKE!!!",
-        ACCOUNT_USERNAME_COPY_SUCCESS_11: "BEYOND GODLIKE!!!!",
+        COPY_SUCCESS_1: "Copied!",
+        COPY_SUCCESS_2: "Double Copy!",
+        COPY_SUCCESS_3: "Triple Copy!",
+        COPY_SUCCESS_4: "Dominating!!",
+        COPY_SUCCESS_5: "Rampage!!",
+        COPY_SUCCESS_6: "Mega Copy!!",
+        COPY_SUCCESS_7: "Unstoppable!!",
+        COPY_SUCCESS_8: "Wicked Sick!!",
+        COPY_SUCCESS_9: "Monster Copy!!!",
+        COPY_SUCCESS_10: "GODLIKE!!!",
+        COPY_SUCCESS_11: "BEYOND GODLIKE!!!!",
         SET_STATUS: "Set Status",
         ONLINE_STATUS: "Online Status",
         CHANGE_ONLINE_STATUS: "Change Online Status",
@@ -4478,6 +4478,7 @@
         COPY_EVENT_LINK: "Copy Event Link",
         MUTE_SOUNDBOARD: "Mute Soundboard",
         UNMUTE_SOUNDBOARD: "Unmute Soundboard",
+        COPY_VERSION: "Click to copy version",
         GENERIC_ACTIONS_MENU_LABEL: "Actions",
         APPLICATION_ACTIONS_MENU_LABEL: "Application Actions",
         CHANNEL_ACTIONS_MENU_LABEL: "Channel Actions",
@@ -18179,7 +18180,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264758", ", Version Hash: ").concat("d2d9dbee5ebca7c105b0affba908553bf3d7ce59")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("264767", ", Version Hash: ").concat("c5ac6287fde31669bdc73897eb1538164a6855fc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20462,8 +20463,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "264758", "264758"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264758")), _ = 0), _
+        let _ = parseInt((e = "264767", "264767"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("264767")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36416,4 +36417,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.0dee149680e08ece8b57.js.map
+//# sourceMappingURL=73222.7e8998af7b85de01fe23.js.map
