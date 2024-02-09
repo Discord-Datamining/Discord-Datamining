@@ -15110,6 +15110,7 @@
         COLLECTIBLES_DAYS_LEFT_IN_SHOP: "{days} days left in Shop",
         COLLECTIBLES_DAYS_LEFT: "{days} days left",
         COLLECTIBLES_LAST_DAY: "Last day to buy",
+        COLLECTIBLES_SHOP_VIEW_ALL: "View all",
         COLLECTIBLES_SFA_TITLE: "The Shop is now open to you!",
         COLLECTIBLES_SFA_STARTER_BANNER_DESCRIPTION: "Collect these sweet, bonus items when you join Nitro! $[Unlock with Nitro](getPremium)",
         COLLECTIBLES_SFA_HERO_BANNER_SUBTITLE: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
@@ -18182,7 +18183,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265157", ", Version Hash: ").concat("b28e06c515fd0e404b91cc19508ba97ec683f2cf")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265167", ", Version Hash: ").concat("6cc760d2075e74afdf05c07ede198ec0fa47de2d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20460,8 +20461,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265157", "265157"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265157")), _ = 0), _
+        let _ = parseInt((e = "265167", "265167"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265167")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36355,4 +36356,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.2c0cb12fc0e0b871010b.js.map
+//# sourceMappingURL=73222.87f56175a7026e388c14.js.map
