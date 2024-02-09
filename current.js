@@ -18113,7 +18113,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265287", ", Version Hash: ").concat("20b0950740f713f546dacf96c329662d466fdda7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265292", ", Version Hash: ").concat("dc0d4c93c8f3ef214239bc0860dd194378cf57a7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20387,8 +20387,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265287", "265287"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265287")), _ = 0), _
+        let _ = parseInt((e = "265292", "265292"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265292")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21856,56 +21856,23 @@
         }) : null
       }
     },
-    558986: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        getEmojiCaptionsForUser: function() {
-          return r
-        }
-      }), E("222007");
-      var t = E("872717"),
-        o = E("913144"),
-        n = E("49111");
-      async function r() {
-        o.default.dispatch({
-          type: "EMOJI_CAPTIONS_FETCH"
-        });
-        try {
-          let {
-            body: e
-          } = await t.default.get({
-            url: n.Endpoints.EMOJI_CAPTIONS_GET
-          }), _ = {};
-          for (let E of e.items) _[E.emoji_id] = E.emoji_captions;
-          o.default.dispatch({
-            type: "EMOJI_CAPTIONS_FETCH_SUCCESS",
-            emojiCaptions: _
-          })
-        } catch (_) {
-          var e;
-          o.default.dispatch({
-            type: "EMOJI_CAPTIONS_FETCH_ERROR",
-            is4XXError: (null == (e = _.body) ? void 0 : e.status) >= 400 && (null == e ? void 0 : e.status) <= 499
-          })
-        }
-      }
-    },
     531150: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return i
+          return a
         }
       }), E("222007");
       var t = E("689988"),
         o = E("765969"),
         n = E("958706");
-      class r extends t.default {
+      let r = new Set([n.EmojiInteractionPoint.EmojiButtonMouseEntered, n.EmojiInteractionPoint.ChatInputExpressionPressed, n.EmojiInteractionPoint.ChatInputSuggestionsShown, n.EmojiInteractionPoint.SearchEmojiKeybindPressed, n.EmojiInteractionPoint.AutocompleteTyped, n.EmojiInteractionPoint.GuildLeaveModalShown, n.EmojiInteractionPoint.AddReactionPopoutMouseEntered, n.EmojiInteractionPoint.AddReactionPopoutFocused, n.EmojiInteractionPoint.MessageContextMenuMouseEntered, n.EmojiInteractionPoint.AutocompleteWrapperShown]);
+      class i extends t.default {
         handleInteraction(e) {
           let {
             interaction: _
-          } = e, E = [n.EmojiInteractionPoint.EmojiButtonMouseEntered, n.EmojiInteractionPoint.ChatInputExpressionPressed, n.EmojiInteractionPoint.SearchEmojiKeybindPressed, n.EmojiInteractionPoint.AutocompleteTyped, n.EmojiInteractionPoint.GuildLeaveModalShown, n.EmojiInteractionPoint.AddReactionPopoutMouseEntered, n.EmojiInteractionPoint.AddReactionPopoutFocused, n.EmojiInteractionPoint.MessageContextMenuMouseEntered, n.EmojiInteractionPoint.AutocompleteWrapperShown];
-          E.includes(_) && (0, o.maybeGetEmojiCaptionsForUser)(_)
+          } = e;
+          r.has(_) && (0, o.maybeGetEmojiCaptionsForUser)(_)
         }
         constructor(...e) {
           super(...e), this.actions = {
@@ -21913,7 +21880,7 @@
           }
         }
       }
-      var i = new r
+      var a = new i
     },
     765969: function(e, _, E) {
       "use strict";
@@ -36245,4 +36212,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.27b4f95b795b08325489.js.map
+//# sourceMappingURL=73222.cb94c63ae4e5bbcdaf68.js.map
