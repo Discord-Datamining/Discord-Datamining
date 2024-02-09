@@ -4625,7 +4625,6 @@
         OAUTH2_CAN_READ_NOTICE: "This application **can** read your messages but **can not** send messages as you.",
         OAUTH2_SCOPES_LABEL: "This will allow the developer of !!{application}!! to:",
         OAUTH2_SCOPES_LABEL_TRUSTED_NAME: "This will allow !!{application}!! to:",
-        OAUTH2_SCOPES_IP_LOCATION_SCOPE: "Developer may see your IP address while you use this application.",
         OAUTH2_REQUESTS_ACCOUNT_ACCESS: "wants to access your Discord account",
         OAUTH2_SIGNED_IN_AS: "Signed in as $[](userHook)",
         OAUTH2_THIRD_PARTY_APPLICATION: "An external application",
@@ -4703,6 +4702,8 @@
         SCOPE_UNSUPPORTED_ON_ANDROID_DESCRIPTION: "This OAuth2 scope is not supported within the app yet.\nGood news though, it does work on your mobile web browser! So please open it there.",
         OAUTH2_GO_TO_SERVER_NAME_CTA: "Go to **!!{guildName}!!**",
         OAUTH2_GO_TO_SERVER_DEFAULT_CTA: "Go to Server",
+        OAUTH2_IP_LOCATION_DISCLOSURE: "Developer may see your IP address while you use this application.",
+        OAUTH2_ADVERTISEMENTS_DISCLOSURE: "Developer may show ads while you use this application.",
         SETTINGS_TWO_FA: "Multi-Factor Authentication",
         TWO_FA: "Authenticator App",
         TWO_FA_DESCRIPTION: "Configuring an authenticator app is a good way to add an extra layer of security to your Discord account to make sure that only you have the ability to log in.",
@@ -18183,7 +18184,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265187", ", Version Hash: ").concat("5d2214be647128b973f373dbe17750efa8e44bee")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265195", ", Version Hash: ").concat("7ee7e529963451ae5de7ec1f97a1a654280cd481")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20461,8 +20462,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265187", "265187"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265187")), _ = 0), _
+        let _ = parseInt((e = "265195", "265195"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265195")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36356,4 +36357,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.fb77445fb0410615dba5.js.map
+//# sourceMappingURL=73222.0a8fe5899ccbff964ad3.js.map
