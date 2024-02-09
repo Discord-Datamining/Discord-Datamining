@@ -2200,7 +2200,7 @@
         INTEGRATION_CREATED_DATE: "Created on {timestamp, date, medium}",
         INTEGRATION_CREATED_USER_DATE: "Created on {timestamp, date, medium} by !!{user}!!",
         INTEGRATIONS_OVERVIEW: "Integrations",
-        INTEGRATIONS_OVERVIEW_DESCRIPTION_GUILD: "Customize your server with integrations. Manage webhooks, followed channels, and bots, as well as Twitch and YouTube settings for creators. [Learn more about managing integrations.]({helpdeskArticle})",
+        INTEGRATIONS_OVERVIEW_DESCRIPTION_GUILD: "Customize your server with integrations. Manage webhooks, followed channels, and apps, as well as Twitch and YouTube settings for creators. [Learn more about managing integrations.]({helpdeskArticle})",
         INTEGRATIONS_OVERVIEW_DESCRIPTION_CHANNEL: "Customize your server with integrations. Manage webhooks and followed channels that post into this channel. [Learn more about managing integrations.]({helpdeskArticle})",
         INTEGRATIONS_OVERVIEW_NO_APPLICATIONS: "You don't have any apps yet!",
         INTEGRATIONS_OVERVIEW_NO_APPLICATIONS_APP_DIRECTORY_CTA: "Visit the [App Directory](handleGoToAppDirectory) to add apps to your server",
@@ -2211,7 +2211,7 @@
         INTEGRATIONS_APPLICATION_BOT_NAME: "!!{user}!!",
         INTEGRATIONS_APPLICATION_NO_BOT: "This application does not have a bot in this server.",
         INTEGRATIONS_APPLICATION_REMOVE: "Remove App",
-        INTEGRATIONS_APPLICATION_REMOVE_SUMMARY: "Removing this integration will remove any bots and webhooks on this page from your server. This action cannot be undone.",
+        INTEGRATIONS_APPLICATION_REMOVE_SUMMARY: "Removing this integration will remove any apps (including bots and webhooks) on this page from your server. This action cannot be undone.",
         INTEGRATIONS_APPLICATION_REMOVE_NO_PERMISSIONS: "You do not have permissions to remove this integration.",
         INTEGRATIONS_APPLICATION_REMOVE_TITLE: "Remove !!{applicationName}!!",
         INTEGRATIONS_APPLICATION_REMOVE_BODY: "\nAre you sure you want to remove **!!{applicationName}!!**?\n",
@@ -3254,7 +3254,7 @@
         THEME_DISABLED_FOR_FORCED_COLORS: "When your device has High Contrast settings enabled, your Theme will automatically default to sync with your computer.",
         THEME_DISABLED_FOR_CONTRAST_SYNC: "Discord is using your computer’s contrast theme. To use a Discord Theme, turn off “Sync contrast settings” in the [Accessibility](onClick) settings.",
         DEVELOPER_MODE: "Developer Mode",
-        DEVELOPER_MODE_HELP_TEXT: "Developer Mode exposes context menu items helpful for people writing bots using the [Discord API]({apiDocsUrl}).",
+        DEVELOPER_MODE_HELP_TEXT: "Developer Mode exposes context menu items helpful for people writing apps using the [Discord API]({apiDocsUrl}).",
         DEVELOPER_APPLICATION_TEST_MODE_MODAL_HEADER: "Application Test Mode",
         DEVELOPER_APPLICATION_TEST_MODE_MODAL_BODY: "Enter your Discord application ID to enable test mode for that application. An application in test mode will allow you to view related unpublished SKUs and bypass related purchases to make development easier.",
         DEVELOPER_APPLICATION_TEST_MODE: "Application Test Mode",
@@ -4535,7 +4535,7 @@
         BOTS_DATA_ACCESS_GUILD_PRESENCES_BODY: "Can see online status of server members and what they are playing, watching, or listening to.",
         BOTS_DATA_ACCESS_GUILD_MEMBERS_HEADER: "Members",
         BOTS_DATA_ACCESS_GUILD_MEMBERS_BODY: "Can see who's in the server and their roles, nicknames, and permission changes.",
-        BOTS_DATA_ACCESS_BASELINE: "All bots can access a set of baseline data. Please visit the [Help Center]({helpCenterUrl}) to learn more.",
+        BOTS_DATA_ACCESS_BASELINE: "All apps can access a set of baseline data. Please visit the [Help Center]({helpCenterUrl}) to learn more.",
         BOT_PROFILE_SLASH_COMMANDS: "Try my commands",
         BOT_PROFILE_UPGRADE_CTA: "Upgrade",
         BOT_PROFILE_BENEFITS_HEADING: "Unlocked Premium Features",
@@ -9949,7 +9949,7 @@
         NSFW_GUILDS_TOGGLE_HEADER: "Allow access to age-restricted servers on iOS",
         NSFW_GUILDS_TOGGLE_CAPTION: "After joining on desktop, view your servers for people 18+ on iOS devices.",
         NSFW_DM_COMMANDS_HEADER: "Allow access to age-restricted commands from apps in Direct Messages",
-        NSFW_DM_COMMANDS_CAPTION: "This setting applies to all bots and apps. Allows people 18+ to access commands marked as age-restricted in DMs",
+        NSFW_DM_COMMANDS_CAPTION: "This setting applies to all apps. Allows people 18+ to access commands marked as age-restricted in DMs",
         MULTI_ACCOUNT_LOGIN_TITLE: "Add Account",
         MULTI_ACCOUNT_LOGIN_SUBTITLE: "Logging in to another account will let you easily switch between accounts on this device.",
         MULTI_ACCOUNT_MAX_ACCOUNTS_ERROR: "Sorry, you can only add {maxNumAccounts, number} accounts.",
@@ -10164,7 +10164,7 @@
         APPLICATION_COMMAND_AUTOCOMPLETE_FAILED: "Loading options failed",
         APPLICATION_COMMAND_NO_PERMISSIONS: "You don't have permission to use any commands from **!!{applicationName}!!**",
         APPLICATION_COMMAND_NO_COMMANDS: "No Commands Available",
-        APPLICATION_COMMAND_EDUCATION: "Try slash commands! A new way to use bots by typing slash. [Dismiss](dismissOnClick)",
+        APPLICATION_COMMAND_EDUCATION: "Try slash commands! A new way to use apps by typing slash. [Dismiss](dismissOnClick)",
         APPLICATION_COMMAND_FILE_ATTACHMENT: "Please attach a file",
         APPLICATION_COMMAND_MENTION_CONFIRM_HEADER: "Clear message?",
         APPLICATION_COMMAND_MENTION_CONFIRM_BODY: "Looks like you've already written something. Do you want to clear it and use a command?",
@@ -10177,7 +10177,7 @@
         APPLICATION_ADD_TO_SERVER_ACTIONS_COPY: "Copy Add to Server URL",
         COMMANDS_SCOPE_MIGRATION_OVERVIEW_TOOLTIP: "Members can't use this bot until you turn on permissions.",
         COMMANDS_SCOPE_MIGRATION_TOGGLE_TOOLTIP: "Flip this switch to enable {botName}'s commands for everyone! Read more about command permissions [here.]({link})",
-        COMMANDS_SCOPE_MIGRATION_ADMIN_NOTICE: "Commands have been enabled for bots in your server. Customize permissions in **Server Settings > Integrations**.",
+        COMMANDS_SCOPE_MIGRATION_ADMIN_NOTICE: "Commands have been enabled for apps in your server. Customize permissions in **Server Settings > Integrations**.",
         VIEWING_AS_ROLES: "You are viewing this server as {numRoles, plural, =0 {@everyone} =1 {1 role} other {{numRoles} roles}}.",
         VIEWING_AS_ROLES_SELECT: "Select Roles",
         VIEWING_AS_ROLES_BACK: "Back to Roles Settings",
@@ -10375,7 +10375,7 @@
         MANAGE_WEBHOOKS: "Manage Webhooks",
         ROLE_PERMISSIONS_MANAGE_WEBHOOKS_DESCRIPTION: "Allows members to create, edit, or delete webhooks, which can post messages from other apps or sites into this server.",
         MANAGE_SERVER: "Manage Server",
-        ROLE_PERMISSIONS_MANAGE_SERVER_DESCRIPTION: "Allow members to change this server's name, switch regions, view all invites, add bots to this server and create and update AutoMod rules.",
+        ROLE_PERMISSIONS_MANAGE_SERVER_DESCRIPTION: "Allow members to change this server's name, switch regions, view all invites, add apps to this server and create and update AutoMod rules.",
         CREATE_INSTANT_INVITE: "Create Invite",
         ROLE_PERMISSIONS_CREATE_INSTANT_INVITE_DESCRIPTION: "Allows members to invite new people to this server.",
         ROLE_PERMISSIONS_CHANGE_NICKNAME_DESCRIPTION: "Allows members to change their own nickname, a custom name for just this server.",
@@ -10509,7 +10509,7 @@
         GUILD_DELETE_FEEDBACK_HEADER: "Can you tell us more?",
         GUILD_DELETE_FEEDBACK_BODY: "Help us understand why you're deleting this server.",
         GUILD_DELETE_FEEDBACK_TOO_HARD: "The server was too hard to figure out",
-        GUILD_DELETE_FEEDBACK_TEST: "I wanted to test features and/or bots",
+        GUILD_DELETE_FEEDBACK_TEST: "I wanted to test features and/or apps",
         GUILD_DELETE_FEEDBACK_ACCIDENT: "I didn't mean to make a server",
         GUILD_DELETE_FEEDBACK_TEMPLATE: "I was curious what a server or template looked like",
         GUILD_DELETE_FEEDBACK_LONELY: "I couldn't get people to join",
@@ -10626,7 +10626,7 @@
         ROLE_PERMISSION_TEMPLATE_MANAGER_CONTENT_PREFACE: "Everything moderators can do, and:",
         ROLE_PERMISSION_TEMPLATE_MANAGER_CONTENT_1: "Create and delete channels",
         ROLE_PERMISSION_TEMPLATE_MANAGER_CONTENT_2: "Create and delete roles",
-        ROLE_PERMISSION_TEMPLATE_MANAGER_CONTENT_3: "Add emoji and bots",
+        ROLE_PERMISSION_TEMPLATE_MANAGER_CONTENT_3: "Add emoji and apps",
         ROLE_PERMISSION_TEMPLATE_MANAGER_CONTENT_4: "Pretty much anything",
         ROLE_EDIT_CONNECTIONS_CONTROLS_HEADER: "Create Linked Role",
         ROLE_EDIT_CONNECTIONS_CONTROLS_SELECT_CONNECTION_HEADER: "Add requirement",
@@ -18100,7 +18100,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265239", ", Version Hash: ").concat("d2c2fd55dd8daed0675492f5d9ff1682e40f43d9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265254", ", Version Hash: ").concat("7a8e38a0b7d01ed23e6a182a7745c89191aeac9e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20374,8 +20374,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265239", "265239"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265239")), _ = 0), _
+        let _ = parseInt((e = "265254", "265254"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265254")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36232,4 +36232,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.a2f5f0b2f1cf592926e8.js.map
+//# sourceMappingURL=73222.bb42f2f85a11eec26d5e.js.map
