@@ -15079,6 +15079,10 @@
         COLLECTIBLES_BANNER_TITLE_2024: "Give your profile a fresh look",
         COLLECTIBLES_BANNER_DESCRIPTION_2024: "Check out the latest avatar decorations and profile effects and collect your favorite styles.",
         COLLECTIBLES_LUNAR_NEW_YEAR_TOOLTIP_TEXT: "Explore Lunar New Year styles",
+        COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE: "Check out new Element styles",
+        COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE_ALT: "Element styles are here - which will you unleash?",
+        COLLECTIBLES_ELEMENTS_COACHTIP_TITLE: "Harness the Elements",
+        COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION: "Fire. Water. Earth. Wind. Which will you unleash?",
         INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
         PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
         PRIVATE_CHANNEL_INTEGRATION_ADDED_DELETED_APPLICATION: "$[!!{username}!!](usernameHook) added a deleted application. See our [help center]({helpCenterLink}) for more info.",
@@ -18113,7 +18117,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265402", ", Version Hash: ").concat("f4b8ed1f4c88bfc6aa05929c063665f45aa48de2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265403", ", Version Hash: ").concat("0c54b48dcbe5803e84e772ff0f1649c8fc6461e6")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20387,8 +20391,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265402", "265402"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265402")), _ = 0), _
+        let _ = parseInt((e = "265403", "265403"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265403")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36212,4 +36216,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.e2b8317ed158c26816dc.js.map
+//# sourceMappingURL=73222.296f808485614d16da0c.js.map
