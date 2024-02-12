@@ -16480,14 +16480,14 @@
         POLL_NOTIFICATIONS: "Polls",
         POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
         POLL_SUBMIT_VOTE: "Vote",
-        POLL_VOTES_COUNT: "{count, plural, one {1 vote} other {{count} votes}}",
+        POLL_VOTES_COUNT: "{count, plural, one {{count} vote} other {{count} votes}}",
         POLL_ALREADY_VOTED: "Voted",
         POLL_EDIT_VOTE: "Change Vote",
         POLL_ANSWER_VOTED_ARIA: "You voted for this answer",
         POLL_OPTIONS_ARIA: "Poll options",
-        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, one {1 day} other {{days} days left}}",
-        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, one {1 hour} other {{hours} hours left}}",
-        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {1 min} other {{minutes} mins left}}",
+        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, one {{count} day} other {{days} days}} left",
+        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, one {{count} hour} other {{hours} hours}} left",
+        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {{count} min} other {{minutes} mins}} left",
         POLL_EXPIRED: "Poll closed",
         POLL_NOT_INTERACTIVE: "View original message to interact",
         POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
@@ -18130,7 +18130,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265627", ", Version Hash: ").concat("c3871b562c9939c9ec65fde8f73278e708b1e99e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265633", ", Version Hash: ").concat("83cf089730919f8237c48160a4452dd63b06c906")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20409,8 +20409,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265627", "265627"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265627")), _ = 0), _
+        let _ = parseInt((e = "265633", "265633"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265633")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36275,4 +36275,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.18111e264a094420e029.js.map
+//# sourceMappingURL=73222.6b2b34b2fa21d06799f1.js.map
