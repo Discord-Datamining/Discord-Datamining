@@ -16601,6 +16601,10 @@
         QUESTS_BAR_PROGRESS_EXPANDED_SUBHEADING_COMPLETE: "Claim by {expirationDate}.",
         QUESTS_LANDING_PAGE_ERROR_HEADING: "Whoops!",
         QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the quest there.",
+        QUESTS_GET_THIS_GAME: "Get this game",
+        QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
+        QUESTS_HIDE_THIS: "Hide this",
+        QUESTS_FIND_QUEST: "You can find this again in User Settings > Gift Inventory",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18130,7 +18134,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265637", ", Version Hash: ").concat("863f550a9716c6cd61070dd71f3e00dc59efea8e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265640", ", Version Hash: ").concat("35df629e894b90b3bb23e4556e74baf599c272be")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20409,8 +20413,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265637", "265637"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265637")), _ = 0), _
+        let _ = parseInt((e = "265640", "265640"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265640")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26061,23 +26065,26 @@
         getHeroAssetUrl: function() {
           return S
         },
-        getQuestBarHeroAssetUrl: function() {
+        getQuestBarStaticHeroAssetUrl: function() {
           return N
         },
-        getGameTileAssetUrl: function() {
+        getQuestBarAnimatedHeroAssetUrl: function() {
           return O
         },
-        getGameLogotypeAssetUrl: function() {
+        getGameTileAssetUrl: function() {
           return A
         },
-        getQuestForTargetedContent: function() {
+        getGameLogotypeAssetUrl: function() {
           return R
         },
-        getPlatformString: function() {
+        getQuestForTargetedContent: function() {
           return l
         },
-        calculatePercentComplete: function() {
+        getPlatformString: function() {
           return u
+        },
+        calculatePercentComplete: function() {
+          return L
         }
       }), E("222007");
       var t = E("588025"),
@@ -26139,7 +26146,8 @@
               primary: (o = _.colors).primary,
               secondary: o.secondary
             },
-            rewardCodePlatforms: _.reward_code_platforms.filter(e => t.QUEST_REWARD_CODE_PLATFORMS_SET.has(e))
+            rewardCodePlatforms: _.reward_code_platforms.filter(e => t.QUEST_REWARD_CODE_PLATFORMS_SET.has(e)),
+            videoAssets: _.video_assets
           },
           userStatus: null == e.user_status ? null : a(e.user_status),
           targetedContent: e.targeted_content
@@ -26157,16 +26165,17 @@
       }
       let T = e => "".concat(n).concat(e).concat("/reward.png"),
         S = e => "".concat(n).concat(e).concat("/hero.png"),
-        N = e => "".concat(n).concat(e).concat("/quest_bar_hero.gif"),
-        O = e => "".concat(n).concat(e).concat("/game_tile.png"),
-        A = (e, _) => "".concat(n).concat(e, "/").concat(_).concat("/game_logotype.png");
+        N = e => "".concat(n).concat(e).concat("/quests_bar_hero.png"),
+        O = e => "".concat(n).concat(e).concat("/quests_bar_hero.webm"),
+        A = e => "".concat(n).concat(e).concat("/game_tile.png"),
+        R = (e, _) => "".concat(n).concat(e, "/").concat(_).concat("/game_logotype.png");
 
-      function R(e, _) {
+      function l(e, _) {
         for (let [E, t] of e)
           if (!i(t) && t.targetedContent.includes(_)) return t;
         return null
       }
-      let l = e => {
+      let u = e => {
         switch (e) {
           case t.QuestRewardCodePlatforms.XBOX:
             return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
@@ -26181,7 +26190,7 @@
         }
       };
 
-      function u(e) {
+      function L(e) {
         if (null == e.userStatus) return 0;
         let {
           streamProgressSeconds: _,
@@ -36275,4 +36284,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.2de77ad2fffee6b067ba.js.map
+//# sourceMappingURL=73222.55ea230a373f89f4d5ae.js.map
