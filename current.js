@@ -18134,7 +18134,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265647", ", Version Hash: ").concat("551562ab5e55d19016b78464e6aceec3fcd2718f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265653", ", Version Hash: ").concat("a3dda84913668ac2907c5d30a972f492c6c086b7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20413,8 +20413,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265647", "265647"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265647")), _ = 0), _
+        let _ = parseInt((e = "265653", "265653"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265653")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -28780,7 +28780,7 @@
         default: function() {
           return I
         }
-      }), E("70102");
+      }), E("222007"), E("70102");
       var t = E("303167"),
         o = E("423670"),
         n = E("773336"),
@@ -28840,7 +28840,14 @@
           let E;
           let t = (0, o.getUpdatedOptions)(_);
           return null != window.DiscordSentry && window.DiscordSentry.withScope(_ => {
-            _.setExtras(t.extra), _.setTag("crash", "true"), E = window.DiscordSentry.captureException(e)
+            _.setExtras(t.extra), _.setTag("crash", "true"), _.setLevel("fatal"), _.addEventProcessor(e => {
+              var _, E;
+              let t = null === (E = e.exception) || void 0 === E ? void 0 : null === (_ = E.values) || void 0 === _ ? void 0 : _[0];
+              return null != t && (t.mechanism = {
+                ...t.mechanism,
+                handled: !1
+              }), e
+            }), E = window.DiscordSentry.captureException(e)
           }), E
         },
         captureMessage(e, _) {
@@ -36284,4 +36291,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.d5aafc70cf497792cdb6.js.map
+//# sourceMappingURL=73222.787980c3dbe9568dc5b4.js.map
