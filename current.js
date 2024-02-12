@@ -18117,7 +18117,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265473", ", Version Hash: ").concat("9e3ce980a17e1d373fe3fd3c3e4455a9357c0c3c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265476", ", Version Hash: ").concat("9345f644b169b4a1341be7428a08146d6de8d6bf")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20391,8 +20391,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265473", "265473"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265473")), _ = 0), _
+        let _ = parseInt((e = "265476", "265476"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265476")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -20426,7 +20426,7 @@
           } = e;
           if (_.type !== T.ChannelTypes.GROUP_DM) return;
           let E = _.originChannelId,
-            t = I.default.getChannelId("null");
+            t = I.default.getChannelId(T.NULL_STRING_GUILD_ID);
           null == s.default.getGuildId() && null != E && E === t && (0, r.transitionTo)(T.Routes.CHANNEL(T.ME, _.id)), null != E && E === I.default.getVoiceChannelId() && o.default.selectVoiceChannel(_.id, a.default.isVideoEnabled())
         }
         handleLogout() {
@@ -20452,17 +20452,18 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return T
+          return S
         }
       }), E("222007");
       var t = E("689988"),
         o = E("305961"),
         n = E("718517"),
-        r = E("388142"),
-        i = E("711454"),
-        a = E("578899");
-      let I = 0;
-      class s extends t.default {
+        r = E("299039"),
+        i = E("388142"),
+        a = E("711454"),
+        I = E("578899");
+      let s = 0;
+      class T extends t.default {
         constructor(...e) {
           super(...e), this.actions = {
             POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e),
@@ -20470,18 +20471,18 @@
           }, this.handleConnectionOpen = e => {
             this._attemptDeadchatPrompt(), this._triggerGamingStatsSetupExperiment()
           }, this.handleIdleChange = () => {
-            Date.now() - I > n.default.Millis.HOUR && this._attemptDeadchatPrompt()
+            Date.now() - s > n.default.Millis.HOUR && this._attemptDeadchatPrompt()
           }, this._attemptDeadchatPrompt = () => {
             let e = o.default.getGuilds(),
-              _ = Object.keys(e).filter(e => a.SimpleDeadchatPromptExperiment.getCurrentConfig({
+              _ = r.default.keys(e).filter(e => I.SimpleDeadchatPromptExperiment.getCurrentConfig({
                 guildId: e,
                 location: "manager"
               }).triggerDeadchat);
-            _.length > 0 && (I = Date.now(), (0, r.initiateChannelPrompts)(_))
+            _.length > 0 && (s = Date.now(), (0, i.initiateChannelPrompts)(_))
           }, this._triggerGamingStatsSetupExperiment = () => {
             let e = o.default.getGuilds();
-            Object.keys(e).forEach(e => {
-              i.GamingStatsSetupExperiment.trackExposure({
+            r.default.keys(e).forEach(e => {
+              a.GamingStatsSetupExperiment.trackExposure({
                 guildId: e,
                 location: "manager"
               })
@@ -20489,7 +20490,7 @@
           }
         }
       }
-      var T = new s
+      var S = new T
     },
     711454: function(e, _, E) {
       "use strict";
@@ -23920,24 +23921,25 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return A
+          return R
         }
       }), E("222007");
       var t = E("913144"),
         o = E("689988"),
         n = E("525065"),
-        r = E("178406");
-      let i = {},
-        a = {},
-        I = null;
-      async function s(e, _) {
-        null == i[e] && (i[e] = new Set), i[e].add(_), null == a[e] && (a[e] = Date.now()), S(e) && await T(e)
+        r = E("299039"),
+        i = E("178406");
+      let a = {},
+        I = {},
+        s = null;
+      async function T(e, _) {
+        null == a[e] && (a[e] = new Set), a[e].add(_), null == I[e] && (I[e] = Date.now()), N(e) && await S(e)
       }
 
-      function T(e) {
-        if (null == i[e]) return;
-        let _ = Array.from(i[e]);
-        i[e] = new Set, a[e] = Date.now(), requestAnimationFrame(async () => {
+      function S(e) {
+        if (null == a[e]) return;
+        let _ = Array.from(a[e]);
+        a[e] = new Set, I[e] = Date.now(), requestAnimationFrame(async () => {
           await t.default.dispatch({
             type: "MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH",
             guildId: e,
@@ -23946,15 +23948,15 @@
         })
       }
 
-      function S(e) {
-        let _ = i[e];
+      function N(e) {
+        let _ = a[e];
         if (null == _) return !1;
         let E = _.size >= function(e) {
             var _;
             let E = null !== (_ = n.default.getMemberCount(e)) && void 0 !== _ ? _ : 0;
             return E >= 75e3 ? 10 : 2
           }(e),
-          t = a[e];
+          t = I[e];
         if (E) return !0;
         if (null == t) return !1;
         let o = Date.now() - t,
@@ -23966,33 +23968,35 @@
         return r
       }
 
-      function N(e) {
-        i[e] = new Set, a[e] = null
+      function O(e) {
+        a[e] = new Set, I[e] = null
       }
-      class O extends o.default {
+      class A extends o.default {
         handleInitialize() {
-          null == I && null == I && (I = setInterval(() => {
-            for (let e in i) S(e) && T(e)
+          null == s && null == s && (s = setInterval(() => {
+            r.default.forEachKey(a, e => {
+              N(e) && S(e)
+            })
           }, 1e4))
         }
         handleGuildMemberUpdate(e, _) {
-          let E = r.default.isInitialized(e);
-          if (E) return s(e, _)
+          let E = i.default.isInitialized(e);
+          if (E) return T(e, _)
         }
         handleGuildMemberRemove(e, _) {
-          let E = r.default.isInitialized(e);
-          if (E) return s(e, _)
+          let E = i.default.isInitialized(e);
+          if (E) return T(e, _)
         }
         handleGuildDelete(e) {
           let _ = e.guild.id,
-            E = r.default.isInitialized(_);
-          E && N(_)
+            E = i.default.isInitialized(_);
+          E && O(_)
         }
         handleGuildMemberSearchSuccess(e) {
           let {
             guildId: _
-          } = e, E = r.default.isInitialized(_);
-          E && N(_)
+          } = e, E = i.default.isInitialized(_);
+          E && O(_)
         }
         constructor(...e) {
           super(...e), this.actions = {
@@ -24004,7 +24008,7 @@
           }
         }
       }
-      var A = new O
+      var R = new A
     },
     999243: function(e, _, E) {
       "use strict";
@@ -24392,7 +24396,7 @@
               enableHangStatus: t,
               setDefaultStatus: o
             } = I.HangStatusExperiment.getCurrentConfig({
-              guildId: null != E ? E : "",
+              guildId: null != E ? E : T.EMPTY_STRING_GUILD_ID,
               location: "HangStatusManager"
             }, {
               autoTrackExposure: !0
@@ -27300,40 +27304,40 @@
       "use strict";
       E.r(_), E.d(_, {
         BINARY_READ_OPTIONS: function() {
-          return s
+          return T
         },
         b64ToProtoWithType: function() {
-          return S
-        },
-        b64ToProto: function() {
           return N
         },
-        b64ToPreloadedUserSettingsProto: function() {
+        b64ToProto: function() {
           return O
         },
-        protoToB64WithType: function() {
+        b64ToPreloadedUserSettingsProto: function() {
           return A
         },
-        protoToB64: function() {
+        protoToB64WithType: function() {
           return R
         },
-        mergeTopLevelFields: function() {
+        protoToB64: function() {
           return l
         },
-        mutateUserGuildSettingsInternal: function() {
+        mergeTopLevelFields: function() {
           return u
         },
-        mutateUserChannelSettings: function() {
+        mutateUserGuildSettingsInternal: function() {
           return L
         },
-        mutateUserChannelSettingsInternal: function() {
+        mutateUserChannelSettings: function() {
           return C
         },
-        runMigrations: function() {
+        mutateUserChannelSettingsInternal: function() {
           return D
         },
-        serializeUsageHistory: function() {
+        runMigrations: function() {
           return c
+        },
+        serializeUsageHistory: function() {
+          return d
         }
       }), E("70102"), E("222007"), E("424973");
       var t = E("849266"),
@@ -27342,62 +27346,63 @@
         r = E("713349"),
         i = E("151426"),
         a = E("959714"),
-        I = E("397336");
-      let s = {
+        I = E("397336"),
+        s = E("49111");
+      let T = {
           readerFactory: e => new t.BinaryReader(e, new TextDecoder("utf-8"))
         },
-        T = {
+        S = {
           [I.UserSettingsTypes.PRELOADED_USER_SETTINGS]: i.PreloadedUserSettings,
           [I.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: r.FrecencyUserSettings
         };
 
-      function S(e, _) {
-        return null != _ && e in T ? N(T[e], _) : null
+      function N(e, _) {
+        return null != _ && e in S ? O(S[e], _) : null
       }
 
-      function N(e, _) {
+      function O(e, _) {
         if (null == _) return null;
         let E = (0, t.base64decode)(_);
         try {
-          return e.fromBinary(E, s)
+          return e.fromBinary(E, T)
         } catch (e) {
           throw Error("Settings proto failed to deserialize (potentially corrupt): ".concat(e))
         }
       }
 
-      function O(e) {
-        return N(i.PreloadedUserSettings, e)
-      }
-
-      function A(e, _) {
-        return R(T[e], _)
+      function A(e) {
+        return O(i.PreloadedUserSettings, e)
       }
 
       function R(e, _) {
+        return l(S[e], _)
+      }
+
+      function l(e, _) {
         return (0, t.base64encode)(e.toBinary(_))
       }
 
-      function l(e, _, E) {
+      function u(e, _, E) {
         for (let e in _ = {
             ..._
           }, E) delete _[e];
         return e.mergePartial(_, E), _
       }
 
-      function u(e, _, E) {
-        return (null == _ || "null" === _) && (_ = "0"), !(_ in e.guilds) && (e.guilds[_] = i.GuildSettings.create()), E(e.guilds[_])
+      function L(e, _, E) {
+        return (null == _ || "null" === _) && (_ = s.ZERO_STRING_GUILD_ID), !(_ in e.guilds) && (e.guilds[_] = i.GuildSettings.create()), E(e.guilds[_])
       }
 
-      function L(e, _, E, t) {
+      function C(e, _, E, t) {
         var o, n, r;
-        return o = e, n = _, r = e => C(e, E, t), null == o.guilds && (o.guilds = i.AllGuildSettings.create()), u(o.guilds, n, r)
+        return o = e, n = _, r = e => D(e, E, t), null == o.guilds && (o.guilds = i.AllGuildSettings.create()), L(o.guilds, n, r)
       }
 
-      function C(e, _, E) {
+      function D(e, _, E) {
         return !(_ in e.channels) && (e.channels[_] = i.ChannelSettings.create()), E(e.channels[_])
       }
 
-      function D(e, _) {
+      function c(e, _) {
         null == e.versions && (e.versions = a.Versions.create());
         let E = 0;
         for (let e of _) {
@@ -27427,7 +27432,7 @@
         }
       }
 
-      function c(e, _) {
+      function d(e, _) {
         let E = Object.entries(e);
         if (E.length > _)
           for (E = n.sortBy(E, e => {
@@ -36216,4 +36221,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.cb12abd5017aba5da977.js.map
+//# sourceMappingURL=73222.05c4047d9a4b2d9b0ecd.js.map
