@@ -5310,13 +5310,18 @@
         STREAM_FPS_OPTION: "{value} FPS",
         STREAM_RESOLUTION: "Resolution",
         STREAM_PREMIUM_UPSELL_HEADER: "Unlock HD Video streaming with Discord Nitro",
+        STREAM_PREMIUM_UPSELL_HEADER_V2: "Stream your clutchest moments in 4k resolution",
         STREAM_PREMIUM_UPSELL_BANNER: "Unlock all resolutions and frame rates.",
+        STREAM_PREMIUM_UPSELL_BANNER_V2: "Stream in HD resolution with Nitro",
+        STREAM_PREMIUM_UPSELL_BANNER_LEARN_MORE_V2: "Stream in HD resolution with Nitro. [Learn more](onClick)",
         STREAM_PREMIUM_UPSELL_BANNER_PRESET_DOCUMENTS: "Level up your streaming.",
         STREAM_PREMIUM_UPSELL_BANNER_CTA: "Get Nitro",
         STREAM_PREMIUM_UPSELL_BODY: "Stream HD resolutions at 60 frames per second, get access to chat perks, [and more with Discord Nitro!](onPressMore)",
+        STREAM_PREMIUM_UPSELL_BODY_V2: "Unlock up to 4k/60fps streaming, custom emojis everywhere, animated avatar, and more with Nitro.",
         STREAM_PREMIUM_UPSELL_BODY_NO_CTA: "Stream HD resolutions at 60 frames per second, get access to chat perks, and more with Discord Nitro!",
         STREAM_PREMIUM_UPSELL_WITH_ACTION: "Lift off with Discord Nitro to stream HD resolutions at 60 frames per second. [Learn more](onClick).",
         STREAM_PREMIUM_UPSELL_CTA: "Subscribe",
+        STREAM_PREMIUM_UPSELL_SECONDARY_CTA: "View All Nitro Perks",
         STREAM_PRESET_DOCUMENTS_DESCRIPTION_NITRO: "The picture will be clear (Source) with a slow frame rate ({fps} FPS).",
         STREAM_PRESET_VIDEO: "Smoother Video",
         STREAM_PRESET_DOCUMENTS: "Better Text Readability",
@@ -18125,7 +18130,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265609", ", Version Hash: ").concat("801ceebd11e6ece2393d06e28837bc9f2c32da75")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265627", ", Version Hash: ").concat("c3871b562c9939c9ec65fde8f73278e708b1e99e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20404,8 +20409,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265609", "265609"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265609")), _ = 0), _
+        let _ = parseInt((e = "265627", "265627"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265627")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36270,4 +36275,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.462788c9f74bfa90925a.js.map
+//# sourceMappingURL=73222.18111e264a094420e029.js.map
