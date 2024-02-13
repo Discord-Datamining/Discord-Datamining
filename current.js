@@ -13349,6 +13349,15 @@
         GUILD_MEMBER_MOD_VIEW_ROLES_ADDED_AND_REMOVED: "(Added) {roleNamesAdded}\n(Removed) {roleNamesRemoved}",
         GUILD_MEMBER_MOD_VIEW_RECENT_AUDIT_LOG: "Moderator Action Log",
         GUILD_MEMBER_MOD_VIEW_AUDIT_LOG_SOURCE_USER: "Member who initiated this action.",
+        GUILD_MEMBER_MOD_VIEW_MOD_PERMSSISONS_TITLE: "Mod Permissions",
+        GUILD_MEMBER_MOD_VIEW_VIEW_ALL_PERMISSIONS: "All ({count})",
+        GUILD_MEMBER_MOD_VIEW_ROLE_COUNT: "{roleCount, plural, =1 {# Role} other {# Roles}}",
+        GUILD_MEMBER_MOD_VIEW_MOD_PERMSSISONS_PANEL_TITLE: "All Granted Permissions",
+        GUILD_MEMBER_MOD_VIEW_MOD_NO_MOD_PERMS_FOUND: "No Mod Permissions",
+        GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY: "Granted By",
+        GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_GRANTED_BY: "(Risky) Granted By",
+        GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY_ARIA_LABEL: "Permission Granted By These Roles",
+        GUILD_MEMBER_MOD_VIEW_HIGHEST_ROLE: "Highest Role",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
         GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
@@ -18169,7 +18178,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265886", ", Version Hash: ").concat("0bf8e408ba65db8e3aaf2e68d3c84b9f39094419")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265887", ", Version Hash: ").concat("d819bafcaf314dea1522a103e869546cb27571b0")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20448,8 +20457,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265886", "265886"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265886")), _ = 0), _
+        let _ = parseInt((e = "265887", "265887"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265887")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36326,4 +36335,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.8c165e2e1f044bd0ea9d.js.map
+//# sourceMappingURL=73222.f628c87be2210b1bcf3a.js.map
