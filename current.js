@@ -16665,7 +16665,13 @@
         QUIET_MODE_SETTINGS_DESCRIPTION: "Discord will not show in-app, desktop notifications or play message sounds.",
         QUIET_MODE_DISABLED_BY: "This is disabled by Focus Mode",
         QUIET_MODE_HABITUAL_DND_NOTICE: "You've been on Do Not Disturb for a while. Would you like to enable Focus Mode instead?",
-        QUICK_REPLY_CLOSE_ARIA_LABEL: "Close reply popout"
+        QUICK_REPLY_CLOSE_ARIA_LABEL: "Close reply popout",
+        ACTIVITY_REACTION_IMAGE_ALT_TEXT_BASE: "An activity card showing @{username} and {activity}",
+        ACTIVITY_REACTION_IMAGE_ALT_TEXT_PLAYING: "An activity card showing @{username} playing {activity}",
+        ACTIVITY_REACTION_IMAGE_ALT_TEXT_WATCHING: "An activity card showing @{username} watching {activity}",
+        ACTIVITY_REACTION_IMAGE_ALT_TEXT_LISTENING: "An activity card showing @{username} listening to {activity}",
+        ACTIVITY_REACTION_IMAGE_ALT_TEXT_SPOTIFY: "An activity card showing @{username} listening to {song} by {artist}",
+        ACTIVITY_REACTION_IMAGE_ALT_TEXT_STREAMING: "An activity card showing @{username} streaming {activity}"
       })
     },
     444051: function(e, _, E) {
@@ -18178,7 +18184,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265887", ", Version Hash: ").concat("d819bafcaf314dea1522a103e869546cb27571b0")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265889", ", Version Hash: ").concat("7fcd2c5ac7fd6b0120f0c55278ae4d832eeff598")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20457,8 +20463,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265887", "265887"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265887")), _ = 0), _
+        let _ = parseInt((e = "265889", "265889"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265889")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36335,4 +36341,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.f628c87be2210b1bcf3a.js.map
+//# sourceMappingURL=73222.883498e0e6ca3f3cd588.js.map
