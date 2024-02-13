@@ -16966,7 +16966,18 @@
         KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
         MANAGE_AUTHORIZED_APP: "Manage Authorized App",
-        MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff."
+        MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
+        INAPPROPRIATE_CONVERSATION_BLOCK_THEM: "Block them",
+        INAPPROPRIATE_CONVERSATION_UNBLOCK: "Unblock",
+        INAPPROPRIATE_CONVERSATION_BLOCK_TOAST: "Account blocked",
+        INAPPROPRIATE_CONVERSATION_UNBLOCK_TOAST: "Account unblocked",
+        INAPPROPRIATE_CONVERSATION_REPORT_TOAST: "Account reported",
+        INAPPROPRIATE_CONVERSATION_REPORT_THEM: "Report them",
+        INAPPROPRIATE_CONVERSATION_REPORTED: "Reported",
+        INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE: "Contact Crisis Text Line",
+        INAPPROPRIATE_CONVERSATION_VISIT_NOFILTR: "Visit NoFiltr",
+        INAPPROPRIATE_CONVERSATION_NOFILTR_DESCRIPTION: "NoFiltr is a community that empowers young people to safely navigate online.",
+        INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later."
       })
     },
     657743: function(e, _, E) {
@@ -18158,7 +18169,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265857", ", Version Hash: ").concat("f5c712f5acaa1fd3ed518d5905cce7813a1fbf87")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265862", ", Version Hash: ").concat("4e0a56d041d3c372d0c3b3b387ed59772e69257e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20437,8 +20448,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265857", "265857"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265857")), _ = 0), _
+        let _ = parseInt((e = "265862", "265862"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265862")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36315,4 +36326,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.1a15b8d690cca6fde4f4.js.map
+//# sourceMappingURL=73222.f253e1b4847f4f10599b.js.map
