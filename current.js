@@ -18184,7 +18184,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265912", ", Version Hash: ").concat("6d1e3566809c83e3af4ef9f50ce0cca94c10cfbf")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("265913", ", Version Hash: ").concat("c4a7035c8a1c652ed17071de2e3130456313bd16")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19024,6 +19024,70 @@
           })
         }) : null
       }
+    },
+    479732: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return n
+        }
+      }), E("222007");
+      var t = E("91131"),
+        o = E("802493"),
+        n = new class e {
+          async getAll() {
+            let e = o.default.guildsRequiringDeletedIdsSync();
+            if (null == e) return new Set;
+            let _ = await e.getMany();
+            return new Set(_.map(e => e.id))
+          }
+          handleConnectionOpen(e, _) {
+            var E;
+            let {
+              guilds: n
+            } = e, r = n.filter(e => e.unableToSyncDeletes).map(e => ({
+              id: e.id
+            }));
+            r.length > 0 && o.default.guildsRequiringDeletedIdsSyncTransaction(_).putAll(r), null === (E = t.initialState.guildIdsRequiringDeletedIdsSync) || void 0 === E || E.forEach(e => {
+              o.default.guildsRequiringDeletedIdsSyncTransaction(_).put({
+                id: e
+              })
+            })
+          }
+          handleBackgroundSync(e, _) {
+            let {
+              guilds: E
+            } = e, t = E.filter(e => "partial" === e.data_mode && e.unableToSyncDeletes).map(e => ({
+              id: e.id
+            }));
+            t.length > 0 && o.default.guildsRequiringDeletedIdsSyncTransaction(_).putAll(t)
+          }
+          handleGuildCreate(e, _) {
+            let {
+              guild: E
+            } = e;
+            E.unableToSyncDeletes && o.default.guildsRequiringDeletedIdsSyncTransaction(_).put({
+              id: E.id
+            })
+          }
+          handleDeletedEntityIds(e, _) {
+            o.default.guildsRequiringDeletedIdsSyncTransaction(_).delete(e.guild_id)
+          }
+          handleClear(e) {
+            o.default.guildsRequiringDeletedIdsSyncTransaction(e).delete()
+          }
+          handleReset() {}
+          constructor() {
+            this.actions = {
+              CLEAR_CACHES: (e, _) => this.handleClear(_),
+              CLEAR_GUILD_CACHE: (e, _) => this.handleClear(_),
+              BACKGROUND_SYNC: (e, _) => this.handleBackgroundSync(e, _),
+              CONNECTION_OPEN: (e, _) => this.handleConnectionOpen(e, _),
+              GUILD_CREATE: (e, _) => this.handleGuildCreate(e, _),
+              DELETED_ENTITY_IDS: (e, _) => this.handleDeletedEntityIds(e, _)
+            }
+          }
+        }
     },
     805199: function(e, _, E) {
       "use strict";
@@ -20463,8 +20527,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "265912", "265912"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265912")), _ = 0), _
+        let _ = parseInt((e = "265913", "265913"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("265913")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -23304,7 +23368,7 @@
         n = E("446674"),
         r = E("913144"),
         i = E("689988"),
-        a = E("288206"),
+        a = E("479732"),
         I = E("605250"),
         s = E("385976"),
         T = E("364685"),
@@ -23377,7 +23441,9 @@
       }
 
       function u() {
-        a.default.getGuildIdsRequiringDeletedIdsSync().forEach(e => C(e))
+        a.default.getAll().then(e => {
+          e.forEach(e => C(e))
+        })
       }
 
       function L(e) {
@@ -36341,4 +36407,4 @@
     }
   }
 ]);
-//# sourceMappingURL=73222.8dd8c8c16bb83859e923.js.map
+//# sourceMappingURL=73222.49f2d7652d70840aaad3.js.map
