@@ -18203,7 +18203,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266449", ", Version Hash: ").concat("c87d3215848fef12d662975b466a0173937734ee")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266450", ", Version Hash: ").concat("91764576e1fa74d2295d7b541c81148e182c05d4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20546,8 +20546,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266449", "266449"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266449")), _ = 0), _
+        let _ = parseInt((e = "266450", "266450"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266450")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25753,7 +25753,7 @@
       let O = 5 * r.default.Millis.SECOND,
         A = 12 * r.default.Millis.HOUR,
         R = 1 * r.default.Millis.MINUTE,
-        l = 15 * r.default.Millis.SECOND;
+        l = 30 * r.default.Millis.SECOND;
       class L extends t.default {
         maybeFetchCurrentQuests() {
           (0, T.getIsEligibleForQuests)({
@@ -25785,7 +25785,7 @@
             let {
               streamProgressSeconds: E
             } = _.userStatus, t = 60 * _.config.streamDurationRequirementMinutes;
-            return Math.min(Math.max((t - E) * 30, l), R)
+            return t - E <= .1 * t ? l : R
           }, this.terminateHeartbeat = e => {
             window.clearTimeout(this.sendHeartbeatIntervalIds.get(e)), this.sendHeartbeatIntervalIds.delete(e)
           }, this.handleEnrollmentSuccess = e => {
@@ -35550,4 +35550,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.831adbf0feda692d754e.js.map
+//# sourceMappingURL=55115.3dae7cd783590d139e4c.js.map
