@@ -16676,7 +16676,7 @@
         QUIET_MODE_SETTINGS_DESCRIPTION: "Discord will not show in-app, desktop notifications or play message sounds.",
         QUIET_MODE_DISABLED_BY: "This is disabled by Focus Mode",
         QUIET_MODE_HABITUAL_DND_NOTICE: "You've been on Do Not Disturb for a while. Would you like to enable Focus Mode instead?",
-        QUICK_REPLY_CLOSE_ARIA_LABEL: "Close reply popout",
+        ACTIVITY_REACTION_REPLY_TITLE: "Chat about {activity}",
         ACTIVITY_REACTION_IMAGE_ALT_TEXT_BASE: "An activity card showing @{username} and {activity}",
         ACTIVITY_REACTION_IMAGE_ALT_TEXT_PLAYING: "An activity card showing @{username} playing {activity}",
         ACTIVITY_REACTION_IMAGE_ALT_TEXT_WATCHING: "An activity card showing @{username} watching {activity}",
@@ -18203,7 +18203,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266412", ", Version Hash: ").concat("03c873e1774e98495fb02b55c4dd4149d521b534")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266419", ", Version Hash: ").concat("25088486df3c6702d2f3bf4834513bf78396c5f7")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20546,8 +20546,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266412", "266412"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266412")), _ = 0), _
+        let _ = parseInt((e = "266419", "266419"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266419")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35550,4 +35550,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.4de270d972f9abfc767d.js.map
+//# sourceMappingURL=55115.0211891b28588eeb6c1e.js.map
