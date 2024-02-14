@@ -16354,6 +16354,7 @@
         SAFETY_TOOLS_ACTION_SHEET_ABOUT_TITLE: "About safety alerts",
         SAFETY_TOOLS_ACTION_SHEET_ABOUT_DESCRIPTION: "We take teen safety seriously at Discord. When we detect a possible safety risk in a conversation, we'll let you know. [Learn more about safety alerts]({learnMoreLink})",
         SAFETY_TOOLS_ACTION_SHEET_ABOUT_GO_TO_SETTINGS: "Go to settings",
+        SAFETY_TOOLS_ACTION_SHEET_ABOUT_DISMISS: "Dismiss",
         STRANGER_DANGER_BANNER_HEADER: "Unwanted message?",
         STRANGER_DANGER_BANNER_DESCRIPTION: "If you don't want to chat with this person, you can block or mute them.",
         STRANGER_DANGER_BANNER_MORE_TIPS: "More tips",
@@ -18197,7 +18198,7 @@
         L = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), r.default.Emitter.injectBatchEmitChanges(a.batchUpdates), r.default.PersistedStore.disableWrites = __OVERLAY__, r.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266358", ", Version Hash: ").concat("7953ffc9c4015842a960764b8fda179103da9420")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266379", ", Version Hash: ").concat("a5293234129c921bf255f41442f66517085ca969")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20540,8 +20541,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266358", "266358"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266358")), _ = 0), _
+        let _ = parseInt((e = "266379", "266379"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266379")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36032,4 +36033,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.ca375352963b0d60d683.js.map
+//# sourceMappingURL=55115.2dad352f237549fe6a17.js.map
