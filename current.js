@@ -16487,6 +16487,7 @@
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ADD_DETAILS: "Add details",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_EDIT_DETAILS: "Edit details",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_ERROR: "Error requesting review",
+        APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_DEFLECTION_ERROR: "Review request is not eligible for this violation currently",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_FOOTER: "Your request will be sent to our team. Violations will stay on your account until they expire or are removed after review.",
         APPEAL_INGESTION_MODAL_CONFIRM_SUBMISSION_SUBHEADER: "Here's a summary of your request.",
         APPEAL_INGESTION_FREE_TEXT_REASON_ACTION_SHEET_SUBHEADER: "You can add context or anything else that might be helpful for us to know.",
@@ -18201,7 +18202,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266789", ", Version Hash: ").concat("aaf8fecc0dba5f5b9cde48b89dbaa90da52328ab")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266790", ", Version Hash: ").concat("cde73dbe5d800fcca7b9b36152e6b55b562985c9")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20544,8 +20545,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266789", "266789"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266789")), _ = 0), _
+        let _ = parseInt((e = "266790", "266790"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266790")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35543,4 +35544,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.2676f4ec4faea0fda38d.js.map
+//# sourceMappingURL=55115.a9410d34d42255bbeed0.js.map
