@@ -11361,6 +11361,41 @@
         GUILD_EVENT_UPSELL_ALT_IMG: "Calendar next to three friends in voice chat, with lots of sparkles and excitement",
         GUILD_EVENT_CREATED_MODAL_HEADER: "All set. Now share your event!",
         GUILD_EVENT_CREATED_MODAL_BODY: "Copy the event link below to invite people to your event. This also acts as a server invite link.",
+        EVENT_CANCELED: "Canceled",
+        GUILD_EVENT_DELETE_CONFIRM_BODY_IS_RECURRING: "Canceling this event will also **cancel all events** in this series.",
+        DELETE_ALL_EVENTS: "Cancel all Events",
+        DELETE_THIS_EVENT: "Cancel this Event",
+        DELETE_ALL_EVENTS_IN_SERIES: "Cancel all Events in this Series",
+        RESTORE_EVENT: "Restore Event",
+        CREATE_EVENT_RECUR_LABEL: "Event Frequency",
+        CREATE_EVENT_RECUR_NONE: "Does not repeat",
+        CREATE_EVENT_RECUR_WEEKLY: "Weekly on {weekday}",
+        CREATE_EVENT_RECUR_BIWEEKLY: "Every other {weekday}",
+        CREATE_EVENT_RECUR_MONTHLY: "Monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
+        CREATE_EVENT_RECUR_YEARLY: "Annually on {date}",
+        CREATE_EVENT_RECUR_WEEKDAYS: "Every weekday (Monday to Friday)",
+        GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES: "View future events",
+        GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
+        GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
+        GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
+        GUILD_SCHEDULED_EVENT_REPEATS_BIWEEKLY: "Repeats every other {weekday}",
+        GUILD_SCHEDULED_EVENT_REPEATS_MONTHLY: "Repeats monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
+        GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
+        GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED: "I am interested in...",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED: "I am not interested in...",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES: "All events in this series",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "This event",
+        GUILD_CREATE_STAFF_ONLY_HINT: "Only Discord employees would be able to join this server.",
+        EDIT_THIS_EVENT: "Edit this Event",
+        EDIT_ALL_EVENTS: "Edit all Events in this Series",
+        GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
+        GUILD_EVENT_EDIT_CONFIRM_BODY_EDIT_ALL_HINT: "Editing this event will also **update all events** in this series.",
+        GUILD_EVENT_RECURRING_COACHMARK_CTA: "Try it",
+        GUILD_EVENT_RECURRING_COACHMARK_TITLE: "NEW! Repeating Events",
+        GUILD_EVENT_RECURRING_COACHMARK_BODY: "You can now easily repeat events.",
+        COPY_RECURRENCE_LINK: "Copy this Event Link",
+        COPY_SERIES_LINK: "Copy Event Series Link",
         GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_CREATE: "Create Event",
         GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_UPDATE: "Update Event",
         GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_DELETE: "Cancel Event",
@@ -16734,41 +16769,6 @@
         DELETE_STAGE_EVENT_CONFIRMATION_DESCRIPTION: "Are you sure you want to delete **!!{eventName}!!**? This action cannot be undone.",
         CREATE_STAGE_INSTANCE_SELECT_GUILD_HEADER: "Where's the party?",
         GUILD_STAGES_LANDING_MOBILE_SUBTITLE: "Visit this link on your desktop to buy a ticket. Once you have a ticket, you'll be able to attend the event on desktop or mobile.",
-        EVENT_CANCELED: "Canceled",
-        GUILD_EVENT_DELETE_CONFIRM_BODY_IS_RECURRING: "Canceling this event will also **cancel all events** in this series.",
-        DELETE_ALL_EVENTS: "Cancel all Events",
-        DELETE_THIS_EVENT: "Cancel this Event",
-        DELETE_ALL_EVENTS_IN_SERIES: "Cancel all Events in this Series",
-        RESTORE_EVENT: "Restore Event",
-        CREATE_EVENT_RECUR_LABEL: "Event Frequency",
-        CREATE_EVENT_RECUR_NONE: "Does not repeat",
-        CREATE_EVENT_RECUR_WEEKLY: "Weekly on {weekday}",
-        CREATE_EVENT_RECUR_BIWEEKLY: "Every other {weekday}",
-        CREATE_EVENT_RECUR_MONTHLY: "Monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
-        CREATE_EVENT_RECUR_YEARLY: "Annually on {date}",
-        CREATE_EVENT_RECUR_WEEKDAYS: "Every weekday (Monday to Friday)",
-        GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES: "View future events",
-        GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
-        GUILD_SCHEDULED_EVENT_REPEATS: "Events in series",
-        GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
-        GUILD_SCHEDULED_EVENT_REPEATS_BIWEEKLY: "Repeats every other {weekday}",
-        GUILD_SCHEDULED_EVENT_REPEATS_MONTHLY: "Repeats monthly on the {nth, plural, =1 {first} =2 {second} =3 {third} =4 {fourth} =5 {fifth}} {weekday}",
-        GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
-        GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED: "I am interested in...",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED: "I am not interested in...",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES: "All events in this series",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "This event",
-        GUILD_CREATE_STAFF_ONLY_HINT: "Only Discord employees would be able to join this server.",
-        EDIT_THIS_EVENT: "Edit this Event",
-        EDIT_ALL_EVENTS: "Edit all Events in this Series",
-        GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
-        GUILD_EVENT_EDIT_CONFIRM_BODY_EDIT_ALL_HINT: "Editing this event will also **update all events** in this series.",
-        GUILD_EVENT_RECURRING_COACHMARK_CTA: "Try it",
-        GUILD_EVENT_RECURRING_COACHMARK_TITLE: "NEW! Repeating Events",
-        GUILD_EVENT_RECURRING_COACHMARK_BODY: "You can now easily repeat events.",
-        COPY_RECURRENCE_LINK: "Copy this Event Link",
-        COPY_SERIES_LINK: "Copy Event Series Link",
         GET_MOBILE_APP_SUBTITLE: "Discord isn't supported on mobile web browsers. Join over 100 million people who use Discord to talk with communities and friends.",
         MOBILE_APP_DOWNLOAD_CTA: "Get our mobile app",
         MOBILE_APP_DOWNLOAD_SUBHEADER: "Keep the conversion going on our iOS or Android app.",
@@ -18207,7 +18207,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266912", ", Version Hash: ").concat("c78e5e86ef319767a421c92b87054655b9e2f554")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266918", ", Version Hash: ").concat("625dab9101952541231ddd66845d5ab2a051de8f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20550,8 +20550,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266912", "266912"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266912")), _ = 0), _
+        let _ = parseInt((e = "266918", "266918"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266918")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35549,4 +35549,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.66289f64a086807139ac.js.map
+//# sourceMappingURL=55115.10a8ba4b5fcc1f379ad2.js.map
