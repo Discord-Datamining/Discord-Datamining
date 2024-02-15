@@ -17004,7 +17004,11 @@
         INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE: "Contact Crisis Text Line",
         INAPPROPRIATE_CONVERSATION_VISIT_NOFILTR: "Visit NoFiltr",
         INAPPROPRIATE_CONVERSATION_NOFILTR_DESCRIPTION: "NoFiltr is a community that empowers young people to safely navigate online.",
-        INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later."
+        INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later.",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_DESCRIPTION: "They won't be able to message you. If you feel their actions could harm someone, please submit a report to Discord.",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_BUTTON: "Block",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_AND_REPORT_BUTTON: "Block and report",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_CANCEL_BUTTON: "Cancel"
       })
     },
     657743: function(e, _, E) {
@@ -18202,7 +18206,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266867", ", Version Hash: ").concat("697eb162f24c914d617b3c3a3eee5fc32d7c5390")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266871", ", Version Hash: ").concat("a79b7486cfa1f6082a8ad35233b81a4e749b3783")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20545,8 +20549,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266867", "266867"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266867")), _ = 0), _
+        let _ = parseInt((e = "266871", "266871"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266871")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35544,4 +35548,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.2ce79bd365b6ad7ef76b.js.map
+//# sourceMappingURL=55115.8c00c8865b22c18131dc.js.map
