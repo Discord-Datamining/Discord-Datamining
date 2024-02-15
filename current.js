@@ -15113,7 +15113,7 @@
         COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE: "Check out new Element styles",
         COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE_ALT: "Element styles are here - which will you unleash?",
         COLLECTIBLES_ELEMENTS_COACHTIP_TITLE: "Harness the Elements",
-        COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION: "Fire. Water. Earth. Wind. Which will you unleash?",
+        COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION: "Fire. Wind. Water. Earth. Which will you unleash?",
         INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
         PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
         PRIVATE_CHANNEL_INTEGRATION_ADDED_DELETED_APPLICATION: "$[!!{username}!!](usernameHook) added a deleted application. See our [help center]({helpCenterLink}) for more info.",
@@ -16647,7 +16647,7 @@
         QUESTS_COMPLETION_PROGRESS_STARTED: "Keep it up!",
         QUESTS_COMPLETION_PROGRESS_HALFWAY: "You're halfway there!",
         QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE: "You're so close!",
-        QUESTS_COMPLETION_PROGRESS_COMPLETE: "You did it!",
+        QUESTS_COMPLETION_PROGRESS_COMPLETE: "Quest completed for this game!",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18202,7 +18202,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266853", ", Version Hash: ").concat("75eb68c2056ffd6f5ed2df16aeb56cd00134f35a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266857", ", Version Hash: ").concat("8eaaf8f7236afc6250f6a75d7646f7ca48e55e8f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20545,8 +20545,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266853", "266853"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266853")), _ = 0), _
+        let _ = parseInt((e = "266857", "266857"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266857")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35544,4 +35544,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.08a9b09fdeff44872dd6.js.map
+//# sourceMappingURL=55115.5eb6d8b32ea4d05a87c4.js.map
