@@ -16647,7 +16647,8 @@
         QUESTS_COMPLETION_PROGRESS_STARTED: "Keep it up!",
         QUESTS_COMPLETION_PROGRESS_HALFWAY: "You're halfway there!",
         QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE: "You're so close!",
-        QUESTS_COMPLETION_PROGRESS_COMPLETE: "Quest completed for this game!",
+        QUESTS_COMPLETION_PROGRESS_COMPLETE: "You did it!",
+        QUESTS_COMPLETION_PROGRESS_COMPLETE_ACTIVITY_PANEL: "You completed a Quest!",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18206,7 +18207,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266895", ", Version Hash: ").concat("fdfc39d2639cba807f57d9ad4e3ce2a684519f5e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266912", ", Version Hash: ").concat("c78e5e86ef319767a421c92b87054655b9e2f554")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20549,8 +20550,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266895", "266895"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266895")), _ = 0), _
+        let _ = parseInt((e = "266912", "266912"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266912")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35548,4 +35549,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.d361f634c827c083e03c.js.map
+//# sourceMappingURL=55115.66289f64a086807139ac.js.map
