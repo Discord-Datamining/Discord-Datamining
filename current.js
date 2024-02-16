@@ -16702,6 +16702,12 @@
         QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE: "You're so close!",
         QUESTS_COMPLETION_PROGRESS_COMPLETE: "You did it!",
         QUESTS_COMPLETION_PROGRESS_COMPLETE_ACTIVITY_PANEL: "You completed a Quest!",
+        QUESTS_DISCLOSURE_PUBLISHER_PROMOTING: "{gamePublisher} is promoting {gameTitle} on Discord by partnering with us to offer this Quest. This Quest is available in the gift inventory of all users.",
+        QUESTS_DISCLOSURE_PUBLISHER_TARGETING: "{gamePublisher} is trying to reach certain kinds of Discord users. Based on what you’ve told us or other information we’ve collected, we think you fit some of these groups:",
+        QUESTS_DISCLOSURE_LEARN_MORE: "Learn more about Quests on Discord and how to manage your Privacy Settings [here]({privacySettingsUrl}).",
+        QUESTS_DISCLOSURE_LOCATION: "Location",
+        QUESTS_DISCLOSURE_AGE: "Age",
+        QUESTS_DISCLOSURE_ACTIVITY: "Activity: Relevant gaming",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18225,7 +18231,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267063", ", Version Hash: ").concat("1a137f3411f92b825e9c891952b89efe958f3823")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267070", ", Version Hash: ").concat("d2463515993e25b2130720994999c494c26e3eae")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20573,8 +20579,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267063", "267063"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267063")), _ = 0), _
+        let _ = parseInt((e = "267070", "267070"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267070")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25277,8 +25283,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708103486902",
-                  build_number: "267063"
+                  built_at: "1708105278659",
+                  build_number: "267070"
                 }
               },
               retries: 1
@@ -36501,4 +36507,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.ec09203841fb70805805.js.map
+//# sourceMappingURL=99392.df18e1a6347f387998cf.js.map
