@@ -16269,6 +16269,7 @@
         SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_TITLE_V2: "Your account is $[at risk](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION: "You broke Discord's rules. You will be permanently suspended if you break them again.",
         SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION_V2: "You can't use some parts of Discord. You may be permanently banned if you break the rules again.",
+        SAFETY_HUB_ACCOUNT_STANDING_AT_RISK_DESCRIPTION_V3: "You can't use some parts of Discord. You may be permanently suspended if you break the rules again.",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE: "Your account is $[suspended.](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_TITLE_V2: "Your account is $[suspended](hook)",
         SAFETY_HUB_ACCOUNT_STANDING_SUSPENDED_DESCRIPTION: "You broke Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).",
@@ -16296,6 +16297,7 @@
         SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_SUBTEXT: "Discord's rules apply to everyone",
         SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT: "Go to account standing",
         SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT_V2: "Go to account standing",
+        SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT_V3: "See account standing",
         SAFETY_HUB_CLASSIFICATION_DETAIL_APPEAL_STATUS: "You requested a review of this violation.",
         SAFETY_HUB_ERROR_MESSAGE: "Something went wrong...",
         SAFETY_HUB_ERROR_ACTION_BUTTON: "Retry",
@@ -18208,7 +18210,7 @@
         L = E("782340");
       (0, r.setUpdateRules)(T.default), (0, n.default)(L.default, o.default, s.default), i.default.Emitter.injectBatchEmitChanges(a.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266926", ", Version Hash: ").concat("a99fcffdf8c6c4ceda493f54a26bd32c3aeed5a2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("266941", ", Version Hash: ").concat("065a693fae0dd034a88b7045d4153aaefabbc6cd")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20551,8 +20553,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "266926", "266926"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266926")), _ = 0), _
+        let _ = parseInt((e = "266941", "266941"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("266941")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35550,4 +35552,4 @@
     }
   }
 ]);
-//# sourceMappingURL=55115.33b17e1b8f5c6b52f2cd.js.map
+//# sourceMappingURL=55115.2b35d0dba2f6b55c7ab5.js.map
