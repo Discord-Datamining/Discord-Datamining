@@ -18248,7 +18248,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267286", ", Version Hash: ").concat("9da8c2121ae6868329dc09226145059b802d00da")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267291", ", Version Hash: ").concat("c86de6eeffccab4726209f11ab6f1b03462f5dc4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20596,8 +20596,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267286", "267286"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267286")), _ = 0), _
+        let _ = parseInt((e = "267291", "267291"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267291")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25301,8 +25301,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708125655321",
-                  build_number: "267286"
+                  built_at: "1708126096287",
+                  build_number: "267291"
                 }
               },
               retries: 1
@@ -26259,8 +26259,7 @@
         let t = (0, r.getInappropriateConversationTakeoverForChannel)(_);
         return null != t && ((0, a.showTakeoverModal)({
           warningId: t.id,
-          senderId: E.getRecipientId(),
-          channelId: _
+          senderId: E.getRecipientId()
         }), !0)
       }
 
@@ -26278,8 +26277,7 @@
         let o = (0, r.getInappropriateConversationTakeoverForChannel)(t.id);
         return !!(null != o && t.isDM()) && ((0, a.showTakeoverModal)({
           warningId: o.id,
-          senderId: t.getRecipientId(),
-          channelId: t.id
+          senderId: t.getRecipientId()
         }), !0)
       }
       class T extends t.default {
@@ -36454,4 +36452,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.05af9af75056dba14547.js.map
+//# sourceMappingURL=99392.81a7469122a89984d53d.js.map
