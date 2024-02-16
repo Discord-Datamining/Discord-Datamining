@@ -18225,7 +18225,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267060", ", Version Hash: ").concat("0d93b346e350a0616f2487f7ab999978190c921b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267063", ", Version Hash: ").concat("1a137f3411f92b825e9c891952b89efe958f3823")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19855,6 +19855,11 @@
           actions: ["VIBING_WUMPUS_PLAY_MUSIC", "VIBING_WUMPUS_STOP_MUSIC"],
           inlineRequire: () => E("874200").default,
           neverLoadBeforeConnectionOpen: !0
+        },
+        ContentInventoryManager: {
+          actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED"],
+          inlineRequire: () => E("389295").default,
+          neverLoadBeforeConnectionOpen: !0
         }
       };
       (0, t.initialize)(o)
@@ -20568,8 +20573,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267060", "267060"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267060")), _ = 0), _
+        let _ = parseInt((e = "267063", "267063"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267063")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21385,6 +21390,164 @@
           })]
         })
       }
+    },
+    709377: function(e, _, E) {
+      "use strict";
+      var t;
+      E.r(_), E.d(_, {
+        ContentInventoryFeedKey: function() {
+          return t
+        }
+      }), (t || (t = {})).GLOBAL_FEED = "global feed"
+    },
+    1405: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        isEligibleForContentInventoryV1: function() {
+          return n
+        }
+      });
+      var t = E("862205");
+      let o = (0, t.createExperiment)({
+        kind: "user",
+        id: "2024-02_v1_content_inventory_feed",
+        label: "V1 Feed of the content inventory",
+        defaultConfig: {
+          enabled: !1
+        },
+        treatments: [{
+          id: 1,
+          label: "Show feed",
+          config: {
+            enabled: !0
+          }
+        }]
+      });
+
+      function n(e) {
+        let {
+          enabled: _
+        } = o.getCurrentConfig({
+          location: e
+        }, {
+          autoTrackExposure: !0
+        });
+        return _
+      }
+    },
+    68720: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        getMyContentInventory: function() {
+          return r
+        }
+      });
+      var t = E("872717"),
+        o = E("448993"),
+        n = E("49111");
+      let r = async () => {
+        try {
+          let e = await t.default.get({
+            url: n.Endpoints.MY_CONTENT_INVENTORY
+          });
+          return e.body
+        } catch (e) {
+          throw new o.APIError(e)
+        }
+      }
+    },
+    389295: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return L
+        }
+      }), E("222007");
+      var t = E("913144"),
+        o = E("689988"),
+        n = E("1405"),
+        r = E("68720"),
+        i = E("265596"),
+        a = E("709377");
+      let I = a.ContentInventoryFeedKey.GLOBAL_FEED,
+        s = null,
+        T = !1,
+        S = 0;
+
+      function N() {
+        R()
+      }
+
+      function O() {
+        A()
+      }
+
+      function A() {
+        clearTimeout(s), s = null
+      }
+
+      function R() {
+        if (A(), !(0, n.isEligibleForContentInventoryV1)("ContentInventoryManager") || T) return;
+        let e = i.default.getFeed(I),
+          _ = null == e ? void 0 : e.expired_at,
+          E = null == _ ? 0 : new Date(_).getTime() - Date.now();
+        s = setTimeout(() => l(), E)
+      }
+      async function l() {
+        if (!T) try {
+          T = !0;
+          let e = await (0, r.getMyContentInventory)();
+          t.default.dispatch({
+            type: "CONTENT_INVENTORY_SET_FEED",
+            feedId: I,
+            feed: e
+          }), S = 0, T = !1, R()
+        } catch (e) {
+          if (S < 3) {
+            let e = 1e3 * Math.pow(5, S);
+            s = setTimeout(() => l(), e), S += 1
+          }
+          T = !1
+        }
+      }
+      class u extends o.default {
+        constructor(...e) {
+          super(...e), this.actions = {
+            POST_CONNECTION_OPEN: N,
+            CONNECTION_CLOSED: O
+          }
+        }
+      }
+      var L = new u
+    },
+    265596: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return i
+        }
+      }), E("222007");
+      var t = E("446674"),
+        o = E("913144");
+      let n = new Map;
+      class r extends t.default.Store {
+        getFeed(e) {
+          return n.get(e)
+        }
+      }
+      r.displayName = "ContentInventoryStore";
+      var i = new r(o.default, {
+        CONNECTION_OPEN: function() {
+          n.clear()
+        },
+        CONTENT_INVENTORY_SET_FEED: function(e) {
+          let {
+            feedId: _,
+            feed: E
+          } = e;
+          n.set(_, E)
+        }
+      })
     },
     302537: function(e, _, E) {
       "use strict";
@@ -25114,8 +25277,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708102499843",
-                  build_number: "267060"
+                  built_at: "1708103486902",
+                  build_number: "267063"
                 }
               },
               retries: 1
@@ -36338,4 +36501,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.b210defb870dc321ce45.js.map
+//# sourceMappingURL=99392.ec09203841fb70805805.js.map
