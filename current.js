@@ -9597,6 +9597,16 @@
         PAYMENT_METHOD_SELECTION: "Choose payment method",
         BILLING_ADDRESS_ACTION: "Add billing address",
         DEFAULT_CUSTOM_GIFT_MESSAGE: "You’re awesome, just like this gift. Enjoy!",
+        MOBILE_CUSTOM_GIFT_PLAN_SELECTION_HEADER: "Gift {username} a new Nitro membership",
+        MOBILE_CUSTOM_GIFT_PLAN_SELECTION_BODY: "Warning: gift may cause uncontrollable happiness!",
+        MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY: "Choose from {monthlyPrice} or {yearlyPrice}",
+        MOBILE_CUSTOM_GIFT_TITLE: "Gift a Nitro membership",
+        MOBILE_CUSTOM_GIFT_DURATION_LABEL: "Gift duration",
+        MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH: "Gift {count, plural, one {# month} other {# months}} of {nitroTierName}",
+        MOBILE_CUSTOM_GIFT_DURATION_SELECTION_YEAR: "Gift {count, plural, one {# year} other {# years}} of {nitroTierName}",
+        MOBILE_CUSTOM_GIFT_PAID_SERVICE_TERMS_AGREEMENT: "By tapping “Buy gift”, you agree to the [Paid Services Terms.]({paidURL}) This will be a one time charge for the amount of time chosen.",
+        MOBILE_CUSTOM_GIFT_SUCCESS_HEADER: "Your gift is on its way!",
+        MOBILE_CUSTOM_GIFT_SUCCESS_BODY: "Delivered with ninja-like efficiency (and zero paper waste).",
         PAYMENT_METHOD_INFO: "Payment method",
         PAID_SERVICE_TERMS_AGREEMENT: "By clicking “Buy gift”, you agree to the Paid Services Terms",
         ONE_TIME_CHARGE_INFO: "This will be a one time charge for the amount of time chosen. You will not be billed yearly.",
@@ -18215,7 +18225,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267051", ", Version Hash: ").concat("8fad140f2f254a097ec21732e8dfdceecbb2289f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267060", ", Version Hash: ").concat("0d93b346e350a0616f2487f7ab999978190c921b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20558,8 +20568,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267051", "267051"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267051")), _ = 0), _
+        let _ = parseInt((e = "267060", "267060"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267060")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25104,8 +25114,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708099642190",
-                  build_number: "267051"
+                  built_at: "1708102499843",
+                  build_number: "267060"
                 }
               },
               retries: 1
@@ -36328,4 +36338,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.f242910d18ca05ccab7a.js.map
+//# sourceMappingURL=99392.b210defb870dc321ce45.js.map
