@@ -14674,7 +14674,7 @@
         VOICE_CHANNEL_ACTION_SHEET_UPSELL_TITLE: "Change voice backgrounds",
         VOICE_CHANNEL_ACTION_SHEET_UPSELL_DESCRIPTION: "Choose unique backgrounds to customize voice channels for everyone. During a call, visit the channel details to begin.",
         VOICE_CHANNEL_IN_CALL_COACHMARK_TITLE: "Customize this channel",
-        VOICE_CHANNEL_IN_CALL_COACHMARK_DESCRIPTION: "Tap on the channel name to set the background for everyone. Control who can change the background with the Customize Voice Call permission.",
+        VOICE_CHANNEL_IN_CALL_COACHMARK_DESCRIPTION: "Tap on the channel name to set the background for everyone. Control who can change the background with the Customize Voice Channels permission.",
         INCOMING_CALLS: "Incoming calls",
         DIRECT_MESSAGE_NOTIFICATIONS: "Direct messages",
         VOICE_CONNECTED: "Voice connected",
@@ -18233,7 +18233,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267137", ", Version Hash: ").concat("4a8d735e1cd0a4dee1824894eb2f0aaecace8bcb")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267138", ", Version Hash: ").concat("c8eee2e9ddc5e3225b8c6f606e9ced4d305cd799")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20581,8 +20581,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267137", "267137"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267137")), _ = 0), _
+        let _ = parseInt((e = "267138", "267138"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267138")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25285,8 +25285,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708110365983",
-                  build_number: "267137"
+                  built_at: "1708110430591",
+                  build_number: "267138"
                 }
               },
               retries: 1
@@ -36509,4 +36509,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.cbb52df21a153288dd05.js.map
+//# sourceMappingURL=99392.58ec77afa033c62f4a81.js.map
