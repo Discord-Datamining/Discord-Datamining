@@ -18240,7 +18240,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267182", ", Version Hash: ").concat("05e967a513616546f97ee3f18af65dda76bec2f1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267183", ", Version Hash: ").concat("02c1ba803864624f7c12175f30a08bacc44ba0da")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20588,8 +20588,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267182", "267182"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267182")), _ = 0), _
+        let _ = parseInt((e = "267183", "267183"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267183")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25292,8 +25292,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708115738975",
-                  build_number: "267182"
+                  built_at: "1708115899547",
+                  build_number: "267183"
                 }
               },
               retries: 1
@@ -25991,15 +25991,6 @@
         var _;
         return !e.ok && (null === (_ = e.body) || void 0 === _ ? void 0 : _.code) === t.AbortCodes.BLOCKED_BY_PROXY
       }
-    },
-    166604: function(e, _, E) {
-      "use strict";
-      var t, o;
-      E.r(_), E.d(_, {
-        QuestsExperimentLocations: function() {
-          return t
-        }
-      }), (o = t || (t = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", o.QUESTS_MANAGER = "quests_manager", o.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory"
     },
     374023: function(e, _, E) {
       "use strict";
@@ -36516,4 +36507,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.6e79ca59112f7d388d7a.js.map
+//# sourceMappingURL=99392.ae7b74f942b65e8484ff.js.map
