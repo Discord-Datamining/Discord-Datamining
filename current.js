@@ -16726,6 +16726,8 @@
         STOREFRONT_SUBSCRIPTION: "Subscription",
         STOREFRONT_SUBSCRIBE: "Subscribe",
         STOREFRONT_SUBSCRIPTION_BENEFITS: "Subscription Benefits",
+        STOREFRONT_PURCHASE: "Purchase",
+        STOREFRONT_ONE_TIME_PURCHASE: "One-Time Purchase",
         QUIET_MODE_DISABLED: "Focus Mode Disabled",
         QUIET_MODE_ENABLED: "Focus Mode Enabled",
         QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -18231,7 +18233,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267135", ", Version Hash: ").concat("25bf897725b7703dd9fdb98b0ef8d29dc0b08663")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267137", ", Version Hash: ").concat("4a8d735e1cd0a4dee1824894eb2f0aaecace8bcb")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20579,8 +20581,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267135", "267135"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267135")), _ = 0), _
+        let _ = parseInt((e = "267137", "267137"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267137")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25283,8 +25285,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708110106619",
-                  build_number: "267135"
+                  built_at: "1708110365983",
+                  build_number: "267137"
                 }
               },
               retries: 1
@@ -36507,4 +36509,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.32aabb6dfb6b6167d20b.js.map
+//# sourceMappingURL=99392.cbb52df21a153288dd05.js.map
