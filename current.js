@@ -16322,6 +16322,7 @@
         SAFETY_HUB_VIOLATIONS_CONTAINER_NEW: "NEW",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR: "You lost access to Discord. Review your violations to understand for how long and why.",
         SAFETY_HUB_STANDALONE_PAGE_NAGBAR_CTA: "Learn More",
+        SAFETY_HUB_GUILD_REMOVED_DATE: "Removed on {removalDate}",
         SAFETY_POLICY_NOTICE_BUTTON: "Learn more",
         SAFETY_POLICY_NOTICE_HEADER: "You broke Discord's community guidelines",
         SAFETY_POLICY_NOTICE_BODY: "We've taken action that affects your account.",
@@ -18214,7 +18215,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267042", ", Version Hash: ").concat("08cf7446515435a68c1b4312101bd3a908465053")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267046", ", Version Hash: ").concat("f937fa8951ba9de454796480b88a312ece92968a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20557,8 +20558,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267042", "267042"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267042")), _ = 0), _
+        let _ = parseInt((e = "267046", "267046"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267046")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25103,8 +25104,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708094379492",
-                  build_number: "267042"
+                  built_at: "1708097171556",
+                  build_number: "267046"
                 }
               },
               retries: 1
@@ -36327,4 +36328,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.29685f7aa7a0347a06f4.js.map
+//# sourceMappingURL=99392.c5d33e287c3c051c9088.js.map
