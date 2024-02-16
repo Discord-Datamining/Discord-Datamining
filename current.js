@@ -7166,7 +7166,8 @@
         EMOJI_PICKER_PREMIUM_TIER_0_UPSELL_BODY: "Use these emoji and more by subscribing to {planName}.",
         EMOJI_PICKER_PREMIUM_UPSELL_BODY_TOP_OF_LIST: "Unlock every emoji and use them anywhere with Nitro.",
         EMOJI_PICKER_PREMIUM_UPSELL_CTA: "Get Nitro",
-        EMOJI_PICKER_CREATE_EMOJI_TITLE: "Upload an emoji to this server",
+        EMOJI_PICKER_CREATE_EMOJI_TITLE: "Upload a custom emoji",
+        EMOJI_PICKER_CREATE_EMOJI_TITLE_DESCRIPTION: "Feeling emoji-tional?",
         EMOJI_PICKER_PREMIUM_PROMO_DESCRIPTION: "Lift off with **{planName}** to use animated and custom emoji anywhere.",
         SUBSCRIPTION_PAYMENT_LEGALESE_MONTHLY: "Hey! What you're purchasing is a recurring subscription, which means we'll charge you today and continue to charge you monthly until you cancel the subscription. You can cancel anytime from your Settings page, though!",
         SUBSCRIPTION_PAYMENT_LEGALESE_MULTI_MONTH: "Hey! What you're purchasing is a recurring subscription, which means we'll charge today and continue to charge you every {intervalCount} months until you cancel the subscription. You can cancel anytime from your Settings page, though!",
@@ -18247,7 +18248,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267229", ", Version Hash: ").concat("1142991ae7e9cf95d029602519192b17d5cba2b5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267231", ", Version Hash: ").concat("1c6da611d5af6c8b66ae72889999950dfc8b2eee")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20595,8 +20596,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267229", "267229"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267229")), _ = 0), _
+        let _ = parseInt((e = "267231", "267231"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267231")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25300,8 +25301,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708120311064",
-                  build_number: "267229"
+                  built_at: "1708120446229",
+                  build_number: "267231"
                 }
               },
               retries: 1
@@ -36451,4 +36452,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.d8f3ec5fb42ea9deeeac.js.map
+//# sourceMappingURL=99392.60fb40ae4ff3a851245d.js.map
