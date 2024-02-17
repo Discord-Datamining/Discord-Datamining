@@ -18249,7 +18249,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267367", ", Version Hash: ").concat("c3d817a80c1cec7e6c8f7c0eb95e5c082b10a9a9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267385", ", Version Hash: ").concat("2f212e6c745558e5bbd390cae0717cdd25b4b330")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20597,8 +20597,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267367", "267367"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267367")), _ = 0), _
+        let _ = parseInt((e = "267385", "267385"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267385")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25302,8 +25302,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708142911135",
-                  build_number: "267367"
+                  built_at: "1708210311745",
+                  build_number: "267385"
                 }
               },
               retries: 1
@@ -36455,4 +36455,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.a3f3979e22943103e9c7.js.map
+//# sourceMappingURL=99392.cc9d4a07228a708f22b9.js.map
