@@ -6629,11 +6629,6 @@
         CHURN_DISCOUNT_DESCRIPTION: "Before cancelling, enjoy **{percent, number}% off your Nitro subscription** for {numMonths, plural, one {1 month} other {{numMonths} months}}.",
         CHURN_DISCOUNT_CLAIM: "Claim Discount",
         PREMIUM_TUTORIAL_GOT_IT: "Got it!",
-        CHURN_DISCOUNT_CONFIRM_HEADER: "Confirm {percent, number}% Off Discount",
-        CHURN_DISCOUNT_CONFIRM_DESCRIPTION: "Your {percent, number}% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After than you’ll be charged **{price}** a month.",
-        CHURN_DISCOUNT_CONFIRM_LEGALESE: "By clicking “Confirm Discount” you are agreeing to continue your Nitro recurring subscription. You’ll be charged {discountedPrice}/{billingPeriod} for {numMonths, plural, one {1 month} other {{numMonths} months}}, and then {fullPrice}/{billingPeriod} after that until you cancel. Cancel anytime from your Settings page. [Paid Services Terms]({helpdeskArticle}) apply.",
-        CHURN_DISCOUNT_NEVERMIND: "Nevermind",
-        CHURN_DISCOUNT_CONFIRM_DISCOUNT: "Confirm Discount",
         PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW: "Try {planName} for {duration} on us. Then !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION: "Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_ACTIVATED: "free trial activated",
@@ -16133,7 +16128,6 @@
         DOMAIN_VERIFICATION_USE_DNS: "Verify using DNS",
         DOMAIN_VERIFICATION_INSTRUCTIONS_HTTP: "Create a new file on your website:",
         CLIP_TAG: "Clip (Beta)",
-        CLIP_TAG_MOBILE: "CLIP",
         CLIPS: "Clips",
         CLIPS_CLIPPING: "Clipping",
         CLIPS_SETTINGS: "Clips Settings",
@@ -16587,9 +16581,9 @@
         POLL_REMOVE_VOTE: "Remove Vote",
         POLL_ANSWER_VOTED_ARIA: "You voted for this answer",
         POLL_OPTIONS_ARIA: "Poll options",
-        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, one {{days}d} other {{days}d}} left",
-        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, one {{hours}h} other {{hours}h}} left",
-        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {{minutes}m} other {{minutes}m}} left",
+        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, one {{days} day} other {{days} days}} left",
+        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, one {{hours} hour} other {{hours} hours}} left",
+        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {{minutes} min} other {{minutes} mins}} left",
         POLL_EXPIRED: "Poll closed",
         POLL_SELECT_ONE_ANSWER: "Select one answer",
         POLL_SELECT_MULTIPLE_ANSWERS: "Select one or more answers",
@@ -18064,14 +18058,14 @@
         r = E("77078"),
         i = E("363658"),
         a = E("135230"),
-        I = E("161454"),
-        s = E("42887"),
-        T = E("945956"),
+        I = E("42887"),
+        s = E("945956"),
+        T = E("568307"),
         S = E("701909"),
         N = E("49111"),
         O = E("782340"),
         A = () => {
-          let [e, _] = (0, n.useStateFromStoresArray)([I.default], () => [I.default.canShowAdminWarning, I.default.getVisibleGame()], []), E = (0, n.useStateFromStores)([T.default], () => T.default.isConnected(), []), A = (0, n.useStateFromStores)([s.default], () => s.default.getMode() === N.InputModes.PUSH_TO_TALK, []), R = null != _ && _.elevated && E && A && e, l = o.useRef(null);
+          let [e, _] = (0, n.useStateFromStoresArray)([T.default], () => [T.default.canShowAdminWarning, T.default.getVisibleGame()], []), E = (0, n.useStateFromStores)([s.default], () => s.default.isConnected(), []), A = (0, n.useStateFromStores)([I.default], () => I.default.getMode() === N.InputModes.PUSH_TO_TALK, []), R = null != _ && _.elevated && E && A && e, l = o.useRef(null);
 
           function u() {
             null !== l.current && ((0, r.closeModal)(l.current), l.current = null)
@@ -18251,7 +18245,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267584", ", Version Hash: ").concat("a1b818867deb819f7f176419412f9426a073763c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267592", ", Version Hash: ").concat("d985438099966365808db0116077f0eb6a5771bc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -18887,10 +18881,10 @@
       var t = E("862337"),
         o = E("689988"),
         n = E("575365"),
-        r = E("161454"),
-        i = E("42203"),
-        a = E("42887"),
-        I = E("945956"),
+        r = E("42203"),
+        i = E("42887"),
+        a = E("945956"),
+        I = E("568307"),
         s = E("101125"),
         T = E("280168"),
         S = E("316133"),
@@ -18900,59 +18894,59 @@
       let R = 1 * N.default.Millis.MINUTE;
       class l extends o.default {
         _initialize() {
-          __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(T.default, () => this._handleSpeakingStoreChanged()).set(I.default, () => this._handleRTCConnectionStoreChanged()), this._reset())
+          __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(T.default, () => this._handleSpeakingStoreChanged()).set(a.default, () => this._handleRTCConnectionStoreChanged()), this._reset())
         }
         _reset() {
           this._currentUserSpeaking = !1, this._anyoneElseSpeaking = !1, null != this._reportInterval && (this._reportInterval.stop(), this._reportInterval = null)
         }
         _trackStartSpeaking() {
           if (this._currentUserSpeaking) {
-            let e = I.default.getChannelId(),
-              _ = I.default.getGuildId(),
-              E = i.default.getChannel(e),
+            let e = a.default.getChannelId(),
+              _ = a.default.getGuildId(),
+              E = r.default.getChannel(e),
               t = null == E ? void 0 : E.isBroadcastChannel();
             (0, O.trackWithMetadata)(A.AnalyticEvents.START_SPEAKING, {
-              mode: a.default.getMode(),
+              mode: i.default.getMode(),
               priority: T.default.isCurrentUserPrioritySpeaking(),
               channel: e,
               server: _,
               channel_id: e,
               guild_id: _,
               is_broadcast: t,
-              rtc_connection_id: I.default.getRTCConnectionId(),
-              media_session_id: I.default.getMediaSessionId(),
+              rtc_connection_id: a.default.getRTCConnectionId(),
+              media_session_id: a.default.getMediaSessionId(),
               voice_state_count: S.default.countVoiceStatesForChannel(this._voiceChannelId),
               ...this.getGameMetadata(),
-              ...I.default.getPacketStats()
+              ...a.default.getPacketStats()
             })
           }
         }
         _trackStartListening() {
-          if (a.default.isDeaf() || !this._anyoneElseSpeaking) return;
-          let e = I.default.getChannelId(),
-            _ = I.default.getGuildId(),
-            E = i.default.getChannel(e),
+          if (i.default.isDeaf() || !this._anyoneElseSpeaking) return;
+          let e = a.default.getChannelId(),
+            _ = a.default.getGuildId(),
+            E = r.default.getChannel(e),
             t = null == E ? void 0 : E.isBroadcastChannel();
           (0, O.trackWithMetadata)(A.AnalyticEvents.START_LISTENING, {
-            mute: a.default.isMute(),
+            mute: i.default.isMute(),
             anyone_priority: T.default.isAnyonePrioritySpeaking(),
             channel: e,
             server: _,
             channel_id: e,
             guild_id: _,
             is_broadcast: t,
-            rtc_connection_id: I.default.getRTCConnectionId(),
-            media_session_id: I.default.getMediaSessionId(),
+            rtc_connection_id: a.default.getRTCConnectionId(),
+            media_session_id: a.default.getMediaSessionId(),
             voice_state_count: S.default.countVoiceStatesForChannel(this._voiceChannelId),
             ...this.getGameMetadata()
           })
         }
         _terminate() {
-          this._reset(), T.default.removeChangeListener(this._handleSpeakingStoreChanged), I.default.removeChangeListener(this._handleRTCConnectionStoreChanged)
+          this._reset(), T.default.removeChangeListener(this._handleSpeakingStoreChanged), a.default.removeChangeListener(this._handleRTCConnectionStoreChanged)
         }
         getGameMetadata() {
           let e = s.default.findActivity(e => e.type === A.ActivityTypes.PLAYING),
-            _ = r.default.getCurrentGameForAnalytics();
+            _ = I.default.getCurrentGameForAnalytics();
           return {
             game_platform: (0, n.default)(e),
             game_name: null != e ? e.name : null,
@@ -18962,7 +18956,7 @@
         }
         constructor(...e) {
           super(...e), this._currentUserSpeaking = !1, this._anyoneElseSpeaking = !1, this._handleRTCConnectionStoreChanged = () => {
-            let e = I.default.getChannelId();
+            let e = a.default.getChannelId();
             if (this._voiceChannelId !== e) {
               if (this._voiceChannelId = e, null == e) {
                 this._reset();
@@ -20165,12 +20159,12 @@
         i = E("267363"),
         a = E("990766"),
         I = E("689988"),
-        s = E("161454"),
-        T = E("374014"),
-        S = E("845579"),
-        N = E("271938"),
-        O = E("42203"),
-        A = E("546463"),
+        s = E("374014"),
+        T = E("845579"),
+        S = E("271938"),
+        N = E("42203"),
+        O = E("546463"),
+        A = E("568307"),
         R = E("18494"),
         l = E("101125"),
         u = E("713726"),
@@ -20181,7 +20175,7 @@
       let d = [];
       class U extends I.default {
         handleRunningGamesChange() {
-          let e = s.default.getVisibleGame();
+          let e = A.default.getVisibleGame();
           if (null == e) return;
           let {
             canBroadcast: _
@@ -20189,11 +20183,11 @@
             location: "handle_running_games_change"
           }, {
             autoTrackExposure: !1
-          }), E = l.default.getBroadcast(), t = (0, u.getGameName)(e), o = null != A.default.getGameByName(t), n = (0, D.getIsBroadcastingToAnyone)();
-          if (!_ || null != E || !S.BroadcastAutoBroadcast.getSetting() || !o || !n) return;
+          }), E = l.default.getBroadcast(), t = (0, u.getGameName)(e), o = null != O.default.getGameByName(t), n = (0, D.getIsBroadcastingToAnyone)();
+          if (!_ || null != E || !T.BroadcastAutoBroadcast.getSetting() || !o || !n) return;
           let r = null != d.find(_ => _.pid === e.pid);
           if (r) return;
-          d = s.default.getRunningGames();
+          d = A.default.getRunningGames();
           let i = (0, C.getCanStartBroadcast)();
           if (!i) return;
           let I = R.default.getVoiceChannelId();
@@ -20213,17 +20207,17 @@
             streamKey: _
           } = e;
           if (null == t) return;
-          let E = (0, T.decodeStreamKey)(_),
+          let E = (0, s.decodeStreamKey)(_),
             {
               ownerId: r,
               channelId: i
             } = E;
           if (null == r || null == i) return;
-          let a = N.default.getId();
+          let a = S.default.getId();
           if (r !== a) return;
-          let I = O.default.getChannel(i),
-            s = null != I && I.isBroadcastChannel();
-          null != I && r === I.ownerId && s && (t = null, o = null, n = null, (0, u.stopBroadcast)())
+          let I = N.default.getChannel(i),
+            T = null != I && I.isBroadcastChannel();
+          null != I && r === I.ownerId && T && (t = null, o = null, n = null, (0, u.stopBroadcast)())
         }
         handleStartBroadcastStream(e) {
           let {
@@ -20236,8 +20230,8 @@
             channelId: _
           } = e;
           if (null == _ || null == t && null == o && null == n) return;
-          let E = N.default.getId(),
-            r = O.default.getChannel(_);
+          let E = S.default.getId(),
+            r = N.default.getChannel(_);
           null != r && E === r.ownerId && r.isBroadcastChannel() && (0, a.startStream)(null, _, {
             pid: t,
             sourceId: o,
@@ -20251,7 +20245,7 @@
           } = e;
           if (E !== c.RTCConnectionStates.DISCONNECTED) return;
           let t = R.default.getChannelId(),
-            o = O.default.getChannel(_);
+            o = N.default.getChannel(_);
           if (null == o || !o.isBroadcastChannel()) return;
           r.default.closePrivateChannel(_, t === _, !0);
           let n = l.default.getBroadcast();
@@ -20269,7 +20263,7 @@
             guildId: E
           } = e;
           if (null != E) return;
-          let t = O.default.getChannel(_);
+          let t = N.default.getChannel(_);
           if (null == t || !t.isBroadcastChannel()) return;
           let o = R.default.getVoiceChannelId(),
             n = o !== t.id;
@@ -20599,8 +20593,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267584", "267584"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267584")), _ = 0), _
+        let _ = parseInt((e = "267592", "267592"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267592")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21181,9 +21175,9 @@
       });
       var t = E("77078"),
         o = E("913144"),
-        n = E("161454"),
-        r = E("373469"),
-        i = E("42887"),
+        n = E("373469"),
+        r = E("42887"),
+        i = E("568307"),
         a = E("56947"),
         I = E("111177"),
         s = E("386045"),
@@ -21203,11 +21197,11 @@
           })
         }
         applyNativeClipsSettings(e) {
-          if (!(0, T.default)(i.default)) return;
+          if (!(0, T.default)(r.default)) return;
           let _ = (0, a.areClipsEnabled)(),
             E = s.default.getSettings(),
             t = (E.clipsEnabled || E.decoupledClipsEnabled) && _,
-            o = i.default.getMediaEngine();
+            o = r.default.getMediaEngine();
           if (o.setClipBufferLength(t ? E.clipsLength / 1e3 : 0), (null == e ? void 0 : e.settings.decoupledClipsEnabled) === !0 && this.fireClipsInitEvent(), null == e || (null == e ? void 0 : e.settings.clipsQuality) != null) {
             let {
               frameRate: _,
@@ -21217,22 +21211,22 @@
           }
         }
         handleClipsInitOnToggleDetection(e) {
-          let _ = n.default.getVisibleGame();
+          let _ = i.default.getVisibleGame();
           null != _ && _.id === e.game.id && this.fireClipsInitEvent()
         }
         handleClipsInitOnGamesChange(e) {
-          let _ = n.default.getVisibleGame();
+          let _ = i.default.getVisibleGame();
           if (null == _) return;
           let E = !!e.added.find(e => e.pid === _.pid);
           E ? setTimeout(() => this.fireClipsInitEvent(), N.CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY) : this.fireClipsInitEvent()
         }
         fireClipsInitEvent() {
-          if (!(0, T.default)(i.default)) return;
+          if (!(0, T.default)(r.default)) return;
           let e = (0, a.areClipsEnabled)(),
             _ = s.default.getSettings(),
             E = _.clipsEnabled && e;
-          if (!E || null != r.default.getCurrentUserActiveStream()) return;
-          let t = n.default.getVisibleGame();
+          if (!E || null != n.default.getCurrentUserActiveStream()) return;
+          let t = i.default.getVisibleGame();
           (null == t ? void 0 : t.pid) != null && (null == t ? void 0 : t.windowHandle) != null && null != t.name && "" !== t.name && o.default.dispatch({
             type: "CLIPS_INIT",
             sourceId: "window:".concat(null == t ? void 0 : t.windowHandle),
@@ -23076,7 +23070,7 @@
         a = E("115718"),
         I = E("689988"),
         s = E("49671"),
-        T = E("161454"),
+        T = E("568307"),
         S = E("703370"),
         N = E("860957"),
         O = E("901165"),
@@ -25311,8 +25305,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708467143111",
-                  build_number: "267584"
+                  built_at: "1708467565605",
+                  build_number: "267592"
                 }
               },
               retries: 1
@@ -26019,10 +26013,10 @@
         }
       }), E("222007");
       var t = E("689988"),
-        o = E("161454"),
-        n = E("374014"),
-        r = E("373469"),
-        i = E("271938"),
+        o = E("374014"),
+        n = E("373469"),
+        r = E("271938"),
+        i = E("568307"),
         a = E("718517"),
         I = E("448881"),
         s = E("374023"),
@@ -26049,7 +26043,7 @@
             } = e;
             window.clearTimeout(this.sendHeartbeatIntervalIds.get(E));
             let o = () => {
-              (null != r.default.getRTCStream(E) || r.default.getViewerIds(E).length > 0) && (0, I.sendHeartbeat)({
+              (null != n.default.getRTCStream(E) || n.default.getViewerIds(E).length > 0) && (0, I.sendHeartbeat)({
                 questId: _,
                 streamKey: E,
                 applicationId: t
@@ -26072,17 +26066,17 @@
               enrolledQuestUserStatus: {
                 questId: _
               }
-            } = e, E = r.default.getStreamerActiveStreamMetadata();
+            } = e, E = n.default.getStreamerActiveStreamMetadata();
             if (null == E || null == E.pid) return;
-            let t = o.default.getGameForPID(E.pid);
+            let t = i.default.getGameForPID(E.pid);
             if (null == t || null == t.id) return;
-            let i = (0, S.getQuestByApplicationId)(T.default.quests, t.id);
-            if (null == i || i.id !== _) return;
-            let a = r.default.getCurrentUserActiveStream();
+            let r = (0, S.getQuestByApplicationId)(T.default.quests, t.id);
+            if (null == r || r.id !== _) return;
+            let a = n.default.getCurrentUserActiveStream();
             null != a && this.initiateHeartbeat({
-              streamKey: (0, n.encodeStreamKey)(a),
-              applicationId: i.config.applicationId,
-              questId: i.id
+              streamKey: (0, o.encodeStreamKey)(a),
+              applicationId: r.config.applicationId,
+              questId: r.id
             })
           }, this.handlePostConnectionOpen = () => {
             if (0 === T.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * O))
@@ -26098,18 +26092,18 @@
             var _, E;
             let {
               streamType: t,
-              guildId: r,
+              guildId: n,
               channelId: a,
               pid: I
-            } = e, s = null != I ? o.default.getGameForPID(I) : null;
+            } = e, s = null != I ? i.default.getGameForPID(I) : null;
             if (null == s) return;
             let N = null != s.id ? (0, S.getQuestByApplicationId)(T.default.quests, s.id) : null;
             (null == N ? void 0 : null === (_ = N.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) != null && (null == N ? void 0 : null === (E = N.userStatus) || void 0 === E ? void 0 : E.completedAt) == null && this.initiateHeartbeat({
-              streamKey: (0, n.encodeStreamKey)({
+              streamKey: (0, o.encodeStreamKey)({
                 streamType: t,
-                guildId: r,
+                guildId: n,
                 channelId: a,
-                ownerId: i.default.getId()
+                ownerId: r.default.getId()
               }),
               applicationId: N.config.applicationId,
               questId: N.id
@@ -36464,4 +36458,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.c4bb1cfec275e7654b92.js.map
+//# sourceMappingURL=99392.8b9e27a714759f1e908f.js.map
