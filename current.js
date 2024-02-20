@@ -16586,9 +16586,9 @@
         POLL_REMOVE_VOTE: "Remove Vote",
         POLL_ANSWER_VOTED_ARIA: "You voted for this answer",
         POLL_OPTIONS_ARIA: "Poll options",
-        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, one {{days} day} other {{days} days}} left",
-        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, one {{hours} hour} other {{hours} hours}} left",
-        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {{minutes} min} other {{minutes} mins}} left",
+        POLL_EXPIRY_DAYS_REMAINING: "{days, plural, one {{days}d} other {{days}d}} left",
+        POLL_EXPIRY_HOURS_REMAINING: "{hours, plural, one {{hours}h} other {{hours}h}} left",
+        POLL_EXPIRY_MINUTES_REMAINING: "{minutes, plural, one {{minutes}m} other {{minutes}m}} left",
         POLL_EXPIRED: "Poll closed",
         POLL_SELECT_ONE_ANSWER: "Select one answer",
         POLL_SELECT_MULTIPLE_ANSWERS: "Select one or more answers",
@@ -18250,7 +18250,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267505", ", Version Hash: ").concat("f0ee81aab55cbac785529697ef956dfa0d4e39b6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267507", ", Version Hash: ").concat("00ab883b5b11b28b37a841ee920a36889be1fce3")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20598,8 +20598,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267505", "267505"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267505")), _ = 0), _
+        let _ = parseInt((e = "267507", "267507"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267507")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25310,8 +25310,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708456970387",
-                  build_number: "267505"
+                  built_at: "1708457117017",
+                  build_number: "267507"
                 }
               },
               retries: 1
@@ -36463,4 +36463,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.81984a3af6c924171492.js.map
+//# sourceMappingURL=99392.fcfc29c43b549e73b48a.js.map
