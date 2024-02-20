@@ -18063,14 +18063,14 @@
         r = E("77078"),
         i = E("363658"),
         a = E("135230"),
-        I = E("42887"),
-        s = E("945956"),
-        T = E("568307"),
+        I = E("161454"),
+        s = E("42887"),
+        T = E("945956"),
         S = E("701909"),
         N = E("49111"),
         O = E("782340"),
         A = () => {
-          let [e, _] = (0, n.useStateFromStoresArray)([T.default], () => [T.default.canShowAdminWarning, T.default.getVisibleGame()], []), E = (0, n.useStateFromStores)([s.default], () => s.default.isConnected(), []), A = (0, n.useStateFromStores)([I.default], () => I.default.getMode() === N.InputModes.PUSH_TO_TALK, []), R = null != _ && _.elevated && E && A && e, l = o.useRef(null);
+          let [e, _] = (0, n.useStateFromStoresArray)([I.default], () => [I.default.canShowAdminWarning, I.default.getVisibleGame()], []), E = (0, n.useStateFromStores)([T.default], () => T.default.isConnected(), []), A = (0, n.useStateFromStores)([s.default], () => s.default.getMode() === N.InputModes.PUSH_TO_TALK, []), R = null != _ && _.elevated && E && A && e, l = o.useRef(null);
 
           function u() {
             null !== l.current && ((0, r.closeModal)(l.current), l.current = null)
@@ -18250,7 +18250,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267525", ", Version Hash: ").concat("14bda2c4d3ef610e8d0a0c57b58cdcbe9c40ea21")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267527", ", Version Hash: ").concat("fc5337d9204952bdd775161b795473c89a837e3b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -18886,10 +18886,10 @@
       var t = E("862337"),
         o = E("689988"),
         n = E("575365"),
-        r = E("42203"),
-        i = E("42887"),
-        a = E("945956"),
-        I = E("568307"),
+        r = E("161454"),
+        i = E("42203"),
+        a = E("42887"),
+        I = E("945956"),
         s = E("101125"),
         T = E("280168"),
         S = E("316133"),
@@ -18899,59 +18899,59 @@
       let R = 1 * N.default.Millis.MINUTE;
       class l extends o.default {
         _initialize() {
-          __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(T.default, () => this._handleSpeakingStoreChanged()).set(a.default, () => this._handleRTCConnectionStoreChanged()), this._reset())
+          __OVERLAY__ ? this.stores = new Map : (this.stores = new Map().set(T.default, () => this._handleSpeakingStoreChanged()).set(I.default, () => this._handleRTCConnectionStoreChanged()), this._reset())
         }
         _reset() {
           this._currentUserSpeaking = !1, this._anyoneElseSpeaking = !1, null != this._reportInterval && (this._reportInterval.stop(), this._reportInterval = null)
         }
         _trackStartSpeaking() {
           if (this._currentUserSpeaking) {
-            let e = a.default.getChannelId(),
-              _ = a.default.getGuildId(),
-              E = r.default.getChannel(e),
+            let e = I.default.getChannelId(),
+              _ = I.default.getGuildId(),
+              E = i.default.getChannel(e),
               t = null == E ? void 0 : E.isBroadcastChannel();
             (0, O.trackWithMetadata)(A.AnalyticEvents.START_SPEAKING, {
-              mode: i.default.getMode(),
+              mode: a.default.getMode(),
               priority: T.default.isCurrentUserPrioritySpeaking(),
               channel: e,
               server: _,
               channel_id: e,
               guild_id: _,
               is_broadcast: t,
-              rtc_connection_id: a.default.getRTCConnectionId(),
-              media_session_id: a.default.getMediaSessionId(),
+              rtc_connection_id: I.default.getRTCConnectionId(),
+              media_session_id: I.default.getMediaSessionId(),
               voice_state_count: S.default.countVoiceStatesForChannel(this._voiceChannelId),
               ...this.getGameMetadata(),
-              ...a.default.getPacketStats()
+              ...I.default.getPacketStats()
             })
           }
         }
         _trackStartListening() {
-          if (i.default.isDeaf() || !this._anyoneElseSpeaking) return;
-          let e = a.default.getChannelId(),
-            _ = a.default.getGuildId(),
-            E = r.default.getChannel(e),
+          if (a.default.isDeaf() || !this._anyoneElseSpeaking) return;
+          let e = I.default.getChannelId(),
+            _ = I.default.getGuildId(),
+            E = i.default.getChannel(e),
             t = null == E ? void 0 : E.isBroadcastChannel();
           (0, O.trackWithMetadata)(A.AnalyticEvents.START_LISTENING, {
-            mute: i.default.isMute(),
+            mute: a.default.isMute(),
             anyone_priority: T.default.isAnyonePrioritySpeaking(),
             channel: e,
             server: _,
             channel_id: e,
             guild_id: _,
             is_broadcast: t,
-            rtc_connection_id: a.default.getRTCConnectionId(),
-            media_session_id: a.default.getMediaSessionId(),
+            rtc_connection_id: I.default.getRTCConnectionId(),
+            media_session_id: I.default.getMediaSessionId(),
             voice_state_count: S.default.countVoiceStatesForChannel(this._voiceChannelId),
             ...this.getGameMetadata()
           })
         }
         _terminate() {
-          this._reset(), T.default.removeChangeListener(this._handleSpeakingStoreChanged), a.default.removeChangeListener(this._handleRTCConnectionStoreChanged)
+          this._reset(), T.default.removeChangeListener(this._handleSpeakingStoreChanged), I.default.removeChangeListener(this._handleRTCConnectionStoreChanged)
         }
         getGameMetadata() {
           let e = s.default.findActivity(e => e.type === A.ActivityTypes.PLAYING),
-            _ = I.default.getCurrentGameForAnalytics();
+            _ = r.default.getCurrentGameForAnalytics();
           return {
             game_platform: (0, n.default)(e),
             game_name: null != e ? e.name : null,
@@ -18961,7 +18961,7 @@
         }
         constructor(...e) {
           super(...e), this._currentUserSpeaking = !1, this._anyoneElseSpeaking = !1, this._handleRTCConnectionStoreChanged = () => {
-            let e = a.default.getChannelId();
+            let e = I.default.getChannelId();
             if (this._voiceChannelId !== e) {
               if (this._voiceChannelId = e, null == e) {
                 this._reset();
@@ -20164,12 +20164,12 @@
         i = E("267363"),
         a = E("990766"),
         I = E("689988"),
-        s = E("374014"),
-        T = E("845579"),
-        S = E("271938"),
-        N = E("42203"),
-        O = E("546463"),
-        A = E("568307"),
+        s = E("161454"),
+        T = E("374014"),
+        S = E("845579"),
+        N = E("271938"),
+        O = E("42203"),
+        A = E("546463"),
         R = E("18494"),
         l = E("101125"),
         u = E("713726"),
@@ -20180,7 +20180,7 @@
       let d = [];
       class U extends I.default {
         handleRunningGamesChange() {
-          let e = A.default.getVisibleGame();
+          let e = s.default.getVisibleGame();
           if (null == e) return;
           let {
             canBroadcast: _
@@ -20188,11 +20188,11 @@
             location: "handle_running_games_change"
           }, {
             autoTrackExposure: !1
-          }), E = l.default.getBroadcast(), t = (0, u.getGameName)(e), o = null != O.default.getGameByName(t), n = (0, D.getIsBroadcastingToAnyone)();
-          if (!_ || null != E || !T.BroadcastAutoBroadcast.getSetting() || !o || !n) return;
+          }), E = l.default.getBroadcast(), t = (0, u.getGameName)(e), o = null != A.default.getGameByName(t), n = (0, D.getIsBroadcastingToAnyone)();
+          if (!_ || null != E || !S.BroadcastAutoBroadcast.getSetting() || !o || !n) return;
           let r = null != d.find(_ => _.pid === e.pid);
           if (r) return;
-          d = A.default.getRunningGames();
+          d = s.default.getRunningGames();
           let i = (0, C.getCanStartBroadcast)();
           if (!i) return;
           let I = R.default.getVoiceChannelId();
@@ -20212,17 +20212,17 @@
             streamKey: _
           } = e;
           if (null == t) return;
-          let E = (0, s.decodeStreamKey)(_),
+          let E = (0, T.decodeStreamKey)(_),
             {
               ownerId: r,
               channelId: i
             } = E;
           if (null == r || null == i) return;
-          let a = S.default.getId();
+          let a = N.default.getId();
           if (r !== a) return;
-          let I = N.default.getChannel(i),
-            T = null != I && I.isBroadcastChannel();
-          null != I && r === I.ownerId && T && (t = null, o = null, n = null, (0, u.stopBroadcast)())
+          let I = O.default.getChannel(i),
+            s = null != I && I.isBroadcastChannel();
+          null != I && r === I.ownerId && s && (t = null, o = null, n = null, (0, u.stopBroadcast)())
         }
         handleStartBroadcastStream(e) {
           let {
@@ -20235,8 +20235,8 @@
             channelId: _
           } = e;
           if (null == _ || null == t && null == o && null == n) return;
-          let E = S.default.getId(),
-            r = N.default.getChannel(_);
+          let E = N.default.getId(),
+            r = O.default.getChannel(_);
           null != r && E === r.ownerId && r.isBroadcastChannel() && (0, a.startStream)(null, _, {
             pid: t,
             sourceId: o,
@@ -20250,7 +20250,7 @@
           } = e;
           if (E !== c.RTCConnectionStates.DISCONNECTED) return;
           let t = R.default.getChannelId(),
-            o = N.default.getChannel(_);
+            o = O.default.getChannel(_);
           if (null == o || !o.isBroadcastChannel()) return;
           r.default.closePrivateChannel(_, t === _, !0);
           let n = l.default.getBroadcast();
@@ -20268,7 +20268,7 @@
             guildId: E
           } = e;
           if (null != E) return;
-          let t = N.default.getChannel(_);
+          let t = O.default.getChannel(_);
           if (null == t || !t.isBroadcastChannel()) return;
           let o = R.default.getVoiceChannelId(),
             n = o !== t.id;
@@ -20598,8 +20598,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267525", "267525"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267525")), _ = 0), _
+        let _ = parseInt((e = "267527", "267527"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267527")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21180,9 +21180,9 @@
       });
       var t = E("77078"),
         o = E("913144"),
-        n = E("373469"),
-        r = E("42887"),
-        i = E("568307"),
+        n = E("161454"),
+        r = E("373469"),
+        i = E("42887"),
         a = E("56947"),
         I = E("111177"),
         s = E("386045"),
@@ -21202,11 +21202,11 @@
           })
         }
         applyNativeClipsSettings(e) {
-          if (!(0, T.default)(r.default)) return;
+          if (!(0, T.default)(i.default)) return;
           let _ = (0, a.areClipsEnabled)(),
             E = s.default.getSettings(),
             t = (E.clipsEnabled || E.decoupledClipsEnabled) && _,
-            o = r.default.getMediaEngine();
+            o = i.default.getMediaEngine();
           if (o.setClipBufferLength(t ? E.clipsLength / 1e3 : 0), (null == e ? void 0 : e.settings.decoupledClipsEnabled) === !0 && this.fireClipsInitEvent(), null == e || (null == e ? void 0 : e.settings.clipsQuality) != null) {
             let {
               frameRate: _,
@@ -21216,22 +21216,22 @@
           }
         }
         handleClipsInitOnToggleDetection(e) {
-          let _ = i.default.getVisibleGame();
+          let _ = n.default.getVisibleGame();
           null != _ && _.id === e.game.id && this.fireClipsInitEvent()
         }
         handleClipsInitOnGamesChange(e) {
-          let _ = i.default.getVisibleGame();
+          let _ = n.default.getVisibleGame();
           if (null == _) return;
           let E = !!e.added.find(e => e.pid === _.pid);
           E ? setTimeout(() => this.fireClipsInitEvent(), N.CLIPS_RUNNING_GAME_CHANGE_CLIPS_INIT_DELAY) : this.fireClipsInitEvent()
         }
         fireClipsInitEvent() {
-          if (!(0, T.default)(r.default)) return;
+          if (!(0, T.default)(i.default)) return;
           let e = (0, a.areClipsEnabled)(),
             _ = s.default.getSettings(),
             E = _.clipsEnabled && e;
-          if (!E || null != n.default.getCurrentUserActiveStream()) return;
-          let t = i.default.getVisibleGame();
+          if (!E || null != r.default.getCurrentUserActiveStream()) return;
+          let t = n.default.getVisibleGame();
           (null == t ? void 0 : t.pid) != null && (null == t ? void 0 : t.windowHandle) != null && null != t.name && "" !== t.name && o.default.dispatch({
             type: "CLIPS_INIT",
             sourceId: "window:".concat(null == t ? void 0 : t.windowHandle),
@@ -23075,7 +23075,7 @@
         a = E("115718"),
         I = E("689988"),
         s = E("49671"),
-        T = E("568307"),
+        T = E("161454"),
         S = E("703370"),
         N = E("860957"),
         O = E("901165"),
@@ -25310,8 +25310,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708459255348",
-                  build_number: "267525"
+                  built_at: "1708459784791",
+                  build_number: "267527"
                 }
               },
               retries: 1
@@ -26018,10 +26018,10 @@
         }
       }), E("222007");
       var t = E("689988"),
-        o = E("374014"),
-        n = E("373469"),
-        r = E("271938"),
-        i = E("568307"),
+        o = E("161454"),
+        n = E("374014"),
+        r = E("373469"),
+        i = E("271938"),
         a = E("718517"),
         I = E("448881"),
         s = E("374023"),
@@ -26048,7 +26048,7 @@
             } = e;
             window.clearTimeout(this.sendHeartbeatIntervalIds.get(E));
             let o = () => {
-              (null != n.default.getRTCStream(E) || n.default.getViewerIds(E).length > 0) && (0, I.sendHeartbeat)({
+              (null != r.default.getRTCStream(E) || r.default.getViewerIds(E).length > 0) && (0, I.sendHeartbeat)({
                 questId: _,
                 streamKey: E,
                 applicationId: t
@@ -26071,17 +26071,17 @@
               enrolledQuestUserStatus: {
                 questId: _
               }
-            } = e, E = n.default.getStreamerActiveStreamMetadata();
+            } = e, E = r.default.getStreamerActiveStreamMetadata();
             if (null == E || null == E.pid) return;
-            let t = i.default.getGameForPID(E.pid);
+            let t = o.default.getGameForPID(E.pid);
             if (null == t || null == t.id) return;
-            let r = (0, S.getQuestByApplicationId)(T.default.quests, t.id);
-            if (null == r || r.id !== _) return;
-            let a = n.default.getCurrentUserActiveStream();
+            let i = (0, S.getQuestByApplicationId)(T.default.quests, t.id);
+            if (null == i || i.id !== _) return;
+            let a = r.default.getCurrentUserActiveStream();
             null != a && this.initiateHeartbeat({
-              streamKey: (0, o.encodeStreamKey)(a),
-              applicationId: r.config.applicationId,
-              questId: r.id
+              streamKey: (0, n.encodeStreamKey)(a),
+              applicationId: i.config.applicationId,
+              questId: i.id
             })
           }, this.handlePostConnectionOpen = () => {
             if (0 === T.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * O))
@@ -26097,18 +26097,18 @@
             var _, E;
             let {
               streamType: t,
-              guildId: n,
+              guildId: r,
               channelId: a,
               pid: I
-            } = e, s = null != I ? i.default.getGameForPID(I) : null;
+            } = e, s = null != I ? o.default.getGameForPID(I) : null;
             if (null == s) return;
             let N = null != s.id ? (0, S.getQuestByApplicationId)(T.default.quests, s.id) : null;
             (null == N ? void 0 : null === (_ = N.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) != null && (null == N ? void 0 : null === (E = N.userStatus) || void 0 === E ? void 0 : E.completedAt) == null && this.initiateHeartbeat({
-              streamKey: (0, o.encodeStreamKey)({
+              streamKey: (0, n.encodeStreamKey)({
                 streamType: t,
-                guildId: n,
+                guildId: r,
                 channelId: a,
-                ownerId: r.default.getId()
+                ownerId: i.default.getId()
               }),
               applicationId: N.config.applicationId,
               questId: N.id
@@ -36463,4 +36463,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.5aa108e37c559ed37a46.js.map
+//# sourceMappingURL=99392.171f80d4c9f2c1cebe62.js.map
