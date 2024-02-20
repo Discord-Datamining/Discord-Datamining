@@ -16133,6 +16133,7 @@
         DOMAIN_VERIFICATION_USE_DNS: "Verify using DNS",
         DOMAIN_VERIFICATION_INSTRUCTIONS_HTTP: "Create a new file on your website:",
         CLIP_TAG: "Clip (Beta)",
+        CLIP_TAG_MOBILE: "CLIP",
         CLIPS: "Clips",
         CLIPS_CLIPPING: "Clipping",
         CLIPS_SETTINGS: "Clips Settings",
@@ -18250,7 +18251,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267527", ", Version Hash: ").concat("fc5337d9204952bdd775161b795473c89a837e3b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267528", ", Version Hash: ").concat("2a0fb3ec532d56caab983cd38ec11fe16cf4702f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20598,8 +20599,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267527", "267527"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267527")), _ = 0), _
+        let _ = parseInt((e = "267528", "267528"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267528")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25310,8 +25311,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708459784791",
-                  build_number: "267527"
+                  built_at: "1708460041172",
+                  build_number: "267528"
                 }
               },
               retries: 1
@@ -36463,4 +36464,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.171f80d4c9f2c1cebe62.js.map
+//# sourceMappingURL=99392.cf37651e984b8aea4b2c.js.map
