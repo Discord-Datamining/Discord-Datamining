@@ -18249,7 +18249,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267408", ", Version Hash: ").concat("e6aa7f6befbb693128e1945bc58e6556e66fd578")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267422", ", Version Hash: ").concat("c5a199d94222afcd4734ee5f30df44bd87f3d7e0")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20597,8 +20597,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267408", "267408"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267408")), _ = 0), _
+        let _ = parseInt((e = "267422", "267422"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267422")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -22598,17 +22598,20 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return i
+          return a
         }
       }), E("222007");
       var t = E("689988"),
         o = E("42203"),
-        n = E("612278");
-      class r extends t.default {
+        n = E("612278"),
+        r = E("724210");
+      class i extends t.default {
         handleChannelPreload(e) {
           let {
             channelId: _
-          } = e, E = o.default.getChannel(_);
+          } = e;
+          if ((0, r.isStaticChannelRoute)(_)) return;
+          let E = o.default.getChannel(_);
           null != E && E.isForumLikeChannel() && (0, n.preloadForumThreads)(E)
         }
         constructor(...e) {
@@ -22617,13 +22620,13 @@
           }
         }
       }
-      var i = new r
+      var a = new i
     },
     144320: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return T
+          return S
         }
       }), E("511434"), E("313619"), E("654714"), E("287168"), E("956660"), E("222007"), E("424973");
       var t = E("689988"),
@@ -22631,13 +22634,16 @@
         n = E("42203"),
         r = E("315102"),
         i = E("402671"),
-        a = E("115279");
-      let I = new Worker(new URL(E.p + E.u("68638"), E.b));
-      class s extends t.default {
+        a = E("724210"),
+        I = E("115279");
+      let s = new Worker(new URL(E.p + E.u("68638"), E.b));
+      class T extends t.default {
         handleChannelPreload(e) {
           let {
             channelId: _
-          } = e, E = n.default.getChannel(_);
+          } = e;
+          if ((0, a.isStaticChannelRoute)(_)) return;
+          let E = n.default.getChannel(_);
           if (null != E && E.isForumLikeChannel()) {
             let e = function(e) {
               let _ = [],
@@ -22647,14 +22653,14 @@
                 _.push(r.default.getEmojiURL({
                   id: E.emojiId,
                   animated: null !== (n = null === (t = o.default.getUsableCustomEmojiById(E.emojiId)) || void 0 === t ? void 0 : t.animated) && void 0 !== n && n,
-                  size: a.EMOJI_SIZE_MAP.reaction
+                  size: I.EMOJI_SIZE_MAP.reaction
                 }))
               } else(null == E ? void 0 : E.emojiName) != null && _.push(i.default.getURL(E.emojiName));
               return e.availableTags.forEach(e => {
                 null != e.emojiId ? _.push(r.default.getEmojiURL({
                   id: e.emojiId,
                   animated: !1,
-                  size: a.EMOJI_SIZE_MAP.reaction
+                  size: I.EMOJI_SIZE_MAP.reaction
                 })) : null != e.emojiName && _.push(i.default.getURL(e.emojiName))
               }), _
             }(E);
@@ -22668,9 +22674,9 @@
                         url: o
                       }
                     } = t;
-                    null == I || I.removeEventListener("message", E), _ === o && e()
+                    null == s || s.removeEventListener("message", E), _ === o && e()
                   };
-                  null == I || I.addEventListener("message", E), null == I || I.postMessage({
+                  null == s || s.addEventListener("message", E), null == s || s.postMessage({
                     url: _
                   })
                 })
@@ -22684,7 +22690,7 @@
           }
         }
       }
-      var T = new s
+      var S = new T
     },
     508412: function(e, _, E) {
       "use strict";
@@ -23599,7 +23605,7 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return c
+          return d
         }
       }), E("222007");
       var t = E("210696"),
@@ -23613,30 +23619,31 @@
         T = E("364685"),
         S = E("42203"),
         N = E("305961"),
-        O = E("619443");
-      let A = new I.default("EntityVersionsManager");
-      class R extends i.default {
+        O = E("299039"),
+        A = E("619443");
+      let R = new I.default("EntityVersionsManager");
+      class l extends i.default {
         _initialize() {
-          r.default.subscribe("CONNECTION_OPEN", u)
+          r.default.subscribe("CONNECTION_OPEN", L)
         }
         _terminate() {
-          r.default.unsubscribe("CONNECTION_OPEN", u)
+          r.default.unsubscribe("CONNECTION_OPEN", L)
         }
         constructor(...e) {
           super(...e), this.actions = {
-            GUILD_CREATE: L,
-            DELETED_ENTITY_IDS: l
+            GUILD_CREATE: C,
+            DELETED_ENTITY_IDS: u
           }
         }
       }
 
-      function l(e) {
+      function u(e) {
         var _;
         let E = null === (_ = N.default.getGuild(e.guild_id)) || void 0 === _ ? void 0 : _.name;
-        A.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(E, ")")), n.default.Emitter.batched(() => {
+        R.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(E, ")")), n.default.Emitter.batched(() => {
           null != e.channels && function(e, _) {
-            let E = Object.keys(S.default.getMutableBasicGuildChannelsForGuild(e));
-            A.fileOnly("syncChannels", {
+            let E = O.default.keys(S.default.getMutableBasicGuildChannelsForGuild(e));
+            R.fileOnly("syncChannels", {
               channelIdsInMemory: E,
               channelIdsFromServer: _
             }), E.forEach(E => {
@@ -23679,36 +23686,36 @@
         })
       }
 
-      function u() {
+      function L() {
         a.default.getAll().then(e => {
-          e.forEach(e => C(e))
+          e.forEach(e => D(e))
         })
       }
 
-      function L(e) {
+      function C(e) {
         let {
           guild: _
         } = e;
-        _.unableToSyncDeletes && C(_.id)
-      }
-
-      function C(e) {
-        setTimeout(() => (function(e) {
-          var _, E, t, o, n;
-          let r = null === (_ = N.default.getGuild(e)) || void 0 === _ ? void 0 : _.name;
-          A.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(r, ")"));
-          let i = D(Object.keys(S.default.getMutableBasicGuildChannelsForGuild(e))),
-            a = D(Object.keys(null !== (o = null === (E = N.default.getGuild(e)) || void 0 === E ? void 0 : E.roles) && void 0 !== o ? o : {})),
-            I = D(s.default.getGuildEmoji(e).map(e => e.id)),
-            R = D(null !== (n = null === (t = T.default.getStickersByGuildId(e)) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== n ? n : []);
-          O.default.getSocket().getDeletedEntityIdsNotMatchingHash(e, i, a, I, R)
-        })(e), Math.ceil(2e3 * Math.random()))
+        _.unableToSyncDeletes && D(_.id)
       }
 
       function D(e) {
+        setTimeout(() => (function(e) {
+          var _, E, t, o, n;
+          let r = null === (_ = N.default.getGuild(e)) || void 0 === _ ? void 0 : _.name;
+          R.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(r, ")"));
+          let i = c(Object.keys(S.default.getMutableBasicGuildChannelsForGuild(e))),
+            a = c(Object.keys(null !== (o = null === (E = N.default.getGuild(e)) || void 0 === E ? void 0 : E.roles) && void 0 !== o ? o : {})),
+            I = c(s.default.getGuildEmoji(e).map(e => e.id)),
+            O = c(null !== (n = null === (t = T.default.getStickersByGuildId(e)) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== n ? n : []);
+          A.default.getSocket().getDeletedEntityIdsNotMatchingHash(e, i, a, I, O)
+        })(e), Math.ceil(2e3 * Math.random()))
+      }
+
+      function c(e) {
         return o.v3(e.sort().join(",")).toString()
       }
-      var c = new R
+      var d = new l
     },
     451772: function(e, _, E) {
       "use strict";
@@ -25302,8 +25309,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708366954704",
-                  build_number: "267408"
+                  built_at: "1708441838669",
+                  build_number: "267422"
                 }
               },
               retries: 1
@@ -36455,4 +36462,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.bb51a375fef4e80f8dd0.js.map
+//# sourceMappingURL=99392.02cf585587fe7fceb0ca.js.map
