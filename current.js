@@ -542,7 +542,7 @@
         g = n("782340");
       (0, o.setUpdateRules)(d.default), (0, l.default)(g.default, a.default, c.default), r.default.Emitter.injectBatchEmitChanges(s.batchUpdates), r.default.PersistedStore.disableWrites = __OVERLAY__, r.default.initialize();
       let T = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, _.default)().log("[BUILD INFO] Release Channel: ".concat(T, ", Build Number: ").concat("267486", ", Version Hash: ").concat("2a4c8a258b47cae4186ea12cd6dc9ada6de7b4e7")), i.default.setTags({
+      new(0, _.default)().log("[BUILD INFO] Release Channel: ".concat(T, ", Build Number: ").concat("267494", ", Version Hash: ").concat("8fcac1d3b323be2ee6cca5646c75a3b290227e8e")), i.default.setTags({
         appContext: S.CURRENT_APP_CONTEXT
       }), f.default.initBasic(), E.default.init(), u.FocusRingManager.init(), h.init(), (0, C.cleanupTempFiles)()
     },
@@ -2515,8 +2515,8 @@
 
       function a() {
         var e;
-        let t = parseInt((e = "267486", "267486"));
-        return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267486")), t = 0), t
+        let t = parseInt((e = "267494", "267494"));
+        return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267494")), t = 0), t
       }
     },
     990629: function(e, t, n) {
@@ -2690,7 +2690,7 @@
             })]
           })
         }),
-        U = e => {
+        b = e => {
           let {
             markAsDismissed: t
           } = e, n = (0, v.useTrackClientThemePreviewEvent)();
@@ -2710,7 +2710,7 @@
             })]
           })
         },
-        b = e => {
+        U = e => {
           var t, n, a;
           let {
             onSubscribeSuccess: l,
@@ -2759,7 +2759,7 @@
           }, () => D.default.Messages.CLIENT_THEMES_EDITOR_EXIT_PREVIEW).otherwise(() => D.default.Messages.CLIENT_THEMES_EDITOR_RETURN_TO_SETTINGS);
           return (0, i.jsxs)("div", {
             className: P.editorFooter,
-            children: [n && (0, i.jsx)(b, {
+            children: [n && (0, i.jsx)(U, {
               onSubscribeSuccess: () => {
                 u(!0)
               },
@@ -2808,7 +2808,7 @@
             ref: T,
             className: s(P.themeEditor, f ? P.editorAnimate : null),
             children: (0, i.jsxs)(d.HeadingLevel, {
-              children: [u ? (0, i.jsx)(w, {}) : (0, i.jsx)(U, {
+              children: [u ? (0, i.jsx)(w, {}) : (0, i.jsx)(b, {
                 markAsDismissed: t
               }), (0, i.jsx)(d.Scroller, {
                 className: P.editorBody,
@@ -3579,7 +3579,7 @@
             (0, I.default)(window, D);
             let P = (0, A.default)(window, __OVERLAY__ || l),
               w = (0, d.useStateFromStores)([_.default], () => _.default.sidebarWidth),
-              U = (0, f.useRedesignIconContext)().enabled;
+              b = (0, f.useRedesignIconContext)().enabled;
             return (0, i.jsx)("html", {
               lang: t,
               style: "font-size: ".concat(h, "%; --saturation-factor: ").concat(v, "; --devtools-sidebar-width: ").concat(w, "px;"),
@@ -3596,7 +3596,7 @@
                 "desaturate-user-colors": R,
                 "disable-forced-colors": !M && "active" === L,
                 "enable-forced-colors": M,
-                "show-redesigned-icons": U
+                "show-redesigned-icons": b
               }, (0, T.getThemeClass)(n), (0, m.default)(), p)
             })
           }(N), function() {
@@ -3659,8 +3659,8 @@
         D = n("374036"),
         P = n("384997"),
         w = n("234819"),
-        U = n("182033"),
-        b = n("928741"),
+        b = n("182033"),
+        U = n("928741"),
         F = n("161778"),
         G = n("778588"),
         k = n("697218"),
@@ -3711,7 +3711,7 @@
           pathname: l
         } = (0, u.useLocation)(), E = (0, K.getPlatform)(), T = d.isMobile || d.isTablet, x = (0, c.useStateFromStores)([F.default], () => F.default.darkSidebar ? $.ThemeTypes.DARK : void 0), q = (0, c.useStateFromStores)([p.default], () => p.default.useForcedColors ? "yes" : "no"), [J, ea] = (0, c.useStateFromStoresArray)([M.default], () => [M.default.isEditorOpen, M.default.isCoachmark]), el = (0, c.useStateFromStores)([O.default], () => O.default.isEditorOpen), {
           enabled: es
-        } = U.default.useExperiment({
+        } = b.default.useExperiment({
           location: "client_themes_coachmark_reintro"
         }, {
           autoTrackExposure: !0
@@ -3735,7 +3735,7 @@
           }))
         }, [eE, eh, ef, l]);
         let e_ = a.useRef(document.body);
-        return (0, i.jsx)(b.default, {
+        return (0, i.jsx)(U.default, {
           children: (0, i.jsx)(I.default, {
             children: (0, i.jsxs)(h.RedesignIconContextProvider, {
               children: [(0, i.jsx)(Q.default, {
@@ -5323,7 +5323,7 @@
         n.setSoundboardShown(e.enabled, !!e.enabled && null !== (t = e.keepOpen) && void 0 !== t && t)
       }
 
-      function U(e) {
+      function b(e) {
         var t;
         I.verbose("OVERLAY_MESSAGE_EVENT_ACTION", e);
         let n = R.getByName(null !== (t = e.gameName) && void 0 !== t ? t : e.gameId);
@@ -5340,7 +5340,7 @@
         }
       }
 
-      function b(e) {
+      function U(e) {
         I.verbose("MESSAGE_ACKED", e), R.desktopMessageEvent("ack")
       }
 
@@ -5425,10 +5425,10 @@
             OVERLAY_NOTIFICATION_EVENT: y,
             OVERLAY_SET_UI_LOCKED: L,
             OVERLAY_WIDGET_CHANGED: D,
-            OVERLAY_MESSAGE_EVENT_ACTION: U,
+            OVERLAY_MESSAGE_EVENT_ACTION: b,
             RUNNING_GAMES_CHANGE: M,
             SOUNDBOARD_SET_OVERLAY_ENABLED: w,
-            MESSAGE_ACKED: b,
+            MESSAGE_ACKED: U,
             MESSAGE_CREATE: F,
             WINDOW_FOCUS: k,
             RTC_CONNECTION_STATE: x.handleRTCConnectionState,
@@ -8441,10 +8441,10 @@
           return w
         },
         useCanJoinThreadVoice: function() {
-          return U
+          return b
         },
         useIsNonModInLockedThread: function() {
-          return b
+          return U
         }
       });
       var i = n("917351"),
@@ -8582,7 +8582,7 @@
         return (0, s.useStateFromStores)([E.default], () => P(e, E.default))
       }
 
-      function U(e) {
+      function b(e) {
         let t = (0, o.default)(),
           n = (0, s.useStateFromStores)([E.default], () => E.default.can(_.Permissions.CONNECT, e)),
           i = L(e),
@@ -8595,7 +8595,7 @@
         return !t && e.isVocalThread() && a && n && i
       }
 
-      function b(e) {
+      function U(e) {
         let t = w(e);
         return e.isLockedThread() && !t
       }
@@ -10466,4 +10466,4 @@
     }
   }
 ]);
-//# sourceMappingURL=63122.e80fdb3c185a6ff0bc8a.js.map
+//# sourceMappingURL=63122.14c1c0db481251285074.js.map
