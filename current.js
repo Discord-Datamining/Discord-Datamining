@@ -18256,7 +18256,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267648", ", Version Hash: ").concat("810db5f8b380d0202abe52f11aff66e730a2be31")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("267659", ", Version Hash: ").concat("748942e0db7490c58ad0b484422b741a0b94e7cf")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19101,58 +19101,47 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return n
+          return o
         }
       }), E("222007");
-      var t = E("91131"),
-        o = E("802493"),
-        n = new class e {
+      var t = E("802493"),
+        o = new class e {
           async getAll() {
-            let e = o.default.guildsRequiringDeletedIdsSync();
+            let e = t.default.guildsRequiringDeletedIdsSync();
             if (null == e) return new Set;
             let _ = await e.getMany();
             return new Set(_.map(e => e.id))
           }
           handleConnectionOpen(e, _) {
-            var E;
             let {
-              guilds: n
-            } = e, r = n.filter(e => e.unableToSyncDeletes).map(e => ({
+              guilds: E
+            } = e, o = E.filter(e => e.unableToSyncDeletes).map(e => ({
               id: e.id
             }));
-            r.length > 0 && o.default.guildsRequiringDeletedIdsSyncTransaction(_).putAll(r), null === (E = t.initialState.guildIdsRequiringDeletedIdsSync) || void 0 === E || E.forEach(e => {
-              o.default.guildsRequiringDeletedIdsSyncTransaction(_).put({
-                id: e
-              })
-            })
+            o.length > 0 && t.default.guildsRequiringDeletedIdsSyncTransaction(_).putAll(o)
           }
           handleBackgroundSync(e, _) {
             let {
               guilds: E
-            } = e, t = E.filter(e => "partial" === e.data_mode && e.unableToSyncDeletes).map(e => ({
+            } = e, o = E.filter(e => "partial" === e.data_mode && e.unableToSyncDeletes).map(e => ({
               id: e.id
             }));
-            t.length > 0 && o.default.guildsRequiringDeletedIdsSyncTransaction(_).putAll(t)
+            o.length > 0 && t.default.guildsRequiringDeletedIdsSyncTransaction(_).putAll(o)
           }
           handleGuildCreate(e, _) {
             let {
               guild: E
             } = e;
-            E.unableToSyncDeletes && o.default.guildsRequiringDeletedIdsSyncTransaction(_).put({
+            E.unableToSyncDeletes && t.default.guildsRequiringDeletedIdsSyncTransaction(_).put({
               id: E.id
             })
           }
           handleDeletedEntityIds(e, _) {
-            o.default.guildsRequiringDeletedIdsSyncTransaction(_).delete(e.guild_id)
+            t.default.guildsRequiringDeletedIdsSyncTransaction(_).delete(e.guild_id)
           }
-          handleClear(e) {
-            o.default.guildsRequiringDeletedIdsSyncTransaction(e).delete()
-          }
-          handleReset() {}
+          resetInMemoryState() {}
           constructor() {
             this.actions = {
-              CLEAR_CACHES: (e, _) => this.handleClear(_),
-              CLEAR_GUILD_CACHE: (e, _) => this.handleClear(_),
               BACKGROUND_SYNC: (e, _) => this.handleBackgroundSync(e, _),
               CONNECTION_OPEN: (e, _) => this.handleConnectionOpen(e, _),
               GUILD_CREATE: (e, _) => this.handleGuildCreate(e, _),
@@ -20604,8 +20593,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "267648", "267648"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267648")), _ = 0), _
+        let _ = parseInt((e = "267659", "267659"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("267659")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25316,8 +25305,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708473780796",
-                  build_number: "267648"
+                  built_at: "1708475254496",
+                  build_number: "267659"
                 }
               },
               retries: 1
@@ -29868,7 +29857,7 @@
         I = E("805833"),
         s = E("377678"),
         T = E("120082");
-      let S = new Set(["APP_STATE_UPDATE", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_CONNECTION", "SESSION_START", "UPLOAD_FAIL"]),
+      let S = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]),
         N = new i.default("Flux");
       class O {
         isDispatching() {
@@ -36469,4 +36458,4 @@
     }
   }
 ]);
-//# sourceMappingURL=99392.7ea46418741cd41b2e19.js.map
+//# sourceMappingURL=99392.a218bf45ae18c244017b.js.map
