@@ -11275,6 +11275,7 @@
         SEE_DETAIL: "Event Details",
         EVENT_MARK_INTERESTED: "Mark as Interested",
         EVENT_MARK_NOT_INTERESTED: "Mark as Not Interested",
+        EVENT_DETAILS_A11Y_HINT: "Double tap to view event details",
         SCHEDULE_EVENT_DESCRIPTION: "Schedule a Stage for a future date.",
         GO_TO_CHANNEL: "Go To Channel",
         STARTING_SOON: "Starting soon",
@@ -18264,7 +18265,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268260", ", Version Hash: ").concat("0dd14b8f5052d82cd840a6126fd69cbe43f33ebe")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268262", ", Version Hash: ").concat("7b78f3d10cebfdabfaeddb69d4dfd4af0c7060cc")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20602,8 +20603,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268260", "268260"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268260")), _ = 0), _
+        let _ = parseInt((e = "268262", "268262"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268262")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25314,8 +25315,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708634423047",
-                  build_number: "268260"
+                  built_at: "1708634484699",
+                  build_number: "268262"
                 }
               },
               retries: 1
@@ -36562,4 +36563,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.be6ad5f6894f26a0bedc.js.map
+//# sourceMappingURL=77761.08319e1af7d4a9757683.js.map
