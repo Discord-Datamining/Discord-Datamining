@@ -3821,6 +3821,7 @@
         LOGOUT: "Log Out",
         SOUNDS: "Sounds",
         PREMIUM: "Nitro",
+        BASIC: "Basic",
         SOUND_MESSAGE: "Message",
         SOUND_DEAFEN: "Deafen",
         SOUND_UNDEAFEN: "Undeafen",
@@ -6712,8 +6713,10 @@
         PREMIUM_MARKETING_MORE_GUILDS_PERK_TITLE: "More Servers",
         PREMIUM_MARKETING_MORE_GUILDS_PERK_DESCRIPTION: "Join up to 200 of your favorite servers.",
         PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE: "Super Reactions",
+        PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_V2: "Unlimited Super Reactions",
         PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED: "Unlimited Super Reactions",
         PREMIUM_MARKETING_SUPER_REACTIONS_PERK_DESCRIPTION: "Hype up the chat with action-packed, animated reactions.",
+        PREMIUM_MARKETING_SUPER_REACTIONS_PERK_DESCRIPTION_V2: "We made Super Reactions unlimited so you can unleash the chaos in your chats.",
         PREMIUM_MARKETING_UPLOADS_SMALL_PERK_TITLE: "{premiumMaxSize} Uploads",
         PREMIUM_MARKETING_UPLOADS_SMALL_PERK_DESCRIPTION: "Upload what you want with increased {premiumMaxSize} upload size.",
         PREMIUM_MARKETING_STREAMING_SMALL_PERK_DESCRIPTION: "Better video resolutions for all your streams. Stream apps and games in sweet, sweet HD.",
@@ -7984,6 +7987,7 @@
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_PRICE: "Price",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_EMOJI: "Custom emoji anywhere and make them animated",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_STICKER: "Custom stickers anywhere",
+        PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_STICKER_V2: "Custom stickers anywhere plus 300+ Nitro exclusives",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SUPER_REACTIONS: "Super Reactions",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_SUPER_REACTIONS: "{weeklyReactionsNumber}/week",
         PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_SUPER_REACTIONS_DAILY: "{dailyReactionsNumber}/day",
@@ -8168,6 +8172,12 @@
         NITRO_HOME_SUBSCRIBER_BADGE: "Subscriber Badge",
         NITRO_HOME_GET_THIS_SUBSCRIBER_BADGE: "Get this cool badge for being a Nitro subscriber.",
         NITRO_HOME_SUBSCRIBER_BADGE_FOR_THE_COLLECTORS: "For the collectors. Grab this exclusive Nitro-only badge.",
+        NITRO_MARKETING_CARDS_SUPERCHARGE_YOUR_DISCORD: "Supercharge your Discord",
+        NITRO_MARKETING_CARDS_CUSTOM_PROFILES: "Custom Profiles Across All Servers",
+        NITRO_MARKETING_CARDS_UNLIMITED_SUPER_REACTIONS: "Unlimited Super Reactions per week",
+        NITRO_MARKETING_CARDS_BOOSTS_UPLOADS_AND_MORE: "2 Server Boosts, 500 MB uploads, and more!",
+        NITRO_MARKETING_JUST_THE_BASICS: "Just the basics",
+        NITRO_MARKETING_BASIC_PERKS: "Nitro Basic Perks",
         MARKETING_PAGE_CAROUSEL_TITLE: "Make Discord Yours",
         MARKETING_PAGE_CHOOSE_PLAN_TITLE: "Choose Your Nitro",
         MARKETING_PAGE_CHOOSE_PLAN_SUBTITLE: "Upgrade to get all the customization thangs.",
@@ -14097,10 +14107,12 @@
         BOGO_PILL: "Buy 1, Get 1",
         Q4_DROP_WHATS_NEW_EARLY_ACCESS_CARD_TITLE: "Early Access",
         Q4_DROP_WHATS_NEW_EARLY_ACCESS_CARD_SUBTITLE: "Be the first to try some of our newest Discord features. Now including early access to Clips!",
+        Q4_DROP_WHATS_NEW_EARLY_ACCESS_CARD_SUBTITLE_V2: "Get exclusive access to certain new features before they’re released to everyone.",
         Q4_DROP_WHATS_NEW_EARLY_ACCESS_CARD_DESCRIPTION_NON_SUB: "Get Nitro to get in on the inside scoop.",
         Q4_DROP_WHATS_NEW_EARLY_ACCESS_CARD_DESCRIPTION_SUB: "Nitro members, get ready to get your hands on the latest and greatest before everyone else.",
         Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_TITLE: "Special Member Pricing",
         Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_SUBTITLE: "Snag sweet discounts on any (or every!) item at the Shop.",
+        Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_SUBTITLE_V2: "Snag sweet discounts on any - or every! - item at the Shop.",
         Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_DESCRIPTION_NON_SUB: "Join Nitro to take advantage of these exclusive prices.",
         Q4_DROP_WHATS_NEW_SPECIAL_PRICING_CARD_DESCRIPTION_SUB: "Exclusive savings are reserved for Nitro members only.",
         Q4_DROP_WHATS_NEW_UNLIMITED_SUPER_REACTIONS_CARD_TITLE: "Unlimited Super Reactions",
@@ -14867,6 +14879,8 @@
         SOUNDBOARD_MARKETING_CUSTOM_SOUNDS_ANYWHERE: "Custom sounds anywhere",
         SOUND_BOARD_MARKETING_USE_CUSTOM_SOUNDS: "Use Custom Sounds",
         SOUNDBOARD_MARKETING_CUSTOM_ENTRY_SOUNDS: "Personalized entrance sounds",
+        SOUNDBOARD_MARKETING_CUSTOM_ENTRY_SOUNDS_V2: "Custom entrance sounds",
+        AVATAR_PROFILE_BANNER_MARKETING: "Animated avatar, profile banner, and custom tag",
         SOUNDBOARD_MARKETING_REACT_WITH_SOUNDBOARD: "Use custom sounds and personalized entrance sounds across voice channels.",
         SOUNDBOARD_MARKETING_TRY_ON_MOBILE: "Try Soundboard on mobile!",
         SOUNDBOARD_SEARCH_PLACEHOLDER: "Search for sound",
@@ -18266,7 +18280,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268342", ", Version Hash: ").concat("1a2a3cca2dd0da38349c2dc7212a57cdb9379917")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268347", ", Version Hash: ").concat("3b27449d888cc655afa5aebc89a3dea04d9e5218")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20604,8 +20618,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268342", "268342"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268342")), _ = 0), _
+        let _ = parseInt((e = "268347", "268347"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268347")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25316,8 +25330,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708640166200",
-                  build_number: "268342"
+                  built_at: "1708640421453",
+                  build_number: "268347"
                 }
               },
               retries: 1
@@ -36564,4 +36578,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.5a7b279ee9d0b8bd70f4.js.map
+//# sourceMappingURL=77761.f99a9ccbd1e1a2f21d5b.js.map
