@@ -18265,7 +18265,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268267", ", Version Hash: ").concat("a88aba04409fb36b24c4db409ab225fb442d54d1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268268", ", Version Hash: ").concat("28c8fb40e86a6fbdb52768b40f7c8ad780039dc2")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20603,8 +20603,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268267", "268267"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268267")), _ = 0), _
+        let _ = parseInt((e = "268268", "268268"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268268")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25315,8 +25315,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708635346337",
-                  build_number: "268267"
+                  built_at: "1708635446211",
+                  build_number: "268268"
                 }
               },
               retries: 1
@@ -30651,7 +30651,7 @@
           this._mustEmitChanges = e
         }
         constructor(e, _, E) {
-          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), null !== _ && this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
+          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
         }
       }).initialized = N, n = o
     },
@@ -36563,4 +36563,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.90ddadd4fd3d4490be0a.js.map
+//# sourceMappingURL=77761.fa679d3a894b02a7828f.js.map
