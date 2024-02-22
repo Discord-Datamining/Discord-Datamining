@@ -11585,10 +11585,12 @@
         USER_SETTINGS_ADD_ANIMATED_AVATAR: "Add Animated Avatar",
         USER_SETTINGS_AVATAR_DECORATION: "Avatar Decoration",
         USER_SETTINGS_REMOVE_AVATAR_DECORATION: "Remove Decoration",
+        USER_SETTINGS_REMOVE_PER_GUILD_AVATAR_DECORATION: "Use Default",
         USER_SETTINGS_CHANGE_AVATAR_DECORATION: "Change Decoration",
         USER_SETTINGS_PROFILE_EFFECT: "Profile Effect",
         USER_SETTINGS_REMOVE_PROFILE_EFFECT: "Remove Effect",
         USER_SETTINGS_CHANGE_PROFILE_EFFECT: "Change Effect",
+        USER_SETTINGS_USE_DEFAULT_PROFILE_EFFECT: "Use Default",
         USER_SETTINGS_ABOUT_ME: "About Me",
         USER_SETTINGS_ABOUT_ME_HINT: "Tap to add an about me",
         USER_SETTINGS_PRONOUNS_HINT: "Tap to add pronouns",
@@ -18261,7 +18263,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268196", ", Version Hash: ").concat("58f0fb1182a3eed98ac9629fb0ecac369d3e5a67")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268204", ", Version Hash: ").concat("8c8ea79ddd24a4065fbe17c1b076db0d3a9aca28")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20599,8 +20601,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268196", "268196"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268196")), _ = 0), _
+        let _ = parseInt((e = "268204", "268204"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268204")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25311,8 +25313,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708628046074",
-                  build_number: "268196"
+                  built_at: "1708629379834",
+                  build_number: "268204"
                 }
               },
               retries: 1
@@ -36552,4 +36554,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.74e6e6bb2412f974380d.js.map
+//# sourceMappingURL=77761.3b1caf90d366120aea27.js.map
