@@ -9613,7 +9613,8 @@
         DEFAULT_CUSTOM_GIFT_MESSAGE: "You’re awesome, just like this gift. Enjoy!",
         MOBILE_CUSTOM_GIFT_PLAN_SELECTION_HEADER: "Gift {username} a new Nitro membership",
         MOBILE_CUSTOM_GIFT_PLAN_SELECTION_BODY: "Warning: gift may cause uncontrollable happiness!",
-        MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY: "Choose from {monthlyPrice} or {yearlyPrice}",
+        MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY_V2: "Choose from {monthlyPrice}/month or {yearlyPrice}/year",
+        MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CARD_HEADER: "Your recipient will receive:",
         MOBILE_CUSTOM_GIFT_TITLE: "Gift a Nitro membership",
         MOBILE_CUSTOM_GIFT_DURATION_LABEL: "Gift duration",
         MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH: "Gift {count, plural, one {# month} other {# months}} of {nitroTierName}",
@@ -18265,7 +18266,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268272", ", Version Hash: ").concat("87b715fba6247ef6fc3d3513103578a6dddad1b9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268289", ", Version Hash: ").concat("63e5da0a55f81fcc2287bcae4edf7032cb692d1d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20603,8 +20604,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268272", "268272"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268272")), _ = 0), _
+        let _ = parseInt((e = "268289", "268289"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268289")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25315,8 +25316,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708635772836",
-                  build_number: "268272"
+                  built_at: "1708636993013",
+                  build_number: "268289"
                 }
               },
               retries: 1
@@ -30651,7 +30652,7 @@
           this._mustEmitChanges = e
         }
         constructor(e, _, E) {
-          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), null !== _ && this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
+          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
         }
       }).initialized = N, n = o
     },
@@ -36563,4 +36564,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.4e62f787acab6663e6e6.js.map
+//# sourceMappingURL=77761.9f16cde5aff8be450b44.js.map
