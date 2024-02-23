@@ -9623,6 +9623,7 @@
         BILLING_ADDRESS_ACTION: "Add billing address",
         DEFAULT_CUSTOM_GIFT_MESSAGE: "You’re awesome, just like this gift. Enjoy!",
         MOBILE_CUSTOM_GIFT_PLAN_SELECTION_HEADER: "Gift {username} a new Nitro membership",
+        MOBILE_CUSTOM_GIFT_PLAN_SELECTION_HEADER_NO_USERNAME: "Gift a new Nitro membership",
         MOBILE_CUSTOM_GIFT_PLAN_SELECTION_BODY: "Warning: gift may cause uncontrollable happiness!",
         MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CHOOSE_MONTHLY_OR_YEARLY_V2: "Choose from {monthlyPrice}/month or {yearlyPrice}/year",
         MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CARD_HEADER: "Your recipient will receive:",
@@ -18285,7 +18286,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268628", ", Version Hash: ").concat("78b6a2b7b3b5f896266950ad594763aed7362890")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268630", ", Version Hash: ").concat("7b99a4da59586f410362c05e4825617c3eb88d42")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20623,8 +20624,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268628", "268628"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268628")), _ = 0), _
+        let _ = parseInt((e = "268630", "268630"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268630")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25335,8 +25336,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708722064246",
-                  build_number: "268628"
+                  built_at: "1708722414987",
+                  build_number: "268630"
                 }
               },
               retries: 1
@@ -36593,4 +36594,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.da98cd7d40738d09128c.js.map
+//# sourceMappingURL=77761.27276d4b3abc9f6fa170.js.map
