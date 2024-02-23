@@ -9373,6 +9373,7 @@
         GO_LIVE_MODAL_APPLICATION_FORM_TITLE: "What you're streaming",
         GO_LIVE_MODAL_SELECT_CHANNEL_FORM_TITLE: "Select a voice channel",
         GO_LIVE_MODAL_CURRENT_CHANNEL_FORM_TITLE: "Streaming channel",
+        GO_LIVE_MODAL_HARDWARE_WARNING_INFOBOX: "Discord relies on the video hardware encoder of your graphics card for optimal system performance and visual quality. [Enable Hardware Acceleration](onClick) in your settings for the best experience.",
         GO_LIVE_MODAL_CTA: "Go Live",
         GO_LIVE_MODAL_OVERFLOW_TWO_USERS: "!!{nickname0}!! and !!{nickname1}!!",
         GO_LIVE_MODAL_OVERFLOW_THREE_USERS: "!!{nickname0}!!, !!{nickname1}!!, and !!{nickname2}!!",
@@ -18284,7 +18285,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268508", ", Version Hash: ").concat("3c4fb8abab68862481717fd540673199edeb5e26")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268518", ", Version Hash: ").concat("08214cbd72c2e60057b9ac27d602b93ecc69492d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20622,8 +20623,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268508", "268508"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268508")), _ = 0), _
+        let _ = parseInt((e = "268518", "268518"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268518")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25334,8 +25335,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708709203207",
-                  build_number: "268508"
+                  built_at: "1708710357193",
+                  build_number: "268518"
                 }
               },
               retries: 1
@@ -36584,4 +36585,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.b2eaa188cf53709e813b.js.map
+//# sourceMappingURL=77761.f70d5475ead9e990006e.js.map
