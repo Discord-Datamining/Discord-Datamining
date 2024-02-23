@@ -16494,6 +16494,7 @@
         INAPPROPRIATE_CONVERSATION_ACTION_REPORTED: "Reported",
         INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL: "Contact Crisis Text Line",
         INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_NOFILTR: "Contact NoFiltr",
+        INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP: "This conversation may not be safe.",
         SAFETY_ALERTS_SETTINGS_HEADER: "Safety Alerts",
         SAFETY_ALERTS_SETTING_TITLE: "Show alerts in direct messages",
         SAFETY_ALERTS_SETTING_DESCRIPTION: "Display an alert when a possible risk to your safety is detected. [Learn more about safety alerts]({learnMoreLink})",
@@ -18283,7 +18284,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268501", ", Version Hash: ").concat("8f03c14a8ff749cb6e6cdc45306e47c5309b223b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268508", ", Version Hash: ").concat("3c4fb8abab68862481717fd540673199edeb5e26")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20621,8 +20622,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268501", "268501"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268501")), _ = 0), _
+        let _ = parseInt((e = "268508", "268508"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268508")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25333,8 +25334,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708705812204",
-                  build_number: "268501"
+                  built_at: "1708709203207",
+                  build_number: "268508"
                 }
               },
               retries: 1
@@ -36583,4 +36584,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.a24d4f2fa45a37b88639.js.map
+//# sourceMappingURL=77761.b2eaa188cf53709e813b.js.map
