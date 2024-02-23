@@ -16768,9 +16768,9 @@
         STOREFRONT_APP_PRODUCTS: "App Products",
         STOREFRONT_APP_PRODUCTS_BODY: "Purchase products from {appName}",
         STOREFRONT_SUBSCRIPTION: "Subscription",
-        STOREFRONT_SUBSCRIBE: "Subscribe",
+        STOREFRONT_SUBSCRIBE_FOR: "Subscribe for {rate}",
         STOREFRONT_SUBSCRIPTION_BENEFITS: "Subscription Benefits",
-        STOREFRONT_PURCHASE: "Purchase",
+        STOREFRONT_PURCHASE_FOR: "Buy for {price}",
         STOREFRONT_ONE_TIME_PURCHASE: "One-Time Purchase",
         QUIET_MODE_DISABLED: "Focus Mode Disabled",
         QUIET_MODE_ENABLED: "Focus Mode Enabled",
@@ -18285,7 +18285,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268525", ", Version Hash: ").concat("f07728517329822aafc869bcac677c8255875c33")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268529", ", Version Hash: ").concat("f172473c7982b859a61baff99dabd9d6d18c992a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20623,8 +20623,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268525", "268525"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268525")), _ = 0), _
+        let _ = parseInt((e = "268529", "268529"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268529")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25335,8 +25335,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708711128874",
-                  build_number: "268525"
+                  built_at: "1708711455404",
+                  build_number: "268529"
                 }
               },
               retries: 1
@@ -36585,4 +36585,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.ce62833cb699855e2d27.js.map
+//# sourceMappingURL=77761.5441d6159fa8f55cd3ab.js.map
