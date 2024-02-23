@@ -5332,7 +5332,7 @@
         STREAM_PREMIUM_UPSELL_BANNER_PRESET_DOCUMENTS: "Level up your streaming.",
         STREAM_PREMIUM_UPSELL_BANNER_CTA: "Get Nitro",
         STREAM_PREMIUM_UPSELL_BODY: "Stream HD resolutions at 60 frames per second, get access to chat perks, [and more with Discord Nitro!](onPressMore)",
-        STREAM_PREMIUM_UPSELL_BODY_V2: "Unlock up to 4k/60fps streaming, custom emojis everywhere, animated avatar, and more with Nitro.",
+        STREAM_PREMIUM_UPSELL_BODY_V2: "Unlock up to 4k/60fps streaming, custom emoji everywhere, animated avatar, and more with Nitro.",
         STREAM_PREMIUM_UPSELL_BODY_NO_CTA: "Stream HD resolutions at 60 frames per second, get access to chat perks, and more with Discord Nitro!",
         STREAM_PREMIUM_UPSELL_WITH_ACTION: "Lift off with Discord Nitro to stream HD resolutions at 60 frames per second. [Learn more](onClick).",
         STREAM_PREMIUM_UPSELL_CTA: "Subscribe",
@@ -18285,7 +18285,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268569", ", Version Hash: ").concat("a834d692adf481b1c5f051081135ddc907523940")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268570", ", Version Hash: ").concat("678f361577a665ab7b4ad3e041f4e428e5020b7d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20623,8 +20623,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268569", "268569"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268569")), _ = 0), _
+        let _ = parseInt((e = "268570", "268570"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268570")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25335,8 +25335,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708716520581",
-                  build_number: "268569"
+                  built_at: "1708716578002",
+                  build_number: "268570"
                 }
               },
               retries: 1
@@ -36616,4 +36616,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.88fc57082d1288eaedc5.js.map
+//# sourceMappingURL=77761.db7ee1cf1540ca3219bb.js.map
