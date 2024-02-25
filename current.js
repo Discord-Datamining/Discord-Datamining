@@ -13436,6 +13436,7 @@
         GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_GRANTED_BY: "(Risky) Granted By",
         GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY_ARIA_LABEL: "Permission Granted By These Roles",
         GUILD_MEMBER_MOD_VIEW_HIGHEST_ROLE: "Highest Role",
+        GUILD_MEMBER_MOD_VIEW_TITLE: "Mod View",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE: "Show Members In Channel List",
         GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION: "Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.",
         GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED: "The members page has been moved to the server channel list. [Go There](onClick)",
@@ -18290,7 +18291,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268874", ", Version Hash: ").concat("cd230f290497f7adc0f89ee0fcf04bddabc2008e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268876", ", Version Hash: ").concat("e48d12c2b669904dea82b3f28f3789634452a79a")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20628,8 +20629,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268874", "268874"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268874")), _ = 0), _
+        let _ = parseInt((e = "268876", "268876"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268876")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25340,8 +25341,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708815378859",
-                  build_number: "268874"
+                  built_at: "1708818978501",
+                  build_number: "268876"
                 }
               },
               retries: 1
@@ -36598,4 +36599,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.745b4d8bb4bc99628d8e.js.map
+//# sourceMappingURL=77761.cda2b1d88be2a2ae79d3.js.map
