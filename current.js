@@ -18291,7 +18291,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268912", ", Version Hash: ").concat("d3d22def98e0b16cd0627e8c4b8bac2565388885")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268915", ", Version Hash: ").concat("7e09c99508d587cdb1a648b166a4d4101228622f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20629,8 +20629,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268912", "268912"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268912")), _ = 0), _
+        let _ = parseInt((e = "268915", "268915"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268915")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -23690,7 +23690,7 @@
             })
           }(e.guild_id, new Set(e.channels)), null != e.roles && function(e, _) {
             var E, t;
-            Object.keys(null !== (t = null === (E = N.default.getGuild(e)) || void 0 === E ? void 0 : E.roles) && void 0 !== t ? t : {}).forEach(E => {
+            O.default.keys(null !== (t = null === (E = N.default.getGuild(e)) || void 0 === E ? void 0 : E.roles) && void 0 !== t ? t : {}).forEach(E => {
               !_.has(E) && r.default.dispatch({
                 type: "GUILD_ROLE_DELETE",
                 guildId: e,
@@ -25341,8 +25341,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708956567909",
-                  build_number: "268912"
+                  built_at: "1708958327343",
+                  build_number: "268915"
                 }
               },
               retries: 1
@@ -36600,4 +36600,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.71073aa96e9353fc67b9.js.map
+//# sourceMappingURL=77761.1d6e53f1e6611171b458.js.map
