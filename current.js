@@ -6640,6 +6640,7 @@
         CHURN_DISCOUNT_CONFIRM_LEGALESE: "By clicking “Confirm Discount” you are agreeing to continue your Nitro recurring subscription. You’ll be charged {discountedPrice}/{billingPeriod} for {numMonths, plural, one {1 month} other {{numMonths} months}}, and then {fullPrice}/{billingPeriod} after that until you cancel. Cancel anytime from your Settings page. [Paid Services Terms]({helpdeskArticle}) apply.",
         CHURN_DISCOUNT_NEVERMIND: "Nevermind",
         CHURN_DISCOUNT_CONFIRM_DISCOUNT: "Confirm Discount",
+        CHURN_DISCOUNT_REDEMPTION_ERROR: "Something went wrong. Try again.",
         PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW: "Try {planName} for {duration} on us. Then !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION: "Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_ACTIVATED: "free trial activated",
@@ -18291,7 +18292,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268930", ", Version Hash: ").concat("a51c7e721fd3d4daddb34a46d8147e436c0edb85")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268934", ", Version Hash: ").concat("8328c5ae91a343ee1cfe4bf24ff2c1cb717ec3eb")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20629,8 +20630,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268930", "268930"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268930")), _ = 0), _
+        let _ = parseInt((e = "268934", "268934"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268934")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25341,8 +25342,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708963475484",
-                  build_number: "268930"
+                  built_at: "1708964665189",
+                  build_number: "268934"
                 }
               },
               retries: 1
@@ -36600,4 +36601,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.e4ad9841587b5ee837ae.js.map
+//# sourceMappingURL=77761.85c046fe605958fa3f4a.js.map
