@@ -12367,6 +12367,9 @@
         AFFINITIES_MARKETING_HEADER_3: "{username} and other friends have more fun with Nitro",
         AFFINITIES_MARKETING_HEADER_2: "{username} and {otherUsername} have more fun with Nitro",
         AFFINITIES_MARKETING_HEADER_1: "{username} has more fun with Nitro",
+        AFFINITIES_MARKETING_HEADER_V2_3: "Join {username} and other friends on Nitro",
+        AFFINITIES_MARKETING_HEADER_V2_2: "Join {username} and {otherUsername} on Nitro",
+        AFFINITIES_MARKETING_HEADER_V2_1: "Join {username} on Nitro",
         PICK_YOUR_PLAN: "Pick Your Plan",
         AND_MORE: "And more!",
         PREMIUM_TIER_0_MARKETING_COMPARISON_TABLE_ROW_LABEL_MONTHLY_PRICE: "Monthly Price",
@@ -18296,7 +18299,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269018", ", Version Hash: ").concat("669bed580cb6c3fbb79e4bed60c03db92bd6cba2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269019", ", Version Hash: ").concat("55b1987074650cbfba87dfd11de628d475da5f5b")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20634,8 +20637,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269018", "269018"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269018")), _ = 0), _
+        let _ = parseInt((e = "269019", "269019"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269019")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25346,8 +25349,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708977752554",
-                  build_number: "269018"
+                  built_at: "1708978336650",
+                  build_number: "269019"
                 }
               },
               retries: 1
@@ -36605,4 +36608,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.9c685c271ab28001c71b.js.map
+//# sourceMappingURL=77761.6032b45cbc104bd1c7aa.js.map
