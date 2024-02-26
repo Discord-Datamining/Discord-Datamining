@@ -18292,7 +18292,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268937", ", Version Hash: ").concat("f02193a8ffbe5a1aa5c5cb20599224010aa9bbf9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("268944", ", Version Hash: ").concat("e48f2e9ffda2af180b28c5675ea5e3b6e3859251")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20444,22 +20444,22 @@
           return S
         }
       }), E("222007");
-      var t = E("249654"),
-        o = E("913144"),
-        n = E("776156"),
-        r = E("689988"),
-        i = E("915639"),
+      var t = E("913144"),
+        o = E("776156"),
+        n = E("689988"),
+        r = E("915639"),
+        i = E("299039"),
         a = E("34966"),
         I = E("473006"),
         s = E("788434");
-      class T extends r.default {
+      class T extends n.default {
         constructor(...e) {
           super(...e), this.actions = {
             POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
           }, this.handleConnectionOpen = async e => {
-            let _ = await n.default.fetchChangelogConfig(),
+            let _ = await o.default.fetchChangelogConfig(),
               E = _.body,
-              r = (0, I.getClientVersionForChangelog)(),
+              n = (0, I.getClientVersionForChangelog)(),
               T = function(e, _) {
                 let E = 0,
                   t = null;
@@ -20467,19 +20467,19 @@
                     min_version: n
                   }] of Object.entries(e)) n <= _ && n > E && (E = n, t = o);
                 return t
-              }(E, r);
-            if (o.default.dispatch({
+              }(E, n);
+            if (t.default.dispatch({
                 type: "CHANGE_LOG_SET_CONFIG",
                 config: _.body,
                 latestChangelogId: T
               }), null == T || !0 !== E[T].show_on_startup) return;
             let S = a.default.lastSeenChangelogId(),
               N = a.default.lastSeenChangelogDate();
-            if (null != S && 0 >= t.default.compare(T, S)) return;
-            let O = await n.default.fetchChangelog(T, i.default.locale);
+            if (null != S && 0 >= i.default.compare(T, S)) return;
+            let O = await o.default.fetchChangelog(T, r.default.locale);
             if (null != O) {
               if (null == N || null == a.default.lastSeenChangelogDate()) {
-                n.default.markChangelogAsSeen(T, O.date);
+                o.default.markChangelogAsSeen(T, O.date);
                 return
               }!a.default.isLocked() && new Date(O.date) > new Date(N) && (0, s.openChangelog)()
             }
@@ -20630,8 +20630,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "268937", "268937"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268937")), _ = 0), _
+        let _ = parseInt((e = "268944", "268944"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("268944")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25342,8 +25342,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708967307426",
-                  build_number: "268937"
+                  built_at: "1708968906241",
+                  build_number: "268944"
                 }
               },
               retries: 1
@@ -36601,4 +36601,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.f20a3a6e106efcfee58b.js.map
+//# sourceMappingURL=77761.454e2675eeab8a5bc85f.js.map
