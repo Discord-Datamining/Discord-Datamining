@@ -16496,8 +16496,6 @@
         INAPPROPRIATE_CONVERSATION_BLOCK_CONFIRM: "User Blocked",
         INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_HEADER: "Chats can be a lot",
         INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_DESCRIPTION: "Relax with Wumpus for as long as you need.",
-        INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_MUTE: "Mute music",
-        INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_UNMUTE: "Unmute music",
         INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_RETURN: "Back to conversation",
         INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_ALT: "Wumpus vibing to music.",
         INAPPROPRIATE_CONVERSATION_ACTION_REPORT: "Report them",
@@ -18298,7 +18296,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269063", ", Version Hash: ").concat("d462ae7f748f1da4c214909639f19dbfcf230c86")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269073", ", Version Hash: ").concat("62c8b0dc8b8ab37e45e3fe910e4dd3e7d38bea97")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20636,8 +20634,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269063", "269063"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269063")), _ = 0), _
+        let _ = parseInt((e = "269073", "269073"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269073")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25348,8 +25346,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708984537664",
-                  build_number: "269063"
+                  built_at: "1708985023542",
+                  build_number: "269073"
                 }
               },
               retries: 1
@@ -36607,4 +36605,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.6c8a464ced8903bb0b72.js.map
+//# sourceMappingURL=77761.9d43696a572e7c018c7e.js.map
