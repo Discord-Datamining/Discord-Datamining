@@ -8232,6 +8232,7 @@
         PREMIUM_CTA_TIER_0: "Get Basic",
         PREMIUM_MOBILE_TRIAL_MARKETING_PAGE_BADGE: "Free Trial ({days, plural, =1 {# day left} other {# days left}})",
         PREMIUM_MOBILE_TRIAL_FREE_TRIAL_BADGE: "Free Trial",
+        POWERED_BY_NITRO: "Powered by Nitro",
         USER_ACTIVITY_HEADER_PLAYING: "Playing a game",
         USER_ACTIVITY_HEADER_LIVE_ON_PLATFORM: "Live on !!{platform}!!",
         USER_ACTIVITY_HEADER_PLAYING_ON_PLATFORM: "Playing on !!{platform}!!",
@@ -10048,7 +10049,9 @@
         EMOJI_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION: "Get this emoji from",
         EMOJI_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION: "This emoji is from",
         EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION: "This emoji is from this server. You can use it everywhere.",
+        EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION_V2: "This emoji is from this server. Use it anywhere with Nitro.",
         EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION: "This emoji is from one of your servers. Type its name in the chat bar to use it.",
+        EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION_V2: "This emoji is from one of your servers. You can use it anywhere with Nitro.",
         EMOJI_POPOUT_PREMIUM_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION: "Want to use this emoji everywhere? Join the server.",
         EMOJI_POPOUT_PREMIUM_UNJOINED_PRIVATE_GUILD_DESCRIPTION: "This emoji is from a server that is either invite-only or unavailable.",
         EMOJI_POPOUT_CURRENT_GUILD_DESCRIPTION: "This emoji is from this server. Get Nitro to use it everywhere.",
@@ -10056,6 +10059,7 @@
         EMOJI_POPOUT_ADDED_PACK_DESCRIPTION: "This emoji is from one of your packs. Type its name in the chat bar to use it.",
         EMOJI_POPOUT_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION: "Want to use this emoji everywhere? Get Nitro and join the server.",
         EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION: "This emoji is from a server that is either invite-only or unavailable. [Learn more](openPremiumSettings) about using custom emoji.",
+        EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION_V2: "This custom emoji is from a server that is invite-only. Use custom emojis from any joined servers with Nitro.",
         STICKER_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION: "Get this sticker from",
         STICKER_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION: "This sticker is from",
         STICKER_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION: "This sticker is from this server. You can use it everywhere.",
@@ -18296,7 +18300,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269166", ", Version Hash: ").concat("d0230a233392fc8b32b443371a5f2525e0aa2f23")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269177", ", Version Hash: ").concat("7bcc0f06528b127c693f180c33992fa7ac07b938")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20634,8 +20638,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269166", "269166"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269166")), _ = 0), _
+        let _ = parseInt((e = "269177", "269177"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269177")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25346,8 +25350,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708996872730",
-                  build_number: "269166"
+                  built_at: "1708997906370",
+                  build_number: "269177"
                 }
               },
               retries: 1
@@ -36636,4 +36640,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.54f97999258e29ed1372.js.map
+//# sourceMappingURL=77761.2cde0ef7dbb3b0a4fea9.js.map
