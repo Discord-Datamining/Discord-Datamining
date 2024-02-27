@@ -11423,7 +11423,7 @@
         GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_INTERESTED: "I am interested in...",
         GUILD_SCHEDULED_EVENT_RSVP_PICKER_HEADER_UNINTERESTED: "I am not interested in...",
         GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_SERIES: "All events in this series",
-        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "This event",
+        GUILD_SCHEDULED_EVENT_RSVP_PICKER_OPTION_RECURRENCE: "Only this event",
         GUILD_CREATE_STAFF_ONLY_HINT: "Only Discord employees would be able to join this server.",
         EDIT_THIS_EVENT: "Edit this Event",
         EDIT_ALL_EVENTS: "Edit all Events in this Series",
@@ -18296,7 +18296,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269136", ", Version Hash: ").concat("0cad4b5df1edeaf0b2e4191f62b34e7ea0ffb16c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269137", ", Version Hash: ").concat("cc49db3a6b973da78a7868adac00b68e2f6adeff")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20634,8 +20634,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269136", "269136"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269136")), _ = 0), _
+        let _ = parseInt((e = "269137", "269137"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269137")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25346,8 +25346,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1708992298130",
-                  build_number: "269136"
+                  built_at: "1708992386955",
+                  build_number: "269137"
                 }
               },
               retries: 1
@@ -36636,4 +36636,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.e7b80050ff8128df9d55.js.map
+//# sourceMappingURL=77761.463e162370e22b54de4b.js.map
