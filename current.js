@@ -17103,7 +17103,8 @@
         SERVER_DRAWER_ACTIVITY_TOPIC: "talking **!!{topic}!!**",
         SERVER_DRAWER_ACTIVITY_PLAYING: "playing **!!{activity}!!**",
         SERVER_DRAWER_ACTIVITY_STREAMING: "streaming **!!{activity}!!**",
-        SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen"
+        SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen",
+        CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
       })
     },
     657743: function(e, _, E) {
@@ -18302,7 +18303,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269351", ", Version Hash: ").concat("2905b05995ed68bd71949c11e918d037003d9e16")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269354", ", Version Hash: ").concat("53fda424b38aa06b249bb8a65b74f2e73b029187")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20640,8 +20641,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269351", "269351"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269351")), _ = 0), _
+        let _ = parseInt((e = "269354", "269354"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269354")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21459,15 +21460,6 @@
         })
       }
     },
-    709377: function(e, _, E) {
-      "use strict";
-      var t;
-      E.r(_), E.d(_, {
-        ContentInventoryFeedKey: function() {
-          return t
-        }
-      }), (t || (t = {})).GLOBAL_FEED = "global feed"
-    },
     1405: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -21509,16 +21501,18 @@
         getMyContentInventory: function() {
           return r
         }
-      });
+      }), E("222007");
       var t = E("872717"),
         o = E("448993"),
         n = E("49111");
       let r = async () => {
         try {
-          let e = await t.default.get({
-            url: n.Endpoints.MY_CONTENT_INVENTORY
-          });
-          return e.body
+          var e;
+          let _ = await t.default.get({
+              url: n.Endpoints.MY_CONTENT_INVENTORY
+            }),
+            E = _.body;
+          return E.entries = null !== (e = E.entries) && void 0 !== e ? e : [], E
         } catch (e) {
           throw new o.APIError(e)
         }
@@ -21587,35 +21581,6 @@
         }
       }
       var L = new u
-    },
-    265596: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return i
-        }
-      }), E("222007");
-      var t = E("446674"),
-        o = E("913144");
-      let n = new Map;
-      class r extends t.default.Store {
-        getFeed(e) {
-          return n.get(e)
-        }
-      }
-      r.displayName = "ContentInventoryStore";
-      var i = new r(o.default, {
-        CONNECTION_OPEN: function() {
-          n.clear()
-        },
-        CONTENT_INVENTORY_SET_FEED: function(e) {
-          let {
-            feedId: _,
-            feed: E
-          } = e;
-          n.set(_, E)
-        }
-      })
     },
     302537: function(e, _, E) {
       "use strict";
@@ -25352,8 +25317,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709064441080",
-                  build_number: "269351"
+                  built_at: "1709064601052",
+                  build_number: "269354"
                 }
               },
               retries: 1
@@ -36642,4 +36607,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.479e9aae210e625c78ae.js.map
+//# sourceMappingURL=77761.19674038cba77fbdfd87.js.map
