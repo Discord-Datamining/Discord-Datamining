@@ -18300,7 +18300,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269523", ", Version Hash: ").concat("edbf01d8285e94e589003bd6619a7546335954ed")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269529", ", Version Hash: ").concat("86901e1e7c76beeb2716444dcd3d6e7d2827b7ae")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20638,8 +20638,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269523", "269523"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269523")), _ = 0), _
+        let _ = parseInt((e = "269529", "269529"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269529")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21498,18 +21498,16 @@
         getMyContentInventory: function() {
           return r
         }
-      }), E("222007");
+      });
       var t = E("872717"),
         o = E("448993"),
         n = E("49111");
       let r = async () => {
         try {
-          var e;
-          let _ = await t.default.get({
-              url: n.Endpoints.MY_CONTENT_INVENTORY
-            }),
-            E = _.body;
-          return E.entries = null !== (e = E.entries) && void 0 !== e ? e : [], E
+          let e = await t.default.get({
+            url: n.Endpoints.MY_CONTENT_INVENTORY
+          });
+          return e.body
         } catch (e) {
           throw new o.APIError(e)
         }
@@ -25314,8 +25312,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709089586365",
-                  build_number: "269523"
+                  built_at: "1709092464214",
+                  build_number: "269529"
                 }
               },
               retries: 1
@@ -36604,4 +36602,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.93ea04338f8d88f8530a.js.map
+//# sourceMappingURL=77761.a0694ef9d95a4ea2c082.js.map
