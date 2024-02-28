@@ -16492,7 +16492,6 @@
         INAPPROPRIATE_CONVERSATION_BANNER_DESCRIPTION: "Take action to protect yourself.",
         INAPPROPRIATE_CONVERSATION_BANNER_OPEN_SAFETY_TOOLS_BUTTON: "Open safety tools",
         INAPPROPRIATE_CONVERSATION_BANNER_BLOCK_BUTTON: "Block",
-        INAPPROPRIATE_CONVERSATION_BLOCK_CONFIRM: "User Blocked",
         INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_HEADER: "Chats can be a lot",
         INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_DESCRIPTION: "Relax with Wumpus for as long as you need.",
         INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_RETURN: "Back to conversation",
@@ -16500,9 +16499,18 @@
         INAPPROPRIATE_CONVERSATION_ACTION_REPORT: "Report them",
         INAPPROPRIATE_CONVERSATION_ACTION_REPORTED: "Reported",
         INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL: "Contact Crisis Text Line",
-        INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_NOFILTR: "Contact NoFiltr",
         INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP: "This conversation may not be safe.",
         INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP_ANNOUNCEMENT: "This conversation may not be safe. Open safety tools to take action.",
+        INAPPROPRIATE_CONVERSATION_BLOCK_THEM: "Block them",
+        INAPPROPRIATE_CONVERSATION_UNBLOCK: "Unblock",
+        INAPPROPRIATE_CONVERSATION_BLOCK_TOAST: "Account blocked",
+        INAPPROPRIATE_CONVERSATION_UNBLOCK_TOAST: "Account unblocked",
+        INAPPROPRIATE_CONVERSATION_REPORT_TOAST: "Account reported",
+        INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later.",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_DESCRIPTION: "They won't be able to message you. If you feel their actions could harm someone, please submit a report to Discord.",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_BUTTON: "Block",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_AND_REPORT_BUTTON: "Block and report",
+        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_CANCEL_BUTTON: "Cancel",
         SAFETY_ALERTS_SETTINGS_HEADER: "Safety Alerts",
         SAFETY_ALERTS_SETTING_TITLE: "Show alerts in direct messages",
         SAFETY_ALERTS_SETTING_DESCRIPTION: "Display an alert when a possible risk to your safety is detected. [Learn more about safety alerts]({learnMoreLink})",
@@ -17079,21 +17087,6 @@
         MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
         INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_1: "Add Inappropriate Tier 1 Warning (Experimental)",
         INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_2: "Add Inappropriate Tier 2 Warning (Experimental)",
-        INAPPROPRIATE_CONVERSATION_BLOCK_THEM: "Block them",
-        INAPPROPRIATE_CONVERSATION_UNBLOCK: "Unblock",
-        INAPPROPRIATE_CONVERSATION_BLOCK_TOAST: "Account blocked",
-        INAPPROPRIATE_CONVERSATION_UNBLOCK_TOAST: "Account unblocked",
-        INAPPROPRIATE_CONVERSATION_REPORT_TOAST: "Account reported",
-        INAPPROPRIATE_CONVERSATION_REPORT_THEM: "Report them",
-        INAPPROPRIATE_CONVERSATION_REPORTED: "Reported",
-        INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE: "Contact Crisis Text Line",
-        INAPPROPRIATE_CONVERSATION_VISIT_NOFILTR: "Visit NoFiltr",
-        INAPPROPRIATE_CONVERSATION_NOFILTR_DESCRIPTION: "NoFiltr is a community that empowers young people to safely navigate online.",
-        INAPPROPRIATE_CONVERSATION_ERROR_GENERIC_TOAST: "Something went wrong! Please try again later.",
-        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_DESCRIPTION: "They won't be able to message you. If you feel their actions could harm someone, please submit a report to Discord.",
-        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_BUTTON: "Block",
-        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_BLOCK_AND_REPORT_BUTTON: "Block and report",
-        INAPPROPRIATE_CONVERSATION_BLOCK_MODAL_CANCEL_BUTTON: "Cancel",
         SERVER_DRAWER_ACTIVITY_VOICE: "in **!!{channelName}!!**",
         SERVER_DRAWER_ACTIVITY_VOICE_STATUS: "$[](statusHook) in **!!{channelName}!!**",
         SERVER_DRAWER_ACTIVITY_EVENT_IN_UPCOMING: "in !!{relativeTime}!!",
@@ -18300,7 +18293,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269579", ", Version Hash: ").concat("1f3f7481bfbf3582e29a240a33a43bb14bd5589e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269585", ", Version Hash: ").concat("1a429b863cd8f62ab8d5cdd8541ddfcae19d94fe")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20638,8 +20631,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269579", "269579"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269579")), _ = 0), _
+        let _ = parseInt((e = "269585", "269585"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269585")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25312,8 +25305,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709130586124",
-                  build_number: "269579"
+                  built_at: "1709135058302",
+                  build_number: "269585"
                 }
               },
               retries: 1
@@ -36602,4 +36595,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.af4ed8c91d0b5494f316.js.map
+//# sourceMappingURL=77761.672eccb035c7717a1171.js.map
