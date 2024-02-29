@@ -6628,7 +6628,7 @@
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION: "Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.",
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC: "Your !!{percent, number}!!% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After that you'll be charged {regularPrice}.",
         PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {regularPrice}.",
-        PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION_WITH_ACTIVE_SUB: "Your next **{numMonths, plural, one {1 month} other {{numMonths} months}}** {numMonths, plural, one {is} other {are}} **{discountedPrice}**. After that you'll be charged {regularPrice}.",
+        PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION_WITH_ACTIVE_SUB: "Your next **{numMonths, plural, one {month} other {{numMonths} months}}** {numMonths, plural, one {is} other {are}} **{discountedPrice}**. After that you'll be charged {regularPrice}/month.",
         PREMIUM_TIER_CARD_DISCOUNT_APPLIED: "discount applied",
         CHURN_DISCOUNT_DESCRIPTION: "Before canceling, enjoy **{percent, number}% off your Nitro subscription** for {numMonths, plural, one {1 month} other {{numMonths} months}}.",
         CHURN_DISCOUNT_CLAIM: "Claim Discount",
@@ -11431,8 +11431,8 @@
         GUILD_EVENT_RECURRING_COACHMARK_CTA: "Try it",
         GUILD_EVENT_RECURRING_COACHMARK_TITLE: "NEW! Repeating Events",
         GUILD_EVENT_RECURRING_COACHMARK_BODY: "You can now easily repeat events.",
-        COPY_RECURRENCE_LINK: "Copy this Event Link",
-        COPY_SERIES_LINK: "Copy Event Series Link",
+        COPY_RECURRENCE_LINK: "Copy Link for Only this Event",
+        COPY_SERIES_LINK: "Copy Link for all Events",
         GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_CREATE: "Create Event",
         GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_UPDATE: "Update Event",
         GUILD_SETTINGS_ACTION_FILTER_GUILD_SCHEDULED_EVENT_DELETE: "Cancel Event",
@@ -13370,6 +13370,8 @@
         MEMBER_SAFETY_CANNOT_SELECT_ALL: "There are no actionable members",
         MEMBER_SAFETY_JOIN_TYPE_UNKNOWN: "Unknown",
         MEMBER_SAFETY_JOIN_TYPE_UNKNOWN_TOOLTIP: "Join method not available",
+        MEMBER_SAFETY_JOIN_TYPE_HIDDEN: "Hidden",
+        MEMBER_SAFETY_JOIN_TYPE_HIDDEN_TOOLTIP: "Streamer mode is active, invite codes are hidden",
         MEMBER_SAFETY_JOIN_TYPE_BOT: "Bot Invite",
         MEMBER_SAFETY_JOIN_TYPE_INTEGRATION: "Integration",
         MEMBER_SAFETY_JOIN_TYPE_INTEGRATION_TWITCH: "Twitch (Integration)",
@@ -15052,6 +15054,8 @@
         FAMILY_CENTER_ACTIVITY_GUILD_INTERACTION_HEADER: "Active servers",
         FAMILY_CENTER_ACTIVITY_GUILD_INTERACTION_TOOLTIP_TEEN: "Servers that you have sent messages in within the last week. These are not invite links, your parents will not be able to click on them.",
         FAMILY_CENTER_ACTIVITY_GUILD_INTERACTION_TOOLTIP_PARENT: "Servers that your teen has sent messages in within the last week.",
+        FAMILY_CENTER_ACTIVITY_GUILD_INTERACTION_TOOLTIP_TEEN_WITH_VC: "Servers that you have been active in (sent messages or joined voice chat) within the last week. These are not invite links, your parents will not be able to click on them.",
+        FAMILY_CENTER_ACTIVITY_GUILD_INTERACTION_TOOLTIP_PARENT_WITH_VC: "Servers that your teen has been active in (sent messages or joined voice chat) within the last week.",
         FAMILY_CENTER_ACTIVITY_GUILD_INTERACTION_SECTION_HEADER: "Active Servers — {count, number}",
         FAMILY_CENTER_REQUESTS_LINKING_BANNER_HEADER_TEEN: "Easily connect with your parents!",
         FAMILY_CENTER_REQUESTS_LINKING_BANNER_HEADER_PARENT: "Download the Discord app to connect with your teens!",
@@ -16501,6 +16505,8 @@
         INAPPROPRIATE_CONVERSATION_ACTION_REPORTED: "Reported",
         INAPPROPRIATE_CONVERSATION_ACTION_CONTACT_CTL: "Contact Crisis Text Line",
         INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP: "This conversation may not be safe.",
+        INAPPROPRIATE_CONVERSATION_INITIAL_TOOLTIP: "Take action to protect yourself.",
+        INAPPROPRIATE_CONVERSATION_INITIAL_TOOLTIP_ANNOUNCEMENT: "Take action to protect yourself by opening safety tools.",
         INAPPROPRIATE_CONVERSATION_SAFETY_TOOLTIP_ANNOUNCEMENT: "This conversation may not be safe. Open safety tools to take action.",
         INAPPROPRIATE_CONVERSATION_BLOCK_THEM: "Block them",
         INAPPROPRIATE_CONVERSATION_UNBLOCK: "Unblock",
@@ -16628,6 +16634,7 @@
         POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
         POLL_SUBMIT_VOTE: "Vote",
         POLL_VOTES_COUNT: "{count, plural, one {{count} vote} other {{count} votes}}",
+        POLL_VOTES_COUNT_CAPTIAL: "{count, plural, one {{count} Vote} other {{count} Votes}}",
         POLL_ALREADY_VOTED: "Voted",
         POLL_EDIT_VOTE: "Change Vote",
         POLL_REMOVE_VOTE: "Remove Vote",
@@ -16639,8 +16646,8 @@
         POLL_EXPIRED: "Poll closed",
         POLL_SELECT_ONE_ANSWER: "Select one answer",
         POLL_SELECT_MULTIPLE_ANSWERS: "Select one or more answers",
-        POLL_SHOW_VOTES: "Show votes",
-        POLL_HIDE_VOTES: "Hide votes",
+        POLL_SHOW_VOTES: "Show results",
+        POLL_HIDE_VOTES: "Go back to vote",
         POLL_VOTES_NO_RESULTS_TITLE: "Nothing to see here",
         POLL_VOTES_NO_RESULTS_SUBTITLE: "There are no votes for this answer",
         POLL_NOT_INTERACTIVE: "View original message to interact",
@@ -16717,7 +16724,7 @@
         QUESTS_CLAIM_YOUR_REWARD: "Claim your reward",
         QUESTS_ACCEPT: "Accept Quest",
         QUESTS_COMPLETE_TOOLTIP: "Hit claim to get your reward code!",
-        QUESTS_ACCEPT_TOOLTIP: "Accept the quest and complete the task to unlock the reward",
+        QUESTS_ACCEPT_TOOLTIP: "Accept the Quest and complete the task to unlock the reward",
         QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
         QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
         QUEST_REWARD_VERIFICATION_TITLE: "Verify your account to claim the reward",
@@ -16749,9 +16756,9 @@
         QUESTS_TRACK_YOUR_PROGRESS: "Track your progress",
         QUESTS_TITLE: "{questName} Quest",
         QUESTS_LANDING_PAGE_ERROR_HEADING: "Whoops!",
-        QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the quest there.",
+        QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the Quest there.",
         QUESTS_MOBILE_EMBED_TITLE: "Quests aren’t available on mobile...yet.",
-        QUESTS_MOBILE_EMBED_BODY: "From your desktop Discord app or browser you can go to \nUser Settings > Gift Inventory and accept the quest there.",
+        QUESTS_MOBILE_EMBED_BODY: "From your desktop Discord app or browser you can go to \nUser Settings > Gift Inventory and accept the Quest there.",
         QUESTS_GET_THIS_GAME: "Get this game",
         QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
         QUESTS_SHARE_LINK: "Copy share link",
@@ -16773,7 +16780,7 @@
         QUESTS_DISCLOSURE_ACTIVITY: "Activity: Relevant gaming",
         QUESTS_EMBED_INVALID_HEADING: "This was a Quest but...",
         QUESTS_EMBED_INVALID_BODY: "Something went wrong here. Check the Gift Inventory for more available Quests!",
-        QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE: "There's an issue tracking your quest progress.",
+        QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE: "There's an issue tracking your Quest progress.",
         QUESTS_SHARE_QUEST: "Share Quest",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
@@ -18294,7 +18301,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("269656", ", Version Hash: ").concat("1fac3ee766133fa5fd3d498da68eafa76c8bea99")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271201", ", Version Hash: ").concat("438afb3cbef643367b0b0b12871c5d25cf85f2ab")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19911,7 +19918,7 @@
           neverLoadBeforeConnectionOpen: !0
         },
         InappropriateConversationsManager: {
-          actions: ["VIBING_WUMPUS_PLAY_MUSIC", "VIBING_WUMPUS_STOP_MUSIC"],
+          actions: ["VIBING_WUMPUS_PLAY_MUSIC", "VIBING_WUMPUS_STOP_MUSIC", "VIBING_WUMPUS_PAUSE_MUSIC"],
           inlineRequire: () => E("874200").default,
           neverLoadBeforeConnectionOpen: !0
         },
@@ -20632,8 +20639,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "269656", "269656"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("269656")), _ = 0), _
+        let _ = parseInt((e = "271201", "271201"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271201")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -24777,7 +24784,7 @@
               enableHangStatus: t,
               setDefaultStatus: o
             } = I.HangStatusExperiment.getCurrentConfig({
-              guildId: null != E ? E : T.EMPTY_STRING_GUILD_ID,
+              guildId: null != E ? E : T.EMPTY_STRING_SNOWFLAKE_ID,
               location: "HangStatusManager"
             }, {
               autoTrackExposure: !0
@@ -25306,8 +25313,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709146001935",
-                  build_number: "269656"
+                  built_at: "1709246379735",
+                  build_number: "271201"
                 }
               },
               retries: 1
@@ -26010,15 +26017,15 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return d
+          return U
         }
       }), E("222007");
       var t = E("689988"),
-        o = E("161454"),
-        n = E("374014"),
-        r = E("373469"),
-        i = E("271938"),
-        a = E("42203"),
+        o = E("374014"),
+        n = E("373469"),
+        r = E("271938"),
+        i = E("42203"),
+        a = E("546463"),
         I = E("945956"),
         s = E("718517"),
         T = E("815496"),
@@ -26032,7 +26039,17 @@
         L = 12 * s.default.Millis.HOUR,
         C = 1 * s.default.Millis.MINUTE,
         D = 30 * s.default.Millis.SECOND;
-      class c extends t.default {
+
+      function c() {
+        var e, _;
+        let E = n.default.getStreamerActiveStreamMetadata();
+        if ((null == E ? void 0 : E.id) == null) return null;
+        let t = a.default.getGameById(E.id);
+        if ((null == t ? void 0 : t.id) == null) return null;
+        let o = (0, A.getQuestByApplicationId)(O.default.quests, t.id);
+        return (null == o ? void 0 : null === (e = o.userStatus) || void 0 === e ? void 0 : e.enrolledAt) == null || (null == o ? void 0 : null === (_ = o.userStatus) || void 0 === _ ? void 0 : _.completedAt) != null ? null : o
+      }
+      class d extends t.default {
         maybeFetchCurrentQuests() {
           (0, N.getIsEligibleForQuests)({
             location: R.QuestsExperimentLocations.QUESTS_MANAGER,
@@ -26048,7 +26065,7 @@
             } = e;
             window.clearTimeout(this.sendHeartbeatTimeoutIds.get(E));
             let o = () => {
-              (null != r.default.getRTCStream(E) || r.default.getViewerIds(E).length > 0) && (0, S.sendHeartbeat)({
+              (null != n.default.getRTCStream(E) || n.default.getViewerIds(E).length > 0) && (0, S.sendHeartbeat)({
                 questId: _,
                 streamKey: E,
                 applicationId: t
@@ -26071,17 +26088,13 @@
               enrolledQuestUserStatus: {
                 questId: _
               }
-            } = e, E = r.default.getStreamerActiveStreamMetadata();
-            if (null == E || null == E.pid) return;
-            let t = o.default.getGameForPID(E.pid);
-            if (null == t || null == t.id) return;
-            let i = (0, A.getQuestByApplicationId)(O.default.quests, t.id);
-            if (null == i || i.id !== _) return;
-            let a = r.default.getCurrentUserActiveStream();
-            null != a && this.initiateHeartbeat({
-              streamKey: (0, n.encodeStreamKey)(a),
-              applicationId: i.config.applicationId,
-              questId: i.id
+            } = e, E = c();
+            if (null == E || E.id !== _) return;
+            let t = n.default.getCurrentUserActiveStream();
+            null != t && this.initiateHeartbeat({
+              streamKey: (0, o.encodeStreamKey)(t),
+              applicationId: E.config.applicationId,
+              questId: E.id
             })
           }, this.handlePostConnectionOpen = () => {
             if (0 === O.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * u))
@@ -26094,56 +26107,48 @@
           }, this.handleRunningGamesChange = () => {
             !(this.instantiatedAt + L > Date.now() || O.default.lastFetchedCurrentQuests + L > Date.now()) && this.maybeFetchCurrentQuests()
           }, this.handleStreamUpdate = e => {
-            var _, E;
             let {
-              streamKey: t,
-              viewerIds: n
-            } = e, i = r.default.getStreamerActiveStreamMetadataForStream(t);
-            if (null == i || null == i.pid) return;
-            let a = o.default.getGameForPID(i.pid);
-            if (null == a || null == a.id) return;
-            let I = (0, A.getQuestByApplicationId)(O.default.quests, a.id);
-            if ((null == I ? void 0 : null === (_ = I.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) != null && (null == I ? void 0 : null === (E = I.userStatus) || void 0 === E ? void 0 : E.completedAt) == null) {
-              if (0 === n.length) {
-                this.sendHeartbeatTimeoutIds.has(t) && ((0, S.sendHeartbeat)({
-                  questId: I.id,
-                  streamKey: t,
-                  applicationId: a.id
-                }), this.terminateHeartbeat(t));
+              streamKey: _,
+              viewerIds: E
+            } = e, t = c();
+            if (null != t) {
+              if (0 === E.length) {
+                this.sendHeartbeatTimeoutIds.has(_) && ((0, S.sendHeartbeat)({
+                  questId: t.id,
+                  streamKey: _,
+                  applicationId: t.config.applicationId
+                }), this.terminateHeartbeat(_));
                 return
               }
               this.initiateHeartbeat({
-                streamKey: t,
-                applicationId: I.config.applicationId,
-                questId: I.id
+                streamKey: _,
+                applicationId: t.config.applicationId,
+                questId: t.id
               })
             }
           }, this.handleStreamStart = e => {
-            var _, E, t;
+            var _;
             let {
-              streamType: s,
-              guildId: S,
-              channelId: N,
-              pid: R
-            } = e, u = null != R ? o.default.getGameForPID(R) : null;
-            if (null == u) return;
-            let L = null != u.id ? (0, A.getQuestByApplicationId)(O.default.quests, u.id) : null;
-            if ((null == L ? void 0 : null === (_ = L.userStatus) || void 0 === _ ? void 0 : _.enrolledAt) == null || (null == L ? void 0 : null === (E = L.userStatus) || void 0 === E ? void 0 : E.completedAt) != null) return;
-            (0, T.trackQuestEvent)(L.id, l.AnalyticEvents.QUEST_STREAMING_STARTED, {
+              streamType: E,
+              guildId: t,
+              channelId: a
+            } = e, s = c();
+            if (null == s) return;
+            (0, T.trackQuestEvent)(s.id, l.AnalyticEvents.QUEST_STREAMING_STARTED, {
               media_session_id: I.default.getMediaSessionId(),
-              channel_type: null === (t = a.default.getChannel(N)) || void 0 === t ? void 0 : t.type,
-              guild_id: S
+              channel_type: null === (_ = i.default.getChannel(a)) || void 0 === _ ? void 0 : _.type,
+              guild_id: t
             });
-            let C = (0, n.encodeStreamKey)({
-              streamType: s,
-              guildId: S,
-              channelId: N,
-              ownerId: i.default.getId()
+            let S = (0, o.encodeStreamKey)({
+              streamType: E,
+              guildId: t,
+              channelId: a,
+              ownerId: r.default.getId()
             });
-            0 !== r.default.getViewerIds(C).length && this.initiateHeartbeat({
-              streamKey: C,
-              applicationId: L.config.applicationId,
-              questId: L.id
+            0 !== n.default.getViewerIds(S).length && this.initiateHeartbeat({
+              streamKey: S,
+              applicationId: s.config.applicationId,
+              questId: s.id
             })
           }, this.handleStreamClose = e => {
             let {
@@ -26161,7 +26166,7 @@
           }
         }
       }
-      var d = new c
+      var U = new d
     },
     50733: function(e, _, E) {
       "use strict";
@@ -26360,46 +26365,60 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return O
+          return u
         }
       }), E("222007");
-      var t = E("689988"),
-        o = E("709681");
-      let n = (0, o.createSound)("vibing_wumpus", "vibing_wumpus", 0),
-        r = 0,
-        i = 0,
-        a = null;
+      var t = E("579672"),
+        o = E.n(t),
+        n = E("689988"),
+        r = E("709681");
+      let i = (0, r.createSound)("vibing_wumpus", "vibing_wumpus", 0),
+        a = 0,
+        I = 0,
+        s = null;
 
-      function I(e) {
-        let _ = Math.round(100 * i),
-          E = Math.round(100 * r);
-        e > 0 && E >= _ || e < 0 && E <= _ ? (clearInterval(a), 0 === _ && n.stop()) : (E += Math.round(100 * e), r = E / 100, n.volume = r)
+      function T(e, _) {
+        let E = Math.round(100 * e),
+          t = Math.round(100 * I),
+          n = Math.round(100 * a);
+        E > 0 && n >= t || E < 0 && n <= t ? (clearInterval(s), 0 === t && null != _ && _()) : (n += E, a = n / 100, i.volume = o(a, 0, .5))
       }
 
-      function s() {
-        i = 0;
-        let e = S();
-        a = setInterval(() => I(e), 100)
+      function S(e) {
+        null != s && clearInterval(s), I = 0;
+        let _ = R();
+        s = setInterval(() => {
+          T(_, e)
+        }, 100)
       }
 
-      function T() {
-        n.loop(), i = .5;
-        let e = S();
-        a = setInterval(() => I(e), 100)
+      function N() {
+        null != s && clearInterval(s), i.loop(), I = .5;
+        let e = R();
+        s = setInterval(() => T(e), 100)
       }
 
-      function S() {
-        return .2 * (i - r)
+      function O() {
+        S(i.pause.bind(i))
       }
-      class N extends t.default {
+
+      function A() {
+        S(i.stop.bind(i))
+      }
+
+      function R() {
+        return .2 * (I - a)
+      }
+      class l extends n.default {
         constructor(...e) {
           super(...e), this.actions = {
-            VIBING_WUMPUS_PLAY_MUSIC: T,
-            VIBING_WUMPUS_STOP_MUSIC: s
+            VIBING_WUMPUS_PLAY_MUSIC: N,
+            VIBING_WUMPUS_STOP_MUSIC: A,
+            VIBING_WUMPUS_PAUSE_MUSIC: O
           }
         }
       }
-      var O = new N
+      var u = new l
     },
     537597: function(e, _, E) {
       "use strict";
@@ -36596,4 +36615,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.1b38c219677330e48b90.js.map
+//# sourceMappingURL=77761.28f25dc7549d42877597.js.map
