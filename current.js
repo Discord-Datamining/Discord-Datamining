@@ -16697,6 +16697,9 @@
         CREATE_POLL_ALT_TEXT_LABEL: "Image Description (Alt Text)",
         CREATE_POLL_ALT_TEXT_SCREEN_READER_HINT: "Alt text:",
         POLL_EXPRESSION_PICKER_BUTTON_ARIA: "Select media",
+        CREATE_POLL_QUESTION_REQUIRED: "Oops, you forgot something. Please add a question.",
+        CREATE_POLL_MINIMUM_ANSWERS_REQUIRED: "Oops, you forgot something. Please add at least one answer.",
+        CREATE_POLL_ANSWER_MUST_CONTAIN_TEXT: "Don’t leave the answer field hanging! Please add some text.",
         POLL_END_EARLY: "End Poll Now",
         POLL_END_EARLY_CONFIRMATION_TITLE: "End Poll Now?",
         POLL_END_EARLY_CONFIRMATION_TEXT: "This will close the poll immediately and reveal the results.",
@@ -18301,7 +18304,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271221", ", Version Hash: ").concat("4784ada296d02419e038a1a78a1c7e4e29e56397")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271233", ", Version Hash: ").concat("a80509aea529bf585207438c59ce223447a7a793")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20639,8 +20642,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271221", "271221"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271221")), _ = 0), _
+        let _ = parseInt((e = "271233", "271233"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271233")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25313,8 +25316,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709248135507",
-                  build_number: "271221"
+                  built_at: "1709248800257",
+                  build_number: "271233"
                 }
               },
               retries: 1
@@ -36615,4 +36618,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.64f451d6ace0b3d68917.js.map
+//# sourceMappingURL=77761.d15e2fc41eb014bd7802.js.map
