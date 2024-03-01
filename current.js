@@ -12336,6 +12336,7 @@
         PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_SUBTITLE_TIER_1: "If you don’t keep Nitro Classic, **you will lose:**",
         PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_MONTHLY_TIER_1: "If you reinstate Nitro Classic, we’ll resume charging your payment method **{price}** and continue to charge you **monthly** until you cancel the subscription. You can cancel any time from your Settings page.",
         PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_YEARLY_TIER_1: "If you reinstate Nitro Classic, we’ll resume charging your payment method **{price}** and continue to charge you **yearly** until you cancel the subscription. You can cancel any time from your Settings page.",
+        PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_DISCOUNT_PRICE_FOOTER: "If you reinstate Nitro, we’ll resume charging your payment method **{discountPrice}** a month until your discounted rate ends, then charge ***{defaultPrice}*** a month until you cancel your subscription. You can cancel any time from your Settings page.",
         PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_BUTTON_KEEP_NITRO: "Keep Nitro",
         PREMIUM_SUBSCRIPTION_ENDING_WHAT_YOU_LOSE_FOOTER_BUTTON_CANCEL: "Dismiss",
         PREMIUM_SUBSCRIPTION_ENDING_MISSING_PAYMENT_NOTICE_TEXT: "Your Nitro subscription ends {daysLeft, plural, =0 {today} =1 {in # day} other {in # days}}. Add a payment method to keep using profile customization and more.",
@@ -18322,7 +18323,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271528", ", Version Hash: ").concat("db657e3202892732ac96eff47a9af8cfcd9d2fd1")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271530", ", Version Hash: ").concat("3f4ea43c0ede72a6b9a40ec73a456edf814704f9")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20660,8 +20661,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271528", "271528"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271528")), _ = 0), _
+        let _ = parseInt((e = "271530", "271530"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271530")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25334,8 +25335,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709321986130",
-                  build_number: "271528"
+                  built_at: "1709322026266",
+                  build_number: "271530"
                 }
               },
               retries: 1
@@ -36639,4 +36640,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.5a8ce13f682d02d93a1d.js.map
+//# sourceMappingURL=77761.a6233f32078fd8576033.js.map
