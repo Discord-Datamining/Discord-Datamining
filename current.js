@@ -16730,8 +16730,9 @@
         QUESTS_ACCEPT_TOOLTIP: "Accept the Quest and complete the task to unlock the reward",
         QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
         QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
-        QUEST_REWARD_VERIFICATION_TITLE: "Verify your account to claim the reward",
-        QUEST_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a new verification email: {message}",
+        QUESTS_REWARD_VERIFICATION_TITLE: "Verify your account to claim rewards!",
+        QUESTS_REWARD_VERIFICATION_BODY: "We have sent a verification email to: [{emailAddress}]({emailAddressLink})",
+        QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
         QUEST_REWARD: "Win {reward}",
         QUESTS_REWARD_CODE_HEADER: "Your reward code",
         QUESTS_REWARD_CODE_CONGRATS: "Congrats!",
@@ -18304,7 +18305,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271286", ", Version Hash: ").concat("a9fe2a4751fbc36e579b4b3d2fff82cb684560e5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271289", ", Version Hash: ").concat("86d4d05e74634d52e44f83369321c84409cf56f8")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20642,8 +20643,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271286", "271286"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271286")), _ = 0), _
+        let _ = parseInt((e = "271289", "271289"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271289")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25316,8 +25317,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709252285192",
-                  build_number: "271286"
+                  built_at: "1709252512181",
+                  build_number: "271289"
                 }
               },
               retries: 1
@@ -36618,4 +36619,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.f31698fc7c719d036ef3.js.map
+//# sourceMappingURL=77761.e510df5e249e10eea992.js.map
