@@ -18319,7 +18319,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271466", ", Version Hash: ").concat("001c84d682d0a7345a72c421c91ce4d7599f9796")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271467", ", Version Hash: ").concat("88094552d535b74eb368c62d77e1e6694a4b4640")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20657,8 +20657,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271466", "271466"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271466")), _ = 0), _
+        let _ = parseInt((e = "271467", "271467"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271467")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25331,8 +25331,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709317733247",
-                  build_number: "271466"
+                  built_at: "1709317759251",
+                  build_number: "271467"
                 }
               },
               retries: 1
@@ -26088,7 +26088,7 @@
                 streamKey: E,
                 applicationId: t
               });
-              let e = this.calculateHeartbeatDurationMs(t);
+              let e = this.calculateHeartbeatDurationMs(_);
               this.sendHeartbeatTimeoutIds.set(E, window.setTimeout(o, e))
             };
             o()
@@ -36633,4 +36633,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.fd70856830081b22bb14.js.map
+//# sourceMappingURL=77761.ac283976bc36d6046c63.js.map
