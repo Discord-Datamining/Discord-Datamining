@@ -18319,7 +18319,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271467", ", Version Hash: ").concat("88094552d535b74eb368c62d77e1e6694a4b4640")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271468", ", Version Hash: ").concat("0b964cb68d60a4bdc5eb9f075b88f171673742a0")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20657,8 +20657,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271467", "271467"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271467")), _ = 0), _
+        let _ = parseInt((e = "271468", "271468"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271468")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25331,8 +25331,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709317759251",
-                  build_number: "271467"
+                  built_at: "1709317777529",
+                  build_number: "271468"
                 }
               },
               retries: 1
@@ -26081,15 +26081,16 @@
               streamKey: E,
               applicationId: t
             } = e;
-            window.clearTimeout(this.sendHeartbeatTimeoutIds.get(E));
+            this.terminateHeartbeat(E);
             let o = () => {
-              (null != n.default.getRTCStream(E) || n.default.getViewerIds(E).length > 0) && (0, S.sendHeartbeat)({
+              var e;
+              null != n.default.getRTCStream(E) && n.default.getViewerIds(E).length > 0 && (null === (e = c()) || void 0 === e ? void 0 : e.config.applicationId) === t && (0, S.sendHeartbeat)({
                 questId: _,
                 streamKey: E,
                 applicationId: t
               });
-              let e = this.calculateHeartbeatDurationMs(_);
-              this.sendHeartbeatTimeoutIds.set(E, window.setTimeout(o, e))
+              let r = this.calculateHeartbeatDurationMs(_);
+              this.sendHeartbeatTimeoutIds.set(E, window.setTimeout(o, r))
             };
             o()
           }, this.calculateHeartbeatDurationMs = e => {
@@ -26129,44 +26130,46 @@
               streamKey: _,
               viewerIds: E
             } = e, t = c();
-            if (null != t) {
-              if (0 === E.length) {
-                this.sendHeartbeatTimeoutIds.has(_) && ((0, S.sendHeartbeat)({
-                  questId: t.id,
-                  streamKey: _,
-                  applicationId: t.config.applicationId
-                }), this.terminateHeartbeat(_));
-                return
-              }
-              this.initiateHeartbeat({
-                streamKey: _,
-                applicationId: t.config.applicationId,
-                questId: t.id
-              })
+            if (null == t) {
+              this.terminateHeartbeat(_);
+              return
             }
+            if (0 === E.length) {
+              this.sendHeartbeatTimeoutIds.has(_) && ((0, S.sendHeartbeat)({
+                questId: t.id,
+                streamKey: _,
+                applicationId: t.config.applicationId
+              }), this.terminateHeartbeat(_));
+              return
+            }
+            this.initiateHeartbeat({
+              streamKey: _,
+              applicationId: t.config.applicationId,
+              questId: t.id
+            })
           }, this.handleStreamStart = e => {
             var _;
             let {
               streamType: E,
               guildId: t,
               channelId: a
-            } = e, s = c();
-            if (null == s) return;
-            (0, T.trackQuestEvent)(s.id, l.AnalyticEvents.QUEST_STREAMING_STARTED, {
-              media_session_id: I.default.getMediaSessionId(),
-              channel_type: null === (_ = i.default.getChannel(a)) || void 0 === _ ? void 0 : _.type,
-              guild_id: t
-            });
-            let S = (0, o.encodeStreamKey)({
+            } = e, s = (0, o.encodeStreamKey)({
               streamType: E,
               guildId: t,
               channelId: a,
               ownerId: r.default.getId()
-            });
-            0 !== n.default.getViewerIds(S).length && this.initiateHeartbeat({
-              streamKey: S,
-              applicationId: s.config.applicationId,
-              questId: s.id
+            }), S = c();
+            if (null == S) {
+              this.terminateHeartbeat(s);
+              return
+            }(0, T.trackQuestEvent)(S.id, l.AnalyticEvents.QUEST_STREAMING_STARTED, {
+              media_session_id: I.default.getMediaSessionId(),
+              channel_type: null === (_ = i.default.getChannel(a)) || void 0 === _ ? void 0 : _.type,
+              guild_id: t
+            }), 0 !== n.default.getViewerIds(s).length && this.initiateHeartbeat({
+              streamKey: s,
+              applicationId: S.config.applicationId,
+              questId: S.id
             })
           }, this.handleStreamClose = e => {
             let {
@@ -36633,4 +36636,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.ac283976bc36d6046c63.js.map
+//# sourceMappingURL=77761.beca612b5e3df45463a0.js.map
