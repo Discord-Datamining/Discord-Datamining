@@ -906,10 +906,17 @@
         EMBEDDED_ACTIVITIES_INTERACTION_EMBED_ENDED: "Activity has ended.",
         EMBEDDED_ACTIVITIES_INTERACTION_EMBED_NO_PRESENCE: "Activity has started.",
         EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE: "You cannot launch this activity in a server with more than 25 members",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_TITLE: "External Application",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_DESCRIPTION: "You're about to launch an external app. Do you want to continue?",
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity ended. Start a new one?",
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity started",
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
         EMBEDDED_ACTIVITIES_INSTANCE_EMBED_INVALID_CHANNEL: "You cannot join Activities in this channel.",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_ANNOUNCEMENT_BIRD_A11Y_LABEL: "A bird with a megaphone for a head",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_HEADS_UP: "Heads Up!",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_TITLE: "You're about to test {activityName} for the first time.",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_SUBTITLE: "This app is not made by Discord, and has not been reviewed. Only test apps from developers you trust.",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_LEARN_MORE: "Learn more about private apps.",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_CANNOT_LAUNCH: "$[](userHook) started an activity",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an **$[activity](activityHook)**",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_MOBILE_CANNOT_LAUNCH: "[!!{username}!!](usernameOnClick) started an activity",
@@ -18305,7 +18312,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271307", ", Version Hash: ").concat("5601b2c3808bbb0f267f397a69ba1ddda3443508")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271308", ", Version Hash: ").concat("ce4aeb56c3d267b20dfa15a8a55c7f9b72b1a41f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20643,8 +20650,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271307", "271307"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271307")), _ = 0), _
+        let _ = parseInt((e = "271308", "271308"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271308")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25317,8 +25324,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709254891871",
-                  build_number: "271307"
+                  built_at: "1709255267160",
+                  build_number: "271308"
                 }
               },
               retries: 1
@@ -36619,4 +36626,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.d3c5da1c684f7c45b4cc.js.map
+//# sourceMappingURL=77761.0b24d91e0f95f67115b0.js.map
