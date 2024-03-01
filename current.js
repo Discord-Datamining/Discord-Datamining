@@ -17114,11 +17114,6 @@
         KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
         MANAGE_AUTHORIZED_APP: "Manage Authorized App",
-        ADD_TO_USER: "Add to my apps",
-        ADD_TO_USER_SUBTITLE: "Add app to your account to use anywhere",
-        ADD_TO_GUILD: "Add to server",
-        ADD_TO_GUILD_SUBTITLE: "Customize your server by adding this app",
-        USER_APPS_LEARN_MORE: "To learn more about apps on Discord, visit our [Help Center]({helpUrl}).",
         MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
         INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_1: "Add Inappropriate Tier 1 Warning (Experimental)",
         INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_2: "Add Inappropriate Tier 2 Warning (Experimental)",
@@ -18328,7 +18323,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271631", ", Version Hash: ").concat("cfc3aba9e983e1ceb8000df170d40e8ddd03a55a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271632", ", Version Hash: ").concat("3402eaa8360f08d2bcd3d72c03e9b496d4f199d4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20666,8 +20661,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271631", "271631"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271631")), _ = 0), _
+        let _ = parseInt((e = "271632", "271632"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271632")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25340,8 +25335,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709330982686",
-                  build_number: "271631"
+                  built_at: "1709330986015",
+                  build_number: "271632"
                 }
               },
               retries: 1
@@ -36645,4 +36640,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.d71352599051075c5117.js.map
+//# sourceMappingURL=77761.8640bf07b8715a06e19f.js.map
