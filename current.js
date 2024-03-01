@@ -16794,6 +16794,8 @@
         QUESTS_EMBED_INVALID_BODY: "Something went wrong here. Check the Gift Inventory for more available Quests!",
         QUESTS_PROGRESS_TRACKING_FAILURE_NOTICE: "There's an issue tracking your Quest progress.",
         QUESTS_SHARE_QUEST: "Share Quest",
+        QUESTS_STREAM_SOURCE_SELECT_NOTICE_HEADING: "Select {gameTitle} to make progress on your Quest!",
+        QUESTS_STREAM_SOURCE_SELECT_NOTICE_SUBHEADING: "You must select the application, not the whole screen.",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18320,7 +18322,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271495", ", Version Hash: ").concat("05f4a4255b402219e91be8f577300ceb916ae99b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271499", ", Version Hash: ").concat("23c836ae25dc6715e8f8976a3c9a2d931e9ae56d")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20658,8 +20660,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271495", "271495"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271495")), _ = 0), _
+        let _ = parseInt((e = "271499", "271499"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271499")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25332,8 +25334,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709319377996",
-                  build_number: "271495"
+                  built_at: "1709319691154",
+                  build_number: "271499"
                 }
               },
               retries: 1
@@ -36637,4 +36639,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.d9afaab934a577732d21.js.map
+//# sourceMappingURL=77761.079e8dc2a8384a6a8ede.js.map
