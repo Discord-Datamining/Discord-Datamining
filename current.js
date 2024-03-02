@@ -16837,11 +16837,16 @@
         ACTIVITY_REACTION_IMAGE_ALT_TEXT_STREAMING: "An activity card showing @{username} streaming {activity}",
         MEMBER_LIST_CONTENT_FEED_PLAYING_GAME: "Playing **{gameName}**",
         MEMBER_LIST_CONTENT_FEED_PLAYED_GAME: "Played **{gameName}**",
+        MEMBER_LIST_CONTENT_FEED_USER_IS_PLAYING_GAME: "{userName} is playing **{gameName}**",
+        MEMBER_LIST_CONTENT_FEED_USER_PLAYED_GAME: "{userName} played **{gameName}**",
+        MEMBER_LIST_CONTENT_FEED_USER_IS_PLAYING_NEW_GAME: "{userName} is playing a new game: **{gameName}**",
+        MEMBER_LIST_CONTENT_FEED_USER_PLAYED_NEW_GAME: "{userName} played a new game: **{gameName}**",
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_WEEKS_AGO: "{count}w ago",
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_DAYS_AGO: "{count}d ago",
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_HOURS_AGO: "{count}h ago",
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_MINUTES_AGO: "{count}m ago",
-        MEMBER_LIST_CONTENT_FEED_TIMESTAMP_SECONDS_AGO: "{count}s ago"
+        MEMBER_LIST_CONTENT_FEED_TIMESTAMP_SECONDS_AGO: "{count}s ago",
+        MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time"
       })
     },
     444051: function(e, _, E) {
@@ -18330,7 +18335,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271686", ", Version Hash: ").concat("390f24eed0af659030b98466efe5d893f3cffeee")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271694", ", Version Hash: ").concat("eeeb33714e58e612410a249988280abbcb55f066")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20668,8 +20673,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271686", "271686"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271686")), _ = 0), _
+        let _ = parseInt((e = "271694", "271694"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271694")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25342,8 +25347,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709336844646",
-                  build_number: "271686"
+                  built_at: "1709338597643",
+                  build_number: "271694"
                 }
               },
               retries: 1
@@ -36647,4 +36652,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.3058c31331113bc3a492.js.map
+//# sourceMappingURL=77761.71e8bd3e6746467fb0f3.js.map
