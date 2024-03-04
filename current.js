@@ -16770,6 +16770,7 @@
         QUESTS_PROMOTED: "Promoted",
         QUESTS_LEARN_MORE_V2: "Learn more",
         QUESTS_LEARN_MORE_STACKED: "Learn\n\nmore",
+        QUESTS_LEARN_MORE_LINK: "[Learn more]({questsLearnMoreLink})",
         QUESTS_ACCEPT_QUEST: "Accept Quest",
         QUESTS_INSTRUCTIONS_TO_WIN_REWARD: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
         QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD: "**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
@@ -18340,7 +18341,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271943", ", Version Hash: ").concat("3151fcef4ee4bd0adf6d1d379b93a5587dcc8e31")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271958", ", Version Hash: ").concat("90be0816d74afce9eb292587184f808d503960e4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20678,8 +20679,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271943", "271943"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271943")), _ = 0), _
+        let _ = parseInt((e = "271958", "271958"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271958")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25360,8 +25361,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709581943815",
-                  build_number: "271943"
+                  built_at: "1709582933112",
+                  build_number: "271958"
                 }
               },
               retries: 1
@@ -36665,4 +36666,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.eb7e998026faa947317e.js.map
+//# sourceMappingURL=77761.2650959ef42e7f16efbe.js.map
