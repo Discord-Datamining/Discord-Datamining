@@ -15173,6 +15173,7 @@
         COLLECTIBLES_DETAILS_MODAL_PROFILE_EFFECT_PREMIUM_PURCHASE_DISCLAIMER: "Once purchased, this effect will be added to your collection and can be used anytime",
         COLLECTIBLES_PROFILE_EFFECT_PERMANENT_COLLECTION: "This effect is now part of your collection and can be used anytime!",
         CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this profile effect for yourself? Head to the Shop to buy and collect it!",
+        COLLECTIBLES_MOBILE_SHOP_USUAL_PRICE: "Usually {price}",
         COLLECTIBLES_DAYS_LEFT_IN_SHOP: "{days} days left in Shop",
         COLLECTIBLES_DAYS_LEFT: "{days} days left",
         COLLECTIBLES_LAST_DAY: "Last day to buy",
@@ -18339,7 +18340,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271929", ", Version Hash: ").concat("8213b6abb703b63d4380bc3e958ac5195e77cc45")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271938", ", Version Hash: ").concat("448fb3e944642c4880463ef22244c7dcceab38ee")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20677,8 +20678,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271929", "271929"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271929")), _ = 0), _
+        let _ = parseInt((e = "271938", "271938"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271938")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25359,8 +25360,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709580342921",
-                  build_number: "271929"
+                  built_at: "1709581631990",
+                  build_number: "271938"
                 }
               },
               retries: 1
@@ -36664,4 +36665,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.4928cdd7778e35e64abf.js.map
+//# sourceMappingURL=77761.73c13ad4c1c3905abc10.js.map
