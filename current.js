@@ -8175,6 +8175,9 @@
         NITRO_HOME_SUBSCRIBER_BADGE: "Subscriber Badge",
         NITRO_HOME_GET_THIS_SUBSCRIBER_BADGE: "Get this cool badge for being a Nitro subscriber.",
         NITRO_HOME_SUBSCRIBER_BADGE_FOR_THE_COLLECTORS: "For the collectors. Grab this exclusive Nitro-only badge.",
+        NITRO_HOME_REWARDING_TENURE_FREE_BOOST: "{numFreeBoosts} Free {numFreeBoosts, plural, =1 {Boost} other {numFreeBoosts}}",
+        NITRO_HOME_REWARDING_TENURE_BOOST_AVAILABLE_DATE: "Redeem in {days} {days, plural, =1 {day} other {days}}",
+        NITRO_HOME_REWARDING_TENURE_REDEEM_BOOST: "Redeem in {numDays} {numDays, plural, =1 {day} other {days}}",
         NITRO_MARKETING_CARDS_SUPERCHARGE_YOUR_DISCORD: "Supercharge your Discord",
         NITRO_MARKETING_CARDS_CUSTOM_PROFILES: "Custom Profiles Across All Servers",
         NITRO_MARKETING_CARDS_UNLIMITED_SUPER_REACTIONS: "Unlimited Super Reactions per week",
@@ -14183,6 +14186,7 @@
         REMIXING_PERKS_CARD_TITLE: "Remix on Mobile",
         REMIXING_PERKS_CARD_DESCRIPTION: "Media editing and meme creation, at the speed of Discord.",
         EARLY_ACCESS: "Early Access",
+        REWARD: "Reward",
         REMIXING_POST_CTA: "Send",
         REMIXING_CROP: "Crop media",
         REMIXING_BACKDROP_EDITOR_TITLE: "Adjust & Crop",
@@ -18335,7 +18339,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271914", ", Version Hash: ").concat("aa88499a93385abca05ff9852af08c711808d269")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271917", ", Version Hash: ").concat("cb15339df5a29c30ea00752c5ad490340daaf004")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20673,8 +20677,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271914", "271914"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271914")), _ = 0), _
+        let _ = parseInt((e = "271917", "271917"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271917")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25355,8 +25359,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709579506155",
-                  build_number: "271914"
+                  built_at: "1709579688159",
+                  build_number: "271917"
                 }
               },
               retries: 1
@@ -36660,4 +36664,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.64ccb385ef73d2ae93a1.js.map
+//# sourceMappingURL=77761.17d67a002aa9ff8a650b.js.map
