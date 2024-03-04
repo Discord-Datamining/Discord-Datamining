@@ -18349,7 +18349,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272028", ", Version Hash: ").concat("f5314deacd7dfd7f0033b286a25db04b3cdbbc7b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272036", ", Version Hash: ").concat("b78c834a506d56f30b58b2ae629d75e3d5df7c86")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20643,8 +20643,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272028", "272028"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272028")), _ = 0), _
+        let _ = parseInt((e = "272036", "272036"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272036")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -28797,11 +28797,12 @@
         getCrashReporterMetadata: () => D.crashReporter.getMetadata(),
         getSetting: async (e, _) => await D.settings.get(e, _),
         beforeUnload() {
-          let e;
+          var e, _;
+          let E;
           try {
-            e = this.requireModule("discord_overlay2")
+            E = this.requireModule("discord_overlay2")
           } catch (e) {}
-          e && e.reset && e.reset(), e && e.disconnectAllProcesses && e.destroyHostProcess && (e.disconnectAllProcesses(), e.destroyHostProcess()), D.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== A.default.get(N.DOMAIN_MIGRATION_SUCCESS_KEY) && this.supportsFeature(L.NativeFeatures.USER_DATA_CACHE) && D.userDataCache.cacheUserData(A.default.stringify())
+          E && E.reset && E.reset(), E && E.disconnectAllProcesses && E.destroyHostProcess && (E.disconnectAllProcesses(), E.destroyHostProcess()), D.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== A.default.get(N.DOMAIN_MIGRATION_SUCCESS_KEY) && this.supportsFeature(L.NativeFeatures.USER_DATA_CACHE) && D.userDataCache.cacheUserData(A.default.stringify()), null == D || null === (_ = D.window) || void 0 === _ || _.close(null == D ? void 0 : null === (e = D.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
         },
         inputEventRegister(e, _, E, t) {
           !Array.isArray(_) && (_ = _.toJS()), this.getDiscordUtils().inputEventRegister(parseInt(e), _.map(e => {
@@ -36154,4 +36155,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.a9681ea1f29aaa063a6c.js.map
+//# sourceMappingURL=76039.519b94eb2259e2178415.js.map
