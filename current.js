@@ -915,7 +915,7 @@
         EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_ANNOUNCEMENT_BIRD_A11Y_LABEL: "A bird with a megaphone for a head",
         EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_HEADS_UP: "Heads Up!",
         EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_TITLE: "You're about to test {activityName} for the first time.",
-        EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_SUBTITLE: "This app is not made by Discord, and has not been reviewed. Only test apps from developers you trust.",
+        EMBEDDED_ACTIVITIES_EXTERNAL_APP_CONFIRM_SUBTITLE: "This app is not made by Discord. Only test apps from developers you trust.",
         EMBEDDED_ACTIVITIES_EXTERNAL_APP_LEARN_MORE: "Learn more about private apps.",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED_CANNOT_LAUNCH: "$[](userHook) started an activity",
         APPLICATION_COMMAND_PRIMARY_ENTRY_POINT_USED: "$[](userHook) started an **$[activity](activityHook)**",
@@ -18335,7 +18335,7 @@
         u = E("782340");
       (0, a.setUpdateRules)(s.default), (0, n.default)(u.default, o.default, T.default), i.default.Emitter.injectBatchEmitChanges(r.batchUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271889", ", Version Hash: ").concat("cae5426863aae40a853a665d95fc5cf4762147fd")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271914", ", Version Hash: ").concat("aa88499a93385abca05ff9852af08c711808d269")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20673,8 +20673,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271889", "271889"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271889")), _ = 0), _
+        let _ = parseInt((e = "271914", "271914"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271914")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25355,8 +25355,8 @@
               body: {
                 metrics: e,
                 client_info: {
-                  built_at: "1709577394063",
-                  build_number: "271889"
+                  built_at: "1709579506155",
+                  build_number: "271914"
                 }
               },
               retries: 1
@@ -36660,4 +36660,4 @@
     }
   }
 ]);
-//# sourceMappingURL=77761.67b1028a0964535c0737.js.map
+//# sourceMappingURL=77761.64ccb385ef73d2ae93a1.js.map
