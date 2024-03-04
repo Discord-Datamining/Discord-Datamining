@@ -8178,6 +8178,20 @@
         NITRO_HOME_REWARDING_TENURE_FREE_BOOST: "{numFreeBoosts} Free {numFreeBoosts, plural, =1 {Boost} other {numFreeBoosts}}",
         NITRO_HOME_REWARDING_TENURE_BOOST_AVAILABLE_DATE: "Redeem in {days} {days, plural, =1 {day} other {days}}",
         NITRO_HOME_REWARDING_TENURE_REDEEM_BOOST: "Redeem in {numDays} {numDays, plural, =1 {day} other {days}}",
+        NITRO_HOME_REWARDING_LOCKED_STATE_TITLE: "Nitro Reward",
+        NITRO_HOME_REWARDING_FREE_BOOST_LOCKED_STATE_SUBTITLE_1_MONTH_VARIANT: "Earn a Boost when you hit your first month of Nitro.",
+        NITRO_HOME_REWARDING_FREE_BOOST_LOCKED_STATE_SUBTITLE_3_MONTHS_VARIANT: "Earn a Boost when you hit 3 months of Nitro.",
+        NITRO_HOME_REWARDING_LOCKED_STATE_DESCRIPTION: "Your extra Boost is yours to use as long as your current Nitro subscription remains active.",
+        NITRO_HOME_REWARDING_REDEEMABLE_STATE_TITLE: "Redeem Your Reward!",
+        NITRO_HOME_REWARDING_FREE_BOOST_REDEEMABLE_STATE_SUBTITLE_1_MONTH_VARIANT: "Congratulations on your first month of Nitro.",
+        NITRO_HOME_REWARDING_FREE_BOOST_REDEEMABLE_STATE_SUBTITLE_3_MONTHS_VARIANT: "Congratulations on 3 months of Nitro.",
+        NITRO_HOME_REWARDING_REDEEMED_STATE_SUBTITLE: "Thanks for being a Nitro member.",
+        NITRO_HOME_REWARDING_REDEEMED_STATE_DESCRIPTION: "Keep your Boost with an active Nitro subscription. Canceling resets progress and removes the Boost.",
+        NITRO_HOME_REWARDING_REDEEMED_LABEL: "Redeemed",
+        GUILD_BOOST_NITRO_REWARD_BANNER: "You earned an extra Boost, nice work.",
+        SINGLE_UNUSED_GUILD_BOOST_NITRO_REWARD_TITLE: "Your Boost awaits!",
+        SINGLE_UNUSED_GUILD_BOOST_NITRO_REWARD_SUBTITLE_1_MONTH_VARIANT: "Thanks for being a Nitro member. Here’s an extra Boost for reaching your first month of Nitro.",
+        SINGLE_UNUSED_GUILD_BOOST_NITRO_REWARD_SUBTITLE_3_MONTHS_VARIANT: "Thanks for being a Nitro member. Here’s an extra Boost for reaching 3 months of Nitro.",
         NITRO_MARKETING_CARDS_SUPERCHARGE_YOUR_DISCORD: "Supercharge your Discord",
         NITRO_MARKETING_CARDS_CUSTOM_PROFILES: "Custom Profiles Across All Servers",
         NITRO_MARKETING_CARDS_UNLIMITED_SUPER_REACTIONS: "Unlimited Super Reactions per week",
@@ -18335,7 +18349,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("271970", ", Version Hash: ").concat("63531c1ceccf1e657a1f384b644b9a9d9989f6c7")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272011", ", Version Hash: ").concat("b73645fdee39ab3401b232c54dcb846577eba5ce")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20629,8 +20643,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "271970", "271970"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("271970")), _ = 0), _
+        let _ = parseInt((e = "272011", "272011"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272011")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36140,4 +36154,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.37748de9c8cb151d9b63.js.map
+//# sourceMappingURL=76039.61e617ee3b6e9b9f36d5.js.map
