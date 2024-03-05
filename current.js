@@ -16795,7 +16795,7 @@
         QUESTS_TITLE: "{questName} Quest",
         QUESTS_LANDING_PAGE_ERROR_HEADING: "Whoops!",
         QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the Quest there.",
-        QUESTS_MOBILE_EMBED_TITLE: "Quests aren’t available on mobile...yet.",
+        QUESTS_MOBILE_EMBED_TITLE: "Quests aren’t available on mobile",
         QUESTS_MOBILE_EMBED_BODY: "From your desktop Discord app or browser you can go to \nUser Settings > Gift Inventory and accept the Quest there.",
         QUESTS_GET_THIS_GAME: "Get this game",
         QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
@@ -18354,7 +18354,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272277", ", Version Hash: ").concat("9f3508164213cc74eb9ef1acddad5e088e0da1e9")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272279", ", Version Hash: ").concat("d718539ff24c16ce19348a996bd3b927ae710108")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20648,8 +20648,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272277", "272277"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272277")), _ = 0), _
+        let _ = parseInt((e = "272279", "272279"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272279")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36181,4 +36181,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.02f3b21ebd63bd248bbb.js.map
+//# sourceMappingURL=76039.d7202d7709d8368aa8a5.js.map
