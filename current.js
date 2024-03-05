@@ -17159,6 +17159,7 @@
         SERVER_DRAWER_ACTIVITY_STREAMING: "streaming **!!{activity}!!**",
         SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen",
         PACKAGES: "Packages",
+        USER_SETTINGS_PACKAGES_HEADER_CTA: "Open your Mailbox",
         CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
       })
     },
@@ -18352,7 +18353,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272358", ", Version Hash: ").concat("3d5e95e1a7dd6ec18a17ced423ffef5dc07ea5e0")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272381", ", Version Hash: ").concat("9904735c2dfbcc479cb307cf76b44a52f747a651")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20646,8 +20647,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272358", "272358"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272358")), _ = 0), _
+        let _ = parseInt((e = "272381", "272381"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272381")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36179,4 +36180,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.587b9d8957a829880c2c.js.map
+//# sourceMappingURL=76039.4d126e27bece109d9e9e.js.map
