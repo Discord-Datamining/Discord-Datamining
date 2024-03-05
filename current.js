@@ -15169,6 +15169,7 @@
         COLLECTIBLES_PREMIUM_DISCOUNT_TOOLTIP_TEXT: "Nitro subscribers get a discount on this decoration",
         COLLECTIBLES_NON_PREMIUM_PRICE: "{price} with Nitro",
         COLLECTIBLES_NON_PREMIUM_PRICE_SUBSCRIBE_NOW: "{price} with Nitro. $[Subscribe now](subscribeNowHook)",
+        COLLECTIBLES_NON_PREMIUM_PRICE_SUBSCRIBE_NOW_MOBILE: "{price} with Nitro $[subscribe now](subscribeNowHook)",
         COLLECTIBLES_SHOP_HERO_BANNER_TITLE: "Ready for a new look?",
         COLLECTIBLES_SHOP_HERO_BANNER_SUBTITLE_ALT: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
         COLLECTIBLES_SHOP_ERROR_HEADING: "Well, this is awkward.",
@@ -15188,6 +15189,7 @@
         COLLECTIBLES_PROFILE_EFFECT_PERMANENT_COLLECTION: "This effect is now part of your collection and can be used anytime!",
         CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this profile effect for yourself? Head to the Shop to buy and collect it!",
         COLLECTIBLES_MOBILE_SHOP_USUAL_PRICE: "Usually {price}",
+        COLLECTIBLES_PURCHASE_DISCLAIMER_PAYMENT_MOBILE: "By Clicking '{buyButtonLabel}' you agree to the [Paid Service Terms]({paidServiceTermURL}). Once you complete your purchase, the item will be added to your collection and can be used anytime. Note that Nitro subscriptions become non-refundable once you've purchased an item.",
         COLLECTIBLES_DAYS_LEFT_IN_SHOP: "{days} days left in Shop",
         COLLECTIBLES_DAYS_LEFT: "{days} days left",
         COLLECTIBLES_LAST_DAY: "Last day to buy",
@@ -16610,6 +16612,7 @@
         CUSTOM_HANGS_STATUS_COPY_CTA: "Swipe status",
         HANG_STATUS_VC_ROW_ADD: "Add a status",
         HANG_STATUS_HELP: "Show your friends what you're up to by setting an activity status.",
+        HANG_STATUS_SET_CUSTOM_STATUS_PLACEHOLDER: "Set a custom status",
         LAUNCH_PAD: "LaunchPad",
         LAUNCH_PAD_HISTORY: "Recent Channels",
         LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
@@ -18350,7 +18353,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272201", ", Version Hash: ").concat("34ea7754e13793f22af84dbca28f266fa4b26f05")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272230", ", Version Hash: ").concat("b15175e129c81ef3e19fd0706145696ad56e2c07")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20644,8 +20647,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272201", "272201"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272201")), _ = 0), _
+        let _ = parseInt((e = "272230", "272230"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272230")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36177,4 +36180,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.2f6175f45d48b82d1d60.js.map
+//# sourceMappingURL=76039.a003e03e018643ba944a.js.map
