@@ -16476,7 +16476,7 @@
         SAFETY_TOOLS_ACTION_SHEET_NO_FILTR_BUTTON: "Visit",
         SAFETY_TOOLS_ACTION_SHEET_BREAK_TITLE: "Take a break",
         SAFETY_TOOLS_ACTION_SHEET_BREAK_SUBTITLE: "Listen to Lofi Beats with Wumpus.",
-        SAFETY_TOOLS_ACTION_SHEET_BREAK_BUTTON: "Relax",
+        SAFETY_TOOLS_ACTION_SHEET_BREAK_BUTTON: "Vibe",
         SAFETY_TOOLS_ACTION_SHEET_SAFETY_TIPS_TITLE: "Safety tips",
         SAFETY_TOOLS_ACTION_SHEET_ABOUT_TITLE: "About safety alerts",
         SAFETY_TOOLS_ACTION_SHEET_ABOUT_DESCRIPTION: "We take teen safety seriously at Discord. When we detect a possible safety risk in a conversation, we'll let you know. [Learn more about safety alerts.]({learnMoreLink})",
@@ -18352,7 +18352,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272324", ", Version Hash: ").concat("f7ea00e72e8d27a1eea1e46ffa1640cfa0f00d71")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272333", ", Version Hash: ").concat("2c137fd656bed1e84b1a9f943e76230849615479")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20646,8 +20646,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272324", "272324"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272324")), _ = 0), _
+        let _ = parseInt((e = "272333", "272333"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272333")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36179,4 +36179,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.b9f925d78dfcc519dc7b.js.map
+//# sourceMappingURL=76039.95202dc634fb05fe6804.js.map
