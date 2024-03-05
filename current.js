@@ -3895,8 +3895,6 @@
         LANGUAGE: "Language",
         LANGUAGE_SELECT: "Select a Language",
         LANGUAGE_UPDATED: "Language has been Updated.",
-        ESLATAM_LANGUAGE_LAUNCH_NOTICE: "Discord now supports Latin American Spanish.",
-        ESLATAM_LANGUAGE_LAUNCH_NOTICE_CTA: "Change Language",
         CHECKING_FOR_UPDATES: "Checking For Updates",
         UPDATE_AVAILABLE: "Downloading Update",
         UPDATE_DOWNLOADED: "Update Ready!",
@@ -18354,7 +18352,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272303", ", Version Hash: ").concat("910959fe2494891c4a2411d9d67b2a34b5fdb0ce")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272307", ", Version Hash: ").concat("2ca446b4c25bb64146dc8ca35f724699569d2ec4")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20648,8 +20646,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272303", "272303"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272303")), _ = 0), _
+        let _ = parseInt((e = "272307", "272307"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272307")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36181,4 +36179,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.5f39b35fcb5e47f08c0c.js.map
+//# sourceMappingURL=76039.cae56adfbc29c88c7aca.js.map
