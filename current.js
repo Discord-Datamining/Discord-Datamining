@@ -17187,6 +17187,17 @@
         SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen",
         PACKAGES: "Packages",
         USER_SETTINGS_PACKAGES_HEADER_CTA: "Open your Mailbox",
+        USER_SETTINGS_PACKAGES_MAILBOX_HEADER: "Mailbox",
+        USER_SETTINGS_PACKAGE_COUNT: "x{count, number}",
+        PACKAGE_ITEM_1_NAME: "Newspaper",
+        PACKAGE_ITEM_2_NAME: "Bills",
+        PACKAGE_ITEM_3_NAME: "Grocery Savings",
+        PACKAGE_ITEM_4_NAME: "Lost ID",
+        PACKAGE_ITEM_5_NAME: "Postcard",
+        PACKAGE_ITEM_6_NAME: "New Socks",
+        PACKAGE_ITEM_7_NAME: "Glitterbomb",
+        PACKAGE_ITEM_8_NAME: "Empty Envelope",
+        PACKAGE_ITEM_9_NAME: "Birthday Card",
         CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
       })
     },
@@ -18380,7 +18391,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272511", ", Version Hash: ").concat("19242badfbd88a9a107233b587ca3e54cc46e2d8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272535", ", Version Hash: ").concat("e437335b11ad3fcb02ce91943feb6182b27ade2f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20674,8 +20685,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272511", "272511"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272511")), _ = 0), _
+        let _ = parseInt((e = "272535", "272535"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272535")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36207,4 +36218,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.d53be1e21a6f57fb4a86.js.map
+//# sourceMappingURL=76039.d72afdb0ffc5279456d2.js.map
