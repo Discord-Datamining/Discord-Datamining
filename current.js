@@ -16755,8 +16755,11 @@
         CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_CTA_EXIT: "Exit",
         CREATE_POLL_MODAL_WARNING_UNSAVED_CHANGES_BACK_TO_EDITING: "Back to editing",
         CREATE_POLL_REMOVE_ANSWER: "Remove Answer",
+        CREATE_POLL_REMOVE_EMOJI: "Remove Emoji",
         CREATE_POLL_ADD_IMAGE: "Add Media",
+        CREATE_POLL_ADD_EMOJI: "Add Emoji",
         CREATE_POLL_REPLACE_IMAGE: "Replace Media",
+        CREATE_POLL_REPLACE_EMOJI: "Replace Emoji",
         CREATE_POLL_POLL_ANSWER: "Poll Answer",
         CREATE_POLL_EDIT_ALT_TEXT: "Edit Image Description (Alt Text)",
         CREATE_POLL_EDIT_IMAGE_DESCRIPTION: "Edit Image Description",
@@ -18400,7 +18403,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272613", ", Version Hash: ").concat("5631508e881ff3a425245b69c41bb998a3298f7e")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272615", ", Version Hash: ").concat("d5979ba41eb7dcd6433fa180ddb9bf3f6df4c00f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20694,8 +20697,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272613", "272613"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272613")), _ = 0), _
+        let _ = parseInt((e = "272615", "272615"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272615")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36239,4 +36242,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.3e0b920071eeade4f4e5.js.map
+//# sourceMappingURL=76039.5de0e5e3669ea782858e.js.map
