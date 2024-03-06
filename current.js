@@ -18396,7 +18396,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272873", ", Version Hash: ").concat("e4b08096c8754ec1921244d5809ab6af93638ff0")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272885", ", Version Hash: ").concat("4389257f42c4d72696a71cd2addd306b27db6051")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -19959,7 +19959,7 @@
           neverLoadBeforeConnectionOpen: !0
         },
         QuestsManager: {
-          actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_START", "STREAM_CLOSE", "PASSIVE_UPDATE_V1", "VOICE_STATE_UPDATES"],
+          actions: ["POST_CONNECTION_OPEN", "QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "STREAM_CREATE", "STREAM_CLOSE", "PASSIVE_UPDATE_V1", "VOICE_STATE_UPDATES"],
           inlineRequire: () => E("319405").default,
           neverLoadBeforeConnectionOpen: !0
         },
@@ -20690,8 +20690,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272873", "272873"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272873")), _ = 0), _
+        let _ = parseInt((e = "272885", "272885"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272885")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -25992,76 +25992,112 @@
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
-          return M
+          return h
         }
       }), E("222007");
       var t = E("689988"),
         o = E("374014"),
         n = E("373469"),
-        r = E("271938"),
-        a = E("42203"),
-        i = E("546463"),
-        I = E("945956"),
-        T = E("316133"),
-        s = E("718517"),
-        S = E("815496"),
-        N = E("448881"),
-        O = E("374023"),
-        A = E("2973"),
-        R = E("227231"),
-        l = E("166604"),
-        u = E("49111");
-      let L = 5 * s.default.Millis.SECOND,
-        C = 12 * s.default.Millis.HOUR,
-        D = 1 * s.default.Millis.MINUTE,
-        c = 30 * s.default.Millis.SECOND;
+        r = E("42203"),
+        a = E("546463"),
+        i = E("945956"),
+        I = E("316133"),
+        T = E("718517"),
+        s = E("815496"),
+        S = E("448881"),
+        N = E("374023"),
+        O = E("2973"),
+        A = E("227231"),
+        R = E("166604"),
+        l = E("49111");
+      let u = 5 * T.default.Millis.SECOND,
+        L = 12 * T.default.Millis.HOUR,
+        C = 1 * T.default.Millis.MINUTE,
+        D = 30 * T.default.Millis.SECOND,
+        c = 1 * T.default.Millis.SECOND;
 
       function d() {
         var e, _;
         let E = n.default.getStreamerActiveStreamMetadata();
         if ((null == E ? void 0 : E.id) == null) return null;
-        let t = i.default.getGameById(E.id);
+        let t = a.default.getGameById(E.id);
         if ((null == t ? void 0 : t.id) == null) return null;
-        let o = (0, R.getQuestByApplicationId)(A.default.quests, t.id);
+        let o = (0, A.getQuestByApplicationId)(O.default.quests, t.id);
         return (null == o ? void 0 : null === (e = o.userStatus) || void 0 === e ? void 0 : e.enrolledAt) == null || (null == o ? void 0 : null === (_ = o.userStatus) || void 0 === _ ? void 0 : _.completedAt) != null ? null : o
       }
-      class U extends t.default {
+
+      function U(e, _) {
+        var E;
+        let {
+          channelId: t
+        } = (0, o.decodeStreamKey)(e);
+        return null != n.default.getRTCStream(e) && I.default.countVoiceStatesForChannel(t) >= 2 && (null === (E = d()) || void 0 === E ? void 0 : E.config.applicationId) === _
+      }
+      class M extends t.default {
         maybeFetchCurrentQuests() {
-          (0, O.getIsEligibleForQuests)({
-            location: l.QuestsExperimentLocations.QUESTS_MANAGER,
+          (0, N.getIsEligibleForQuests)({
+            location: R.QuestsExperimentLocations.QUESTS_MANAGER,
             autoTrackExposure: !1
-          }) && !A.default.isFetchingCurrentQuests && (0, N.fetchCurrentQuests)()
+          }) && !O.default.isFetchingCurrentQuests && (0, S.fetchCurrentQuests)()
         }
         constructor(...e) {
-          super(...e), this.instantiatedAt = Date.now(), this.sendHeartbeatTimeoutIds = new Map, this.initiateHeartbeat = e => {
+          super(...e), this.instantiatedAt = Date.now(), this.sendHeartbeatTimeoutIds = new Map, this.optimisticProgressUpdateIntervalIds = new Map, this.lastOptimisticallyUpdatedProgressMap = new Map, this.initiateHeartbeat = e => {
             let {
               questId: _,
               streamKey: E,
               applicationId: t
             } = e;
             this.terminateHeartbeat(E);
-            let {
-              channelId: r
-            } = (0, o.decodeStreamKey)(E), a = () => {
-              var e;
-              null != n.default.getRTCStream(E) && T.default.countVoiceStatesForChannel(r) >= 2 && (null === (e = d()) || void 0 === e ? void 0 : e.config.applicationId) === t && (0, N.sendHeartbeat)({
+            let o = () => {
+              U(E, t) ? (0, S.sendHeartbeat)({
                 questId: _,
                 streamKey: E,
                 applicationId: t
-              });
-              let o = this.calculateHeartbeatDurationMs(_);
-              this.sendHeartbeatTimeoutIds.set(E, window.setTimeout(a, o))
+              }) : this.terminateHeartbeat(E);
+              let e = this.calculateHeartbeatDurationMs(_);
+              this.sendHeartbeatTimeoutIds.set(E, window.setTimeout(o, e))
             };
-            a()
+            o()
           }, this.calculateHeartbeatDurationMs = e => {
-            let _ = A.default.quests.get(e);
-            if (null == _ || null == _.config || null == _.userStatus) return D;
+            let _ = O.default.quests.get(e);
+            if (null == _ || null == _.config || null == _.userStatus) return C;
             let {
               streamProgressSeconds: E
             } = _.userStatus, t = 60 * _.config.streamDurationRequirementMinutes;
-            return t - E <= .1 * t ? c : D
+            return t - E <= .1 * t ? D : C
           }, this.terminateHeartbeat = e => {
-            window.clearTimeout(this.sendHeartbeatTimeoutIds.get(e)), this.sendHeartbeatTimeoutIds.delete(e)
+            window.clearTimeout(this.sendHeartbeatTimeoutIds.get(e)), this.sendHeartbeatTimeoutIds.delete(e), this.terminateOptimisticProgressUpdateInterval(e)
+          }, this.initiateOptimisticProgressUpdateInterval = e => {
+            this.terminateOptimisticProgressUpdateInterval(e), this.optimisticProgressUpdateIntervalIds.set(e, window.setInterval(() => {
+              let _ = d();
+              if (null == _) {
+                this.terminateOptimisticProgressUpdateInterval(e);
+                return
+              }
+              let E = _.userStatus,
+                t = _.config.streamDurationRequirementMinutes * T.default.Seconds.MINUTE,
+                o = this.lastOptimisticallyUpdatedProgressMap.get(e);
+              if (!U(e, _.config.applicationId)) {
+                this.terminateOptimisticProgressUpdateInterval(e);
+                return
+              }
+              if (null == o) this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now());
+              else if (null != E) {
+                let _ = Date.now() - o,
+                  n = _ / T.default.Millis.SECOND,
+                  r = E.streamProgressSeconds,
+                  a = r + n;
+                if (a <= t) {
+                  let _ = {
+                    ...E,
+                    streamProgressSeconds: a
+                  };
+                  (0, S.optimisticallyUpdateQuestProgress)(_), this.lastOptimisticallyUpdatedProgressMap.set(e, Date.now())
+                }
+              }
+            }, c))
+          }, this.terminateOptimisticProgressUpdateInterval = e => {
+            window.clearInterval(this.optimisticProgressUpdateIntervalIds.get(e)), this.optimisticProgressUpdateIntervalIds.delete(e), this.lastOptimisticallyUpdatedProgressMap.delete(e)
           }, this.handleEnrollmentSuccess = e => {
             let {
               enrolledQuestUserStatus: {
@@ -26076,15 +26112,20 @@
               questId: E.id
             })
           }, this.handlePostConnectionOpen = () => {
-            if (0 === A.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * L))
+            if (0 === O.default.lastFetchedCurrentQuests) window.setTimeout(this.maybeFetchCurrentQuests, Math.floor(Math.random() * u))
           }, this.handleSendHeartbeatSuccess = e => {
             let {
               streamKey: _,
               userStatus: E
             } = e;
-            null != E.completedAt && this.terminateHeartbeat(_)
+            this.terminateOptimisticProgressUpdateInterval(_), null != E.completedAt ? (this.terminateHeartbeat(_), this.terminateOptimisticProgressUpdateInterval(_)) : this.initiateOptimisticProgressUpdateInterval(_)
+          }, this.handleSendHeartbeatFailure = e => {
+            let {
+              streamKey: _
+            } = e;
+            this.terminateOptimisticProgressUpdateInterval(_)
           }, this.handleRunningGamesChange = () => {
-            !(this.instantiatedAt + C > Date.now() || A.default.lastFetchedCurrentQuests + C > Date.now()) && this.maybeFetchCurrentQuests()
+            !(this.instantiatedAt + L > Date.now() || O.default.lastFetchedCurrentQuests + L > Date.now()) && this.maybeFetchCurrentQuests()
           }, this.handleVoiceStateChange = () => {
             let e = n.default.getCurrentUserActiveStream();
             if (null == e) return;
@@ -26094,8 +26135,8 @@
               this.terminateHeartbeat(_);
               return
             }
-            if (2 > T.default.countVoiceStatesForChannel(e.channelId)) {
-              this.sendHeartbeatTimeoutIds.has(_) && ((0, N.sendHeartbeat)({
+            if (2 > I.default.countVoiceStatesForChannel(e.channelId)) {
+              this.sendHeartbeatTimeoutIds.has(_) && ((0, S.sendHeartbeat)({
                 questId: E.id,
                 streamKey: _,
                 applicationId: E.config.applicationId
@@ -26106,29 +26147,25 @@
               applicationId: E.config.applicationId,
               questId: E.id
             })
-          }, this.handleStreamStart = e => {
+          }, this.handleStreamCreate = e => {
             var _;
             let {
-              streamType: E,
-              guildId: t,
-              channelId: n
-            } = e, i = (0, o.encodeStreamKey)({
-              streamType: E,
-              guildId: t,
-              channelId: n,
-              ownerId: r.default.getId()
-            }), s = d();
-            if (null == s) {
-              this.terminateHeartbeat(i);
+              streamKey: E
+            } = e, {
+              channelId: t,
+              guildId: n
+            } = (0, o.decodeStreamKey)(E), a = d();
+            if (null == a) {
+              this.terminateHeartbeat(E);
               return
-            }(0, S.trackQuestEvent)(s.id, u.AnalyticEvents.QUEST_STREAMING_STARTED, {
-              media_session_id: I.default.getMediaSessionId(),
-              channel_type: null === (_ = a.default.getChannel(n)) || void 0 === _ ? void 0 : _.type,
-              guild_id: t
-            }), !(2 > T.default.countVoiceStatesForChannel(n)) && this.initiateHeartbeat({
-              streamKey: i,
-              applicationId: s.config.applicationId,
-              questId: s.id
+            }(0, s.trackQuestEvent)(a.id, l.AnalyticEvents.QUEST_STREAMING_STARTED, {
+              media_session_id: i.default.getMediaSessionId(),
+              channel_type: null === (_ = r.default.getChannel(t)) || void 0 === _ ? void 0 : _.type,
+              guild_id: n
+            }), !(2 > I.default.countVoiceStatesForChannel(t)) && this.initiateHeartbeat({
+              streamKey: E,
+              applicationId: a.config.applicationId,
+              questId: a.id
             })
           }, this.handleStreamClose = e => {
             let {
@@ -26138,16 +26175,17 @@
           }, this.actions = {
             QUESTS_ENROLL_SUCCESS: this.handleEnrollmentSuccess,
             QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
+            QUESTS_SEND_HEARTBEAT_FAILURE: this.handleSendHeartbeatFailure,
             POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
             RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
-            STREAM_START: this.handleStreamStart,
+            STREAM_CREATE: this.handleStreamCreate,
             STREAM_CLOSE: this.handleStreamClose,
             PASSIVE_UPDATE_V1: this.handleVoiceStateChange,
             VOICE_STATE_UPDATES: this.handleVoiceStateChange
           }
         }
       }
-      var M = new U
+      var h = new M
     },
     50733: function(e, _, E) {
       "use strict";
@@ -36238,4 +36276,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.df70b444085fc85a1f5b.js.map
+//# sourceMappingURL=76039.a0eaee77b4adcd8501ee.js.map
