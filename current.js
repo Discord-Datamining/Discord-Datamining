@@ -17203,6 +17203,10 @@
         PACKAGE_ITEM_7_NAME: "Glitterbomb",
         PACKAGE_ITEM_8_NAME: "Empty Envelope",
         PACKAGE_ITEM_9_NAME: "Birthday Card",
+        PACKAGES_PACKAGES_OPENED: "Your Packages Opened",
+        PACKAGES_UNIQUE_PACKAGES_OPENED: "Packages Received",
+        PACKAGES_GLOBAL_PACKAGES_OPENED: "Total Packages Opened",
+        PACKAGES_OPENED_OUT_OF: "{count, number} / {total, number}",
         CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
       })
     },
@@ -18396,7 +18400,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272560", ", Version Hash: ").concat("deaf85a2e8a96cd2ef61107ac46e4804da300853")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272561", ", Version Hash: ").concat("af6edec6d1c83136a201fad223fa085b9dad4b3e")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20690,8 +20694,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272560", "272560"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272560")), _ = 0), _
+        let _ = parseInt((e = "272561", "272561"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272561")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36235,4 +36239,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.93d8b568e6a44881643c.js.map
+//# sourceMappingURL=76039.717f2335328b17a3c9ce.js.map
