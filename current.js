@@ -10266,10 +10266,9 @@
         MJ_CHATBAR_BODY: "Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.",
         APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
         INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
-        APPLICATION_ADD_TO_SERVER: "Add to Server",
         APPLICATION_ADD_BUTTON: "Add App",
-        APPLICATION_ADD_TO_SERVER_ACTIONS: "Add to Server Actions",
-        APPLICATION_ADD_TO_SERVER_ACTIONS_COPY: "Copy Add to Server URL",
+        APPLICATION_ADD_BUTTON_ACTIONS: "Add App Actions",
+        APPLICATION_ADD_BUTTON_ACTIONS_COPY: "Copy Add App URL",
         COMMANDS_SCOPE_MIGRATION_OVERVIEW_TOOLTIP: "Members can't use this bot until you turn on permissions.",
         COMMANDS_SCOPE_MIGRATION_TOGGLE_TOOLTIP: "Flip this switch to enable {botName}'s commands for everyone! Read more about command permissions [here.]({link})",
         COMMANDS_SCOPE_MIGRATION_ADMIN_NOTICE: "Commands have been enabled for apps in your server. Customize permissions in **Server Settings > Integrations**.",
@@ -18397,7 +18396,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272555", ", Version Hash: ").concat("0de51664b5e082c5f989fc31003b0a2b01aa069c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272560", ", Version Hash: ").concat("deaf85a2e8a96cd2ef61107ac46e4804da300853")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20691,8 +20690,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272555", "272555"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272555")), _ = 0), _
+        let _ = parseInt((e = "272560", "272560"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272560")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36236,4 +36235,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.5823a8313e8c62a7fa90.js.map
+//# sourceMappingURL=76039.93d8b568e6a44881643c.js.map
