@@ -16635,6 +16635,7 @@
         HANG_STATUS_VC_ROW_ADD: "Add a status",
         HANG_STATUS_HELP: "Show your friends what you're up to by setting an activity status.",
         HANG_STATUS_SET_CUSTOM_STATUS_PLACEHOLDER: "Set a custom status",
+        HANG_STATUS_MOBILE_SET_ROW: "Set Voice Activity",
         LAUNCH_PAD: "LaunchPad",
         LAUNCH_PAD_HISTORY: "Recent Channels",
         LAUNCH_PAD_STUFF_TO_CATCH_UP_ON: "Stuff To Catch Up On",
@@ -18395,7 +18396,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272681", ", Version Hash: ").concat("3d5d8bf20356ebf40466bf0d952a7d027d6719ef")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272683", ", Version Hash: ").concat("85d9db5fc9041399f98f962307f98255b2608e1f")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20689,8 +20690,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272681", "272681"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272681")), _ = 0), _
+        let _ = parseInt((e = "272683", "272683"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272683")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36237,4 +36238,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.e96bd2ea7b047521de5f.js.map
+//# sourceMappingURL=76039.c3b4333799e639285f45.js.map
