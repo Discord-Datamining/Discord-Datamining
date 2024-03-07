@@ -4508,7 +4508,9 @@
         USER_PROFILE_MEMBER_SINCE: "Member Since",
         USER_PROFILE_DISCORD_MEMBER_SINCE: "Discord Member Since",
         MUTUAL_FRIENDS_COUNT: "{count, plural, =1 {1 Mutual Friend} other {{count} Mutual Friends}}",
+        MUTUAL_FRIENDS_WITH_END_COUNT: "Mutual Friends ({count})",
         MUTUAL_GUILDS_COUNT: "{count, plural, =1 {1 Mutual Server} other {{count} Mutual Servers}}",
+        MUTUAL_GUILDS_WITH_END_COUNT: "Mutual Servers ({count})",
         SHOW_USER_PROFILE: "Show User Profile",
         HIDE_USER_PROFILE: "Hide User Profile",
         SHOW_USER_PROFILE_UNAVAILABLE: "Show User Profile (Unavailable)",
@@ -9561,6 +9563,12 @@
         USER_PROFILE_PENDING: "Pending",
         USER_PROFILE_MUTUAL_FRIENDS: "{count, plural, =0 {0 Mutual Friends} one {1 Mutual Friend} other {{count} Mutual Friends}}",
         USER_PROFILE_MUTUAL_GUILDS: "{count, plural, =0 {0 Mutual Servers} one {1 Mutual Server} other {{count} Mutual Servers}}",
+        USER_PROFILE_MUTUAL_FRIENDS_ONE: "friends with **{usernameOne}**",
+        USER_PROFILE_MUTUAL_FRIENDS_TWO: "friends with **{usernameOne}** and **{usernameTwo}**",
+        USER_PROFILE_MUTUAL_FRIENDS_MANY: "friends with **{usernameOne}**, **{usernameTwo}**, and **{count} more**",
+        USER_PROFILE_MUTUAL_GUILDS_ONE: "member of **{guildNameOne}**",
+        USER_PROFILE_MUTUAL_GUILDS_TWO: "member of **{guildNameOne}** and **{guildNameTwo}**",
+        USER_PROFILE_MUTUAL_GUILDS_MANY: "member of **{guildNameOne}**, **{guildNameTwo}**, and **{count} more**",
         USER_PROFILE_MUTUAL_FRIENDS_PLACEHOLDER: "Mutual Friends",
         USER_PROFILE_MUTUAL_GUILDS_PLACEHOLDER: "Mutual Servers",
         PROFILE_JOIN_VOICE_CHANNEL: "Join Voice Channel",
@@ -18416,7 +18424,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273248", ", Version Hash: ").concat("8eaff218e622f713b55493471914cc0a19490d9c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273250", ", Version Hash: ").concat("76a56d9a78bcc0f9e4cb2547c0dd97c0bf16ed50")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20774,8 +20782,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273248", "273248"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273248")), _ = 0), _
+        let _ = parseInt((e = "273250", "273250"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273250")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36483,4 +36491,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.28c73625ffb8f29ab12e.js.map
+//# sourceMappingURL=76039.d047bc1b93d75557f81c.js.map
