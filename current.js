@@ -18424,7 +18424,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273265", ", Version Hash: ").concat("2ef263852a0d6e2eddfb55e96e2a6eb9affeaa09")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273266", ", Version Hash: ").concat("472651bafb5e5efc3ffc714cd09d66644c9481f2")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20782,8 +20782,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273265", "273265"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273265")), _ = 0), _
+        let _ = parseInt((e = "273266", "273266"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273266")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26561,26 +26561,6 @@
         }
       }
       var S = new T
-    },
-    821240: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        getInappropriateConversationTakeoverForChannel: function() {
-          return o
-        }
-      });
-      var t = E("764828");
-
-      function o(e) {
-        let _ = function(e) {
-            let _ = t.default.getChannelSafetyWarnings(e);
-            return _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2)
-          }(e),
-          E = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 && null != e.dismiss_timestamp);
-        if (E.length > 0) return null;
-        let o = _.filter(e => e.type === t.SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 && null == e.dismiss_timestamp);
-        return 1 === o.length ? o[0] : null
-      }
     },
     874200: function(e, _, E) {
       "use strict";
@@ -36491,4 +36471,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.ab92d69f54b0ad1ae639.js.map
+//# sourceMappingURL=76039.7e22a8c0e36620c730b0.js.map
