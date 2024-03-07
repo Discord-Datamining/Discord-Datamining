@@ -18411,7 +18411,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273125", ", Version Hash: ").concat("36d9476e347511bd318322955cf282e9e81af39f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273128", ", Version Hash: ").concat("910a76b093420ca8a9210aae82db138bf134b7bf")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20769,8 +20769,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273125", "273125"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273125")), _ = 0), _
+        let _ = parseInt((e = "273128", "273128"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273128")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26452,9 +26452,9 @@
             if (a.default.shouldPerformLatencyTest(_)) {
               let E = r.default.getMediaEngine();
               E.rankRtcRegions(e).then(e => {
-                S.verbose("RTC region latency test completed: ", e), (0, t.completeRTCLatencyTest)(e, _)
+                S.verbose("RTC region latency test completed, ranked regions are: ", e), (0, t.completeRTCLatencyTest)(e, _)
               }).catch(e => S.warn(e))
-            } else S.verbose("RTC cached preferred region is ".concat(a.default.getPreferredRegion()))
+            } else S.verbose("RTC cached ranked preferred regions are ".concat(a.default.getPreferredRegions()))
           }, this._fetchAndScheduleRefetch = () => {
             (0, t.fetchRTCLatencyTestRegions)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => S.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, 360 * i.default.Millis.MINUTE)
           }, this._handleConnectionOpen = () => {
@@ -36474,4 +36474,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.585af0a908c411b37c2d.js.map
+//# sourceMappingURL=76039.2902587fa562afd59de4.js.map
