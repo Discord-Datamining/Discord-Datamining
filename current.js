@@ -6181,6 +6181,7 @@
         TERMS_AGREEMENT_DESCRIPTION_1: "We announced updates to the policies below. The changes are now in effect. To agree, just keep using Discord.",
         TERMS_AGREEMENT_DESCRIPTION_2: "We encourage you to read the updated documents in full, as they apply to your use of Discord. We’ve explained some of the most important changes in our blog post.",
         TERMS_OF_SERVICE_UPDATE_03_27_2023_DESCRIPTION: "We announced our annual updates to our policies last month, which are now in effect. Check out our [blog post](https://discord.com/blog/important-policy-updates) for a summary of these changes, and read the full policies below.",
+        TERMS_OF_SERVICE_AGREEMENT_DESCRIPTION: "By clicking Agree, you acknowledge that you agree to Discord’s Terms of Service and have read our Privacy Policy.",
         COMMUNITY_GUIDELINES: "[Community Guidelines]({url})",
         BLOG_POST: "[Our blog post]({url})",
         SEARCH_FILTER_CONTEXT_MENU_FROM: "From a specific person",
@@ -18415,7 +18416,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273247", ", Version Hash: ").concat("709840a426614e020d42cad540d8487fe887aa99")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273248", ", Version Hash: ").concat("8eaff218e622f713b55493471914cc0a19490d9c")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20773,8 +20774,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273247", "273247"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273247")), _ = 0), _
+        let _ = parseInt((e = "273248", "273248"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273248")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36482,4 +36483,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.a3285db3b3bb7c767f5a.js.map
+//# sourceMappingURL=76039.28c73625ffb8f29ab12e.js.map
