@@ -17190,6 +17190,9 @@
         USER_SETTINGS_PACKAGES_HEADER_CTA: "Open your Mailbox",
         USER_SETTINGS_PACKAGES_MAILBOX_HEADER: "Mailbox",
         USER_SETTINGS_PACKAGE_COUNT: "x{count, number}",
+        USER_SETTINGS_PACKAGE_BANNER_DEFAULT: "Wow you have a lot of mail.",
+        USER_SETTINGS_PACKAGE_BANNER_PITY: "How about you thank your mail delivery person?",
+        USER_SETTINGS_PACKAGE_BANNER_CTA: "Give Thanks",
         PACKAGE_ITEM_1_NAME: "Newspaper",
         PACKAGE_ITEM_2_NAME: "Bills",
         PACKAGE_ITEM_3_NAME: "Grocery Savings",
@@ -18396,7 +18399,7 @@
         u = E("782340");
       (0, i.setUpdateRules)(T.default), (0, n.default)(u.default, o.default, s.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272942", ", Version Hash: ").concat("0b0be8298f4ad83a4fcbdd47169070e0210e4543")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("272954", ", Version Hash: ").concat("aa3778eaaa30ed0b4b875b70e3250ea59327ecfb")), t.default.setTags({
         appContext: l.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
     },
@@ -20690,8 +20693,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "272942", "272942"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272942")), _ = 0), _
+        let _ = parseInt((e = "272954", "272954"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("272954")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36276,4 +36279,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.1b7e3f10527e5bd1176a.js.map
+//# sourceMappingURL=76039.7444f028d5ca14fa7ba4.js.map
