@@ -15286,6 +15286,8 @@
         COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION: "Fire. Wind. Water. Earth. Which will you unleash?",
         COLLECTIBLES_ANIME_V2_COACHTIP_TITLE: "Anime: New styles",
         COLLECTIBLES_ANIME_V2_COACHTIP_DISCRIPTION: "Senpai will definitely notice you now.",
+        COLLECTIBLES_SPRINGTOONS_COACHTIP_TITLE: "NEW: Springtoons",
+        COLLECTIBLES_SPRINGTOONS_COACHTIP_DESCRIPTION: "In the hush of night, a curious magic enchants the air and...",
         COLLECTIBLES_NEW_BADGE: "NEW",
         INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
         PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
@@ -18439,7 +18441,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273552", ", Version Hash: ").concat("0ea883d02e283b5d1dabc0d9112a015989c0f532")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273553", ", Version Hash: ").concat("0653166d5ebe45b8bef28ac41618f0a4b0ee4bf5")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20801,8 +20803,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273552", "273552"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273552")), _ = 0), _
+        let _ = parseInt((e = "273553", "273553"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273553")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36606,4 +36608,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.bbcf3b17d6def0d231af.js.map
+//# sourceMappingURL=76039.515f2eeb99e0abecc079.js.map
