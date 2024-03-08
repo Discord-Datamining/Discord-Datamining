@@ -6531,6 +6531,7 @@
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (Pending Cancellation)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (pausing on **{pauseDate, date, medium}**)",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED: "You have paused your Nitro subscription until **{resumeDate, date, medium}**. Once your subscription resumes you will regain access to Nitro",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription for **!!{price}!!** is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT: "You will have premium chat, **{num, number}** Boosts, and a Boost discount **as soon as your payment processes.** We will send you an email as soon as it does",
@@ -7021,6 +7022,7 @@
         PREMIUM_PAUSE_CONFIRM_TITLE: "Pause !!{planPremiumType}!!?",
         PREMIUM_PAUSE_CONFIRM_BODY: "You will continue to have access to Nitro until **{pauseDate, date, medium}**, and then your subscription will be paused for {pauseDuration} days. We’ll start billing you again on **{resumeDate, date, medium}**. You can resume your subscription anytime.",
         PREMIUM_PAUSE_PAST_DUE_CONFIRM_BODY: "Your Nitro subscription will be paused **now** for {pauseDuration} days. We’ll start billing you again on **{resumeDate, date, medium}**. You can resume your subscription anytime.",
+        PREMIUM_PAUSE_EXTEND_CONFIRM_BODY: "You will extend your nitro until **{resumeDate, date, medium}**. You can resume your subscription anytime.",
         PREMIUM_PAUSE_CONFIRM_NEW: "Yup, Pause !!{planPremiumType}!!",
         PREMIUM_UPGRADE_DONE_BUTTON: "Sweet!",
         PREMIUM_DOWNGRADE_DONE_BUTTON: "Got It",
@@ -7048,9 +7050,9 @@
         PREMIUM_SETTINGS_RENEWAL_INFO: "Your subscriptions will automatically renew on **{renewalDate, date, medium}** and you'll be charged **!!{price}!!**.",
         PREMIUM_SETTINGS_RENEWAL_INFO_EXTERNAL: "Your subscriptions will automatically renew on **{renewalDate, date, medium}**. Please [visit your !!{paymentGatewayName}!! Subscription settings]({subscriptionManagementLink}) for more details.",
         PREMIUM_SETTINGS_CANCELLED_INFO: "Your subscription will end on **{endDate, date, medium}**.",
-        PREMIUM_SETTINGS_PAUSE_PENDING_INFO: "Your subscription will pause on **{pauseDate, date, medium}**. Your subscription will automatically resume on **{resumeDate, date, medium}**.",
-        PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO: "Your subscription will automatically resume on **{resumeDate, date, medium}**.",
-        PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN: "Your **{planName}** subscription will automatically resume on **{resumeDate, date, short}** and you'll be charged **!!{price}!!**.",
+        PREMIUM_SETTINGS_PAUSE_PENDING_INFO: "Your subscription will pause on **{pauseDate, date, medium}** and automatically resume on **{resumeDate, date, medium}**.",
+        PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO: "Your subscription is currently on pause and will automatically resume on **{resumeDate, date, medium}**.",
+        PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN: "Your **{planName}** subscription is currently on pause and will automatically resume on **{resumeDate, date, short}** and you'll be charged **!!{price}!!**.",
         PREMIUM_SETTINGS_PAUSED_INFO: "Your subscription will resume pending payment.",
         PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN: "Your **{planName}** subscription will resume pending payment and you'll be charged **!!{price}!!**.",
         PREMIUM_SETTINGS_PAST_DUE_INFO: "Your **!!{price}!!** subscription is past due. Please update your payment info or your subscription will end on **{endDate, date, medium}**.",
@@ -12296,10 +12298,12 @@
         PREMIUM_PAUSE_INSTEAD: "Pause Instead",
         PREMIUM_PAUSE_SELECT_TITLE: "Pause or cancel subscription",
         PREMIUM_PAUSE_SELECT_SUBTITLE: "If you want to take a break from paid subscriptions, you have the option to pause it for a few months",
+        PREMIUM_PAUSE_SELECT_EXTEND_DURATION_SUBTITLE: "You have the option to continue pausing for additional months",
         PREMIUM_PAUSE_SELECT_PLACEHOLDER: "Select a pause duration",
         PREMIUM_PAUSE_INSTEAD_TITLE: "Would you like to **Pause Instead**?",
         PREMIUM_PAUSE_INSTEAD_SUBTITLE: "Pause your subscription for up to 90 days instead of canceling.",
-        PREMIUM_PAUSE_DURATION_MONTHS_CAPITALIZE: "Pause for {months, plural, =1 {1 Month} other {{months} Months}}",
+        PREMIUM_PAUSE_DURATION_MONTHS_CAPITALIZE: "Pause for {days} days",
+        PREMIUM_PAUSE_EXTEND_DURATION_MONTHS_CAPITALIZE: "Pause for another {days} days",
         PREMIUM_PAUSE_DURATION_CANCEL: "Cancel subscription",
         PREMIUM_PAUSE_YOUR_SUBSCRIPTION_WILL_BE_PAUSED: "Your subscription will be paused",
         PREMIUM_CANCEL_DOWNGRADE_TO_TIER_0_HEADER: "Keep some perks for less",
@@ -18434,7 +18438,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273364", ", Version Hash: ").concat("779488533dbb91471520d675db7cb39101b2db1c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273369", ", Version Hash: ").concat("5c4e1e4c02042aac605f08e2fd18e5c25bb3246d")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20792,8 +20796,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273364", "273364"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273364")), _ = 0), _
+        let _ = parseInt((e = "273369", "273369"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273369")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36503,4 +36507,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.ec9051bc046615350032.js.map
+//# sourceMappingURL=76039.0e3881c36e29179274f4.js.map
