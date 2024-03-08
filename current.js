@@ -8201,6 +8201,15 @@
         NITRO_HOME_GET_THIS_SUBSCRIBER_BADGE: "Get this cool badge for being a Nitro subscriber.",
         NITRO_HOME_SUBSCRIBER_BADGE_FOR_THE_COLLECTORS: "For the collectors. Grab this exclusive Nitro-only badge.",
         NITRO_HOME_REWARDING_TENURE_FREE_BOOST: "{numFreeBoosts} Free {numFreeBoosts, plural, =1 {Boost} other {numFreeBoosts}}",
+        NITRO_HOME_REWARDING_TENURE_CONGRATULATIONS: "Congratulations on your first month of Nitro.",
+        NITRO_HOME_REWARDING_TENURE_REWARD: "Nitro Reward",
+        NITRO_HOME_REWARDING_TENURE_DISCLAIMER: "Your extra Boost is yours to use as long as your current Nitro subscription remains active.",
+        NITRO_HOME_REWARDING_TENURE_REDEEM_YOUR_REWARD: "Redeem Your Reward!",
+        NITRO_HOME_REWARDING_TENURE_REDEEM_ACTION: "Redeem",
+        NITRO_HOME_REWARDING_TENURE_REDEEMED_REWARD: "Redeemed",
+        NITRO_HOME_REWARDING_TENURE_REDEEMED_REWARD_GRATITUDE: "Thanks for being a Nitro member.",
+        NITRO_HOME_REWARDING_TENURE_REDEEMED_REWARD_DISLAIMER: "Keep your Boost with an active Nitro subscription. Canceling resets progress and removes the Boost.",
+        NITRO_HOME_REWARDING_TENURE_DESCRIPTION: "Earn a Boost when you hit your first month of Nitro.",
         NITRO_HOME_REWARDING_TENURE_BOOST_AVAILABLE_DATE: "Redeem in {days} {days, plural, =1 {day} other {days}}",
         NITRO_HOME_REWARDING_TENURE_REDEEM_BOOST: "Redeem in {numDays} {numDays, plural, =1 {day} other {days}}",
         NITRO_HOME_REWARDING_LOCKED_STATE_TITLE: "Nitro Reward",
@@ -18424,7 +18433,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273324", ", Version Hash: ").concat("d8fa23f5d31a0065d32d30d0712d291f6a0b1fae")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273325", ", Version Hash: ").concat("a22f6b4cfc9bbc4598b5fe64e74eae8572573102")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20782,8 +20791,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273324", "273324"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273324")), _ = 0), _
+        let _ = parseInt((e = "273325", "273325"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273325")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36471,4 +36480,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.ef71d06250ecd5a46175.js.map
+//# sourceMappingURL=76039.7508d0ce1920943ee1e3.js.map
