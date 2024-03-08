@@ -6398,6 +6398,7 @@
         GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_HEADING_INCLUDED_WITH_SUBSCRIPTION: "Your free {numUnappliedGuildBoostSlots, plural, =1 {Boost} other {Boosts}} {numUnappliedGuildBoostSlots, plural, =1 {is} other {are}} waiting",
         GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING: "Just waiting here until you choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to!",
         GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_WITH_PREMIUM_SUBSCRIPTION: "Just waiting here until you choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to! Learn more about your Nitro Perks $[here](learnMoreHook).",
+        GUILD_BOOSTING_USER_SETTINGS_HEADING_UNAPPLIED_GUILD_BOOST_SUBHEADING_WITH_PREMIUM_SUBSCRIPTION_V2: "Just waiting here until you **choose a server to give {numUnappliedGuildBoostSlots, plural, =1 {it} other {them}} to!** Learn more about your Nitro Perks $[here](learnMoreHook).",
         GUILD_BOOSTING_USER_SETTINGS_CANCEL_BOOST: "Cancel Boost",
         GUILD_BOOSTING_USER_SETTINGS_UNCANCEL_BOOST: "Uncancel Boost",
         GUILD_BOOSTING_USER_SETTINGS_BOOST_ANY_SERVER: "Boost any server",
@@ -18433,7 +18434,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273325", ", Version Hash: ").concat("a22f6b4cfc9bbc4598b5fe64e74eae8572573102")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273326", ", Version Hash: ").concat("689aa3e8506e81396baaa00820d4e29284a85015")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20791,8 +20792,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273325", "273325"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273325")), _ = 0), _
+        let _ = parseInt((e = "273326", "273326"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273326")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36480,4 +36481,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.7508d0ce1920943ee1e3.js.map
+//# sourceMappingURL=76039.935a9866505dcbf8186a.js.map
