@@ -16737,6 +16737,7 @@
         POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
         POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
         POLL_ANSWER_VOTES_MODAL_TITLE: "Votes",
+        POLL_ANSWER_VOTES_MODAL_VOTE_TAB: "{numVotes, plural, =0 {0 votes} =1 {{numVotes} vote} other {{numVotes} votes}} for {option}",
         POLL_TAP_FOR_VOTERS_A11Y_ANDROID: "Reveal voters",
         POLL_TAP_FOR_VOTERS_A11Y_IOS: "Reveals voters",
         POLL_VOTES_TOOLTIP_1_N: "!!{a}!! and {n, plural, one {1 other} other {{n} others}}",
@@ -18438,7 +18439,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273512", ", Version Hash: ").concat("d756452f845fc170440de9fb16b3598f62ec575b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273515", ", Version Hash: ").concat("34a723c07161557439a58c86702f929cd000b73f")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20800,8 +20801,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273512", "273512"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273512")), _ = 0), _
+        let _ = parseInt((e = "273515", "273515"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273515")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36605,4 +36606,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.8dd303063b41c5c21bdf.js.map
+//# sourceMappingURL=76039.acc2e4c5c07a65d9fbe2.js.map
