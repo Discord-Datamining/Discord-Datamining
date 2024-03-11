@@ -17251,6 +17251,20 @@
         PACKAGES_ENTRYPOINT_TITLE: "Your mail has arrived!",
         PACKAGES_ENTRYPOINT_DESCRIPTION: "See what you got...",
         PACKAGES_ENTRYPOINT_CLOSE: "Didn't ask",
+        PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_YES: "Yes",
+        PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_NO: "No",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_1: "Is this a joke?",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_2: "What will you get in your package?",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_2_ANSWER_1: "The forbidden dish",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_2_ANSWER_2: "Rat poison",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_3: "How many packages will you open?",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_3_ANSWER_1: "I'm disappointed",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_3_ANSWER_2: "Nice",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_4: "Are you confused?",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_5: "No Text to Speech?",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6: "How about you give thanks to your mail delivery person",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6_ANSWER_1: "Okay",
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)",
         CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
       })
     },
@@ -18444,7 +18458,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274083", ", Version Hash: ").concat("eaa8a8115039ea1284eadc4d55e149aadba914ad")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274096", ", Version Hash: ").concat("aed5e01cd2094228a257c8a2117888412eb06004")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20806,8 +20820,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274083", "274083"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274083")), _ = 0), _
+        let _ = parseInt((e = "274096", "274096"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274096")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36932,4 +36946,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.833df8d4b9fe5e130725.js.map
+//# sourceMappingURL=76039.af6e16f2d7725519a962.js.map
