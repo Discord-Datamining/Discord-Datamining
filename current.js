@@ -16559,7 +16559,6 @@
         STRANGER_DANGER_THUMBS_UP_A11Y: "Vote yes (thumbs up)",
         STRANGER_DANGER_THUMBS_DOWN_A11Y: "Vote no (thumbs down)",
         STRANGER_DANGER_FEEDBACK_CONFIRM: "Thanks for your feedback!",
-        STRANGER_DANGER_CONTEXT_MENU_CLEAR: "Reset Safety Warnings (Experimental)",
         INAPPROPRIATE_CONVERSATION_TAKEOVER_HEADER: "This conversation may not be safe",
         INAPPROPRIATE_CONVERSATION_TAKEOVER_DESCRIPTION: "It looks like {username} is saying things that could put your safety at risk. Take action to protect yourself.",
         INAPPROPRIATE_CONVERSATION_TAKE_ACTION: "Take action",
@@ -17224,6 +17223,8 @@
         MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
         INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_1: "Add Inappropriate Tier 1 Warning (Experimental)",
         INAPPROPRIATE_CONVERSATION_MARK_AS_TIER_2: "Add Inappropriate Tier 2 Warning (Experimental)",
+        SAFETY_WARNINGS_DELETE: "Delete all Safety Warnings (Experimental)",
+        STRANGER_DANGER_CONTEXT_MENU_CLEAR: "Reset Safety Warning dismissals (Experimental)",
         SERVER_DRAWER_ACTIVITY_VOICE: "in **!!{channelName}!!**",
         SERVER_DRAWER_ACTIVITY_VOICE_STATUS: "$[](statusHook) in **!!{channelName}!!**",
         SERVER_DRAWER_ACTIVITY_EVENT_IN_UPCOMING: "in !!{relativeTime}!!",
@@ -18444,7 +18445,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273870", ", Version Hash: ").concat("98c3448af096fe0b541c766a21a071a550288014")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("273873", ", Version Hash: ").concat("4c07c4e30dcac5eee570f798e5ee936553dea270")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20806,8 +20807,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "273870", "273870"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273870")), _ = 0), _
+        let _ = parseInt((e = "273873", "273873"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("273873")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36758,4 +36759,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.f1d41c63d0d0e145dbcf.js.map
+//# sourceMappingURL=76039.185c6b7a5663a2cfbb20.js.map
