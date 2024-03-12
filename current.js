@@ -7593,7 +7593,7 @@
         BILLING_TRIAL_CHOOSE_PAYMENT: "Choose a payment method",
         BILLING_TRIAL_FREE_TRIAL_TEXT: "free trial",
         BILLING_DISCOUNT_PAYMENT_MODAL_INFO: "Pay just **{discountedPrice}** a month for your first **3 months** of Nitro. Pay {regularPrice} a month after the 3-month discount end.",
-        BILLING_DISCOUNT_PAYMENT_MODAL_INFO_GENERIC: "Pay just **{discountedPrice}** a month for your first **{numMonths, plural, one {month} other {{numMonths} months}}** of Nitro. Pay {regularPrice} a month after the discount ends.",
+        BILLING_DISCOUNT_PAYMENT_MODAL_INFO_GENERIC: "Your first **{numMonths, plural, one {month} other {{numMonths} months}}** of Nitro Monthly {numMonths, plural, one {is} other {are}} **{discountedPrice}**. Pay {regularPrice} a month after the discount ends",
         BILLING_DISCOUNT_MONTHLY_PRICE: "{discountedPrice}/month for 3 months\n\n{regularPrice}/month after 3 months",
         BILLING_DISCOUNT_MONTHLY_PRICE_GENERIC: "{discountedPrice}/month for  **{numMonths, plural, one {one month} other {{numMonths} months}}**\n\n{regularPrice}/month after {numMonths, plural, one {one month} other {{numMonths} months}}",
         BILLING_YEARLY_PLAN_SAVINGS: "Save !!{percent, number}!!% with annual subscription",
@@ -18464,7 +18464,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274481", ", Version Hash: ").concat("59635180729155e7495fdea04ab2291d0a0a51a4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274488", ", Version Hash: ").concat("eca95532c56e68b1fe106246f969fe4e800e114d")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20826,8 +20826,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274481", "274481"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274481")), _ = 0), _
+        let _ = parseInt((e = "274488", "274488"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274488")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36999,4 +36999,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.5ce0021174cc9b591a7f.js.map
+//# sourceMappingURL=76039.cb3233b3a2419867b1ce.js.map
