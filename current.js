@@ -6664,6 +6664,7 @@
         PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW: "Try {planName} for {duration} on us. Then !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION: "Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.",
         PREMIUM_TIER_CARD_TRIAL_ACTIVATED: "free trial activated",
+        PREMIUM_TIER_CARD_TRIAL_REVAMP_HEADER_PILL: "Enjoy {duration} on us",
         INCLUDED: "Included",
         NOT_INCLUDED: "Not included",
         MARKETING_REFRESH_PREMIUM_FEATURES_GO_LIVE_INFO: "Up to 4K source resolution and up to 60fps screen share.",
@@ -18464,7 +18465,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274488", ", Version Hash: ").concat("eca95532c56e68b1fe106246f969fe4e800e114d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274498", ", Version Hash: ").concat("375b27e7d4b08c95c174b6f82a207904d395f9ca")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20826,8 +20827,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274488", "274488"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274488")), _ = 0), _
+        let _ = parseInt((e = "274498", "274498"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274498")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -36999,4 +37000,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.cb3233b3a2419867b1ce.js.map
+//# sourceMappingURL=76039.2af36db91c23c680a3ff.js.map
