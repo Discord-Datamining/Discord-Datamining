@@ -13505,12 +13505,16 @@
         GUILD_MEMBER_MOD_VIEW_RECENT_AUDIT_LOG: "Moderator Action Log",
         GUILD_MEMBER_MOD_VIEW_AUDIT_LOG_SOURCE_USER: "Member who initiated this action.",
         GUILD_MEMBER_MOD_VIEW_MOD_PERMSSISONS_TITLE: "Mod Permissions",
+        GUILD_MEMBER_MOD_VIEW_PERMISSIONS_SEARCH_PLACEHOLDER: "Search permission names, category, or description...",
         GUILD_MEMBER_MOD_VIEW_VIEW_ALL_PERMISSIONS: "All ({count})",
         GUILD_MEMBER_MOD_VIEW_ROLE_COUNT: "{roleCount, plural, =1 {# Role} other {# Roles}}",
         GUILD_MEMBER_MOD_VIEW_MOD_PERMSSISONS_PANEL_TITLE: "All Granted Permissions",
         GUILD_MEMBER_MOD_VIEW_MOD_NO_MOD_PERMS_FOUND: "No Mod Permissions",
         GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY: "Granted By",
-        GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_GRANTED_BY: "(Risky) Granted By",
+        GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_GRANTED_BY: "(Elevated) Granted By",
+        GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION: "Elevated",
+        GUILD_MEMBER_MOD_VIEW_MOD_PERMISSION: "Moderator",
+        GUILD_MEMBER_MOD_VIEW_ELEVATED_PERMISSION_TOOLTIP: "Elevated permissions grant higher levels of access to server settings, and should only be granted to highly trusted mods.",
         GUILD_MEMBER_MOD_VIEW_PERMISSION_GRANTED_BY_ARIA_LABEL: "Permission Granted By These Roles",
         GUILD_MEMBER_MOD_VIEW_HIGHEST_ROLE: "Highest Role",
         GUILD_MEMBER_MOD_VIEW_TITLE: "Mod View",
@@ -18465,7 +18469,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274498", ", Version Hash: ").concat("375b27e7d4b08c95c174b6f82a207904d395f9ca")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274501", ", Version Hash: ").concat("178e1c01458119176546e78dd71924c5051cf121")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20827,8 +20831,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274498", "274498"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274498")), _ = 0), _
+        let _ = parseInt((e = "274501", "274501"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274501")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37000,4 +37004,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.2af36db91c23c680a3ff.js.map
+//# sourceMappingURL=76039.311281b2b2df74d07713.js.map
