@@ -18469,7 +18469,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274799", ", Version Hash: ").concat("18fe29aefc4d139ec320b6afda37420ef741002a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274824", ", Version Hash: ").concat("4ffaf0dadb2bf7057bdedb814c1e4729da10d3f1")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20831,8 +20831,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274799", "274799"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274799")), _ = 0), _
+        let _ = parseInt((e = "274824", "274824"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274824")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -30852,7 +30852,7 @@
           return o
         }
       }), E("222007"), E("70102");
-      var t, o, n = E("773179"),
+      var t, o, n = E("229042"),
         r = E.n(n),
         a = E("102053"),
         i = E("95410"),
@@ -30996,7 +30996,7 @@
                 persistKey: E
               } = this.getClass();
               this.persist(), e._writePromises.delete(E), e._writeResolvers.delete(E), _()
-            }, this.throttledCallback = r.throttle(e => this.callback(e), this.getClass().throttleDelay, {
+            }, this.throttledCallback = r(e => this.callback(e), this.getClass().throttleDelay, {
               leading: !1
             }), "string" != typeof this.getClass().persistKey) throw Error("".concat(this.getClass().name, " initialized without a `persistKey`. Add one so we know where to save your stuff!"));
           if ("function" != typeof this.initialize) throw Error("".concat(this.getClass().name, " initialized without an `initialize` method. Add one that accepts the initial cached state."));
@@ -37004,4 +37004,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.6ef8bb42001e6eb01340.js.map
+//# sourceMappingURL=76039.1fe09afac8961e6eadf9.js.map
