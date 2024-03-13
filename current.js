@@ -3352,9 +3352,9 @@
         USER_SETTINGS_KEYBIND_SWITCH_SERVER_SETTINGS_SECTION: "Select the voice channel to join or switch to",
         USER_SETTINGS_KEYBIND_ENABLE_DISABLE: "Enable or disable keybind",
         USER_SETTINGS_KEYBIND_VOICE_CHANNEL_RESULTS: "Results",
-        SHOW_CURRENT_ACTIVITY: "Display current activity as a status message.",
+        SHOW_CURRENT_ACTIVITY: "Share your activity with others.",
         SHOW_CURRENT_ACTIVITY_DESC: "Discord will automatically update your status if you're attending a public Stage.",
-        SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "Discord will automatically update your status based on the game you're playing (if detectable), an activity you're doing that supports Rich Presence, or if you're attending a public Stage.",
+        SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "When you engage in a detectable activity (such as playing a game or listening to music), Discord can display information about those activities, including when and how you've engaged.",
         GAME_DETECTION_SERVICE: "Game Detection Service",
         USER_SETTINGS_GAMES_INSTALL_LOCATIONS: "Install locations",
         USER_SETTINGS_GAMES_INSTALL_LOCATION_ADD: "Add Install Location",
@@ -18477,7 +18477,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274974", ", Version Hash: ").concat("2954cd5d9e934d8ea33c41eaac3852bf2e70ffb4")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274979", ", Version Hash: ").concat("566845e21fb9217ac54073ec82b72c7d163bc8ea")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20844,8 +20844,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274974", "274974"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274974")), _ = 0), _
+        let _ = parseInt((e = "274979", "274979"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274979")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37103,4 +37103,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.4ba3b52ea62826c3beab.js.map
+//# sourceMappingURL=76039.7c7d803ab9f0df9a1213.js.map
