@@ -17264,6 +17264,10 @@
         PACKAGES_ENTRYPOINT_TITLE: "Your mail has arrived!",
         PACKAGES_ENTRYPOINT_DESCRIPTION: "See what you got...",
         PACKAGES_ENTRYPOINT_CLOSE: "Didn't ask",
+        PACKAGES_CLAIM_HEADER: "You got mail!",
+        PACKAGES_CLAIM_BODY: "Your package has safely arrived at your doorstep. Please thank your mail delivery person when you get a chance.",
+        PACKAGES_CLAIM_CONTINUE: "Give Thanks",
+        PACKAGES_CLAIM_CANCEL: "Cancel",
         PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_YES: "Yes",
         PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_NO: "No",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_1: "Is this a joke?",
@@ -18471,7 +18475,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274911", ", Version Hash: ").concat("c1351fbd445fc777a0b3b8977cb6be9d314a012d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274914", ", Version Hash: ").concat("a5607d77770f6083c2babd49bd84d2d9d1941503")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20833,8 +20837,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274911", "274911"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274911")), _ = 0), _
+        let _ = parseInt((e = "274914", "274914"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274914")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21950,7 +21954,7 @@
         p = E("36773"),
         g = E("374036"),
         y = E("384997"),
-        B = E("881889"),
+        B = E("528703"),
         f = E("234819"),
         H = E("182033"),
         v = E("928741"),
@@ -25379,7 +25383,7 @@
         }
       }
     },
-    881889: function(e, _, E) {
+    528703: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
         default: function() {
@@ -25397,12 +25401,12 @@
         s = E("79112"),
         T = E("10641"),
         S = E("447845"),
-        N = E("809094"),
-        O = E("108250"),
+        N = E("724001"),
+        O = E("638131"),
         A = E("49111"),
         R = E("994428"),
         l = E("782340"),
-        u = E("543178");
+        u = E("61701");
 
       function L() {
         let {
@@ -37006,4 +37010,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.a45066a401e91813030b.js.map
+//# sourceMappingURL=76039.71bf0a7041cc21c3bba6.js.map
