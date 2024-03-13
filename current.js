@@ -6644,7 +6644,7 @@
         PREMIUM_DISCOUNT_CTA: "Save !!{percent, number}!!% on Nitro",
         PREMIUM_DISCOUNT_CTA_WITHOUT_PERCENT: "Save on Nitro",
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION: "Pay just **{discountedPrice}** a month for **3 months!** Then pay {regularPrice}.",
-        PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION_GENERIC: "Pay just **{discountedPrice}** for **{numMonths, plural, one {a month!} other {{numMonths} months!}}** Then pay {regularPrice}.",
+        PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION_GENERIC: "Pay just **{discountedPrice}** for **{numMonths, plural, one {1 month!} other {{numMonths} months!}}** Then pay {regularPrice}.",
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION: "Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.",
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC: "Your !!{percent, number}!!% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After that you'll be charged {regularPrice}.",
         PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {regularPrice}.",
@@ -7594,7 +7594,7 @@
         BILLING_TRIAL_CHOOSE_PAYMENT: "Choose a payment method",
         BILLING_TRIAL_FREE_TRIAL_TEXT: "free trial",
         BILLING_DISCOUNT_PAYMENT_MODAL_INFO: "Pay just **{discountedPrice}** a month for your first **3 months** of Nitro. Pay {regularPrice} a month after the 3-month discount end.",
-        BILLING_DISCOUNT_PAYMENT_MODAL_INFO_GENERIC: "Your first **{numMonths, plural, one {month} other {{numMonths} months}}** of Nitro Monthly {numMonths, plural, one {is} other {are}} **{discountedPrice}**. Pay {regularPrice} a month after the discount ends",
+        BILLING_DISCOUNT_PAYMENT_MODAL_INFO_GENERIC: "Your first {numMonths, plural, one {month} other {{numMonths} months}} of Nitro Monthly {numMonths, plural, one {is} other {are}} **{discountedPrice}**. Pay {regularPrice} a month after the discount ends",
         BILLING_DISCOUNT_MONTHLY_PRICE: "{discountedPrice}/month for 3 months\n\n{regularPrice}/month after 3 months",
         BILLING_DISCOUNT_MONTHLY_PRICE_GENERIC: "{discountedPrice}/month for  **{numMonths, plural, one {one month} other {{numMonths} months}}**\n\n{regularPrice}/month after {numMonths, plural, one {one month} other {{numMonths} months}}",
         BILLING_YEARLY_PLAN_SAVINGS: "Save !!{percent, number}!!% with annual subscription",
@@ -18471,7 +18471,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274883", ", Version Hash: ").concat("2f2d72b9622fd3fe4464c06f2cf64db6a93c6bd0")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("274908", ", Version Hash: ").concat("d0f3dfe483ba2188e5beca8f78fa79f09497d791")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20833,8 +20833,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "274883", "274883"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274883")), _ = 0), _
+        let _ = parseInt((e = "274908", "274908"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("274908")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37006,4 +37006,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.44490b285fd14d1def68.js.map
+//# sourceMappingURL=76039.dec87ee06758bb4a31ec.js.map
