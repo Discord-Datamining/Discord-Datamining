@@ -16951,7 +16951,8 @@
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_FOR_DAYS: "for {days}d",
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_FOR_HOURS: "for {hours}h",
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE: "{minutes, plural, =-1 {} other {{minutes}:}}{seconds, plural, =-1 {} other {{seconds}}}",
-        MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time"
+        MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
+        CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
       })
     },
     444051: function(e, _, E) {
@@ -17283,8 +17284,7 @@
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_5: "No Text to Speech?",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6: "How about you give thanks to your mail delivery person",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6_ANSWER_1: "Okay",
-        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)",
-        CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)"
       })
     },
     657743: function(e, _, E) {
@@ -18477,7 +18477,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275187", ", Version Hash: ").concat("42461c02b50ea095ed30777eaa60e9aefd78e868")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275203", ", Version Hash: ").concat("7a996382ab220fd513f6a650217f8a98711b6ba6")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20844,8 +20844,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "275187", "275187"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275187")), _ = 0), _
+        let _ = parseInt((e = "275203", "275203"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275203")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37103,4 +37103,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.c2a769a1eb9813797294.js.map
+//# sourceMappingURL=76039.471e902e38d78cebc86f.js.map
