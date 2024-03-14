@@ -9697,6 +9697,8 @@
         MOBILE_CUSTOM_GIFT_DURATION_LABEL: "Gift duration",
         MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH: "Gift {count, plural, one {# month} other {# months}} of {nitroTierName}",
         MOBILE_CUSTOM_GIFT_DURATION_SELECTION_YEAR: "Gift {count, plural, one {# year} other {# years}} of {nitroTierName}",
+        MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH_WITH_USERNAME: "Gift {username} {count, plural, one {# month} other {# months}} of {nitroTierName}",
+        MOBILE_CUSTOM_GIFT_DURATION_SELECTION_YEAR_WITH_USERNAME: "Gift {username} {count, plural, one {# year} other {# years}} of {nitroTierName}",
         MOBILE_CUSTOM_GIFT_PAID_SERVICE_TERMS_AGREEMENT: "By tapping “Buy gift”, you agree to the [Paid Services Terms.]({paidURL}) This will be a one time charge for the amount of time chosen.",
         MOBILE_CUSTOM_GIFT_SUCCESS_HEADER: "Your gift is on its way!",
         MOBILE_CUSTOM_GIFT_SUCCESS_BODY: "Delivered with ninja-like efficiency (and zero paper waste).",
@@ -18484,7 +18486,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275289", ", Version Hash: ").concat("3064d8675251ea174f680f677975f30452831c7d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275290", ", Version Hash: ").concat("a3de7dfd58014dc820fd4d6a8dd216a72a6a25d9")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20851,8 +20853,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "275289", "275289"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275289")), _ = 0), _
+        let _ = parseInt((e = "275290", "275290"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275290")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37115,4 +37117,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.305969f83cd96490eda2.js.map
+//# sourceMappingURL=76039.455a99a882c700abbb80.js.map
