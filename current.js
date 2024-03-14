@@ -17271,6 +17271,13 @@
         PACKAGES_CLAIM_BODY: "Your package has safely arrived at your doorstep. Please thank your mail delivery person when you get a chance.",
         PACKAGES_CLAIM_CONTINUE: "Give Thanks",
         PACKAGES_CLAIM_CANCEL: "Cancel",
+        PACKAGES_HELP_1: "Your mail delivery person is here to help!",
+        PACKAGES_HELP_2: "What do you need help with?",
+        PACKAGES_HELP_3: "Oh sure, your mail delivery person is here to help!",
+        PACKAGES_HELP_4: "What do you need help with again?",
+        PACKAGES_HELP_5: "Oh that's right, it's {percent, number}%.",
+        PACKAGES_HELP_6: "Now please go thank your mail delivery person.",
+        PACKAGES_HELP_7: "They'll appreciate it.",
         PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_YES: "Yes",
         PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_NO: "No",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_1: "Is this a joke?",
@@ -18477,7 +18484,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275237", ", Version Hash: ").concat("35e730aee071825e55a52410c69022d6df505120")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275252", ", Version Hash: ").concat("ede64a98d4c2e8c60f14039d346fd1ee9fbd2d23")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20844,8 +20851,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "275237", "275237"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275237")), _ = 0), _
+        let _ = parseInt((e = "275252", "275252"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275252")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37108,4 +37115,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.3d62af3d1decd6f9daa8.js.map
+//# sourceMappingURL=76039.efa27219204789c81efe.js.map
