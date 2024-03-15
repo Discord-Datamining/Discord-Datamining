@@ -10311,8 +10311,12 @@
         APPLICATION_COMMAND_FILE_ATTACHMENT: "Please attach a file",
         APPLICATION_COMMAND_MENTION_CONFIRM_HEADER: "Clear message?",
         APPLICATION_COMMAND_MENTION_CONFIRM_BODY: "Looks like you've already written something. Do you want to clear it and use a command?",
-        APPLICATION_COMMAND_USER_INSTALL_EDUCATION: "You can use this app anywhere on Discord. Responses are visible only to you in servers with over {betaUserLimit} people. [Learn more]({learnMoreUrl}).",
+        APPLICATION_COMMAND_USER_INSTALL_EDUCATION: "You can use this app anywhere on Discord. Responses are visible only to you in servers with over {betaUserLimit} people.",
+        APPLICATION_COMMAND_USER_INSTALL_EDUCATION_MOBILE: "App will respond to you privately",
         APPLICATION_COMMAND_USER_INSTALL_BETA_EPHEMERAL: "Only you can see this message during beta.\n\n[Why am I seeing this?]({learnMoreUrl}) • [Dismiss](handleDelete)",
+        APPLICATION_COMMAND_USER_INSTALL_BETA_EPHEMERAL_MOBILE: "Only you can see this message during beta • [Dismiss](handleDelete)",
+        APPLICATION_COMMAND_USER_INSTALL_VIEW_HELP_ARTICLE: "View Help Article",
+        APPLICATION_COMMAND_USER_INSTALL_LEARN_MORE: "[Learn More]({learnMoreUrl})",
         MJ_CHATBAR_BODY: "Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.",
         APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
         INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
@@ -18499,7 +18503,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275753", ", Version Hash: ").concat("3a52aeabcc1e18a73d356d3889ab9d4c870c8466")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275757", ", Version Hash: ").concat("811f11f340e21f0daa4bc96be45cfde1811c10ca")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20866,8 +20870,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "275753", "275753"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275753")), _ = 0), _
+        let _ = parseInt((e = "275757", "275757"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275757")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37118,4 +37122,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.789d139a41907f9d51ec.js.map
+//# sourceMappingURL=76039.43c63ec76a245f93d45e.js.map
