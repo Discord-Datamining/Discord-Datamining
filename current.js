@@ -4941,9 +4941,9 @@
         SETTINGS_DATA_PRIVACY_CONTROLS: "How We Use Your Data",
         DATA_PRIVACY_CONTROLS: "How we use your data",
         DATA_PRIVACY_CONTROLS_USAGE_STATISTICS_TITLE: "Use data to improve Discord",
-        DATA_PRIVACY_CONTROLS_USAGE_STATISTICS_NOTE: "This setting allows us to use and process information about how you navigate and use Discord for analytical purposes. For example, it allows us to include you in new feature experiments we test. [Learn more about it here.]({helpdeskArticle})",
-        DATA_PRIVACY_CONTROLS_PERSONALIZATION_TITLE: "Use data to customize my Discord experience",
-        DATA_PRIVACY_CONTROLS_PERSONALIZATION_NOTE_LEARN_MORE: "This setting allows us to use information, such as who you talk to and what games you play, to customize Discord for you. [Learn more about it here.]({helpdeskArticle})",
+        DATA_PRIVACY_CONTROLS_USAGE_STATISTICS_NOTE: "This setting allows us to use and process your information to understand and improve our services. [Learn more about it here.]({helpdeskArticle})",
+        DATA_PRIVACY_CONTROLS_PERSONALIZATION_TITLE: "Use data to personalize my Discord experience",
+        DATA_PRIVACY_CONTROLS_PERSONALIZATION_NOTE_LEARN_MORE: "This setting allows us to use information, such as who you talk to and what games you play, to personalize Discord for you. [Learn more about it here.]({helpdeskArticle})",
         DATA_PRIVACY_CONTROLS_BASIC_SERVICE_TITLE: "Use data to make Discord work",
         DATA_PRIVACY_CONTROLS_PERSONAL_DATA_TITLE: "Request all of my Data",
         DATA_PRIVACY_CONTROLS_BASIC_SERVICE_NOTE: "We need to store and process some data in order to provide you the basic Discord service, such as your messages, what servers you’re in and your Direct Messages. By using Discord, you allow us to provide this basic service. You can stop this by [Disabling or Deleting your account](onClick).",
@@ -4965,12 +4965,12 @@
         USER_DM_SETTINGS_QUESTION: "Do you want to also apply this change to all your existing servers?",
         NEW_GUILDS_DM_ALLOWED: "Allow direct messages from server members",
         USER_DROPS_SETTINGS: "Promo Settings",
-        USER_DROPS_SETTINGS_DROPS_OPTED_OUT: "In-game rewards (aka Drops)",
-        USER_DROPS_SETTINGS_DROPS_OPTED_OUT_NOTE: "Use the information about what games you play to tell you about Drops opportunities and to complete Drops Quests.",
+        USER_DROPS_SETTINGS_DROPS_OPTED_OUT: "In-game rewards (aka Quests)",
+        USER_DROPS_SETTINGS_DROPS_OPTED_OUT_FORMATTED: "Use information about how you use Discord such as what games you play to tell you about Quests or other in-game reward opportunities. [Learn more about it here.]({helpdeskArticle})",
         USER_DM_SETTINGS_TITLE: "Server Privacy",
         USER_DM_SETTINGS_DESCRIPTION: "Do you want to also apply this change to all your existing servers? You can also disable direct messages on individual servers by visiting that server's settings page.",
-        DROPS_REQUEST_FEEDBACK_OPT_OUT: "Drops is currently in beta - we'd like to learn more about why you turned it off. [Feedback Survey]({feedbackURL})",
-        DROPS_REQUEST_FEEDBACK_SUCCESS: "Drops is currently in beta - thanks for participating, now we'd like to hear from you! [Feedback Survey]({feedbackURL})",
+        DROPS_REQUEST_FEEDBACK_OPT_OUT: "Quests is currently in beta - we'd like to learn more about why you turned it off. [Feedback Survey]({feedbackURL})",
+        DROPS_REQUEST_FEEDBACK_SUCCESS: "Quests is currently in beta - thanks for participating, now we'd like to hear from you! [Feedback Survey]({feedbackURL})",
         DROPS_READ_BLOG_TO_ENABLE: 'You must be looking for Discord Quests! If you\'re seeing this message, we need to tweak some settings. To enable it, you\'ll need to go to Settings -> Privacy & Safety and enable both "Use data to customize my Discord experience" and "In-game rewards (aka Quests)" settings.\n\n[Read more in our FAQs]({blogURL})',
         DROPS_ELIGIBILITY_ENROLLMENT_PRIMARY_CTA: "Enroll Now",
         DROPS_AVAILABLE: "Quests Available",
@@ -9323,11 +9323,11 @@
         NUF_ASK_FRIEND_SERVER_INVITE: "Ask your friends to invite you to their servers, which are places for hanging out and talking.",
         NUF_CREATE_GUILD_CTA_DESCRIPTION: "You can also [start your own server](onClick)",
         DATA_PRIVACY_RATE_LIMIT_TITLE: "Sorry about that",
-        USAGE_STATISTICS_DISABLE_MODAL_TITLE: "Turn off some usage statistics?",
-        USAGE_STATISTICS_DISABLE_MODAL_BODY: "If you turn this off, we’ll stop processing new data for analytics. You will lose access to new experimental features and usage-based improvements to features like voice chat. Your old data will no longer be directly tied to you. If you'd like to further assert your right to object to our processing of your data, email privacy@discord.com.",
+        USAGE_STATISTICS_DISABLE_MODAL_TITLE: "Turn off use data to improve Discord?",
+        USAGE_STATISTICS_DISABLE_MODAL_BODY: "If you turn this off, we’ll stop processing new data for analytics. You will lose access to new experimental features and usage-based improvements to features like voice chat. If you'd like to further assert your right to object to our processing of your data, email privacy@discord.com.",
         USAGE_STATISTICS_DISABLE_MODAL_CONFIRM: "Yes, I'm sure",
         USAGE_STATISTICS_DISABLE_MODAL_CANCEL: "No, take me back!",
-        PERSONALIZATION_DISABLE_MODAL_TITLE: "Turn off customization?",
+        PERSONALIZATION_DISABLE_MODAL_TITLE: "Turn off personalization?",
         PERSONALIZATION_DISABLE_MODAL_BODY: "By turning this off you lose access to things like personalized recommendations and suggestions. You won’t be able to recover them in the future!",
         PERSONALIZATION_DISABLE_MODAL_CONFIRM: "Yes, I'm sure",
         PERSONALIZATION_DISABLE_MODAL_CANCEL: "No, take me back!",
@@ -18496,7 +18496,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275684", ", Version Hash: ").concat("4224bef8dc13be96cfe5c7a95c5fed2368694ce0")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275686", ", Version Hash: ").concat("7e0c975dfebccc7b83fd4a22da39424d6b727bca")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20863,8 +20863,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "275684", "275684"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275684")), _ = 0), _
+        let _ = parseInt((e = "275686", "275686"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275686")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37115,4 +37115,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.247888d50c380394c021.js.map
+//# sourceMappingURL=76039.6a7d52f1a6e615a6fe01.js.map
