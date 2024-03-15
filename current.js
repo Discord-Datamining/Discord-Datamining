@@ -9710,6 +9710,7 @@
         MOBILE_CUSTOM_GIFT_PLAN_SELECTION_CARD_HEADER: "Your recipient will receive:",
         MOBILE_CUSTOM_GIFT_TITLE_WITH_PLAN: "Gift a {nitroTierName} membership",
         MOBILE_CUSTOM_GIFT_DURATION_LABEL: "Gift duration",
+        MOBILE_CUSTOM_GIFT_DURATION_AVATAR_LABEL: "Gift {username}:",
         MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH: "Gift {count, plural, one {# month} other {# months}} of {nitroTierName}",
         MOBILE_CUSTOM_GIFT_DURATION_SELECTION_YEAR: "Gift {count, plural, one {# year} other {# years}} of {nitroTierName}",
         MOBILE_CUSTOM_GIFT_DURATION_SELECTION_MONTH_WITH_USERNAME: "Gift {username} {count, plural, one {# month} other {# months}} of {nitroTierName}",
@@ -18498,7 +18499,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275741", ", Version Hash: ").concat("b5fc89cf1b1308f2f8a3365926c995bf611c905d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275753", ", Version Hash: ").concat("3a52aeabcc1e18a73d356d3889ab9d4c870c8466")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20865,8 +20866,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "275741", "275741"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275741")), _ = 0), _
+        let _ = parseInt((e = "275753", "275753"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275753")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37117,4 +37118,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.e06e07e28a417159d4e3.js.map
+//# sourceMappingURL=76039.789d139a41907f9d51ec.js.map
