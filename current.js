@@ -3564,6 +3564,7 @@
         SUB_ENABLED_SERVERS: "Sub Enabled Servers",
         AUTHORIZATION: "Authorization",
         AUTHORIZED_APPS: "Authorized Apps",
+        MANAGE_AUTHORIZED_APP: "Manage Authorized App",
         DEAUTHORIZE: "Deauthorize",
         DEAUTHORIZE_APP: "Deauthorize Application",
         ABOUT_THIS_APP: "About this App",
@@ -4586,6 +4587,11 @@
         OAUTH2_ADD_TO_GUILD: "Add to server:",
         OAUTH2_ADD_TO_GUILD_PLACEHOLDER: "Select a server",
         OAUTH2_ADD_TO_GUILD_DESCRIPTION: "This requires you to have **Manage Server** permission in the server.",
+        OAUTH2_INTEGRATION_SELECT_USER: "Try it Now",
+        OAUTH2_INTEGRATION_SELECT_USER_SUBTITLE: "Use this app everywhere!",
+        OAUTH2_INTEGRATION_SELECT_GUILD: "Add to Server",
+        OAUTH2_INTEGRATION_SELECT_GUILD_SUBTITLE: "Customize your server by adding this app",
+        OAUTH2_INTEGRATION_SELECT_DETAILS: "This app can be used anywhere on Discord. During beta, responses are visible only to you in servers with over {betaUserLimit} people. [Learn more]({learnMoreUrl}).",
         OAUTH2_REQUEST_MISSING_PARAM: "Invalid request. Missing param **{param}**",
         OAUTH2_REQUEST_INVALID_SCOPE: "Invalid scope **{scope}**",
         OAUTH2_CONFIRM_BOT_PERMISSIONS: "Confirm that you want to grant **!!{applicationName}!!** the following permissions on **!!{guildName}!!**:",
@@ -4619,6 +4625,7 @@
         SCOPE_RPC_ACTIVITIES_WRITE: "Set your current activity",
         SCOPE_VOICE: "Connect to voice on your behalf and see others who are in any voice channel or call",
         SCOPE_DM_CHANNELS_READ: "See information about the DMs and GDMs you are in",
+        SCOPE_DM_YOU: "Send you direct messages",
         SCOPE_ROLE_CONNECTIONS_WRITE: "Update your connection and metadata for this application",
         SCOPE_WEBHOOK_INCOMING: "Adds a webhook to a channel",
         SCOPE_WEBHOOK_INCOMING_DESCRIPTION: "This allows the app to send messages to a channel on Discord.",
@@ -10303,6 +10310,8 @@
         APPLICATION_COMMAND_FILE_ATTACHMENT: "Please attach a file",
         APPLICATION_COMMAND_MENTION_CONFIRM_HEADER: "Clear message?",
         APPLICATION_COMMAND_MENTION_CONFIRM_BODY: "Looks like you've already written something. Do you want to clear it and use a command?",
+        APPLICATION_COMMAND_USER_INSTALL_EDUCATION: "You can use this app anywhere on Discord. Responses are visible only to you in servers with over {betaUserLimit} people. [Learn more]({learnMoreUrl}).",
+        APPLICATION_COMMAND_USER_INSTALL_BETA_EPHEMERAL: "Only you can see this message during beta.\n\n[Why am I seeing this?]({learnMoreUrl}) • [Dismiss](handleDelete)",
         MJ_CHATBAR_BODY: "Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.",
         APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
         INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
@@ -17232,13 +17241,6 @@
         FORM_LABEL_OVERLAY_SHOW_MUTE_DEAFEN_KEYBINDS: "Show mute and deafen keybinds",
         KEYBIND_NOTIFICATION_DESCRIPTION: "Now you can see your keybind for toggling mute in the overlay.",
         PROBLEMATIC_GPU_DRIVER_DETECTED: "There is currently a known issue with your GPU driver version which may affect the Go Live quality. If you experience this issue, learn more about how to fix it [here]({helpCenterLink}).",
-        MANAGE_AUTHORIZED_APP: "Manage Authorized App",
-        ADD_TO_USER: "Add to my apps",
-        ADD_TO_USER_SUBTITLE: "Add app to your account to use anywhere",
-        ADD_TO_GUILD: "Add to server",
-        ADD_TO_GUILD_SUBTITLE: "Customize your server by adding this app",
-        USER_APPS_LEARN_MORE: "To learn more about apps on Discord, visit our [Help Center]({helpUrl}).",
-        SCOPE_DM_SELF: "Send you direct messages",
         MFA_REQUIRED_FOR_STAFF: "Multi-factor authentication is required for staff.",
         INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_HEADER: "Contact Crisis Text Line",
         INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_DESCRIPTION: "Get 24-hour, live support from a counselor. To start, text DISCORD to 741-741.",
@@ -18496,7 +18498,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275698", ", Version Hash: ").concat("8e188a098f11b7d48ab9e08392f74bf4816c0e1b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("275705", ", Version Hash: ").concat("412c852a9ce5b974675e1b05f426f6f94d82fe48")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20863,8 +20865,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "275698", "275698"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275698")), _ = 0), _
+        let _ = parseInt((e = "275705", "275705"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("275705")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37115,4 +37117,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.278da78ab8cd2c168c0c.js.map
+//# sourceMappingURL=76039.892dc29a18be09f7c3d9.js.map
