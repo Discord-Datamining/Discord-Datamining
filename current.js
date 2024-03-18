@@ -12321,6 +12321,7 @@
         PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE: "If you cancel, **you will lose these perks:**",
         PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK: "Nevermind, keep Nitro",
         PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK_CTA: "Never mind, keep Nitro",
+        PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE_TENURE_REWARD: "If you cancel, you will lose your reward progress and all of these rewards:",
         PREMIUM_PAUSE_INSTEAD: "Pause Instead",
         PREMIUM_PAUSE_SELECT_TITLE: "Pause or cancel subscription",
         PREMIUM_PAUSE_SELECT_SUBTITLE: "If you want to take a break from paid subscriptions, you have the option to pause it for a few months",
@@ -18505,7 +18506,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276219", ", Version Hash: ").concat("4bdc609de226f559e3ea4d4363ae2df68ede6db8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276234", ", Version Hash: ").concat("6ffb44950f903f7c266dffdf0f32a9cf3aeb2397")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20872,8 +20873,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276219", "276219"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276219")), _ = 0), _
+        let _ = parseInt((e = "276234", "276234"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276234")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37155,4 +37156,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.266c7cfbd47f53399166.js.map
+//# sourceMappingURL=76039.3b5cd6f7cf2d3feef13c.js.map
