@@ -16979,6 +16979,8 @@
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_FOR_HOURS: "for {hours}h",
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE: "{minutes, plural, =-1 {} other {{minutes}:}}{seconds, plural, =-1 {} other {{seconds}}}",
         MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
+        MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
+        MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**",
         CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
       })
     },
@@ -18505,7 +18507,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276299", ", Version Hash: ").concat("b45b1f3f5507c001a5cb8ddce5f642c8d5b79d4b")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276300", ", Version Hash: ").concat("a027da56a89d5cc97d0ac26e303ffb8faf9018be")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20872,8 +20874,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276299", "276299"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276299")), _ = 0), _
+        let _ = parseInt((e = "276300", "276300"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276300")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37155,4 +37157,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.58ec6345df06dd1967a9.js.map
+//# sourceMappingURL=76039.e3da3583f49fcc20592f.js.map
