@@ -18505,7 +18505,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276026", ", Version Hash: ").concat("416792115fba36046cf1d082fe784f5e37b3a426")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276044", ", Version Hash: ").concat("44fcdbb649ab9bb1cc94c468f86e0172f522377c")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20872,8 +20872,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276026", "276026"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276026")), _ = 0), _
+        let _ = parseInt((e = "276044", "276044"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276044")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -30729,7 +30729,7 @@
         default: function() {
           return i
         }
-      }), E("860677"), E("70102"), E("222007"), E("704744");
+      }), E("860677"), E("222007"), E("70102"), E("704744");
       var t = E("811022"),
         o = E("377678");
       let n = void 0,
@@ -30764,10 +30764,12 @@
           !this.isBatchEmitting && !this.isPaused && a(() => {
             try {
               this.isBatchEmitting = !0, this.changeSentinel++;
-              let e = 0;
+              let e = 0,
+                _ = new Set,
+                E = new Set;
               for (; this.changedStores.size > 0;) {
                 if (++e > 100) throw r.error("LastFewActions", o.serialize()), Error("change emit loop detected, aborting");
-                this.emitNonReactOnce()
+                this.emitNonReactOnce(_, E)
               }
               for (; this.reactChangedStores.size > 0;) {
                 if (++e > 100) throw r.error("LastFewActions", o.serialize()), Error("react change emit loop detected, aborting");
@@ -30785,16 +30787,27 @@
           return this.isPaused
         }
         markChanged(e) {
-          e._changeCallbacks.hasAny() && this.changedStores.add(e), e._reactChangeCallbacks.hasAny() && this.reactChangedStores.add(e), !this.isBatchEmitting && !this.isDispatching && !this.isPaused && this.emit()
+          (e._changeCallbacks.hasAny() || e._syncWiths.length > 0) && this.changedStores.add(e), e._reactChangeCallbacks.hasAny() && this.reactChangedStores.add(e), !this.isBatchEmitting && !this.isDispatching && !this.isPaused && this.emit()
         }
-        emitNonReactOnce() {
-          let e = Date.now(),
-            _ = this.changedStores;
-          this.changedStores = new Set, _.forEach(e => {
-            e._changeCallbacks.invokeAll(), this.changedStores.delete(e)
+        emitNonReactOnce(e, _) {
+          let E = Date.now(),
+            t = this.changedStores;
+          this.changedStores = new Set, t.forEach(e => {
+            _.add(e), e._changeCallbacks.invokeAll(), this.changedStores.delete(e)
+          }), t.forEach(E => {
+            E._syncWiths.forEach(E => {
+              let {
+                func: t,
+                store: o
+              } = E;
+              if (e.has(t)) return;
+              e.add(t);
+              let n = t();
+              !1 !== n && !_.has(o) && (_.add(o), this.markChanged(o))
+            })
           });
-          let E = Date.now();
-          E - e > 100 && r.verbose("Slow batch emitChanges took ".concat(E - e, "ms recentActions:"), o.serialize())
+          let n = Date.now();
+          n - E > 100 && r.verbose("Slow batch emitChanges took ".concat(n - E, "ms recentActions:"), o.serialize())
         }
         emitReactOnce() {
           let e = Date.now(),
@@ -31171,7 +31184,7 @@
         }
         registerActionHandlers(e, _) {
           this._dispatcher.register(this.getName(), e, e => {
-            (this._changeCallbacks.hasAny() || this._reactChangeCallbacks.hasAny()) && (s.default.markChanged(this), s.default.getIsPaused() && null != this._mustEmitChanges && this._mustEmitChanges(e) && s.default.resume(!1))
+            (this._changeCallbacks.hasAny() || this._reactChangeCallbacks.hasAny() || this._syncWiths.length > 0) && (s.default.markChanged(this), s.default.getIsPaused() && null != this._mustEmitChanges && this._mustEmitChanges(e) && s.default.resume(!1))
           }, _, this._dispatchToken)
         }
         getName() {
@@ -31188,24 +31201,29 @@
         }
         initialize() {}
         syncWith(e, _, E) {
-          var t, o;
-          let n;
-          this.waitFor(...e);
-          let r = 0,
-            a = () => {
-              r !== s.default.getChangeSentinel() && (r = s.default.getChangeSentinel(), !1 !== _() && this.emitChange())
-            };
-          t = null != E ? E : 0, o = a, n = null, a = 0 === t ? function() {
-            clearImmediate(n), n = setImmediate(o)
-          } : function() {
-            null == n && (n = setTimeout(() => {
-              try {
-                o()
-              } finally {
-                n = null
-              }
-            }, t))
-          }, e.forEach(e => e.addChangeListener(a))
+          if (this.waitFor(...e), null != E) {
+            var t, o;
+            let n, r = 0,
+              a = () => {
+                r !== s.default.getChangeSentinel() && (r = s.default.getChangeSentinel(), !1 !== _() && this.emitChange())
+              };
+            t = null != E ? E : 0, o = a, n = null, a = 0 === t ? function() {
+              clearImmediate(n), n = setImmediate(o)
+            } : function() {
+              null == n && (n = setTimeout(() => {
+                try {
+                  o()
+                } finally {
+                  n = null
+                }
+              }, t))
+            }, e.forEach(e => e.addChangeListener(a))
+          } else e.forEach(e => {
+            e._syncWiths.push({
+              func: _,
+              store: this
+            })
+          })
         }
         waitFor() {
           for (var e = arguments.length, _ = Array(e), E = 0; E < e; E++) _[E] = arguments[E];
@@ -31223,7 +31241,7 @@
           this._mustEmitChanges = e
         }
         constructor(e, _, E) {
-          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
+          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._syncWiths = [], this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
         }
       }).initialized = N, n = o
     },
@@ -37124,4 +37142,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.5890070e58f25f127f87.js.map
+//# sourceMappingURL=76039.8338095d35c86628df44.js.map
