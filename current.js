@@ -18528,7 +18528,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276376", ", Version Hash: ").concat("47e678dc6024f794a7e4a16a6acd6c22203c9c70")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276381", ", Version Hash: ").concat("7f802b8ac931262b9d48d1a57fe23b6837ec5524")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20895,8 +20895,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276376", "276376"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276376")), _ = 0), _
+        let _ = parseInt((e = "276381", "276381"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276381")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26745,8 +26745,7 @@
       class y extends t.default {
         maybeFetchCurrentQuests() {
           (0, R.getIsEligibleForQuests)({
-            location: L.QuestsExperimentLocations.QUESTS_MANAGER,
-            autoTrackExposure: !1
+            location: L.QuestsExperimentLocations.QUESTS_MANAGER
           }) && !l.default.isFetchingCurrentQuests && (0, O.fetchCurrentQuests)()
         }
         constructor(...e) {
@@ -37178,4 +37177,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.7bf96a91c4671d52c102.js.map
+//# sourceMappingURL=76039.50bd9d5c7d15947ed7b7.js.map
