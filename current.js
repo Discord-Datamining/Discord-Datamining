@@ -15295,6 +15295,11 @@
         COLLECTIBLES_SHOP_GIFT_MODAL_SELECT_HEADER: "Send a gift",
         COLLECTIBLES_SHOP_GIFT_MODAL_REVIEW_HEADER: "Review your gift",
         COLLECTIBLES_GIFT_CODE_MODAL_UPSELL: "You can also send gifts to your friends from the Shop! $[Check it out](checkItOut).",
+        COLLECTIBLES_MOBILE_SHOP_IAP_TITLE: "Shop anywhere, anytime",
+        COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_1: "Buy Avatar Decorations and Profile Effects to personalize your profile.",
+        COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_2: "Popular styles include Anime, Fantasy, Cyberpunk, and more.",
+        COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_3: "Nitro members get discounts on everything in the Shop.",
+        COLLECTIBLES_MOBILE_SHOP_IAP_CONFIRMATION: "Visit Shop",
         DIRECTORY_CATEGORY_TOWN_HALL_1: "Staff Picks",
         DIRECTORY_CATEGORY_TOWN_HALL_2: "Gaming",
         DIRECTORY_CATEGORY_TOWN_HALL_3: "Indie Spotlight",
@@ -18523,7 +18528,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276367", ", Version Hash: ").concat("f3d4f22d7317833ae967ed1321cfda9c166734d2")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276376", ", Version Hash: ").concat("47e678dc6024f794a7e4a16a6acd6c22203c9c70")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20890,8 +20895,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276367", "276367"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276367")), _ = 0), _
+        let _ = parseInt((e = "276376", "276376"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276376")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37173,4 +37178,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.dec225391e209b9fe16b.js.map
+//# sourceMappingURL=76039.7bf96a91c4671d52c102.js.map
