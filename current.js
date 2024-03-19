@@ -16981,7 +16981,23 @@
         MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
         MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
         MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**",
-        CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
+        CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
+        RECENT_GAMES: "Recent Games",
+        USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
+        USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
+        USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO: "{count} {count, plural, =1 {hour} other {hours}} ago",
+        USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO: "{count} {count, plural, =1 {minute} other {minutes}} ago",
+        USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO: "{count} {count, plural, =1 {second} other {seconds}} ago",
+        USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO_SHORT: "{count}w ago",
+        USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO_SHORT: "{count}d ago",
+        USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO_SHORT: "{count}h ago",
+        USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO_SHORT: "{count}m ago",
+        USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO_SHORT: "{count}s ago",
+        MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
+        MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
+        USER_RECENT_GAMES_PLAYED_LAST_WEEK_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
+        USER_RECENT_GAMES_PLAYED_LAST_WEEK_MINUTES: "{count} {count, plural, =1 {min} other {mins}} this week",
+        USER_RECENT_GAMES_PLAYED_LAST_WEEK_SECONDS: "{count} {count, plural, =1 {sec} other {secs}} this week"
       })
     },
     444051: function(e, _, E) {
@@ -18507,7 +18523,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276363", ", Version Hash: ").concat("f6bc0deafd60e65f5d6c9cd693755e06fceec0bf")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276367", ", Version Hash: ").concat("f3d4f22d7317833ae967ed1321cfda9c166734d2")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20874,8 +20890,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276363", "276363"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276363")), _ = 0), _
+        let _ = parseInt((e = "276367", "276367"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276367")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37157,4 +37173,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.9ffc6e829de8b111bbef.js.map
+//# sourceMappingURL=76039.dec225391e209b9fe16b.js.map
