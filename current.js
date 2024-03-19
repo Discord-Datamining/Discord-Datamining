@@ -16793,6 +16793,7 @@
         POLL_VOTES_TOOLTIP_3: "!!{a}!!, !!{b}!!, and !!{c}!!",
         POLL_VOTES_TOOLTIP_3_N: "!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {1 other} other {{n} others}}",
         POLL_VOTES_TOOLTIP_N: "{n, plural, one {1 person} other {{n} people}}",
+        POLLS_EXPERIMENT_INFO_TEXT: "Polls are in Beta and can only be created in certain servers.",
         CREATE_POLL: "Create Poll",
         CREATE_POLL_HEADING: "Create a Poll",
         CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
@@ -18534,7 +18535,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276698", ", Version Hash: ").concat("4fbf078939dbe04590a6d6097e51cc96be640afd")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276713", ", Version Hash: ").concat("4bafcf5efb43d2936431018bd444e3d92d36cb67")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20901,8 +20902,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276698", "276698"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276698")), _ = 0), _
+        let _ = parseInt((e = "276713", "276713"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276713")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37192,4 +37193,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.43fecf228ff2f0221fda.js.map
+//# sourceMappingURL=76039.10254f2e62a532d31dd9.js.map
