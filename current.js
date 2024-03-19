@@ -18534,7 +18534,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276631", ", Version Hash: ").concat("6fc5e8f57488f0cf367dbaec9a108d261ffaee3a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276634", ", Version Hash: ").concat("cbe0aabef27323a2964e13ab2b5458d668d919c2")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20901,8 +20901,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276631", "276631"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276631")), _ = 0), _
+        let _ = parseInt((e = "276634", "276634"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276634")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -32084,7 +32084,13 @@
             if ("locale" === e) this.emit(e, this._chosenLocale)
           }, this.initialLanguageLoad = new Promise((e, _) => {
             this.resolveLanguageLoaded = e
-          }), Intl.__addLocaleData && Intl.__addLocaleData(E("169123")), this._languages = t(), this._provider = null != window.Proxy ? new S(this._getParsedMessages) : new T(this._getParsedMessages), this.Messages = this._provider.getMessages(), this._getMessages = _, this.setLocale(e || this.getDefaultLocale()), this.on("newListener", this._handleNewListener)
+          }), Intl.__addLocaleData && Intl.__addLocaleData(E("169123")), this._languages = t(), this._provider = null != window.Proxy ? new S(this._getParsedMessages) : new T(this._getParsedMessages), this.Messages = this._provider.getMessages(), this._getMessages = _;
+          try {
+            new Intl.NumberFormat(e, {}), this.setLocale(e || this.getDefaultLocale())
+          } catch (e) {
+            this.setLocale(this.getDefaultLocale())
+          }
+          this.on("newListener", this._handleNewListener)
         }
       }
     },
@@ -37195,4 +37201,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.f48275c59a2ccfcb9f81.js.map
+//# sourceMappingURL=76039.8537447c2a4d37def8fe.js.map
