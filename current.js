@@ -16774,6 +16774,11 @@
         POLL_COACHMARK_SUBTITLE: "Plan events, gather opinions, or drop a silly question in the chat.",
         POLL_COACHMARK_CTA: "Start a poll now!",
         POLL_COACHMARK_DISMISS: "Maybe later.",
+        POLL_LURKING_VOTE_TITLE: "You can't vote on this poll yet!",
+        POLL_LURKING_VOTE_SUBTITLE: "You have to join the community before you can use polls.",
+        POLL_LURKING_SEE_VOTES_TITLE: "You can't see votes on this poll yet!",
+        POLL_LURKING_UNVOTE_TITLE: "You can't remove your vote unless you're a member.",
+        POLL_LURKING_UNVOTE_SUBTITLE: "You have to re-join the community before you can use polls again.",
         POLL_NOT_INTERACTIVE: "View original message to interact",
         POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
         POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
@@ -18528,7 +18533,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276406", ", Version Hash: ").concat("5d2613fbbed36f07b110623feea623b4af9438c5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276409", ", Version Hash: ").concat("8357860522493315619b62da07883a39254e6f2d")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20895,8 +20900,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276406", "276406"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276406")), _ = 0), _
+        let _ = parseInt((e = "276409", "276409"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276409")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37177,4 +37182,4 @@
     }
   }
 ]);
-//# sourceMappingURL=76039.8e27208f88e73b706cfa.js.map
+//# sourceMappingURL=76039.2ea9172d1049eb9ec346.js.map
