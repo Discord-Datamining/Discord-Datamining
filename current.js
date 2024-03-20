@@ -15324,6 +15324,7 @@
         COLLECTIBLES_ANIME_V2_COACHTIP_DISCRIPTION: "Senpai will definitely notice you now.",
         COLLECTIBLES_SPRINGTOONS_COACHTIP_TITLE: "NEW: Springtoons",
         COLLECTIBLES_SPRINGTOONS_COACHTIP_DESCRIPTION: "In the hush of night, a curious magic enchants the air and...",
+        COLLECTIBLES_SHY_FOR_A_LIMITED_TIME: "For a limited time",
         COLLECTIBLES_NEW_BADGE: "NEW",
         INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
         PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
@@ -18539,7 +18540,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276858", ", Version Hash: ").concat("e479c64401cdc812bd4536cb7a06a8b0a5678c90")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276868", ", Version Hash: ").concat("514b9fde6a16eea1f4b7f9fb097b922a184c8483")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20906,8 +20907,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276858", "276858"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276858")), _ = 0), _
+        let _ = parseInt((e = "276868", "276868"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276868")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37302,4 +37303,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.e1a533c026c08cf0a610.js.map
+//# sourceMappingURL=47513.7f3220ca3efee7b95acd.js.map
