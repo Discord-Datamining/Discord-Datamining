@@ -18542,7 +18542,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277263", ", Version Hash: ").concat("fc40b4f090c7f4c387ebaedd0224ad7241f4df8d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277265", ", Version Hash: ").concat("aa1ee187372bc7bd0a7a02dc6736af2aadcb1a54")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20914,8 +20914,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277263", "277263"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277263")), _ = 0), _
+        let _ = parseInt((e = "277265", "277265"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277265")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -35191,6 +35191,9 @@
               case 23:
                 o.inappropriateConversationWarnings = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.inappropriateConversationWarnings);
                 break;
+              case 24:
+                o.recentGamesEnabled = h.BoolValue.internalBinaryRead(e, e.uint32(), E, o.recentGamesEnabled);
+                break;
               default:
                 let n = E.readUnknownField;
                 if ("throw" === n) throw new globalThis.Error("Unknown field ".concat(_, " (wire type ").concat(t, ") for ").concat(this.typeName));
@@ -35221,7 +35224,7 @@
             for (let E = 0; E < e.messageRequestRestrictedGuildIds.length; E++) _.fixed64(e.messageRequestRestrictedGuildIds[E]);
             _.join()
           }
-          e.defaultMessageRequestRestricted && h.BoolValue.internalBinaryWrite(e.defaultMessageRequestRestricted, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.dropsOptedOut && h.BoolValue.internalBinaryWrite(e.dropsOptedOut, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.nonSpamRetrainingOptIn && h.BoolValue.internalBinaryWrite(e.nonSpamRetrainingOptIn, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabled && h.BoolValue.internalBinaryWrite(e.familyCenterEnabled, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabledV2 && h.BoolValue.internalBinaryWrite(e.familyCenterEnabledV2, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.hideLegacyUsername && h.BoolValue.internalBinaryWrite(e.hideLegacyUsername, _.tag(22, M.WireType.LengthDelimited).fork(), E).join(), e.inappropriateConversationWarnings && h.BoolValue.internalBinaryWrite(e.inappropriateConversationWarnings, _.tag(23, M.WireType.LengthDelimited).fork(), E).join();
+          e.defaultMessageRequestRestricted && h.BoolValue.internalBinaryWrite(e.defaultMessageRequestRestricted, _.tag(17, M.WireType.LengthDelimited).fork(), E).join(), e.dropsOptedOut && h.BoolValue.internalBinaryWrite(e.dropsOptedOut, _.tag(18, M.WireType.LengthDelimited).fork(), E).join(), e.nonSpamRetrainingOptIn && h.BoolValue.internalBinaryWrite(e.nonSpamRetrainingOptIn, _.tag(19, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabled && h.BoolValue.internalBinaryWrite(e.familyCenterEnabled, _.tag(20, M.WireType.LengthDelimited).fork(), E).join(), e.familyCenterEnabledV2 && h.BoolValue.internalBinaryWrite(e.familyCenterEnabledV2, _.tag(21, M.WireType.LengthDelimited).fork(), E).join(), e.hideLegacyUsername && h.BoolValue.internalBinaryWrite(e.hideLegacyUsername, _.tag(22, M.WireType.LengthDelimited).fork(), E).join(), e.inappropriateConversationWarnings && h.BoolValue.internalBinaryWrite(e.inappropriateConversationWarnings, _.tag(23, M.WireType.LengthDelimited).fork(), E).join(), e.recentGamesEnabled && h.BoolValue.internalBinaryWrite(e.recentGamesEnabled, _.tag(24, M.WireType.LengthDelimited).fork(), E).join();
           let t = E.writeUnknownFields;
           return !1 !== t && (!0 == t ? M.UnknownFieldHandler.onWrite : t)(this.typeName, e, _), _
         }
@@ -35333,6 +35336,11 @@
           }, {
             no: 23,
             name: "inappropriate_conversation_warnings",
+            kind: "message",
+            T: () => h.BoolValue
+          }, {
+            no: 24,
+            name: "recent_games_enabled",
             kind: "message",
             T: () => h.BoolValue
           }])
@@ -37692,4 +37700,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.655d7a6e25d5e46673ae.js.map
+//# sourceMappingURL=47513.1130a988020eca2d26e7.js.map
