@@ -16954,6 +16954,7 @@
         STOREFRONT_PURCHASE_FOR: "Buy for {price}",
         STOREFRONT_ONE_TIME_PURCHASE: "One-Time Purchase",
         STOREFRONT_PREMIUM_ITEMS: "Premium Items",
+        STOREFRONT_DURABLE_AVAILABILITY: "1 / 1 Available",
         QUIET_MODE_DISABLED: "Focus Mode Disabled",
         QUIET_MODE_ENABLED: "Focus Mode Enabled",
         QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -18540,7 +18541,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276875", ", Version Hash: ").concat("b2afadb1c07c163885eccddd8bebee6ab53d0a58")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276892", ", Version Hash: ").concat("44b9a12f3ec22c97a6f1b8f1753788cf30f9e4fc")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20907,8 +20908,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "276875", "276875"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276875")), _ = 0), _
+        let _ = parseInt((e = "276892", "276892"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276892")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37303,4 +37304,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.cc0db971b13507c7bcae.js.map
+//# sourceMappingURL=47513.8a39cd7ccb85ecce1637.js.map
