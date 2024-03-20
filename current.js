@@ -3495,6 +3495,7 @@
         HYPESQUAD_QUESTION_14_RESPONSE_D: "Pretend you didn't hear them.",
         OVERLAY_EXPLANATION: "\nEnabling the overlay will probably trigger a false positive in your anti-virus.\nAlso, the overlay may not work for everyone. If you have trouble or questions check out\n[this fancy help article!]({supportURL})\n",
         ENABLE_INGAME_OVERLAY: "Enable in-game overlay.",
+        ENABLE_LEGACY_OVERLAY: "Enable legacy overlay.",
         OVERLAY_DISABLED_OLD_CLIENT: "Overlay is disabled because your client is out of date.",
         KEYBIND_TOGGLE_OVERLAY_INPUT_LOCK: "Toggle Overlay Lock",
         KEYBIND_ACTIVATE_OVERLAY_CHAT: "Activate Overlay Chat",
@@ -18541,7 +18542,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277258", ", Version Hash: ").concat("495cfee40a25903750d477e25a30d927a73e8a70")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277261", ", Version Hash: ").concat("d1d170d24989c62a2c14a0831f398174a7cdbabb")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20913,8 +20914,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277258", "277258"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277258")), _ = 0), _
+        let _ = parseInt((e = "277261", "277261"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277261")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37691,4 +37692,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.21312f40fe1c4adfdae5.js.map
+//# sourceMappingURL=47513.d01f4d207b7e47bc0a86.js.map
