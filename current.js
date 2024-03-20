@@ -18541,7 +18541,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277232", ", Version Hash: ").concat("5e5d8d2e28d3fc6d31559b15f0d9080ac919479d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277235", ", Version Hash: ").concat("b19f0df0ab7b980da173843d8a8298996d4def5f")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20195,6 +20195,11 @@
           actions: ["RUNNING_GAMES_CHANGE", "LOGOUT", "CONNECTION_CLOSED", "POST_CONNECTION_OPEN"],
           inlineRequire: () => E("34226").default,
           neverLoadBeforeConnectionOpen: !0
+        },
+        TenureRewardManager: {
+          actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "ENTITLEMENT_FETCH_APPLICATION_SUCCESS", "ENTITLEMENT_CREATE", "ENTITLEMENT_UPDATE", "ENTITLEMENT_DELETE", "LOGOUT"],
+          inlineRequire: () => E("881717").default,
+          neverLoadBeforeConnectionOpen: !0
         }
       };
       (0, t.initialize)(o)
@@ -20908,8 +20913,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277232", "277232"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277232")), _ = 0), _
+        let _ = parseInt((e = "277235", "277235"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277235")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26721,6 +26726,401 @@
         }
       }
       var I = new i
+    },
+    544774: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        syncUserTenureRewardStatus: function() {
+          return r
+        }
+      });
+      var t = E("872717"),
+        o = E("913144"),
+        n = E("49111");
+      async function r() {
+        o.default.dispatch({
+          type: "USER_TENURE_REWARD_SYNC_START"
+        });
+        try {
+          let e = await t.default.post({
+            url: n.Endpoints.TENURE_REWARD_SYNC
+          });
+          o.default.dispatch({
+            type: "USER_TENURE_REWARD_SYNC_SUCCESS",
+            userTenureRewardStatus: e.body.tenure_reward_status
+          })
+        } catch (e) {
+          o.default.dispatch({
+            type: "USER_TENURE_REWARD_SYNC_SUCCESS"
+          })
+        }
+      }
+    },
+    511143: function(e, _, E) {
+      "use strict";
+      var t, o, n, r;
+      E.r(_), E.d(_, {
+        TenureRewardSKUs: function() {
+          return t
+        },
+        ALL_TENURE_REWARD_SKUS: function() {
+          return a
+        },
+        NitroRewardStatus: function() {
+          return o
+        },
+        MAX_DAYS_LEFT_TO_SHOW_CARD_1_MONTH_VARIANT: function() {
+          return i
+        },
+        MAX_DAYS_LEFT_TO_SHOW_CARD_3_MONTH_VARIANT: function() {
+          return I
+        },
+        NUM_DAYS_REQUIRED_1_MONTH_VARIANT: function() {
+          return s
+        },
+        NUM_DAYS_3_REQUIRED_MONTH_VARIANT: function() {
+          return T
+        }
+      }), E("222007"), (n = t || (t = {})).FREE_GUILD_BOOST_1_MONTH = "1215584796672000000", n.FREE_GUILD_BOOST_3_MONTHS = "1215585048330240000";
+      let a = new Set(["1215584796672000000", "1215585048330240000"]);
+      (r = o || (o = {}))[r.PENDING = 0] = "PENDING", r[r.REDEEMABLE = 1] = "REDEEMABLE", r[r.REDEEMED = 2] = "REDEEMED";
+      let i = 10,
+        I = 45,
+        s = 30,
+        T = 90
+    },
+    908309: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        useUserEligibleForNitroTenureRewardCard: function() {
+          return o
+        },
+        isUserEligibleForNitroTenureRewardCard: function() {
+          return n
+        }
+      });
+      var t = E("719962");
+
+      function o(e) {
+        let {
+          location: _
+        } = e, {
+          enableNitroTenureRewardCard: E
+        } = t.NitroTenureRewardCardExperiment.useExperiment({
+          location: _
+        }, {
+          autoTrackExposure: !1
+        });
+        return E
+      }
+
+      function n(e) {
+        let {
+          location: _
+        } = e, {
+          enableNitroTenureRewardCard: E
+        } = t.NitroTenureRewardCardExperiment.getCurrentConfig({
+          location: _
+        }, {
+          autoTrackExposure: !1
+        });
+        return E
+      }
+    },
+    719962: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        NitroTenureRewardCardExperiment: function() {
+          return o
+        }
+      });
+      var t = E("862205");
+      let o = (0, t.createExperiment)({
+        kind: "user",
+        id: "2024-03_nitro_tenure_reward_card",
+        label: "Nitro Tenure Reward Card",
+        defaultConfig: {
+          enableNitroTenureRewardCard: !1
+        },
+        treatments: [{
+          id: 1,
+          label: "Enables the nitro tenure reward card for users",
+          config: {
+            enableNitroTenureRewardCard: !0
+          }
+        }]
+      })
+    },
+    881717: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return P
+        }
+      }), E("222007");
+      var t = E("866227"),
+        o = E.n(t),
+        n = E("913144"),
+        r = E("689988"),
+        a = E("984273"),
+        i = E("697218"),
+        I = E("437712"),
+        s = E("764364"),
+        T = E("544774"),
+        S = E("908309"),
+        N = E("53641"),
+        O = E("485426"),
+        A = E("646718"),
+        R = E("511143");
+      let l = null,
+        u = !1,
+        L = 0;
+
+      function C(e) {
+        let _ = a.default.createFromServer(e.entitlement),
+          E = (0, O.isPremiumTier2Entitlement)(_);
+        if (E) L = 0, c({
+          forceRefresh: !0,
+          retryOnFail: !0
+        });
+        else if ((0, O.isValidTenureRewardEntitlement)(_)) {
+          let e = N.default.getTenureRewardStatusForRewardId(_.skuId);
+          null != e && n.default.dispatch({
+            type: "USER_TENURE_REWARD_STATUS_DELETE",
+            tenureRewardIds: [_.skuId]
+          })
+        }
+      }
+
+      function c() {
+        let {
+          forceRefresh: e = !1,
+          retryOnFail: _ = !1
+        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+        d();
+        let E = I.default.getForApplication(A.PREMIUM_SUBSCRIPTION_APPLICATION),
+          t = (0, O.getPremiumTier2Entitlement)(E),
+          r = i.default.getCurrentUser(),
+          a = (0, s.isPremiumExactly)(r, A.PremiumTypes.TIER_2);
+        if (!a && null == t) {
+          n.default.dispatch({
+            type: "USER_TENURE_REWARD_STATUS_RESET"
+          });
+          return
+        }
+        let T = (0, S.isUserEligibleForNitroTenureRewardCard)({
+          location: "tenure_reward_manager"
+        });
+        if (!T) return;
+        let l = N.default.getFetchState() === N.FetchState.FETCHED;
+        if (!l || !0 === e || function() {
+            var e;
+            let _ = null !== (e = N.default.getTenureRewardStatusForRewardId(R.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : N.default.getTenureRewardStatusForRewardId(R.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
+            if (null == _ || null == _.redeemable_at) return !1;
+            let E = o(_.redeemable_at).diff(o.utc(), "seconds");
+            return E <= 0
+          }()) D({
+          retryOnFail: _
+        });
+        else {
+          let e = I.default.getForApplication(A.PREMIUM_SUBSCRIPTION_APPLICATION);
+          if (null == e) return;
+          let _ = Array.from(e).filter(e => null != N.default.getTenureRewardStatusForRewardId(e.skuId)).map(e => e.skuId);
+          _.length > 0 && n.default.dispatch({
+            type: "USER_TENURE_REWARD_STATUS_DELETE",
+            tenureRewardIds: _
+          })
+        }
+      }
+      async function D() {
+        let {
+          retryOnFail: e = !1
+        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+        !u && (u = !0, await T.syncUserTenureRewardStatus(), u = !1, n.default.wait(() => (function() {
+          var e;
+          let {
+            retryOnFail: _ = !1
+          } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+          d();
+          let E = N.default.getFetchState();
+          if (E !== N.FetchState.FETCHED || u) return;
+          let t = null !== (e = N.default.getTenureRewardStatusForRewardId(R.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : N.default.getTenureRewardStatusForRewardId(R.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
+          if ((null == t ? void 0 : t.redeemable_at) == null && !1 === _) return;
+          let o = (null == t ? void 0 : t.redeemable_at) != null ? new Date(t.redeemable_at).getTime() - Date.now() : null;
+          null != o && o > 0 ? l = setTimeout(c, o) : function(e) {
+            var _;
+            let {
+              retryOnFail: E
+            } = e, t = null !== (_ = N.default.getTenureRewardStatusForRewardId(R.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== _ ? _ : N.default.getTenureRewardStatusForRewardId(R.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
+            return null == t && !0 === E && L < 1
+          }({
+            retryOnFail: _
+          }) && (L += 1, l = setTimeout(() => c({
+            forceRefresh: !0
+          }), 5e3))
+        })({
+          retryOnFail: e
+        })))
+      }
+
+      function d() {
+        clearTimeout(l), l = null
+      }
+
+      function U() {
+        d()
+      }
+
+      function M() {
+        c()
+      }
+      class h extends r.default {
+        constructor(...e) {
+          super(...e), this.actions = {
+            POST_CONNECTION_OPEN: M,
+            CONNECTION_CLOSED: U,
+            ENTITLEMENT_FETCH_APPLICATION_SUCCESS: () => c(),
+            ENTITLEMENT_CREATE: C,
+            ENTITLEMENT_UPDATE: () => c(),
+            ENTITLEMENT_DELETE: () => c(),
+            LOGOUT: d
+          }
+        }
+      }
+      var P = new h
+    },
+    53641: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        FetchState: function() {
+          return o
+        },
+        default: function() {
+          return s
+        }
+      });
+      var t, o, n = E("446674"),
+        r = E("913144");
+      (t = o || (o = {}))[t.NOT_FETCHED = 0] = "NOT_FETCHED", t[t.FETCHING = 1] = "FETCHING", t[t.FETCHED = 2] = "FETCHED";
+      let a = {
+          userTenureRewardStatusByRewardId: {},
+          lastFetchTimeMs: null,
+          fetchState: 0
+        },
+        i = a;
+      class I extends n.default.PersistedStore {
+        initialize(e) {
+          i = {
+            ...i,
+            ...null != e ? e : {}
+          }
+        }
+        getState() {
+          return i
+        }
+        getFetchState() {
+          return i.fetchState
+        }
+        getTenureRewardStatusForRewardId(e) {
+          return i.userTenureRewardStatusByRewardId[e]
+        }
+      }
+      I.displayName = "TenureRewardStore", I.persistKey = "TenureRewardStore";
+      var s = new I(r.default, {
+        USER_TENURE_REWARD_SYNC_START: function() {
+          i.fetchState = 1
+        },
+        USER_TENURE_REWARD_SYNC_SUCCESS: function(e) {
+          let {
+            userTenureRewardStatus: _
+          } = e;
+          if (null != _) {
+            let e = {};
+            _.forEach(_ => {
+              null != _.next_tenure_reward_id && (e[_.next_tenure_reward_id] = _)
+            }), i.userTenureRewardStatusByRewardId = e
+          } else i.userTenureRewardStatusByRewardId = a.userTenureRewardStatusByRewardId;
+          i.lastFetchTimeMs = Date.now(), i.fetchState = 2
+        },
+        USER_TENURE_REWARD_STATUS_RESET: function() {
+          i.userTenureRewardStatusByRewardId = a.userTenureRewardStatusByRewardId
+        },
+        USER_TENURE_REWARD_STATUS_DELETE: function(e) {
+          let {
+            tenureRewardIds: _
+          } = e;
+          _.forEach(e => {
+            delete i.userTenureRewardStatusByRewardId[e]
+          })
+        },
+        LOGOUT: function() {
+          i = a
+        }
+      })
+    },
+    485426: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        isPremiumTier2Entitlement: function() {
+          return i
+        },
+        isValidTenureRewardEntitlement: function() {
+          return I
+        },
+        getPremiumTier2Entitlement: function() {
+          return s
+        },
+        getTenureRewardEntitlement: function() {
+          return T
+        },
+        isUserTenureRewardStatusActive: function() {
+          return S
+        },
+        getTenureRewardBadgeDescription: function() {
+          return N
+        }
+      }), E("437712");
+      var t = E("552712"),
+        o = E("646718"),
+        n = E("511143"),
+        r = E("49111"),
+        a = E("782340");
+
+      function i(e) {
+        return e.type === r.EntitlementTypes.PURCHASE && e.skuId === o.PremiumSubscriptionSKUs.TIER_2 && e.applicationId === o.PREMIUM_SUBSCRIPTION_APPLICATION && e.isValid(null, t.default)
+      }
+
+      function I(e) {
+        return e.type === r.EntitlementTypes.PREMIUM_PURCHASE && n.ALL_TENURE_REWARD_SKUS.has(e.skuId) && e.applicationId === o.PREMIUM_SUBSCRIPTION_APPLICATION && e.isValid(null, t.default)
+      }
+
+      function s(e) {
+        if (null == e) return;
+        let _ = Array.from(e).find(e => i(e));
+        return _
+      }
+
+      function T(e, _) {
+        if (null == _) return;
+        let E = Array.from(_).find(_ => _.type === r.EntitlementTypes.PREMIUM_PURCHASE && e.includes(_.skuId) && _.applicationId === o.PREMIUM_SUBSCRIPTION_APPLICATION && _.isValid(null, t.default));
+        return E
+      }
+
+      function S(e) {
+        return null != e.redeemable_at && null != e.next_tenure_reward_id
+      }
+
+      function N(e) {
+        switch (e) {
+          case n.NitroRewardStatus.PENDING:
+            return a.default.Messages.REWARD;
+          case n.NitroRewardStatus.REDEEMABLE:
+            return a.default.Messages.REDEEM;
+          case n.NitroRewardStatus.REDEEMED:
+          default:
+            return null
+        }
+      }
     },
     583340: function(e, _, E) {
       "use strict";
@@ -37305,4 +37705,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.0bcc69911d58221c1333.js.map
+//# sourceMappingURL=47513.e8fe9f3455ca364d4d93.js.map
