@@ -18541,7 +18541,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277235", ", Version Hash: ").concat("b19f0df0ab7b980da173843d8a8298996d4def5f")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277241", ", Version Hash: ").concat("7d6ab4734047b9524692c86b8a91b5adb974ab73")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20913,8 +20913,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277235", "277235"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277235")), _ = 0), _
+        let _ = parseInt((e = "277241", "277241"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277241")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -23290,20 +23290,6 @@
 
       function n() {
         return (0, t.useStateFromStores)([o.default], () => null != o.default.getRemoteSessionId() || null != o.default.getAwaitingRemoteSessionInfo())
-      }
-    },
-    963990: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        removeExecutablePathPrefix: function() {
-          return t
-        }
-      });
-
-      function t(e) {
-        var _;
-        let E = ((_ = (_ = e).toLowerCase()).endsWith("/") && (_ = _.slice(0, -1)), _);
-        return E.split("/").slice(-2).join("/")
       }
     },
     34226: function(e, _, E) {
@@ -37705,4 +37691,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.e8fe9f3455ca364d4d93.js.map
+//# sourceMappingURL=47513.5d2a643c0fa269dcab5e.js.map
