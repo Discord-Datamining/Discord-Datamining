@@ -8303,6 +8303,8 @@
         PREMIUM_MOBILE_TRIAL_MARKETING_PAGE_BADGE: "Free Trial ({days, plural, =1 {# day left} other {# days left}})",
         PREMIUM_MOBILE_TRIAL_FREE_TRIAL_BADGE: "Free Trial",
         POWERED_BY_NITRO: "Powered by Nitro",
+        PREMIUM_ATTACHMENT_HOVER_NON_SUBSCRIBER: "Unlock 500MB uploads with Nitro",
+        PREMIUM_ATTACHMENT_HOVER_SUBSCRIBER: "500MB uploads unlocked!",
         USER_ACTIVITY_HEADER_PLAYING: "Playing a game",
         USER_ACTIVITY_HEADER_LIVE_ON_PLATFORM: "Live on !!{platform}!!",
         USER_ACTIVITY_HEADER_PLAYING_ON_PLATFORM: "Playing on !!{platform}!!",
@@ -18544,7 +18546,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277429", ", Version Hash: ").concat("3c6b41761a15a62e36cb6644fe982295f6a88ae8")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277430", ", Version Hash: ").concat("757d0968826448bfc4fc21fc1f5fd000aafc922a")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20916,8 +20918,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277429", "277429"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277429")), _ = 0), _
+        let _ = parseInt((e = "277430", "277430"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277430")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37702,4 +37704,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.e07d7ff5a62883594642.js.map
+//# sourceMappingURL=47513.8e577a3ba20cfdacdcf7.js.map
