@@ -17003,6 +17003,14 @@
         CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
         CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
         CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ALT: "Member List Recent Activity Settings",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_ALT: "Wumpus and Nelly chatting about their recent activity",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_HEADER: "Say Hello to Recent Activity",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_DESCRIPTION: "Learn more about your friends and play more games together by keeping up with their activities.",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_FRIEND_NOTE: "See the activity of people you talk to most",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_PLAYED_NOTE: "Keep up with games they're playing now or played recently",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_REPLY_NOTE: "Quickly jump into a conversation with a reply or even an emoji",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_GOT_IT: "Got it!",
+        CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_DISCLOSURE: "Learn more about [Recent Activity]({recentActivityURL}) or manage your [Activity Privacy](handleActivityPrivacyClick)",
         RECENT_GAMES: "Recent Games",
         USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
         USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
@@ -18546,7 +18554,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277550", ", Version Hash: ").concat("5c96dfae5060bf96ad87a8797af2dd90326f1016")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277553", ", Version Hash: ").concat("6ad5a3307140c7e1632b4e0761676f6c401e35b4")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20918,8 +20926,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277550", "277550"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277550")), _ = 0), _
+        let _ = parseInt((e = "277553", "277553"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277553")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37704,4 +37712,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.583a49b1cb7f6e6bc49d.js.map
+//# sourceMappingURL=47513.4d69ccf4334702cc81fc.js.map
