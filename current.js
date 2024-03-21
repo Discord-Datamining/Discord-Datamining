@@ -5364,6 +5364,7 @@
         STREAM_SINGLE_PERSON_INVITE: "Invite people to join you!",
         STREAM_SINGLE_PERSON_NO_INVITE: "You're alone in this call.",
         STREAM_NO_PERMISSION_CTA: "No permission",
+        STREAM_PREMIUM_AFFINITY_UPSELL: "{numFriends, plural, =1 {1 friend has} =2 {2 friends have} other {{numFriends}+ friends have}} HD streaming with Nitro",
         DISPLAY_NAME: "Display Name",
         PICTURE_IN_PICTURE_COLLAPSE: "Collapse",
         PICTURE_IN_PICTURE_EXPAND: "Expand",
@@ -18555,7 +18556,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277630", ", Version Hash: ").concat("bec806fa30e106c88c1932a5e4aedf5b12cf079d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277632", ", Version Hash: ").concat("06bbf2ed3276fe1a5ec559b9c4d75e49a2ab4bed")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20927,8 +20928,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277630", "277630"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277630")), _ = 0), _
+        let _ = parseInt((e = "277632", "277632"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277632")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37731,4 +37732,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.bd950211fac1009492c0.js.map
+//# sourceMappingURL=47513.9dd500e4046e5382a7f1.js.map
