@@ -18542,9 +18542,9 @@
       E("147746");
       var R = E("49111"),
         l = E("782340");
-      (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
+      (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277368", ", Version Hash: ").concat("b16657652a4037ca448b16725714845080f73159")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277376", ", Version Hash: ").concat("227257c20eea9c82abde3f156d6cdb8bee35ab7f")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20916,8 +20916,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277368", "277368"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277368")), _ = 0), _
+        let _ = parseInt((e = "277376", "277376"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277376")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26037,13 +26037,13 @@
               o = null
             }
             t = n.id;
-            let a = r.default.getToken();
-            null != a && "" !== a && r.default.setToken(a, n.id), null === (e = this.onTokenSet) || void 0 === e || e.call(this, n)
+            let a = r.getToken();
+            null != a && "" !== a && r.setToken(a, n.id), null === (e = this.onTokenSet) || void 0 === e || e.call(this, n)
           }, this.handleLogout = e => {
             if (e.isSwitchingAccount) {
               var _;
               o = t, null === (_ = this.onSwitchStart) || void 0 === _ || _.call(this)
-            } else r.default.removeToken(t);
+            } else r.removeToken(t);
             t = null
           }, this.onSwitchStart = e, this.onSwitchSuccess = _, this.onSwitchError = E, this.onTokenSet = n
         }
@@ -26124,7 +26124,7 @@
             id: E
           } = _;
           return E !== e
-        }), a.default.removeToken(e)
+        }), a.removeToken(e)
       }
 
       function R(e, _) {
@@ -28166,20 +28166,20 @@
 
       function u(e, _) {
         let E = (0, r.useStateFromStores)([N.default], () => {
-          let _ = e.isForumLikeChannel() ? R.Permissions.SEND_MESSAGES : n.default.combine(R.Permissions.CREATE_PUBLIC_THREADS, R.Permissions.READ_MESSAGE_HISTORY);
+          let _ = e.isForumLikeChannel() ? R.Permissions.SEND_MESSAGES : n.combine(R.Permissions.CREATE_PUBLIC_THREADS, R.Permissions.READ_MESSAGE_HISTORY);
           return N.default.can(_, e)
         }, [e]);
         return D(E, e, _)
       }
 
       function L(e, _) {
-        let E = e.isForumLikeChannel() ? R.Permissions.SEND_MESSAGES : n.default.combine(R.Permissions.CREATE_PUBLIC_THREADS, R.Permissions.READ_MESSAGE_HISTORY),
+        let E = e.isForumLikeChannel() ? R.Permissions.SEND_MESSAGES : n.combine(R.Permissions.CREATE_PUBLIC_THREADS, R.Permissions.READ_MESSAGE_HISTORY),
           t = N.default.can(E, e);
         return D(t, e, _)
       }
 
       function C(e) {
-        let _ = (0, r.useStateFromStores)([N.default], () => N.default.can(n.default.combine(R.Permissions.CREATE_PRIVATE_THREADS), e), [e]);
+        let _ = (0, r.useStateFromStores)([N.default], () => N.default.can(n.combine(R.Permissions.CREATE_PRIVATE_THREADS), e), [e]);
         return e.type === R.ChannelTypes.GUILD_TEXT && D(_, e)
       }
 
@@ -37702,4 +37702,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.13fa6e7f1ec81697a767.js.map
+//# sourceMappingURL=47513.7b79225904436bd1b3cf.js.map
