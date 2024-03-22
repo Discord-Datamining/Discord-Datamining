@@ -6521,31 +6521,43 @@
         GUILD_CHECKLIST_UPSELL_FLAIR_INTRO: "Level 1 also unlocks more customization features and utility upgrades for everyone in the server like:",
         GUILD_CHECKLIST_UPSELL_BOOST_INTRO: "Boosting unlocks powerful features. Reach **Level 1** and get new customizations and upgrades for the whole server. [Learn more.](onClick)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0: "You have custom emoji, bigger uploads, and more for **!!{price}!!**",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_TAX_EXCLUSIVE: "You have custom emoji, bigger uploads, and more for **!!{price}!!** + applicable taxes",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE: "You have custom emoji, bigger uploads, and more",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION: "You have custom emoji, bigger uploads, and more for **!!{price}!!** (Pending Cancellation)",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_TAX_EXCLUSIVE: "You have custom emoji, bigger uploads, and more for **!!{price}!!** + applicable taxes (Pending Cancellation)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE: "You have custom emoji, bigger uploads, and more (Pending Cancellation)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE: "You have custom emoji, bigger uploads, and more for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE_TAX_EXCLUSIVE: "You have custom emoji, bigger uploads, and more for **!!{price}!!** + applicable taxes (pausing on **{pauseDate, date, medium}**)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAUSE_NO_PRICE: "You have custom emoji, bigger uploads, and more (pausing on **{pauseDate, date, medium}**)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD: "Your subscription to Nitro Basic, which gives you custom emoji, bigger uploads, and other perks for **!!{price}!!** is **on hold**",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_TAX_EXCLUSIVE: "Your subscription to Nitro Basic, which gives you custom emoji, bigger uploads, and other perks for **!!{price}!!** + applicable taxes is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE: "Your subscription to Nitro Basic, which gives you custom emoji, bigger uploads, and other perks is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT: "You will have custom emoji, bigger uploads, and more **as soon as your payment processes.** We will send you an email as soon as it does",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1: "You have chat perks and a Boost discount for **!!{price}!!**",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_TAX_EXCLUSIVE: "You have chat perks and a Boost discount for **!!{price}!!** + applicable taxes",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE: "You have chat perks and a Boost discount",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION: "You have chat perks and a Boost discount for **!!{price}!!** (Pending Cancellation)",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_TAX_EXCLUSIVE: "You have chat perks and a Boost discount for **!!{price}!!** + applicable taxes (Pending Cancellation)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE: "You have chat perks and a Boost discount (Pending Cancellation)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE: "You have chat perks and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_TAX_EXCLUSIVE: "You have chat perks and a Boost discount for **!!{price}!!** + applicable taxes (pausing on **{pauseDate, date, medium}**)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE: "You have chat perks and a Boost discount (pausing on **{pauseDate, date, medium}**)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD: "Your chat perks and a Boost discount for **!!{price}!!** subscription is **on hold**",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_TAX_EXCLUSIVE: "Your chat perks and a Boost discount for **!!{price}!!** + applicable taxes subscription is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE: "Your chat perks and a Boost discount subscription is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT: "You will have chat perks and a Boost discount **as soon as your payment processes.** We will send you an email as soon as it does",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!**",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_TAX_EXCLUSIVE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** + applicable taxes",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** (Pending Cancellation)",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_TAX_EXCLUSIVE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** + applicable taxes (Pending Cancellation)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (Pending Cancellation)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_TAX_EXCLUSIVE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** + applicable taxes (pausing on **{pauseDate, date, medium}**)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAUSE_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (pausing on **{pauseDate, date, medium}**)",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED: "You have paused your Nitro subscription until **{resumeDate, date, medium}**. Once your subscription resumes you will regain access to Nitro",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription for **!!{price}!!** is **on hold**",
+        PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_TAX_EXCLUSIVE: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription for **!!{price}!!** + applicable taxes is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription is **on hold**",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT: "You will have premium chat, **{num, number}** Boosts, and a Boost discount **as soon as your payment processes.** We will send you an email as soon as it does",
         PREMIUM_SUBSCRIPTION_DESCRIPTION_DISCOUNT_APPLIED: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {price}/month",
@@ -6660,6 +6672,7 @@
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_BEFORE_REDEMPTION_GENERIC: "Pay just **{discountedPrice}** for **{numMonths, plural, one {1 month!} other {{numMonths} months!}}** Then pay {regularPrice}.",
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION: "Your !!{percent, number}!!% discount will end 3 months after purchase. After that you'll be charged {regularPrice}.",
         PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC: "Your !!{percent, number}!!% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After that you'll be charged {regularPrice}.",
+        PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC_TAX_EXCLUSIVE: "Your !!{percent, number}!!% discount will end {numMonths, plural, one {1 month} other {{numMonths} months}} after purchase. After that you'll be charged {regularPrice} + applicable taxes.",
         PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {regularPrice}.",
         PREMIUM_TIER_SUBSCRIPTION_DESCRIPTION_AFTER_REDEMPTION_WITH_ACTIVE_SUB: "Your next **{numMonths, plural, one {month} other {{numMonths} months}}** {numMonths, plural, one {is} other {are}} **{discountedPrice}**. After that you'll be charged {regularPrice}/month.",
         PREMIUM_TIER_CARD_DISCOUNT_APPLIED: "discount applied",
@@ -7081,12 +7094,15 @@
         PREMIUM_SETTINGS_NATIGATE_TO_SUBSCRIPTIONS_CTA: "Manage Plan in Subscriptions",
         PREMIUM_SETTINGS_NAVIGATE_TO_HOME_CTA_V2: "Learn More About My Nitro",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!**",
+        PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!** + applicable taxes",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}}",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!** (Pending Cancellation)",
+        PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_TAX_EXCLUSIVE: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!** + applicable taxes (Pending Cancellation)",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_NO_PRICE: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} (Pending Cancellation)",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ANDROID: "**{boostQuantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!**",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_ANDROID: "**{boostQuantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!** (Pending Cancellation)",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD: "**{boostQuantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!** (Subscription on hold)",
+        PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_TAX_EXCLUSIVE: "**{boostQuantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!** + applicable taxes (Subscription on hold)",
         PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_NO_PRICE: "**{boostQuantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} (Subscription on hold)",
         PREMIUM_RESTORE_SUBSCRIPTION_IOS: "Restore App Store Subscriptions",
         PREMIUM_SWITCH_PLANS: "Switch Plans",
@@ -7232,8 +7248,8 @@
         SUBSCRIPTION_PAYMENT_LEGALESE_MONTHLY: "Hey! What you're purchasing is a recurring subscription, which means we'll charge you today and continue to charge you monthly until you cancel the subscription. You can cancel anytime from your Settings page, though!",
         SUBSCRIPTION_PAYMENT_LEGALESE_MULTI_MONTH: "Hey! What you're purchasing is a recurring subscription, which means we'll charge today and continue to charge you every {intervalCount} months until you cancel the subscription. You can cancel anytime from your Settings page, though!",
         SUBSCRIPTION_PAYMENT_LEGALESE_YEARLY: "Hey! What you're purchasing is a recurring subscription, which means we'll charge you today and continue to charge you yearly until you cancel the subscription. You can cancel anytime from your Settings page, though!",
-        SUBSCRIPTION_PAYMENT_LEGALESE_V2: '**By clicking "{primaryText}", you are purchasing a recurring subscription.** You\'ll be charged {rate} starting today, less any applicable credits or discounts, until you cancel. Cancel anytime from your Settings page. [Paid Service Terms]({paidURL}) apply. Have questions? [Contact us]({contactLink}) or see our [Subscriptions FAQ]({helpdeskArticle}).',
-        SUBSCRIPTION_PAYMENT_LEGALESE_PLAN_CHANGE_V2: '**By clicking "{primaryText}", you are purchasing a recurring subscription.** You\'ll be charged {rate} on the date shown above, less any applicable credits or discounts, until you cancel. Cancel anytime from your Settings page. [Paid Service Terms]({paidURL}) apply. Have questions? [Contact us]({contactLink}) or see our [Subscriptions FAQ]({helpdeskArticle}).',
+        SUBSCRIPTION_PAYMENT_LEGALESE_V2: '**By clicking "{primaryText}", you are purchasing a recurring subscription.** You\'ll be charged {rate} plus applicable taxes starting today, less any applicable credits or discounts, until you cancel. Cancel anytime from your Settings page. [Paid Service Terms]({paidURL}) apply. Have questions? [Contact us]({contactLink}) or see our [Subscriptions FAQ]({helpdeskArticle}).',
+        SUBSCRIPTION_PAYMENT_LEGALESE_PLAN_CHANGE_V2: '**By clicking "{primaryText}", you are purchasing a recurring subscription.** You\'ll be charged {rate} plus applicable taxes on the date shown above, less any applicable credits or discounts, until you cancel. Cancel anytime from your Settings page. [Paid Service Terms]({paidURL}) apply. Have questions? [Contact us]({contactLink}) or see our [Subscriptions FAQ]({helpdeskArticle}).',
         SUBSCRIPTION_PAYMENT_LEGALESE_PAYSAFECARD: "Please note that Discord can’t refund purchases made with a Paysafecard.",
         SOFORT_MANDATE_AGREEMENT: "By providing your payment information and confirming this payment, you authorise (A) Discord and Stripe, our payment service provider and/or PPRO, its local service provider, to send instructions to your bank to debit your account and (B) your bank to debit your account in accordance with those instructions. As part of your rights, you are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited. Your rights are explained in a statement that you can obtain from your bank. You agree to receive notifications for future debits up to 2 days before they occur.",
         PAYMENT_SOURCES_ADD: "Add a new payment method",
@@ -18563,7 +18579,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278021", ", Version Hash: ").concat("c56ad26cb1a9772d534c6bfae83ec0556c2770fe")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278029", ", Version Hash: ").concat("6bef72c02665060da5f5ba706c0108d2963837bb")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20940,8 +20956,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278021", "278021"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278021")), _ = 0), _
+        let _ = parseInt((e = "278029", "278029"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278029")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37795,4 +37811,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.3508a00b08cb4f602f5a.js.map
+//# sourceMappingURL=47513.68d5b37b52833e3a0b46.js.map
