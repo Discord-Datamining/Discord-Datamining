@@ -17363,7 +17363,14 @@
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_5: "No Text to Speech?",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6: "How about you give thanks to your mail delivery person",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6_ANSWER_1: "Okay",
-        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)"
+        PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)",
+        SIGNUP_BUTTON_TOOLTIP_CTA: "Click to learn more",
+        SIGNUP_COMPLETE_CTA: "Sign Up",
+        SIGNUP_EMAIL_PROMPT: "Enter your email to secure your spot on the waitlist.",
+        SIGNUP_EMAIL_PLACEHOLDER: "wumpus@example.com",
+        SIGNUP_EMAIL_ERROR: "We're unable to verify that email address. Please try another",
+        SIGNUP_COMPLETED_TITLE: "Thank you for your interest!",
+        SIGNUP_COMPLETED_DESCRIPTION: "We will get back to you once it's available."
       })
     },
     657743: function(e, _, E) {
@@ -18556,7 +18563,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277793", ", Version Hash: ").concat("359cfa9b6aff3a78dd46a7da4471b97690305059")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277799", ", Version Hash: ").concat("714bc2a9a79fb932733d1c5610c0b7d470efd681")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -19971,6 +19978,11 @@
           inlineRequire: () => E("902801").default,
           neverLoadBeforeConnectionOpen: !0
         },
+        SignUpManager: {
+          actions: ["POST_CONNECTION_OPEN"],
+          inlineRequire: () => E("674487").default,
+          neverLoadBeforeConnectionOpen: !0
+        },
         GuildOnboardingManager: {
           actions: ["POST_CONNECTION_OPEN", "CHANNEL_SELECT", "GUILD_DELETE"],
           inlineRequire: () => E("999243").default,
@@ -20928,8 +20940,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277793", "277793"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277793")), _ = 0), _
+        let _ = parseInt((e = "277799", "277799"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277799")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -27863,6 +27875,69 @@
         }
       }
       var a = new r
+    },
+    674487: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        default: function() {
+          return I
+        }
+      }), E("222007");
+      var t = E("151426"),
+        o = E("913144"),
+        n = E("689988"),
+        r = E("10641"),
+        a = E("427957");
+      class i extends n.default {
+        constructor(...e) {
+          super(...e), this.actions = {
+            POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
+          }, this.handleConnectionOpen = e => {
+            let _ = (0, a.getValorantUserSignupExperiment)("SignUpManager"),
+              E = (0, r.isDismissibleContentDismissed)(t.DismissibleContent.GAME_ONE_USER_SIGNUPS);
+            _ && !E && o.default.dispatch({
+              type: "ENABLE_USER_SIGN_UP",
+              key: "valorant-user"
+            })
+          }
+        }
+      }
+      var I = new i
+    },
+    427957: function(e, _, E) {
+      "use strict";
+      E.r(_), E.d(_, {
+        getValorantUserSignupExperiment: function() {
+          return n
+        }
+      });
+      var t = E("862205");
+      let o = (0, t.createExperiment)({
+        kind: "user",
+        id: "2024-03_valorant_user_signup",
+        label: "Valorant User Signup",
+        defaultConfig: {
+          showUserSignup: !1
+        },
+        treatments: [{
+          id: 1,
+          label: "Show user signup",
+          config: {
+            showUserSignup: !0
+          }
+        }]
+      });
+
+      function n(e) {
+        let {
+          showUserSignup: _
+        } = o.getCurrentConfig({
+          location: e
+        }, {
+          autoTrackExposure: !1
+        });
+        return _
+      }
     },
     202014: function(e, _, E) {
       "use strict";
@@ -37732,4 +37807,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.047af28f96d1721005e4.js.map
+//# sourceMappingURL=47513.847991a0da9768dd2eb3.js.map
