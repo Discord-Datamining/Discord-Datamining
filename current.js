@@ -18563,7 +18563,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277857", ", Version Hash: ").concat("74b986621fb11672f2a1f141aaeb71b838c96a2d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("277864", ", Version Hash: ").concat("3f3cc576d3c86c5794bbbc01496399f99ece9ad6")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20940,8 +20940,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "277857", "277857"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277857")), _ = 0), _
+        let _ = parseInt((e = "277864", "277864"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("277864")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -31086,12 +31086,12 @@
     995113: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
-        default: function() {
-          return t
+        BatchedStoreListener: function() {
+          return o
         }
       }), E("70102");
-      var t, o = E("805833");
-      t = class {
+      var t = E("805833");
+      class o {
         attach(e) {
           let {
             stores: _
@@ -31109,7 +31109,7 @@
         }
         constructor(e, _) {
           this.handleStoreChange = () => {
-            let e = o.default.getChangeSentinel();
+            let e = t.default.getChangeSentinel();
             this.storeVersionHandled !== e && (this.changeCallback(), this.storeVersionHandled = e)
           }, this.stores = e, this.changeCallback = _
         }
@@ -31117,12 +31117,12 @@
     },
     782648: function(e, _, E) {
       "use strict";
-      var t;
       E.r(_), E.d(_, {
-        default: function() {
+        ChangeListeners: function() {
           return t
         }
-      }), E("222007"), t = class {
+      }), E("222007");
+      class t {
         has(e) {
           return this.listeners.has(e)
         }
@@ -31456,35 +31456,6 @@
         }
       }
     },
-    35092: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        default: function() {
-          return a
-        }
-      });
-      var t = E("805833"),
-        o = E("303365"),
-        n = E("75247"),
-        r = E("661496"),
-        a = {
-          Emitter: t.default,
-          Store: n.default,
-          PersistedStore: o.default,
-          DeviceSettingsStore: o.DeviceSettingsStore,
-          OfflineCacheStore: o.OfflineCacheStore,
-          connectStores: r.default,
-          initialize() {
-            n.default.initialize()
-          },
-          get initialized() {
-            return n.default.initialized
-          },
-          destroy() {
-            o.default.destroy()
-          }
-        }
-    },
     377678: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -31608,144 +31579,144 @@
     303365: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
+        PersistedStore: function() {
+          return s
+        },
         DeviceSettingsStore: function() {
-          return N
+          return S
         },
         OfflineCacheStore: function() {
-          return O
-        },
-        default: function() {
-          return o
+          return N
         }
       }), E("222007"), E("70102");
-      var t, o, n = E("229042"),
-        r = E.n(n),
-        a = E("102053"),
-        i = E("95410"),
-        I = E("75247");
-      let s = {
+      var t = E("229042"),
+        o = E.n(t),
+        n = E("102053"),
+        r = E("95410"),
+        a = E("75247");
+      let i = {
           _state: void 0,
           _version: void 0
         },
-        T = null;
-      (t = class e extends I.default {
+        I = null;
+      class s extends a.Store {
         getClass() {
           return this.constructor
         }
-        static clearAll(_) {
-          return T = _, null == e._clearAllPromise && (e._clearAllPromise = new Promise(E => {
+        static clearAll(e) {
+          return I = e, null == s._clearAllPromise && (s._clearAllPromise = new Promise(_ => {
             requestIdleCallback(() => {
-              e.clearPersistQueue(_), e.allPersistKeys.forEach(E => {
-                e.shouldClear(_, E) && i.default.remove(E)
-              }), I.default.getAll().forEach(E => {
-                E instanceof e && e.shouldClear(_, E.getClass().persistKey) && (E._isInitialized = !1, E.initializeIfNeeded())
-              }), e._clearAllPromise = null, E()
+              s.clearPersistQueue(e), s.allPersistKeys.forEach(_ => {
+                s.shouldClear(e, _) && r.default.remove(_)
+              }), a.Store.getAll().forEach(_ => {
+                _ instanceof s && s.shouldClear(e, _.getClass().persistKey) && (_._isInitialized = !1, _.initializeIfNeeded())
+              }), s._clearAllPromise = null, _()
             }, {
               timeout: 500
             })
-          })), e._clearAllPromise
+          })), s._clearAllPromise
         }
-        static shouldClear(_, E) {
-          var t;
-          return (null === (t = _.omit) || void 0 === t ? !void 0 : !t.includes(E)) && ("all" === _.type || "user-data-only" === _.type && !e.userAgnosticPersistKeys.has(E))
+        static shouldClear(e, _) {
+          var E;
+          return (null === (E = e.omit) || void 0 === E ? !void 0 : !E.includes(_)) && ("all" === e.type || "user-data-only" === e.type && !s.userAgnosticPersistKeys.has(_))
         }
-        static clearPersistQueue(_) {
-          e._writeResolvers.forEach((E, t) => {
-            let [o, n] = E;
-            e.shouldClear(_, t) && (e._writePromises.delete(t), e._writeResolvers.delete(t), cancelIdleCallback(n), o(!1))
-          }), e._writePromises.clear(), e._writeResolvers.clear()
+        static clearPersistQueue(e) {
+          s._writeResolvers.forEach((_, E) => {
+            let [t, o] = _;
+            s.shouldClear(e, E) && (s._writePromises.delete(E), s._writeResolvers.delete(E), cancelIdleCallback(o), t(!1))
+          }), s._writePromises.clear(), s._writeResolvers.clear()
         }
         static getAllStates() {
-          return Promise.all(Array.from(e._writePromises.values())).then(() => {
-            let _ = {};
-            return e.allPersistKeys.forEach(e => {
+          return Promise.all(Array.from(s._writePromises.values())).then(() => {
+            let e = {};
+            return s.allPersistKeys.forEach(_ => {
               var E;
-              _[e] = (null !== (E = i.default.get(e)) && void 0 !== E ? E : s)._state
-            }), _
+              e[_] = (null !== (E = r.default.get(_)) && void 0 !== E ? E : i)._state
+            }), e
           })
         }
-        static initializeAll(_) {
-          I.default.getAll().forEach(E => {
-            if (E instanceof e) {
-              let e = E.getClass().persistKey;
-              _.hasOwnProperty(e) && E.initializeFromState(_[e])
+        static initializeAll(e) {
+          a.Store.getAll().forEach(_ => {
+            if (_ instanceof s) {
+              let E = _.getClass().persistKey;
+              e.hasOwnProperty(E) && _.initializeFromState(e[E])
             }
           })
         }
-        initializeFromState(_) {
-          this.initialize(_) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (e.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = !0)
+        initializeFromState(e) {
+          this.initialize(e) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (s.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = !0)
         }
         static destroy() {
-          T = null, I.default.destroy(), e.clearPersistQueue({
+          I = null, a.Store.destroy(), s.clearPersistQueue({
             type: "all"
-          }), e.allPersistKeys.clear(), e.userAgnosticPersistKeys.clear()
+          }), s.allPersistKeys.clear(), s.userAgnosticPersistKeys.clear()
         }
         initializeIfNeeded() {
           if (!this._isInitialized) {
-            let _ = Date.now();
-            e.allPersistKeys.add(this.getClass().persistKey);
+            let e = Date.now();
+            s.allPersistKeys.add(this.getClass().persistKey);
             let {
-              state: E,
-              requiresPersist: t
-            } = e.migrateAndReadStoreState(this.getClass().persistKey, this.getClass().migrations);
-            this.initialize(E) && this.asyncPersist(), t && this.asyncPersist(), this._isInitialized = !0;
-            let o = Date.now() - _;
-            o > 5 && a.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", o)
+              state: _,
+              requiresPersist: E
+            } = s.migrateAndReadStoreState(this.getClass().persistKey, this.getClass().migrations);
+            this.initialize(_) && this.asyncPersist(), E && this.asyncPersist(), this._isInitialized = !0;
+            let t = Date.now() - e;
+            t > 5 && n.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", t)
           }
         }
-        static migrateAndReadStoreState(_, E) {
-          if (null != T && e.shouldClear(T, _)) return i.default.remove(_), {
+        static migrateAndReadStoreState(e, _) {
+          if (null != I && s.shouldClear(I, e)) return r.default.remove(e), {
             state: void 0,
             requiresPersist: !1
           };
-          let t = null != e._clearAllPromise ? null : i.default.get(_),
+          let E = null != s._clearAllPromise ? null : r.default.get(e),
             {
-              _state: o,
-              _version: n,
-              ...r
-            } = null != t ? t : s,
-            a = null == E ? 0 : E.length;
-          if (0 !== a && n !== a && null != E) {
-            let e = null != n ? n : 0,
-              _ = o;
-            for (null == n && (_ = r); e < a;) {
-              let t = E[e];
-              _ = t(_), e++
+              _state: t,
+              _version: o,
+              ...n
+            } = null != E ? E : i,
+            a = null == _ ? 0 : _.length;
+          if (0 !== a && o !== a && null != _) {
+            let e = null != o ? o : 0,
+              E = t;
+            for (null == o && (E = n); e < a;) {
+              let t = _[e];
+              E = t(E), e++
             }
             return {
-              state: _,
+              state: E,
               requiresPersist: !0
             }
           }
-          if (Object.values(r).length > 0) return {
-            state: r,
+          if (Object.values(n).length > 0) return {
+            state: n,
             requiresPersist: !0
           };
           return {
-            state: o,
+            state: t,
             requiresPersist: !1
           }
         }
         asyncPersist() {
           let {
-            persistKey: _,
-            disableWrite: E,
-            throttleDelay: t
+            persistKey: e,
+            disableWrite: _,
+            throttleDelay: E
           } = this.getClass();
-          if (e.disableWrites || E) return Promise.resolve(!1);
-          let o = e._writePromises.get(_);
-          return null != o ? o : (o = new Promise(E => {
-            let o = t > 0 ? () => this.throttledCallback(E) : () => this.callback(E);
-            e._writeResolvers.set(_, [E, requestIdleCallback(o, {
+          if (s.disableWrites || _) return Promise.resolve(!1);
+          let t = s._writePromises.get(e);
+          return null != t ? t : (t = new Promise(_ => {
+            let t = E > 0 ? () => this.throttledCallback(_) : () => this.callback(_);
+            s._writeResolvers.set(e, [_, requestIdleCallback(t, {
               timeout: 500
             })])
-          }), e._writePromises.set(_, o), o)
+          }), s._writePromises.set(e, t), t)
         }
         persist() {
           let {
             persistKey: e
           } = this.getClass(), _ = this.getState(), E = this._version;
-          i.default.set(e, {
+          r.default.set(e, {
             _state: _,
             _version: E
           })
@@ -31754,70 +31725,71 @@
           let {
             persistKey: e
           } = this.getClass();
-          i.default.remove(e)
+          r.default.remove(e)
         }
-        constructor(_, E) {
-          if (super(_, E), this._version = null == this.getClass().migrations ? 0 : this.getClass().migrations.length, this.callback = _ => {
+        constructor(e, _) {
+          if (super(e, _), this._version = null == this.getClass().migrations ? 0 : this.getClass().migrations.length, this.callback = e => {
               let {
-                persistKey: E
+                persistKey: _
               } = this.getClass();
-              this.persist(), e._writePromises.delete(E), e._writeResolvers.delete(E), _()
-            }, this.throttledCallback = r(e => this.callback(e), this.getClass().throttleDelay, {
+              this.persist(), s._writePromises.delete(_), s._writeResolvers.delete(_), e()
+            }, this.throttledCallback = o(e => this.callback(e), this.getClass().throttleDelay, {
               leading: !1
             }), "string" != typeof this.getClass().persistKey) throw Error("".concat(this.getClass().name, " initialized without a `persistKey`. Add one so we know where to save your stuff!"));
           if ("function" != typeof this.initialize) throw Error("".concat(this.getClass().name, " initialized without an `initialize` method. Add one that accepts the initial cached state."));
           if ("function" != typeof this.getState) throw Error("".concat(this.getClass().name, " initialized without a `getState` method. Add one that returns the full state of the store for persistance to work."));
           this.addChangeListener(() => this.asyncPersist())
         }
-      }).allPersistKeys = new Set, t.userAgnosticPersistKeys = new Set, t._writePromises = new Map, t._writeResolvers = new Map, t.disableWrites = !1, t.disableWrite = !1, t.throttleDelay = 0, o = t;
-      class S extends o {
+      }
+      s.allPersistKeys = new Set, s.userAgnosticPersistKeys = new Set, s._writePromises = new Map, s._writeResolvers = new Map, s.disableWrites = !1, s.disableWrite = !1, s.throttleDelay = 0;
+      class T extends s {
         initializeFromState(e) {
-          return o.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeFromState(e)
+          return s.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeFromState(e)
         }
         initializeIfNeeded() {
-          return o.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeIfNeeded()
+          return s.userAgnosticPersistKeys.add(this.getClass().persistKey), super.initializeIfNeeded()
         }
         getState() {
           return this.getUserAgnosticState()
         }
       }
-      class N extends S {}
-      class O extends S {}
+      class S extends T {}
+      class N extends T {}
     },
     75247: function(e, _, E) {
       "use strict";
       let t;
       E.r(_), E.d(_, {
-        default: function() {
-          return n
+        Store: function() {
+          return S
         }
       }), E("860677"), E("222007"), E("424973");
-      var o, n, r = E("627445"),
-        a = E.n(r),
-        i = E("102053");
+      var o = E("627445"),
+        n = E.n(o),
+        r = E("102053");
       E("704744");
-      var I = E("782648"),
-        s = E("805833");
-      let T = [],
-        S = !1,
-        N = new Promise(e => {
+      var a = E("782648"),
+        i = E("805833");
+      let I = [],
+        s = !1,
+        T = new Promise(e => {
           t = () => {
             e(), t = null
           }
         });
-      (o = class {
+      class S {
         static initialize() {
-          S = !0, T.forEach(e => e.initializeIfNeeded()), null != t && t()
+          s = !0, I.forEach(e => e.initializeIfNeeded()), null != t && t()
         }
         static destroy() {
-          T.length = 0, s.default.destroy()
+          I.length = 0, i.default.destroy()
         }
         static getAll() {
-          return T
+          return I
         }
         registerActionHandlers(e, _) {
           this._dispatcher.register(this.getName(), e, e => {
-            (this._changeCallbacks.hasAny() || this._reactChangeCallbacks.hasAny() || this._syncWiths.length > 0) && (s.default.markChanged(this), s.default.getIsPaused() && null != this._mustEmitChanges && this._mustEmitChanges(e) && s.default.resume(!1))
+            (this._changeCallbacks.hasAny() || this._reactChangeCallbacks.hasAny() || this._syncWiths.length > 0) && (i.default.markChanged(this), i.default.getIsPaused() && null != this._mustEmitChanges && this._mustEmitChanges(e) && i.default.resume(!1))
           }, _, this._dispatchToken)
         }
         getName() {
@@ -31829,7 +31801,7 @@
             let e = Date.now();
             this.initialize(), this._isInitialized = !0;
             let _ = Date.now() - e;
-            _ > 5 && i.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", _)
+            _ > 5 && r.default.mark("\uD83E\uDDA5", this.getName() + ".initialize()", _)
           }
         }
         initialize() {}
@@ -31838,7 +31810,7 @@
             var t, o;
             let n, r = 0,
               a = () => {
-                r !== s.default.getChangeSentinel() && (r = s.default.getChangeSentinel(), !1 !== _() && this.emitChange())
+                r !== i.default.getChangeSentinel() && (r = i.default.getChangeSentinel(), !1 !== _() && this.emitChange())
               };
             t = null != E ? E : 0, o = a, n = null, a = 0 === t ? function() {
               clearImmediate(n), n = setImmediate(o)
@@ -31860,11 +31832,11 @@
         }
         waitFor() {
           for (var e = arguments.length, _ = Array(e), E = 0; E < e; E++) _[E] = arguments[E];
-          let t = _.map((e, _) => (a(null != e, "Store.waitFor(...) called with null Store at index ".concat(_, " for store ").concat(this.getName())), null != e._dispatcher) ? (a(e._dispatcher === this._dispatcher, "Stores belong to two separate dispatchers."), e.getDispatchToken()) : null);
+          let t = _.map((e, _) => (n(null != e, "Store.waitFor(...) called with null Store at index ".concat(_, " for store ").concat(this.getName())), null != e._dispatcher) ? (n(e._dispatcher === this._dispatcher, "Stores belong to two separate dispatchers."), e.getDispatchToken()) : null);
           this._dispatcher.addDependencies(this.getDispatchToken(), t.filter(e => null != e))
         }
         emitChange() {
-          s.default.markChanged(this)
+          i.default.markChanged(this)
         }
         getDispatchToken() {
           return this._dispatchToken
@@ -31874,9 +31846,10 @@
           this._mustEmitChanges = e
         }
         constructor(e, _, E) {
-          this._changeCallbacks = new I.default, this._reactChangeCallbacks = new I.default, this._syncWiths = [], this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != _ ? _ : {}, E), T.push(this), S && this.initializeIfNeeded()
+          this._changeCallbacks = new a.ChangeListeners, this._reactChangeCallbacks = new a.ChangeListeners, this._syncWiths = [], this._isInitialized = !1, this.addChangeListener = this._changeCallbacks.add, this.addConditionalChangeListener = this._changeCallbacks.addConditional, this.removeChangeListener = this._changeCallbacks.remove, this.addReactChangeListener = this._reactChangeCallbacks.add, this.removeReactChangeListener = this._reactChangeCallbacks.remove, this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != _ ? _ : {}, E), I.push(this), s && this.initializeIfNeeded()
         }
-      }).initialized = N, n = o
+      }
+      S.initialized = T
     },
     661496: function(e, _, E) {
       "use strict";
@@ -31912,7 +31885,7 @@
                   })
                 }
                 constructor(...E) {
-                  super(...E), this.memoizedGetStateFromStores = I(_), this.listener = new r.default(e, () => {
+                  super(...E), this.memoizedGetStateFromStores = I(_), this.listener = new r.BatchedStoreListener(e, () => {
                     let e = this.memoizedGetStateFromStores.getCachedResult(this.props.childProps);
                     if (!(null != e && (this.memoizedGetStateFromStores.clear(), (0, n.default)(this.memoizedGetStateFromStores(this.props.childProps), e)))) this.forceUpdate()
                   })
@@ -31943,7 +31916,7 @@
                   })
                 }
                 constructor(...E) {
-                  super(...E), this.memoizedGetStateFromStores = I(_), this.listener = new r.default(e, () => {
+                  super(...E), this.memoizedGetStateFromStores = I(_), this.listener = new r.BatchedStoreListener(e, () => {
                     let e = this.memoizedGetStateFromStores.getCachedResult(this.props);
                     if (!(null != e && (this.memoizedGetStateFromStores.clear(), (0, n.default)(this.memoizedGetStateFromStores(this.props), e)))) this.forceUpdate()
                   })
@@ -31976,36 +31949,51 @@
       "use strict";
       E.r(_), E.d(_, {
         Store: function() {
-          return r.default
+          return a.Store
         },
         Dispatcher: function() {
           return o.Dispatcher
         },
         BatchedStoreListener: function() {
-          return t.default
+          return t.BatchedStoreListener
         },
         useStateFromStores: function() {
-          return a.useStateFromStores
+          return I.useStateFromStores
         },
         useStateFromStoresObject: function() {
-          return a.useStateFromStoresObject
+          return I.useStateFromStoresObject
         },
         useStateFromStoresArray: function() {
-          return a.useStateFromStoresArray
+          return I.useStateFromStoresArray
         },
         statesWillNeverBeEqual: function() {
-          return a.statesWillNeverBeEqual
+          return I.statesWillNeverBeEqual
         },
         default: function() {
-          return i
+          return s
         }
       });
       var t = E("995113"),
         o = E("893346"),
-        n = E("35092"),
-        r = E("75247"),
-        a = E("65597"),
-        i = n.default
+        n = E("805833"),
+        r = E("303365"),
+        a = E("75247"),
+        i = E("661496"),
+        I = E("65597"),
+        s = {
+          Emitter: n.default,
+          Store: a.Store,
+          PersistedStore: r.PersistedStore,
+          DeviceSettingsStore: r.DeviceSettingsStore,
+          OfflineCacheStore: r.OfflineCacheStore,
+          connectStores: i.default,
+          initialize: function() {
+            a.Store.initialize()
+          },
+          get initialized() {
+            return a.Store.initialized
+          }
+        }
     },
     65597: function(e, _, E) {
       "use strict";
@@ -32060,7 +32048,7 @@
             !a(i.state, e) && (i.state = e, s({}))
           };
           _();
-          let E = new n.default(e, _);
+          let E = new n.BatchedStoreListener(e, _);
           return E.attach("useStateFromStores"), () => E.detach()
         }, []), I
       }
@@ -37807,4 +37795,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.50660587f4ce159259a1.js.map
+//# sourceMappingURL=47513.578406eef814e0d0a5b7.js.map
