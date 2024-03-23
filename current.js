@@ -16834,7 +16834,7 @@
         CREATE_POLL_ADD_ANSWER_BUTTON: "Add another answer",
         CREATE_POLL_TEXT_PRECEDING_DURATION_SELECTION: "Poll will be live for",
         CREATE_POLL_DURATION_LABEL: "Duration",
-        CREATE_POLL_DURATION_OPTION_LABEL_N_HOURS: "{num, plural, one {1 hour} other {{num} hours}}",
+        CREATE_POLL_DURATION_OPTION_LABEL_N_HOURS: "{num, plural, one {{num} hour} other {{num} hours}}",
         CREATE_POLL_DURATION_OPTION_LABEL_3_DAYS: "3 days",
         CREATE_POLL_DURATION_OPTION_LABEL_7_DAYS: "1 week",
         CREATE_POLL_DURATION_SELECTION_ARIA_LABEL: "Poll will be live for {duration}",
@@ -18579,7 +18579,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278070", ", Version Hash: ").concat("f5c2fe06b7adaebe9016d6dec18b8dba101a6fe5")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278073", ", Version Hash: ").concat("d1971d510931ae3e483607eb39fc1d2582e8abe6")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20956,8 +20956,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278070", "278070"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278070")), _ = 0), _
+        let _ = parseInt((e = "278073", "278073"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278073")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37811,4 +37811,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.a7dc3c58231559963ba6.js.map
+//# sourceMappingURL=47513.7bb7e4ff19e61c226596.js.map
