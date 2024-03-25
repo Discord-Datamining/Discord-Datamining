@@ -18245,7 +18245,7 @@
         s = E("303167"),
         T = E("9503");
       (o = n || (n = {}))[o.Early = 0] = "Early", o[o.Database = 1] = "Database", o[o.Default = 2] = "Default", t = new i.ActionLogger({
-        persist: null !== (r = I.default.get(T.STORAGE_KEY_LOG_DISPATCHES)) && void 0 !== r && r
+        persist: null !== (r = I.Storage.get(T.STORAGE_KEY_LOG_DISPATCHES)) && void 0 !== r && r
       });
       let S = new a.Dispatcher(2, t, {
         addBreadcrumb: s.default
@@ -18580,7 +18580,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278320", ", Version Hash: ").concat("6f2b16efa6e8b7194bdd8dbab28b52dd5fa337d0")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278328", ", Version Hash: ").concat("3bf351fe8f4d39de379989d1d339f7297849b9ce")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -19201,16 +19201,16 @@
               initialized: Date.now(),
               lastUsed: Date.now()
             };
-            o.default.set(r, _.uuid), o.default.set(a, _.initialized.toString()), o.default.set(n, Date.now().toString()), e = _
-          } else I && o.default.set(n, Date.now().toString());
+            o.Storage.set(r, _.uuid), o.Storage.set(a, _.initialized.toString()), o.Storage.set(n, Date.now().toString()), e = _
+          } else I && o.Storage.set(n, Date.now().toString());
           return e
         });
         return i = e
       }
       async function S() {
-        let e = await o.default.getAfterRefresh(r),
-          _ = await o.default.getAfterRefresh(a).then(N),
-          E = await o.default.getAfterRefresh(n).then(N);
+        let e = await o.Storage.getAfterRefresh(r),
+          _ = await o.Storage.getAfterRefresh(a).then(N),
+          E = await o.Storage.getAfterRefresh(n).then(N);
         return null != e && null != _ ? {
           uuid: e,
           initialized: _,
@@ -20840,12 +20840,12 @@
       class u extends t.default.Store {
         initialize() {
           var e;
-          this.waitFor(r.default), this.syncWith([r.default], () => !0), A = null !== (e = o.default.get(N)) && void 0 !== e ? e : null;
-          let _ = o.default.get(O);
+          this.waitFor(r.default), this.syncWith([r.default], () => !0), A = null !== (e = o.Storage.get(N)) && void 0 !== e ? e : null;
+          let _ = o.Storage.get(O);
           if (null != _) try {
             R = new Date(_)
           } catch {
-            o.default.remove(O)
+            o.Storage.remove(O)
           }
         }
         getChangelog(e, _) {
@@ -20942,7 +20942,7 @@
             changelogId: _,
             changelogDate: E
           } = e;
-          A = null != _ ? _ : null, R = new Date(E), o.default.set(N, _), o.default.set(O, E)
+          A = null != _ ? _ : null, R = new Date(E), o.Storage.set(N, _), o.Storage.set(O, E)
         }
       })
     },
@@ -20957,8 +20957,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278320", "278320"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278320")), _ = 0), _
+        let _ = parseInt((e = "278328", "278328"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278328")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -22356,7 +22356,7 @@
           return
         }
         let E = await _(),
-          n = o.default.get(T, {}),
+          n = o.Storage.get(T, {}),
           {
             didCrashReporterSeeCrash: r,
             didCrashOrUncleanExit: i
@@ -22418,7 +22418,7 @@
               ...M
             }
           }(r, i, E);
-        a.default.track(I.AnalyticEvents.APP_NATIVE_CRASH, S), o.default.set(T, {
+        a.default.track(I.AnalyticEvents.APP_NATIVE_CRASH, S), o.Storage.set(T, {
           lastId: null == E ? void 0 : E.id
         }), i && setTimeout(async () => await N(), 1e4)
       }
@@ -22796,7 +22796,7 @@
 
       function R(e) {
         if (null != e.storageKey) {
-          let _ = r.default.get(e.storageKey);
+          let _ = r.Storage.get(e.storageKey);
           if (null != _ && Date.now() - _ < e.cooldown) return !1
         }
         return !0
@@ -22815,7 +22815,7 @@
           super(...e), this.feedbackTypeToShow = null, this.showFeedbackModalDebounced = n.debounce(e => {
             null != this.feedbackTypeToShow && (! function(e) {
               let _ = N[e];
-              null != _.storageKey && r.default.set(_.storageKey, Date.now())
+              null != _.storageKey && r.Storage.set(_.storageKey, Date.now())
             }(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e())
           }, 200)
         }
@@ -22969,14 +22969,14 @@
       let n = "formGuidelinesStorageKey";
       class r extends o.default {
         _initialize() {
-          let e = t.default.get(n);
+          let e = t.Storage.get(n);
           null != e && (this.seenForumGuidelines = new Set(e))
         }
         _terminate() {
-          t.default.set(n, this.seenForumGuidelines)
+          t.Storage.set(n, this.seenForumGuidelines)
         }
         markAsSeen(e) {
-          this.seenForumGuidelines.add(e), t.default.set(n, this.seenForumGuidelines)
+          this.seenForumGuidelines.add(e), t.Storage.set(n, this.seenForumGuidelines)
         }
         hasSeen(e) {
           return this.seenForumGuidelines.has(e)
@@ -23447,13 +23447,13 @@
           let e = {
             games: this.games
           };
-          t.default.set(n.storageKey, e)
+          t.Storage.set(n.storageKey, e)
         }
         static load() {
           return null == n._loaded && (n._loaded = n.loadInternal()), n._loaded
         }
         static loadInternal() {
-          let e = t.default.get(n.storageKey);
+          let e = t.Storage.get(n.storageKey);
           if (null != e) {
             var _;
             return new n(null !== (_ = e.games) && void 0 !== _ ? _ : {})
@@ -24439,7 +24439,7 @@
             POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
           }, this.handleConnectionOpen = async () => {
             if ((0, i.isWeb)()) {
-              let e = t.default.get(s);
+              let e = t.SessionStorage.get(s);
               if (null != e && "string" == typeof e && a.default.isAuthenticated()) {
                 let {
                   invite: _
@@ -24449,7 +24449,7 @@
                   invite: _,
                   code: e,
                   context: I.AppContext.APP
-                }), t.default.remove(s))
+                }), t.SessionStorage.remove(s))
               }
             }
           }
@@ -26554,7 +26554,7 @@
                 let _ = n.default.getCurrentUser();
                 if (null == _ || _.isPomelo() || !_.hasVerifiedEmailOrPhone()) return !1;
                 let E = (0, i.getForceMigration)(),
-                  o = t.default.get(E ? "lastSawPomeloMigration" : T);
+                  o = t.Storage.get(E ? "lastSawPomeloMigration" : T);
                 return !(null != o && Date.now() - o < 6048e5) && !0
               }()) {
               let e = I.UUOneClickExperiment.getCurrentConfig({
@@ -26563,7 +26563,7 @@
                   autoTrackExposure: !1
                 }).enabled,
                 _ = (0, a.openPomeloModal)(s.PomeloEntrypoints.APP_START, e, !1);
-              _ && t.default.set(T, Date.now())
+              _ && t.Storage.set(T, Date.now())
             }
           }
         }
@@ -28472,7 +28472,7 @@
 
       function D() {
         (0, A.shouldReadWriteAudioSettings)() && ! function() {
-          let e = a.default.get(C(S.default.getId()));
+          let e = a.Storage.get(C(S.default.getId()));
           !e && u.PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", e => {
             let _ = !1;
             for (let [E, t] of Object.entries(N.default.getState().settingsByContext)) {
@@ -28500,7 +28500,7 @@
                 null == n[E] && (_ = !0, n[E] = t)
               }
             }
-            return a.default.set(C(S.default.getId()), !0), _
+            return a.Storage.set(C(S.default.getId()), !0), _
           }, u.UserSettingsDelay.AUTOMATED)
         }()
       }
@@ -28690,7 +28690,7 @@
 
       function M() {
         var e;
-        d = null !== (e = r.default.get(L)) && void 0 !== e ? e : Date.now(), m(!1)
+        d = null !== (e = r.Storage.get(L)) && void 0 !== e ? e : Date.now(), m(!1)
       }
 
       function h() {
@@ -28703,7 +28703,7 @@
       }
 
       function m(e) {
-        e && (d = Date.now(), r.default.set(L, d)), null != D && clearTimeout(D);
+        e && (d = Date.now(), r.Storage.set(L, d)), null != D && clearTimeout(D);
         let _ = Date.now() - d;
         D = setTimeout(P, Math.max(C, c - _))
       }
@@ -29317,7 +29317,7 @@
         N = !1;
       class O extends n.default.Store {
         initialize() {
-          N = r.default.get(s) || N
+          N = r.Storage.get(s) || N
         }
         isAFKChannel() {
           let e = i.default.getChannel(o);
@@ -29348,7 +29348,7 @@
           let {
             forever: _
           } = e;
-          S = !0, _ && (N = !0, r.default.set(s, N))
+          S = !0, _ && (N = !0, r.Storage.set(s, N))
         }
       })
     },
@@ -29446,7 +29446,7 @@
         S = {};
       class N extends n.default.Store {
         initialize() {
-          T = r.default.get(I, i.PictureInPicturePositions.BOTTOM_RIGHT)
+          T = r.Storage.get(I, i.PictureInPicturePositions.BOTTOM_RIGHT)
         }
         get pipWindow() {
           var e;
@@ -29518,7 +29518,7 @@
                 ..._,
                 position: E
               })
-            }), s = e, T = E, r.default.set(I, E)
+            }), s = e, T = E, r.Storage.set(I, E)
           }
         },
         PICTURE_IN_PICTURE_HIDE: function(e) {
@@ -30342,7 +30342,7 @@
           try {
             E = this.requireModule("discord_overlay2")
           } catch (e) {}
-          E && E.reset && E.reset(), E && E.disconnectAllProcesses && E.destroyHostProcess && (E.disconnectAllProcesses(), E.destroyHostProcess()), c.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== A.default.get(N.DOMAIN_MIGRATION_SUCCESS_KEY) && this.supportsFeature(L.NativeFeatures.USER_DATA_CACHE) && c.userDataCache.cacheUserData(A.default.stringify()), null == c || null === (_ = c.window) || void 0 === _ || _.close(null == c ? void 0 : null === (e = c.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
+          E && E.reset && E.reset(), E && E.disconnectAllProcesses && E.destroyHostProcess && (E.disconnectAllProcesses(), E.destroyHostProcess()), c.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== A.Storage.get(N.DOMAIN_MIGRATION_SUCCESS_KEY) && this.supportsFeature(L.NativeFeatures.USER_DATA_CACHE) && c.userDataCache.cacheUserData(A.Storage.stringify()), null == c || null === (_ = c.window) || void 0 === _ || _.close(null == c ? void 0 : null === (e = c.globalOverlay) || void 0 === e ? void 0 : e.WINDOW_KEY)
         },
         inputEventRegister(e, _, E, t) {
           !Array.isArray(_) && (_ = _.toJS()), this.getDiscordUtils().inputEventRegister(parseInt(e), _.map(e => {
@@ -31627,7 +31627,7 @@
           return I = e, null == s._clearAllPromise && (s._clearAllPromise = new Promise(_ => {
             requestIdleCallback(() => {
               s.clearPersistQueue(e), s.allPersistKeys.forEach(_ => {
-                s.shouldClear(e, _) && r.default.remove(_)
+                s.shouldClear(e, _) && r.Storage.remove(_)
               }), a.Store.getAll().forEach(_ => {
                 _ instanceof s && s.shouldClear(e, _.getClass().persistKey) && (_._isInitialized = !1, _.initializeIfNeeded())
               }), s._clearAllPromise = null, _()
@@ -31651,7 +31651,7 @@
             let e = {};
             return s.allPersistKeys.forEach(_ => {
               var E;
-              e[_] = (null !== (E = r.default.get(_)) && void 0 !== E ? E : i)._state
+              e[_] = (null !== (E = r.Storage.get(_)) && void 0 !== E ? E : i)._state
             }), e
           })
         }
@@ -31685,11 +31685,11 @@
           }
         }
         static migrateAndReadStoreState(e, _) {
-          if (null != I && s.shouldClear(I, e)) return r.default.remove(e), {
+          if (null != I && s.shouldClear(I, e)) return r.Storage.remove(e), {
             state: void 0,
             requiresPersist: !1
           };
-          let E = null != s._clearAllPromise ? null : r.default.get(e),
+          let E = null != s._clearAllPromise ? null : r.Storage.get(e),
             {
               _state: t,
               _version: o,
@@ -31736,7 +31736,7 @@
           let {
             persistKey: e
           } = this.getClass(), _ = this.getState(), E = this._version;
-          r.default.set(e, {
+          r.Storage.set(e, {
             _state: _,
             _version: E
           })
@@ -31745,7 +31745,7 @@
           let {
             persistKey: e
           } = this.getClass();
-          r.default.remove(e)
+          r.Storage.remove(e)
         }
         constructor(e, _) {
           if (super(e, _), this._version = null == this.getClass().migrations ? 0 : this.getClass().migrations.length, this.callback = e => {
@@ -37267,12 +37267,12 @@
     },
     95410: function(e, _, E) {
       "use strict";
+      let Storage;
       E.r(_), E.d(_, {
-        default: function() {
-          return t
+        Storage: function() {
+          return Storage
         }
-      });
-      var t = E("419243").impl
+      }), Storage = E("419243").impl
     },
     419243: function(e, _, E) {
       "use strict";
@@ -37819,4 +37819,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.50cd97c0e34a869ad249.js.map
+//# sourceMappingURL=47513.a042dcb212a208abe315.js.map
