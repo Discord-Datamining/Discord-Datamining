@@ -17332,6 +17332,33 @@
         SERVER_DRAWER_ACTIVITY_PLAYING: "playing **!!{activity}!!**",
         SERVER_DRAWER_ACTIVITY_STREAMING: "streaming **!!{activity}!!**",
         SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen",
+        CREATION_INTENT_OPTION_CLAN: "A gaming clan",
+        CLAN_SETUP_OVERVIEW_TITLE: "Create Clan",
+        CLAN_SETUP_OVERVIEW_SUBTITLE: "Step {current, number} of {total, number}",
+        CLAN_SETUP_OVERVIEW_TITLE_TAG: "Pick a Tag",
+        CLAN_SETUP_OVERVIEW_TITLE_GAMES: "Select Game(s)",
+        CLAN_SETUP_OVERVIEW_TITLE_PLAYSTYLE: "Select Playstyle",
+        CLAN_SETUP_OVERVIEW_TITLE_INTERESTS: "Select Interest(s)",
+        CLAN_SETUP_OVERVIEW_TITLE_DESCRIPTION: "Write Description",
+        CLAN_SETUP_OVERVIEW_TITLE_PRIMETIME: "Set PrimeTime",
+        CLAN_SETUP_TAG_TITLE: "Choose a Clan Tag",
+        CLAN_SETUP_TAG_SUBTITLE: "Give members a way to rep your Clan around Discord.",
+        CLAN_SETUP_TAG_HELP_TEXT: "Maxmimum 4 characetrs, alphabet (A-Z) and numbers only",
+        CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
+        CLAN_SETUP_GAMES_TITLE: "What games does your Clan play?",
+        CLAN_SETUP_GAMES_SUBTITLE: "You can always add more games later.",
+        CLAN_SETUP_PLAYSTYLE_TITLE: "What's your Clan's playstyle?",
+        CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know what kind of gaming you do.",
+        CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE: "We just play to hang out",
+        CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE: "Skill doesn't matter. We have a good time win or lose.",
+        CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE: "We can be chill or competitive",
+        CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE: "Some people group up to play competitively, and some just hang out.",
+        CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE: "We're competitive",
+        CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE: "We play together to win, rank up, or beat challenges.",
+        CLAN_SETUP_PLAYSTYLE_CREATIVE_TITLE: "Creativity-driven",
+        CLAN_SETUP_PLAYSTYLE_CREATIVE_SUBTITLE: "We tend to your creativity by curating, solving, or creating",
+        CLAN_SETUP_INTERESTS_TITLE: "What are your Clan's interests?",
+        CLAN_SETUP_INTERESTS_SUBTITLE: "What does your Clan talk about? It doesn't have to be about gaming!",
         PACKAGES: "Packages",
         USER_SETTINGS_PACKAGES_HEADER_CTA: "Open your Mailbox",
         USER_SETTINGS_PACKAGES_MAILBOX_HEADER: "Mailbox",
@@ -18580,7 +18607,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278328", ", Version Hash: ").concat("3bf351fe8f4d39de379989d1d339f7297849b9ce")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278332", ", Version Hash: ").concat("ef3b9b27de4caa64479fcc098fa978cc50027952")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20957,8 +20984,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278328", "278328"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278328")), _ = 0), _
+        let _ = parseInt((e = "278332", "278332"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278332")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37819,4 +37846,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.a042dcb212a208abe315.js.map
+//# sourceMappingURL=47513.407e766c7cb71b32e078.js.map
