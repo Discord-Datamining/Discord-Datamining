@@ -4496,6 +4496,7 @@
         TRANSFER_OWNERSHIP_FAILURE_MODAL_TITLE: "Server ownership transfer failed",
         SERVER_SUBSCRIPTION_OWNERSHIP_TRANSFER_FAILURE_MODAL_BODY: "It looks like the new owner is ineligible for Server Monetization. Head to our [Support Article]({server_subscription_owner_transfer_article}) to learn more about why.",
         TRANSFER_OWNERSHIP_SERVER_SUBSCRIPTION_GUILD: "You are transferring a server with Server Monetization enabled. Please also read our [Support Article]({server_subscription_owner_transfer_article}).",
+        TRANSFER_OWNERSHIP_SUCCESS: "Transfer successful!",
         USER_PROFILE_MODAL: "User Profile Modal",
         PROFILE: "Profile",
         USER_INFO: "User Info",
@@ -18579,7 +18580,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278315", ", Version Hash: ").concat("43634c80afeac1bc3f2422bca03f7b8abe76868c")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278320", ", Version Hash: ").concat("6f2b16efa6e8b7194bdd8dbab28b52dd5fa337d0")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20956,8 +20957,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278315", "278315"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278315")), _ = 0), _
+        let _ = parseInt((e = "278320", "278320"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278320")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37818,4 +37819,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.ecf14ccec6325e1ab605.js.map
+//# sourceMappingURL=47513.50cd97c0e34a869ad249.js.map
