@@ -16957,6 +16957,15 @@
         QUESTS_SHARE_QUEST: "Share Quest",
         QUESTS_STREAM_SOURCE_SELECT_NOTICE_HEADING: "Select {gameTitle} to make progress on your Quest!",
         QUESTS_STREAM_SOURCE_SELECT_NOTICE_SUBHEADING: "You must select the application, not the whole screen.",
+        QUESTS_MEMBERS_LIST_AVAILBLE: "Quest Available!",
+        QUESTS_MEMBERS_LIST_FINISH: "Finish your Quest!",
+        QUESTS_MEMBERS_LIST_CLAIM_REWARD: "You did it!",
+        QUESTS_MEMBERS_LIST_START_CTA: "Start unlocking your reward",
+        QUESTS_MEMBERS_LIST_STREAM_CTA: "Join me and check it out",
+        QUESTS_MEMBERS_LIST_FINISH_CTA: "Check out your progress",
+        QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA: "Claim your reward",
+        QUESTS_MEMBERS_LIST_PROMOTED_BY: "Promoted by {gamePublisher}",
+        QUESTS_MEMBERS_LIST_GAME_TILE_ALT: "A game tile displaying {gameTitle}, published by {gamePublisher}.",
         FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
         PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
         PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -18609,7 +18618,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278417", ", Version Hash: ").concat("f81f3ea2bdf97a0a1f1c4efe7097c0695630d95a")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278421", ", Version Hash: ").concat("d7f4ede755feae6804127a815386f0267cfb90a7")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20986,8 +20995,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278417", "278417"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278417")), _ = 0), _
+        let _ = parseInt((e = "278421", "278421"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278421")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -30988,40 +30997,6 @@
         }
       }
     },
-    66007: function(e, _, E) {
-      "use strict";
-      E.r(_), E.d(_, {
-        ArrowLargeRightIcon: function() {
-          return r
-        }
-      });
-      var t = E("37983");
-      E("884691");
-      var o = E("669491"),
-        n = E("82169");
-      let r = e => {
-        let {
-          width: _ = 24,
-          height: E = 24,
-          color: r = o.default.colors.INTERACTIVE_NORMAL,
-          colorClass: a = "",
-          ...i
-        } = e;
-        return (0, t.jsx)("svg", {
-          ...(0, n.default)(i),
-          xmlns: "http://www.w3.org/2000/svg",
-          width: _,
-          height: E,
-          fill: "none",
-          viewBox: "0 0 24 24",
-          children: (0, t.jsx)("path", {
-            fill: "string" == typeof r ? r : r.css,
-            d: "M20.7 12.7a1 1 0 0 0 0-1.4l-8-8a1 1 0 1 0-1.4 1.4l6.29 6.3H4a1 1 0 1 0 0 2h13.59l-6.3 6.3a1 1 0 0 0 1.42 1.4l8-8Z",
-            className: a
-          })
-        })
-      }
-    },
     800619: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
@@ -37848,4 +37823,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.8fec4a25b86564ff21e4.js.map
+//# sourceMappingURL=47513.73ce55e1a3e0ef8b9fb3.js.map
