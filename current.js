@@ -18625,7 +18625,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.UserDefenses)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278811", ", Version Hash: ").concat("71721c00b11ead4095a51dd4d1faf32a41a2734d")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278815", ", Version Hash: ").concat("408154e04d03393d5e63b9557813d0bea26129be")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -21002,8 +21002,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278811", "278811"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278811")), _ = 0), _
+        let _ = parseInt((e = "278815", "278815"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278815")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -21857,6 +21857,14 @@
           location: e
         }, {
           autoTrackExposure: !0
+        }), a.getCurrentConfig({
+          location: e
+        }, {
+          autoTrackExposure: !0
+        }), i.getCurrentConfig({
+          location: e
+        }, {
+          autoTrackExposure: !0
         });
         let {
           enabled: _
@@ -21867,6 +21875,28 @@
         });
         return _
       }
+      let a = (0, t.createExperiment)({
+          kind: "user",
+          id: "2024-03_holdout_bug_main_wrong_way",
+          label: "Holdout Bug Experiment Right Way (pls ignore)",
+          defaultConfig: {},
+          treatments: [{
+            id: 1,
+            label: "Treament",
+            config: {}
+          }]
+        }),
+        i = (0, t.createExperiment)({
+          kind: "user",
+          id: "2024-03_holdout_bug_main_right_way",
+          label: "Holdout Bug Experiment Wrong Way (pls ignore)",
+          defaultConfig: {},
+          treatments: [{
+            id: 1,
+            label: "Treament",
+            config: {}
+          }]
+        })
     },
     68720: function(e, _, E) {
       "use strict";
@@ -37830,4 +37860,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.51f0011890c6648fb305.js.map
+//# sourceMappingURL=47513.f4a4d6d5c6522fe54e69.js.map
