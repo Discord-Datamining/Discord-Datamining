@@ -17028,7 +17028,7 @@
         MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE: "{minutes, plural, =-1 {} other {{minutes}:}}{seconds, plural, =-1 {} other {{seconds}}}",
         MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
         MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
-        MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**",
+        MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}** ({episodeDescription})",
         CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
         CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
         CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -18618,7 +18618,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278471", ", Version Hash: ").concat("d264a8ded49f9d5ea84dddbe4587eb6cc2c52dd6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278486", ", Version Hash: ").concat("edb21178ae30adfe2cdf8592ca9604dc9be4706b")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20995,8 +20995,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278471", "278471"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278471")), _ = 0), _
+        let _ = parseInt((e = "278486", "278486"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278486")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37823,4 +37823,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.1ae1632a04451e28de51.js.map
+//# sourceMappingURL=47513.0e4cfd4062c45a381ee9.js.map
