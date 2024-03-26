@@ -18619,9 +18619,9 @@
       E("147746");
       var R = E("49111"),
         l = E("782340");
-      (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
+      (0, i.setUpdateRules)(s.default), (0, n.UserDefenses)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278775", ", Version Hash: ").concat("a899f585ccf1ea39b0030fa2e7a16d5dc6095a84")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278777", ", Version Hash: ").concat("7645bd1bf664def1c1b23dc4b84003399577836f")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20998,8 +20998,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278775", "278775"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278775")), _ = 0), _
+        let _ = parseInt((e = "278777", "278777"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278777")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -22543,7 +22543,7 @@
           timing: S
         }, E, ...a), "file-only" !== _ && console[_]("%c[".concat(e, "]"), "\nfont-weight: bold;\ncolor: purple;\n", E, ...a)
       });
-      var a = t.default
+      var a = t.Logger
     },
     352690: function(e, _, E) {
       "use strict";
@@ -23593,7 +23593,7 @@
         C = E("84970"),
         c = E("49111"),
         D = E("6791");
-      let d = new n.default("OverlayUsageStatsManager");
+      let d = new n.Logger("OverlayUsageStatsManager");
       d.verbose = () => {};
       class U {
         increment(e) {
@@ -31194,7 +31194,7 @@
         s = E("377678"),
         T = E("120082");
       let S = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]),
-        N = new a.default("Flux");
+        N = new a.Logger("Flux");
       class O {
         isDispatching() {
           return null != this._currentDispatchActionType
@@ -31393,7 +31393,7 @@
       var t = E("811022"),
         o = E("377678");
       let n = void 0,
-        r = new t.default("Flux"),
+        r = new t.Logger("Flux"),
         a = e => e();
       var i = new class e {
         destroy() {
@@ -31513,7 +31513,7 @@
       var t = E("44170"),
         o = E("811022"),
         n = E("279295");
-      let r = new o.default("Flux");
+      let r = new o.Logger("Flux");
       class a extends t.EventEmitter {
         log(e, _) {
           let E = new I(e);
@@ -32126,7 +32126,7 @@
       E("353015");
       var I = E("644642"),
         s = E("446825").Buffer;
-      let T = new r.default("HTTPUtils"),
+      let T = new r.Logger("HTTPUtils"),
         S = new Set([502, 504, 507, 598, 599, 522, 523, 524]);
 
       function N(e, _, E, t, r) {
@@ -37491,52 +37491,52 @@
       "use strict";
       E.r(_), E.d(_, {
         setLogFn: function() {
-          return r
+          return n
         },
-        default: function() {
-          return t
+        Logger: function() {
+          return r
         }
       }), E("222007");
-      var t, o = E("14334");
-      let n = () => {};
+      var t = E("14334");
+      let o = () => {};
 
-      function r(e) {
-        n = e
+      function n(e) {
+        o = e
       }
-      t = class {
+      class r {
         constructor(e = "default") {
           var _ = this;
           this.logDangerously = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
-            n(_.name, "log", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "log", e, ...t)
           }, this.log = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
-            (0, o.checkLogForPII)(e, ...t), n(_.name, "log", e, ...t)
+            for (var E = arguments.length, n = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) n[r - 1] = arguments[r];
+            (0, t.checkLogForPII)(e, ...n), o(_.name, "log", e, ...n)
           }, this.verboseDangerously = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
-            n(_.name, "debug", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "debug", e, ...t)
           }, this.verbose = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
-            (0, o.checkLogForPII)(e, ...t), n(_.name, "debug", e, ...t)
+            for (var E = arguments.length, n = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) n[r - 1] = arguments[r];
+            (0, t.checkLogForPII)(e, ...n), o(_.name, "debug", e, ...n)
           }, this.info = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
-            (0, o.checkLogForPII)(e, ...t), n(_.name, "info", e, ...t)
+            for (var E = arguments.length, n = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) n[r - 1] = arguments[r];
+            (0, t.checkLogForPII)(e, ...n), o(_.name, "info", e, ...n)
           }, this.warn = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
-            (0, o.checkLogForPII)(e, ...t), n(_.name, "warn", e, ...t)
+            for (var E = arguments.length, n = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) n[r - 1] = arguments[r];
+            (0, t.checkLogForPII)(e, ...n), o(_.name, "warn", e, ...n)
           }, this.error = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) t[r - 1] = arguments[r];
-            (0, o.checkLogForPII)(e, ...t), n(_.name, "error", e, ...t)
+            for (var E = arguments.length, n = Array(E > 1 ? E - 1 : 0), r = 1; r < E; r++) n[r - 1] = arguments[r];
+            (0, t.checkLogForPII)(e, ...n), o(_.name, "error", e, ...n)
           }, this.trace = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
-            n(_.name, "trace", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "trace", e, ...t)
           }, this.time = (e, _) => {
             let E = Date.now(),
               t = _();
             return this.log(e, Date.now() - E), t
           }, this.fileOnly = function(e) {
-            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), o = 1; o < E; o++) t[o - 1] = arguments[o];
-            n(_.name, "file-only", e, ...t)
+            for (var E = arguments.length, t = Array(E > 1 ? E - 1 : 0), n = 1; n < E; n++) t[n - 1] = arguments[n];
+            o(_.name, "file-only", e, ...t)
           }, this.name = e
         }
       }
@@ -37593,8 +37593,8 @@
     811335: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
-        default: function() {
-          return i
+        DevToolsListener: function() {
+          return a
         }
       });
       var t, o, n = E("44170");
@@ -37644,12 +37644,11 @@
           super(), setInterval(() => this.check(), 500)
         }
       }
-      var i = a
     },
     404073: function(e, _, E) {
       "use strict";
       E.r(_), E.d(_, {
-        default: function() {
+        UserDefenses: function() {
           return r
         }
       });
@@ -37663,9 +37662,10 @@
           url: "".concat(location.protocol).concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/jobs")
         })), "font-size: 16px;")) : setTimeout(() => n(e, _ + 1), 1e3))
       }
-      var r = (e, _, E) => {
+
+      function r(e, _, E) {
         if (null != E && "0.0.0" === E.remoteApp.getVersion()) return;
-        let r = new t.default;
+        let r = new t.DevToolsListener;
         if (null != E) {
           if (null != E.window.setDevtoolsCallbacks) E.window.setDevtoolsCallbacks(() => {
             _.hideToken(), n(e)
@@ -37826,4 +37826,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.2c3ca3ac234741db08d9.js.map
+//# sourceMappingURL=47513.769ea21160a9c29e8840.js.map
