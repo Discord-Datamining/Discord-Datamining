@@ -15351,6 +15351,10 @@
         COLLECTIBLES_SPRINGTOONS_COACHTIP_TITLE: "NEW: Springtoons",
         COLLECTIBLES_SPRINGTOONS_COACHTIP_DESCRIPTION: "In the hush of night, a curious magic enchants the air and...",
         COLLECTIBLES_SHY_FOR_A_LIMITED_TIME: "For a limited time",
+        COLLECTIBLES_SHY_COACHTIP_TITLE: "Lock in. Stand out.",
+        COLLECTIBLES_SHY_COACHTIP_DESCRIPTION: "New VALORANT looks for styling on your enemies.",
+        COLLECTIBLES_SHY_PROFILE_UPSELL_BANNER_TITLE: "Fresh looks. Clean aim. Must be VALORANT.",
+        COLLECTIBLES_SHY_PROFILE_UPSELL_BANNER_SUBTITLE: "Keep your profile looking clutch with new avatar decorations and profile effects.",
         COLLECTIBLES_NEW_BADGE: "NEW",
         INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
         PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
@@ -18621,7 +18625,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.UserDefenses)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278786", ", Version Hash: ").concat("930bcb93b248f40febec827fb4a2fd0ae7c7dee6")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278792", ", Version Hash: ").concat("478ca66fd33665b2c6eb40507eb6f3cbbb8e11fc")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20998,8 +21002,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278786", "278786"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278786")), _ = 0), _
+        let _ = parseInt((e = "278792", "278792"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278792")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37826,4 +37830,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.63e894e294fdd5f6c71f.js.map
+//# sourceMappingURL=47513.32017e5864a04a52a919.js.map
