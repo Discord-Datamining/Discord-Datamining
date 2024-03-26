@@ -3354,9 +3354,9 @@
         USER_SETTINGS_KEYBIND_SWITCH_SERVER_SETTINGS_SECTION: "Select the voice channel to join or switch to",
         USER_SETTINGS_KEYBIND_ENABLE_DISABLE: "Enable or disable keybind",
         USER_SETTINGS_KEYBIND_VOICE_CHANNEL_RESULTS: "Results",
-        SHOW_CURRENT_ACTIVITY: "Share your activity with others.",
+        SHOW_CURRENT_ACTIVITY: "Share your detected activities with others",
         SHOW_CURRENT_ACTIVITY_DESC: "Discord will automatically update your status if you're attending a public Stage.",
-        SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "When you engage in a detectable activity (such as playing a game or listening to music), Discord can display information about those activities, including when and how you've engaged.",
+        SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "When you play a detectable game or other application that supports Rich Presence, Discord can display information about those activities, including when and how you engaged.",
         GAME_DETECTION_SERVICE: "Game Detection Service",
         USER_SETTINGS_GAMES_INSTALL_LOCATIONS: "Install locations",
         USER_SETTINGS_GAMES_INSTALL_LOCATION_ADD: "Add Install Location",
@@ -4913,9 +4913,9 @@
         USER_EXPLICIT_CONTENT_FILTER_HELP_V2: "Automatically scan and block direct messages you receive that contain explicit media content or spam.",
         USER_EXPLICIT_CONTENT_FILTER_HELP_V3: "Automatically block direct messages that may contain explicit images. [Learn more about this setting here.]({appealLink})",
         ACTIVITY_PARTY_PRIVACY: "Rich Presence",
-        ACTIVITY_PARTY_PRIVACY_FRIENDS: "Allow friends to join your game.",
+        ACTIVITY_PARTY_PRIVACY_FRIENDS: "Allow friends to join your game",
         ACTIVITY_PARTY_PRIVACY_FRIENDS_HELP: "This setting allows friends to join your game without sending a request.",
-        ACTIVITY_PARTY_PRIVACY_VOICE_CHANNEL: "Allow voice channel participants to join your game.",
+        ACTIVITY_PARTY_PRIVACY_VOICE_CHANNEL: "Allow voice channel participants to join your game",
         ACTIVITY_PARTY_PRIVACY_VOICE_CHANNEL_HELP: "This setting allows people that are in the same voice channel as you to join your game without sending a request. This feature only works in non-community servers.",
         USER_EXPLICIT_CONTENT_FILTER_FRIENDS_AND_NON_FRIENDS: "Keep me safe",
         USER_EXPLICIT_CONTENT_FILTER_FRIENDS_AND_NON_FRIENDS_HELP: "Scan direct messages from everyone.",
@@ -16947,7 +16947,7 @@
         QUESTS_COMPLETION_PROGRESS_COMPLETE_ACTIVITY_PANEL: "You completed a Quest!",
         QUESTS_DISCLOSURE_PUBLISHER_PROMOTING: "{gamePublisher} is promoting {gameTitle} on Discord by partnering with us to offer this Quest. This Quest is available in the gift inventory of all users.",
         QUESTS_DISCLOSURE_PUBLISHER_TARGETING: "{gamePublisher} is trying to reach certain kinds of Discord users. Based on what you’ve told us or other information we’ve collected, the following information was used to tell you about this Quest:",
-        QUESTS_DISCLOSURE_LEARN_MORE: "[Learn more]({privacySettingsUrl}) more about how to manage your Quests Privacy Settings.",
+        QUESTS_DISCLOSURE_LEARN_MORE: "Learn more about how to manage your Privacy Settings [here]({privacySettingsUrl}).",
         QUESTS_DISCLOSURE_LOCATION: "Location",
         QUESTS_DISCLOSURE_AGE: "Age",
         QUESTS_DISCLOSURE_ACTIVITY: "Activity: Relevant gaming",
@@ -18618,7 +18618,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278528", ", Version Hash: ").concat("85f5bf2738b3ae2c02cd3c9ba12ff94dc3fc2243")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278636", ", Version Hash: ").concat("368759e15d19a5b3804fefb8e208cc24ff0c09bd")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -20995,8 +20995,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278528", "278528"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278528")), _ = 0), _
+        let _ = parseInt((e = "278636", "278636"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278636")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37823,4 +37823,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.955c6fb025554e475aea.js.map
+//# sourceMappingURL=47513.8a13d73e56d7fad73fdc.js.map
