@@ -18633,7 +18633,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.UserDefenses)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278858", ", Version Hash: ").concat("5bc47c646287b0c94be2960c266307ff8f4cc7a3")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278863", ", Version Hash: ").concat("1d544a696f7fbe4b517299111e706c31d66fa026")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -21010,8 +21010,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278858", "278858"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278858")), _ = 0), _
+        let _ = parseInt((e = "278863", "278863"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278863")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -26874,36 +26874,39 @@
     },
     511143: function(e, _, E) {
       "use strict";
-      var t, o, n, r;
+      var t, o, n, r, a;
       E.r(_), E.d(_, {
         TenureRewardSKUs: function() {
           return t
         },
         ALL_TENURE_REWARD_SKUS: function() {
-          return a
+          return i
         },
         NitroRewardStatus: function() {
           return o
         },
-        MAX_DAYS_LEFT_TO_SHOW_CARD_1_MONTH_VARIANT: function() {
-          return i
+        NitroRewardType: function() {
+          return n
         },
-        MAX_DAYS_LEFT_TO_SHOW_CARD_3_MONTH_VARIANT: function() {
+        MAX_DAYS_LEFT_TO_SHOW_CARD_1_MONTH_VARIANT: function() {
           return I
         },
-        NUM_DAYS_REQUIRED_1_MONTH_VARIANT: function() {
+        MAX_DAYS_LEFT_TO_SHOW_CARD_3_MONTH_VARIANT: function() {
           return s
         },
-        NUM_DAYS_3_REQUIRED_MONTH_VARIANT: function() {
+        NUM_DAYS_REQUIRED_1_MONTH_VARIANT: function() {
           return T
+        },
+        NUM_DAYS_3_REQUIRED_MONTH_VARIANT: function() {
+          return S
         }
-      }), E("222007"), (n = t || (t = {})).FREE_GUILD_BOOST_1_MONTH = "1215584796672000000", n.FREE_GUILD_BOOST_3_MONTHS = "1215585048330240000";
-      let a = new Set(["1215584796672000000", "1215585048330240000"]);
-      (r = o || (o = {}))[r.PENDING = 0] = "PENDING", r[r.REDEEMABLE = 1] = "REDEEMABLE", r[r.REDEEMED = 2] = "REDEEMED";
-      let i = 10,
-        I = 45,
-        s = 30,
-        T = 90
+      }), E("222007"), (r = t || (t = {})).FREE_GUILD_BOOST_1_MONTH = "1215584796672000000", r.FREE_GUILD_BOOST_3_MONTHS = "1215585048330240000";
+      let i = new Set(["1215584796672000000", "1215585048330240000"]);
+      (a = o || (o = {}))[a.PENDING = 0] = "PENDING", a[a.REDEEMABLE = 1] = "REDEEMABLE", a[a.REDEEMED = 2] = "REDEEMED", (n || (n = {})).SERVER_BOOST = "server_boost";
+      let I = 10,
+        s = 45,
+        T = 30,
+        S = 90
     },
     908309: function(e, _, E) {
       "use strict";
@@ -37925,4 +37928,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.3bbc754ba9e3eeecce66.js.map
+//# sourceMappingURL=47513.a41fa009f6b653bad65c.js.map
