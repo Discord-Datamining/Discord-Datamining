@@ -17430,13 +17430,13 @@
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6: "How about you give thanks to your mail delivery person",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_6_ANSWER_1: "Okay",
         PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)",
-        SIGNUP_BUTTON_TOOLTIP_CTA: "Click to learn more",
+        SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
         SIGNUP_COMPLETE_CTA: "Sign Up",
-        SIGNUP_EMAIL_PROMPT: "Enter your email to secure your spot on the waitlist.",
+        SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist.",
         SIGNUP_EMAIL_PLACEHOLDER: "wumpus@example.com",
         SIGNUP_EMAIL_ERROR: "We're unable to verify that email address. Please try another",
         SIGNUP_COMPLETED_TITLE: "Thank you for your interest!",
-        SIGNUP_COMPLETED_DESCRIPTION: "We will get back to you once it's available.",
+        SIGNUP_COMPLETED_DESCRIPTION: "We'll be in touch soon.",
         SIGNUP_CLAN_OPTION_SOCIAL_TITLE: "Social",
         SIGNUP_CLAN_OPTION_SOCIAL_DESCRIPTION: "Skill doesn't matter. We have a good time win or lose.",
         SIGNUP_CLAN_OPTION_CASUAL_TITLE: "Casual",
@@ -18637,7 +18637,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.UserDefenses)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278984", ", Version Hash: ").concat("c21b95095094fd8b5320b4fdc4d41c17e9f5c213")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("279006", ", Version Hash: ").concat("1671f3f6a89e86fe101c8eaf7508f802bcb1f352")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -21014,8 +21014,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "278984", "278984"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278984")), _ = 0), _
+        let _ = parseInt((e = "279006", "279006"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279006")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -37932,4 +37932,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.463a1c321515412ebbd4.js.map
+//# sourceMappingURL=47513.e3ad8acf2116d9f22896.js.map
