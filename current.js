@@ -18637,7 +18637,7 @@
         l = E("782340");
       (0, i.setUpdateRules)(s.default), (0, n.UserDefenses)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
       let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("279006", ", Version Hash: ").concat("1671f3f6a89e86fe101c8eaf7508f802bcb1f352")), t.default.setTags({
+      new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("279014", ", Version Hash: ").concat("eb6cd19c8d491f319d93fb85abf6ed9548988055")), t.default.setTags({
         appContext: R.CURRENT_APP_CONTEXT
       }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
     },
@@ -21014,8 +21014,8 @@
 
       function o() {
         var e;
-        let _ = parseInt((e = "279006", "279006"));
-        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279006")), _ = 0), _
+        let _ = parseInt((e = "279014", "279014"));
+        return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279014")), _ = 0), _
       }
     },
     990629: function(e, _, E) {
@@ -28009,7 +28009,7 @@
             CHANNEL_SELECT: e => this.handleChannelSelect(e)
           }, this.handleConnectionOpen = e => {
             let _ = (0, s.getValorantUserSignupExperiment)("SignUpManager"),
-              E = (0, I.getValorantAdminSignupExperiment)("SignUpManager"),
+              E = (0, I.getValorantAdminSignupExperiment)("SignUpManager", !1),
               n = (0, r.isDismissibleContentDismissed)(t.DismissibleContent.GAME_ONE_USER_SIGNUPS);
             _ && !E && !n && o.default.dispatch({
               type: "ENABLE_USER_SIGN_UP",
@@ -28020,9 +28020,10 @@
               guildId: _
             } = e;
             if (null == _) return;
-            let E = (0, I.getValorantAdminSignupExperiment)("SignUpManager"),
-              n = (0, r.isDismissibleContentDismissed)(t.DismissibleContent.GAME_ONE_USER_SIGNUPS);
-            if (!E || n) return;
+            let E = (0, r.isDismissibleContentDismissed)(t.DismissibleContent.GAME_ONE_USER_SIGNUPS);
+            if (E) return;
+            let n = (0, I.getValorantAdminSignupExperiment)("SignUpManager");
+            if (!n) return;
             let s = a.default.getGuild(_);
             if (null != s) s.hasFeature(T.GuildFeatures.VALORANT_L30) && i.default.can(T.Permissions.MANAGE_GUILD, s) && o.default.dispatch({
               type: "ENABLE_GUILD_SIGN_UP",
@@ -37932,4 +37933,4 @@
     }
   }
 ]);
-//# sourceMappingURL=47513.e3ad8acf2116d9f22896.js.map
+//# sourceMappingURL=47513.34bb0c6e8285b9ca3ad4.js.map
