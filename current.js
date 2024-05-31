@@ -2621,7 +2621,7 @@
           dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
           autoSessionTracking: !1,
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          release: "discord_web-b3567cd5122cd09afd4cd714cc3db67b76a52899",
+          release: "discord_web-1cc66399801d3e2abe44110be4f679169b7de96b",
           beforeSend: _ => {
             var E, e;
             return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2639,7 +2639,7 @@
           })],
           ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
           denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-        }), I.setTag("buildNumber", (_ = "298118", "298118")), I.setTag("builtAt", String("1717194730537"));
+        }), I.setTag("buildNumber", (_ = "298120", "298120")), I.setTag("builtAt", String("1717194838845"));
         let E = window.GLOBAL_ENV.SENTRY_TAGS;
         if (null != E && "object" == typeof E)
           for (let _ in E) I.setTag(_, E[_]);
@@ -14203,4 +14203,4 @@
     }
   }
 ]);
-//# sourceMappingURL=84471.2bf8ef113eb774dd0aaf.js.map
+//# sourceMappingURL=84471.66ff0babe5de084534ce.js.map
